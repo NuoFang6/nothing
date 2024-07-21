@@ -127,20 +127,25 @@ proxy-providers:
     <<: *providerSet
     url: "https://cfp.nuofang.filegear-sg.me/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47"
     override:
-      additional-suffix: "|CFproxy"
+      additional-suffix: "|禁止转发|CFproxy"
 
   一元机场:
     <<: *providerSet
     url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=b35bc47836b2a7779ce4e42b799a6496"
     override:
-      additional-suffix: "|一元机场"
+      additional-suffix: "|禁止转发|一元机场"
       
   别信广告:
     <<: *providerSet
     url: "https://ghostcc.cc/ss.cn/xyz"
     override:
-      additional-suffix: "|别信广告"
-
+      additional-suffix: "|禁止转发|别信广告"
+  
+  LanCloud:
+    <<: *providerSet
+    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+    override:
+      additional-suffix: "|禁止转发|LanCloud"
 proxies:
 - name: "诺芳CFserv00"
   type: vless
@@ -177,6 +182,7 @@ proxy-groups:
       - CFproxy
       - 一元机场
       - 别信广告
+      - LanCloud
     include-all: true
     <<: *groupsSet
 
@@ -196,6 +202,12 @@ proxy-groups:
     type: select
     use:
       - 别信广告
+    <<: *groupsSet
+
+  - name: LanCloud
+    type: select
+    use:
+      - LanCloud
     <<: *groupsSet
 
   - name: 自动选择
