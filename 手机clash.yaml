@@ -7,6 +7,7 @@ geodata-loader: memconservative
 find-process-mode: off
 keep-alive-interval: 1800
 global-client-fingerprint: random
+global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
 geo-auto-update: true
@@ -66,8 +67,9 @@ dns:
 
 sniffer:
   enable: true
-  force-dns-mapping: false
   parse-pure-ip: true
+  override-destination: true
+  force-dns-mapping: false
   force-domain:
     - +.netflix.com
     - +.nflxvideo.net
@@ -100,135 +102,103 @@ sniffer:
       ports:
         - 443
         - 8443
-  override-destination: true
+
+# 锚点
+providerSet: &providerSet
+  type: http
+  interval: 86400
+  proxy: DIRECT
+  header:
+    User-Agent:
+      - "clash.meta/mihomo"
+  health-check:
+    enable: true
+    url: https://www.youtube.com/generate_204
+    interval: 300
+    timeout: 4000
+    lazy: true
+    expected-status: 204
+  override:
+    skip-cert-verify: true
+    up: 0
 
 proxy-providers:
   山水云:
-    type: http
+    <<: *providerSet
     url: "https://dy.ssysub5.xyz/api/v1/client/subscribe?token=9f763c9085eec821892d845c91db2ab1"
-    path: ./山水云.yaml
-    interval: 86400
-    proxy: DIRECT
-    header:
-      User-Agent:
-        - "clash.meta/mihomo"
-    health-check:
-      enable: true
-      url: https://www.youtube.com/generate_204
-      interval: 300
-      timeout: 4000
-      lazy: true
-      expected-status: 204
     override:
-      skip-cert-verify: true
-      up: 0
       additional-suffix: "|山水云"
 
-  木头云:
-    type: http
-    url: "https://ceshi.888451.xyz/api/v1/client/subscribe?token=7911b3639fd504932be9abd840323143&flag=meta&types=all"
-    path: ./木头云.yaml
-    interval: 86400
-    proxy: DIRECT
-    header:
-      User-Agent:
-        - "clash.meta/mihomo"
-    health-check:
-      enable: true
-      url: https://www.youtube.com/generate_204
-      interval: 300
-      timeout: 4000
-      lazy: true
-      expected-status: 204
-    override:
-      skip-cert-verify: true
-      up: 0
-      additional-suffix: "|木头云"
-
   CFproxy:
-    type: http
+    <<: *providerSet
     url: "https://cfp.nuofang.filegear-sg.me/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47"
-    path: ./CFproxy.yaml
-    interval: 86400
-    proxy: DIRECT
-    header:
-      User-Agent:
-        - "clash.meta/mihomo"
-    health-check:
-      enable: true
-      url: https://www.youtube.com/generate_204
-      interval: 300
-      timeout: 4000
-      lazy: true
-      expected-status: 204
     override:
-      skip-cert-verify: true
-      up: 0
       additional-suffix: "|CFproxy"
 
   一元机场:
-    type: http
+    <<: *providerSet
     url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=b35bc47836b2a7779ce4e42b799a6496"
-    path: ./一元机场.yaml
-    interval: 86400
-    proxy: DIRECT
-    header:
-      User-Agent:
-        - "clash.meta/mihomo"
-    health-check:
-      enable: true
-      url: https://www.youtube.com/generate_204
-      interval: 300
-      timeout: 4000
-      lazy: true
-      expected-status: 204
     override:
-      skip-cert-verify: true
-      up: 0
       additional-suffix: "|一元机场"
+
+groupsSet: &groupsSet
+  lazy: true
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  timeout: 4000
+  expected-status: 204
+  max-failed-times: 2
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - 自动选择
+      - 山水云
+      - CFproxy
+      - 一元机场
     include-all: true
+    <<: *groupsSet
 
-    lazy: true
-    url: https://www.youtube.com/generate_204
-    interval: 300
-    timeout: 4000
-    expected-status: 204
-    max-failed-times: 2
+  - name: 山水云
+    type: select
+    use:
+      - 山水云
+    <<: *groupsSet
+
+  - name: CFproxy
+    type: select
+    use:
+      - CFproxy
+    <<: *groupsSet
+
+  - name: 一元机场
+    type: select
+    use:
+      - 一元机场
+    <<: *groupsSet
 
   - name: 自动选择
-    type: select
+    type: url-test
     include-all: true
-
-    lazy: true
-    url: https://www.youtube.com/generate_204
-    interval: 300
-    timeout: 4000
     tolerance: 35
-    expected-status: 204
-    max-failed-times: 2
+    <<: *groupsSet
 
 rule-providers:
-  AdRules:
+  antiAD:
     type: http
-    path: ./AdRules.txt
-    url: https://adrules.top/adrules_domainset.txt
+    url: https://anti-ad.net/clash.yaml
+    format: yaml
+    behavior: domain
     interval: 86400
     proxy: DIRECT
-    behavior: domain
-    format: text
 
 rules:
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   - GEOIP,private,DIRECT,no-resolve
-  - RULE-SET,AdRules,REJECT
+  - RULE-SET,antiAD,REJECT
   - DOMAIN-KEYWORD,ubisoft,DIRECT
   - DOMAIN-KEYWORD,icve,DIRECT
   - DOMAIN-KEYWORD,zhihuishu,DIRECT
@@ -248,5 +218,6 @@ rules:
   - DOMAIN-SUFFIX,jsdelivr.net,PROXY
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
-  - NETWORK,UDP,REJECT
+  # - NETWORK,UDP,REJECT
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - MATCH,PROXY
