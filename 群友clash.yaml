@@ -143,27 +143,6 @@ proxy-providers:
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
     override:
       additional-suffix: "|禁止转发|散线"
-  长江:
-    <<: *providerSet
-    url: "https://vless.xn--9sw509f.eu.org/auto"
-    override:
-      additional-suffix: "|禁止转发|长江"
-  一分公益:
-    <<: *providerSet
-    url: "https://yifen.freenods.sbs/gengxin"
-    override:
-      additional-suffix: "|禁止转发|一分公益"
-  别信广告:
-    <<: *providerSet
-    url: "https://www.xrayvip.com/free.txt"
-    override:
-      additional-suffix: "|禁止转发|别信广告"
-
-  养老机场:
-    <<: *providerSet
-    url: "https://sub18457.yljc.online/api/v1/client/subscribe?token=230cadd63b8f2d1871d8d9a7f93f19f3"
-    override:
-      additional-suffix: "|禁止转发|养老机场"
 
 proxies:
   - name: "诺芳CFserv00"
@@ -201,10 +180,6 @@ proxy-groups:
       - CFproxy
       - LanCloud
       - 散线
-      - 长江
-      - 一分公益
-      - 别信广告
-      - 养老机场
     include-all: true
     <<: *groupsSet
 
@@ -224,27 +199,6 @@ proxy-groups:
     type: select
     use:
       - 散线
-    <<: *groupsSet
-
-  - name: 长江
-    type: select
-    use:
-      - 长江
-    <<: *groupsSet
-  - name: 一分公益
-    type: select
-    use:
-      - 一分公益
-    <<: *groupsSet
-  - name: 别信广告
-    type: select
-    use:
-      - 别信广告
-    <<: *groupsSet
-  - name: 养老机场
-    type: select
-    use:
-      - 养老机场
     <<: *groupsSet
 
   - name: 自动选择
