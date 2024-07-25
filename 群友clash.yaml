@@ -29,16 +29,21 @@ dns:
     - quic://223.5.5.5#DIRECT
     - quic://223.6.6.6#DIRECT
   nameserver:
-    - quic://dns.alidns.com#DIRECT
+    - quic://223.5.5.5#DIRECT
+    - quic://223.6.6.6#DIRECT
   proxy-server-nameserver:
-    - quic://dns.alidns.com
+    - quic://223.5.5.5
+    - quic://223.6.6.6
   fallback:
-    - https://dns.google/dns-query#PROXY&h3=false
+    - https://8.8.8.8/dns-query#PROXY&h3=false
+    - https://8.8.4.4/dns-query#PROXY&h3=false
   nameserver-policy:
     "+.openwrt.ai":
-      - quic://dns.alidns.com#DIRECT
+      - quic://223.5.5.5#DIRECT
+      - quic://223.6.6.6#DIRECT
     "+.msftconnecttest.com,+.msftncsi.com,+.bing.com,+.googleapis.cn":
-      - https://dns.google/dns-query#PROXY&h3=false
+      - https://8.8.8.8/dns-query#PROXY&h3=false
+      - https://8.8.4.4/dns-query#PROXY&h3=false
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -129,41 +134,42 @@ proxy-providers:
     override:
       additional-suffix: "|禁止转发|CFproxy"
 
-  一元机场:
-    <<: *providerSet
-    url: "https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=b35bc47836b2a7779ce4e42b799a6496"
-    override:
-      additional-suffix: "|禁止转发|一元机场"
-      
-  别信广告:
-    <<: *providerSet
-    url: "https://ghostcc.cc/ss.cn/xyz"
-    override:
-      additional-suffix: "|禁止转发|别信广告"
-  
   LanCloud:
     <<: *providerSet
     url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
     override:
       additional-suffix: "|禁止转发|LanCloud"
+
+  别信广告:
+    <<: *providerSet
+    url: "https://ghostcc.cc/ss.cn/xyz"
+    override:
+      additional-suffix: "|禁止转发|别信广告"
+
+  散线:
+    <<: *providerSet
+    url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
+    override:
+      additional-suffix: "|禁止转发|散线"
+
 proxies:
-- name: "诺芳CFserv00"
-  type: vless
-  server: vps.nuofang.filegear-sg.me
-  port: 443
-  udp: false
-  uuid: nuofang
-  tls: true
-  client-fingerprint: random
-  skip-cert-verify: true
-  network: ws
-  tfo: true
-  mptcp: true
-  ws-opts:
-    path: /proxy?ed=2560
-    headers:
-      Host: vps.nuofang.filegear-sg.me
-      
+  - name: "诺芳CFserv00"
+    type: vless
+    server: vps.nuofang.filegear-sg.me
+    port: 443
+    udp: false
+    uuid: nuofang
+    tls: true
+    client-fingerprint: random
+    skip-cert-verify: true
+    network: ws
+    tfo: true
+    mptcp: true
+    ws-opts:
+      path: /proxy?ed=2560
+      headers:
+        Host: vps.nuofang.filegear-sg.me
+
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
@@ -180,9 +186,9 @@ proxy-groups:
     proxies:
       - 自动选择
       - CFproxy
-      - 一元机场
-      - 别信广告
       - LanCloud
+      - 别信广告
+      - 散线
     include-all: true
     <<: *groupsSet
 
@@ -192,10 +198,10 @@ proxy-groups:
       - CFproxy
     <<: *groupsSet
 
-  - name: 一元机场
+  - name: LanCloud
     type: select
     use:
-      - 一元机场
+      - LanCloud
     <<: *groupsSet
 
   - name: 别信广告
@@ -204,10 +210,10 @@ proxy-groups:
       - 别信广告
     <<: *groupsSet
 
-  - name: LanCloud
+  - name: 散线
     type: select
     use:
-      - LanCloud
+      - 散线
     <<: *groupsSet
 
   - name: 自动选择
