@@ -153,11 +153,11 @@ proxy-providers:
     url: "https://yifen.freenods.sbs/gengxin"
     override:
       additional-suffix: "|禁止转发|一分公益"
-  无名:
+  别信广告:
     <<: *providerSet
     url: "https://www.xrayvip.com/free.txt"
     override:
-      additional-suffix: "|禁止转发|无名"
+      additional-suffix: "|禁止转发|别信广告"
 
   养老机场:
     <<: *providerSet
@@ -203,7 +203,7 @@ proxy-groups:
       - 散线
       - 长江
       - 一分公益
-      - 无名
+      - 别信广告
       - 养老机场
     include-all: true
     <<: *groupsSet
@@ -236,10 +236,10 @@ proxy-groups:
     use:
       - 一分公益
     <<: *groupsSet
-  - name: 无名
+  - name: 别信广告
     type: select
     use:
-      - 无名
+      - 别信广告
     <<: *groupsSet
   - name: 养老机场
     type: select
