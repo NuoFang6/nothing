@@ -37,7 +37,7 @@ dns:
   fallback:
     - https://dns.google/dns-query#PROXY&h3=false
   nameserver-policy:
-    "+.openwrt.ai":
+    "+.openwrt.ai,+.mwm.moe,+.lizi.moe,+.alcy.cc":
       - quic://223.5.5.5#DIRECT
       - quic://223.6.6.6#DIRECT
     "+.msftconnecttest.com,+.msftncsi.com,+.bing.com,+.googleapis.cn":
@@ -228,6 +228,7 @@ rules:
   - DOMAIN-KEYWORD,shouqianba,DIRECT
   - DOMAIN-SUFFIX,mwm.moe,DIRECT
   - DOMAIN-SUFFIX,lizi.moe,DIRECT
+  - DOMAIN-SUFFIX,alcy.cc,DIRECT
   - DOMAIN-SUFFIX,openwrt.ai,DIRECT
   - DOMAIN-SUFFIX,codelife.cc,DIRECT
   - DOMAIN-KEYWORD,gstatic,PROXY
