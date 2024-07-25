@@ -148,16 +148,17 @@ proxy-providers:
     url: "https://vless.xn--9sw509f.eu.org/auto"
     override:
       additional-suffix: "|禁止转发|长江"
-  无名1:
+  一分公益:
     <<: *providerSet
-    url: "https://d213ejxlf2llc8.cloudfront.net/api/v1/client/subscribe?token=6791899f276da3b0fa6605568b949ecf"
+    url: "https://yifen.freenods.sbs/gengxin"
     override:
-      additional-suffix: "|禁止转发|无名1"
-  无名2:
+      additional-suffix: "|禁止转发|一分公益"
+  无名:
     <<: *providerSet
-    url: "https://www.dma.icu/api/v1/client/subscribe?token=14bb07b519277f0edae7206f8b500905"
+    url: "https://www.xrayvip.com/free.txt"
     override:
-      additional-suffix: "|禁止转发|无名2"
+      additional-suffix: "|禁止转发|无名"
+
   养老机场:
     <<: *providerSet
     url: "https://sub18457.yljc.online/api/v1/client/subscribe?token=230cadd63b8f2d1871d8d9a7f93f19f3"
@@ -201,8 +202,8 @@ proxy-groups:
       - LanCloud
       - 散线
       - 长江
-      - 无名1
-      - 无名2
+      - 一分公益
+      - 无名
       - 养老机场
     include-all: true
     <<: *groupsSet
@@ -230,15 +231,15 @@ proxy-groups:
     use:
       - 长江
     <<: *groupsSet
-  - name: 无名1
+  - name: 一分公益
     type: select
     use:
-      - 无名1
+      - 一分公益
     <<: *groupsSet
-  - name: 无名2
+  - name: 无名
     type: select
     use:
-      - 无名2
+      - 无名
     <<: *groupsSet
   - name: 养老机场
     type: select
