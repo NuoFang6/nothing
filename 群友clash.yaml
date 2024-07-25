@@ -35,15 +35,13 @@ dns:
     - quic://223.5.5.5
     - quic://223.6.6.6
   fallback:
-    - https://8.8.8.8/dns-query#PROXY&h3=false
-    - https://8.8.4.4/dns-query#PROXY&h3=false
+    - https://dns.google/dns-query#PROXY&h3=false
   nameserver-policy:
     "+.openwrt.ai":
       - quic://223.5.5.5#DIRECT
       - quic://223.6.6.6#DIRECT
     "+.msftconnecttest.com,+.msftncsi.com,+.bing.com,+.googleapis.cn":
-      - https://8.8.8.8/dns-query#PROXY&h3=false
-      - https://8.8.4.4/dns-query#PROXY&h3=false
+      - https://dns.google/dns-query#PROXY&h3=false
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -140,17 +138,31 @@ proxy-providers:
     override:
       additional-suffix: "|禁止转发|LanCloud"
 
-  别信广告:
-    <<: *providerSet
-    url: "https://ghostcc.cc/ss.cn/xyz"
-    override:
-      additional-suffix: "|禁止转发|别信广告"
-
   散线:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
     override:
       additional-suffix: "|禁止转发|散线"
+  长江:
+    <<: *providerSet
+    url: "https://vless.xn--9sw509f.eu.org/auto"
+    override:
+      additional-suffix: "|禁止转发|长江"
+  无名1:
+    <<: *providerSet
+    url: "https://d213ejxlf2llc8.cloudfront.net/api/v1/client/subscribe?token=6791899f276da3b0fa6605568b949ecf"
+    override:
+      additional-suffix: "|禁止转发|无名1"
+  无名2:
+    <<: *providerSet
+    url: "https://www.dma.icu/api/v1/client/subscribe?token=14bb07b519277f0edae7206f8b500905"
+    override:
+      additional-suffix: "|禁止转发|无名2"
+  养老机场:
+    <<: *providerSet
+    url: "https://sub18457.yljc.online/api/v1/client/subscribe?token=230cadd63b8f2d1871d8d9a7f93f19f3"
+    override:
+      additional-suffix: "|禁止转发|养老机场"
 
 proxies:
   - name: "诺芳CFserv00"
@@ -187,8 +199,11 @@ proxy-groups:
       - 自动选择
       - CFproxy
       - LanCloud
-      - 别信广告
       - 散线
+      - 长江
+      - 无名1
+      - 无名2
+      - 养老机场
     include-all: true
     <<: *groupsSet
 
@@ -204,16 +219,31 @@ proxy-groups:
       - LanCloud
     <<: *groupsSet
 
-  - name: 别信广告
-    type: select
-    use:
-      - 别信广告
-    <<: *groupsSet
-
   - name: 散线
     type: select
     use:
       - 散线
+    <<: *groupsSet
+
+  - name: 长江
+    type: select
+    use:
+      - 长江
+    <<: *groupsSet
+  - name: 无名1
+    type: select
+    use:
+      - 无名1
+    <<: *groupsSet
+  - name: 无名2
+    type: select
+    use:
+      - 无名2
+    <<: *groupsSet
+  - name: 养老机场
+    type: select
+    use:
+      - 养老机场
     <<: *groupsSet
 
   - name: 自动选择
