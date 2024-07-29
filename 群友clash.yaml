@@ -40,7 +40,7 @@ dns:
     "+.openwrt.ai,+.mwm.moe,+.lizi.moe,+.alcy.cc":
       - quic://223.5.5.5#DIRECT
       - quic://223.6.6.6#DIRECT
-    "+.msftconnecttest.com,+.msftncsi.com,+.bing.com,+.googleapis.cn":
+    "+.googleapis.cn":
       - https://dns.google/dns-query#PROXY&h3=false
   fallback-filter:
     geoip: false
@@ -79,8 +79,8 @@ sniffer:
     - +.amazonaws.com
     - +.media.dssott.com
   skip-domain:
-    - "+.bing.com"
-    - "+.copilot.microsoft.com"
+    # - "+.bing.com"
+    # - "+.copilot.microsoft.com"
     - "+.apple.com"
     - "+.io.mi.com"
     - "+.cdn-telegram.org"
@@ -234,12 +234,13 @@ rules:
   - DOMAIN-KEYWORD,gstatic,PROXY
   - DOMAIN-KEYWORD,tailscale,PROXY
   - DOMAIN-KEYWORD,visualstudio,PROXY
-  - DOMAIN-KEYWORD,bing,PROXY
+  # - DOMAIN-KEYWORD,bing,PROXY
   - DOMAIN-KEYWORD,bard,PROXY
   - DOMAIN-KEYWORD,gemini,PROXY
   - DOMAIN-SUFFIX,googleapis.cn,PROXY
   - DOMAIN-SUFFIX,lmsys.org,PROXY
   - DOMAIN-SUFFIX,jsdelivr.net,PROXY
+  - GEOSITE,win-update,DIRECT
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
   - NETWORK,UDP,REJECT
