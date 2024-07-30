@@ -126,12 +126,6 @@ providerSet: &providerSet
     up: 0
 
 proxy-providers:
-  萌物云:
-    <<: *providerSet
-    url: "https://web-api.moeu.top/api/v1/client/subscribe?token=25276403d6545ada9d464e51b0c2ae27"
-    override:
-      additional-suffix: "|禁止转发|萌物云"
-
   CFproxy:
     <<: *providerSet
     url: "https://cfp.nuofang.filegear-sg.me/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47"
@@ -183,17 +177,10 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - 萌物云
       - CFproxy
       - LanCloud
       - 散线
     include-all: true
-    <<: *groupsSet
-
-  - name: 萌物云
-    type: select
-    use:
-      - 萌物云
     <<: *groupsSet
 
   - name: CFproxy
