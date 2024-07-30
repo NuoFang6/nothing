@@ -146,7 +146,7 @@ proxy-providers:
 
   WARP:
     <<: *providerSet
-    url: "https://neko-warp.nloli.xyz/neko_warp.yaml"
+    url: "https://warp.fxxk.dedyn.io/sub"
     override:
       additional-suffix: "|禁止转发|WARP"
 
