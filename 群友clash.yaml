@@ -144,6 +144,12 @@ proxy-providers:
     override:
       additional-suffix: "|禁止转发|散线"
 
+  WARP:
+    <<: *providerSet
+    url: "https://WARP.fxxk.dedyn.io/auto"
+    override:
+      additional-suffix: "|禁止转发|WARP"
+
 proxies:
   - name: "诺芳CFserv00"
     type: vless
@@ -180,6 +186,7 @@ proxy-groups:
       - CFproxy
       - LanCloud
       - 散线
+      - WARP
     include-all: true
     <<: *groupsSet
 
@@ -199,6 +206,12 @@ proxy-groups:
     type: select
     use:
       - 散线
+    <<: *groupsSet
+
+  - name: WARP
+    type: select
+    use:
+      - WARP
     <<: *groupsSet
 
   - name: 自动选择
