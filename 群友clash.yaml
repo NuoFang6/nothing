@@ -128,7 +128,7 @@ providerSet: &providerSet
 proxy-providers:
   萌物云:
     <<: *providerSet
-    url: "https://sub.domiw.com/api/v1/client/subscribe?token=25276403d6545ada9d464e51b0c2ae27"
+    url: "https://web-api.moeu.top/api/v1/client/subscribe?token=25276403d6545ada9d464e51b0c2ae27"
     override:
       additional-suffix: "|禁止转发|萌物云"
 
