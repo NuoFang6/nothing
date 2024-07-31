@@ -220,7 +220,7 @@ rule-providers:
 
 rules:
   - PROCESS-NAME,com.tencent.mm,DIRECT
-  - PROCESS-REGEX,(?i)miHoYo,DIRECT
+  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
