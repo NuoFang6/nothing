@@ -22,7 +22,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   use-hosts: false
   prefer-h3: false
   cache-algorithm: arc
@@ -96,9 +96,6 @@ sniffer:
       ports:
         - 80
         - 8080
-        - 8880
-        - 8088
-        - 8888
     TLS:
       ports:
         - 443
