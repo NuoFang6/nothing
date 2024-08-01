@@ -143,24 +143,6 @@ proxy-providers:
     override:
       additional-suffix: "|禁止转发|散线"
 
-proxies:
-  - name: "诺芳CFserv00"
-    type: vless
-    server: vps.nuofang.filegear-sg.me
-    port: 443
-    udp: false
-    uuid: nuofang
-    tls: true
-    client-fingerprint: random
-    skip-cert-verify: true
-    network: ws
-    tfo: true
-    mptcp: true
-    ws-opts:
-      path: /proxy?ed=2560
-      headers:
-        Host: vps.nuofang.filegear-sg.me
-
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
@@ -179,7 +161,6 @@ proxy-groups:
       - CFproxy
       - LanCloud
       - 散线
-    include-all: true
     <<: *groupsSet
 
   - name: CFproxy
