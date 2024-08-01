@@ -117,7 +117,7 @@ providerSet: &providerSet
     enable: true
     url: https://www.youtube.com/generate_204
     interval: 300
-    timeout: 4000
+    timeout: 700
     lazy: true
     expected-status: 204
   override:
@@ -147,7 +147,7 @@ groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
   interval: 300
-  timeout: 4000
+  timeout: 700
   expected-status: 204
   max-failed-times: 2
   tfo: true
