@@ -1,6 +1,7 @@
 inbound-tfo: true
 inbound-mptcp: true
 mode: rule
+log-level: warning
 allow-lan: false
 ipv6: true
 geodata-mode: true
