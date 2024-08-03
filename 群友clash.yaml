@@ -15,7 +15,7 @@ tcp-concurrent: true
 unified-delay: true
 geo-auto-update: true
 geo-update-interval: 12
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.0:9090
 secret: ""
 external-ui-name: yacd
 external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/yacd/archive/gh-pages.zip"
