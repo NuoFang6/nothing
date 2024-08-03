@@ -197,7 +197,7 @@ proxy-groups:
     type: load-balance
     strategy: round-robin
     disable-udp: true
-    filter: "HK"
+    filter: "HK|CMCC|VIP"
     use:
       - CFproxy
     <<: *groupsSet
