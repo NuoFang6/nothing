@@ -169,6 +169,7 @@ proxy-groups:
 
   - name: CFproxy
     type: select
+    disable-udp: true
     use:
       - CFproxy
     <<: *groupsSet
@@ -191,6 +192,15 @@ proxy-groups:
     tolerance: 35
     <<: *groupsSet
 
+  - name: 负载均衡
+    type: load-balance
+    strategy: round-robin
+    disable-udp: true
+    filter: "HK"
+    use:
+      - CFproxy
+    <<: *groupsSet
+    
 rule-providers:
   AdRules:
     type: http
