@@ -7,14 +7,18 @@ ipv6: true
 geodata-mode: true
 geosite-matcher: mph
 geodata-loader: memconservative
-find-process-mode: off
+find-process-mode: strict
 keep-alive-interval: 1800
 global-client-fingerprint: random
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
 geo-auto-update: true
-geo-update-interval: 24
+geo-update-interval: 12
+external-controller: 127.0.0.1:9090
+secret: ""
+external-ui-name: yacd
+external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/yacd/archive/gh-pages.zip"
 geox-url:
   geoip: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
   geosite: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
@@ -28,6 +32,7 @@ dns:
   ipv6: false
   use-hosts: false
   prefer-h3: false
+  respect-rules: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
   default-nameserver:
@@ -125,7 +130,7 @@ providerSet: &providerSet
     expected-status: 204
   override:
     skip-cert-verify: true
-    up: 0
+    # up: 0
 
 proxy-providers:
   CFproxy:
@@ -200,14 +205,14 @@ rule-providers:
     proxy: DIRECT
 
 rules:
-  - PROCESS-NAME,com.tencent.mm,DIRECT
-  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
-  - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   - GEOIP,private,DIRECT,no-resolve
   - RULE-SET,AdRules,REJECT
+  - PROCESS-NAME,com.tencent.mm,DIRECT
+  - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
+  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
   - DOMAIN-KEYWORD,ubisoft,DIRECT
   - DOMAIN-KEYWORD,icve,DIRECT
   - DOMAIN-KEYWORD,zhihuishu,DIRECT
@@ -217,6 +222,7 @@ rules:
   - DOMAIN-SUFFIX,alcy.cc,DIRECT
   - DOMAIN-SUFFIX,openwrt.ai,DIRECT
   - DOMAIN-SUFFIX,codelife.cc,DIRECT
+  - DOMAIN-KEYWORD,lagrange,DIRECT
   - DOMAIN-KEYWORD,gstatic,PROXY
   - DOMAIN-KEYWORD,tailscale,PROXY
   - DOMAIN-KEYWORD,visualstudio,PROXY
