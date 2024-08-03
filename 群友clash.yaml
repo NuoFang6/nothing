@@ -216,6 +216,7 @@ rules:
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,telegram,PROXY,no-resolve
   - RULE-SET,AdRules,REJECT
   - PROCESS-NAME,com.tencent.mm,DIRECT
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
