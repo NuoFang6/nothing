@@ -162,6 +162,7 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
+      - 负载均衡
       - CFproxy
       - LanCloud
       - 散线
