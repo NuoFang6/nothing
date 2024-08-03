@@ -15,10 +15,6 @@ tcp-concurrent: true
 unified-delay: true
 geo-auto-update: true
 geo-update-interval: 12
-external-controller: 0.0.0.0:9090
-secret: ""
-external-ui-name: yacd
-external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/yacd/archive/gh-pages.zip"
 geox-url:
   geoip: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
   geosite: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
@@ -125,7 +121,7 @@ providerSet: &providerSet
     enable: true
     url: https://www.youtube.com/generate_204
     interval: 300
-    timeout: 700
+    timeout: 1500
     lazy: true
     expected-status: 204
   override:
@@ -155,7 +151,7 @@ groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
   interval: 300
-  timeout: 700
+  timeout: 1500
   expected-status: 204
   max-failed-times: 2
   tfo: true
