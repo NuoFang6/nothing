@@ -126,7 +126,28 @@ providerSet: &providerSet
     expected-status: 204
   override:
     skip-cert-verify: true
+    tfo: true
+    mptcp: true
     # up: 0
+
+groupsSet: &groupsSet
+  lazy: true
+  url: https://www.youtube.com/generate_204
+  interval: 300
+  timeout: 1500
+  expected-status: 204
+  max-failed-times: 2
+  tfo: true
+  mptcp: true
+
+rule-providers:
+  AdRules:
+    type: http
+    url: https://adrules.top/adrules_domainset.txt
+    format: text
+    behavior: domain
+    interval: 86400
+    proxy: DIRECT
 
 proxy-providers:
   CFproxy:
@@ -146,16 +167,6 @@ proxy-providers:
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
     override:
       additional-suffix: "|禁止转发|散线"
-
-groupsSet: &groupsSet
-  lazy: true
-  url: https://www.youtube.com/generate_204
-  interval: 300
-  timeout: 1500
-  expected-status: 204
-  max-failed-times: 2
-  tfo: true
-  mptcp: true
 
 proxy-groups:
   - name: PROXY
@@ -201,15 +212,6 @@ proxy-groups:
     use:
       - CFproxy
     <<: *groupsSet
-    
-rule-providers:
-  AdRules:
-    type: http
-    url: https://adrules.top/adrules_domainset.txt
-    format: text
-    behavior: domain
-    interval: 86400
-    proxy: DIRECT
 
 rules:
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
