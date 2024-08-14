@@ -11,7 +11,7 @@ find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
 keep-alive-idle: 15
 keep-alive-interval: 15
-global-client-fingerprint: random
+global-client-fingerprint: randomized
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
