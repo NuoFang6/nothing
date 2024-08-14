@@ -159,7 +159,7 @@ providerSet: &providerSet
   health-check:
     enable: true
     url: https://www.youtube.com/generate_204
-    interval: 300
+    interval: 600
     timeout: 1500
     lazy: true
     expected-status: 204
@@ -172,7 +172,7 @@ providerSet: &providerSet
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
-  interval: 300
+  interval: 600
   timeout: 1500
   expected-status: 204
   max-failed-times: 2
