@@ -6,7 +6,7 @@ inbound-tfo: true
 inbound-mptcp: true
 geodata-mode: true
 geosite-matcher: mph
-geodata-loader: standard
+geodata-loader: memconservative
 find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
 keep-alive-idle: 15
