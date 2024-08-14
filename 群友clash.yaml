@@ -40,7 +40,9 @@ tun:
 dns:
   enable: true
   ipv6: false
+  ipv6-timeout: 100
   use-hosts: false
+  use-system-hosts: false
   prefer-h3: false
   respect-rules: false
   cache-algorithm: arc
