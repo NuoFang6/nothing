@@ -1,28 +1,42 @@
-inbound-tfo: true
-inbound-mptcp: true
 mode: rule
 log-level: warning
-allow-lan: false
 ipv6: true
+allow-lan: false
+inbound-tfo: true
+inbound-mptcp: true
 geodata-mode: true
 geosite-matcher: mph
-geodata-loader: memconservative
+geodata-loader: standard
 find-process-mode: strict
-keep-alive-interval: 1800
+disable-keep-alive: false #目前在android端强制为true
+keep-alive-idle: 15
+keep-alive-interval: 15
 global-client-fingerprint: random
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
 geo-auto-update: true
 geo-update-interval: 12
+# external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器
 geox-url:
-  geoip: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-  geosite: https://mirror.ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+  geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+
 clash-for-android:
   append-system-dns: false
+
 profile:
   store-selected: true
   store-fake-ip: true
+
+tun:
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+  dns-hijack:
+    - any:53
+
 dns:
   enable: true
   ipv6: false
@@ -31,6 +45,7 @@ dns:
   respect-rules: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - quic://223.5.5.5#DIRECT
     - quic://223.6.6.6#DIRECT
@@ -41,13 +56,15 @@ dns:
     - quic://223.5.5.5
     - quic://223.6.6.6
   fallback:
-    - https://dns.google/dns-query#PROXY&h3=false
+    - https://8.8.8.8/dns-query#PROXY&h3=false
+    - https://8.8.4.4/dns-query#PROXY&h3=false
   nameserver-policy:
     "+.openwrt.ai,+.mwm.moe,+.lizi.moe,+.alcy.cc":
       - quic://223.5.5.5#DIRECT
       - quic://223.6.6.6#DIRECT
     "+.googleapis.cn":
-      - https://dns.google/dns-query#PROXY&h3=false
+      - https://8.8.8.8/dns-query#PROXY&h3=false
+      - https://8.8.4.4/dns-query#PROXY&h3=false
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -68,7 +85,6 @@ dns:
       - 224.0.0.0/4
       - 240.0.0.0/4
       - 255.255.255.255/32
-  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
     - "*.local"
@@ -108,6 +124,27 @@ sniffer:
       ports:
         - 443
         - 8443
+
+rules:
+  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
+  - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,telegram,PROXY,no-resolve
+  - RULE-SET,AdRules,REJECT
+  - PROCESS-NAME,com.tencent.mm,DIRECT
+  - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
+  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange),DIRECT
+  - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
+  - DOMAIN-REGEX,(gstatic|tailscale|visualstudio|bard|gemini),PROXY
+  - DOMAIN-REGEX,^.*\.(googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
+  - GEOSITE,win-update,DIRECT
+  - GEOSITE,cn,DIRECT
+  - GEOIP,cn,DIRECT,no-resolve
+  - NETWORK,UDP,REJECT
+  # - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+  - MATCH,PROXY
 
 # 锚点
 providerSet: &providerSet
@@ -212,39 +249,3 @@ proxy-groups:
     use:
       - CFproxy
     <<: *groupsSet
-
-rules:
-  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
-  - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
-  - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
-  - GEOIP,private,DIRECT,no-resolve
-  - GEOIP,telegram,PROXY,no-resolve
-  - RULE-SET,AdRules,REJECT
-  - PROCESS-NAME,com.tencent.mm,DIRECT
-  - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
-  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
-  - DOMAIN-KEYWORD,ubisoft,DIRECT
-  - DOMAIN-KEYWORD,icve,DIRECT
-  - DOMAIN-KEYWORD,zhihuishu,DIRECT
-  - DOMAIN-KEYWORD,shouqianba,DIRECT
-  - DOMAIN-KEYWORD,lagrange,DIRECT
-  - DOMAIN-SUFFIX,mwm.moe,DIRECT
-  - DOMAIN-SUFFIX,lizi.moe,DIRECT
-  - DOMAIN-SUFFIX,alcy.cc,DIRECT
-  - DOMAIN-SUFFIX,openwrt.ai,DIRECT
-  - DOMAIN-SUFFIX,codelife.cc,DIRECT
-  - DOMAIN-KEYWORD,gstatic,PROXY
-  - DOMAIN-KEYWORD,tailscale,PROXY
-  - DOMAIN-KEYWORD,visualstudio,PROXY
-  # - DOMAIN-KEYWORD,bing,PROXY
-  - DOMAIN-KEYWORD,bard,PROXY
-  - DOMAIN-KEYWORD,gemini,PROXY
-  - DOMAIN-SUFFIX,googleapis.cn,PROXY
-  - DOMAIN-SUFFIX,lmsys.org,PROXY
-  - DOMAIN-SUFFIX,jsdelivr.net,PROXY
-  - GEOSITE,win-update,DIRECT
-  - GEOSITE,cn,DIRECT
-  - GEOIP,cn,DIRECT,no-resolve
-  - NETWORK,UDP,REJECT
-  # - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
-  - MATCH,PROXY
