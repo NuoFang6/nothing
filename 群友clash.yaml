@@ -199,7 +199,7 @@ proxy-providers:
     <<: *providerSet
     url: "https://cftj.nuofang.dns-dynamic.net/nuofang?clash"
     override:
-      additional-suffix: "|禁止转发|CFproxy"
+      additional-suffix: "|禁止转发|CFtrojan"
 
   LanCloud:
     <<: *providerSet
