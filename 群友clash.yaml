@@ -208,6 +208,7 @@ groupsSet: &groupsSet
   url: https://www.youtube.com/generate_204
   interval: 600
   timeout: 1500
+  tolerance: 35
   expected-status: 204
   max-failed-times: 2
   tfo: true
@@ -257,7 +258,6 @@ proxy-groups:
   - name: 自动选择
     type: url-test
     include-all: true
-    tolerance: 35
     <<: *groupsSet
 
   - name: 负载均衡
