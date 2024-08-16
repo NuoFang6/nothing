@@ -173,7 +173,7 @@ groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
   interval: 600
-  timeout: 1500
+  timeout: 1400
   expected-status: 204
   max-failed-times: 2
   tfo: true
@@ -191,7 +191,13 @@ rule-providers:
 proxy-providers:
   CFproxy:
     <<: *providerSet
-    url: "https://cfp.nuofang.filegear-sg.me/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47"
+    url: "https://cfp.nuofang.dns-dynamic.net/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47?clash"
+    override:
+      additional-suffix: "|禁止转发|CFproxy"
+
+  CFtrojan:
+    <<: *providerSet
+    url: "https://cftj.nuofang.dns-dynamic.net/nuofang?clash"
     override:
       additional-suffix: "|禁止转发|CFproxy"
 
@@ -214,6 +220,7 @@ proxy-groups:
       - 自动选择
       - 负载均衡
       - CFproxy
+      - CFtrojan
       - LanCloud
       - 散线
     <<: *groupsSet
@@ -223,6 +230,13 @@ proxy-groups:
     disable-udp: true
     use:
       - CFproxy
+    <<: *groupsSet
+
+  - name: CFtrojan
+    type: select
+    disable-udp: true
+    use:
+      - CFtrojan
     <<: *groupsSet
 
   - name: LanCloud
@@ -247,7 +261,8 @@ proxy-groups:
     type: load-balance
     strategy: round-robin
     disable-udp: true
-    filter: "HK|CMCC|VIP"
+    filter: "HK|HKG|CMCC|VIP"
     use:
       - CFproxy
+      - CFtrojan
     <<: *groupsSet
