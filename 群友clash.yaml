@@ -148,6 +148,15 @@ rules:
   # - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - MATCH,PROXY
 
+rule-providers:
+  AdRules:
+    type: http
+    url: https://adrules.top/adrules_domainset.txt
+    format: text
+    behavior: domain
+    interval: 86400
+    proxy: DIRECT
+
 # 锚点
 providerSet: &providerSet
   type: http
@@ -168,25 +177,6 @@ providerSet: &providerSet
     tfo: true
     mptcp: true
     # up: 0
-
-groupsSet: &groupsSet
-  lazy: true
-  url: https://www.youtube.com/generate_204
-  interval: 600
-  timeout: 1400
-  expected-status: 204
-  max-failed-times: 2
-  tfo: true
-  mptcp: true
-
-rule-providers:
-  AdRules:
-    type: http
-    url: https://adrules.top/adrules_domainset.txt
-    format: text
-    behavior: domain
-    interval: 86400
-    proxy: DIRECT
 
 proxy-providers:
   CFproxy:
@@ -213,16 +203,29 @@ proxy-providers:
     override:
       additional-suffix: "|禁止转发|散线"
 
+groupsSet: &groupsSet
+  lazy: true
+  url: https://www.youtube.com/generate_204
+  interval: 600
+  timeout: 1400
+  expected-status: 204
+  max-failed-times: 2
+  tfo: true
+  mptcp: true
+
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - 自动选择
+      - 双路优化
       - 负载均衡
       - CFproxy
       - CFtrojan
       - LanCloud
       - 散线
+      - AUTO-CFproxy
+      - AUTO-CFtrojan
     <<: *groupsSet
 
   - name: CFproxy
@@ -261,8 +264,33 @@ proxy-groups:
     type: load-balance
     strategy: round-robin
     disable-udp: true
-    filter: "HK|HKG|CMCC|VIP"
+    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
     use:
       - CFproxy
       - CFtrojan
+    <<: *groupsSet
+
+  - name: AUTO-CFproxy
+    type: url-test
+    disable-udp: true
+    use:
+      - CFproxy
+    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
+    <<: *groupsSet
+
+  - name: AUTO-CFtrojan
+    type: url-test
+    disable-udp: true
+    use:
+      - CFtrojan
+    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
+    <<: *groupsSet
+
+  - name: 双路优化
+    type: load-balance
+    strategy: round-robin
+    disable-udp: true
+    proxies:
+      - AUTO-CFproxy
+      - AUTO-CFtrojan
     <<: *groupsSet
