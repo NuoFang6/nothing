@@ -1,18 +1,4 @@
 proxies:
-- name: 1|日本+V2CROSS.COM
-  network: tcp
-  password: 1dfba761-c1e0-422e-98b6-062da56afb53
-  port: 443
-  server: 146.56.191.191
-  skip-cert-verify: true
-  sni: jkrf1.969799.xyz
-  type: trojan
-- name: 1|日本+东京Amazon数据中心
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 443
-  server: xjjp.zf.edu.ge
-  sni: xjjp.zf.edu.ge
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '3|🇪🇺 欧洲(油管:破解资源君) #49'
