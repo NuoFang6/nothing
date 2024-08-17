@@ -1,4 +1,22 @@
 proxies:
+- name: 1|广东省广州市+移动
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12012
+  server: cn1.cdn.xfltd-cdn.top
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- name: '1|广东省广州市+移动 #1'
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12002
+  server: cn1.cdn.xfltd-cdn.top
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- name: '1|广东省广州市+移动 #2'
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12005
+  server: cn1.cdn.xfltd-cdn.top
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 3|🇨🇳 github.com/freefq - 广东省移动 7
