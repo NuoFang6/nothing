@@ -198,6 +198,10 @@ proxy-providers:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
 
+  白嫖线路:
+    <<: *providerSet
+    url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/白嫖线路.txt"
+
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
@@ -218,6 +222,7 @@ proxy-groups:
       - CF-trojan协议
       - LanCloud
       - 散线
+      - 白嫖线路
       - 请不要分享订阅！
     <<: *groupsSet
 
@@ -245,6 +250,12 @@ proxy-groups:
     type: select
     use:
       - 散线
+    <<: *groupsSet
+
+  - name: 白嫖线路
+    type: select
+    use:
+      - 白嫖线路
     <<: *groupsSet
 
   - name: 自动选择
