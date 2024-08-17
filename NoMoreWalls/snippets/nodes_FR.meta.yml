@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1|🇫🇷FR-146.19.168.161-0530 | 5.9...
+  name: 0|🇫🇷FR-146.19.168.161-0530 | 5.9...
   network: ws
   port: 443
   server: az05.beyondy.cfd
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇫🇷FR-193.160.130.245-0332 | 22...
+  name: 0|🇫🇷FR-193.160.130.245-0332 | 22...
   network: ws
   port: 443
   server: beyonddsz.cfd
@@ -28,42 +28,42 @@ proxies:
       Host: beyonddsz.cfd
     path: /
 - cipher: aes-256-cfb
-  name: 1|🇫🇷FR-195.154.169.198-0720 | 37...
+  name: 0|🇫🇷FR-195.154.169.198-0720 | 37...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
 - cipher: aes-256-cfb
-  name: 1|🇫🇷FR-195.154.185.174-0721 | 36...
+  name: 0|🇫🇷FR-195.154.185.174-0721 | 36...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
 - cipher: aes-256-cfb
-  name: 1|🇫🇷FR-51.15.27.48-1582 | 35.538...
+  name: 0|🇫🇷FR-51.15.27.48-1582 | 35.538...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.27.48
   type: ss
 - cipher: aes-256-cfb
-  name: 1|🇫🇷FR-51.159.111.208-0725 | 42....
+  name: 0|🇫🇷FR-51.159.111.208-0725 | 42....
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.159.111.208
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,3|🇺🇸US(AzadNet.t.me)_202
+  name: 0,2|🇺🇸US(AzadNet.t.me)_202
   password: G!yBwPWH3Vao
   port: 805
   server: 51.178.87.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 1,3|🇺🇸US(AzadNet.t.me)_218
+  name: 0,2|🇺🇸US(AzadNet.t.me)_218
   password: G!yBwPWH3Vao
   port: 810
   server: 51.178.87.37
   type: ss
-- name: 3|🇫FR(AzadNet.t.me)_001
+- name: 2|🇫FR(AzadNet.t.me)_001
   network: tcp
   password: your_password
   port: 443
@@ -72,7 +72,7 @@ proxies:
   sni: aws-fr-paris-1.f1rocketnode.com
   type: trojan
   udp: true
-- name: 3|🇷FR(AzadNet.t.me)_002
+- name: 2|🇷FR(AzadNet.t.me)_002
   network: tcp
   password: your_password
   port: 443
@@ -81,7 +81,7 @@ proxies:
   sni: aws-fr-paris-1.f1rocketnode.com
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_003
+- name: 2|🇫🇷FR(AzadNet.t.me)_003
   network: tcp
   password: b3902e81-6260-4932-bcc9-708445fe40b4
   port: 443
@@ -89,7 +89,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_004
+- name: 2|🇫🇷FR(AzadNet.t.me)_004
   network: tcp
   password: b3902e81-6260-4932-bcc9-708445fe40b4
   port: 443
@@ -98,7 +98,7 @@ proxies:
   sni: frt2.sshocean.net
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_005
+- name: 2|🇫🇷FR(AzadNet.t.me)_005
   network: tcp
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   port: 443
@@ -107,7 +107,7 @@ proxies:
   sni: upload.soft98.download
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_006
+- name: 2|🇫🇷FR(AzadNet.t.me)_006
   network: ws
   port: 80
   server: 94.140.0.0
@@ -117,7 +117,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇷FR(AzadNet.t.me)_007
+- name: 2|🇷FR(AzadNet.t.me)_007
   network: ws
   port: 80
   server: 45.80.110.41
@@ -127,7 +127,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_008
+- name: 2|🇫🇷FR(AzadNet.t.me)_008
   network: ws
   port: 80
   server: 45.80.110.173
@@ -137,7 +137,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_009
+- name: 2|🇫🇷FR(AzadNet.t.me)_009
   network: ws
   port: 80
   server: 45.80.110.245
@@ -147,7 +147,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_010
+- name: 2|🇫🇷FR(AzadNet.t.me)_010
   network: ws
   port: 80
   server: 45.80.110.19
@@ -157,7 +157,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_011
+- name: 2|🇫🇷FR(AzadNet.t.me)_011
   network: ws
   port: 80
   server: 45.80.110.209
@@ -167,7 +167,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_012
+- name: 2|🇫🇷FR(AzadNet.t.me)_012
   network: ws
   port: 80
   server: 45.80.110.130
@@ -177,7 +177,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_013
+- name: 2|🇫🇷FR(AzadNet.t.me)_013
   network: ws
   port: 80
   server: 45.80.110.231
@@ -187,7 +187,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_014
+- name: 2|🇫🇷FR(AzadNet.t.me)_014
   network: ws
   port: 80
   server: 45.80.110.13
@@ -197,7 +197,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_015
+- name: 2|🇫🇷FR(AzadNet.t.me)_015
   network: ws
   port: 80
   server: 45.80.110.175
@@ -207,7 +207,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_016
+- name: 2|🇫🇷FR(AzadNet.t.me)_016
   network: ws
   port: 80
   server: 45.80.110.213
@@ -217,7 +217,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodes
-- name: 3|🇫🇷FR(AzadNet.t.me)_017
+- name: 2|🇫🇷FR(AzadNet.t.me)_017
   network: ws
   port: 80
   server: 45.80.110.161
@@ -227,7 +227,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_018
+- name: 2|🇫🇷FR(AzadNet.t.me)_018
   network: ws
   port: 80
   server: 45.80.110.238
@@ -237,7 +237,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodes
-- name: 3|🇫🇷FR(AzadNet.t.me)_019
+- name: 2|🇫🇷FR(AzadNet.t.me)_019
   network: ws
   port: 80
   server: 45.80.110.201
@@ -247,7 +247,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_020
+- name: 2|🇫🇷FR(AzadNet.t.me)_020
   network: ws
   port: 80
   server: 45.80.110.46
@@ -257,7 +257,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: Twitterfreecodes
-- name: 3|🇫🇷FR(AzadNet.t.me)_021
+- name: 2|🇫🇷FR(AzadNet.t.me)_021
   network: ws
   port: 2053
   server: 45.80.110.211
@@ -267,7 +267,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_022
+- name: 2|🇫🇷FR(AzadNet.t.me)_022
   network: ws
   port: 2053
   server: 45.80.110.207
@@ -277,7 +277,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_023
+- name: 2|🇫🇷FR(AzadNet.t.me)_023
   network: ws
   port: 2087
   server: 45.80.110.215
@@ -287,7 +287,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_024
+- name: 2|🇫🇷FR(AzadNet.t.me)_024
   network: ws
   port: 2087
   server: 45.80.110.230
@@ -297,7 +297,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_025
+- name: 2|🇫🇷FR(AzadNet.t.me)_025
   network: ws
   port: 2087
   server: 45.80.110.96
@@ -307,7 +307,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_026
+- name: 2|🇫🇷FR(AzadNet.t.me)_026
   network: ws
   port: 2087
   server: 45.80.110.133
@@ -317,7 +317,7 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     path: twitterfreecodesfp=chrome
-- name: 3|🇫🇷FR(AzadNet.t.me)_027
+- name: 2|🇫🇷FR(AzadNet.t.me)_027
   network: ws
   port: 80
   server: 193.70.90.159
@@ -326,7 +326,7 @@ proxies:
   uuid: f4859fc9-dc44-11ee-b9ba-00505603e70d
   ws-opts:
     path: /websocket
-- name: 3|🇫🇷FR(AzadNet.t.me)_028
+- name: 2|🇫🇷FR(AzadNet.t.me)_028
   network: tcp
   password: b3df8f31-da3a-4cda-90b1-b3b777cd48e7
   port: 443
@@ -335,7 +335,7 @@ proxies:
   sni: ba24.ir
   type: trojan
   udp: true
-- name: 3|🇷FR(AzadNet.t.me)_029
+- name: 2|🇷FR(AzadNet.t.me)_029
   network: tcp
   password: bfb23be0-6c4f-11ee-8513-1239d0255272
   port: 443
@@ -344,7 +344,7 @@ proxies:
   sni: zula.ir
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_030
+- name: 2|🇫🇷FR(AzadNet.t.me)_030
   network: tcp
   password: 2bf3db70-359e-11ef-93fe-1239d0255272
   port: 443
@@ -354,168 +354,168 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_031
+  name: 2|🇫🇷FR(AzadNet.t.me)_031
   password: faBAoD54k87UJG7
   port: 2376
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇷FR(AzadNet.t.me)_032
+  name: 2|🇷FR(AzadNet.t.me)_032
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇷FR(AzadNet.t.me)_033
+  name: 2|🇷FR(AzadNet.t.me)_033
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_034
+  name: 2|🇫🇷FR(AzadNet.t.me)_034
   password: KixLvKzwjekG00rm
   port: 8080
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_035
+  name: 2|🇫🇷FR(AzadNet.t.me)_035
   password: XKFKl2rULjIp74
   port: 8008
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_036
+  name: 2|🇫🇷FR(AzadNet.t.me)_036
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇷FR(AzadNet.t.me)_037
+  name: 2|🇷FR(AzadNet.t.me)_037
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_038
+  name: 2|🇫🇷FR(AzadNet.t.me)_038
   password: KixLvKzwjekG00rm
   port: 5500
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_039
+  name: 2|🇫🇷FR(AzadNet.t.me)_039
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇷FR(AzadNet.t.me)_040
+  name: 2|🇷FR(AzadNet.t.me)_040
   password: KixLvKzwjekG00rm
   port: 8000
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_041
+  name: 2|🇫🇷FR(AzadNet.t.me)_041
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_042
+  name: 2|🇫🇷FR(AzadNet.t.me)_042
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_043
+  name: 2|🇫🇷FR(AzadNet.t.me)_043
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_044
+  name: 2|🇫🇷FR(AzadNet.t.me)_044
   password: faBAoD54k87UJG7
   port: 2375
   server: 217.182.198.219
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_045
+  name: 2|🇫🇷FR(AzadNet.t.me)_045
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_046
+  name: 2|🇫🇷FR(AzadNet.t.me)_046
   password: faBAoD54k87UJG7
   port: 2375
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_047
+  name: 2|🇫🇷FR(AzadNet.t.me)_047
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_048
+  name: 2|🇫🇷FR(AzadNet.t.me)_048
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_049
+  name: 2|🇫🇷FR(AzadNet.t.me)_049
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇷FR(AzadNet.t.me)_050
+  name: 2|🇷FR(AzadNet.t.me)_050
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_051
+  name: 2|🇫🇷FR(AzadNet.t.me)_051
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_052
+  name: 2|🇫🇷FR(AzadNet.t.me)_052
   password: faBAoD54k87UJG7
   port: 2376
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_053
+  name: 2|🇫🇷FR(AzadNet.t.me)_053
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_054
+  name: 2|🇫🇷FR(AzadNet.t.me)_054
   password: Y6R9pAtvxxzmGC
   port: 8888
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_055
+  name: 2|🇫🇷FR(AzadNet.t.me)_055
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_056
+  name: 2|🇫🇷FR(AzadNet.t.me)_056
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 149.202.82.172
   type: ss
 - cipher: aes-256-gcm
-  name: 3|🇫🇷FR(AzadNet.t.me)_057
+  name: 2|🇫🇷FR(AzadNet.t.me)_057
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 149.202.82.172
   type: ss
-- name: 3|🇫🇷FR(AzadNet.t.me)_058
+- name: 2|🇫🇷FR(AzadNet.t.me)_058
   network: ws
   port: 443
   server: 51.75.30.8
@@ -525,7 +525,7 @@ proxies:
   uuid: 4ad7a8cf-bd7a-4da0-b862-c0b6f91ab583
   ws-opts:
     path: /ssl
-- name: 3|🇫🇷FR(AzadNet.t.me)_059
+- name: 2|🇫🇷FR(AzadNet.t.me)_059
   network: tcp
   password: wkmY1R4EcP
   port: 443
@@ -534,7 +534,7 @@ proxies:
   sni: google.com
   type: trojan
   udp: true
-- name: 3|🇫🇷FR(AzadNet.t.me)_060
+- name: 2|🇫🇷FR(AzadNet.t.me)_060
   network: tcp
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   port: 443
@@ -543,7 +543,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 3|🇫🇷FR(AzadNet.t.me)_061
+  name: 2|🇫🇷FR(AzadNet.t.me)_061
   network: grpc
   port: 8443
   server: 188.165.123.40
@@ -555,7 +555,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 15|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  name: 14|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
   network: ws
   port: 443
   server: jahfkjha.cfd
@@ -572,7 +572,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 15|VMESS-未知>法国-NF解锁国自制剧-ChatGPT-T...
+  name: 14|VMESS-未知>法国-NF解锁国自制剧-ChatGPT-T...
   network: ws
   port: 443
   server: to.tilebani.com
@@ -588,7 +588,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '15|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-... #1'
+  name: '14|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-... #1'
   network: ws
   port: 8880
   server: 104.16.68.38

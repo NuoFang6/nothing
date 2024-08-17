@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1|🇩🇪DE-130.162.47.123-8823 | 32....
+  name: 0|🇩🇪DE-130.162.47.123-8823 | 32....
   network: ws
   port: 6854
   server: 130.162.47.123
@@ -11,7 +11,7 @@ proxies:
   uuid: b5f7e932-f730-4ad2-b425-40977b9db332
   ws-opts:
     path: /
-- name: 3|🇪DE(AzadNet.t.me)_001
+- name: 2|🇪DE(AzadNet.t.me)_001
   network: tcp
   password: your_password
   port: 443
@@ -20,7 +20,7 @@ proxies:
   sni: aws-ge-frankfurt-1.f1rocketnode.com
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_002
+- name: 2|🇩🇪DE(AzadNet.t.me)_002
   network: tcp
   password: your_password
   port: 443
@@ -29,7 +29,7 @@ proxies:
   sni: aws-ge-frankfurt-1.f1rocketnode.com
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_003
+- name: 2|🇩🇪DE(AzadNet.t.me)_003
   network: tcp
   password: d11f1d67-f409-48ef-9767-a0fe081fe81d
   port: 443
@@ -38,7 +38,7 @@ proxies:
   sni: data-ar.efyunpan.com
   type: trojan
   udp: true
-- name: 3|🇪DE(AzadNet.t.me)_004
+- name: 2|🇪DE(AzadNet.t.me)_004
   network: tcp
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   port: 1935
@@ -46,7 +46,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_005
+- name: 2|🇩🇪DE(AzadNet.t.me)_005
   network: ws
   port: 443
   server: 50.7.85.221
@@ -57,7 +57,7 @@ proxies:
   ws-opts:
     path: /?ed=2048
 - client-fingerprint: safari
-  name: 3|🇪DE(AzadNet.t.me)_006
+  name: 2|🇪DE(AzadNet.t.me)_006
   network: ws
   port: 443
   server: 5.75.236.28
@@ -67,7 +67,7 @@ proxies:
   uuid: a25e8ff9-8650-4098-86af-b524e4ec72d8
   ws-opts:
     path: /vYoLL0j3yXajA2rNVYyVkeSUkkM
-- name: 3|🇩🇪DE(AzadNet.t.me)_007
+- name: 2|🇩🇪DE(AzadNet.t.me)_007
   network: tcp
   password: d76294c5-a31f-408d-ba0b-89880107cab5
   port: 443
@@ -75,7 +75,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_008
+- name: 2|🇩🇪DE(AzadNet.t.me)_008
   network: tcp
   password: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
   port: 443
@@ -84,7 +84,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 3|🇪DE(AzadNet.t.me)_009
+  name: 2|🇪DE(AzadNet.t.me)_009
   network: grpc
   port: 2083
   server: 82.165.77.122
@@ -93,38 +93,38 @@ proxies:
   type: vless
   uuid: f46ad8d7-f22c-40fc-d0b2-5db602a6d815
 - cipher: aes-256-cfb
-  name: 3|🇪DE(AzadNet.t.me)_010
+  name: 2|🇪DE(AzadNet.t.me)_010
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.62
   type: ss
 - cipher: aes-256-cfb
-  name: 3|🇪DE(AzadNet.t.me)_011
+  name: 2|🇪DE(AzadNet.t.me)_011
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.61
   type: ss
 - cipher: aes-256-cfb
-  name: 3|🇪DE(AzadNet.t.me)_012
+  name: 2|🇪DE(AzadNet.t.me)_012
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.60
   type: ss
 - cipher: aes-256-cfb
-  name: 3|🇩🇪DE(AzadNet.t.me)_013
+  name: 2|🇩🇪DE(AzadNet.t.me)_013
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.185.37
   type: ss
 - cipher: aes-256-cfb
-  name: 3|🇪DE(AzadNet.t.me)_014
+  name: 2|🇪DE(AzadNet.t.me)_014
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.185.15
   type: ss
 - alterId: 0
   cipher: auto
-  name: 3|🇪DE(AzadNet.t.me)_015
+  name: 2|🇪DE(AzadNet.t.me)_015
   network: ws
   port: 443
   server: 91.195.110.166
@@ -136,7 +136,7 @@ proxies:
     headers:
       host: 38hhuiet-glitter-ee01.lijeyet360.workers.dev
     path: /hms02.fxiaomi.sbs/link
-- name: 3|🇪DE(AzadNet.t.me)_016
+- name: 2|🇪DE(AzadNet.t.me)_016
   network: ws
   port: 22222
   server: 3.122.143.122
@@ -146,7 +146,7 @@ proxies:
   uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     path: /telegram-channel-vlessconfig-ws
-- name: 3|🇪DE(AzadNet.t.me)_018
+- name: 2|🇪DE(AzadNet.t.me)_018
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -155,7 +155,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_019
+- name: 2|🇩🇪DE(AzadNet.t.me)_019
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -164,7 +164,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_020
+- name: 2|🇩🇪DE(AzadNet.t.me)_020
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -173,7 +173,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 3|🇩🇪DE(AzadNet.t.me)_021
+- name: 2|🇩🇪DE(AzadNet.t.me)_021
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -184,7 +184,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 3|🇩🇪DE(AzadNet.t.me)_022
+  name: 2|🇩🇪DE(AzadNet.t.me)_022
   network: tcp
   port: 443
   reality-opts:
@@ -197,16 +197,16 @@ proxies:
   udp: true
   uuid: abaf193b-eeb9-4a8a-afa7-6b6385156e94
 - cipher: aes-256-gcm
-  name: 3|🇩🇪DE(AzadNet.t.me)_023
+  name: 2|🇩🇪DE(AzadNet.t.me)_023
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 142.202.51.58
   type: ss
 - alterId: 0
   cipher: auto
-  name: 7|德国 V2CROSS.COM
+  name: 6,11|🇩🇪 德国 V2CROSS.COM
   network: ws
-  port: 21929
+  port: '21929'
   server: 37.114.60.196
   tls: true
   type: vmess
@@ -215,7 +215,7 @@ proxies:
     headers:
       Host: dxobG4aZmk.gafnode.sbs
     path: /speedtest
-- name: 16|DE_speednode_0015
+- name: 15|DE_speednode_0015
   network: ws
   port: 2096
   server: 45.80.111.38
