@@ -50,20 +50,20 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - quic://223.5.5.5#DIRECT
-    - quic://223.6.6.6#DIRECT
+    - https://1.12.12.12/dns-query#DIRECT&h3=false
   nameserver:
     - quic://223.5.5.5#DIRECT
-    - quic://223.6.6.6#DIRECT
+    - https://1.12.12.12/dns-query#DIRECT&h3=false
   proxy-server-nameserver:
     - quic://223.5.5.5
-    - quic://223.6.6.6
+    - https://1.12.12.12/dns-query
   fallback:
     - https://8.8.8.8/dns-query#PROXY&h3=false
     - https://8.8.4.4/dns-query#PROXY&h3=false
   nameserver-policy:
     "+.openwrt.ai,+.mwm.moe,+.lizi.moe,+.alcy.cc":
       - quic://223.5.5.5#DIRECT
-      - quic://223.6.6.6#DIRECT
+      - https://1.12.12.12/dns-query#DIRECT&h3=false
     "+.googleapis.cn":
       - https://8.8.8.8/dns-query#PROXY&h3=false
       - https://8.8.4.4/dns-query#PROXY&h3=false
@@ -179,29 +179,21 @@ providerSet: &providerSet
     # up: 0
 
 proxy-providers:
-  CFproxy:
+  CF-vless:
     <<: *providerSet
     url: "https://cfp.nuofang.dns-dynamic.net/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47?clash"
-    override:
-      additional-suffix: "|禁止转发|CFproxy"
 
-  CFtrojan:
+  CF-trojan:
     <<: *providerSet
     url: "https://cftj.nuofang.dns-dynamic.net/nuofang?clash"
-    override:
-      additional-suffix: "|禁止转发|CFtrojan"
 
   LanCloud:
     <<: *providerSet
     url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
-    override:
-      additional-suffix: "|禁止转发|LanCloud"
 
   散线:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
-    override:
-      additional-suffix: "|禁止转发|散线"
 
 groupsSet: &groupsSet
   lazy: true
@@ -219,28 +211,30 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - 双路优化
-      - 负载均衡
-      - CFproxy
-      - CFtrojan
+      - CF-vless协议
+      - CF-trojan协议
       - LanCloud
       - 散线
-      - AUTO-CFproxy
-      - AUTO-CFtrojan
+      - 请不要分享订阅！
     <<: *groupsSet
 
-  - name: CFproxy
+  - name: 自动选择
+    type: url-test
+    include-all: true
+    <<: *groupsSet
+
+  - name: CF-vless协议
     type: select
     disable-udp: true
     use:
-      - CFproxy
+      - CF-vless
     <<: *groupsSet
 
-  - name: CFtrojan
+  - name: CF-trojan协议
     type: select
     disable-udp: true
     use:
-      - CFtrojan
+      - CF-trojan
     <<: *groupsSet
 
   - name: LanCloud
@@ -255,42 +249,8 @@ proxy-groups:
       - 散线
     <<: *groupsSet
 
-  - name: 自动选择
-    type: url-test
-    include-all: true
-    <<: *groupsSet
-
-  - name: 负载均衡
-    type: load-balance
-    strategy: round-robin
-    disable-udp: true
-    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
-    use:
-      - CFproxy
-      - CFtrojan
-    <<: *groupsSet
-
-  - name: AUTO-CFproxy
-    type: url-test
-    disable-udp: true
-    use:
-      - CFproxy
-    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
-    <<: *groupsSet
-
-  - name: AUTO-CFtrojan
-    type: url-test
-    disable-udp: true
-    use:
-      - CFtrojan
-    filter: "HK|HKG|CMCC|移动|联通|电信|官方|VIP"
-    <<: *groupsSet
-
-  - name: 双路优化
-    type: load-balance
-    strategy: round-robin
-    disable-udp: true
+  - name: 请不要分享订阅！
+    type: select
     proxies:
-      - AUTO-CFproxy
-      - AUTO-CFtrojan
-    <<: *groupsSet
+      - REJECT
+    lazy: true
