@@ -1,1 +1,115 @@
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 1|🇷🇺RU-194.87.69.102-0758 | 24.6...
+  network: ws
+  port: 12910
+  server: 194.87.69.102
+  servername: 🇷🇺RU-194.87.69.102-0758 | 24.635MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 22.lwdh.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇷🇺RU-194.87.69.102-0762 | 23.8...
+  network: ws
+  port: 12910
+  server: 22.lwdh.us
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 22.lwdh.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3|🇺RU(AzadNet.t.me)_001
+  network: ws
+  port: 12910
+  server: 22.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 3|🇺RU(AzadNet.t.me)_003
+  network: grpc
+  port: 8443
+  server: 85.159.229.8
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇷🇺RU(AzadNet.t.me)_006
+  password: qgpdyzHj8rZW9fDxxkUHRI
+  port: 29312
+  server: 217.196.103.206
+  type: ss
+- cipher: aes-256-cfb
+  name: 3|🇺RU(AzadNet.t.me)_007
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 194.116.173.21
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 3|🇷🇺RU(AzadNet.t.me)_008
+  network: ws
+  port: 80
+  server: 80.92.204.207
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 12612b4e-e426-4b7c-84bd-4a02850abb1e
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 3|🇷🇺RU(AzadNet.t.me)_009
+  network: tcp
+  port: 47555
+  server: 46.29.166.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- cipher: chacha20-ietf-poly1305
+  name: 7,15|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
+  password: WQC0BtSUQnhuBUkm0meQES
+  port: 65305
+  server: 81.19.140.31
+  type: ss
+- name: 12|🇷🇺 俄罗斯(油管:破解资源君)
+  password: dd8a44f9-7c1d-4286-8f6f-4e4f19cb7998
+  port: 32451
+  server: dg.hootfun.top
+  skip-cert-verify: true
+  sni: dg.hootfun.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '12|🇷🇺 俄罗斯(油管:破解资源君) #1'
+  network: ws
+  port: '14369'
+  server: 195.133.53.192
+  tls: false
+  type: vmess
+  uuid: 2331affa-1194-45ae-9457-3746120c4751
+  ws-opts:
+    headers:
+      Host: 195.133.53.192
+    path: /

@@ -1,5 +1,66 @@
 proxies:
-- name: 12|KR_speednode_0080
+- name: 3|KR(AzadNet.t.me)_001
+  network: tcp
+  password: your_password
+  port: 443
+  server: 3.35.157.103
+  skip-cert-verify: true
+  sni: aws-kr-seoul-1.f1rocketnode.com
+  type: trojan
+  udp: true
+- name: 3|🇷KR(AzadNet.t.me)_002
+  network: tcp
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.seoulcityhall.com.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 3|🇷KR(AzadNet.t.me)_003
+  network: tcp
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: official.seoulcitygovernment.com.ua
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 3|🇰🇷KR(AzadNet.t.me)_004
+  network: tcp
+  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
+  port: 443
+  server: kr6.twincloud.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 3|🇷KR(AzadNet.t.me)_005
+  network: tcp
+  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
+  port: 443
+  server: kr2.twincloud.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 12|🇰🇷 韩国(油管:破解资源君)
+  network: ws
+  port: '54541'
+  server: 45.43.41.222
+  tls: false
+  type: vmess
+  uuid: b7a8130f-92e6-4d4f-d0ac-336c164fed48
+  ws-opts:
+    headers:
+      Host: 45.43.41.222
+    path: /
+- name: 12|12|KR_speednode_0080
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+- name: 16|KR_speednode_0080
   network: ws
   password: CMLiu
   port: 443
@@ -13,7 +74,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 12|KR_speednode_0081
+  name: 16|KR_speednode_0081
   network: ws
   port: 443
   server: 59.3.3.161

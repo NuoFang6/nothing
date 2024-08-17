@@ -1,27 +1,62 @@
 proxies:
-- client-fingerprint: chrome
-  name: 10,11|新加坡|@ripaojiedian
+- name: 3|🇸SG(AzadNet.t.me)_001
+  network: tcp
+  password: your_password
+  port: 443
+  server: 18.142.122.247
+  skip-cert-verify: true
+  sni: aws-sg-1.f1rocketnode.com
+  type: trojan
+  udp: true
+- name: 3|🇬SG(AzadNet.t.me)_002
+  network: tcp
+  password: 5c5ceb40-902b-11eb-945a-1239d0255272
+  port: 443
+  server: 103.253.24.212
+  skip-cert-verify: true
+  sni: sg1-trojan.bonds.id
+  type: trojan
+  udp: true
+- name: 3|🇬SG(AzadNet.t.me)_003
+  network: tcp
+  password: 97fdf760-7bbf-11eb-8e14-1239d0255272
+  port: 443
+  server: 103.253.24.216
+  skip-cert-verify: true
+  sni: sg3-trojan.bonds.id
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇸🇬SG(AzadNet.t.me)_004
+  password: ZdWZ9QvFlbOOGreMoE3Bq8
+  port: 18814
+  server: 159.65.129.128
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '12|🇸🇬 新加坡(油管:破解资源君) #1'
+  network: tcp
+  port: '8888'
+  server: 161.117.229.166
+  tls: false
+  type: vmess
+  uuid: 081f8acf-742b-4af5-ca99-6186c80e635b
+- name: '12|🇸🇬 新加坡(油管:破解资源君) #3'
+  password: fcb26379-5505-432e-9ab6-e2c96e94102d
+  port: 30243
+  server: singapore.bpnet.club
+  skip-cert-verify: true
+  type: trojan
+- name: 14|新加坡|@ripaojiedian
   network: tcp
   password: a3467343-8c87-40a6-a87f-a466b340475c
   port: 20230
   server: sg007.421421.xyz
-  skip-cert-verify: false
   sni: 421421.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 10,11|新加坡2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
-  ws-opts:
-    headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
+- cipher: aes-256-cfb
+  name: 16|SG_speednode_0098
+  password: amazonskr05
+  port: 443
+  server: 13.214.209.23
+  type: ss
