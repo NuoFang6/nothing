@@ -149,5 +149,13 @@ proxy-groups:
     tfo: true
     mptcp: true
 
+  - name: ✅ 手动选择 #只是为了兼容硬编码的py
+    type: select
+    proxies: []
+
+  - name: 手动选择
+    type: select
+    proxies: []
+
 rules:
   - MATCH,PROXY
