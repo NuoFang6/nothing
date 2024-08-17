@@ -1,14 +1,12 @@
 proxies:
 - delay: 1619
-  name: 2,4|EE_speednode_0031
+  name: 2|法国 001
   network: ws
   port: 2053
   server: 45.80.110.200
   servername: a.ssll.gay
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:

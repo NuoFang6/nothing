@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: kke.ylks.xyz
     path: /
-- name: 2,4|HK_speednode_0055
+- name: 2,4|HK_speednode_0046
   network: ws
   port: 12346
   server: 8.210.142.146
@@ -55,6 +55,19 @@ proxies:
     headers:
       Host: hkg.cylink.tech
     path: /www/wwwroot/hkg.cylink.tech
+- name: 2|香港 003
+  network: ws
+  port: 2052
+  server: 47.243.70.186
+  servername: vless.leo726china.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 688ee9a9-087b-4d02-ad23-c0b01c9671af
+  ws-opts:
+    headers:
+      Host: vless.leo726china.workers.dev
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 3|🇭🇰 香港(油管:破解资源君)
@@ -150,7 +163,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: randomized
-  name: 4|HK_speednode_0056
+  name: 4|HK_speednode_0047
   network: ws
   port: 35002
   server: 58.176.229.127
@@ -163,258 +176,4 @@ proxies:
   ws-opts:
     headers:
       Host: dns68.putata.eu.org
-    path: /?ed=2048
-- name: 4|HK_speednode_0057
-  network: ws
-  port: 2053
-  server: 47.243.90.180
-  servername: page-us-qg0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
-  ws-opts:
-    headers:
-      Host: page-us-qg0.pages.dev
-    path: /
-- name: 4|HK_speednode_0058
-  network: ws
-  port: 80
-  server: 8.217.251.62
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0059
-  network: ws
-  port: 80
-  server: 47.238.6.102
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0060
-  network: ws
-  port: 80
-  server: 47.238.131.39
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0061
-  network: ws
-  port: 80
-  server: 8.218.174.118
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0062
-  network: ws
-  port: 80
-  server: 8.218.3.198
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0063
-  network: ws
-  port: 80
-  server: 8.218.65.237
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0064
-  network: ws
-  port: 80
-  server: 8.218.52.115
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0065
-  network: ws
-  port: 80
-  server: 47.76.77.103
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0066
-  network: ws
-  port: 80
-  server: 8.210.42.171
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0067
-  network: ws
-  port: 80
-  server: 8.217.154.218
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0068
-  network: ws
-  port: 80
-  server: 47.76.159.146
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0069
-  network: ws
-  port: 80
-  server: 47.76.213.245
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0070
-  network: ws
-  port: 80
-  server: 47.238.43.79
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0071
-  network: ws
-  port: 80
-  server: 8.218.18.235
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0072
-  network: ws
-  port: 80
-  server: 8.218.65.171
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0073
-  network: ws
-  port: 80
-  server: 8.218.243.95
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0074
-  network: ws
-  port: 80
-  server: 8.218.211.17
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0075
-  network: ws
-  port: 80
-  server: 47.76.189.102
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0076
-  network: ws
-  port: 80
-  server: 8.212.41.98
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 4|HK_speednode_0077
-  network: ws
-  port: 80
-  server: 47.76.233.67
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
     path: /?ed=2048

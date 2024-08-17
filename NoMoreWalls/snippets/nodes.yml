@@ -1458,10 +1458,38 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 1,3|2|d*********g.com_2
+  name: 1|美国 CloudFlare节点
+  network: ws
+  port: 2082
+  server: 104.16.61.8
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: y-old-mode-9c0diab.wiriy73548.workers.dev
+    path: /obdii.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #1'
   network: ws
   port: '2086'
-  server: 104.16.148.244
+  server: 104.19.38.88
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip5-4.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 1,3|2|d*********g.com_1
+  network: ws
+  port: '2086'
+  server: 23.227.38.5
+  servername: ''
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
@@ -1469,6 +1497,104 @@ proxies:
     headers:
       Host: ip006.freegradely.xyz
     path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #2'
+  network: ws
+  port: '2086'
+  server: 172.64.233.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸 美国 CloudFlare节点 #4'
+  network: ws
+  port: '2086'
+  server: 172.64.166.9
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #4'
+  network: ws
+  port: '80'
+  server: 104.27.78.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
+  ws-opts:
+    headers:
+      Host: www.iransell.ir.127.0.0.1.dl3.эврика.mrarsha.尤里卡специалист.wonkacapitano.buzz.
+    path: /vmess#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #5'
+  network: ws
+  port: 2086
+  server: 172.64.233.35
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 1|美国+CloudFlare节点
+  network: ws
+  password: auto
+  port: 443
+  server: 104.21.90.210
+  sni: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+    path: '%2Fabbas.ab841vpn.workers.dev%2F%3Fed%3D2560.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY.Telegram-%40ViP_FRAGMENT_V2RAY'
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸 美国 CloudFlare节点 #16'
+  network: ws
+  port: '8080'
+  server: www.darkroom.lol
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 1|美国 V2CROSS.COM
+  network: ws
+  port: 37000
+  server: 199.180.102.219
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/133512202814
+- name: 1|安徽省+移动数据上网公共出口
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12001
+  server: cn1.cdn.xfltd-cdn.top
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 1|印度 V2CROSS.COM
@@ -1485,17 +1611,31 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 1|美国 CloudFlare公司CDN节点(shopify)
+  name: '1|美国 CloudFlare节点 #7'
   network: ws
-  port: 80
-  server: 23.227.38.145
+  port: '2086'
+  server: 172.64.167.44
+  servername: ''
   tls: false
   type: vmess
-  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: www.iransell.ir.127.0.0.1.dl3.эврика.mrarsha.尤里卡специалист.wonkacapitano.buzz.
-    path: /vmess#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 64
+  cipher: auto
+  name: 1|美国 华盛顿Cogent通信公司
+  network: ws
+  port: 31000
+  server: 38.11.61.93
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/341113051312
 - alterId: 0
   cipher: auto
   name: '1|印度 V2CROSS.COM #1'
@@ -1510,20 +1650,104 @@ proxies:
     headers:
       Host: irsoft.sytes.net
     path: /@forwardv2ray
+- name: 1|美国+Amazon数据中心
+  password: PmSgz3FlTsg5
+  port: 16544
+  server: 13.40.57.70
+  sni: appsvs.shop
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '1|印度 V2CROSS.COM #2'
+  name: '1|美国 CloudFlare节点 #8'
   network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
+  port: 2086
+  server: 104.19.45.31
+  tls: false
   type: vmess
-  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: sahand.serveminecraft.net
-    path: /@forwardv2ray
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 1,3|🇫🇮 11|芬兰|@ripaojiedian
+  network: ws
+  port: '46085'
+  server: mmfi85.micloud.buzz
+  tls: false
+  type: vmess
+  uuid: a6e1943b-ca88-4d76-b041-9782be56a54d
+  ws-opts:
+    headers:
+      Host: mmfi85.micloud.buzz
+    path: /zh-cn
+- alterId: 64
+  cipher: auto
+  name: '1|美国 华盛顿Cogent通信公司 #1'
+  network: ws
+  port: 37002
+  server: 38.33.49.109
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/320513310607
+- alterId: 64
+  cipher: auto
+  name: '1|美国 华盛顿Cogent通信公司 #2'
+  network: ws
+  port: 30002
+  server: 38.11.69.41
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/292235140025
+- name: 1|乌克兰+V2CROSS.COM
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12001
+  server: 82.117.226.218
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- name: 1|美国+戴维逊大学
+  network: grpc
+  password: fQ84Q7A4dw
+  port: 443
+  server: 152.42.252.70
+  skip-cert-verify: true
+  sni: ultra.vpnxhub.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 1|美国 俄勒冈州达尔斯Google云计算数据中心
+  network: ws
+  port: 50121
+  server: 35.199.164.204
+  tls: false
+  type: vmess
+  uuid: 1c3bf5a6-1ba4-4fdd-c834-2273df1bae20
+  ws-opts:
+    headers:
+      Host: ''
+    path: /1c3bf5a6
+- alterId: 64
+  cipher: auto
+  name: 1|美国 加利福尼亚州洛杉矶Sharktech数据中心
+  network: ws
+  port: 37000
+  server: 64.32.13.13
+  tls: true
+  type: vmess
+  uuid: 4dc574eb-94e8-439e-aad6-4d74df1a38c5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/340434130032
 - alterId: 0
   cipher: auto
   name: 2|加拿大 026
@@ -2353,20 +2577,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 013
-  network: ws
-  port: 2086
-  server: russia.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 016
   network: ws
   port: 2086
@@ -2486,6 +2696,17 @@ proxies:
     headers:
       Host: hkg.cylink.tech
     path: /www/wwwroot/hkg.cylink.tech
+- name: 2|韩国 005
+  network: ws
+  password: CMLiu
+  port: 25006
+  server: 121.148.19.178
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸 _US_美国
@@ -3526,19 +3747,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国 CloudFlare节点 #16'
-  network: ws
-  port: '8080'
-  server: www.darkroom.lol
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.darkroom.lol
-    path: /
-- alterId: 0
-  cipher: auto
   name: '3|🇺🇸 github.com/freefq - 美国Cloud... #1'
   network: ws
   port: '8880'
@@ -3779,19 +3987,6 @@ proxies:
     headers:
       Host: ''
     path: /path/130624130330
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 美国 CloudFlare节点 #4'
-  network: ws
-  port: '2086'
-  server: 172.64.166.9
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: '3|🇺🇸 美国 CloudFlare节点 #5'
@@ -4277,10 +4472,10 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 3|2|d*********g.com_1
+  name: 3|2|d*********g.com_2
   network: ws
   port: '2086'
-  server: 23.227.38.5
+  server: 104.16.148.244
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
@@ -4473,19 +4668,6 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 3|🇫🇮 11|芬兰|@ripaojiedian
-  network: ws
-  port: '46085'
-  server: mmfi85.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: a6e1943b-ca88-4d76-b041-9782be56a54d
-  ws-opts:
-    headers:
-      Host: mmfi85.micloud.buzz
-    path: /zh-cn
 - name: 3|12|KR_speednode_0080
   password: CMLiu
   port: 443
@@ -4522,79 +4704,7 @@ proxies:
   port: 20001
   server: hk1.mhw7e2.online
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0009
-  network: tcp
-  packet-encoding: xudp
-  port: 35705
-  server: sdcu.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0010
-  network: tcp
-  packet-encoding: xudp
-  port: 48002
-  server: szcm.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0011
-  network: ws
-  packet-encoding: xudp
-  port: 31249
-  server: szcm.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-  ws-opts:
-    headers:
-      Host: szcm.skycloud.lol
-    path: /www/wwwroot/nrt.cylink.tech
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0012
-  network: ws
-  packet-encoding: xudp
-  port: 12225
-  server: szcm.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-  ws-opts:
-    headers:
-      Host: szcm.skycloud.lol
-    path: /www/wwwroot/nrt.cylink.tech
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0013
-  network: ws
-  packet-encoding: xudp
-  port: 23426
-  server: szcm.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-  ws-opts:
-    headers:
-      Host: szcm.skycloud.lol
-    path: /www/wwwroot/nrt.cylink.tech
-- alterId: 0
-  cipher: auto
-  name: 4|CN_speednode_0014
-  network: tcp
-  packet-encoding: xudp
-  port: 58559
-  server: szcm.skycloud.lol
-  type: vmess
-  udp: true
-  uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
-- name: 4|KR_speednode_0080
+- name: 4|KR_speednode_0048
   network: ws
   password: CMLiu
   port: 443
@@ -4608,12 +4718,12 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
 - cipher: aes-256-cfb
-  name: 4|SG_speednode_0098
+  name: 4|SG_speednode_0065
   password: amazonskr05
   port: 443
   server: 13.214.209.23
   type: ss
-- name: 4|US_speednode_0152
+- name: 4|US_speednode_0084
   network: ws
   password: CMLiu
   port: 443

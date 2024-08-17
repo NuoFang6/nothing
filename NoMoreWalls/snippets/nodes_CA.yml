@@ -724,20 +724,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 013
-  network: ws
-  port: 2086
-  server: russia.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 016
   network: ws
   port: 2086
