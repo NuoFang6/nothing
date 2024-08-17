@@ -1,14 +1,1 @@
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 3|🇩🇪 德国 V2CROSS.COM
-  network: ws
-  port: '21929'
-  server: 37.114.60.196
-  tls: true
-  type: vmess
-  uuid: 691C16EE-D3A5-4BA6-AE8B-59C12B278D86
-  ws-opts:
-    headers:
-      Host: dxobG4aZmk.gafnode.sbs
-    path: /speedtest
+proxies: []
