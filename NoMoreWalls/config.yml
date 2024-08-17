@@ -148,6 +148,7 @@ proxy-groups:
     max-failed-times: 2
     tfo: true
     mptcp: true
+    proxies: []
 
   - name: ✅ 手动选择 #只是为了兼容硬编码的py
     type: select
