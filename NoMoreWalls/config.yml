@@ -138,7 +138,6 @@ proxy-groups:
 
   - name: 自动选择
     type: url-test
-    include-all: true
     lazy: true
     url: https://www.youtube.com/generate_204
     interval: 600
@@ -150,7 +149,7 @@ proxy-groups:
     mptcp: true
     proxies: []
 
-  - name: ✅ 手动选择 #只是为了兼容硬编码的py
+  - name: 1手动选择 #只是为了兼容硬编码的py
     type: select
     proxies: []
 

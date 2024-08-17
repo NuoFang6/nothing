@@ -58,9 +58,6 @@ jobs:
           sleep 5
           baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@main"
           urls=""
-          for f in `find snippets -name "*.yml" -type f`; do
-            urls+="${baseUrl}/NoMoreWalls/${f},"
-          done
           for f in `find . -maxdepth 1 -name "list*" -type f`; do
             urls+="${baseUrl}/NoMoreWalls/${f},"
           done
