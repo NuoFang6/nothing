@@ -1,38 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇪DE-130.162.47.123-8823 | 32....
-  network: ws
-  port: 6854
-  server: 130.162.47.123
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
-  ws-opts:
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 5|德国 V2CROSS.COM
-  network: ws
-  port: 30002
-  server: 89.163.155.44
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/181721272114
-- name: 5|福建省宁德市+联通
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12004
-  server: cn1.cdn.xfltd-cdn.top
-  sni: cn1.cdn.xfltd-cdn.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 10|🇩🇪 德国 V2CROSS.COM
+  name: 3|🇩🇪 德国 V2CROSS.COM
   network: ws
   port: '21929'
   server: 37.114.60.196
@@ -43,7 +12,7 @@ proxies:
     headers:
       Host: dxobG4aZmk.gafnode.sbs
     path: /speedtest
-- name: 14|DE_speednode_0015
+- name: 4|DE_speednode_0015
   network: ws
   port: 2096
   server: 45.80.111.38

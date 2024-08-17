@@ -1,27 +1,15 @@
 proxies:
-- name: 5|韩国+KT电信
+- name: 1|韩国+KT电信
   network: ws
   password: CMLiu
-  port: 38520
-  server: 175.199.54.84
+  port: 443
+  server: 59.3.3.161
   sni: aliorg.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: aliorg.filegear-sg.me
-    path: '%2F'
-- name: '5|韩国+KT电信 #1'
-  network: ws
-  password: CMLiu
-  port: 25006
-  server: 121.148.19.178
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: '%2F'
-- name: 8|韩国 002
+- name: 2|韩国 002
   network: ws
   password: CMLiu
   port: 443
@@ -32,7 +20,7 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 8|韩国 003
+- name: 2|韩国 003
   network: ws
   password: CMLiu
   port: 11423
@@ -43,7 +31,7 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 8|韩国 004
+- name: 2|韩国 004
   network: ws
   password: CMLiu
   port: 10443
@@ -56,7 +44,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10|🇰🇷 韩国(油管:破解资源君)
+  name: 3|🇰🇷 韩国(油管:破解资源君)
   network: ws
   port: '54541'
   server: 45.43.41.222
@@ -67,14 +55,14 @@ proxies:
     headers:
       Host: 45.43.41.222
     path: /
-- name: 10|12|KR_speednode_0080
+- name: 3|12|KR_speednode_0080
   password: CMLiu
   port: 443
   server: 59.3.3.161
   skip-cert-verify: true
   sni: aliorg.filegear-sg.me
   type: trojan
-- name: 14|KR_speednode_0080
+- name: 4|KR_speednode_0080
   network: ws
   password: CMLiu
   port: 443

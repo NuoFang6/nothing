@@ -1,36 +1,18 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺RU-194.87.69.102-0758 | 24.6...
+- name: 1|俄罗斯+V2CROSS.COM
   network: ws
-  port: 12910
-  server: 194.87.69.102
-  servername: 🇷🇺RU-194.87.69.102-0758 | 24.635MB
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  password: CMLiu
+  port: 8443
+  server: 85.159.228.23
+  sni: aliorg.filegear-sg.me
+  type: trojan
   ws-opts:
     headers:
-      Host: 22.lwdh.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇷🇺RU-194.87.69.102-0762 | 23.8...
-  network: ws
-  port: 12910
-  server: 22.lwdh.us
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: 22.lwdh.us
-    path: /
+      Host: aliorg.filegear-sg.me
+    path: '%2F'
 - client-fingerprint: chrome
   delay: 1451
-  name: 8|俄罗斯 003
+  name: 2|俄罗斯 003
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -43,7 +25,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
 - delay: 817
-  name: 8|俄罗斯 002
+  name: 2|俄罗斯 002
   network: ws
   port: 80
   server: 185.148.104.199
@@ -55,7 +37,7 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - delay: 1457
-  name: 8,14|RU_speednode_0085
+  name: 2,4|RU_speednode_0085
   network: ws
   port: 2096
   server: 188.42.145.159
@@ -70,7 +52,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - delay: 2713
-  name: 8,14|RU_speednode_0092
+  name: 2,4|RU_speednode_0092
   network: ws
   port: 443
   server: 212.41.15.119
@@ -85,7 +67,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /
 - delay: 1259
-  name: 8|俄罗斯 001
+  name: 2|俄罗斯 001
   network: ws
   port: 443
   server: 188.42.145.159
@@ -97,7 +79,7 @@ proxies:
     headers:
       Host: VIrgiNiavPn-nL.pagEs.dEv
     path: /
-- name: 10|🇷🇺 俄罗斯(油管:破解资源君)
+- name: 3|🇷🇺 俄罗斯(油管:破解资源君)
   password: dd8a44f9-7c1d-4286-8f6f-4e4f19cb7998
   port: 32451
   server: dg.hootfun.top
@@ -106,7 +88,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '10|🇷🇺 俄罗斯(油管:破解资源君) #1'
+  name: '3|🇷🇺 俄罗斯(油管:破解资源君) #1'
   network: ws
   port: '14369'
   server: 195.133.53.192
@@ -117,13 +99,7 @@ proxies:
     headers:
       Host: 195.133.53.192
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 10,13|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
-  password: WQC0BtSUQnhuBUkm0meQES
-  port: 65305
-  server: 81.19.140.31
-  type: ss
-- name: 14|RU_speednode_0086
+- name: 4|RU_speednode_0086
   network: ws
   port: 8443
   server: 188.42.145.159
@@ -138,7 +114,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 14|RU_speednode_0087
+  name: 4|RU_speednode_0087
   network: ws
   port: 443
   server: 188.42.145.178
@@ -153,7 +129,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 14|RU_speednode_0088
+  name: 4|RU_speednode_0088
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -168,7 +144,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
 - client-fingerprint: chrome
-  name: 14|RU_speednode_0089
+  name: 4|RU_speednode_0089
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -182,7 +158,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chromefp=chromefp=chrome
-- name: 14|RU_speednode_0090
+- name: 4|RU_speednode_0090
   network: ws
   port: 443
   server: 185.59.218.0
@@ -197,7 +173,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 14|RU_speednode_0091
+  name: 4|RU_speednode_0091
   network: ws
   port: 443
   server: 188.42.145.140
@@ -212,7 +188,7 @@ proxies:
       Host: g1.youyuan.us.kg
     path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
 - client-fingerprint: chrome
-  name: 14|RU_speednode_0093
+  name: 4|RU_speednode_0093
   network: ws
   port: 443
   server: 188.42.145.84

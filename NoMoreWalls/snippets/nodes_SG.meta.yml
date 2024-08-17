@@ -1,25 +1,5 @@
 proxies:
-- name: 5|新加坡+NewMedia数据中心
-  password: c8cf1dd0-4f34-11ef-9aac-1239d0255272
-  port: 443
-  server: sg2-trojan.bonds.id
-  sni: m.mobilelegends.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 7,10,12|新加坡2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
-  ws-opts:
-    headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
-- name: 8|新加坡 001
+- name: 2|新加坡 001
   network: ws
   password: CMLiu
   port: 8443
@@ -32,28 +12,27 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10|🇸🇬 新加坡(油管:破解资源君) #1'
+  name: '3|🇸🇬 新加坡(油管:破解资源君) #1'
   network: tcp
   port: '8888'
   server: 161.117.229.166
   tls: false
   type: vmess
   uuid: 081f8acf-742b-4af5-ca99-6186c80e635b
-- name: '10|🇸🇬 新加坡(油管:破解资源君) #3'
+- name: '3|🇸🇬 新加坡(油管:破解资源君) #3'
   password: fcb26379-5505-432e-9ab6-e2c96e94102d
   port: 30243
   server: singapore.bpnet.club
   skip-cert-verify: true
   type: trojan
-- name: 10,12|新加坡|@ripaojiedian
-  network: tcp
+- name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
   password: a3467343-8c87-40a6-a87f-a466b340475c
   port: 20230
   server: sg007.421421.xyz
   skip-cert-verify: false
   sni: 421421.xyz
   type: trojan
-- name: 14|SG_speednode_0096
+- name: 4|SG_speednode_0096
   network: ws
   port: 2083
   server: 47.236.232.148
@@ -67,7 +46,7 @@ proxies:
     headers:
       Host: go.jp980.cloudns.org
     path: /?ed=2560
-- name: 14|SG_speednode_0097
+- name: 4|SG_speednode_0097
   network: ws
   port: 443
   server: 27.50.48.222
@@ -82,12 +61,12 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - cipher: aes-256-cfb
-  name: 14|SG_speednode_0098
+  name: 4|SG_speednode_0098
   password: amazonskr05
   port: 443
   server: 13.214.209.23
   type: ss
-- name: 14|SG_speednode_0099
+- name: 4|SG_speednode_0099
   network: ws
   port: 80
   server: 8.223.3.253
@@ -99,7 +78,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0100
+- name: 4|SG_speednode_0100
   network: ws
   port: 80
   server: 8.223.2.222
@@ -111,7 +90,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0101
+- name: 4|SG_speednode_0101
   network: ws
   port: 80
   server: 47.236.87.246
@@ -123,7 +102,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0102
+- name: 4|SG_speednode_0102
   network: ws
   port: 80
   server: 47.236.144.208
@@ -135,7 +114,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0103
+- name: 4|SG_speednode_0103
   network: ws
   port: 80
   server: 47.236.166.131
@@ -147,7 +126,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0104
+- name: 4|SG_speednode_0104
   network: ws
   port: 80
   server: 8.219.191.110
@@ -159,7 +138,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0105
+- name: 4|SG_speednode_0105
   network: ws
   port: 80
   server: 47.236.232.148
@@ -171,7 +150,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0106
+- name: 4|SG_speednode_0106
   network: ws
   port: 80
   server: 47.236.254.120
@@ -183,7 +162,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0107
+- name: 4|SG_speednode_0107
   network: ws
   port: 80
   server: 47.236.75.113
@@ -195,7 +174,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0108
+- name: 4|SG_speednode_0108
   network: ws
   port: 80
   server: 47.236.165.25
@@ -207,7 +186,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0109
+- name: 4|SG_speednode_0109
   network: ws
   port: 80
   server: 47.236.83.239
@@ -219,7 +198,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0110
+- name: 4|SG_speednode_0110
   network: ws
   port: 80
   server: 47.236.150.13
@@ -231,7 +210,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0111
+- name: 4|SG_speednode_0111
   network: ws
   port: 80
   server: 47.236.174.206
@@ -243,7 +222,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0112
+- name: 4|SG_speednode_0112
   network: ws
   port: 80
   server: 47.236.10.100
@@ -255,7 +234,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0113
+- name: 4|SG_speednode_0113
   network: ws
   port: 80
   server: 47.236.149.107
@@ -267,7 +246,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0114
+- name: 4|SG_speednode_0114
   network: ws
   port: 80
   server: 47.236.102.102
@@ -279,7 +258,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0115
+- name: 4|SG_speednode_0115
   network: ws
   port: 80
   server: 47.236.121.23
@@ -291,7 +270,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0116
+- name: 4|SG_speednode_0116
   network: ws
   port: 80
   server: 47.236.168.17
@@ -303,7 +282,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0117
+- name: 4|SG_speednode_0117
   network: ws
   port: 80
   server: 47.236.5.223
@@ -315,7 +294,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0118
+- name: 4|SG_speednode_0118
   network: ws
   port: 80
   server: 47.236.172.71
@@ -327,7 +306,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0119
+- name: 4|SG_speednode_0119
   network: ws
   port: 80
   server: 8.219.209.14
@@ -339,7 +318,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0120
+- name: 4|SG_speednode_0120
   network: ws
   port: 80
   server: 47.236.205.188
@@ -351,7 +330,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0121
+- name: 4|SG_speednode_0121
   network: ws
   port: 80
   server: 47.236.104.11
@@ -363,7 +342,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0122
+- name: 4|SG_speednode_0122
   network: ws
   port: 80
   server: 47.236.170.225
@@ -375,7 +354,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0123
+- name: 4|SG_speednode_0123
   network: ws
   port: 80
   server: 47.236.97.90
@@ -387,7 +366,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0124
+- name: 4|SG_speednode_0124
   network: ws
   port: 80
   server: 47.236.180.51
@@ -399,7 +378,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0125
+- name: 4|SG_speednode_0125
   network: ws
   port: 80
   server: 47.236.93.176
@@ -411,7 +390,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0126
+- name: 4|SG_speednode_0126
   network: ws
   port: 80
   server: 47.236.170.54
@@ -423,7 +402,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0127
+- name: 4|SG_speednode_0127
   network: ws
   port: 80
   server: 47.236.123.133
@@ -435,7 +414,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0128
+- name: 4|SG_speednode_0128
   network: ws
   port: 80
   server: 47.236.144.48
@@ -447,7 +426,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0129
+- name: 4|SG_speednode_0129
   network: ws
   port: 80
   server: 47.236.169.164
@@ -459,7 +438,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0130
+- name: 4|SG_speednode_0130
   network: ws
   port: 80
   server: 47.236.144.156
@@ -471,7 +450,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0131
+- name: 4|SG_speednode_0131
   network: ws
   port: 80
   server: 47.236.171.205
@@ -483,7 +462,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0132
+- name: 4|SG_speednode_0132
   network: ws
   port: 80
   server: 47.236.144.196
@@ -495,7 +474,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 14|SG_speednode_0133
+- name: 4|SG_speednode_0133
   network: ws
   port: 80
   server: 47.236.125.62

@@ -1,13 +1,37 @@
 proxies:
-- name: 5|广东省广州市+移动
+- name: 1|广东省+移动
   password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
   port: 12003
   server: cn1.cdn.xfltd-cdn.top
   sni: cn1.cdn.xfltd-cdn.top
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 1|广东省广州市 移动
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 10|🇺🇸 美国 Akamai科技公司CDN网络节点
+  name: 1|广东省深圳市 电信
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 3|🇺🇸 美国 Akamai科技公司CDN网络节点
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -18,8 +42,7 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- name: 10,12|台湾3|@ripaojiedian
-  network: tcp
+- name: 3|🇨🇳 10,11|台湾3|@ripaojiedian
   password: 8fc4337b-4636-44a2-a160-9d360436aa57
   port: 13035
   server: naiu-other.05vr9nyqg5.download
@@ -27,14 +50,14 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 14|CN_speednode_0008
+  name: 4|CN_speednode_0008
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
   type: ss
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0009
+  name: 4|CN_speednode_0009
   network: tcp
   packet-encoding: xudp
   port: 35705
@@ -44,7 +67,7 @@ proxies:
   uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0010
+  name: 4|CN_speednode_0010
   network: tcp
   packet-encoding: xudp
   port: 48002
@@ -54,7 +77,7 @@ proxies:
   uuid: 39965e39-6a57-4bfa-a3cf-b20272d4fee5
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0011
+  name: 4|CN_speednode_0011
   network: ws
   packet-encoding: xudp
   port: 31249
@@ -68,7 +91,7 @@ proxies:
     path: /www/wwwroot/nrt.cylink.tech
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0012
+  name: 4|CN_speednode_0012
   network: ws
   packet-encoding: xudp
   port: 12225
@@ -82,7 +105,7 @@ proxies:
     path: /www/wwwroot/nrt.cylink.tech
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0013
+  name: 4|CN_speednode_0013
   network: ws
   packet-encoding: xudp
   port: 23426
@@ -96,7 +119,7 @@ proxies:
     path: /www/wwwroot/nrt.cylink.tech
 - alterId: 0
   cipher: auto
-  name: 14|CN_speednode_0014
+  name: 4|CN_speednode_0014
   network: tcp
   packet-encoding: xudp
   port: 58559
