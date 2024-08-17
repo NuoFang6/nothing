@@ -1,5 +1,133 @@
 proxies:
-- name: 12|RU_speednode_0085
+- alterId: 0
+  cipher: auto
+  name: 1|🇷🇺RU-194.87.69.102-0758 | 24.6...
+  network: ws
+  port: 12910
+  server: 194.87.69.102
+  servername: 🇷🇺RU-194.87.69.102-0758 | 24.635MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 22.lwdh.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇷🇺RU-194.87.69.102-0762 | 23.8...
+  network: ws
+  port: 12910
+  server: 22.lwdh.us
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 22.lwdh.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3|🇺RU(AzadNet.t.me)_001
+  network: ws
+  port: 12910
+  server: 22.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
+  name: 3|🇺RU(AzadNet.t.me)_003
+  network: grpc
+  port: 8443
+  server: 85.159.229.8
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 3|🇷🇺RU(AzadNet.t.me)_004
+  network: grpc
+  port: 2087
+  reality-opts:
+    public-key: GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8
+    short-id: fc805835
+  server: 85.159.229.8
+  servername: dash.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4527384-4f20-4378-95dc-403996f12588
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇷🇺RU(AzadNet.t.me)_006
+  password: qgpdyzHj8rZW9fDxxkUHRI
+  port: 29312
+  server: 217.196.103.206
+  type: ss
+- cipher: aes-256-cfb
+  name: 3|🇺RU(AzadNet.t.me)_007
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 194.116.173.21
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 3|🇷🇺RU(AzadNet.t.me)_008
+  network: ws
+  port: 80
+  server: 80.92.204.207
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 12612b4e-e426-4b7c-84bd-4a02850abb1e
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 3|🇷🇺RU(AzadNet.t.me)_009
+  network: tcp
+  port: 47555
+  server: 46.29.166.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- cipher: chacha20-ietf-poly1305
+  name: 7,15|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
+  password: WQC0BtSUQnhuBUkm0meQES
+  port: 65305
+  server: 81.19.140.31
+  type: ss
+- name: 12|🇷🇺 俄罗斯(油管:破解资源君)
+  password: dd8a44f9-7c1d-4286-8f6f-4e4f19cb7998
+  port: 32451
+  server: dg.hootfun.top
+  skip-cert-verify: true
+  sni: dg.hootfun.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '12|🇷🇺 俄罗斯(油管:破解资源君) #1'
+  network: ws
+  port: '14369'
+  server: 195.133.53.192
+  tls: false
+  type: vmess
+  uuid: 2331affa-1194-45ae-9457-3746120c4751
+  ws-opts:
+    headers:
+      Host: 195.133.53.192
+    path: /
+- name: 16|RU_speednode_0085
   network: ws
   port: 2096
   server: 188.42.145.159
@@ -13,7 +141,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 12|RU_speednode_0086
+- name: 16|RU_speednode_0086
   network: ws
   port: 8443
   server: 188.42.145.159
@@ -28,7 +156,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 12|RU_speednode_0087
+  name: 16|RU_speednode_0087
   network: ws
   port: 443
   server: 188.42.145.178
@@ -43,7 +171,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 12|RU_speednode_0088
+  name: 16|RU_speednode_0088
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -58,7 +186,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
 - client-fingerprint: chrome
-  name: 12|RU_speednode_0089
+  name: 16|RU_speednode_0089
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -72,7 +200,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chromefp=chromefp=chrome
-- name: 12|RU_speednode_0090
+- name: 16|RU_speednode_0090
   network: ws
   port: 443
   server: 185.59.218.0
@@ -87,7 +215,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 12|RU_speednode_0091
+  name: 16|RU_speednode_0091
   network: ws
   port: 443
   server: 188.42.145.140
@@ -101,7 +229,7 @@ proxies:
     headers:
       Host: g1.youyuan.us.kg
     path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
-- name: 12|RU_speednode_0092
+- name: 16|RU_speednode_0092
   network: ws
   port: 443
   server: 212.41.15.119
@@ -116,7 +244,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /
 - client-fingerprint: chrome
-  name: 12|RU_speednode_0093
+  name: 16|RU_speednode_0093
   network: ws
   port: 443
   server: 188.42.145.84
