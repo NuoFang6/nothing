@@ -1,4 +1,4 @@
-# Update: 2024-08-17 15:32
+# Update: 2024-08-17 17:16
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -1385,7 +1385,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1|美国 CloudFlare节点 #20'
+  name: 0|d*********g.com_91
   network: ws
   port: 2086
   server: fbi.gov
@@ -1460,11 +1460,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1|美国 CloudFlare节点 #3'
+  name: 0|d*********g.com_96
   network: ws
-  port: '2086'
+  port: 2086
   server: malaysia.com
-  servername: ''
+  servername: ip1.1789034.xyz
   tls: false
   type: vmess
   udp: true
@@ -1475,11 +1475,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,1,3|0|-https://t.me/MrXbin-18
+  name: 0,3|0|-https://t.me/MrXbin-18
   network: ws
   port: '2086'
   server: russia.com
-  servername: ''
+  servername: ip1.1789034.xyz
   tls: false
   type: vmess
   udp: true
@@ -1535,364 +1535,37 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 1|美国 CloudFlare节点
-  network: ws
-  port: '2095'
-  server: 104.19.45.14
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- name: 1|美国+戴维逊大学
-  network: grpc
-  password: fQ84Q7A4dw
-  port: 443
-  server: 152.42.252.70
-  skip-cert-verify: true
-  sni: ultra.vpnxhub.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 1|美国 俄勒冈州达尔斯Google云计算数据中心
-  network: ws
-  port: 50121
-  server: 35.199.164.204
-  tls: false
-  type: vmess
-  uuid: 1c3bf5a6-1ba4-4fdd-c834-2273df1bae20
-  ws-opts:
-    headers:
-      Host: ''
-    path: /1c3bf5a6
-- alterId: 64
-  cipher: auto
-  name: 1|美国 华盛顿Cogent通信公司
-  network: ws
-  port: 47777
-  server: 38.6.107.207
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/1719921909173
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #1'
-  network: ws
-  port: 2086
-  server: 104.19.46.39
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: 1|法国 V2CROSS.COM
-  network: ws
-  port: 30001
-  server: 51.89.81.145
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/181721272114
-- name: 1|安徽省+移动数据上网公共出口
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12005
-  server: cn1.cdn.xfltd-cdn.top
-  sni: cn1.cdn.xfltd-cdn.top
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 1|美国 加利福尼亚州洛杉矶PetaExpress
-  network: tcp
-  port: 41911
-  server: 107.148.192.148
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '1,3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
-  network: ws
-  port: '31003'
-  server: 192.74.235.5
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/020925172021
-- name: 1|广东省+移动
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12003
-  server: cn1.cdn.xfltd-cdn.top
-  sni: cn1.cdn.xfltd-cdn.top
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: '1|美国 华盛顿Cogent通信公司 #1'
-  network: ws
-  port: 38001
-  server: 38.33.0.175
-  tls: true
-  type: vmess
-  uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/353335270805
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #2'
-  network: ws
-  port: 2095
-  server: 104.19.45.85
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- name: 1|美国+CloudFlare节点
-  network: ws
-  password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
-  port: 443
-  server: 162.159.136.234
-  sni: de1.trojanvpn.de
-  type: trojan
-  ws-opts:
-    headers:
-      Host: de1.trojanvpn.dE
-    path: /path/Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config
-- alterId: 0
-  cipher: auto
-  name: '1,3|🇺🇸 美国 CloudFlare节点 #4'
+  name: 1,3|2|d*********g.com_2
   network: ws
   port: '2086'
-  server: 172.64.166.9
+  server: 104.16.148.244
   tls: false
   type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
-      Host: ip2.1457230.xyz
+      Host: ip006.freegradely.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '1|美国 CloudFlare节点 #5'
-  network: ws
-  port: 2086
-  server: 172.64.233.24
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: '1|美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
-  network: ws
-  port: 38000
-  server: 192.74.250.209
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/250232231705
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #6'
-  network: ws
-  port: 2095
-  server: 104.19.45.165
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #7'
-  network: ws
-  port: 2086
-  server: 104.19.21.63
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alpn:
-  - http/1.1
-  name: 1|法国+巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.243.35
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #8'
-  network: ws
-  port: '2086'
-  server: 172.64.233.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #9'
-  network: ws
-  port: '2095'
-  server: 104.19.45.172
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- name: 1|乌克兰+V2CROSS.COM
-  password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0
-  port: 2053
-  server: fr1.trojanvpn.de
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 1|日本东京 Oracle Cloud
+  name: 1|印度 V2CROSS.COM
   network: ws
   port: 443
-  server: 68.724064.xyz
+  server: 202.78.162.5
+  servername: ''
   tls: true
   type: vmess
-  uuid: c2e87881-7c90-42d3-87a5-3b14767b82ef
+  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
   ws-opts:
     headers:
-      Host: 68.724064.xyz
-    path: /lpmjvws
-- alpn:
-  - http/1.1
-  name: 1|美国+惠普HP
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.170.105.24
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      Host: pendar.onthewifi.com
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 1,2|加拿大 076
+  name: 1|美国 CloudFlare公司CDN节点(shopify)
   network: ws
-  port: 2095
-  server: 172.67.170.103
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: yaghoob55freenodes.repaco69437403.workers.dev
-    path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: '1,3|🇺🇸 美国 CloudFlare节点 #25'
-  network: ws
-  port: '2086'
-  server: 172.64.233.17
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- name: 1|韩国+KT电信
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 59.3.3.161
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-- alterId: 0
-  cipher: auto
-  name: 1,3|0|-https://t.me/MrXbin-38
-  network: ws
-  port: '2086'
-  server: 172.64.166.28
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1,3|🇺🇸 美国 CloudFlare节点 #18'
-  network: ws
-  port: '2086'
-  server: 172.64.166.8
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: 1|北美地区 V2CROSS.COM
-  network: ws
-  port: 31003
-  server: 172.111.57.145
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/320517283200
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #14'
-  network: ws
-  port: '80'
-  server: 104.27.78.90
-  servername: ''
+  port: 80
+  server: 23.227.38.145
   tls: false
   type: vmess
   uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
@@ -1900,302 +1573,34 @@ proxies:
     headers:
       Host: www.iransell.ir.127.0.0.1.dl3.эврика.mrarsha.尤里卡специалист.wonkacapitano.buzz.
     path: /vmess#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 1|广东省广州市 移动
-  network: tcp
-  port: '42055'
-  server: 120.232.153.37
+  name: '1|印度 V2CROSS.COM #1'
+  network: ws
+  port: 443
+  server: 202.78.162.5
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #16'
-  network: ws
-  port: 2086
-  server: 104.18.57.111
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alpn:
-  - http%2F1.1
-  name: '1|法国+巴黎Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.77.159
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '1|法国+巴黎Amazon数据中心 #2'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.210.215
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 1,3|🇺🇸 美国 Amazon数据中心
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.169.225.127
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #17'
-  network: ws
-  port: 2095
-  server: 104.19.45.161
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #18'
-  network: ws
-  port: 80
-  server: 104.18.69.0
-  tls: false
-  type: vmess
-  uuid: 8d4af06d-598e-46bd-84c7-ac333a22437b
-  ws-opts:
-    headers:
-      Host: 127.0.0.1.太空.spacecadet.jосмическийкадет.安靜地方第天day.wonkacapitano.buzz.
-    path: /vmess
-- alterId: 64
-  cipher: auto
-  name: 1|南非豪登省约翰内斯堡 Cloudinnovation数据中心
-  network: ws
-  port: 41003
-  server: 156.249.18.112
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
   ws-opts:
     headers:
-      Host: ''
-    path: /path/331709001708
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '1|美国 CloudFlare节点 #19'
+  name: '1|印度 V2CROSS.COM #2'
   network: ws
-  port: 2086
-  server: 104.16.67.38
-  tls: false
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: late-wave-1d0a.lesijo3430.workers.dev
-    path: /ivideos.sbs/linkws
-- alterId: 64
-  cipher: auto
-  name: 1|美国 Cloudinnovation数据中心
-  network: ws
-  port: 41001
-  server: 154.85.0.166
+  port: 443
+  server: 202.78.162.5
+  servername: ''
   tls: true
   type: vmess
-  uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4
+  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
   ws-opts:
     headers:
-      Host: ''
-    path: /path/233009222218
-- alterId: 0
-  cipher: auto
-  name: 1,3|0|-https://t.me/MrXbin-30
-  network: ws
-  port: '2086'
-  server: 172.64.233.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 1,3|0|-https://t.me/MrXbin-15
-  network: ws
-  port: '2086'
-  server: 172.64.233.32
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 1|广东省深圳市 电信
-  network: ws
-  port: '46001'
-  server: mmhk01.micloud.buzz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #23'
-  network: ws
-  port: 2086
-  server: 104.19.45.90
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1,3|🇺🇸 美国 CloudFlare节点 #15'
-  network: ws
-  port: '2086'
-  server: 172.64.233.43
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #25'
-  network: ws
-  port: 8880
-  server: 104.16.68.38
-  tls: false
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: subhk.osafari599.workers.dev
-    path: /linde06.indiavideo.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: '1,3|3|d*********g.com_0 #1'
-  network: ws
-  port: '2086'
-  server: 104.19.32.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.3196772.xyz
-    path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: '1|北美地区 V2CROSS.COM #1'
-  network: ws
-  port: 31003
-  server: 172.111.57.141
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/153108161619
-- name: 1|俄罗斯+V2CROSS.COM
-  network: ws
-  password: CMLiu
-  port: 8443
-  server: 85.159.228.23
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #27'
-  network: ws
-  port: 2086
-  server: 104.19.45.15
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #28'
-  network: ws
-  port: 2086
-  server: 172.64.233.9
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #29'
-  network: ws
-  port: 2095
-  server: 104.19.45.228
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 64
-  cipher: auto
-  name: '1|美国 加利福尼亚州圣何塞PEG TECH数据中心 #2'
-  network: ws
-  port: 37000
-  server: 192.74.244.28
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/181721272114
-- alterId: 0
-  cipher: auto
-  name: 1|瑞典 V2CROSS.COM
-  network: ws
-  port: 80
-  server: 185.146.173.59
-  tls: false
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: freevpn878.hamidimorteza680.workers.dev
-    path: /glweidf.cfd/linkws
+      Host: sahand.serveminecraft.net
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 2|加拿大 026
@@ -2773,6 +2178,21 @@ proxies:
   ws-opts:
     headers:
       Host: worker-lingering-fog-c021.gesofog870.workers.dev
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 2|加拿大 076
+  network: ws
+  port: 2095
+  server: 172.67.170.103
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: yaghoob55freenodes.repaco69437403.workers.dev
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
@@ -4364,6 +3784,13 @@ proxies:
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 3|🇺🇸 美国 Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.169.225.127
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心
@@ -4431,6 +3858,19 @@ proxies:
     path: /path/130624130330
 - alterId: 0
   cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #4'
+  network: ws
+  port: '2086'
+  server: 172.64.166.9
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: '3|🇺🇸 美国 CloudFlare节点 #5'
   network: ws
   port: '2086'
@@ -4455,6 +3895,19 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-38
+  network: ws
+  port: '2086'
+  server: 172.64.166.28
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: '3|🇺🇸 美国 CloudFlare节点 #7'
@@ -4575,6 +4028,19 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #15'
+  network: ws
+  port: '2086'
+  server: 172.64.233.43
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: '3|3|d*********g.com_1 #1'
   network: ws
   port: '2086'
@@ -4598,6 +4064,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #18'
+  network: ws
+  port: '2086'
+  server: 172.64.166.8
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
     path: github.com/Alvin9999
 - name: 3|🇺🇸 美国 Xerox
   password: telegram-id-directvpn
@@ -4684,6 +4163,19 @@ proxies:
     headers:
       Host: ''
     path: /path/091615350227
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #25'
+  network: ws
+  port: '2086'
+  server: 172.64.233.17
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
 - name: 3|🇨🇳 10,11|台湾3|@ripaojiedian
   password: 8fc4337b-4636-44a2-a160-9d360436aa57
   port: 13035
@@ -4730,6 +4222,19 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
+- alterId: 64
+  cipher: auto
+  name: '3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
+  network: ws
+  port: '31003'
+  server: 192.74.235.5
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/020925172021
 - alterId: 0
   cipher: auto
   name: '3|🇺🇸 美国 CloudFlare节点 #29'
@@ -4749,6 +4254,19 @@ proxies:
   network: ws
   port: '2086'
   server: 172.64.167.5
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-15
+  network: ws
+  port: '2086'
+  server: 172.64.233.32
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -4781,6 +4299,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip1.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-30
+  network: ws
+  port: '2086'
+  server: 172.64.233.7
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -4836,19 +4367,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 3|2|d*********g.com_2
-  network: ws
-  port: '2086'
-  server: 104.16.148.244
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 3|2|d*********g.com_3
   network: ws
   port: '2086'
@@ -4859,6 +4377,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip006.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '3|3|d*********g.com_0 #1'
+  network: ws
+  port: '2086'
+  server: 104.19.32.46
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.3196772.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -5185,400 +4716,360 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 3|🇷🇺 俄罗斯(油管:破解资源君)
-  - 0|d*********g.com_52
-  - 3|🇭🇰 11|香港5|@ripaojiedian
-  - 4|CN_speednode_0013
-  - 0|d*********g.com_95
-  - 0|d*********g.com_41
-  - '3|🇪🇺 欧洲(油管:破解资源君) #28'
-  - 1|广东省广州市 移动
-  - '1|美国 CloudFlare节点 #9'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #25'
-  - '3|🇺🇸 美国 CloudFlare节点 #9'
-  - '3|🇺🇸 _US_美国 #12'
-  - '3|🇺🇸 _US_美国 #1'
-  - 3|🇫🇮 11|芬兰|@ripaojiedian
-  - 3|🇺🇸 10,11|美国5|@ripaojiedian
-  - '3|🇪🇺 欧洲(油管:破解资源君) #24'
-  - '3|🇺🇸 美国 CloudFlare节点 #17'
-  - 3|🇺🇸 美国 华盛顿Cogent通信公司
-  - 2|加拿大 138
-  - 3|🇨🇳 10,11|台湾|@ripaojiedian
-  - '3|🇺🇸 _US_美国 #3'
-  - 4|KR_speednode_0080
-  - '3|🇺🇸 美国(油管:破解资源君) #32'
-  - 3|🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
-  - 1,2|加拿大 076
-  - '3|4|d*********g.com_2 #2'
-  - 0|d*********g.com_64
-  - 4|CN_speednode_0011
-  - 2|加拿大 094
-  - 1|北美地区 V2CROSS.COM
-  - 0|d*********g.com_51
-  - 3|🇪🇺 欧洲(油管:破解资源君)
-  - '3|🇺🇸 美国 CloudFlare节点 #13'
-  - '3|🇺🇸 美国(油管:破解资源君) #18'
-  - '1|美国 CloudFlare节点 #29'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #45'
-  - '3,5|d*********g.com_3 #1'
-  - '3|🇺🇸 美国 V2CROSS.COM #1'
-  - 3|12|KR_speednode_0080
-  - 0|d*********g.com_90
-  - 1|韩国+KT电信
-  - '3|🇪🇺 欧洲(油管:破解资源君) #1'
-  - 0|d*********g.com_1
-  - 3|亚洲(油管:破解资源君)
-  - 0,2|加拿大 040
-  - '3|🇪🇺 欧洲(油管:破解资源君) #46'
-  - 0|d*********g.com_63
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #1'
-  - 0|d*********g.com_3
-  - 0|d*********g.com_40
-  - '3|🇪🇺 欧洲(油管:破解资源君) #9'
-  - 0|d*********g.com_58
-  - 0,2|加拿大 019
-  - '3|🇺🇸 _US_美国 #9'
-  - 2|加拿大 026
-  - 3|🇭🇰 香港(油管:破解资源君)
-  - 2|加拿大 038
-  - 1|美国 加利福尼亚州洛杉矶PetaExpress
-  - '3|🇪🇺 欧洲(油管:破解资源君) #18'
-  - 0|d*********g.com_49
-  - 2|加拿大 078
-  - '3|🇪🇺 欧洲(油管:破解资源君) #22'
-  - '1|美国 CloudFlare节点 #16'
-  - 1|美国 华盛顿Cogent通信公司
-  - 0|d*********g.com_36
-  - '1|美国 CloudFlare节点 #17'
-  - 0|d*********g.com_15
-  - 2|加拿大 012
-  - 2|加拿大 052
-  - '1,3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
-  - 0|d*********g.com_93
-  - 0|d*********g.com_83
-  - 2|加拿大 081
-  - 0|d*********g.com_73
-  - '3|🇺🇸 美国(油管:破解资源君) #34'
-  - '3|🇺🇸 美国 CloudFlare节点 #26'
-  - 3|🇺🇸 _US_美国
-  - 0|d*********g.com_82
-  - 2|加拿大 133
-  - '3|🇪🇺 欧洲(油管:破解资源君) #34'
-  - 2|加拿大 002
-  - 0|d*********g.com_20
-  - '3|🇺🇸 美国 CloudFlare节点 #11'
-  - 0|d*********g.com_88
-  - 2|美国 003
-  - 0|d*********g.com_27
-  - 2|加拿大 080
-  - 0|d*********g.com_76
-  - 2|加拿大 013
   - '3|🇯🇵 日本(油管:破解资源君) #13'
-  - 2|韩国 003
-  - 0|d*********g.com_2
-  - 0|d*********g.com_59
-  - 2|加拿大 099
-  - '1,3|🇺🇸 美国 CloudFlare节点 #15'
-  - '1|美国 CloudFlare节点 #2'
-  - 2|美国 018
-  - 3|🇯🇵 10,11|日本|@ripaojiedian
-  - '3|🇪🇺 欧洲(油管:破解资源君) #44'
-  - 2|加拿大 006
-  - 0|d*********g.com_66
-  - 0|d*********g.com_75
-  - '3|未命名 #2'
-  - 1|法国 V2CROSS.COM
-  - 0|d*********g.com_74
-  - '3|🇪🇺 欧洲(油管:破解资源君) #21'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #42'
-  - 2|加拿大 015
-  - '3|🇺🇸 _US_美国 #15'
-  - 0|d*********g.com_44
-  - '1|美国 CloudFlare节点 #6'
-  - '1|美国 CloudFlare节点 #7'
-  - 2|韩国 002
-  - 0|d*********g.com_79
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
-  - '3|🇷🇺 俄罗斯(油管:破解资源君) #1'
-  - 2|美国 024
-  - 4|CN_speednode_0014
-  - 0|d*********g.com_89
-  - '3|🇺🇸 美国(油管:破解资源君) #11'
-  - 1|乌克兰+V2CROSS.COM
-  - '0,1|美国 CloudFlare节点 #3'
-  - 0|d*********g.com_46
-  - 3|🇺🇸 _US_美国->🇨🇦_CA_加拿大
-  - 2|加拿大 091
-  - 0|d*********g.com_39
-  - '1|美国 CloudFlare节点 #14'
-  - 3|🇮🇳 github.com/freefq - 印度  3
-  - 3|🇸🇬 10,11|新加坡2|@ripaojiedian
-  - 0|d*********g.com_94
-  - '3|亚洲(油管:破解资源君) #2'
-  - 0|d*********g.com_21
-  - '0,3|🇺🇸 美国 CloudFlare节点 #19'
-  - '3|4|d*********g.com_3 #2'
-  - 0|d*********g.com_57
-  - 0|d*********g.com_87
-  - 0|d*********g.com_6
-  - '3|🇪🇺 欧洲(油管:破解资源君) #6'
-  - '3|🇺🇸 _US_美国 #7'
-  - 2|加拿大 064
-  - 3|未命名
-  - 0|d*********g.com_28
-  - 0|d*********g.com_23
-  - 1|美国+戴维逊大学
-  - '1,3|🇺🇸 美国 CloudFlare节点 #4'
-  - 2|拉脱维亚 001
-  - '3|🇸🇬 新加坡(油管:破解资源君) #3'
-  - 3|🇺🇸 美国 CloudFlare节点
-  - 2|加拿大 071
-  - 2|加拿大 115
-  - 1|美国+惠普HP
-  - '3|🇺🇸 美国(油管:破解资源君) #30'
-  - 2|加拿大 007
-  - 2|加拿大 023
-  - 3|🇭🇰 11|香港|@ripaojiedian
-  - 2|加拿大 017
-  - '3|🇺🇸 美国 CloudFlare节点 #27'
-  - 3|🇰🇷 韩国(油管:破解资源君)
-  - 3|2|d*********g.com_0
-  - 2|加拿大 003
-  - 3|🇺🇸 10,11|美国2|@ripaojiedian
-  - '3|🇺🇸 _US_美国 #14'
-  - '3|🇺🇸 美国 CloudFlare节点 #2'
-  - 1|广东省+移动
-  - 3|0|-https://t.me/MrXbin-23
-  - 0|d*********g.com_8
-  - 2|加拿大 024
-  - '3|🇺🇸 美国(油管:破解资源君) #28'
-  - '1|美国 加利福尼亚州圣何塞PEG TECH数据中心 #2'
-  - '3|4|d*********g.com_0 #2'
-  - 1,3|0|-https://t.me/MrXbin-15
-  - '3|🇸🇬 新加坡(油管:破解资源君) #1'
-  - 0|d*********g.com_98
-  - 0|d*********g.com_60
-  - 3|🇮🇳 github.com/freefq - 印度  10
-  - 3|2|d*********g.com_3
-  - '3|🇺🇸 美国 CloudFlare节点 #3'
-  - 3|🇺🇸 10,11|美国|@ripaojiedian
-  - 3|🇩🇪 德国 黑森州法兰克福Amazon数据中心
-  - 0|d*********g.com_14
-  - 3|2|d*********g.com_2
-  - 1|南非豪登省约翰内斯堡 Cloudinnovation数据中心
-  - 2|加拿大 058
-  - '3|🇺🇸 _US_美国 #11'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #7'
-  - '3|🇺🇸 美国(油管:破解资源君) #5'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #27'
-  - 3|0|-https://t.me/MrXbin-42
-  - 0|d*********g.com_67
-  - 3|🇺🇸 _US_美国->🇨🇳_CN_中国
-  - 0|d*********g.com_18
-  - 2|加拿大 140
-  - '3|🇪🇺 欧洲(油管:破解资源君) #23'
-  - 0|d*********g.com_11
-  - '1|美国 CloudFlare节点 #5'
-  - 2|新加坡 001
-  - '3|🇪🇺 欧洲(油管:破解资源君) #31'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #19'
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #3'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #49'
-  - '3|🇺🇸 美国 CloudFlare节点 #5'
-  - '3|🇺🇸 美国(油管:破解资源君) #31'
-  - 2|香港 002
-  - '3|🇭🇰 香港(油管:破解资源君) #4'
-  - 2|美国 011
+  - 0|d*********g.com_93
   - 2|加拿大 086
-  - '3|🇪🇺 欧洲(油管:破解资源君) #32'
-  - 2|加拿大 034
-  - 3|🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-  - '3|🇯🇵 日本(油管:破解资源君) #12'
-  - 0|d*********g.com_31
-  - '3|🇺🇸 美国 CloudFlare节点 #1'
-  - 0|d*********g.com_78
-  - 2|加拿大 049
-  - 2|美国 020
-  - 2|加拿大 084
-  - '3|🇺🇸 美国 CloudFlare节点 #22'
-  - 2|加拿大 085
-  - '1|美国 CloudFlare节点 #23'
-  - 0|d*********g.com_80
-  - 2|加拿大 079
-  - '1,3|3|d*********g.com_0 #1'
-  - 0|d*********g.com_9
-  - '3|🇪🇺 欧洲(油管:破解资源君) #26'
-  - 3|🇮🇳 github.com/freefq - 印度  2
-  - 0|d*********g.com_33
-  - '1|美国 CloudFlare节点 #25'
-  - '1|法国+巴黎Amazon数据中心 #1'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #29'
-  - 0|d*********g.com_7
-  - 2|加拿大 050
-  - '1|美国 CloudFlare节点 #18'
-  - '3|🇯🇵 日本(油管:破解资源君) #1'
-  - '0,1|美国 CloudFlare节点 #20'
-  - 0|d*********g.com_70
-  - '3|🇭🇰 香港(油管:破解资源君) #1'
-  - 2|加拿大 090
-  - 1|美国 CloudFlare节点
-  - 2|加拿大 014
-  - 3|0|-https://t.me/MrXbin-10
-  - 4|US_speednode_0152
-  - 2|加拿大 037
-  - 3|🇲🇾 马来西亚 V2CROSS.COM
-  - 2|加拿大 154
-  - 3|2|d*********g.com_1
-  - 0|d*********g.com_45
-  - '3|🇪🇺 欧洲(油管:破解资源君) #41'
-  - 0|d*********g.com_10
-  - '3,5|d*********g.com_2 #1'
-  - 3|🇸🇬 _US_美国->🇸🇬_SG_新加坡
-  - '3|🇪🇺 欧洲(油管:破解资源君) #20'
-  - 4|CN_speednode_0012
-  - '1|北美地区 V2CROSS.COM #1'
-  - '3|🇺🇸 美国 CloudFlare节点 #14'
-  - '1,3|🇺🇸 美国 CloudFlare节点 #25'
-  - 0|d*********g.com_72
-  - 0|d*********g.com_61
-  - 0|d*********g.com_85
-  - 0|d*********g.com_47
-  - 0|d*********g.com_19
-  - 0|d*********g.com_86
-  - 0,1,3|0|-https://t.me/MrXbin-18
-  - 0|d*********g.com_81
-  - 4|CN_speednode_0008
-  - '3|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
-  - '1|美国 CloudFlare节点 #19'
-  - 3|🇿🇦 南非豪登省约翰内斯堡 Cloudinnovation数...
-  - 0|d*********g.com_35
-  - 1,3|0|-https://t.me/MrXbin-30
-  - 2|加拿大 077
-  - '1|美国 CloudFlare节点 #27'
-  - '3|3|d*********g.com_2 #1'
-  - 2|美国 025
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
-  - 0|d*********g.com_30
-  - 2|美国 021
-  - 3|12|US_speednode_0152
-  - '1|美国 CloudFlare节点 #8'
-  - 3|🇩🇪 德国 V2CROSS.COM
-  - '1|美国 CloudFlare节点 #28'
-  - 3|0|-https://t.me/MrXbin-14
-  - '3|🇺🇸 美国(油管:破解资源君) #17'
-  - '2,3|🇺🇸 美国 CloudFlare节点 #12'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #10'
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
-  - '3|🇺🇸 美国(油管:破解资源君) #23'
-  - 2|加拿大 069
-  - '3|🇪🇺 欧洲(油管:破解资源君) #13'
-  - '3|🇺🇸 美国(油管:破解资源君) #13'
-  - 4|SG_speednode_0098
-  - 0|d*********g.com_62
-  - '3|🇭🇰 香港(油管:破解资源君) #5'
-  - 3|🇺🇸 美国 Cloudinnovation数据中心
   - '3|🇪🇺 欧洲(油管:破解资源君) #56'
-  - 2|澳大利亚 003
-  - 0|d*********g.com_38
-  - 3|0|-https://t.me/MrXbin-33
-  - '3|🇪🇺 欧洲(油管:破解资源君) #12'
-  - 1|瑞典 V2CROSS.COM
-  - '1,3|🇺🇸 美国 CloudFlare节点 #18'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #35'
-  - '3|🇺🇸 美国(油管:破解资源君) #24'
-  - '1|美国 华盛顿Cogent通信公司 #1'
-  - 3|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-  - 0|d*********g.com_16
-  - 0|d*********g.com_100
-  - 0|d*********g.com_54
-  - 1,3|🇺🇸 美国 Amazon数据中心
-  - 2|加拿大 005
-  - 0|d*********g.com_4
-  - 3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心
-  - 1,3|0|-https://t.me/MrXbin-38
-  - 0|d*********g.com_5
-  - '3|🇺🇸 _US_美国 #5'
-  - 0|d*********g.com_55
-  - 0|d*********g.com_37
-  - 0|d*********g.com_68
-  - 0|d*********g.com_34
-  - '3|🇪🇺 欧洲(油管:破解资源君) #11'
-  - 0|d*********g.com_65
-  - 1|法国+巴黎Amazon数据中心
-  - 0|d*********g.com_43
-  - 2|韩国 004
-  - '1|美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
-  - 1|美国+CloudFlare节点
-  - '3|🇺🇸 美国 CloudFlare节点 #29'
-  - 1|安徽省+移动数据上网公共出口
-  - '3|🇪🇺 欧洲(油管:破解资源君) #30'
-  - 2|加拿大 001
-  - 2|加拿大 129
-  - 2|加拿大 016
-  - 3|🇺🇸 美国 Xerox
-  - 0|d*********g.com_71
-  - '3|🇪🇺 欧洲(油管:破解资源君) #52'
-  - 3|🇭🇰 10,11|香港4|@ripaojiedian
-  - '3|🇺🇸 美国 CloudFlare节点 #16'
-  - 1|俄罗斯+V2CROSS.COM
-  - 4|CN_speednode_0010
-  - '3|未命名 #3'
   - 4|CN_speednode_0009
-  - 0|d*********g.com_77
-  - 1|美国 Cloudinnovation数据中心
-  - 2|加拿大 010
-  - 0|d*********g.com_84
-  - 0|d*********g.com_32
-  - '3|🇺🇸 美国 CloudFlare节点 #7'
-  - 3|🇸🇬 10,11|新加坡|@ripaojiedian
-  - '3|🇺🇸 美国(油管:破解资源君) #7'
-  - 2|加拿大 008
-  - 3|🇺🇸 github.com/freefq - 美国Fastl...
-  - 2|加拿大 032
-  - 0|d*********g.com_69
-  - '3|🇺🇸 美国 CloudFlare节点 #21'
-  - '3|🇺🇸 _US_美国 #8'
-  - 0|d*********g.com_17
-  - '3|🇺🇸 美国(油管:破解资源君) #19'
-  - '3|3|d*********g.com_3 #1'
-  - 0|d*********g.com_42
-  - '3|🇺🇸 美国(油管:破解资源君) #29'
-  - 0|d*********g.com_50
-  - 3|🇺🇸 美国 Akamai科技公司CDN网络节点
-  - '1|美国 CloudFlare节点 #1'
-  - 2|加拿大 035
-  - 2|加拿大 029
-  - '3|🇪🇺 欧洲(油管:破解资源君) #57'
-  - 2|美国 013
-  - 0|d*********g.com_12
-  - '2,3|🇺🇸 美国 CloudFlare节点 #28'
-  - 2|加拿大 009
-  - '3|🇺🇸 _US_美国 #2'
-  - 3|🇨🇳 10,11|台湾4|@ripaojiedian
-  - 3|🇺🇸 美国(油管:破解资源君)
-  - 1|美国 俄勒冈州达尔斯Google云计算数据中心
-  - '3|🇪🇺 欧洲(油管:破解资源君) #43'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #54'
-  - 3|🇨🇳 10,11|台湾3|@ripaojiedian
-  - 1|广东省深圳市 电信
-  - 0|d*********g.com_53
-  - 1|日本东京 Oracle Cloud
-  - 2|加拿大 004
-  - '3|4|d*********g.com_1 #2'
-  - '1|法国+巴黎Amazon数据中心 #2'
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #2'
-  - '3|🇭🇰 香港(油管:破解资源君) #2'
-  - 0|d*********g.com_29
-  - '3|未命名 #1'
-  - '3|3|d*********g.com_1 #1'
-  - '3|🇺🇸 _US_美国 #13'
-  - 0|d*********g.com_0
+  - 0|d*********g.com_19
+  - 0|d*********g.com_64
+  - 0|d*********g.com_39
+  - 0|d*********g.com_87
   - 0|d*********g.com_92
+  - '3|🇺🇸 美国 CloudFlare节点 #11'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #29'
+  - 2|加拿大 050
+  - 3|🇺🇸 美国 Amazon数据中心
+  - 3|🇭🇰 10,11|香港4|@ripaojiedian
+  - 2|加拿大 029
+  - 3|🇿🇦 南非豪登省约翰内斯堡 Cloudinnovation数...
+  - 2|加拿大 064
+  - 4|CN_speednode_0010
+  - 2|加拿大 005
+  - 2|香港 002
+  - '3|🇺🇸 美国 CloudFlare节点 #9'
+  - 0|d*********g.com_74
+  - '3|🇯🇵 日本(油管:破解资源君) #12'
+  - 2|加拿大 007
+  - 2|加拿大 013
+  - 0|d*********g.com_31
+  - 3|🇺🇸 美国 Akamai科技公司CDN网络节点
+  - 3|0|-https://t.me/MrXbin-14
+  - '3|🇪🇺 欧洲(油管:破解资源君) #23'
+  - '3|🇺🇸 美国(油管:破解资源君) #11'
+  - '3|🇺🇸 美国 CloudFlare节点 #22'
+  - '3|🇺🇸 美国 CloudFlare节点 #15'
+  - 3|🇨🇳 10,11|台湾|@ripaojiedian
+  - 2|美国 013
+  - 3|🇺🇸 _US_美国->🇨🇳_CN_中国
+  - 0|d*********g.com_59
+  - 2|加拿大 023
+  - 0|d*********g.com_36
+  - 0|d*********g.com_37
+  - 2|加拿大 016
+  - '3|🇺🇸 美国(油管:破解资源君) #7'
+  - 0|d*********g.com_33
+  - 0|d*********g.com_71
+  - 0|d*********g.com_83
+  - 4|SG_speednode_0098
+  - '3|🇭🇰 香港(油管:破解资源君) #5'
+  - '3|4|d*********g.com_3 #2'
+  - 3|🇪🇺 欧洲(油管:破解资源君)
+  - '3|🇺🇸 美国(油管:破解资源君) #31'
+  - 3|🇺🇸 美国 Xerox
+  - '3|🇪🇺 欧洲(油管:破解资源君) #24'
+  - 0|d*********g.com_80
+  - 2|加拿大 133
+  - 0|d*********g.com_96
+  - 0|d*********g.com_51
+  - '3|🇸🇬 新加坡(油管:破解资源君) #3'
+  - 0|d*********g.com_77
+  - 3|🇸🇬 10,11|新加坡|@ripaojiedian
+  - 0|d*********g.com_91
+  - 2|美国 021
+  - 2|加拿大 078
+  - '3|🇸🇬 新加坡(油管:破解资源君) #1'
+  - '3|🇺🇸 美国 CloudFlare节点 #16'
+  - '0,3|🇺🇸 美国 CloudFlare节点 #19'
+  - 2|加拿大 049
+  - '3|🇺🇸 美国(油管:破解资源君) #5'
+  - 2|加拿大 138
+  - 2|拉脱维亚 001
+  - 2|韩国 003
+  - 3|亚洲(油管:破解资源君)
+  - '3|🇪🇺 欧洲(油管:破解资源君) #22'
+  - 0|d*********g.com_66
+  - '3|🇪🇺 欧洲(油管:破解资源君) #26'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #19'
+  - '3|🇺🇸 美国(油管:破解资源君) #18'
+  - '3|4|d*********g.com_1 #2'
+  - 0|d*********g.com_1
+  - 3|🇩🇪 德国 V2CROSS.COM
+  - '3|🇪🇺 欧洲(油管:破解资源君) #9'
+  - 0|d*********g.com_70
+  - 2|加拿大 001
+  - 2|加拿大 014
+  - '3|🇺🇸 _US_美国 #5'
+  - '3|3|d*********g.com_1 #1'
+  - 4|CN_speednode_0014
+  - 2|加拿大 115
+  - '3|🇯🇵 日本(油管:破解资源君) #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #52'
+  - 0|d*********g.com_52
+  - '1|印度 V2CROSS.COM #2'
+  - 0|d*********g.com_57
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #2'
+  - 2|加拿大 080
+  - 2|美国 025
+  - '3|🇭🇰 香港(油管:破解资源君) #2'
+  - '3|3|d*********g.com_0 #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #35'
+  - '3|🇺🇸 美国 CloudFlare节点 #21'
+  - '3|🇺🇸 美国 CloudFlare节点 #5'
+  - '3|🇺🇸 美国 CloudFlare节点 #29'
+  - 2|加拿大 038
+  - '3|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
+  - '3|🇺🇸 _US_美国 #2'
+  - 0|d*********g.com_7
+  - '3|🇪🇺 欧洲(油管:破解资源君) #46'
+  - 2|加拿大 129
+  - '3|🇺🇸 _US_美国 #1'
+  - 2|美国 024
+  - 2|美国 003
+  - 2|加拿大 071
+  - 0|d*********g.com_54
+  - '3|🇺🇸 美国 CloudFlare节点 #2'
+  - 3|🇯🇵 10,11|日本|@ripaojiedian
+  - 2|加拿大 037
+  - '3|🇺🇸 _US_美国 #14'
+  - 3|🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
+  - 2|加拿大 052
+  - '3|🇷🇺 俄罗斯(油管:破解资源君) #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #12'
+  - 2|加拿大 058
+  - '3|🇪🇺 欧洲(油管:破解资源君) #28'
+  - 0|d*********g.com_30
+  - '3|🇺🇸 _US_美国 #12'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #11'
+  - 0|d*********g.com_3
+  - 3|🇨🇳 10,11|台湾3|@ripaojiedian
+  - 3|🇮🇳 github.com/freefq - 印度  3
+  - 0|d*********g.com_27
+  - 4|CN_speednode_0012
+  - 2|加拿大 035
+  - 3|🇸🇬 10,11|新加坡2|@ripaojiedian
+  - '3|🇺🇸 美国 CloudFlare节点 #27'
+  - 0|d*********g.com_18
+  - '3|🇺🇸 美国 CloudFlare节点 #18'
+  - '3|🇺🇸 美国(油管:破解资源君) #23'
+  - 0|d*********g.com_94
+  - '3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心 #1'
+  - '3,5|d*********g.com_2 #1'
+  - 3|12|KR_speednode_0080
+  - 2|加拿大 004
+  - 3|🇮🇳 github.com/freefq - 印度  2
+  - '3|🇭🇰 香港(油管:破解资源君) #4'
+  - 0|d*********g.com_53
+  - 0|d*********g.com_73
+  - 3|2|d*********g.com_1
+  - 0|d*********g.com_85
+  - 0,2|加拿大 040
+  - '3|🇺🇸 美国 CloudFlare节点 #4'
+  - 2|加拿大 010
+  - 3|🇨🇳 10,11|台湾4|@ripaojiedian
+  - 0|d*********g.com_60
+  - 4|CN_speednode_0013
+  - 0|d*********g.com_44
+  - 2|加拿大 094
   - '3|🇺🇸 美国 CloudFlare节点 #8'
+  - '3|🇺🇸 _US_美国 #7'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #31'
+  - 2|加拿大 032
+  - 3|🇺🇸 _US_美国
+  - 2|加拿大 091
+  - 0|d*********g.com_49
+  - '1|印度 V2CROSS.COM #1'
+  - 2|澳大利亚 003
+  - 0|d*********g.com_43
+  - 3|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+  - 0|d*********g.com_82
+  - 2|加拿大 090
+  - 2|加拿大 077
+  - 2|加拿大 009
+  - 0|d*********g.com_72
+  - '3|🇪🇺 欧洲(油管:破解资源君) #20'
+  - 0|d*********g.com_68
+  - 0|d*********g.com_67
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #1'
+  - 2|加拿大 154
+  - '3|🇺🇸 美国 V2CROSS.COM #1'
+  - 4|CN_speednode_0011
+  - 0|d*********g.com_8
+  - 2|加拿大 140
+  - 3|🇷🇺 俄罗斯(油管:破解资源君)
+  - 0|d*********g.com_28
+  - 3|🇺🇸 10,11|美国2|@ripaojiedian
+  - 1,3|2|d*********g.com_2
+  - 1|美国 CloudFlare公司CDN节点(shopify)
+  - '3|🇺🇸 美国 CloudFlare节点 #1'
+  - 3|🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+  - '3|🇺🇸 美国 CloudFlare节点 #7'
+  - 0|d*********g.com_10
+  - '3|🇪🇺 欧洲(油管:破解资源君) #7'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #21'
+  - 3|0|-https://t.me/MrXbin-42
+  - 0|d*********g.com_0
+  - 2|韩国 004
+  - 3|🇺🇸 美国 加利福尼亚州圣何塞PEG TECH数据中心
+  - '3|🇺🇸 美国 CloudFlare节点 #17'
+  - 0|d*********g.com_47
+  - '3|🇪🇺 欧洲(油管:破解资源君) #18'
+  - '3|🇭🇰 香港(油管:破解资源君) #1'
+  - 0|d*********g.com_41
+  - 0|d*********g.com_17
+  - 0|d*********g.com_61
+  - 3|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  - '3|🇪🇺 欧洲(油管:破解资源君) #49'
+  - '3|🇺🇸 _US_美国 #8'
+  - '3|🇺🇸 美国(油管:破解资源君) #28'
+  - 2|新加坡 001
+  - '3|🇪🇺 欧洲(油管:破解资源君) #25'
+  - 3|🇭🇰 11|香港5|@ripaojiedian
+  - 0|d*********g.com_84
+  - 0|d*********g.com_100
+  - 3|🇺🇸 美国 华盛顿Cogent通信公司
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
+  - 0|d*********g.com_5
+  - 3|0|-https://t.me/MrXbin-38
+  - 3|2|d*********g.com_3
+  - 2|加拿大 069
+  - 2|加拿大 026
+  - 3|🇮🇳 github.com/freefq - 印度  10
+  - 0|d*********g.com_6
   - 0|d*********g.com_22
+  - 0|d*********g.com_38
+  - 0|d*********g.com_69
+  - 0|d*********g.com_76
+  - 0|d*********g.com_65
+  - 0|d*********g.com_88
+  - 3|🇭🇰 11|香港|@ripaojiedian
+  - 1|印度 V2CROSS.COM
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #3'
+  - 2|加拿大 076
+  - '3|未命名 #3'
+  - '3|🇺🇸 美国 CloudFlare节点 #13'
+  - 3|0|-https://t.me/MrXbin-10
+  - 3|0|-https://t.me/MrXbin-15
+  - 3|🇺🇸 github.com/freefq - 美国Fastl...
+  - 4|CN_speednode_0008
+  - 0|d*********g.com_14
+  - 4|US_speednode_0152
+  - 2|加拿大 017
+  - 0|d*********g.com_79
+  - 0|d*********g.com_63
+  - 0|d*********g.com_40
+  - 2|加拿大 002
+  - 3|🇺🇸 美国 CloudFlare节点
+  - '3|🇪🇺 欧洲(油管:破解资源君) #30'
+  - '3|🇺🇸 _US_美国 #3'
+  - 3|🇭🇰 香港(油管:破解资源君)
+  - 0|d*********g.com_45
+  - 0|d*********g.com_98
+  - 0,2|加拿大 019
+  - 2|加拿大 085
+  - '3|3|d*********g.com_3 #1'
+  - '3|4|d*********g.com_0 #2'
+  - '3|🇺🇸 _US_美国 #13'
+  - 3|0|-https://t.me/MrXbin-23
+  - 2|美国 011
+  - 3|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  - 0|d*********g.com_50
+  - '3|🇺🇸 _US_美国 #9'
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  - 4|KR_speednode_0080
+  - '3|🇪🇺 欧洲(油管:破解资源君) #27'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #57'
+  - '3|🇺🇸 美国(油管:破解资源君) #13'
+  - '3|🇺🇸 _US_美国 #11'
+  - 0|d*********g.com_46
+  - 2|加拿大 099
+  - '3|3|d*********g.com_2 #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #10'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #42'
+  - '3|🇺🇸 美国(油管:破解资源君) #17'
+  - 2|加拿大 079
   - 3|0|-https://t.me/MrXbin-22
+  - 0|d*********g.com_75
+  - 0|d*********g.com_78
+  - 0|d*********g.com_21
+  - '3|🇺🇸 美国(油管:破解资源君) #34'
+  - 0|d*********g.com_23
+  - 0|d*********g.com_16
+  - 2|韩国 002
+  - 0,3|0|-https://t.me/MrXbin-18
+  - 0|d*********g.com_90
+  - '3|4|d*********g.com_2 #2'
+  - 0|d*********g.com_62
+  - '3|🇪🇺 欧洲(油管:破解资源君) #41'
+  - '3|🇺🇸 美国 CloudFlare节点 #3'
+  - '3|🇺🇸 美国(油管:破解资源君) #19'
+  - 3|未命名
+  - '3|🇪🇺 欧洲(油管:破解资源君) #44'
+  - 3|0|-https://t.me/MrXbin-30
+  - '3|未命名 #1'
+  - '3|🇺🇸 美国 CloudFlare节点 #25'
+  - 0|d*********g.com_89
+  - 3|🇺🇸 美国(油管:破解资源君)
+  - '2,3|🇺🇸 美国 CloudFlare节点 #28'
+  - 2|加拿大 003
+  - '3|🇺🇸 美国 CloudFlare节点 #14'
+  - 2|加拿大 024
+  - '3|🇺🇸 美国(油管:破解资源君) #24'
+  - '3|🇺🇸 美国(油管:破解资源君) #29'
+  - 0|d*********g.com_20
+  - 3|2|d*********g.com_0
+  - 0|d*********g.com_12
+  - 0|d*********g.com_95
+  - '3|🇪🇺 欧洲(油管:破解资源君) #32'
+  - 0|d*********g.com_2
+  - 3|🇰🇷 韩国(油管:破解资源君)
+  - 3|🇫🇮 11|芬兰|@ripaojiedian
+  - 2|加拿大 015
+  - 2|加拿大 006
+  - 0|d*********g.com_4
+  - '3|🇪🇺 欧洲(油管:破解资源君) #13'
+  - 3|0|-https://t.me/MrXbin-33
+  - 2|加拿大 084
+  - 0|d*********g.com_15
+  - 0|d*********g.com_81
+  - '3|🇪🇺 欧洲(油管:破解资源君) #54'
+  - 0|d*********g.com_42
+  - '3|🇪🇺 欧洲(油管:破解资源君) #45'
+  - '3|🇺🇸 _US_美国 #15'
+  - 0|d*********g.com_58
+  - 3|🇺🇸 10,11|美国|@ripaojiedian
+  - 3|🇺🇸 美国 Cloudinnovation数据中心
+  - '3|🇪🇺 欧洲(油管:破解资源君) #34'
+  - '3,5|d*********g.com_3 #1'
+  - 3|🇲🇾 马来西亚 V2CROSS.COM
   - 2|加拿大 011
+  - 2|美国 018
+  - 0|d*********g.com_32
+  - 0|d*********g.com_34
+  - 3|🇸🇬 _US_美国->🇸🇬_SG_新加坡
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
+  - 3|🇺🇸 10,11|美国5|@ripaojiedian
+  - 0|d*********g.com_86
+  - 2|美国 020
+  - 2|加拿大 034
+  - '3|🇺🇸 美国(油管:破解资源君) #32'
+  - '3|亚洲(油管:破解资源君) #2'
+  - '2,3|🇺🇸 美国 CloudFlare节点 #12'
+  - 3|12|US_speednode_0152
+  - 0|d*********g.com_55
+  - '3|🇪🇺 欧洲(油管:破解资源君) #6'
+  - '3|🇪🇺 欧洲(油管:破解资源君) #43'
+  - 0|d*********g.com_29
+  - 2|加拿大 012
+  - 0|d*********g.com_35
+  - 2|加拿大 081
+  - 2|加拿大 008
+  - 0|d*********g.com_11
+  - '3|未命名 #2'
+  - 0|d*********g.com_9
+  - '3|🇺🇸 美国(油管:破解资源君) #30'
+  - '3|🇺🇸 美国 CloudFlare节点 #26'
   tfo: true
   timeout: 1500
   tolerance: 35
