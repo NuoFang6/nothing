@@ -42,21 +42,21 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git pull origin master
+          git pull origin main
           git add ./NoMoreWalls/list*
           git add ./NoMoreWalls/snippets/
           git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
       - name: 推送更改
         uses: ad-m/github-push-action@master
         with:
-          branch: master
+          branch: main
 
       - name: 计算要清除缓存的文件
         id: purge_urls
         working-directory: ./NoMoreWalls
         run: |
           sleep 5
-          baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
+          baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@main"
           urls=""
           for f in `find snippets -name "*.yml" -type f`; do
             urls+="${baseUrl}/NoMoreWalls/${f},"
