@@ -1,0 +1,72 @@
+name: Fetch
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 表达式生成 https://crontab.guru/
+    - cron: "0 0/3 * * *"
+  push:
+    paths:
+      - ".github/workflows/**"
+      - "NoMoreWalls/sources.list"
+      - "NoMoreWalls/config.yml"
+      - "NoMoreWalls/abpwhite.txt"
+      - "NoMoreWalls/**.py"
+      - "NoMoreWalls/snippets/_*"
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 迁出代码
+        uses: actions/checkout@v4
+
+      - name: 设置时区
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: "pip"
+
+      - name: 安装依赖
+        working-directory: ./NoMoreWalls
+        run: pip install -r requirements.txt
+
+      - name: 执行任务
+        working-directory: ./NoMoreWalls
+        run: python ./fetch.py
+
+      - name: 提交更改
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git pull origin master
+          git add ./NoMoreWalls/list*
+          git add ./NoMoreWalls/snippets/
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
+      - name: 推送更改
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
+
+      - name: 计算要清除缓存的文件
+        id: purge_urls
+        working-directory: ./NoMoreWalls
+        run: |
+          sleep 5
+          baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
+          urls=""
+          for f in `find snippets -name "*.yml" -type f`; do
+            urls+="${baseUrl}/NoMoreWalls/${f},"
+          done
+          for f in `find . -maxdepth 1 -name "list*" -type f`; do
+            urls+="${baseUrl}/NoMoreWalls/${f},"
+          done
+          echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
+      - name: 清除 JsDelivr CDN 缓存
+        uses: egad13/purge-jsdelivr-cache@v1
+        with:
+          url: ${{ steps.purge_urls.outputs.urls }}
+        continue-on-error: true

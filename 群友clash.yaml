@@ -140,7 +140,10 @@ rules:
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
   - DOMAIN-REGEX,(gstatic|tailscale|visualstudio|bard|gemini),PROXY
-  - DOMAIN-REGEX,^.*\.(googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
+  - DOMAIN-REGEX,^.*\.(google\.cn|googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY #Google
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,PROXY #Google
+  - DOMAIN-SUFFIX,dl.google.com,DIRECT #可直连Google下载
   - GEOSITE,win-update,DIRECT
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
@@ -218,11 +221,6 @@ proxy-groups:
       - 请不要分享订阅！
     <<: *groupsSet
 
-  - name: 自动选择
-    type: url-test
-    include-all: true
-    <<: *groupsSet
-
   - name: CF-vless协议
     type: select
     disable-udp: true
@@ -247,6 +245,11 @@ proxy-groups:
     type: select
     use:
       - 散线
+    <<: *groupsSet
+
+  - name: 自动选择
+    type: url-test
+    include-all: true
     <<: *groupsSet
 
   - name: 请不要分享订阅！

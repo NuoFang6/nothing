@@ -1,0 +1,36 @@
+proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 10,11|台湾|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  name: 10,11|台湾3|@ripaojiedian
+  network: tcp
+  password: 8fc4337b-4636-44a2-a160-9d360436aa57
+  port: 13035
+  server: naiu-other.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 10,11|台湾4|@ripaojiedian
+  network: tcp
+  password: a6feaa76-f2a6-37fc-b6ac-82aced49aa99
+  port: 59021
+  server: gy.58n.net
+  skip-cert-verify: false
+  sni: x100.flybar.work
+  type: trojan
