@@ -1,1 +1,15 @@
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 7,10,12|台湾|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g

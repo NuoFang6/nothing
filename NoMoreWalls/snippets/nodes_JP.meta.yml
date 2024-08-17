@@ -12,50 +12,50 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok...
+  name: 0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok...
   password: G!yBwPWH3Vao
   port: 812
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0,10|SS--NF解锁本自制剧-ChatGPT-TikTok-Yo...
+  name: 0,13|SS--NF解锁本自制剧-ChatGPT-TikTok-Yo...
   password: G!yBwPWH3Vao
   port: 810
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #3'
+  name: '0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #3'
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #5'
+  name: '0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #5'
   password: G!yBwPWH3Vao
   port: 809
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #2'
+  name: '0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #2'
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #6'
+  name: '0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #6'
   password: G!yBwPWH3Vao
   port: 806
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #4'
+  name: '0,13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #4'
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
   type: ss
 - alterId: 0
   cipher: auto
-  name: 5,7,9|日本|@ripaojiedian
+  name: 7,10,12|日本|@ripaojiedian
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -68,7 +68,7 @@ proxies:
       Host: oA5FSz9Tjp1.yofnhkfc.xyz
     path: /video/P7EExoE2
 - delay: 1188
-  name: 6|日本 001
+  name: 8|日本 001
   network: ws
   port: 2096
   server: 154.92.9.28
@@ -82,14 +82,14 @@ proxies:
     path: /youtube-
 - alterId: 0
   cipher: auto
-  name: '7|🇪🇺 欧洲(油管:破解资源君) #49'
+  name: '10|🇪🇺 欧洲(油管:破解资源君) #49'
   network: tcp
   port: '19570'
   server: 146.56.184.242
   tls: false
   type: vmess
   uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9
-- name: '7|🇯🇵 日本(油管:破解资源君) #1'
+- name: '10|🇯🇵 日本(油管:破解资源君) #1'
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   port: 40001
   server: in-04.licom.ml
@@ -97,7 +97,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '7|🇪🇺 欧洲(油管:破解资源君) #45'
+  name: '10|🇪🇺 欧洲(油管:破解资源君) #45'
   network: tcp
   port: '21953'
   server: 43.156.35.124
@@ -106,7 +106,7 @@ proxies:
   uuid: 4ef2b7d6-3f58-42c2-95ad-061001b712d3
 - alterId: 0
   cipher: auto
-  name: '7|🇯🇵 日本(油管:破解资源君) #12'
+  name: '10|🇯🇵 日本(油管:破解资源君) #12'
   network: ws
   port: '80'
   server: 123456789abcd.xn--h6q53lcvpz7l.club
@@ -119,7 +119,7 @@ proxies:
     path: /images
 - alterId: 0
   cipher: auto
-  name: '7|🇯🇵 日本(油管:破解资源君) #13'
+  name: '10|🇯🇵 日本(油管:破解资源君) #13'
   network: tcp
   port: '443'
   server: 132.145.113.238
@@ -127,7 +127,7 @@ proxies:
   type: vmess
   uuid: 84b1b846-748c-45ca-839e-4e21f9acc6c5
 - cipher: chacha20-ietf-poly1305
-  name: '10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #1'
+  name: '13|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 185.172.113.182
@@ -136,7 +136,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 10|VMESS-未知>日本-NF解锁自制剧-TikTok-You...
+  name: 13|VMESS-未知>日本-NF解锁自制剧-TikTok-You...
   network: ws
   port: 80
   server: 104.20.213.8
@@ -148,3 +148,30 @@ proxies:
     headers:
       HOST: dl3.www.soft98.ir.голов0рез.fir3brand.煽動者追逐雷恩.погонезаpейн.wonkacapitano.buzz.
     path: /vmess#DarkVPNpro#DarkVPNpro#DarkVPNpro#DarkVPNpro
+- client-fingerprint: safari
+  name: 14|JP_speednode_0078
+  network: ws
+  port: 443
+  server: www.arizona.edu
+  servername: www.Arizona.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
+  ws-opts:
+    headers:
+      Host: fraud.chase
+    path: /?ed
+- name: 14|JP_speednode_0079
+  network: ws
+  port: 80
+  server: 43.153.181.217
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048

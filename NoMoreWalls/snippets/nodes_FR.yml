@@ -63,53 +63,22 @@ proxies:
   port: 810
   server: 51.178.87.37
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 10|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-...
+  name: 5|法国 V2CROSS.COM
   network: ws
-  port: 443
-  server: jahfkjha.cfd
-  servername: jahfkjha.cfd
-  skip-cert-verify: true
+  port: 30001
+  server: 51.89.81.145
   tls: true
   type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      HOST: jahfkjha.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 10|VMESS-未知>国-NF解锁法国自制剧-ChatGPT-T...
-  network: ws
-  port: 443
-  server: hms182.glweidf.sbs
-  servername: glweidf.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      HOST: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '10|VMESS-未知>法国-NF解锁法国自制剧-ChatGPT-... #1'
-  network: ws
-  port: 8880
-  server: 104.16.68.38
-  servername: worker-lingering-fog-c021.gesofog870.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      HOST: worker-lingering-fog-c021.gesofog870.workers.dev
-    path: /glweidf.sbs/linkws
+      Host: ''
+    path: /path/181721272114
+- name: 5|法国+巴黎Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.210.215
+  sni: trojan.burgerip.co.uk
+  type: trojan

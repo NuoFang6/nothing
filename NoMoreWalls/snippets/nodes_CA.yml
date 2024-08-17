@@ -25,7 +25,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 026
+  name: 8|加拿大 026
   network: ws
   port: 2086
   server: 104.19.46.17
@@ -38,7 +38,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 037
+  name: 8|加拿大 037
   network: ws
   port: 2086
   server: 104.19.45.19
@@ -51,7 +51,20 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 003
+  name: '8,10|🇺🇸 美国 CloudFlare节点 #28'
+  network: ws
+  port: '2086'
+  server: 104.19.45.50
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 8|加拿大 003
   network: ws
   port: 8443
   server: 104.19.45.11
@@ -66,7 +79,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 094
+  name: 8|加拿大 094
   network: ws
   port: 2052
   server: 104.19.59.89
@@ -80,20 +93,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 069
-  network: ws
-  port: 2086
-  server: 104.19.38.8
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 6|加拿大 014
+  name: 8|加拿大 014
   network: ws
   port: 2086
   server: 104.19.47.36
@@ -108,7 +108,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 138
+  name: 8|加拿大 138
   network: ws
   port: 2052
   server: 104.19.21.63
@@ -121,7 +121,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 140
+  name: 8|加拿大 140
   network: ws
   port: 2052
   server: 104.20.17.186
@@ -135,7 +135,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1045
-  name: 6|加拿大 071
+  name: 8|加拿大 071
   network: ws
   port: 2095
   server: 104.17.148.22
@@ -150,7 +150,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1198
-  name: 6|加拿大 115
+  name: 8|加拿大 115
   network: ws
   port: 8080
   server: 104.19.47.10
@@ -162,7 +162,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 129
+  name: 8|加拿大 129
   network: ws
   port: 2052
   server: 104.19.42.49
@@ -177,7 +177,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 886
-  name: 6|加拿大 050
+  name: 8|加拿大 050
   network: ws
   port: 2052
   server: 104.17.106.151
@@ -192,7 +192,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 999
-  name: 6|加拿大 058
+  name: 8|加拿大 058
   network: ws
   port: 2052
   server: 104.19.21.230
@@ -206,7 +206,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 077
+  name: 8|加拿大 077
   network: ws
   port: 2086
   server: 104.16.148.244
@@ -222,7 +222,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2709
-  name: 6|加拿大 154
+  name: 8|加拿大 154
   network: ws
   port: 2052
   server: 104.19.58.175
@@ -236,7 +236,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1382
-  name: 6|加拿大 029
+  name: 8|加拿大 029
   network: ws
   port: 8080
   server: 104.16.61.8
@@ -251,7 +251,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1274
-  name: 6|加拿大 010
+  name: 8|加拿大 010
   network: ws
   port: 2082
   server: 104.16.67.38
@@ -266,7 +266,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1612
-  name: 6|加拿大 023
+  name: 8|加拿大 023
   network: ws
   port: 2086
   server: 104.16.67.38
@@ -281,7 +281,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1366
-  name: 6|加拿大 032
+  name: 8|加拿大 032
   network: ws
   port: 8080
   server: 104.16.67.38
@@ -295,7 +295,7 @@ proxies:
     path: /hms02.fxiaomi.sbs/link
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 086
+  name: 8|加拿大 086
   network: ws
   port: 2052
   server: 104.19.46.103
@@ -310,7 +310,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 008
+  name: 8|加拿大 008
   network: ws
   port: 2052
   server: 104.26.0.56
@@ -325,7 +325,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 024
+  name: 8|加拿大 024
   network: ws
   port: 80
   server: www.zula.ir
@@ -340,22 +340,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  delay: 1938
-  name: 6|加拿大 040
-  network: ws
-  port: 2086
-  server: 104.26.5.113
-  servername: ip1.1789034.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 6|加拿大 034
+  name: 8|加拿大 034
   network: ws
   port: 2095
   server: 104.19.45.73
@@ -371,7 +356,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1488
-  name: 6|加拿大 038
+  name: 8|加拿大 038
   network: ws
   port: 2086
   server: 104.19.45.13
@@ -385,7 +370,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 002
+  name: 8|加拿大 002
   network: ws
   port: 443
   server: 104.17.147.22
@@ -400,7 +385,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 035
+  name: 8|加拿大 035
   network: ws
   port: 2052
   server: 104.19.57.4
@@ -415,7 +400,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 005
+  name: 8|加拿大 005
   network: ws
   port: 8080
   server: 23.227.38.3
@@ -429,7 +414,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 015
+  name: 8|加拿大 015
   network: ws
   port: 8880
   server: 104.16.67.38
@@ -444,7 +429,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 084
+  name: 8|加拿大 084
   network: ws
   port: 2086
   server: fbi.gov
@@ -458,7 +443,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 090
+  name: 8|加拿大 090
   network: ws
   port: 2086
   server: 104.19.42.49
@@ -472,7 +457,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 011
+  name: 8|加拿大 011
   network: ws
   port: 2086
   server: 104.19.46.33
@@ -487,7 +472,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 085
+  name: 8|加拿大 085
   network: ws
   port: 80
   server: 104.17.148.22
@@ -502,7 +487,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 091
+  name: 8|加拿大 091
   network: ws
   port: 2052
   server: 104.26.7.132
@@ -517,7 +502,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 052
+  name: 8|加拿大 052
   network: ws
   port: 2086
   server: 104.19.46.36
@@ -531,7 +516,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 099
+  name: 8|加拿大 099
   network: ws
   port: 2086
   server: 104.19.38.88
@@ -546,7 +531,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 937
-  name: 6|加拿大 133
+  name: 8|加拿大 133
   network: ws
   port: 2052
   server: 104.19.32.216
@@ -560,7 +545,22 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 076
+  name: '8,10|🇺🇸 美国 CloudFlare节点 #12'
+  network: ws
+  port: '2082'
+  server: 104.16.61.8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: worker-lingering-fog-c021.gesofog870.workers.dev
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 8|加拿大 076
   network: ws
   port: 2095
   server: 172.67.170.103
@@ -575,7 +575,7 @@ proxies:
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 079
+  name: 8|加拿大 079
   network: ws
   port: 2082
   server: 104.21.69.44
@@ -590,7 +590,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 080
+  name: 8|加拿大 080
   network: ws
   port: 2086
   server: 104.26.8.156
@@ -605,7 +605,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 064
+  name: 8|加拿大 064
   network: ws
   port: 2082
   server: www.zula.ir
@@ -619,7 +619,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 049
+  name: 8|加拿大 049
   network: ws
   port: 2052
   server: 104.18.57.111
@@ -634,7 +634,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 081
+  name: 8|加拿大 081
   network: ws
   port: 2052
   server: 104.20.25.146
@@ -649,7 +649,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 009
+  name: 8|加拿大 009
   network: ws
   port: 2086
   server: 104.19.45.15
@@ -663,7 +663,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 006
+  name: 8|加拿大 006
   network: ws
   port: 80
   server: 104.16.67.38
@@ -677,7 +677,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 001
+  name: 8|加拿大 001
   network: ws
   port: 2095
   server: 104.16.61.8
@@ -692,7 +692,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 004
+  name: 8|加拿大 004
   network: ws
   port: 2086
   server: 23.227.38.3
@@ -706,7 +706,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 007
+  name: 8|加拿大 007
   network: ws
   port: 2086
   server: japan.com
@@ -720,7 +720,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 013
+  name: 8|加拿大 013
   network: ws
   port: 2086
   server: russia.com
@@ -734,7 +734,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 016
+  name: 8|加拿大 016
   network: ws
   port: 2086
   server: 104.19.55.49
@@ -749,7 +749,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 017
+  name: 8|加拿大 017
   network: ws
   port: 2095
   server: 104.19.45.5
@@ -762,20 +762,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|加拿大 019
-  network: ws
-  port: 2086
-  server: 162.159.140.66
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 6|加拿大 012
+  name: 8|加拿大 012
   network: ws
   port: 2086
   server: 104.19.47.77
@@ -787,7 +774,7 @@ proxies:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: 10|SS-加拿大-ChatGPT-TikTok-YouTube-...
+  name: 13|SS-加拿大-ChatGPT-TikTok-YouTube-...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com

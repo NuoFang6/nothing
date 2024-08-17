@@ -28,15 +28,9 @@ proxies:
     headers:
       Host: 22.lwdh.us
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 3,7,10|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
-  password: WQC0BtSUQnhuBUkm0meQES
-  port: 65305
-  server: 81.19.140.31
-  type: ss
 - client-fingerprint: chrome
   delay: 1451
-  name: 6|俄罗斯 003
+  name: 8|俄罗斯 003
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -49,7 +43,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
 - delay: 817
-  name: 6|俄罗斯 002
+  name: 8|俄罗斯 002
   network: ws
   port: 80
   server: 185.148.104.199
@@ -61,11 +55,12 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - delay: 1457
-  name: 6|俄罗斯 005
+  name: 8,14|RU_speednode_0085
   network: ws
   port: 2096
   server: 188.42.145.159
   servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -75,20 +70,22 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - delay: 2713
-  name: 6|俄罗斯 004
+  name: 8,14|RU_speednode_0092
   network: ws
   port: 443
   server: 212.41.15.119
   servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /
 - delay: 1259
-  name: 6|俄罗斯 001
+  name: 8|俄罗斯 001
   network: ws
   port: 443
   server: 188.42.145.159
@@ -100,7 +97,7 @@ proxies:
     headers:
       Host: VIrgiNiavPn-nL.pagEs.dEv
     path: /
-- name: 7|🇷🇺 俄罗斯(油管:破解资源君)
+- name: 10|🇷🇺 俄罗斯(油管:破解资源君)
   password: dd8a44f9-7c1d-4286-8f6f-4e4f19cb7998
   port: 32451
   server: dg.hootfun.top
@@ -109,7 +106,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '7|🇷🇺 俄罗斯(油管:破解资源君) #1'
+  name: '10|🇷🇺 俄罗斯(油管:破解资源君) #1'
   network: ws
   port: '14369'
   server: 195.133.53.192
@@ -120,3 +117,112 @@ proxies:
     headers:
       Host: 195.133.53.192
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 10,13|SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-T...
+  password: WQC0BtSUQnhuBUkm0meQES
+  port: 65305
+  server: 81.19.140.31
+  type: ss
+- name: 14|RU_speednode_0086
+  network: ws
+  port: 8443
+  server: 188.42.145.159
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0087
+  network: ws
+  port: 443
+  server: 188.42.145.178
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0088
+  network: ws
+  port: 8443
+  server: 188.42.145.90
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chrome
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0089
+  network: ws
+  port: 8443
+  server: 188.42.145.90
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chromefp=chromefp=chrome
+- name: 14|RU_speednode_0090
+  network: ws
+  port: 443
+  server: 185.59.218.0
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0091
+  network: ws
+  port: 443
+  server: 188.42.145.140
+  servername: g1.youyuan.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+  ws-opts:
+    headers:
+      Host: g1.youyuan.us.kg
+    path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0093
+  network: ws
+  port: 443
+  server: 188.42.145.84
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2fp=chrome
