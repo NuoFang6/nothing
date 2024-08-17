@@ -1,48 +1,53 @@
 proxies:
-- name: 2|KR(AzadNet.t.me)_001
-  network: tcp
-  password: your_password
+- delay: 1619
+  name: 6|韩国 001
+  network: ws
+  port: 10082
+  server: 14.52.249.135
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
+- name: 6|韩国 002
+  network: ws
+  password: CMLiu
   port: 443
-  server: 3.35.157.103
-  skip-cert-verify: true
-  sni: aws-kr-seoul-1.f1rocketnode.com
+  server: 59.3.3.161
+  sni: aliorg.filegear-sg.me
   type: trojan
-  udp: true
-- name: 2|🇷KR(AzadNet.t.me)_002
-  network: tcp
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.seoulcityhall.com.ua
-  skip-cert-verify: true
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 6|韩国 003
+  network: ws
+  password: CMLiu
+  port: 11423
+  server: 218.158.87.155
+  sni: aliorg.filegear-sg.me
   type: trojan
-  udp: true
-- name: 2|🇷KR(AzadNet.t.me)_003
-  network: tcp
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: official.seoulcitygovernment.com.ua
-  skip-cert-verify: true
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 6|韩国 004
+  network: ws
+  password: CMLiu
+  port: 10443
+  server: 222.97.95.239
+  sni: aliorg.filegear-sg.me
   type: trojan
-  udp: true
-- name: 2|🇰🇷KR(AzadNet.t.me)_004
-  network: tcp
-  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
-  port: 443
-  server: kr6.twincloud.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇷KR(AzadNet.t.me)_005
-  network: tcp
-  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
-  port: 443
-  server: kr2.twincloud.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
 - alterId: 0
   cipher: auto
-  name: 11|🇰🇷 韩国(油管:破解资源君)
+  name: 7|🇰🇷 韩国(油管:破解资源君)
   network: ws
   port: '54541'
   server: 45.43.41.222
@@ -53,38 +58,10 @@ proxies:
     headers:
       Host: 45.43.41.222
     path: /
-- name: 11|12|KR_speednode_0080
+- name: 7|12|KR_speednode_0080
   password: CMLiu
   port: 443
   server: 59.3.3.161
   skip-cert-verify: true
   sni: aliorg.filegear-sg.me
   type: trojan
-- name: 15|KR_speednode_0080
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 59.3.3.161
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 15|KR_speednode_0081
-  network: ws
-  port: 443
-  server: 59.3.3.161
-  servername: page-us-qg0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
-  ws-opts:
-    headers:
-      Host: page-us-qg0.pages.dev
-    path: /security

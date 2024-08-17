@@ -11,146 +11,9 @@ proxies:
   uuid: b5f7e932-f730-4ad2-b425-40977b9db332
   ws-opts:
     path: /
-- name: 2|🇪DE(AzadNet.t.me)_001
-  network: tcp
-  password: your_password
-  port: 443
-  server: aws-ge-frankfurt-1.f1rocketnode.com
-  skip-cert-verify: true
-  sni: aws-ge-frankfurt-1.f1rocketnode.com
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_002
-  network: tcp
-  password: your_password
-  port: 443
-  server: 54.93.172.88
-  skip-cert-verify: true
-  sni: aws-ge-frankfurt-1.f1rocketnode.com
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_003
-  network: tcp
-  password: d11f1d67-f409-48ef-9767-a0fe081fe81d
-  port: 443
-  server: 91.195.240.12
-  skip-cert-verify: true
-  sni: data-ar.efyunpan.com
-  type: trojan
-  udp: true
-- name: 2|🇪DE(AzadNet.t.me)_004
-  network: tcp
-  password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
-  port: 1935
-  server: stream.varzeshtv.live
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_007
-  network: tcp
-  password: d76294c5-a31f-408d-ba0b-89880107cab5
-  port: 443
-  server: 5.75.152.12
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_008
-  network: tcp
-  password: 9aa6b5ad-c0fc-47f4-a837-f72179d7b662
-  port: 443
-  server: 168.119.64.242
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 2|🇪DE(AzadNet.t.me)_010
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.62
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇪DE(AzadNet.t.me)_011
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇪DE(AzadNet.t.me)_012
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇩🇪DE(AzadNet.t.me)_013
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.185.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇪DE(AzadNet.t.me)_014
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.185.15
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 2|🇪DE(AzadNet.t.me)_015
-  network: ws
-  port: 443
-  server: 91.195.110.166
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      host: 38hhuiet-glitter-ee01.lijeyet360.workers.dev
-    path: /hms02.fxiaomi.sbs/link
-- name: 2|🇪DE(AzadNet.t.me)_018
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.184.169.155
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_019
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.157.89.0
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_020
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.122.13.96
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 2|🇩🇪DE(AzadNet.t.me)_021
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.126.62.222
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 2|🇩🇪DE(AzadNet.t.me)_023
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 142.202.51.58
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 6,11|🇩🇪 德国 V2CROSS.COM
+  name: 3,7|🇩🇪 德国 V2CROSS.COM
   network: ws
   port: '21929'
   server: 37.114.60.196
@@ -161,3 +24,19 @@ proxies:
     headers:
       Host: dxobG4aZmk.gafnode.sbs
     path: /speedtest
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 10|VMESS-未知>德国-NF解锁国自制剧-ChatGPT-T...
+  network: ws
+  port: 443
+  server: to.tilebani.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: to.tilebani.com
+    path: /linkvws

@@ -12,7 +12,7 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 0,2|🇺🇸US(AzadNet.t.me)_282
+  name: 0|🇨🇦CA-23.162.200.130-0811 | 1.0...
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 23.162.200.130
@@ -23,157 +23,1305 @@ proxies:
   port: 989
   server: 37.143.129.230
   type: ss
-- name: 2|🇦CA(AzadNet.t.me)_001
-  network: tcp
-  password: your_password
-  port: 443
-  server: 35.183.238.42
-  skip-cert-verify: true
-  sni: aws-ca-central-1.f1rocketnode.com
-  type: trojan
-  udp: true
-- name: 2|🇦CA(AzadNet.t.me)_002
-  network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40003
-  server: 168.138.73.206
-  skip-cert-verify: true
-  sni: frontend.kuangbiaoyun.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_003
-  network: tcp
-  port: 3389
-  server: 167.99.179.27
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- cipher: aes-256-gcm
-  name: 2|🇦CA(AzadNet.t.me)_004
-  password: 7gaTTlW73G
-  port: 49602
-  server: 51.222.157.179
-  type: ss
-- name: 2|🇨🇦CA(AzadNet.t.me)_005
-  network: tcp
-  password: 23c33600-c059-11ee-a2eb-1239d0255272
-  port: 443
-  server: ca1.test3.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇨🇦CA(AzadNet.t.me)_006
-  network: tcp
-  password: 14e4c020-b26f-11ee-b907-1239d0255272
-  port: 443
-  server: 144.217.81.44
-  skip-cert-verify: true
-  sni: uplod.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_007
-  network: tcp
-  port: 3389
-  server: 178.128.237.6
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_008
-  network: tcp
-  port: 17163
-  server: 108.181.200.220
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d54814a1-7a93-45f8-9117-db317a25d100
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_009
+  name: 6|加拿大 026
   network: ws
-  port: 22751
-  server: 108.181.200.220
-  skip-cert-verify: true
+  port: 2086
+  server: 104.19.46.17
   tls: false
   type: vmess
-  uuid: 09fb03a6-5e49-4a59-e268-dbd1720f5eb1
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 037
+  network: ws
+  port: 2086
+  server: 104.19.45.19
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 003
+  network: ws
+  port: 8443
+  server: 104.19.45.11
+  servername: hk01.leleles.us
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
+  ws-opts:
+    headers:
+      Host: hk01.leleles.us
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_010
+  name: 6|加拿大 094
   network: ws
-  port: 50613
-  server: 108.181.200.220
-  skip-cert-verify: true
+  port: 2052
+  server: 104.19.59.89
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 09e81eaa-d298-432c-e7b6-17add32d14fc
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_011
-  network: tcp
-  port: 50100
-  server: 74.48.4.5
-  skip-cert-verify: true
+  name: 6|加拿大 069
+  network: ws
+  port: 2086
+  server: 104.19.38.8
   tls: false
   type: vmess
-  uuid: 7748cec0-5164-4c52-87cf-55758d80fdaf
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇦CA(AzadNet.t.me)_012
-  network: ws
-  port: 443
-  server: 68.168.31.242
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      host: 68.168.31.242
-    path: /linkvws
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 2|🇦CA(AzadNet.t.me)_013
+  name: 6|加拿大 014
   network: ws
-  port: 443
-  server: 68.168.31.196
-  skip-cert-verify: true
-  tls: true
+  port: 2086
+  server: 104.19.47.36
+  servername: ip2.1457230.xyz
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      host: 68.168.31.196
-    path: /linkvws
-- name: 2|🇨🇦CA(AzadNet.t.me)_014
+      Host: ip2.1457230.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 138
   network: ws
-  port: 22222
-  server: 52.60.176.252
-  servername: telegram-channel-vlessconfig.sohala.uk
+  port: 2052
+  server: 104.19.21.63
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 140
+  network: ws
+  port: 2052
+  server: 104.20.17.186
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- delay: 1601
+  name: 6|加拿大 151
+  network: ws
+  port: 443
+  server: cnv6.xxxxxxxx.tk
+  servername: hke.ylks.xyz
   tls: true
   type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
-    path: /telegram-channel-vlessconfig-ws
-- cipher: aes-256-gcm
-  name: 2|🇨🇦CA(AzadNet.t.me)_015
-  password: pKEW8JPByTVTLtM
+    headers:
+      Host: hke.ylks.xyz
+    path: /blue
+- delay: 2047
+  name: 6|加拿大 060
+  network: ws
+  port: 8443
+  server: russia.com
+  servername: jpi.ylks01.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: jpi.ylks01.eu.org
+    path: /blue
+- delay: 1735
+  name: 6|加拿大 063
+  network: ws
+  port: 2083
+  server: russia.com
+  servername: jpi.ylks01.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: jpi.ylks01.eu.org
+    path: /blue
+- alterId: 0
+  cipher: auto
+  delay: 1045
+  name: 6|加拿大 071
+  network: ws
+  port: 2095
+  server: 104.17.148.22
+  servername: www.speedtest.net.kkkkklllkokowkfwofkfkfekojg.ir.mralpha-vpn.COm
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3bc2168a-93f0-42f8-9a66-d8215bf01ab0
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.kkkkklllkokowkfwofkfkfekojg.ir.mralpha-vpn.COm
+    path: /Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray-Telegram-Mainv2ray?ed=2048
+- client-fingerprint: randomized
+  delay: 1516
+  name: 6|加拿大 021
+  network: ws
   port: 443
-  server: 38.111.114.133
-  type: ss
+  server: 104.19.132.75
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  delay: 1776
+  name: 6|加拿大 042
+  network: ws
+  port: 2053
+  server: 104.24.196.20
+  servername: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
+    path: /KkhHL0gsSoZ7M6id/ZGU1Lm1lcmxpbm56Lmxpbms=?ed=2560
+- delay: 1468
+  name: 6|加拿大 088
+  network: ws
+  port: 443
+  server: 104.20.119.243
+  servername: vi.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vi.ylks.xyz
+    path: /9nnczaa7prwby3nu?ed=2560
+- delay: 1305
+  name: 6|加拿大 089
+  network: ws
+  port: 2096
+  server: 104.20.119.243
+  servername: vi.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vi.ylks.xyz
+    path: /cnwpzpsrtlroltzo?ed=2560
+- delay: 1578
+  name: 6|加拿大 096
+  network: ws
+  port: 2087
+  server: 104.21.3.131
+  servername: vi.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vi.ylks.xyz
+    path: /fk9h5rnc36strsnd?ed=2560
+- delay: 1518
+  name: 6|加拿大 097
+  network: ws
+  port: 2087
+  server: 104.20.119.243
+  servername: vi.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vi.ylks.xyz
+    path: /ovijj9b8yz0ghou0?ed=2560
+- alterId: 0
+  cipher: auto
+  delay: 1198
+  name: 6|加拿大 115
+  network: ws
+  port: 8080
+  server: 104.19.47.10
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 129
+  network: ws
+  port: 2052
+  server: 104.19.42.49
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: /
+- client-fingerprint: randomized
+  delay: 2810
+  name: 6|加拿大 132
+  network: ws
+  port: 2083
+  server: 172.66.44.165
+  servername: bPBg.168168.Us.Kg
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: bPBg.168168.Us.Kg
+    path: /O3R46uTWxvXEMCHr/cHJveHlpcC5oay5meHhrLmRlZHluLmlv?ed=2560
+- client-fingerprint: randomized
+  delay: 1621
+  name: 6|加拿大 142
+  network: ws
+  port: 2087
+  server: 172.66.44.165
+  servername: bpBg.168168.uS.KG
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: bpBg.168168.uS.KG
+    path: /AMvVsH5vxCByr5Q5/cHJveHlpcC5oay5meHhrLmRlZHluLmlv?ed=2560
+- client-fingerprint: chrome
+  delay: 1574
+  name: 6|加拿大 143
+  network: ws
+  port: 443
+  server: 172.66.44.165
+  servername: eb043cC5.mkhAlILi.PAges.DEv
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: eb043cC5.mkhAlILi.PAges.DEv
+    path: /wstBteiWzlzWfZGp
+- client-fingerprint: chrome
+  delay: 1036
+  name: 6|加拿大 147
+  network: ws
+  port: 443
+  server: 162.159.1.94
+  servername: edtunnel-csc.pages.dev
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: edtunnel-csc.pages.dev
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  delay: 886
+  name: 6|加拿大 050
+  network: ws
+  port: 2052
+  server: 104.17.106.151
+  servername: cdn1.freegradely.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  delay: 999
+  name: 6|加拿大 058
+  network: ws
+  port: 2052
+  server: 104.19.21.230
+  servername: cdn1.freegradely.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- client-fingerprint: chrome
+  delay: 1510
+  name: 6|加拿大 103
+  network: ws
+  port: 8443
+  server: 204.216.105.106
+  servername: edgood.889876.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: edgood.889876.xyz
+    path: /
+- client-fingerprint: chrome
+  delay: 2107
+  name: 6|加拿大 104
+  network: ws
+  port: 8443
+  server: www.speedtest.net
+  servername: de1.vless.site
+  tls: true
+  type: vless
+  uuid: f3747309-5c2d-5bb4-9ffc-d8a3f1302741
+  ws-opts:
+    headers:
+      Host: de1.vless.site
+    path: /M_Buy
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 077
+  network: ws
+  port: 2086
+  server: 104.16.148.244
+  servername: ip006.freegradely.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.freegradely.xyz
+    path: /
+- client-fingerprint: chrome
+  delay: 2307
+  name: 6|加拿大 117
+  network: ws
+  port: 2087
+  server: www.speedtest.net
+  servername: ch1.vless.site
+  tls: true
+  type: vless
+  uuid: fb710f28-de49-5453-a5c8-697a15342d08
+  ws-opts:
+    headers:
+      Host: ch1.vless.site
+    path: /freeiranweb
+- alterId: 0
+  cipher: auto
+  delay: 2709
+  name: 6|加拿大 154
+  network: ws
+  port: 2052
+  server: 104.19.58.175
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- client-fingerprint: chrome
+  delay: 1414
+  name: 6|加拿大 161
+  network: ws
+  port: 443
+  server: 104.19.228.68
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  delay: 1520
+  name: 6|加拿大 162
+  network: ws
+  port: 2087
+  server: 104.17.147.22
+  servername: BpBG.168168.Us.kg
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: BpBG.168168.Us.kg
+    path: /c20mX9dVgjfBPA4P/cHJveHlpcC5oay5meHhrLmRlZHluLmlv?ed=2560
+- alterId: 0
+  cipher: auto
+  delay: 1382
+  name: 6|加拿大 029
+  network: ws
+  port: 8080
+  server: 104.16.61.8
+  servername: hyfhhg.jadovah977.workers.dev
+  skip-cert-verify: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: hyfhhg.jadovah977.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  delay: 1274
+  name: 6|加拿大 010
+  network: ws
+  port: 2082
+  server: 104.16.67.38
+  servername: worker-mute-bar-1719.nifotok993.workers.dev
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-mute-bar-1719.nifotok993.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  delay: 1612
+  name: 6|加拿大 023
+  network: ws
+  port: 2086
+  server: 104.16.67.38
+  servername: worker-damp-duadwans.jevesoj131.workers.dev
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-damp-duadwans.jevesoj131.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  delay: 1366
+  name: 6|加拿大 032
+  network: ws
+  port: 8080
+  server: 104.16.67.38
+  servername: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev
+    path: /hms02.fxiaomi.sbs/link
+- client-fingerprint: chrome
+  delay: 1251
+  name: 6|加拿大 054
+  network: ws
+  port: 443
+  server: 104.19.42.139
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 086
+  network: ws
+  port: 2052
+  server: 104.19.46.103
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 008
+  network: ws
+  port: 2052
+  server: 104.26.0.56
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- delay: 1441
+  name: 6|加拿大 105
+  network: ws
+  port: 2083
+  server: 104.21.3.131
+  servername: vn.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vn.ylks.xyz
+    path: /bi3oovtsfh9mzj4v?ed=2560
+- delay: 1380
+  name: 6|加拿大 106
+  network: ws
+  port: 2083
+  server: 104.20.119.243
+  servername: vn.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vn.ylks.xyz
+    path: /zzbytophofmtvf6d?ed=2560
+- delay: 1488
+  name: 6|加拿大 107
+  network: ws
+  port: 8443
+  server: 104.20.119.243
+  servername: vn.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vn.ylks.xyz
+    path: /swwhzsjxpr67qoqu?ed=2560
+- delay: 1247
+  name: 6|加拿大 112
+  network: ws
+  port: 8443
+  server: 172.67.130.185
+  servername: vn.ylks.xyz
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: vn.ylks.xyz
+    path: /lvml5vtqt8sgq8a8?ed=2560
+- delay: 1583
+  name: 6|加拿大 121
+  network: ws
+  port: 443
+  server: www.udemy.com
+  servername: zdyn.linghang.buzz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: zdyn.linghang.buzz
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 024
+  network: ws
+  port: 80
+  server: www.zula.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9
+  ws-opts:
+    headers:
+      Host: nlch.blueberrynetwork.store
+    path: /
+- alterId: 0
+  cipher: auto
+  delay: 1938
+  name: 6|加拿大 040
+  network: ws
+  port: 2086
+  server: 104.26.5.113
+  servername: ip1.1789034.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 034
+  network: ws
+  port: 2095
+  server: 104.19.45.73
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  delay: 1488
+  name: 6|加拿大 038
+  network: ws
+  port: 2086
+  server: 104.19.45.13
+  servername: ip13.freegradely.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 002
+  network: ws
+  port: 443
+  server: 104.17.147.22
+  servername: xv2.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      Host: xv2.pages.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 035
+  network: ws
+  port: 2052
+  server: 104.19.57.4
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- delay: 2727
+  name: 6|加拿大 047
+  network: ws
+  port: 443
+  server: www.hugedomains.com
+  servername: vr.ylkszy.eu.org
+  tls: true
+  type: vless
+  uuid: c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0
+  ws-opts:
+    headers:
+      Host: vr.ylkszy.eu.org
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 005
+  network: ws
+  port: 8080
+  server: 23.227.38.3
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  ws-opts:
+    headers:
+      Host: ip001.freegradely.xyz
+    path: /
+- client-fingerprint: chrome
+  delay: 2488
+  name: 6|加拿大 036
+  network: ws
+  port: 443
+  server: 172.66.46.224
+  servername: t-netplus-4vx.pages.dev
+  tls: true
+  type: vless
+  uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
+  ws-opts:
+    headers:
+      Host: t-netplus-4vx.pages.dev
+    path: /
+- client-fingerprint: chrome
+  delay: 1265
+  name: 6|加拿大 070
+  network: ws
+  port: 443
+  server: 172.67.181.121
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: /
+- client-fingerprint: chrome
+  delay: 2140
+  name: 6|加拿大 073
+  network: ws
+  port: 2083
+  server: 172.66.46.220
+  servername: MoRtEzA865.paGES.DEV
+  tls: true
+  type: vless
+  uuid: 34208027-101c-4e79-a0e3-87f62ef214e6
+  ws-opts:
+    headers:
+      Host: MoRtEzA865.paGES.DEV
+    path: /v3mqqmhkvvozmhv5?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 015
+  network: ws
+  port: 8880
+  server: 104.16.67.38
+  servername: 7hss-butterfly-d4c3.fijetem432.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  ws-opts:
+    headers:
+      Host: 7hss-butterfly-d4c3.fijetem432.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 084
+  network: ws
+  port: 2086
+  server: fbi.gov
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 090
+  network: ws
+  port: 2086
+  server: 104.19.42.49
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 011
+  network: ws
+  port: 2086
+  server: 104.19.46.33
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 085
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9
+  ws-opts:
+    headers:
+      Host: nlch.blueberrynetwork.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 091
+  network: ws
+  port: 2052
+  server: 104.26.7.132
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- client-fingerprint: chrome
+  delay: 2613
+  name: 6|加拿大 092
+  network: ws
+  port: 443
+  server: 172.67.177.201
+  servername: continuity.sasuke.ir
+  tls: true
+  type: vless
+  uuid: 5af10469-3ec3-4353-94d2-297b7215a15b
+  ws-opts:
+    headers:
+      Host: continuity.sasuke.ir
+    path: /ws
+- client-fingerprint: chrome
+  delay: 1193
+  name: 6|加拿大 095
+  network: ws
+  port: 443
+  server: 104.19.55.148
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 052
+  network: ws
+  port: 2086
+  server: 104.19.46.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 099
+  network: ws
+  port: 2086
+  server: 104.19.38.88
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip5-4.freegradely.xyz
+    path: /
+- client-fingerprint: chrome
+  delay: 1693
+  name: 6|加拿大 116
+  network: ws
+  port: 8443
+  server: 172.66.44.244
+  servername: pardazeshvpn-tg59.pages.dev
+  tls: true
+  type: vless
+  uuid: 96e3e3a8-b99e-4d6c-8a74-7a9ed2ef71fb
+  ws-opts:
+    headers:
+      Host: pardazeshvpn-tg59.pages.dev
+    path: /
+- client-fingerprint: randomized
+  delay: 1541
+  name: 6|加拿大 118
+  network: ws
+  port: 443
+  server: 172.66.208.0
+  servername: ARiAMeHr-eYQ.PAGeS.deV
+  tls: true
+  type: vless
+  uuid: a5542579-59e9-4bd3-8d93-eb609f83e19b
+  ws-opts:
+    headers:
+      Host: ARiAMeHr-eYQ.PAGeS.deV
+    path: /?ed=2560
+- client-fingerprint: randomized
+  delay: 1342
+  name: 6|加拿大 119
+  network: ws
+  port: 2087
+  server: 172.66.47.202
+  servername: azaDNeT-cvK.PAgeS.dEV
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: azaDNeT-cvK.PAgeS.dEV
+    path: /n4zYv8yJADqkuHH4?ed=2560
+- client-fingerprint: randomized
+  delay: 1276
+  name: 6|加拿大 120
+  network: ws
+  port: 443
+  server: 172.67.180.15
+  servername: paHlAvi.pAGEs.DeV
+  tls: true
+  type: vless
+  uuid: 3c95c3eb-522a-46a0-a49a-14e10c03fbf8
+  ws-opts:
+    headers:
+      Host: paHlAvi.pAGEs.DeV
+    path: /TELEGRAM-MARAMBASHI/?ed=2048
+- client-fingerprint: randomized
+  delay: 1433
+  name: 6|加拿大 123
+  network: ws
+  port: 443
+  server: 172.67.217.2
+  servername: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
+    path: /KkhHL0gsSoZ7M6id/ZGU1Lm1lcmxpbm56Lmxpbms=?ed=2560
+- client-fingerprint: randomized
+  delay: 1906
+  name: 6|加拿大 124
+  network: ws
+  packet-encoding: ''
+  port: 443
+  server: allsms.rozfa.com
+  servername: TeST-TESt-tEst-tESt.PagES.DEV
+  tls: true
+  type: vless
+  uuid: 6a89dc04-7781-46fe-b35c-e14a6b6e60b8
+  ws-opts:
+    headers:
+      Host: TeST-TESt-tEst-tESt.PagES.DEV
+    path: /DXapKozkFI9aiqC7?ed=2560
+- client-fingerprint: 随机
+  delay: 1842
+  name: 6|加拿大 125
+  network: ws
+  packet-encoding: ''
+  port: 8080
+  server: www.gov.ua
+  servername: 302.j4tccyw7.workers.dev
+  type: vless
+  uuid: b6cdbcb4-fccd-4237-b055-345a06eaa08e
+  ws-opts:
+    headers:
+      Host: 302.j4tccyw7.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  delay: 1598
+  name: 6|加拿大 126
+  network: ws
+  port: 443
+  server: 172.66.44.90
+  servername: pardazeshvpn-tg89.pages.dev
+  tls: true
+  type: vless
+  uuid: 2f758eb2-d936-4254-9227-71c38fc04609
+  ws-opts:
+    headers:
+      Host: pardazeshvpn-tg89.pages.dev
+    path: '/Telegram:'
+- client-fingerprint: randomized
+  delay: 1508
+  name: 6|加拿大 127
+  network: ws
+  port: 443
+  server: 172.66.47.74
+  servername: SHAh-9Aq.PAGes.deV
+  tls: true
+  type: vless
+  uuid: 105c7a94-ddd4-4025-bf6f-5be4fc657354
+  ws-opts:
+    headers:
+      Host: SHAh-9Aq.PAGes.deV
+    path: /Tel-
+- alterId: 0
+  cipher: auto
+  delay: 937
+  name: 6|加拿大 133
+  network: ws
+  port: 2052
+  server: 104.19.32.216
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 076
+  network: ws
+  port: 2095
+  server: 172.67.170.103
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: yaghoob55freenodes.repaco69437403.workers.dev
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 079
+  network: ws
+  port: 2082
+  server: 104.21.69.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
+  ws-opts:
+    headers:
+      Host: express.waltonweb.ir.
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 080
+  network: ws
+  port: 2086
+  server: 104.26.8.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 064
+  network: ws
+  port: 2082
+  server: www.zula.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
+  ws-opts:
+    headers:
+      Host: express.waltonweb.ir.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 049
+  network: ws
+  port: 2052
+  server: 104.18.57.111
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 081
+  network: ws
+  port: 2052
+  server: 104.20.25.146
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn1.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 009
+  network: ws
+  port: 2086
+  server: 104.19.45.15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip13.freegradely.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 006
+  network: ws
+  port: 80
+  server: 104.16.67.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers:
+      Host: us3e-mmnnfr9dop0.v2freevpn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 001
+  network: ws
+  port: 2095
+  server: 104.16.61.8
+  servername: ep-sunset-9b11.kekic13319.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: ep-sunset-9b11.kekic13319.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 004
+  network: ws
+  port: 2086
+  server: 23.227.38.3
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1457230.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 007
+  network: ws
+  port: 2086
+  server: japan.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 013
+  network: ws
+  port: 2086
+  server: russia.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 016
+  network: ws
+  port: 2086
+  server: 104.19.55.49
+  servername: ip2.1457230.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 017
+  network: ws
+  port: 2095
+  server: 104.19.45.5
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 019
+  network: ws
+  port: 2086
+  server: 162.159.140.66
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 6|加拿大 012
+  network: ws
+  port: 2086
+  server: 104.19.47.77
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: 2,14|SS-加拿大-ChatGPT-TikTok-YouTube-...
+  name: 10|SS-加拿大-ChatGPT-TikTok-YouTube-...
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com

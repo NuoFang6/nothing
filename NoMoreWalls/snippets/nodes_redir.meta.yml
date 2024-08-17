@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  name: 7|🇺🇸 _US_美国->🇨🇦_CA_加拿大
   network: ws
   port: '2086'
   server: 104.19.47.79
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  name: '7|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
   network: ws
   port: '2086'
   server: 104.19.46.39
@@ -27,7 +27,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11|🇺🇸 _US_美国->🇨🇳_CN_中国
+  name: 7|🇺🇸 _US_美国->🇨🇳_CN_中国
   network: ws
   port: '2052'
   server: 104.19.21.240
@@ -40,7 +40,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
+  name: '7|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
   network: ws
   port: '2086'
   server: 104.19.47.32
@@ -53,7 +53,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11|🇸🇬 _US_美国->🇸🇬_SG_新加坡
+  name: 7|🇸🇬 _US_美国->🇸🇬_SG_新加坡
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
@@ -66,7 +66,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+  name: 7|🇺🇸 _US_美国->🇳🇱_NL_荷兰
   network: ws
   port: '2086'
   server: 172.64.198.249
@@ -79,7 +79,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
+  name: '7|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
   network: ws
   port: '2086'
   server: 104.19.45.47
@@ -92,7 +92,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
+  name: '7|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
   network: ws
   port: '8080'
   server: 104.19.47.126
@@ -107,7 +107,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 14|VMESS->-NF法国-ChatGPT-TikTok-Yo...
+  name: 10|VMESS->-NF法国-ChatGPT-TikTok-Yo...
   network: ws
   port: 8880
   server: fr-a.yuji2022.eu.org

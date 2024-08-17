@@ -13,7 +13,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 8,11|🇭🇰 11|香港|@ripaojiedian
+  name: 5,7|🇭🇰 11|香港|@ripaojiedian
   network: ws
   port: '46001'
   server: mmhk01.micloud.buzz
@@ -26,7 +26,7 @@ proxies:
     path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 8,11,13|香港5|@ripaojiedian
+  name: 5,7,9|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
@@ -36,7 +36,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 8,13|香港|@ripaojiedian
+  name: 5,9|香港|@ripaojiedian
   network: ws
   port: '46001'
   server: mmhk01.micloud.buzz
@@ -48,9 +48,63 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- client-fingerprint: random
+  delay: 1229
+  name: 6|香港 005
+  network: ws
+  port: 443
+  server: 202.81.231.150
+  servername: kke.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: kke.ylks.xyz
+    path: /
+- name: 6|香港 001
+  network: ws
+  port: 12346
+  server: 8.210.142.146
+  servername: zhongkui.pages.dev
+  tls: true
+  type: vless
+  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
+  ws-opts:
+    headers:
+      Host: zhongkui.pages.dev
+    path: /?end=
+- client-fingerprint: randomized
+  delay: 476
+  name: 6|香港 004
+  network: ws
+  port: 11417
+  server: 183.178.22.246
+  servername: dns68.putata.eu.org
+  tls: true
+  type: vless
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 11|🇭🇰 香港(油管:破解资源君)
+  name: 6|香港 002
+  network: ws
+  port: 28088
+  server: hkt.skycloud.lol
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cec2bf7c-df93-46e0-8451-24cf7d653d9b
+  ws-opts:
+    headers:
+      Host: hkg.cylink.tech
+    path: /www/wwwroot/hkg.cylink.tech
+- alterId: 0
+  cipher: auto
+  name: 7|🇭🇰 香港(油管:破解资源君)
   network: tcp
   port: '13001'
   server: 120.197.130.126
@@ -59,7 +113,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 1
   cipher: auto
-  name: '11|🇭🇰 香港(油管:破解资源君) #1'
+  name: '7|🇭🇰 香港(油管:破解资源君) #1'
   network: ws
   port: '50205'
   server: data-hk-v1.heisey.cn
@@ -72,7 +126,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '11|🇭🇰 香港(油管:破解资源君) #2'
+  name: '7|🇭🇰 香港(油管:破解资源君) #2'
   network: ws
   port: '65066'
   server: 120.233.150.146
@@ -85,7 +139,7 @@ proxies:
     path: /rocket
 - alterId: 0
   cipher: auto
-  name: '11|🇪🇺 欧洲(油管:破解资源君) #41'
+  name: '7|🇪🇺 欧洲(油管:破解资源君) #41'
   network: tcp
   port: '13003'
   server: 120.197.130.126
@@ -94,7 +148,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 0
   cipher: auto
-  name: '11|🇭🇰 香港(油管:破解资源君) #4'
+  name: '7|🇭🇰 香港(油管:破解资源君) #4'
   network: tcp
   port: '39999'
   server: hkbn-home-a.zc20200426.club
@@ -103,7 +157,7 @@ proxies:
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
 - alterId: 0
   cipher: auto
-  name: '11|🇭🇰 香港(油管:破解资源君) #5'
+  name: '7|🇭🇰 香港(油管:破解资源君) #5'
   network: ws
   port: '65095'
   server: 120.233.150.146
@@ -114,293 +168,10 @@ proxies:
     headers:
       Host: 120.233.150.146
     path: /rocket
-- name: 11,13|香港4|@ripaojiedian
+- name: 7,9|香港4|@ripaojiedian
   network: tcp
   password: llyEnxJlVC
   port: 51017
   server: 183.232.139.24
   skip-cert-verify: true
   type: trojan
-- name: 15|HK_speednode_0055
-  network: ws
-  port: 12346
-  server: 8.210.142.146
-  servername: zhongkui.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
-  ws-opts:
-    headers:
-      Host: zhongkui.pages.dev
-    path: /?end=
-- client-fingerprint: randomized
-  name: 15|HK_speednode_0056
-  network: ws
-  port: 35002
-  server: 58.176.229.127
-  servername: dns68.putata.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048
-- name: 15|HK_speednode_0057
-  network: ws
-  port: 2053
-  server: 47.243.90.180
-  servername: page-us-qg0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
-  ws-opts:
-    headers:
-      Host: page-us-qg0.pages.dev
-    path: /
-- name: 15|HK_speednode_0058
-  network: ws
-  port: 80
-  server: 8.217.251.62
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0059
-  network: ws
-  port: 80
-  server: 47.238.6.102
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0060
-  network: ws
-  port: 80
-  server: 47.238.131.39
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0061
-  network: ws
-  port: 80
-  server: 8.218.174.118
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0062
-  network: ws
-  port: 80
-  server: 8.218.3.198
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0063
-  network: ws
-  port: 80
-  server: 8.218.65.237
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0064
-  network: ws
-  port: 80
-  server: 8.218.52.115
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0065
-  network: ws
-  port: 80
-  server: 47.76.77.103
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0066
-  network: ws
-  port: 80
-  server: 8.210.42.171
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0067
-  network: ws
-  port: 80
-  server: 8.217.154.218
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0068
-  network: ws
-  port: 80
-  server: 47.76.159.146
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0069
-  network: ws
-  port: 80
-  server: 47.76.213.245
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0070
-  network: ws
-  port: 80
-  server: 47.238.43.79
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0071
-  network: ws
-  port: 80
-  server: 8.218.18.235
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0072
-  network: ws
-  port: 80
-  server: 8.218.65.171
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0073
-  network: ws
-  port: 80
-  server: 8.218.243.95
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0074
-  network: ws
-  port: 80
-  server: 8.218.211.17
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0075
-  network: ws
-  port: 80
-  server: 47.76.189.102
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0076
-  network: ws
-  port: 80
-  server: 8.212.41.98
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 15|HK_speednode_0077
-  network: ws
-  port: 80
-  server: 47.76.233.67
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048

@@ -12,101 +12,50 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok...
+  name: 0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok...
   password: G!yBwPWH3Vao
   port: 812
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0,14|SS--NF解锁本自制剧-ChatGPT-TikTok-Yo...
+  name: 0,10|SS--NF解锁本自制剧-ChatGPT-TikTok-Yo...
   password: G!yBwPWH3Vao
   port: 810
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #3'
+  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #3'
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #5'
+  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #5'
   password: G!yBwPWH3Vao
   port: 809
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #2'
+  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #2'
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #6'
+  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #6'
   password: G!yBwPWH3Vao
   port: 806
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '0,14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #4'
+  name: '0,10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #4'
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
   type: ss
-- name: 2|JP(AzadNet.t.me)_001
-  network: tcp
-  password: 7a73f1dc97a70905870c0c0484b12145
-  port: 443
-  server: 133.242.55.38
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇵JP(AzadNet.t.me)_002
-  network: tcp
-  password: 18844@zxcvbn
-  port: 443
-  server: 49.212.204.123
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇯🇵JP(AzadNet.t.me)_003
-  network: tcp
-  password: 18844@zxcvbn
-  port: 443
-  server: 160.16.152.235
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇯🇵JP(AzadNet.t.me)_004
-  network: tcp
-  password: 18844@zxcvbn
-  port: 443
-  server: 133.167.85.62
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇯🇵JP(AzadNet.t.me)_005
-  network: tcp
-  password: 3c4e10af98c30972
-  port: 3306
-  server: 172.105.230.133
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇵JP(AzadNet.t.me)_006
-  network: tcp
-  port: 18100
-  server: 139.162.113.144
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 8,11,13|日本|@ripaojiedian
+  name: 5,7,9|日本|@ripaojiedian
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -120,14 +69,14 @@ proxies:
     path: /video/P7EExoE2
 - alterId: 0
   cipher: auto
-  name: '11|🇪🇺 欧洲(油管:破解资源君) #49'
+  name: '7|🇪🇺 欧洲(油管:破解资源君) #49'
   network: tcp
   port: '19570'
   server: 146.56.184.242
   tls: false
   type: vmess
   uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9
-- name: '11|🇯🇵 日本(油管:破解资源君) #1'
+- name: '7|🇯🇵 日本(油管:破解资源君) #1'
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   port: 40001
   server: in-04.licom.ml
@@ -135,7 +84,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '11|🇪🇺 欧洲(油管:破解资源君) #45'
+  name: '7|🇪🇺 欧洲(油管:破解资源君) #45'
   network: tcp
   port: '21953'
   server: 43.156.35.124
@@ -144,7 +93,7 @@ proxies:
   uuid: 4ef2b7d6-3f58-42c2-95ad-061001b712d3
 - alterId: 0
   cipher: auto
-  name: '11|🇯🇵 日本(油管:破解资源君) #12'
+  name: '7|🇯🇵 日本(油管:破解资源君) #12'
   network: ws
   port: '80'
   server: 123456789abcd.xn--h6q53lcvpz7l.club
@@ -157,7 +106,7 @@ proxies:
     path: /images
 - alterId: 0
   cipher: auto
-  name: '11|🇯🇵 日本(油管:破解资源君) #13'
+  name: '7|🇯🇵 日本(油管:破解资源君) #13'
   network: tcp
   port: '443'
   server: 132.145.113.238
@@ -165,8 +114,24 @@ proxies:
   type: vmess
   uuid: 84b1b846-748c-45ca-839e-4e21f9acc6c5
 - cipher: chacha20-ietf-poly1305
-  name: '14|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #1'
+  name: '10|SS-日本-NF解锁日本自制剧-ChatGPT-TikTok... #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 185.172.113.182
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 10|VMESS-未知>日本-NF解锁自制剧-TikTok-You...
+  network: ws
+  port: 80
+  server: 104.20.213.8
+  servername: dl3.www.soft98.ir.л0р.fir3brand..пгоезpе.wonkacapitano.buzz.
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0864369e-8ff4-4b77-8a14-c3aab8b56070
+  ws-opts:
+    headers:
+      HOST: dl3.www.soft98.ir.голов0рез.fir3brand.煽動者追逐雷恩.погонезаpейн.wonkacapitano.buzz.
+    path: /vmess#DarkVPNpro#DarkVPNpro#DarkVPNpro#DarkVPNpro

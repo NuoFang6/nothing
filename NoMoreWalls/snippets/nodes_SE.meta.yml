@@ -1,87 +1,21 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 0,2|AF(AzadNet.t.me)_001
+  name: 0|SE-121.127.46.147-0738 | 32.38...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
   type: ss
-- name: 2|SE(AzadNet.t.me)_001
-  network: tcp
-  password: 6455f944-7c07-4ab0-b88f-440e581f41d9
-  port: 443
-  server: jp2.twincloud.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 2|🇪SE(AzadNet.t.me)_002
+- client-fingerprint: chrome
+  delay: 1238
+  name: 6|瑞典 002
   network: ws
   port: 443
   server: 185.146.173.32
   servername: e10c0e4b.oodaeq2.pages.dev
   tls: true
   type: vless
-  uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
-  ws-opts:
-    path: /tel.icv2ray.spacefp=chrome
-- alterId: 0
-  cipher: auto
-  name: 2|🇪SE(AzadNet.t.me)_004
-  network: ws
-  port: 443
-  server: 185.146.173.158
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      host: jahfkjha.cfd
-    path: /linkws
-- cipher: aes-256-cfb
-  name: 2|🇪SE(AzadNet.t.me)_005
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇪SE(AzadNet.t.me)_006
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.121.87.147
-  type: ss
-- name: 2|🇪SE(AzadNet.t.me)_007
-  network: httpupgrade
-  port: 8080
-  server: 185.146.173.58
-  servername: http.digicyber.click.
-  tls: false
-  type: vless
-  uuid: 573f8580-5beb-488a-a8cb-2d44d52bc64d
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmtseyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt-seyyedmt
-  name: 15|SE_speednode_0094
-  network: grpc
-  port: 2087
-  server: 185.146.173.185
-  servername: google.itcenter.bloG.
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccbc2b99-bfe8-4c96-9232-a417ca35af55
-- client-fingerprint: chrome
-  name: 15|SE_speednode_0095
-  network: ws
-  port: 443
-  server: 185.146.173.32
-  servername: e10c0e4b.oodaeq2.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
   uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
   ws-opts:
     headers:
       Host: e10c0e4b.oodaeq2.pages.dev
-    path: /tel.icv2ray.spacefp=chrome
+    path: /tel.icv2ray.space

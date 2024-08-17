@@ -1,14 +1,1 @@
-proxies:
-- name: 15|CH_speednode_0007
-  network: ws
-  port: 80
-  server: 185.18.250.138
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodesfp=chrome
+proxies: []
