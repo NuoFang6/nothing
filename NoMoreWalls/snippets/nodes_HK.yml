@@ -1,23 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1,12|🇭🇰 10,11|香港6|@ripaojiedian
+  name: 0|🇭🇰HK-103.30.76.172-2716 | 30.9...
   network: ws
-  port: '33722'
+  port: 33722
   server: 103.30.76.172
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 0ff2eedc-bb21-4620-9092-9823cf298d76
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 9|10|🇭🇰 香港|@ripaojiedian
+  name: 8,11|🇭🇰 11|香港|@ripaojiedian
   network: ws
-  port: 46001
+  port: '46001'
   server: mmhk01.micloud.buzz
   tls: false
   type: vmess
@@ -28,7 +26,7 @@ proxies:
     path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 9,12,14|香港5|@ripaojiedian
+  name: 8,11,13|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
@@ -38,7 +36,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 9,14|香港|@ripaojiedian
+  name: 8,13|香港|@ripaojiedian
   network: ws
   port: '46001'
   server: mmhk01.micloud.buzz
@@ -52,7 +50,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港(油管:破解资源君)
+  name: 11|🇭🇰 香港(油管:破解资源君)
   network: tcp
   port: '13001'
   server: 120.197.130.126
@@ -61,7 +59,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 1
   cipher: auto
-  name: '12|🇭🇰 香港(油管:破解资源君) #1'
+  name: '11|🇭🇰 香港(油管:破解资源君) #1'
   network: ws
   port: '50205'
   server: data-hk-v1.heisey.cn
@@ -74,7 +72,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '12|🇭🇰 香港(油管:破解资源君) #2'
+  name: '11|🇭🇰 香港(油管:破解资源君) #2'
   network: ws
   port: '65066'
   server: 120.233.150.146
@@ -87,7 +85,7 @@ proxies:
     path: /rocket
 - alterId: 0
   cipher: auto
-  name: '12|🇪🇺 欧洲(油管:破解资源君) #41'
+  name: '11|🇪🇺 欧洲(油管:破解资源君) #41'
   network: tcp
   port: '13003'
   server: 120.197.130.126
@@ -96,7 +94,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 0
   cipher: auto
-  name: '12|🇭🇰 香港(油管:破解资源君) #4'
+  name: '11|🇭🇰 香港(油管:破解资源君) #4'
   network: tcp
   port: '39999'
   server: hkbn-home-a.zc20200426.club
@@ -105,7 +103,7 @@ proxies:
   uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
 - alterId: 0
   cipher: auto
-  name: '12|🇭🇰 香港(油管:破解资源君) #5'
+  name: '11|🇭🇰 香港(油管:破解资源君) #5'
   network: ws
   port: '65095'
   server: 120.233.150.146
@@ -116,7 +114,7 @@ proxies:
     headers:
       Host: 120.233.150.146
     path: /rocket
-- name: 12,14|香港4|@ripaojiedian
+- name: 11,13|香港4|@ripaojiedian
   network: tcp
   password: llyEnxJlVC
   port: 51017
