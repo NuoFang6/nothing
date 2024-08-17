@@ -160,6 +160,17 @@ rule-providers:
     interval: 86400
     proxy: DIRECT
 
+groupsSet: &groupsSet
+  lazy: true
+  url: https://www.youtube.com/generate_204
+  interval: 600
+  timeout: 1500
+  tolerance: 30
+  expected-status: 204
+  max-failed-times: 2
+  tfo: true
+  mptcp: true
+
 # 锚点
 providerSet: &providerSet
   type: http
@@ -201,17 +212,6 @@ proxy-providers:
   白嫖线路:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/白嫖线路.txt"
-
-groupsSet: &groupsSet
-  lazy: true
-  url: https://www.youtube.com/generate_204
-  interval: 600
-  timeout: 1500
-  tolerance: 35
-  expected-status: 204
-  max-failed-times: 2
-  tfo: true
-  mptcp: true
 
 proxy-groups:
   - name: PROXY
