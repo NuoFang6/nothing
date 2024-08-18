@@ -33,15 +33,22 @@ tun:
   stack: system
   auto-route: true
   auto-detect-interface: true
+  endpoint-independent-nat: false
   strict-route: true
   dns-hijack:
     - any:53
+
+hosts:
+  time.windows.com: ntp.tencent.com
+  time.nist.gov: ntp.tencent.com
+  pool.ntp.org: ntp.tencent.com
+  time.android.com: ntp.tencent.com
 
 dns:
   enable: true
   ipv6: false
   ipv6-timeout: 90
-  use-hosts: false
+  use-hosts: true
   use-system-hosts: false
   prefer-h3: false
   respect-rules: false
