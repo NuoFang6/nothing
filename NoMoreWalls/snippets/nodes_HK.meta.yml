@@ -1,17 +1,4 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 1|香港 V2CROSS.COM
-  network: ws
-  port: 41002
-  server: 156.245.8.143
-  tls: true
-  type: vmess
-  uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/1720697880423
 - client-fingerprint: random
   delay: 1229
   name: 2|香港 005
@@ -68,19 +55,6 @@ proxies:
     headers:
       Host: hkg.cylink.tech
     path: /www/wwwroot/hkg.cylink.tech
-- name: 2|香港 003
-  network: ws
-  port: 2052
-  server: 47.243.70.186
-  servername: vless.leo726china.workers.dev
-  tls: false
-  type: vless
-  udp: true
-  uuid: 688ee9a9-087b-4d02-ad23-c0b01c9671af
-  ws-opts:
-    headers:
-      Host: vless.leo726china.workers.dev
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 3|🇭🇰 香港(油管:破解资源君)
