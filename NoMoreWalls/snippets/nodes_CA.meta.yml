@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 026
-  network: ws
-  port: 2086
-  server: 104.19.46.17
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 037
   network: ws
   port: 2086
@@ -67,19 +54,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 069
-  network: ws
-  port: 2086
-  server: 104.19.38.8
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 2|加拿大 014

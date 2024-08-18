@@ -1,21 +1,23 @@
 proxies:
-- name: 3|🇷🇺 俄罗斯(油管:破解资源君)
-  password: dd8a44f9-7c1d-4286-8f6f-4e4f19cb7998
-  port: 32451
-  server: dg.hootfun.top
-  skip-cert-verify: true
-  sni: dg.hootfun.top
+- alpn:
+  - h3,h2,http/1.1
+  grpc-opts:
+    grpc-service-name: discord
+  name: 1|俄罗斯+新西伯利亚ADMAN网络
+  network: grpc
+  password: WyYdHzq88EQJVVThgpupm3wCKVD44jtN
+  port: 39257
+  server: 46.29.162.87
+  sni: ihave.baselinux.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '3|🇷🇺 俄罗斯(油管:破解资源君) #1'
+- name: 1|俄罗斯+V2CROSS.COM
   network: ws
-  port: '14369'
-  server: 195.133.53.192
-  tls: false
-  type: vmess
-  uuid: 2331affa-1194-45ae-9457-3746120c4751
+  password: CMLiu
+  port: 8443
+  server: 85.159.228.23
+  sni: aliorg.filegear-sg.me
+  type: trojan
   ws-opts:
     headers:
-      Host: 195.133.53.192
-    path: /
+      Host: aliorg.filegear-sg.me
+    path: '%2F'

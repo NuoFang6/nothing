@@ -1,4 +1,13 @@
 proxies:
+- alpn:
+  - http%2F1.1
+  name: 1|法国+巴黎Amazon数据中心
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.28.163
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - delay: 1619
   name: 2|法国 001
   network: ws

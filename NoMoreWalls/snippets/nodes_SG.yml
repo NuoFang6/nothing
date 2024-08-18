@@ -12,19 +12,52 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 3|🇸🇬 新加坡(油管:破解资源君)
+  network: ws
+  port: '443'
+  server: vsg1.0bad.com
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vsg1.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
   name: '3|🇸🇬 新加坡(油管:破解资源君) #1'
+  network: ws
+  port: '23205'
+  server: 8.219.146.138
+  tls: false
+  type: vmess
+  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+  ws-opts:
+    headers:
+      Host: 8.219.146.138
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: '3|🇸🇬 新加坡(油管:破解资源君) #2'
+  network: ws
+  port: '23205'
+  server: 8.219.146.138
+  tls: false
+  type: vmess
+  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+  ws-opts:
+    headers:
+      Host: ''
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: '3|🇸🇬 新加坡(油管:破解资源君) #3'
   network: tcp
   port: '8888'
   server: 161.117.229.166
   tls: false
   type: vmess
   uuid: 081f8acf-742b-4af5-ca99-6186c80e635b
-- name: '3|🇸🇬 新加坡(油管:破解资源君) #3'
-  password: fcb26379-5505-432e-9ab6-e2c96e94102d
-  port: 30243
-  server: singapore.bpnet.club
-  skip-cert-verify: true
-  type: trojan
 - name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
   password: a3467343-8c87-40a6-a87f-a466b340475c
   port: 20230

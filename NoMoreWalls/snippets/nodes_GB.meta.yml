@@ -1,4 +1,13 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 1|英国+伦敦Amazon数据中心
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.234.104
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   name: 4|GB_speednode_0036
   network: ws
