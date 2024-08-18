@@ -1,12 +1,1 @@
-proxies:
-- alpn:
-  - h3,h2,http/1.1
-  grpc-opts:
-    grpc-service-name: discord
-  name: 1|俄罗斯+新西伯利亚ADMAN网络
-  network: grpc
-  password: WyYdHzq88EQJVVThgpupm3wCKVD44jtN
-  port: 39257
-  server: 46.29.162.87
-  sni: ihave.baselinux.net
-  type: trojan
+proxies: []

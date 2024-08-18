@@ -1,13 +1,17 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: freejp01
-  name: 1|瑞典+V2CROSS.COM
-  network: grpc
-  password: e8012565-5b9f-373f-b1eb-e2445711e65c
-  port: 34675
-  server: 217.142.249.49
-  sni: freejp01.jd0001.top
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 1|瑞典 V2CROSS.COM
+  network: ws
+  port: 80
+  server: 185.146.173.59
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: freevpn878.hamidimorteza680.workers.dev
+    path: /glweidf.cfd/linkws
 - client-fingerprint: chrome
   delay: 1238
   name: 2|瑞典 002

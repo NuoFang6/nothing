@@ -51,12 +51,3 @@ proxies:
   server: 183.232.139.24
   skip-cert-verify: true
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 3|🇭🇰 11|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
