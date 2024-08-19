@@ -14,19 +14,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 037
-  network: ws
-  port: 2086
-  server: 104.19.45.19
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 039
   network: ws
   port: 2086
@@ -65,21 +52,6 @@ proxies:
     headers:
       Host: ip14.freegradely.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 014
-  network: ws
-  port: 2086
-  server: 104.19.47.36
-  servername: ip2.1457230.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 2|加拿大 138
@@ -327,35 +299,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 077
-  network: ws
-  port: 2086
-  server: 104.16.148.244
-  servername: ip006.freegradely.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.freegradely.xyz
-    path: /
-- client-fingerprint: chrome
-  delay: 2307
-  name: 2|加拿大 117
-  network: ws
-  port: 2087
-  server: www.speedtest.net
-  servername: ch1.vless.site
-  tls: true
-  type: vless
-  uuid: fb710f28-de49-5453-a5c8-697a15342d08
-  ws-opts:
-    headers:
-      Host: ch1.vless.site
-    path: /freeiranweb
 - client-fingerprint: chrome
   delay: 1414
   name: 2|加拿大 161
@@ -384,21 +327,6 @@ proxies:
     headers:
       Host: BpBG.168168.Us.kg
     path: /c20mX9dVgjfBPA4P/cHJveHlpcC5oay5meHhrLmRlZHluLmlv?ed=2560
-- alterId: 0
-  cipher: auto
-  delay: 1382
-  name: 2|加拿大 029
-  network: ws
-  port: 8080
-  server: 104.16.61.8
-  servername: hyfhhg.jadovah977.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: hyfhhg.jadovah977.workers.dev
-    path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
   delay: 1274
@@ -567,21 +495,6 @@ proxies:
   ws-opts:
     headers:
       Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 002
-  network: ws
-  port: 443
-  server: 104.17.147.22
-  servername: xv2.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: xv2.pages.dev
     path: /
 - alterId: 0
   cipher: auto
@@ -955,21 +868,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 061
-  network: ws
-  port: 2082
-  server: 104.16.61.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: worker-lingering-fog-c021.gesofog870.workers.dev
-    path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 076
   network: ws
   port: 2095
@@ -1012,21 +910,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 049
-  network: ws
-  port: 2052
-  server: 104.18.57.111
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -1073,21 +956,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 001
-  network: ws
-  port: 2095
-  server: 104.16.61.8
-  servername: ep-sunset-9b11.kekic13319.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: ep-sunset-9b11.kekic13319.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 004
   network: ws
   port: 2086
@@ -1099,34 +967,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip1.1457230.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 016
-  network: ws
-  port: 2086
-  server: 104.19.55.49
-  servername: ip2.1457230.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 017
-  network: ws
-  port: 2095
-  server: 104.19.45.5
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
