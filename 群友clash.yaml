@@ -151,6 +151,7 @@ rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY #Google
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,PROXY #Google
   - DOMAIN-SUFFIX,dl.google.com,DIRECT #可直连Google下载
+  - GEOSITE,steam@cn,DIRECT
   - GEOSITE,win-update,DIRECT
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
