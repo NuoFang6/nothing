@@ -145,19 +145,28 @@ proxies:
   skip-cert-verify: true
   sni: cdn.qchwnd.moe
   type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 3|🇭🇰 香港 V2CROSS.COM
+  name: 3|🇭🇰 11|香港|@ripaojiedian
   network: ws
-  port: '41002'
-  server: 156.245.8.143
-  tls: true
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  tls: false
   type: vmess
-  uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
   ws-opts:
     headers:
-      Host: ''
-    path: /path/1720697880423
+      Host: mmhk01.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 3|🇭🇰 11|香港2|@ripaojiedian
+  network: tcp
+  port: '44806'
+  server: ambxxic01hk.dorabbb.top
+  tls: false
+  type: vmess
+  uuid: ae66331e-b6b4-4c6f-959f-6ed64cf97628
 - name: 3|🇭🇰 10,11|香港4|@ripaojiedian
   password: llyEnxJlVC
   port: 51017
@@ -173,15 +182,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 3|🇭🇰 11|香港6|@ripaojiedian
-  network: tcp
-  port: '29767'
-  server: iepl.hongxingdl.vip
-  tls: false
-  type: vmess
-  uuid: fce9f624-b3c0-41ed-8327-13b85dbd2693
 - client-fingerprint: randomized
   name: 4|HK_speednode_0047
   network: ws
