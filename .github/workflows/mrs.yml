@@ -24,7 +24,6 @@ jobs:
 
           wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
           gunzip mihomo.gz
-          mv mihomo-linux-amd64 mihomo
           chmod +x mihomo
 
           wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
