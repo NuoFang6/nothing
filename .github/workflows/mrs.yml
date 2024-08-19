@@ -22,7 +22,7 @@ jobs:
           mkdir tmp
           cd tmp
 
-          wget -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r '.assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
+          wget -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
           unzip mihomo.gz
           mv mihomo-linux-amd64 mihomo
           chmod +x mihomo
