@@ -22,21 +22,21 @@ jobs:
           mkdir tmp
           cd tmp
 
-          wget -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
-          unzip mihomo.gz
+          wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
+          gunzip mihomo.gz
           mv mihomo-linux-amd64 mihomo
           chmod +x mihomo
 
-          wget -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
+          wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
           sed -i '/^#/d; /^$/d;' | \ # 去除注释和空行
           sed -i -e '$a\' > antiad #保证结尾有换行符
 
-          wget -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt | \
+          wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt | \
           sed -i "/^#/d; /^$/d;" | \
           sed -i "s/^/  - '/; s/$/'/" | \ #转为yaml格式
           sed -i -e '$a\' > adrules
 
-          wget -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt | \
+          wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt | \
           sed -i "/^#/d; /^$/d;" | \
           sed -i "s/^/  - '+./; s/$/'/" > hagezi #转为yaml格式,添加 +.
 
