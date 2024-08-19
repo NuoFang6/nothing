@@ -1,19 +1,6 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 3|🇨🇳 github.com/freefq - 广东省移动 7
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 4|CN_speednode_0008
+  name: 1|CN_speednode_0008
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online

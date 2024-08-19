@@ -1,64 +1,5 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 3|🇸🇬 新加坡(油管:破解资源君2.0)
-  network: ws
-  port: '23205'
-  server: 8.219.146.138
-  tls: false
-  type: vmess
-  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
-  ws-opts:
-    headers:
-      Host: 8.219.146.138
-    path: /wss
-- name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #1'
-  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
-  port: 44605
-  server: gdcm.r.swingones1.xyz
-  skip-cert-verify: true
-  sni: cdn.qchwnd.moe
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #2'
-  network: ws
-  port: '23205'
-  server: 8.219.146.138
-  tls: false
-  type: vmess
-  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
-  ws-opts:
-    headers:
-      Host: ''
-    path: /wss
-- alterId: 0
-  cipher: auto
-  name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
-  ws-opts:
-    headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
-- alterId: 0
-  cipher: auto
-  name: 3|🇸🇬 11|新加坡2|@ripaojiedian
-  network: ws
-  port: '46016'
-  server: mmsg16.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    headers:
-      Host: mmsg16.micloud.buzz
-    path: /zh-cn
-- name: 4|SG_speednode_0064
+- name: 1|SG_speednode_0064
   network: ws
   port: 443
   server: 27.50.48.222
@@ -73,12 +14,12 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - cipher: aes-256-cfb
-  name: 4|SG_speednode_0065
+  name: 1|SG_speednode_0065
   password: amazonskr05
   port: 443
   server: 13.214.209.23
   type: ss
-- name: 4|SG_speednode_0067
+- name: 1|SG_speednode_0067
   network: ws
   port: 80
   server: 8.223.2.222
