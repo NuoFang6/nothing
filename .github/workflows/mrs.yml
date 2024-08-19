@@ -7,7 +7,7 @@ on:
     - cron: "0 4 * * *"
   push:
     paths:
-      - ".github/workflows/**"
+      - ".github/workflows/mrs.yml"
 
 jobs:
   update:
@@ -43,12 +43,12 @@ jobs:
           sed "s/^/  - '+./; s/$/'/" > hagezi
           #转为yaml格式,添加 +.
 
-          cat antiad adrules hagezi | awk '!seen[$0]++' > ads.yaml
+          cat antiad adrules hagezi | awk '!seen[$0]++' | sed "/^$/d" > ads.yaml
           #合并并去重
 
           ./mihomo convert-ruleset domain yaml ads.yaml ads.mrs
 
-          mv antiad adrules hagezi ads.yaml ads.mrs ../nothing/mrs/
+          mv -f antiad adrules hagezi ads.yaml ads.mrs ../nothing/mrs/
           cd ../nothing/
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
