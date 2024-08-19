@@ -22,11 +22,10 @@ jobs:
           mkdir tmp
           cd tmp
 
-          # 下载最新mihomo并处理
-          wget -q -O - "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r '.assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')" | \
-          gunzip > mihomo
+          wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | jq -r '.assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
+          unzip mihomo.gz
+          mv mihomo-linux-amd64 mihomo
           chmod +x mihomo
-
 
           wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
           sed -i '/^#/d; /^$/d;' | \ # 去除注释和空行

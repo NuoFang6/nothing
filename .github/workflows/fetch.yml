@@ -7,7 +7,7 @@ on:
     - cron: "0 4 * * *"
   push:
     paths:
-      - ".github/workflows/**"
+      - ".github/workflows/fetch.yml"
       - "NoMoreWalls/sources.list"
       - "NoMoreWalls/config.yml"
       - "NoMoreWalls/abpwhite.txt"
