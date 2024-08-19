@@ -27,19 +27,24 @@ jobs:
           chmod +x mihomo
 
           wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
-          sed -i '/^#/d; /^$/d;' | \ # 去除注释和空行
-          sed -i -e '$a\' > antiad #保证结尾有换行符
+          sed -i '/^#/d; /^$/d;' | \
+          sed -i -e '$a\' > antiad
+          #去除注释和空行
+          #保证结尾有换行符
 
           wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt | \
           sed -i "/^#/d; /^$/d;" | \
-          sed -i "s/^/  - '/; s/$/'/" | \ #转为yaml格式
+          sed -i "s/^/  - '/; s/$/'/" | \
           sed -i -e '$a\' > adrules
+          #转为yaml格式
 
           wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt | \
           sed -i "/^#/d; /^$/d;" | \
-          sed -i "s/^/  - '+./; s/$/'/" > hagezi #转为yaml格式,添加 +.
+          sed -i "s/^/  - '+./; s/$/'/" > hagezi
+          #转为yaml格式,添加 +.
 
-          cat antiad adrules hagezi | awk '!seen[$0]++' > ads.yaml #合并并去重
+          cat antiad adrules hagezi | awk '!seen[$0]++' > ads.yaml
+          #合并并去重
 
           ./mihomo convert-ruleset domain yaml ads.yaml ads.mrs
 
