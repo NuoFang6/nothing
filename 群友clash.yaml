@@ -19,8 +19,8 @@ geo-auto-update: true
 geo-update-interval: 12
 # external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器
 geox-url:
-  geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
-  geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  geoip: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@releases/download/latest/geoip-lite.dat
+  geosite: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@releases/download/latest/geosite.dat
 
 clash-for-android:
   append-system-dns: false
@@ -140,11 +140,12 @@ rules:
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   - GEOIP,private,DIRECT,no-resolve
   - GEOIP,telegram,PROXY,no-resolve
-  - RULE-SET,AdRules,REJECT
+  # - RULE-SET,AdRules,REJECT
+  - RULE-SET,ads,REJECT
   - PROCESS-NAME,com.tencent.mm,DIRECT
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
   - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
-  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange),DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
   - DOMAIN-REGEX,(gstatic|tailscale|visualstudio|bard|gemini),PROXY
   - DOMAIN-REGEX,^.*\.(google\.cn|googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
@@ -160,10 +161,17 @@ rules:
   - MATCH,PROXY
 
 rule-providers:
-  AdRules:
+  # AdRules:
+  #   type: http
+  #   url: https://adrules.top/adrules_domainset.txt
+  #   format: text
+  #   behavior: domain
+  #   interval: 86400
+  #   proxy: DIRECT
+  ads:
     type: http
-    url: https://adrules.top/adrules_domainset.txt
-    format: text
+    url: https://cdn.jsdmirror.com/gh/NuoFang6/nothing@main/mrs/ads.mrs
+    format: mrs
     behavior: domain
     interval: 86400
     proxy: DIRECT
