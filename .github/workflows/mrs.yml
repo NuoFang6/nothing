@@ -54,9 +54,10 @@ jobs:
           git config --local user.name "GitHub Actions"
           git pull origin main
           git add ./mrs/*
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则"
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则" || true
 
       - name: 推送更改
         uses: ad-m/github-push-action@master
+        continue-on-error: true
         with:
           branch: main
