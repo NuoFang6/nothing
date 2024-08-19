@@ -132,19 +132,6 @@ proxies:
     headers:
       Host: jpi.ylks01.eu.org
     path: /blue
-- delay: 1735
-  name: 2|加拿大 063
-  network: ws
-  port: 2083
-  server: russia.com
-  servername: jpi.ylks01.eu.org
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jpi.ylks01.eu.org
-    path: /blue
 - alterId: 0
   cipher: auto
   delay: 1045
@@ -214,19 +201,6 @@ proxies:
     headers:
       Host: vi.ylks.xyz
     path: /cnwpzpsrtlroltzo?ed=2560
-- delay: 1578
-  name: 2|加拿大 096
-  network: ws
-  port: 2087
-  server: 104.21.3.131
-  servername: vi.ylks.xyz
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: vi.ylks.xyz
-    path: /fk9h5rnc36strsnd?ed=2560
 - delay: 1518
   name: 2|加拿大 097
   network: ws
@@ -353,34 +327,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
-- client-fingerprint: chrome
-  delay: 1510
-  name: 2|加拿大 103
-  network: ws
-  port: 8443
-  server: 204.216.105.106
-  servername: edgood.889876.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: edgood.889876.xyz
-    path: /
-- client-fingerprint: chrome
-  delay: 2107
-  name: 2|加拿大 104
-  network: ws
-  port: 8443
-  server: www.speedtest.net
-  servername: de1.vless.site
-  tls: true
-  type: vless
-  uuid: f3747309-5c2d-5bb4-9ffc-d8a3f1302741
-  ws-opts:
-    headers:
-      Host: de1.vless.site
-    path: /M_Buy
 - alterId: 0
   cipher: auto
   name: 2|加拿大 077
@@ -410,20 +356,6 @@ proxies:
     headers:
       Host: ch1.vless.site
     path: /freeiranweb
-- alterId: 0
-  cipher: auto
-  delay: 2709
-  name: 2|加拿大 154
-  network: ws
-  port: 2052
-  server: 104.19.58.175
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
 - client-fingerprint: chrome
   delay: 1414
   name: 2|加拿大 161
@@ -481,21 +413,6 @@ proxies:
   ws-opts:
     headers:
       Host: worker-mute-bar-1719.nifotok993.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  delay: 1612
-  name: 2|加拿大 023
-  network: ws
-  port: 2086
-  server: 104.16.67.38
-  servername: worker-damp-duadwans.jevesoj131.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: worker-damp-duadwans.jevesoj131.workers.dev
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
@@ -1083,21 +1000,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 079
-  network: ws
-  port: 2082
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 080
   network: ws
   port: 2086
@@ -1111,20 +1013,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 064
-  network: ws
-  port: 2082
-  server: www.zula.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /
 - alterId: 0
   cipher: auto
   name: 2|加拿大 049
@@ -1214,20 +1102,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 007
-  network: ws
-  port: 2086
-  server: japan.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 016
   network: ws
   port: 2086
@@ -1240,6 +1114,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip2.1457230.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|加拿大 017
+  network: ws
+  port: 2095
+  server: 104.19.45.5
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto

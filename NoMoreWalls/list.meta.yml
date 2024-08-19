@@ -1,4 +1,4 @@
-# Update: 2024-08-18 12:12
+# Update: 2024-08-19 12:12
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -663,7 +663,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1|美国 CloudFlare节点 #9'
+  name: 0|d*********g.com_43
   network: ws
   port: 2086
   server: 104.26.5.67
@@ -845,9 +845,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_55
+  name: '0,3|🇺🇸 美国 CloudFlare节点 #7'
   network: ws
-  port: 2086
+  port: '2086'
   server: 162.159.140.56
   servername: ip1.1789034.xyz
   tls: false
@@ -905,9 +905,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_59
+  name: '0,3|🇺🇸 美国 CloudFlare节点 #9'
   network: ws
-  port: 2086
+  port: '2086'
   server: 162.159.140.91
   servername: ip1.1789034.xyz
   tls: false
@@ -1385,7 +1385,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1|美国 CloudFlare节点 #17'
+  name: 0|d*********g.com_91
   network: ws
   port: 2086
   server: fbi.gov
@@ -1415,9 +1415,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1|美国 CloudFlare节点 #16'
+  name: 0,1,3|0|-https://t.me/MrXbin-36
   network: ws
-  port: 2086
+  port: '2086'
   server: icook.tw
   servername: ip1.1789034.xyz
   tls: false
@@ -1430,9 +1430,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,1,3|0|-https://t.me/MrXbin-29
+  name: 0|d*********g.com_94
   network: ws
-  port: '2086'
+  port: 2086
   server: ip.sb
   servername: ip1.1789034.xyz
   tls: false
@@ -1445,9 +1445,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,3|0|-https://t.me/MrXbin-39
+  name: 0|d*********g.com_95
   network: ws
-  port: '2086'
+  port: 2086
   server: japan.com
   servername: ip1.1789034.xyz
   tls: false
@@ -1460,11 +1460,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,1,3|0|-https://t.me/MrXbin-43
+  name: 0,3|0|-https://t.me/MrXbin-35
   network: ws
   port: '2086'
   server: malaysia.com
-  servername: ''
+  servername: ip1.1789034.xyz
   tls: false
   type: vmess
   udp: true
@@ -1475,11 +1475,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,2|加拿大 003
+  name: 0,1,2,3|0|-https://t.me/MrXbin-29
   network: ws
-  port: 2086
+  port: '2086'
   server: russia.com
-  servername: ip1.1789034.xyz
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -1505,9 +1505,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_99
+  name: '0,3|🇺🇸 美国 CloudFlare节点 #5'
   network: ws
-  port: 2086
+  port: '2086'
   server: skk.moe
   servername: ip1.1789034.xyz
   tls: false
@@ -1533,399 +1533,35 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: 1,3|🇭🇰 11|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- grpc-opts:
-    grpc-service-name: freefhc01
-  name: 1|加拿大+TELUS
-  network: grpc
-  password: e8012565-5b9f-373f-b1eb-e2445711e65c
-  port: 17644
-  server: freefhc01.jd0001.top
-  sni: freefhc01.jd0001.top
-  type: trojan
-- grpc-opts:
-    grpc-service-name: freehr01
-  name: 1|澳大利亚+V2CROSS.COM
-  network: grpc
-  password: e8012565-5b9f-373f-b1eb-e2445711e65c
-  port: 15055
-  server: freehr01.jd0001.top
-  sni: freehr01.jd0001.top
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 1|美国 CloudFlare节点
-  network: ws
-  port: 2086
-  server: 104.16.67.38
-  tls: false
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: late-wave-1d0a.lesijo3430.workers.dev
-    path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #1'
-  network: ws
-  port: 2095
-  server: 104.19.45.13
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #2'
-  network: ws
-  port: 2082
-  server: 104.16.61.8
-  tls: false
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: ury-unit-c030ehei8.poget71138.workers.dev
-    path: /ivideos.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #3'
-  network: ws
-  port: 2086
-  server: 104.19.47.122
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip14.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #4'
-  network: ws
-  port: 80
-  server: 104.16.60.8
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 4868-poetry-4868.napora7003.workers.dev
-    path: /obdii.cfd/linkws
-- alterId: 64
-  cipher: auto
-  name: 1|美国 华盛顿Cogent通信公司
-  network: ws
-  port: 37002
-  server: 38.33.49.113
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/220234013533
-- alterId: 0
-  cipher: auto
-  name: 1|印度 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
-  ws-opts:
-    headers:
-      Host: sahand.serveminecraft.net
-    path: /@forwardv2ray
-- name: 1|日本+东京Amazon数据中心
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 443
-  server: xjjp.zf.edu.ge
-  sni: xjjp.zf.edu.ge
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #5'
-  network: ws
-  port: 2082
-  server: 104.16.68.38
-  tls: false
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: 38hhuiet-glitter-ee01.lijeyet360.workers.dev
-    path: /hms02.fxiaomi.sbs/link
-- alpn:
-  - http/1.1
-  name: 1|美国+Amazon+EC2服务器
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.74.200.180
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http%2F1.1
-  name: 1|美国+Xerox
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.50.167.207
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 1|爱尔兰+都柏林Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 176.34.182.236
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 1|美国 加利福尼亚州洛杉矶Sharktech数据中心
-  network: ws
-  port: 30000
-  server: 64.32.10.201
-  tls: true
-  type: vmess
-  uuid: 1f17fb81-2c5a-48d2-aa74-b19a648778a3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/340434130032
-- alterId: 64
-  cipher: auto
-  name: '1|广东省广州市 移动 #1'
-  network: tcp
-  port: '42055'
-  server: 120.232.153.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 1|美国 CloudFlare公司CDN节点(iPower)
-  network: ws
-  port: 80
-  server: 66.235.200.0
-  tls: false
-  type: vmess
-  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
-  ws-opts:
-    headers:
-      Host: tr1-vmess.ctunnel.xyz
-    path: /vmess#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro#t-me-DarkVPNpro
-- alterId: 0
-  cipher: auto
-  name: 1|伊朗 V2CROSS.COM
-  network: tcp
-  port: '8443'
-  server: t3.imamHossein.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 54db1a89-9143-41de-9da8-6081f4c5c1c5
-- name: 1|乌克兰+V2CROSS.COM
-  password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0
-  port: 2053
-  server: 185.234.64.146
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #6'
-  network: ws
-  port: 2095
-  server: 104.19.45.175
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,3|🇺🇸 10,11|美国5|@ripaojiedian
+  name: 1,3|🇺🇸 10,11|美国|@ripaojiedian
   network: ws
   port: '2086'
-  server: 104.26.0.56
+  server: 104.19.51.232
   tls: false
   type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
-      Host: ip14.freegradely.xyz
+      Host: ip005.dtku47.xyz
     path: github.com/Alvin9999
-- name: 1|日本+V2CROSS.COM
-  password: 1dfba761-c1e0-422e-98b6-062da56afb53
-  port: 443
-  server: 146.56.191.191
-  sni: jkrf1.969799.xyz
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 1,3|🇫🇮 11|芬兰|@ripaojiedian
+  name: 1,3|🇭🇰 11|香港|@ripaojiedian
   network: ws
-  port: '46085'
-  server: mmfi85.micloud.buzz
+  port: '46001'
+  server: mmhk01.micloud.buzz
   tls: false
   type: vmess
-  uuid: a6e1943b-ca88-4d76-b041-9782be56a54d
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
   ws-opts:
     headers:
-      Host: mmfi85.micloud.buzz
+      Host: mmhk01.micloud.buzz
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '1|美国 CloudFlare节点 #10'
-  network: ws
-  port: 2095
-  server: 104.19.45.129
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #11'
-  network: ws
-  port: 2095
-  server: 104.19.45.74
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alpn:
-  - http%2F1.1
-  name: 1|美国+惠普HP
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 16.171.248.100
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: '1|美国 华盛顿Cogent通信公司 #1'
-  network: ws
-  port: 37006
-  server: 38.38.153.196
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/120918182200
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #12'
-  network: ws
-  port: '2086'
-  server: 104.19.47.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 1,2|加拿大 017
-  network: ws
-  port: 2095
-  server: 104.19.45.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|澳大利亚 V2CROSS.COM
-  network: ws
-  port: 20602
-  server: kr1.yibao.ink
-  tls: false
-  type: vmess
-  uuid: 0d6aa5bf-244e-4f17-9d82-3a0cc1d99cc6
-  ws-opts:
-    headers:
-      Host: kr1.yibao.ink
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,3|0|-https://t.me/MrXbin-9
-  network: ws
-  port: '2086'
-  server: 172.64.167.5
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 1|美国 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 23.162.200.227
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 64
-  cipher: auto
-  name: '1|美国 华盛顿Cogent通信公司 #2'
-  network: ws
-  port: 38002
-  server: 38.33.47.65
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/091822200620
-- alterId: 0
-  cipher: auto
-  name: '1|印度 V2CROSS.COM #1'
+  name: 1|印度 V2CROSS.COM
   network: ws
   port: 443
   server: 202.78.162.5
@@ -1937,48 +1573,48 @@ proxies:
     headers:
       Host: irsoft.sytes.net
     path: /@forwardv2ray
-- name: 1|韩国+KT电信
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #2'
   network: ws
-  password: CMLiu
-  port: 10443
-  server: 222.97.95.239
-  sni: aliorg.filegear-sg.me
-  type: trojan
+  port: '80'
+  server: 104.25.181.33
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4797db37-41dc-4bfc-a59f-6c7055b1d15b
   ws-opts:
     headers:
-      Host: aliorg.filegear-sg.me
-    path: '%2F'
-- name: 1|爱尔兰+V2CROSS.COM
+      Host: 1270.0.1.dl3.烏克爾拯救聖.yркельпасаетcанту.филь.www.speedtest.com.wonkacapitano.buzz.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '1|美国 CloudFlare节点 #3'
+  network: ws
+  port: 2082
+  server: 104.16.60.8
+  tls: false
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: 82uple-bird-b087.pemed58443.workers.dev
+    path: /ivideos.sbs/linkws
+- name: 1|德国+黑森州法兰克福Amazon数据中心
   password: telegram-id-directvpn
   port: 22222
-  server: 63.34.187.217
+  server: 3.125.210.52
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 1|美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.177.197.166
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 1|江苏省宿迁市 蒲公英网络有限公司
-  network: tcp
-  port: 15074
-  server: 15074.kuaiyin02.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 64
-  cipher: auto
-  name: '1|美国 华盛顿Cogent通信公司 #3'
-  network: ws
-  port: 38001
-  server: 38.33.0.178
-  tls: true
-  type: vmess
-  uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/101224100512
-- alterId: 0
-  cipher: auto
-  name: 1,3|0|-https://t.me/MrXbin-31
+  name: 1,3|0|-https://t.me/MrXbin-23
   network: ws
   port: '2086'
   server: 172.64.233.7
@@ -1989,90 +1625,6 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
-- alterId: 64
-  cipher: auto
-  name: 1|美国 Cloudinnovation数据中心
-  network: ws
-  port: 41002
-  server: 154.85.1.164
-  tls: true
-  type: vmess
-  uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/150628061727
-- alterId: 64
-  cipher: auto
-  name: '1|广东省广州市 移动 #2'
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #19'
-  network: ws
-  port: 2086
-  server: 104.18.57.111
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '1|伊朗 V2CROSS.COM #1'
-  network: tcp
-  port: 2050
-  server: 188.34.179.137
-  tls: false
-  type: vmess
-  uuid: ee5c3034-9022-40e7-9943-7c275803aa31
-- alterId: 0
-  cipher: auto
-  name: '1|美国 CloudFlare节点 #20'
-  network: ws
-  port: 2086
-  server: 104.19.45.31
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip13.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 1|瑞典 V2CROSS.COM
-  network: ws
-  port: 80
-  server: 185.146.173.59
-  tls: false
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: freevpn878.hamidimorteza680.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 64
-  cipher: auto
-  name: '1|美国 华盛顿Cogent通信公司 #4'
-  network: ws
-  port: 38008
-  server: 38.11.48.241
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/270911031124
 - alterId: 0
   cipher: auto
   name: 2|加拿大 026
@@ -2220,19 +1772,6 @@ proxies:
     headers:
       Host: jpi.ylks01.eu.org
     path: /blue
-- delay: 1735
-  name: 2|加拿大 063
-  network: ws
-  port: 2083
-  server: russia.com
-  servername: jpi.ylks01.eu.org
-  tls: true
-  type: vless
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jpi.ylks01.eu.org
-    path: /blue
 - alterId: 0
   cipher: auto
   delay: 1045
@@ -2302,19 +1841,6 @@ proxies:
     headers:
       Host: vi.ylks.xyz
     path: /cnwpzpsrtlroltzo?ed=2560
-- delay: 1578
-  name: 2|加拿大 096
-  network: ws
-  port: 2087
-  server: 104.21.3.131
-  servername: vi.ylks.xyz
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: vi.ylks.xyz
-    path: /fk9h5rnc36strsnd?ed=2560
 - delay: 1518
   name: 2|加拿大 097
   network: ws
@@ -2441,34 +1967,6 @@ proxies:
     headers:
       Host: cdn1.freegradely.xyz
     path: github.com/Alvin9999
-- client-fingerprint: chrome
-  delay: 1510
-  name: 2|加拿大 103
-  network: ws
-  port: 8443
-  server: 204.216.105.106
-  servername: edgood.889876.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: edgood.889876.xyz
-    path: /
-- client-fingerprint: chrome
-  delay: 2107
-  name: 2|加拿大 104
-  network: ws
-  port: 8443
-  server: www.speedtest.net
-  servername: de1.vless.site
-  tls: true
-  type: vless
-  uuid: f3747309-5c2d-5bb4-9ffc-d8a3f1302741
-  ws-opts:
-    headers:
-      Host: de1.vless.site
-    path: /M_Buy
 - alterId: 0
   cipher: auto
   name: 2|加拿大 077
@@ -2498,20 +1996,6 @@ proxies:
     headers:
       Host: ch1.vless.site
     path: /freeiranweb
-- alterId: 0
-  cipher: auto
-  delay: 2709
-  name: 2|加拿大 154
-  network: ws
-  port: 2052
-  server: 104.19.58.175
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
 - delay: 1033
   name: 2,4|US_speednode_0077
   network: ws
@@ -2555,19 +2039,6 @@ proxies:
     headers:
       Host: BpBG.168168.Us.kg
     path: /c20mX9dVgjfBPA4P/cHJveHlpcC5oay5meHhrLmRlZHluLmlv?ed=2560
-- delay: 1748
-  name: 2|爱沙尼亚 002
-  network: ws
-  port: 8443
-  server: 45.80.110.245
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitter苏小柠
 - alterId: 0
   cipher: auto
   delay: 1382
@@ -2597,21 +2068,6 @@ proxies:
   ws-opts:
     headers:
       Host: worker-mute-bar-1719.nifotok993.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  delay: 1612
-  name: 2|加拿大 023
-  network: ws
-  port: 2086
-  server: 104.16.67.38
-  servername: worker-damp-duadwans.jevesoj131.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: worker-damp-duadwans.jevesoj131.workers.dev
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
@@ -2987,21 +2443,6 @@ proxies:
     headers:
       Host: onea.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: 2|美国 003
-  network: ws
-  port: 2052
-  server: Zula.ir
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6dbb6c48-ff95-502a-a92d-4ca8189308f0
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
 - delay: 766
   name: 2,4|AE_speednode_0002
   network: ws
@@ -3644,21 +3085,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 079
-  network: ws
-  port: 2082
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 080
   network: ws
   port: 2086
@@ -3672,20 +3098,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 064
-  network: ws
-  port: 2082
-  server: www.zula.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /
 - client-fingerprint: randomized
   delay: 476
   name: 2|香港 004
@@ -3849,20 +3261,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 007
-  network: ws
-  port: 2086
-  server: japan.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|美国 011
   network: ws
   port: 2086
@@ -3875,21 +3273,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: /
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 2|美国 001
-  network: grpc
-  port: 14821
-  reality-opts:
-    public-key: c9dv7BAp3MtNH8SuaE-yBIKteVxefVO7LB9fbVKq2Ww
-    short-id: 6ba85179e30d4fc2
-  server: 104.168.43.162
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 089723ba-0ac0-469f-99a9-cd4465f66ae6
 - alterId: 0
   cipher: auto
   name: 2|加拿大 016
@@ -3916,16 +3299,18 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 2|新加坡 001
+- alterId: 0
+  cipher: auto
+  name: 2|加拿大 017
   network: ws
-  password: CMLiu
-  port: 8443
-  server: 47.236.180.24
-  sni: aliorg.filegear-sg.me
-  type: trojan
+  port: 2095
+  server: 104.19.45.5
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
     headers:
-      Host: aliorg.filegear-sg.me
+      Host: onea.flha.ru
     path: /
 - name: 2|韩国 003
   network: ws
@@ -3986,31 +3371,18 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 2|香港 002
+  name: 2|美国 002
   network: ws
-  port: 28088
-  server: hkt.skycloud.lol
+  port: 80
+  server: 66.235.200.0
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
-  uuid: cec2bf7c-df93-46e0-8451-24cf7d653d9b
+  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
   ws-opts:
     headers:
-      Host: hkg.cylink.tech
-    path: /www/wwwroot/hkg.cylink.tech
-- name: 2|新加坡 002
-  network: ws
-  port: 2052
-  server: 8.219.194.170
-  servername: vless.leo726china.workers.dev
-  tls: false
-  type: vless
-  udp: true
-  uuid: 688ee9a9-087b-4d02-ad23-c0b01c9671af
-  ws-opts:
-    headers:
-      Host: vless.leo726china.workers.dev
-    path: /?ed=2048
+      Host: tr1-vmess.ctunnel.xyz
+    path: /
 - name: 2|日本 002
   network: ws
   port: 2052
@@ -4026,18 +3398,17 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 2|美国 002
+  name: 2,3|0|-https://t.me/MrXbin-25
   network: ws
-  port: 80
-  server: 66.235.200.0
-  skip-cert-verify: false
+  port: '2086'
+  server: 172.64.233.32
   tls: false
   type: vmess
-  uuid: ec286f13-7e1a-42bc-9deb-76b91b4b9d2d
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: tr1-vmess.ctunnel.xyz
-    path: /
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸 _US_美国
@@ -4313,56 +3684,424 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸 美国(油管:破解资源君)
-  network: tcp
-  port: '59442'
-  server: 138.2.8.227
-  tls: false
+  name: 3|亚洲(油管:破解资源君2.0)
+  network: ws
+  port: '443'
+  server: 42.186.175.8
+  tls: true
   type: vmess
-  uuid: 6fd042fa-e864-4a95-85bc-6f590a03d34a
+  uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95
+  ws-opts:
+    headers:
+      Host: sgarm.ptuu.ml
+    path: /ray
+- name: '3|亚洲(油管:破解资源君2.0) #1'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44602
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|亚洲(油管:破解资源君2.0) #2'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44614
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|亚洲(油管:破解资源君2.0) #3'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44615
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|亚洲(油管:破解资源君2.0) #4'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44607
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|亚洲(油管:破解资源君2.0) #5'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44616
+  server: 193.123.65.213
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #1'
-  network: tcp
-  port: '57539'
-  server: bwg2.gushidawang.cc
+  name: '3|亚洲(油管:破解资源君2.0) #6'
+  network: ws
+  port: '11933'
+  server: aliyun.sgzx02.downloadmovie.cn
   tls: false
   type: vmess
-  uuid: fcf7202c-bd1a-44e9-a25e-bf152f6e5c11
+  uuid: 0253b574-8020-3186-a647-0267295ac9bb
+  ws-opts:
+    headers:
+      Host: aliyun.sgzx02.downloadmovie.cn
+    path: /rocket
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #2'
-  network: tcp
-  port: '13009'
-  server: 120.197.130.126
+  name: '3|亚洲(油管:破解资源君2.0) #7'
+  network: ws
+  port: '11935'
+  server: aliyun.sgzx01.downloadmovie.cn
   tls: false
   type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+  uuid: 0253b574-8020-3186-a647-0267295ac9bb
+  ws-opts:
+    headers:
+      Host: aliyun.sgzx01.downloadmovie.cn
+    path: /rocket
+- name: '3|亚洲(油管:破解资源君2.0) #8'
+  password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf
+  port: 21089
+  server: hk-hkg-sh-hk-02-tr.cdn.savoy.click
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #3'
-  network: tcp
-  port: '13102'
-  server: 120.197.130.126
+  name: '3|亚洲(油管:破解资源君2.0) #9'
+  network: ws
+  port: '38401'
+  server: in-us-1.onebox6.org
   tls: false
   type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: '%7B%22Host%22:%22in-us-1.onebox6.org%22%7D'
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #4'
+  name: 3|🇸🇬 新加坡(油管:破解资源君2.0)
+  network: ws
+  port: '23205'
+  server: 8.219.146.138
+  tls: false
+  type: vmess
+  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+  ws-opts:
+    headers:
+      Host: 8.219.146.138
+    path: /wss
+- name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #1'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44605
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #2'
+  network: ws
+  port: '23205'
+  server: 8.219.146.138
+  tls: false
+  type: vmess
+  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
+  ws-opts:
+    headers:
+      Host: ''
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: 3|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '20943'
+  server: 123456789abcd.xn--h6q53lcvpz7l.club
+  tls: false
+  type: vmess
+  uuid: e278c68f-4716-4798-a9c6-1f91d74499d8
+  ws-opts:
+    headers:
+      Host: v.qq.com
+    path: /images
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #1'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 34000
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #2'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 34001
+  server: iiiieeepppplll.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #3'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 34002
+  server: iiiieeepppplll.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #4'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 34003
+  server: iiiieeepppplll.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #5'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 32000
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #6'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 32001
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #7'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 32002
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: ip3884414509.mobgslb.tbcache.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #8'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 32003
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: ip3884414509.mobgslb.tbcache.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #9'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 34004
+  server: iiiieeepppplll.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #10'
+  password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d
+  port: 4433
+  server: 812hk02.ok365.cyou
+  skip-cert-verify: true
+  sni: 812hk02.ok365.cyou
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #11'
+  password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d
+  port: 443
+  server: 817hk01.ok365.cyou
+  skip-cert-verify: true
+  sni: 817hk01.ok365.cyou
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #12'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44601
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|🇭🇰 香港(油管:破解资源君2.0) #13'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44609
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: 3|🇨🇳 台湾(油管:破解资源君2.0)
+  password: 9afbdbda-3ba3-44a4-ab90-ee9a83832b0d
+  port: 443
+  server: 727tw01.ok365.cyou
+  skip-cert-verify: true
+  sni: 727tw01.ok365.cyou
+  type: trojan
+- name: '3|🇨🇳 台湾(油管:破解资源君2.0) #1'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44608
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- name: '3|🇨🇳 台湾(油管:破解资源君2.0) #2'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44608
+  server: tw.n.optage.moe
+  skip-cert-verify: true
+  sni: tw.node.qchwnd.moe
+  type: trojan
+- name: 3|🇯🇵 日本(油管:破解资源君2.0)
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 443
+  server: 172.105.236.208
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 3|🇪🇺 欧洲(油管:破解资源君2.0)
   network: ws
   port: '80'
   server: 104.17.3.81
   tls: false
   type: vmess
-  uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0
+  uuid: e5d7063b-afbc-47bb-a913-e459a7714830
   ws-opts:
     headers:
-      Host: sanggoro6.nextvpn.cc
+      Host: hurricane3.nextvpn.cc
     path: /vpnneo
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #5'
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #1'
+  network: ws
+  port: '80'
+  server: online.uc.edu
+  tls: false
+  type: vmess
+  uuid: e5d7063b-afbc-47bb-a913-e459a7714830
+  ws-opts:
+    headers:
+      Host: hurricane3.nextvpn.cc
+    path: /vpnneo
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #2'
+  network: ws
+  port: '38401'
+  server: in-us-1.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: YouTube-aweikeji
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #3'
+  network: ws
+  port: '38701'
+  server: in-sg-1.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: www.ivpnpro.net
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #4'
+  network: ws
+  port: '38701'
+  server: ingress-i1.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: aweikeji-YouTube
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #5'
+  network: tcp
+  port: '38838'
+  server: 47.242.187.154
+  tls: false
+  type: vmess
+  uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b
+- alterId: 4
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #7'
+  network: ws
+  port: '443'
+  server: 192.186.129.66
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: usa-buffalo.lvuft.com
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #8'
+  network: tcp
+  port: '46279'
+  server: 185.167.77.195
+  tls: false
+  type: vmess
+  uuid: 666c9436-3680-4694-d0d6-02e16f725871
+- name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #9'
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  port: 443
+  server: jgwxn4.gaox.ml
+  skip-cert-verify: true
+  sni: jgwxn4.gaox.ml
+  type: trojan
+- alterId: 4
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #11'
+  network: ws
+  port: '443'
+  server: usa-buffalo.lvuft.com
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: usa-buffalo.lvuft.com
+    path: /ws
+- name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #12'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44613
+  server: uk.n.optage.moe
+  skip-cert-verify: true
+  sni: uk.node.qchwnd.moe
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #13'
+  network: tcp
+  port: '16833'
+  server: 144.24.88.101
+  tls: false
+  type: vmess
+  uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f
+- name: '3|🇪🇺 欧洲(油管:破解资源君2.0) #14'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44622
+  server: 140.84.181.250
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 3|🇺🇸 美国(油管:破解资源君2.0)
+  network: ws
+  port: '443'
+  server: blogs.microsoft.com
+  tls: true
+  type: vmess
+  uuid: 3890505d-a496-4418-91a1-742faa2b0ac7
+  ws-opts:
+    headers:
+      Host: biznet3.nextvpn.cc
+    path: /vpnneo
+- name: '3|🇺🇸 美国(油管:破解资源君2.0) #1'
+  password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f
+  port: 33002
+  server: pp1.zhengzhongfeizhu.xyz
+  skip-cert-verify: true
+  sni: 111-47-215-139.nhost.00cdn.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国(油管:破解资源君2.0) #2'
   network: ws
   port: '80'
   server: 141.193.213.20
@@ -4375,314 +4114,20 @@ proxies:
     path: /vpnneo
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #6'
+  name: '3|🇺🇸 美国(油管:破解资源君2.0) #3'
   network: ws
   port: '80'
-  server: 104.18.105.170
+  server: 141.193.213.21
   tls: false
   type: vmess
-  uuid: 20000000-0000-0000-0000-000000000020
+  uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0
   ws-opts:
     headers:
-      Host: dosg.azure.bond
-    path: /20
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #7'
-  network: ws
-  port: '80'
-  server: 104.18.243.114
-  tls: false
-  type: vmess
-  uuid: 20000000-0000-0000-0000-000000000020
-  ws-opts:
-    headers:
-      Host: dosg.azure.bond
-    path: /20
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #8'
-  network: tcp
-  port: '25243'
-  server: 138.2.114.151
-  tls: false
-  type: vmess
-  uuid: 53fec6d3-ea43-4bbd-e627-13b62a60fd3c
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #35'
-  network: tcp
-  port: '46622'
-  server: 47.241.220.160
-  tls: false
-  type: vmess
-  uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #10'
-  network: ws
-  port: '443'
-  server: blogs.microsoft.com
-  tls: true
-  type: vmess
-  uuid: 3890505d-a496-4418-91a1-742faa2b0ac7
-  ws-opts:
-    headers:
-      Host: biznet3.nextvpn.cc
+      Host: sanggoro6.nextvpn.cc
     path: /vpnneo
-- name: '3|🇺🇸 美国(油管:破解资源君) #11'
-  password: b291d129-ee55-4801-a9b8-b5316e5c37b7
-  port: 443
-  server: jgwcc3.gaox.ml
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #12'
-  network: tcp
-  port: '38838'
-  server: 47.242.187.154
-  tls: false
-  type: vmess
-  uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 美国(油管:破解资源君) #17'
-  network: ws
-  port: '443'
-  server: 152.67.218.38
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #14'
-  network: tcp
-  port: '443'
-  server: chess.magicefire.com
-  tls: true
-  type: vmess
-  uuid: 9aa80017-3427-4165-a522-f5f9a11330d0
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #16'
-  network: tcp
-  port: '51649'
-  server: 137.184.118.47
-  tls: false
-  type: vmess
-  uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #2'
-  network: tcp
-  port: '19570'
-  server: 146.56.184.242
-  tls: false
-  type: vmess
-  uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #1'
-  network: tcp
-  port: '80'
-  server: 144.24.92.192
-  tls: false
-  type: vmess
-  uuid: 29d057f9-1600-4a18-b595-62a14073a230
-- alterId: 4
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #2'
-  network: ws
-  port: '443'
-  server: usa-buffalo.lvuft.com
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: usa-buffalo.lvuft.com
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #3'
-  network: tcp
-  port: '35412'
-  server: 152.70.235.207
-  tls: false
-  type: vmess
-  uuid: 70d95308-2a61-4f93-f139-9103d0587fd9
-- alterId: 4
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #4'
-  network: ws
-  port: '443'
-  server: 192.186.129.66
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: usa-buffalo.lvuft.com
-    path: /ws
-- name: '3|🇪🇺 欧洲(油管:破解资源君) #5'
-  password: c024672d-0509-322e-8792-1b54cb82e1ac
-  port: 443
-  server: 162.159.194.69
-  skip-cert-verify: true
-  sni: blog4.2220aa.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #7'
-  network: ws
-  port: '65096'
-  server: best03.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best03.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #8'
-  network: tcp
-  port: '443'
-  server: 144.24.92.192
-  tls: false
-  type: vmess
-  uuid: 1743c2d9-bad1-4485-95a8-897145f09812
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #9'
-  network: ws
-  port: '65088'
-  server: best03.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best03.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #10'
-  network: ws
-  port: '38701'
-  server: ingress-i1.onebox6.org
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: ingress-i1.onebox6.org
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #11'
-  network: ws
-  port: '38701'
-  server: ingress-i1.onebox6.org
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: aweikeji-YouTube
-    path: /hls/cctv5phd.m3u8
-- name: '3|🇪🇺 欧洲(油管:破解资源君) #13'
-  password: 54080134-2cba-4535-8599-95650bd9aa54
-  port: 443
-  server: jgwhdlb2.gaox.ml
-  skip-cert-verify: true
-  sni: jgwhdlb2.gaox.ml
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #15'
-  network: ws
-  port: '80'
-  server: 45.11.92.100
-  tls: false
-  type: vmess
-  uuid: e026af69-5e36-4cd5-d40e-347f2955a3f6
-  ws-opts:
-    headers:
-      Host: 45.11.92.100
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #17'
-  network: ws
-  port: '80'
-  server: 45.11.92.100
-  tls: false
-  type: vmess
-  uuid: e026af69-5e36-4cd5-d40e-347f2955a3f6
-  ws-opts:
-    headers:
-      Host: YouTube-aweikeji
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #18'
-  network: ws
-  port: '443'
-  server: 152.67.218.38
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: YouTube-aweikeji
-    path: /
-- name: '3|🇪🇺 欧洲(油管:破解资源君) #19'
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-  port: 443
-  server: jgwxn4.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #21'
-  network: ws
-  port: '443'
-  server: lg4.free4444.xyz
-  tls: true
-  type: vmess
-  uuid: fd0c0fca-599a-4ca7-931c-beec46d4f71b
-  ws-opts:
-    headers:
-      Host: lg4.free4444.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #22'
-  network: tcp
-  port: '46279'
-  server: 185.167.77.195
-  tls: false
-  type: vmess
-  uuid: 666c9436-3680-4694-d0d6-02e16f725871
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #6'
-  network: tcp
-  port: '10328'
-  server: 168.138.201.208
-  tls: false
-  type: vmess
-  uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #31'
+  name: '3|🇺🇸 美国(油管:破解资源君2.0) #4'
   network: ws
   port: '443'
   server: guibi.ml
@@ -4695,291 +4140,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #8'
-  network: tcp
-  port: '6666'
-  server: 146.56.167.119
-  tls: false
-  type: vmess
-  uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #26'
+  name: '3|🇺🇸 美国(油管:破解资源君2.0) #5'
   network: ws
-  port: '38201'
-  server: ingress-i1.onebox6.org
+  port: '80'
+  server: cdn.digicertcdn.com
   tls: false
   type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  uuid: 3890505d-a496-4418-91a1-742faa2b0ac7
   ws-opts:
     headers:
-      Host: ingress-i1.onebox6.org
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #27'
-  network: ws
-  port: '43688'
-  server: 195.133.53.192
-  tls: false
-  type: vmess
-  uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41
-  ws-opts:
-    headers:
-      Host: 195.133.53.192
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #30'
-  network: ws
-  port: '39216'
-  server: 109.166.39.216
-  tls: false
-  type: vmess
-  uuid: 5022b474-6ba7-4f66-b7a1-04cc4814d2ed
-  ws-opts:
-    headers:
-      Host: 109.166.39.216
-    path: /tiktok
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #32'
-  network: tcp
-  port: '37121'
-  server: m4.40010010.xyz
-  tls: true
-  type: vmess
-  uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
-- alterId: 0
-  cipher: auto
-  name: '3|🇪🇺 欧洲(油管:破解资源君) #34'
-  network: tcp
-  port: '13007'
-  server: 120.197.130.126
-  tls: false
-  type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
-- alterId: 0
-  cipher: auto
-  name: 3|🇯🇵 日本(油管:破解资源君)
-  network: ws
-  port: '20944'
-  server: 123456789abcd.xn--h6q53lcvpz7l.club
-  tls: false
-  type: vmess
-  uuid: e278c68f-4716-4798-a9c6-1f91d74499d8
-  ws-opts:
-    headers:
-      Host: v.qq.com
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #1'
-  network: ws
-  port: '20942'
-  server: 123456789abcd.xn--h6q53lcvpz7l.club
-  tls: false
-  type: vmess
-  uuid: e278c68f-4716-4798-a9c6-1f91d74499d8
-  ws-opts:
-    headers:
-      Host: v.qq.com
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #3'
-  network: tcp
-  port: '443'
-  server: 132.145.113.238
-  tls: false
-  type: vmess
-  uuid: 84b1b846-748c-45ca-839e-4e21f9acc6c5
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #4'
-  network: tcp
-  port: '13101'
-  server: 120.197.130.126
-  tls: false
-  type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
-- alterId: 0
-  cipher: auto
-  name: 3|🇨🇳 台湾(油管:破解资源君)
-  network: ws
-  port: '38201'
-  server: 120.240.55.137
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: YouTube-aweikeji
-    path: /hls/cctv5phd.m3u8
-- name: '3|🇨🇳 台湾(油管:破解资源君) #1'
-  password: 41a5e2d5-2678-4a7c-9d22-e8c91611d607
+      Host: biznet3.nextvpn.cc
+    path: /vpnneo
+- name: '3|🇺🇸 美国(油管:破解资源君2.0) #6'
+  password: 54080134-2cba-4535-8599-95650bd9aa54
   port: 443
-  server: 727tw01.ok365.cyou
+  server: jgwhdlb2.gaox.ml
   skip-cert-verify: true
+  sni: jgwhdlb2.gaox.ml
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 3|🇭🇰 香港(油管:破解资源君)
-  network: ws
-  port: '65066'
-  server: 120.233.150.146
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: 120.233.150.146
-    path: /rocket
-- name: '3|🇭🇰 香港(油管:破解资源君) #1'
-  password: fbda7e99-943d-4c81-811a-019acb08c1af
-  port: 11301
-  server: hkt.403w.club
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 3|🇸🇬 新加坡(油管:破解资源君)
-  network: ws
-  port: '443'
-  server: vsg1.0bad.com
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vsg1.0bad.com
-    path: /chat
-- alterId: 0
-  cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #1'
-  network: ws
-  port: '23205'
-  server: 8.219.146.138
-  tls: false
-  type: vmess
-  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
-  ws-opts:
-    headers:
-      Host: 8.219.146.138
-    path: /wss
-- alterId: 0
-  cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #2'
-  network: ws
-  port: '23205'
-  server: 8.219.146.138
-  tls: false
-  type: vmess
-  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
-  ws-opts:
-    headers:
-      Host: ''
-    path: /wss
-- alterId: 0
-  cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #3'
-  network: tcp
-  port: '8888'
-  server: 161.117.229.166
-  tls: false
-  type: vmess
-  uuid: 081f8acf-742b-4af5-ca99-6186c80e635b
-- alterId: 0
-  cipher: auto
-  name: 3|亚洲(油管:破解资源君)
-  network: ws
-  port: '443'
-  server: 42.186.175.8
-  tls: true
-  type: vmess
-  uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95
-  ws-opts:
-    headers:
-      Host: sgarm.ptuu.ml
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #1'
-  network: ws
-  port: '65087'
-  server: best02.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best02.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #2'
-  network: ws
-  port: '65092'
-  server: 120.233.150.146
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: 120.233.150.146
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #3'
-  network: ws
-  port: '65078'
-  server: best04.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best04.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #4'
-  network: ws
-  port: '65089'
-  server: best04.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best04.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #5'
-  network: ws
-  port: '65088'
-  server: best01.downloadmovie.cn
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-opts:
-    headers:
-      Host: best01.downloadmovie.cn
-    path: /rocket
-- alterId: 0
-  cipher: auto
-  name: '3|亚洲(油管:破解资源君) #6'
-  network: ws
-  port: '38701'
-  server: in-sg-1.onebox6.org
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers:
-      Host: www.ivpnpro.net
-    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 3|🇮🇳 github.com/freefq - 印度  2
@@ -5151,33 +4329,20 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
-  name: 3|0|-https://t.me/MrXbin-10
+  name: '3|3|d*********g.com_0 #1'
   network: ws
   port: '2086'
-  server: 23.227.38.6
+  server: 104.19.32.46
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-opts:
     headers:
-      Host: ip006.dtku47.xyz
+      Host: ip006.3196772.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 3|0|-https://t.me/MrXbin-14
-  network: ws
-  port: '2086'
-  server: 172.64.166.28
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 3|0|-https://t.me/MrXbin-18
+  name: 3|0|-https://t.me/MrXbin-43
   network: ws
   port: '2086'
   server: 172.64.166.22
@@ -5188,9 +4353,212 @@ proxies:
     headers:
       Host: ip2.1457230.xyz
     path: github.com/Alvin9999
+- alterId: 64
+  cipher: auto
+  name: 3|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 3|0|-https://t.me/MrXbin-19
+  name: '3|3|d*********g.com_1 #1'
+  network: ws
+  port: '2086'
+  server: 23.227.38.6
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.3196772.xyz
+    path: github.com/Alvin9999
+- name: 3|🇨🇳 安徽省 移动数据上网公共出口
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12005
+  server: cn1.cdn.xfltd-cdn.top
+  skip-cert-verify: false
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 3|🇭🇰 香港 V2CROSS.COM
+  network: ws
+  port: '41002'
+  server: 156.245.8.143
+  tls: true
+  type: vmess
+  uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/1720697880423
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '2086'
+  server: 104.19.46.27
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 3|🇮🇪 爱尔兰 都柏林Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.214.0.13
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '3|🇮🇪 爱尔兰 都柏林Amazon数据中心 #1'
+  password: telegram-id-directvpn
+  port: 22222
+  server: 54.155.220.173
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #3'
+  network: ws
+  port: '443'
+  server: sg1.1vpn.sbs
+  tls: true
+  type: vmess
+  uuid: 1335b461-4941-4d13-936b-76a16eec9ad6
+  ws-opts:
+    headers:
+      Host: sg1.1vpn.sbs
+    path: /oihuih6788
+- name: 3|🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.53.213.236
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 3|🇺🇸 美国 V2CROSS.COM
+  network: ws
+  port: '443'
+  server: 23.162.200.227
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- name: '3|🇨🇳 安徽省 移动数据上网公共出口 #1'
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12001
+  server: cn1.cdn.xfltd-cdn.top
+  skip-cert-verify: false
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- name: 3|12|US_speednode_0084
+  password: CMLiu
+  port: 443
+  server: 43.153.80.208
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #6'
+  network: ws
+  port: '2086'
+  server: 104.19.123.11
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- name: 3|🇸🇬 俄罗斯 新西伯利亚ADMAN网络
+  password: WyYdHzq88EQJVVThgpupm3wCKVD44jtN
+  port: 39257
+  server: 46.29.162.87
+  skip-cert-verify: false
+  sni: ihave.baselinux.net
+  type: trojan
+- name: '3|🇨🇳 广东省广州市 移动 #1'
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12004
+  server: cn1.cdn.xfltd-cdn.top
+  skip-cert-verify: false
+  sni: cn1.cdn.xfltd-cdn.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #8'
+  network: ws
+  port: '2086'
+  server: 104.19.47.27
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1457230.xyz
+    path: github.com/Alvin9999
+- name: 3|🇮🇷 伊朗 V2CROSS.COM
+  password: LIItSq6Q780XhDsFmx1dKQ
+  port: 5005
+  server: 89.235.118.183
+  skip-cert-verify: false
+  type: trojan
+- name: 3|🇺🇸 美国 惠普公司
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.223.135.21
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 3|🇺🇸 美国 戴维逊大学
+  password: fQ84Q7A4dw
+  port: 443
+  server: 152.42.252.70
+  skip-cert-verify: false
+  sni: ultra.vpnxhub.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸 美国 CloudFlare节点 #10'
+  network: ws
+  port: '2086'
+  server: 104.19.57.4
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- name: 3|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.194.224.17
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 3|🇰🇷 韩国 KT电信
+  password: CMLiu
+  port: 25006
+  server: 121.148.19.178
+  skip-cert-verify: false
+  sni: aliorg.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-18
   network: ws
   port: '2086'
   server: 172.64.198.249
@@ -5201,22 +4569,16 @@ proxies:
     headers:
       Host: ip1.1457230.xyz
     path: github.com/Alvin9999
+- name: 3|🇯🇵 日本 V2CROSS.COM
+  password: 1dfba761-c1e0-422e-98b6-062da56afb53
+  port: 443
+  server: 146.56.191.191
+  skip-cert-verify: true
+  sni: jkrf1.969799.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 3|0|-https://t.me/MrXbin-22
-  network: ws
-  port: '2086'
-  server: 23.227.38.3
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 3|0|-https://t.me/MrXbin-33
+  name: 3|0|-https://t.me/MrXbin-10
   network: ws
   port: '2086'
   server: 172.64.175.213
@@ -5229,10 +4591,49 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 3|0|-https://t.me/MrXbin-41
+  name: 3|0|-https://t.me/MrXbin-13
   network: ws
   port: '2086'
-  server: 172.64.233.32
+  server: 23.227.38.3
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-39
+  network: ws
+  port: '2086'
+  server: 172.64.167.5
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-40
+  network: ws
+  port: '2086'
+  server: 23.227.38.6
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.dtku47.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|0|-https://t.me/MrXbin-44
+  network: ws
+  port: '2086'
+  server: 172.64.166.28
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -5291,32 +4692,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip006.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '3|3|d*********g.com_0 #1'
-  network: ws
-  port: '2086'
-  server: 104.19.32.46
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.3196772.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '3|3|d*********g.com_1 #1'
-  network: ws
-  port: '2086'
-  server: 23.227.38.6
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.3196772.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -5396,122 +4771,106 @@ proxies:
     headers:
       Host: ip005.3196772.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 3|🇭🇰 11|香港|@ripaojiedian
-  network: ws
-  port: '46001'
-  server: mmhk01.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    headers:
-      Host: mmhk01.micloud.buzz
-    path: /zh-cn
 - name: 3|🇭🇰 10,11|香港4|@ripaojiedian
   password: llyEnxJlVC
   port: 51017
   server: 183.232.139.24
   skip-cert-verify: true
   type: trojan
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 3|🇨🇳 10,11|台湾|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
+  name: 3|🇭🇰 11|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- name: 3|🇨🇳 10,11|台湾3|@ripaojiedian
-  password: 8fc4337b-4636-44a2-a160-9d360436aa57
-  port: 13035
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- name: 3|🇨🇳 10,11|台湾4|@ripaojiedian
-  password: a6feaa76-f2a6-37fc-b6ac-82aced49aa99
-  port: 59021
-  server: gy.58n.net
-  skip-cert-verify: false
-  sni: x100.flybar.work
-  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 3|🇯🇵 10,11|日本|@ripaojiedian
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
+  name: 3|🇭🇰 11|香港6|@ripaojiedian
+  network: tcp
+  port: '29767'
+  server: iepl.hongxingdl.vip
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
-  ws-opts:
-    headers:
-      Host: oA5FSz9Tjp1.yofnhkfc.xyz
-    path: /video/P7EExoE2
-- name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
+  uuid: fce9f624-b3c0-41ed-8327-13b85dbd2693
+- name: 3|🇯🇵 10,11|日本|@ripaojiedian
   password: a3467343-8c87-40a6-a87f-a466b340475c
   port: 20230
-  server: sg007.421421.xyz
+  server: jp007.421421.xyz
   skip-cert-verify: false
   sni: 421421.xyz
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 3|🇸🇬 10,11|新加坡2|@ripaojiedian
+  name: 3|🇯🇵 10,11|日本3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
+  ws-opts:
+    headers:
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r
+- alterId: 0
+  cipher: auto
+  name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
   ws-opts:
     headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
-- alterId: 0
-  cipher: auto
-  name: 3|🇺🇸 10,11|美国|@ripaojiedian
-  network: ws
-  port: '2086'
-  server: 104.19.51.232
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip005.dtku47.xyz
-    path: github.com/Alvin9999
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸 10,11|美国2|@ripaojiedian
   network: ws
-  port: '2086'
+  port: '2052'
   server: cfcdn1.sanfencdn9.com
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
   ws-opts:
     headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
+      Host: us3AJ8biuQx.fzbqfrse.xyz
+    path: /video/QXjZG5u4F2
+- alterId: 0
+  cipher: auto
+  name: 3|🇺🇸 10,11|美国5|@ripaojiedian
+  network: ws
+  port: '2086'
+  server: 104.26.0.56
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 3|🇫🇮 11|芬兰|@ripaojiedian
+  network: ws
+  port: '46085'
+  server: mmfi85.micloud.buzz
+  tls: false
+  type: vmess
+  uuid: a6e1943b-ca88-4d76-b041-9782be56a54d
+  ws-opts:
+    headers:
+      Host: mmfi85.micloud.buzz
+    path: /zh-cn
 - name: 3|12|KR_speednode_0048
   password: CMLiu
   port: 443
   server: 59.3.3.161
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-- name: 3|12|US_speednode_0084
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
   skip-cert-verify: true
   sni: aliorg.filegear-sg.me
   type: trojan
@@ -8801,678 +8160,636 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - '1|广东省广州市 移动 #2'
-  - 4|GB_speednode_0044
-  - '3|🇺🇸 美国(油管:破解资源君) #10'
-  - 4|US_speednode_0098
-  - 2|加拿大 088
-  - 4|US_speednode_0103
-  - 4|US_speednode_0079
-  - 4|US_speednode_0114
-  - '1|美国 CloudFlare节点 #11'
-  - 4|US_speednode_0166
-  - 4|CN_speednode_0008
-  - 4|US_speednode_0086
-  - '3|4|d*********g.com_1 #2'
-  - 4|US_speednode_0228
-  - 0|d*********g.com_36
-  - 0|d*********g.com_70
-  - 4|US_speednode_0151
-  - 4|US_speednode_0152
-  - 4|US_speednode_0146
-  - 4|US_speednode_0162
-  - 2|加拿大 132
-  - 2|加拿大 077
-  - '3,5|d*********g.com_2 #1'
+  - 4|US_speednode_0142
+  - 0|d*********g.com_87
+  - '3|🇺🇸 _US_美国 #8'
+  - 0|d*********g.com_33
+  - '0,3|🇺🇸 美国 CloudFlare节点 #9'
+  - 2|日本 002
+  - 4|GB_speednode_0041
   - 4|US_speednode_0150
-  - 1,3|🇭🇰 11|香港5|@ripaojiedian
-  - 2|加拿大 118
-  - '1|美国 CloudFlare节点 #2'
-  - 4|RU_speednode_0055
-  - 4|EE_speednode_0019
-  - '0,1|美国 CloudFlare节点 #16'
-  - 4|SG_speednode_0064
-  - '3|亚洲(油管:破解资源君) #6'
-  - '3|🇺🇸 美国(油管:破解资源君) #5'
-  - 2|加拿大 054
-  - '3|🇺🇸 美国(油管:破解资源君) #4'
-  - 4|US_speednode_0230
-  - '3|🇺🇸 美国(油管:破解资源君) #11'
-  - 4|US_speednode_0168
-  - 2|加拿大 123
-  - 2|加拿大 078
-  - 1|江苏省宿迁市 蒲公英网络有限公司
-  - 4|US_speednode_0253
-  - 4|US_speednode_0134
-  - 2,4|RU_speednode_0053
-  - 4|US_speednode_0148
+  - 2|加拿大 010
+  - 0,2|加拿大 019
+  - 4|US_speednode_0123
+  - 3|未命名
+  - 0|d*********g.com_2
+  - 4|US_speednode_0186
+  - 3|🇭🇰 香港(油管:破解资源君2.0)
+  - 4|US_speednode_0180
+  - 4|US_speednode_0209
+  - 0|d*********g.com_0
+  - 2|加拿大 077
+  - 4|EE_speednode_0023
+  - 0|d*********g.com_10
+  - 2|加拿大 086
+  - 4|US_speednode_0141
+  - '3|未命名 #2'
   - 4|US_speednode_0132
-  - 2|美国 005
-  - 4|US_speednode_0128
-  - 2|加拿大 049
-  - '3|🇭🇰 香港(油管:破解资源君) #1'
-  - '3|4|d*********g.com_2 #2'
-  - 0|d*********g.com_50
-  - 2|加拿大 035
-  - 2|加拿大 009
-  - 4|US_speednode_0237
-  - 3|🇸🇬 10,11|新加坡|@ripaojiedian
-  - 2|韩国 002
-  - 4|LU_speednode_0051
-  - 2|加拿大 037
   - 2|加拿大 091
+  - 3|🇺🇸 _US_美国
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #11'
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #3'
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
+  - 4|US_speednode_0271
+  - 0,3|0|-https://t.me/MrXbin-35
+  - 4|US_speednode_0073
+  - 2|香港 005
+  - '3|🇨🇳 广东省广州市 移动 #1'
+  - 4|US_speednode_0235
+  - 2|加拿大 071
+  - 3|🇺🇸 10,11|美国2|@ripaojiedian
+  - 0|d*********g.com_78
+  - '3|🇺🇸 美国 CloudFlare节点 #6'
+  - 4|US_speednode_0152
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #3'
+  - 2|澳大利亚 003
+  - 2|加拿大 127
+  - 2|美国 016
+  - 0|d*********g.com_53
+  - 4|US_speednode_0138
+  - 0|d*********g.com_70
+  - 4|US_speednode_0222
+  - 4|US_speednode_0219
+  - 4|KR_speednode_0048
+  - 4|US_speednode_0239
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #12'
+  - 2|美国 021
+  - 0|d*********g.com_16
+  - 4|US_speednode_0154
+  - 2|加拿大 121
+  - 4|US_speednode_0146
+  - 2|加拿大 120
+  - 3|🇺🇸 美国(油管:破解资源君2.0)
+  - 4|EE_speednode_0022
+  - 4|CN_speednode_0008
+  - '3|未命名 #3'
+  - 4|US_speednode_0242
+  - 0|d*********g.com_11
+  - 3|🇯🇵 10,11|日本3|@ripaojiedian
+  - 4|US_speednode_0090
+  - 3|🇩🇪 德国 黑森州法兰克福Amazon数据中心
+  - 2|俄罗斯 001
+  - 4|LU_speednode_0052
+  - 4|US_speednode_0185
+  - '3|亚洲(油管:破解资源君2.0) #5'
+  - 3|0|-https://t.me/MrXbin-18
+  - 0|d*********g.com_5
+  - 4|US_speednode_0173
+  - 2|荷兰 001
+  - 2|加拿大 089
+  - 2|加拿大 052
+  - 2|加拿大 138
+  - 4|EE_speednode_0026
+  - 4|US_speednode_0252
+  - 4|EE_speednode_0031
+  - 4|US_speednode_0256
+  - 0|d*********g.com_18
+  - 0|d*********g.com_75
+  - 0|d*********g.com_7
+  - 0|d*********g.com_90
+  - 4|EE_speednode_0014
+  - 2|加拿大 088
+  - 0|d*********g.com_30
+  - 2|加拿大 032
+  - 4|US_speednode_0263
+  - 4|US_speednode_0254
+  - 0|d*********g.com_64
+  - 4|RU_speednode_0057
+  - 0|d*********g.com_23
+  - 4|US_speednode_0096
+  - 4|US_speednode_0147
+  - '3|🇺🇸 _US_美国 #5'
+  - 4|US_speednode_0179
+  - 4|US_speednode_0137
+  - 4|US_speednode_0139
+  - 2|加拿大 123
+  - 1,3|🇺🇸 10,11|美国|@ripaojiedian
+  - 2|美国 008
+  - 4|US_speednode_0207
+  - '3|🇺🇸 美国 CloudFlare节点 #3'
+  - 4|US_speednode_0265
+  - 3|2|d*********g.com_0
+  - 2|法国 003
+  - 3|🇰🇷 韩国 KT电信
+  - 3|12|US_speednode_0084
+  - 4|US_speednode_0159
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #14'
+  - 2|加拿大 035
+  - 2|加拿大 161
+  - 4|US_speednode_0108
+  - 4|US_speednode_0166
+  - 0|d*********g.com_8
+  - 4|EE_speednode_0024
+  - 4|EE_speednode_0035
+  - 4|US_speednode_0270
+  - 4|US_speednode_0114
+  - 4|US_speednode_0120
+  - 4|US_speednode_0220
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #6'
+  - '3|亚洲(油管:破解资源君2.0) #2'
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #4'
+  - 3|0|-https://t.me/MrXbin-39
+  - 4|US_speednode_0165
+  - 4|US_speednode_0226
+  - 1,3|0|-https://t.me/MrXbin-23
+  - 4|US_speednode_0216
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #4'
+  - 2|爱沙尼亚 004
+  - 0|d*********g.com_60
+  - 4|US_speednode_0230
+  - 4|US_speednode_0093
+  - 2|加拿大 049
+  - 2|加拿大 004
+  - 3|0|-https://t.me/MrXbin-10
+  - 0|d*********g.com_77
+  - 4|US_speednode_0253
+  - 2|加拿大 162
+  - 3|0|-https://t.me/MrXbin-43
+  - 4|US_speednode_0262
+  - 3|🇯🇵 日本(油管:破解资源君2.0)
+  - 0|d*********g.com_83
+  - 0,2|加拿大 040
+  - 4|EE_speednode_0032
+  - 2|瑞典 002
+  - 4|DE_speednode_0009
+  - 4|US_speednode_0268
+  - 4|US_speednode_0169
+  - 3|🇨🇳 github.com/freefq - 广东省移动 7
+  - '3|亚洲(油管:破解资源君2.0) #8'
+  - 3|🇯🇵 日本 V2CROSS.COM
+  - 4|EE_speednode_0021
+  - 2|加拿大 017
+  - 2|加拿大 069
+  - 0|d*********g.com_14
+  - 2|加拿大 105
+  - 0|d*********g.com_69
+  - 2|加拿大 080
+  - 4|RU_speednode_0058
+  - 3|🇺🇸 github.com/freefq - 美国Fastl...
+  - '3|🇺🇸 _US_美国 #9'
+  - 4|AU_speednode_0005
+  - '3|4|d*********g.com_1 #2'
+  - 0|d*********g.com_63
+  - 2|爱沙尼亚 003
+  - 3|🇸🇬 10,11|新加坡|@ripaojiedian
+  - '3|🇨🇳 安徽省 移动数据上网公共出口 #1'
+  - 4|US_speednode_0106
+  - 2|加拿大 095
+  - 4|US_speednode_0181
+  - 4|US_speednode_0264
+  - 4|US_speednode_0140
+  - 2|加拿大 076
+  - 4|US_speednode_0212
+  - 4|US_speednode_0236
+  - 4|KR_speednode_0049
+  - 4|US_speednode_0074
+  - 4|US_speednode_0102
+  - 4|US_speednode_0197
+  - 4|US_speednode_0224
+  - '3|🇺🇸 _US_美国 #14'
+  - 0|d*********g.com_72
+  - '0,3|🇺🇸 美国 CloudFlare节点 #7'
+  - 4|SE_speednode_0062
+  - '5|d*********g.com_6 #1'
+  - 3|🇺🇸 美国 戴维逊大学
+  - 4|LU_speednode_0051
+  - 2|加拿大 081
+  - 2|加拿大 133
+  - 4|US_speednode_0194
+  - '3|4|d*********g.com_0 #2'
+  - 2|加拿大 126
+  - 3|🇨🇳 台湾(油管:破解资源君2.0)
+  - 0|d*********g.com_44
+  - 4|US_speednode_0211
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #4'
+  - '1|美国 CloudFlare节点 #3'
+  - 4|US_speednode_0119
+  - '3|4|d*********g.com_2 #2'
+  - 4|US_speednode_0258
+  - 2|法国 001
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #6'
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #2'
+  - 4|US_speednode_0075
+  - 0|d*********g.com_81
+  - 4|US_speednode_0247
+  - 3|🇮🇳 github.com/freefq - 印度  3
+  - 3|🇮🇳 github.com/freefq - 印度  10
+  - 4|US_speednode_0195
+  - 4|EE_speednode_0027
+  - 4|GB_speednode_0042
+  - 4|US_speednode_0245
+  - 0|d*********g.com_86
+  - 4|US_speednode_0190
+  - 0|d*********g.com_82
+  - 4|US_speednode_0198
+  - 0|d*********g.com_66
+  - 0|d*********g.com_61
+  - 2|加拿大 001
+  - 4|US_speednode_0248
+  - 2|加拿大 050
+  - 2|美国 013
+  - 4|US_speednode_0082
+  - 4|US_speednode_0144
+  - 2|加拿大 124
+  - 0|d*********g.com_95
+  - 0|d*********g.com_4
+  - 3|🇸🇬 新加坡(油管:破解资源君2.0)
+  - 4|US_speednode_0084
+  - 4|EE_speednode_0010
+  - '3|🇺🇸 _US_美国 #2'
+  - 2|美国 002
+  - 4|US_speednode_0213
+  - 2|加拿大 009
+  - 4|US_speednode_0204
+  - 2|美国 035
+  - 2|加拿大 037
+  - 4|EE_speednode_0016
+  - 0|d*********g.com_34
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #12'
+  - 4|US_speednode_0196
+  - 4|US_speednode_0170
+  - 0|d*********g.com_50
+  - 4|US_speednode_0097
+  - 4|US_speednode_0078
+  - 0|d*********g.com_36
+  - 2|加拿大 073
+  - 2|加拿大 011
+  - 3|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  - 4|US_speednode_0227
+  - 1|德国+黑森州法兰克福Amazon数据中心
+  - 0|d*********g.com_85
+  - '3|🇮🇪 爱尔兰 都柏林Amazon数据中心 #1'
+  - 3|🇺🇸 美国 V2CROSS.COM
+  - 4|US_speednode_0109
+  - 4|US_speednode_0210
+  - 4|US_speednode_0079
+  - 4|US_speednode_0118
+  - '3|亚洲(油管:破解资源君2.0) #3'
+  - '3|🇸🇬 新加坡(油管:破解资源君2.0) #1'
+  - 4|US_speednode_0174
+  - 2|加拿大 021
+  - 2|香港 004
+  - 0|d*********g.com_73
+  - 4|SE_speednode_0063
+  - 4|US_speednode_0095
+  - 4|US_speednode_0171
+  - 4|US_speednode_0237
+  - 4|US_speednode_0255
+  - 4|US_speednode_0199
+  - 4|EE_speednode_0013
+  - 2|加拿大 099
+  - 4|US_speednode_0193
+  - 4|GB_speednode_0037
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #1'
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #9'
+  - 4|EE_speednode_0012
+  - 2,4|EE_speednode_0033
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #8'
+  - '3|🇺🇸 _US_美国 #15'
+  - 4|US_speednode_0163
+  - '3|🇨🇳 台湾(油管:破解资源君2.0) #2'
+  - '3|3|d*********g.com_1 #1'
+  - 4|US_speednode_0250
+  - '3|🇸🇬 新加坡(油管:破解资源君2.0) #2'
+  - 4|US_speednode_0156
+  - '3|4|d*********g.com_3 #2'
+  - 0|d*********g.com_54
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  - 2|加拿大 034
+  - '3|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
+  - 4|US_speednode_0203
+  - 0|d*********g.com_32
+  - 4|US_speednode_0261
+  - 4|AU_speednode_0004
+  - 2|加拿大 084
+  - 3|🇭🇰 10,11|香港4|@ripaojiedian
+  - '3,5|d*********g.com_2 #1'
+  - '3|3|d*********g.com_0 #1'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #11'
+  - 0|d*********g.com_39
+  - 4|RU_speednode_0061
+  - 2|韩国 003
+  - '3|🇺🇸 _US_美国 #11'
+  - 2|澳大利亚 001
+  - 2,4|US_speednode_0071
+  - 4|GB_speednode_0044
+  - 2|加拿大 024
+  - 2|加拿大 005
+  - 0|d*********g.com_98
+  - 4|US_speednode_0126
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #7'
+  - 0|d*********g.com_15
+  - 0|d*********g.com_22
+  - '3|🇺🇸 美国 CloudFlare节点 #8'
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #1'
+  - 4|US_speednode_0175
+  - 2|韩国 001
+  - '1|美国 CloudFlare节点 #2'
+  - 4|SG_speednode_0065
+  - 0|d*********g.com_57
+  - 4|US_speednode_0143
+  - 4|US_speednode_0151
+  - 3|🇨🇳 广东省广州市 移动
+  - 3|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+  - 0|d*********g.com_58
+  - 0|d*********g.com_49
+  - 0,1,3|0|-https://t.me/MrXbin-36
+  - '3|🇺🇸 _US_美国 #13'
+  - 3|🇸🇪 瑞典 斯德哥尔摩Amazon数据中心
+  - 3|0|-https://t.me/MrXbin-13
+  - 2|加拿大 002
+  - '3|🇺🇸 _US_美国 #1'
+  - 3|2|d*********g.com_2
+  - 4|US_speednode_0269
+  - 2,4|US_speednode_0077
+  - 1|美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
+  - 4|US_speednode_0122
+  - 0|d*********g.com_31
+  - 2|加拿大 006
+  - 4|EE_speednode_0015
+  - 4|EE_speednode_0019
+  - 4|US_speednode_0240
+  - 4|US_speednode_0257
+  - 0|d*********g.com_35
+  - 4|US_speednode_0183
+  - 4|US_speednode_0191
+  - 4|US_speednode_0128
+  - 2|美国 025
+  - 4|US_speednode_0088
+  - 2,4|HK_speednode_0046
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #1'
+  - 2,3|0|-https://t.me/MrXbin-25
+  - 4|US_speednode_0115
+  - 2|加拿大 039
+  - 2|俄罗斯 002
+  - 4|US_speednode_0121
+  - 4|EE_speednode_0020
+  - 4|US_speednode_0135
+  - 3|🇭🇰 11|香港5|@ripaojiedian
+  - 4|GB_speednode_0043
+  - 4|US_speednode_0184
+  - 4|US_speednode_0103
+  - 0|d*********g.com_52
+  - 2|韩国 004
+  - 2|加拿大 090
+  - 3|🇮🇳 github.com/freefq - 印度  2
+  - 4|US_speednode_0105
+  - 4|US_speednode_0167
+  - 4|US_speednode_0188
+  - 2|加拿大 014
+  - 2|加拿大 058
+  - 2,4|US_speednode_0076
+  - 2|加拿大 116
+  - 2,4|US_speednode_0081
+  - 4|US_speednode_0153
+  - '3|亚洲(油管:破解资源君2.0) #6'
+  - 3|🇮🇪 爱尔兰 都柏林Amazon数据中心
+  - 4|US_speednode_0225
+  - 4|US_speednode_0228
+  - 2|加拿大 029
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #2'
+  - 4|US_speednode_0133
+  - '3|🇺🇸 _US_美国 #12'
+  - 2|加拿大 070
+  - 2|美国 037
+  - 4|US_speednode_0086
+  - '3|🇨🇳 台湾(油管:破解资源君2.0) #1'
+  - 2|加拿大 140
+  - 4|US_speednode_0145
+  - 4|US_speednode_0223
+  - 4|US_speednode_0110
+  - 4|US_speednode_0202
+  - 0|d*********g.com_41
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #5'
+  - 4|US_speednode_0178
+  - 2|加拿大 092
+  - 3|🇭🇰 11|香港6|@ripaojiedian
+  - 2|加拿大 078
+  - 4|LT_speednode_0050
+  - 2,4|EE_speednode_0011
+  - 0|d*********g.com_9
+  - 4|US_speednode_0099
+  - 4|US_speednode_0129
+  - 2|爱沙尼亚 001
+  - 4|US_speednode_0266
+  - 2|加拿大 036
+  - 4|US_speednode_0125
+  - '3|🇺🇸 美国 CloudFlare节点 #10'
+  - '3|🇺🇸 美国(油管:破解资源君2.0) #5'
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #13'
+  - 4|US_speednode_0148
+  - 4|US_speednode_0083
+  - 0|d*********g.com_80
+  - 4|RU_speednode_0054
+  - 2|美国 011
+  - 0,1,2,3|0|-https://t.me/MrXbin-29
+  - 0|d*********g.com_46
+  - '3|亚洲(油管:破解资源君2.0) #9'
+  - 2|加拿大 061
+  - 4|US_speednode_0101
+  - 4|US_speednode_0260
+  - 2|日本 001
   - 2|加拿大 119
+  - 4|US_speednode_0267
+  - 2|美国 018
+  - 4|US_speednode_0172
+  - 4|US_speednode_0205
+  - '3|亚洲(油管:破解资源君2.0) #1'
+  - '3|🇺🇸 美国 CloudFlare节点 #2'
+  - 3|2|d*********g.com_1
+  - 2,4|RU_speednode_0053
+  - 4|US_speednode_0091
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #2'
+  - 4|US_speednode_0157
+  - '0,3|🇺🇸 美国 CloudFlare节点 #5'
+  - 4|US_speednode_0231
+  - '3|🇺🇸 _US_美国 #7'
+  - 4|US_speednode_0085
+  - 4|US_speednode_0192
+  - 3|🇫🇮 11|芬兰|@ripaojiedian
+  - 4|EE_speednode_0017
+  - 4|US_speednode_0251
+  - 0|d*********g.com_91
+  - 4|US_speednode_0272
+  - 4|US_speednode_0098
+  - 3|2|d*********g.com_3
+  - 0|d*********g.com_45
+  - 3|0|-https://t.me/MrXbin-40
+  - 3|12|KR_speednode_0048
+  - 4|US_speednode_0107
+  - 2|加拿大 047
+  - 2|俄罗斯 003
+  - '3|亚洲(油管:破解资源君2.0) #4'
+  - 4|SG_speednode_0067
+  - 4|US_speednode_0094
+  - 4|GB_speednode_0045
+  - 2|加拿大 151
+  - 4|US_speednode_0116
+  - 4|US_speednode_0113
+  - 0|d*********g.com_62
+  - 3|🇮🇷 伊朗 V2CROSS.COM
+  - 2|加拿大 026
+  - 2|加拿大 117
+  - 0|d*********g.com_65
+  - 0|d*********g.com_68
+  - 4|US_speednode_0162
+  - 4|RU_speednode_0056
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #13'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #3'
+  - 2|美国 036
+  - 4|US_speednode_0130
+  - 0|d*********g.com_19
+  - 4|US_speednode_0177
+  - 3|🇸🇬 俄罗斯 新西伯利亚ADMAN网络
+  - 2|美国 005
+  - 3|🇺🇸 美国 惠普公司
+  - 4|EE_speednode_0025
+  - 2,4|AE_speednode_0002
+  - 3|🇺🇸 _US_美国->🇨🇳_CN_中国
+  - 2|加拿大 016
+  - 4|RU_speednode_0059
+  - 2|澳大利亚 002
+  - 4|US_speednode_0176
+  - 4|US_speednode_0187
+  - 4|SG_speednode_0064
+  - 4|US_speednode_0214
+  - 0|d*********g.com_28
   - 4|US_speednode_0160
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #7'
+  - 2|韩国 002
+  - 0|d*********g.com_74
+  - 2|加拿大 143
+  - 4|US_speednode_0218
+  - 3|0|-https://t.me/MrXbin-44
+  - 2|保加利亚 002
+  - 4|US_speednode_0111
+  - 4|US_speednode_0161
+  - 2|加拿大 012
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #1'
+  - 4|US_speednode_0244
+  - 4|GB_speednode_0039
+  - 4|US_speednode_0200
+  - 0|d*********g.com_12
+  - 4|EE_speednode_0030
+  - 4|US_speednode_0189
+  - 0|d*********g.com_38
   - 4|CH_speednode_0007
   - 0|d*********g.com_20
-  - '3|🇪🇺 欧洲(油管:破解资源君) #22'
-  - 2|拉脱维亚 001
-  - 3|0|-https://t.me/MrXbin-33
-  - 3|🇭🇰 11|香港|@ripaojiedian
-  - 4|US_speednode_0117
-  - 4|US_speednode_0264
-  - 4|US_speednode_0109
-  - 4|US_speednode_0145
-  - 4|US_speednode_0235
-  - '1|美国 CloudFlare节点 #4'
-  - 2|俄罗斯 002
-  - 3|0|-https://t.me/MrXbin-41
-  - 2|加拿大 005
-  - 0|d*********g.com_42
-  - 4|US_speednode_0177
-  - 4|EE_speednode_0027
-  - 0|d*********g.com_32
-  - 3|0|-https://t.me/MrXbin-10
-  - 4|US_speednode_0224
-  - 2|加拿大 026
-  - 2|加拿大 016
-  - 4|US_speednode_0170
-  - 0,1,3|0|-https://t.me/MrXbin-43
-  - 2|加拿大 138
-  - 2,4|US_speednode_0077
-  - 1,3|🇺🇸 10,11|美国5|@ripaojiedian
-  - 0|d*********g.com_83
-  - 0|d*********g.com_53
-  - 0|d*********g.com_34
-  - 2|加拿大 023
-  - 4|US_speednode_0080
-  - 3|亚洲(油管:破解资源君)
-  - 2|加拿大 097
-  - 2|加拿大 143
-  - 4|US_speednode_0120
-  - 4|US_speednode_0069
-  - 2|加拿大 124
-  - '3|未命名 #3'
-  - 0|d*********g.com_28
-  - 4|US_speednode_0188
-  - 0|d*********g.com_49
-  - 2|加拿大 085
-  - 4|US_speednode_0256
-  - 4|US_speednode_0217
-  - 0|d*********g.com_71
-  - 4|US_speednode_0191
-  - 4|US_speednode_0125
-  - 4|AE_speednode_0003
-  - 2|澳大利亚 002
-  - 3|0|-https://t.me/MrXbin-14
-  - 2|加拿大 071
-  - '1|美国 CloudFlare节点 #6'
-  - 4|US_speednode_0212
-  - 2|加拿大 007
-  - '1|美国 CloudFlare节点 #10'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #9'
-  - 4|AU_speednode_0006
-  - '3|3|d*********g.com_0 #1'
-  - 4|US_speednode_0074
-  - 4|US_speednode_0267
-  - 4|US_speednode_0238
-  - '3|🇪🇺 欧洲(油管:破解资源君) #3'
-  - 1,3|0|-https://t.me/MrXbin-9
-  - 4|US_speednode_0072
-  - 2|香港 005
-  - 2|加拿大 015
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #3'
-  - 0|d*********g.com_74
-  - 4|EE_speednode_0016
-  - 4|US_speednode_0126
-  - 2|爱沙尼亚 004
-  - 4|US_speednode_0178
-  - '3|🇪🇺 欧洲(油管:破解资源君) #12'
-  - 0|d*********g.com_92
-  - 4|US_speednode_0200
-  - 4|US_speednode_0268
-  - 2|加拿大 116
-  - 4|US_speednode_0234
-  - 2|加拿大 142
-  - 4|US_speednode_0180
-  - 3|🇺🇸 10,11|美国|@ripaojiedian
-  - 4|US_speednode_0105
-  - 3|2|d*********g.com_3
-  - 2|美国 002
-  - 0|d*********g.com_68
-  - 4|US_speednode_0087
-  - 4|US_speednode_0242
-  - 2|美国 011
-  - 0,3|0|-https://t.me/MrXbin-39
-  - 4|US_speednode_0209
-  - 2|加拿大 052
-  - '3|🇪🇺 欧洲(油管:破解资源君) #5'
-  - 4|US_speednode_0100
-  - '3|亚洲(油管:破解资源君) #5'
-  - 0,2|加拿大 040
-  - 4|US_speednode_0142
-  - 0|d*********g.com_46
-  - '3|亚洲(油管:破解资源君) #3'
-  - 4|US_speednode_0075
-  - 0|d*********g.com_63
-  - 3|🇨🇳 台湾(油管:破解资源君)
-  - 4|US_speednode_0249
-  - '3|🇺🇸 _US_美国 #7'
-  - 4|US_speednode_0111
-  - 4|US_speednode_0223
-  - 4|RU_speednode_0061
-  - 0|d*********g.com_37
-  - 4|US_speednode_0182
-  - 2|香港 004
-  - 4|US_speednode_0192
-  - 4|US_speednode_0239
-  - 3|🇺🇸 _US_美国
-  - '3|🇪🇺 欧洲(油管:破解资源君) #13'
-  - 0|d*********g.com_10
-  - 4|US_speednode_0199
-  - 2|加拿大 008
-  - 3|未命名
-  - 4|US_speednode_0094
-  - 4|SE_speednode_0063
-  - 2|加拿大 151
-  - 0|d*********g.com_7
-  - 2|日本 002
-  - '3|🇪🇺 欧洲(油管:破解资源君) #11'
-  - 3|🇺🇸 _US_美国->🇨🇳_CN_中国
-  - 4|US_speednode_0174
-  - 4|US_speednode_0226
-  - 4|US_speednode_0263
-  - 0|d*********g.com_80
-  - '3|🇺🇸 _US_美国 #3'
-  - 4|US_speednode_0195
-  - 2|加拿大 076
-  - 4|US_speednode_0167
-  - 4|US_speednode_0158
-  - 2|加拿大 133
-  - '3|🇯🇵 日本(油管:破解资源君) #3'
-  - 2|加拿大 126
-  - 0|d*********g.com_73
-  - 2|美国 020
-  - 2|俄罗斯 001
-  - '3|🇯🇵 日本(油管:破解资源君) #1'
-  - 4|US_speednode_0122
-  - 0|d*********g.com_5
-  - '3|🇺🇸 _US_美国 #14'
-  - '0,1|美国 CloudFlare节点 #17'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #7'
-  - 4|GB_speednode_0037
-  - 0|d*********g.com_61
-  - 0|d*********g.com_87
-  - 4|US_speednode_0104
-  - 4|US_speednode_0176
-  - 4|US_speednode_0189
-  - 2|保加利亚 002
-  - 4|US_speednode_0154
-  - 4|US_speednode_0201
-  - 4|US_speednode_0096
-  - '3|🇪🇺 欧洲(油管:破解资源君) #1'
-  - 2|加拿大 121
-  - 4|EE_speednode_0015
-  - 4|US_speednode_0083
-  - 2|加拿大 107
-  - 4|US_speednode_0123
-  - '3|🇺🇸 _US_美国 #2'
-  - 4|US_speednode_0131
-  - 4|US_speednode_0205
-  - 2|新加坡 001
-  - '3|🇺🇸 美国(油管:破解资源君) #2'
-  - 4|US_speednode_0171
-  - 2|加拿大 010
-  - 1|美国 华盛顿Cogent通信公司
-  - 2|澳大利亚 003
-  - '3|🇺🇸 _US_美国 #5'
-  - 0|d*********g.com_89
-  - 4|US_speednode_0240
-  - 4|US_speednode_0261
-  - 0|d*********g.com_29
-  - '3|🇪🇺 欧洲(油管:破解资源君) #8'
-  - 4|EE_speednode_0012
-  - 2|加拿大 161
-  - 4|US_speednode_0236
-  - 0|d*********g.com_59
-  - 4|US_speednode_0102
-  - 1|美国+Amazon+EC2服务器
-  - 0|d*********g.com_77
-  - 0|d*********g.com_55
-  - 1,3|0|-https://t.me/MrXbin-31
-  - 4|US_speednode_0088
-  - 4|US_speednode_0147
-  - 4|US_speednode_0190
-  - 2|加拿大 001
-  - 3|12|KR_speednode_0048
-  - 4|US_speednode_0099
-  - 4|HK_speednode_0047
-  - 0|d*********g.com_90
-  - 4|US_speednode_0214
-  - 1|美国+惠普HP
-  - 1|澳大利亚+V2CROSS.COM
-  - 2|俄罗斯 003
-  - 0|d*********g.com_35
-  - 2|加拿大 014
-  - 4|EE_speednode_0026
-  - 4|US_speednode_0202
-  - 0|d*********g.com_30
-  - 4|US_speednode_0115
-  - 4|LT_speednode_0050
-  - 2|美国 003
-  - 4|GB_speednode_0041
-  - '1|印度 V2CROSS.COM #1'
-  - '3|🇺🇸 _US_美国->🇨🇳_CN_中国 #1'
-  - 4|US_speednode_0173
-  - 4|US_speednode_0213
-  - 2|美国 018
-  - 4|US_speednode_0110
-  - 4|US_speednode_0091
-  - 2|加拿大 024
-  - 0|d*********g.com_31
-  - 2,4|AE_speednode_0002
-  - 4|US_speednode_0181
-  - 4|GB_speednode_0043
-  - 0|d*********g.com_14
-  - 0|d*********g.com_64
-  - 4|US_speednode_0241
-  - 4|US_speednode_0208
-  - 2|美国 037
-  - 0|d*********g.com_62
-  - 4|US_speednode_0232
-  - 4|US_speednode_0082
-  - '3|4|d*********g.com_3 #2'
-  - 2|加拿大 012
-  - 4|US_speednode_0245
-  - 3|0|-https://t.me/MrXbin-18
-  - 0|d*********g.com_17
-  - 2|加拿大 006
-  - '3|3|d*********g.com_3 #1'
-  - 2|加拿大 140
-  - 3|🇸🇬 新加坡(油管:破解资源君)
-  - 0|d*********g.com_100
-  - '5|d*********g.com_6 #1'
-  - 2,4|RU_speednode_0060
-  - 4|US_speednode_0198
-  - 4|AE_speednode_0001
-  - 4|EE_speednode_0035
-  - 2|加拿大 162
-  - 4|GB_speednode_0038
-  - 4|GB_speednode_0039
-  - '3|🇨🇳 台湾(油管:破解资源君) #1'
-  - 4|EE_speednode_0034
-  - 4|EE_speednode_0024
-  - 4|US_speednode_0093
-  - '3|🇺🇸 _US_美国 #11'
-  - 0|d*********g.com_4
-  - 4|US_speednode_0084
-  - 4|EE_speednode_0021
-  - 0|d*********g.com_19
-  - 4|GB_speednode_0045
-  - 4|US_speednode_0135
-  - 1|日本+V2CROSS.COM
-  - '3|🇪🇺 欧洲(油管:破解资源君) #21'
-  - 4|GB_speednode_0036
-  - 0|d*********g.com_2
-  - 4|US_speednode_0206
-  - 2|加拿大 029
-  - 4|US_speednode_0078
-  - 0|d*********g.com_41
-  - 1|美国 加利福尼亚州洛杉矶Sharktech数据中心
-  - 1|美国 V2CROSS.COM
-  - 2|荷兰 001
-  - 4|US_speednode_0250
-  - 2|加拿大 081
-  - '1|美国 CloudFlare节点 #12'
-  - 2|加拿大 063
-  - 3|🇯🇵 日本(油管:破解资源君)
-  - 2,4|US_speednode_0081
-  - 2|加拿大 002
-  - 3|🇺🇸 github.com/freefq - 美国Fastl...
-  - 0|d*********g.com_72
-  - 4|US_speednode_0271
-  - 0|d*********g.com_58
-  - 0|d*********g.com_88
-  - 2|加拿大 089
-  - 0|d*********g.com_67
-  - 4|US_speednode_0169
-  - '1|美国 CloudFlare节点 #1'
-  - 4|US_speednode_0157
-  - 0|d*********g.com_15
-  - 4|US_speednode_0070
-  - 1|澳大利亚 V2CROSS.COM
-  - 0|d*********g.com_33
-  - '3|🇯🇵 日本(油管:破解资源君) #4'
-  - '1|美国 CloudFlare节点 #5'
-  - 2|美国 025
-  - 4|US_speednode_0124
-  - 2|加拿大 047
-  - '3|🇪🇺 欧洲(油管:破解资源君) #26'
-  - 4|US_speednode_0219
-  - 2|加拿大 094
-  - 0|d*********g.com_66
-  - '3|🇸🇬 新加坡(油管:破解资源君) #2'
-  - 4|US_speednode_0187
-  - 4|US_speednode_0269
-  - 4|US_speednode_0153
-  - 4|US_speednode_0165
-  - 1,3|🇫🇮 11|芬兰|@ripaojiedian
-  - 3|🇮🇳 github.com/freefq - 印度  2
-  - 1|美国+Xerox
-  - 4|US_speednode_0196
-  - 4|US_speednode_0090
-  - 2|加拿大 154
-  - '1|美国 华盛顿Cogent通信公司 #3'
-  - 2|加拿大 129
-  - 4|GB_speednode_0042
-  - 4|US_speednode_0218
-  - 4|US_speednode_0085
-  - 4|US_speednode_0138
-  - '3|🇪🇺 欧洲(油管:破解资源君) #31'
-  - 4|US_speednode_0248
-  - 0|d*********g.com_12
-  - 4|US_speednode_0073
-  - 0|d*********g.com_23
-  - 0|d*********g.com_60
-  - 2|加拿大 106
-  - 2,4|EE_speednode_0011
-  - 2|爱沙尼亚 003
-  - 2|加拿大 095
-  - 4|EE_speednode_0010
-  - 2|美国 001
-  - 2|韩国 004
-  - '1|美国 CloudFlare节点 #19'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #15'
-  - 0|d*********g.com_81
-  - 0,2|加拿大 003
-  - 1|韩国+KT电信
-  - 2|加拿大 061
-  - 3|🇺🇸 _US_美国->🇨🇦_CA_加拿大
-  - 0|d*********g.com_21
-  - 2|美国 016
-  - 2|美国 035
-  - '3|🇯🇵 日本(油管:破解资源君) #6'
-  - 4|EE_speednode_0032
-  - 4|US_speednode_0231
-  - 4|EE_speednode_0018
-  - 4|US_speednode_0161
-  - 4|US_speednode_0107
-  - 1|伊朗 V2CROSS.COM
-  - '1|美国 华盛顿Cogent通信公司 #1'
-  - 2|加拿大 011
-  - 4|EE_speednode_0013
-  - 4|US_speednode_0118
-  - '3|🇺🇸 _US_美国 #13'
-  - 4|US_speednode_0186
-  - 1|美国 CloudFlare公司CDN节点(iPower)
-  - 0|d*********g.com_65
-  - 4|US_speednode_0260
-  - 1|乌克兰+V2CROSS.COM
-  - 2|爱沙尼亚 002
-  - 2|加拿大 060
-  - 4|EE_speednode_0030
-  - 4|US_speednode_0140
-  - 0|d*********g.com_79
-  - 2|加拿大 042
-  - 3|🇮🇳 github.com/freefq - 印度  10
-  - 2|法国 003
-  - 3|2|d*********g.com_2
-  - 2|加拿大 039
-  - 2|澳大利亚 001
-  - 1|日本+东京Amazon数据中心
-  - 4|US_speednode_0211
-  - '3|🇺🇸 _US_美国 #12'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #32'
+  - '3|亚洲(油管:破解资源君2.0) #7'
   - 0|d*********g.com_6
-  - 4|US_speednode_0246
-  - 4|EE_speednode_0031
-  - 0|d*********g.com_39
-  - 4|US_speednode_0068
-  - 1|爱尔兰+都柏林Amazon数据中心
-  - 2|加拿大 032
-  - 2|加拿大 127
-  - 4|EE_speednode_0025
-  - 0,2|加拿大 019
-  - 4|EE_speednode_0020
-  - 4|RU_speednode_0057
-  - 4|US_speednode_0229
-  - '3|亚洲(油管:破解资源君) #2'
-  - 2|加拿大 021
-  - 2|加拿大 120
-  - 4|US_speednode_0272
-  - 2|美国 008
-  - '3|🇺🇸 美国(油管:破解资源君) #17'
-  - 4|US_speednode_0193
-  - '3|🇺🇸 美国(油管:破解资源君) #6'
-  - 4|US_speednode_0136
-  - 0|d*********g.com_52
-  - '3|🇸🇬 新加坡(油管:破解资源君) #3'
-  - 0|d*********g.com_22
-  - 1|加拿大+TELUS
-  - 4|US_speednode_0127
-  - 2|加拿大 105
-  - 0|d*********g.com_85
-  - 3|12|US_speednode_0084
-  - 2|加拿大 034
-  - 0|d*********g.com_82
-  - 4|US_speednode_0255
-  - 2|加拿大 064
-  - 4|US_speednode_0184
-  - 1|瑞典 V2CROSS.COM
-  - 4|US_speednode_0155
-  - 0|d*********g.com_45
-  - 3|2|d*********g.com_1
-  - 2|加拿大 069
-  - 2|加拿大 117
-  - 0|d*********g.com_8
-  - '3|未命名 #1'
-  - 2|加拿大 070
-  - '3|🇺🇸 美国(油管:破解资源君) #1'
-  - 4|US_speednode_0129
-  - 4|US_speednode_0095
-  - 4|US_speednode_0179
-  - 4|US_speednode_0221
-  - 2|加拿大 092
-  - 4|US_speednode_0251
-  - 4|US_speednode_0270
-  - '1|美国 华盛顿Cogent通信公司 #4'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #17'
-  - 0|d*********g.com_51
-  - 0|d*********g.com_18
-  - 3|🇨🇳 10,11|台湾4|@ripaojiedian
-  - 0|d*********g.com_44
-  - 2|加拿大 125
-  - 0|d*********g.com_1
-  - 4|US_speednode_0258
-  - '1|美国 CloudFlare节点 #3'
-  - 4|US_speednode_0203
-  - 0|d*********g.com_0
-  - 4|US_speednode_0159
-  - 4|US_speednode_0194
-  - '3|🇪🇺 欧洲(油管:破解资源君) #10'
-  - 4|US_speednode_0106
-  - 0|d*********g.com_75
-  - 4|US_speednode_0092
-  - 0|d*********g.com_40
-  - 0|d*********g.com_9
-  - 1,2|加拿大 017
-  - 2|加拿大 004
-  - 1|美国 CloudFlare节点
-  - 2|加拿大 086
-  - '3|亚洲(油管:破解资源君) #1'
-  - 4|US_speednode_0143
+  - 4|US_speednode_0087
+  - 4|EE_speednode_0034
+  - 4|RU_speednode_0055
+  - 4|US_speednode_0117
   - 4|US_speednode_0164
-  - 4|US_speednode_0225
-  - 2|新加坡 002
-  - 4|US_speednode_0252
-  - 4|DE_speednode_0009
-  - '1|伊朗 V2CROSS.COM #1'
-  - 2|加拿大 050
-  - 4|RU_speednode_0056
-  - 3|🇺🇸 美国(油管:破解资源君)
-  - 2|瑞典 002
-  - 2|加拿大 103
-  - 3|🇺🇸 _US_美国->🇳🇱_NL_荷兰
-  - 2|韩国 003
-  - '3|🇺🇸 _US_美国 #8'
-  - 4|US_speednode_0121
-  - 2|美国 024
-  - 3|0|-https://t.me/MrXbin-19
-  - 4|US_speednode_0144
-  - 4|US_speednode_0254
-  - 3|🇨🇳 10,11|台湾|@ripaojiedian
-  - 2|加拿大 096
-  - 2|法国 001
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #1'
-  - '3|未命名 #2'
-  - 4|US_speednode_0116
-  - 0|d*********g.com_78
-  - 3|🇺🇸 github.com/freefq - 美国Cloud...
-  - 4|US_speednode_0204
-  - 4|US_speednode_0262
-  - 2|日本 001
-  - 3|🇸🇬 10,11|新加坡2|@ripaojiedian
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
-  - '3|🇺🇸 _US_美国 #9'
-  - 4|US_speednode_0108
-  - 2,4|EE_speednode_0033
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
-  - 4|US_speednode_0222
-  - 4|US_speednode_0101
-  - 4|SG_speednode_0067
-  - 4|AU_speednode_0004
-  - 1|美国 Cloudinnovation数据中心
-  - 0|d*********g.com_86
-  - 2|加拿大 099
-  - 4|EE_speednode_0022
-  - '3|4|d*********g.com_0 #2'
-  - '1|美国 CloudFlare节点 #20'
-  - 0|d*********g.com_38
-  - '3|🇪🇺 欧洲(油管:破解资源君) #30'
-  - 4|US_speednode_0265
-  - 4|KR_speednode_0049
-  - 2|加拿大 079
-  - '3|3|d*********g.com_2 #1'
-  - 4|LU_speednode_0052
-  - 0,1,3|0|-https://t.me/MrXbin-29
-  - 2|美国 013
-  - 3|🇺🇸 10,11|美国2|@ripaojiedian
-  - 4|US_speednode_0156
-  - 4|US_speednode_0185
-  - 3|🇭🇰 香港(油管:破解资源君)
-  - '3|🇪🇺 欧洲(油管:破解资源君) #4'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #19'
-  - 0|d*********g.com_84
-  - 4|US_speednode_0266
-  - 3|🇨🇳 10,11|台湾3|@ripaojiedian
-  - 4|US_speednode_0163
+  - 0|d*********g.com_51
+  - 2|加拿大 106
+  - 4|AE_speednode_0001
+  - 2|加拿大 142
+  - 2,4|RU_speednode_0060
+  - 4|US_speednode_0246
+  - 3|🇺🇸 10,11|美国5|@ripaojiedian
+  - 4|US_speednode_0072
+  - 0|d*********g.com_21
+  - 4|US_speednode_0217
   - 0|d*********g.com_27
-  - '3,5|d*********g.com_3 #1'
-  - 2|爱沙尼亚 001
-  - 2|加拿大 036
-  - 0|d*********g.com_76
-  - 4|GB_speednode_0040
-  - 4|US_speednode_0113
-  - '3|🇺🇸 美国(油管:破解资源君) #7'
-  - 4|US_speednode_0097
-  - 0|d*********g.com_47
-  - '3|🇯🇵 日本(油管:破解资源君) #8'
-  - 4|RU_speednode_0054
-  - 4|US_speednode_0175
-  - 4|US_speednode_0133
-  - 4|US_speednode_0233
-  - 4|US_speednode_0244
-  - 3|🇸🇬 _US_美国->🇸🇬_SG_新加坡
-  - '3|3|d*********g.com_1 #1'
-  - 4|EE_speednode_0023
-  - '3|🇺🇸 _US_美国 #15'
-  - 2|加拿大 090
-  - 3|🇭🇰 10,11|香港4|@ripaojiedian
-  - 4|US_speednode_0247
-  - 4|EE_speednode_0029
-  - 2|加拿大 147
-  - '3|🇯🇵 日本(油管:破解资源君) #2'
-  - '3|🇺🇸 _US_美国 #1'
-  - '3|🇪🇺 欧洲(油管:破解资源君) #35'
-  - 2|美国 021
-  - 4|RU_speednode_0058
-  - 4|SE_speednode_0062
-  - 2,4|HK_speednode_0046
-  - '3|🇪🇺 欧洲(油管:破解资源君) #18'
-  - 4|EE_speednode_0014
-  - 2|加拿大 115
-  - 4|US_speednode_0119
-  - 2|美国 036
-  - 0|d*********g.com_54
-  - 1|印度 V2CROSS.COM
-  - 0|d*********g.com_16
-  - 4|US_speednode_0207
-  - '3|🇪🇺 欧洲(油管:破解资源君) #27'
-  - 4|US_speednode_0197
-  - 0|d*********g.com_99
-  - 4|US_speednode_0216
-  - 2|加拿大 084
-  - 4|US_speednode_0130
-  - 4|US_speednode_0215
-  - '1|美国 华盛顿Cogent通信公司 #2'
-  - 4|US_speednode_0183
-  - 2|加拿大 104
-  - 2,4|US_speednode_0076
-  - 4|US_speednode_0141
-  - 2,4|US_speednode_0071
-  - '3|🇪🇺 欧洲(油管:破解资源君) #2'
-  - 3|0|-https://t.me/MrXbin-22
-  - 0|d*********g.com_98
-  - '0,1|美国 CloudFlare节点 #9'
-  - 2|韩国 001
-  - '1|广东省广州市 移动 #1'
-  - 0|d*********g.com_69
-  - '3|🇪🇺 欧洲(油管:破解资源君) #14'
-  - '3|🇺🇸 美国(油管:破解资源君) #3'
-  - 4|EE_speednode_0017
-  - '3|🇪🇺 欧洲(油管:破解资源君) #16'
-  - 3|🇯🇵 10,11|日本|@ripaojiedian
-  - 4|KR_speednode_0048
-  - 3|🇨🇳 github.com/freefq - 广东省移动 7
-  - '3|🇺🇸 美国(油管:破解资源君) #8'
-  - '3|亚洲(油管:破解资源君) #4'
-  - 3|🇮🇳 github.com/freefq - 印度  3
-  - 0|d*********g.com_57
-  - 2|香港 002
-  - 4|SG_speednode_0065
-  - 4|US_speednode_0137
-  - 4|US_speednode_0257
-  - 0|d*********g.com_3
-  - 4|US_speednode_0227
-  - 4|US_speednode_0139
-  - 4|EE_speednode_0028
-  - '3|🇸🇬 新加坡(油管:破解资源君) #1'
-  - 1|爱尔兰+V2CROSS.COM
-  - '3|🇺🇸 github.com/freefq - 美国Cloud... #2'
-  - 2|加拿大 073
-  - 2|加拿大 058
-  - 0|d*********g.com_11
-  - 2|加拿大 080
-  - 4|AU_speednode_0005
-  - '3|🇪🇺 欧洲(油管:破解资源君) #34'
-  - 4|US_speednode_0149
-  - 4|RU_speednode_0059
-  - 4|US_speednode_0210
-  - 4|US_speednode_0220
-  - 3|2|d*********g.com_0
-  - 4|US_speednode_0172
   - 2|加拿大 112
-  - '3|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
+  - '3|🇺🇸 _US_美国 #3'
+  - 4|US_speednode_0131
+  - 4|US_speednode_0208
+  - 0|d*********g.com_40
+  - 2|加拿大 094
+  - 4|US_speednode_0215
+  - 4|US_speednode_0238
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #8'
+  - 4|US_speednode_0206
+  - 4|US_speednode_0234
+  - 0|d*********g.com_47
+  - 3|🇨🇳 安徽省 移动数据上网公共出口
+  - 4|US_speednode_0069
+  - 4|US_speednode_0070
+  - 3|🇯🇵 10,11|日本|@ripaojiedian
+  - 4|US_speednode_0134
+  - 4|US_speednode_0127
+  - 0|d*********g.com_94
+  - 4|US_speednode_0092
+  - 3|🇭🇰 香港 V2CROSS.COM
+  - 4|US_speednode_0155
+  - 0|d*********g.com_84
+  - '3|3|d*********g.com_2 #1'
+  - 1|印度 V2CROSS.COM
+  - 2|加拿大 015
+  - 4|US_speednode_0233
+  - 0|d*********g.com_3
+  - 4|US_speednode_0068
+  - 4|US_speednode_0168
+  - 2|加拿大 125
+  - 4|US_speednode_0158
+  - 0|d*********g.com_100
+  - '3,5|d*********g.com_3 #1'
+  - 4|US_speednode_0100
+  - 0|d*********g.com_92
+  - 4|EE_speednode_0028
+  - 3|🇸🇬 _US_美国->🇸🇬_SG_新加坡
+  - 0|d*********g.com_1
+  - 2|加拿大 147
+  - 0|d*********g.com_76
+  - 3|🇺🇸 github.com/freefq - 美国Cloud...
+  - 2|加拿大 042
+  - 0|d*********g.com_71
+  - 4|US_speednode_0229
+  - '3|🇪🇺 欧洲(油管:破解资源君2.0) #3'
+  - 0|d*********g.com_89
+  - 0|d*********g.com_37
+  - 2|加拿大 129
+  - 0|d*********g.com_42
+  - '3|🇺🇸 github.com/freefq - 美国Cloud... #2'
+  - 2|加拿大 115
+  - 2|加拿大 008
+  - 2|加拿大 054
+  - 4|US_speednode_0241
+  - 4|US_speednode_0221
+  - 0|d*********g.com_43
+  - 2|加拿大 118
+  - 4|GB_speednode_0040
+  - 0|d*********g.com_17
+  - 4|US_speednode_0201
+  - 0|d*********g.com_88
+  - 4|US_speednode_0124
+  - 4|US_speednode_0149
+  - 2|加拿大 132
+  - 4|GB_speednode_0038
+  - 4|US_speednode_0182
+  - 3|🇪🇺 欧洲(油管:破解资源君2.0)
+  - 2|加拿大 085
+  - 4|HK_speednode_0047
+  - 1,3|🇭🇰 11|香港|@ripaojiedian
+  - 0|d*********g.com_79
+  - 2|美国 024
+  - 2|加拿大 107
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #10'
+  - 4|AU_speednode_0006
+  - 4|US_speednode_0249
+  - 0|d*********g.com_67
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #9'
+  - 2|加拿大 097
+  - 3|亚洲(油管:破解资源君2.0)
+  - 4|US_speednode_0080
+  - 4|US_speednode_0136
+  - 4|EE_speednode_0018
+  - 2|美国 020
+  - '3|未命名 #1'
+  - 4|US_speednode_0104
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #5'
+  - 0|d*********g.com_29
+  - 2|拉脱维亚 001
+  - '3|3|d*********g.com_3 #1'
+  - 4|AE_speednode_0003
+  - 4|US_speednode_0232
+  - 4|EE_speednode_0029
+  - 2|加拿大 060
+  - 4|GB_speednode_0036
   tfo: true
   timeout: 1500
   tolerance: 35
@@ -9490,11 +8807,24 @@ proxy-groups:
   - 2|香港 005
   - 2,4|HK_speednode_0046
   - 2|香港 004
-  - 2|香港 002
-  - 3|🇭🇰 香港(油管:破解资源君)
-  - '3|🇭🇰 香港(油管:破解资源君) #1'
-  - 3|🇭🇰 11|香港|@ripaojiedian
+  - 3|🇭🇰 香港(油管:破解资源君2.0)
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #1'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #2'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #3'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #4'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #5'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #6'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #7'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #8'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #9'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #10'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #11'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #12'
+  - '3|🇭🇰 香港(油管:破解资源君2.0) #13'
+  - 3|🇭🇰 香港 V2CROSS.COM
   - 3|🇭🇰 10,11|香港4|@ripaojiedian
+  - 3|🇭🇰 11|香港5|@ripaojiedian
+  - 3|🇭🇰 11|香港6|@ripaojiedian
   - 4|HK_speednode_0047
   type: select
 rules:

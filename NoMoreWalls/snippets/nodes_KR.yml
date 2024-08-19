@@ -1,15 +1,4 @@
 proxies:
-- name: 1|韩国+KT电信
-  network: ws
-  password: CMLiu
-  port: 10443
-  server: 222.97.95.239
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: '%2F'
 - name: 2|韩国 002
   network: ws
   password: CMLiu
@@ -43,6 +32,13 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
+- name: 3|🇰🇷 韩国 KT电信
+  password: CMLiu
+  port: 25006
+  server: 121.148.19.178
+  skip-cert-verify: false
+  sni: aliorg.filegear-sg.me
+  type: trojan
 - name: 3|12|KR_speednode_0048
   password: CMLiu
   port: 443

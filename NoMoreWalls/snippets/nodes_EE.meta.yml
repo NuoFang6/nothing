@@ -1,17 +1,4 @@
 proxies:
-- delay: 1748
-  name: 2|爱沙尼亚 002
-  network: ws
-  port: 8443
-  server: 45.80.110.245
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitter苏小柠
 - delay: 1768
   name: 2|爱沙尼亚 003
   network: ws

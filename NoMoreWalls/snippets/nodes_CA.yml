@@ -195,20 +195,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  delay: 2709
-  name: 2|加拿大 154
-  network: ws
-  port: 2052
-  server: 104.19.58.175
-  tls: false
-  type: vmess
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  ws-opts:
-    headers:
-      Host: cdn1.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   delay: 1382
   name: 2|加拿大 029
   network: ws
@@ -236,21 +222,6 @@ proxies:
   ws-opts:
     headers:
       Host: worker-mute-bar-1719.nifotok993.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  delay: 1612
-  name: 2|加拿大 023
-  network: ws
-  port: 2086
-  server: 104.16.67.38
-  servername: worker-damp-duadwans.jevesoj131.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: worker-damp-duadwans.jevesoj131.workers.dev
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
@@ -549,21 +520,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 079
-  network: ws
-  port: 2082
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 080
   network: ws
   port: 2086
@@ -577,20 +533,6 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 2|加拿大 064
-  network: ws
-  port: 2082
-  server: www.zula.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3ebb57a2-ee3f-4487-b082-53ea061f03a2
-  ws-opts:
-    headers:
-      Host: express.waltonweb.ir.
-    path: /
 - alterId: 0
   cipher: auto
   name: 2|加拿大 049
@@ -680,20 +622,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|加拿大 007
-  network: ws
-  port: 2086
-  server: japan.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 2|加拿大 016
   network: ws
   port: 2086
@@ -706,6 +634,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip2.1457230.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|加拿大 017
+  network: ws
+  port: 2095
+  server: 104.19.45.5
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto

@@ -1,70 +1,35 @@
 proxies:
-- name: 1|日本+东京Amazon数据中心
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+- name: 3|🇯🇵 日本(油管:破解资源君2.0)
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
   port: 443
-  server: xjjp.zf.edu.ge
-  sni: xjjp.zf.edu.ge
+  server: 172.105.236.208
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
   type: trojan
-- name: 1|日本+V2CROSS.COM
+- name: 3|🇯🇵 日本 V2CROSS.COM
   password: 1dfba761-c1e0-422e-98b6-062da56afb53
   port: 443
   server: 146.56.191.191
+  skip-cert-verify: true
   sni: jkrf1.969799.xyz
+  type: trojan
+- name: 3|🇯🇵 10,11|日本|@ripaojiedian
+  password: a3467343-8c87-40a6-a87f-a466b340475c
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 3|🇯🇵 日本(油管:破解资源君)
-  network: ws
-  port: '20944'
-  server: 123456789abcd.xn--h6q53lcvpz7l.club
-  tls: false
-  type: vmess
-  uuid: e278c68f-4716-4798-a9c6-1f91d74499d8
-  ws-opts:
-    headers:
-      Host: v.qq.com
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #1'
-  network: ws
-  port: '20942'
-  server: 123456789abcd.xn--h6q53lcvpz7l.club
-  tls: false
-  type: vmess
-  uuid: e278c68f-4716-4798-a9c6-1f91d74499d8
-  ws-opts:
-    headers:
-      Host: v.qq.com
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #3'
-  network: tcp
-  port: '443'
-  server: 132.145.113.238
-  tls: false
-  type: vmess
-  uuid: 84b1b846-748c-45ca-839e-4e21f9acc6c5
-- alterId: 0
-  cipher: auto
-  name: '3|🇯🇵 日本(油管:破解资源君) #4'
-  network: tcp
-  port: '13101'
-  server: 120.197.130.126
-  tls: false
-  type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
-- alterId: 0
-  cipher: auto
-  name: 3|🇯🇵 10,11|日本|@ripaojiedian
+  name: 3|🇯🇵 10,11|日本3|@ripaojiedian
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
   ws-opts:
     headers:
-      Host: oA5FSz9Tjp1.yofnhkfc.xyz
-    path: /video/P7EExoE2
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r

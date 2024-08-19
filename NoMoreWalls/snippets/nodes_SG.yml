@@ -1,31 +1,7 @@
 proxies:
-- name: 2|新加坡 001
-  network: ws
-  password: CMLiu
-  port: 8443
-  server: 47.236.180.24
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /
 - alterId: 0
   cipher: auto
-  name: 3|🇸🇬 新加坡(油管:破解资源君)
-  network: ws
-  port: '443'
-  server: vsg1.0bad.com
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vsg1.0bad.com
-    path: /chat
-- alterId: 0
-  cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #1'
+  name: 3|🇸🇬 新加坡(油管:破解资源君2.0)
   network: ws
   port: '23205'
   server: 8.219.146.138
@@ -36,9 +12,16 @@ proxies:
     headers:
       Host: 8.219.146.138
     path: /wss
+- name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #1'
+  password: cc4d8b7f-1c8f-4f1b-b292-ce5ad9238240
+  port: 44605
+  server: gdcm.r.swingones1.xyz
+  skip-cert-verify: true
+  sni: cdn.qchwnd.moe
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #2'
+  name: '3|🇸🇬 新加坡(油管:破解资源君2.0) #2'
   network: ws
   port: '23205'
   server: 8.219.146.138
@@ -51,33 +34,17 @@ proxies:
     path: /wss
 - alterId: 0
   cipher: auto
-  name: '3|🇸🇬 新加坡(油管:破解资源君) #3'
-  network: tcp
-  port: '8888'
-  server: 161.117.229.166
-  tls: false
-  type: vmess
-  uuid: 081f8acf-742b-4af5-ca99-6186c80e635b
-- name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
-  password: a3467343-8c87-40a6-a87f-a466b340475c
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: false
-  sni: 421421.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 3|🇸🇬 10,11|新加坡2|@ripaojiedian
+  name: 3|🇸🇬 10,11|新加坡|@ripaojiedian
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
   tls: false
   type: vmess
-  uuid: c3d4cd98-a316-45d2-9725-d9be48ed8963
+  uuid: eb57bbd8-8ee9-42a3-b069-e6e5418f27f5
   ws-opts:
     headers:
-      Host: rpmlybgzsg2.yofnhkfc.xyz
-    path: /video/3YKfzGw4
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
 - cipher: aes-256-cfb
   name: 4|SG_speednode_0065
   password: amazonskr05
