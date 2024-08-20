@@ -179,7 +179,7 @@ rule-providers:
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
-  interval: 600
+  interval: 400
   timeout: 1500
   tolerance: 30
   expected-status: 204
@@ -198,7 +198,7 @@ providerSet: &providerSet
   health-check:
     enable: true
     url: https://www.youtube.com/generate_204
-    interval: 600
+    interval: 400
     timeout: 1500
     lazy: true
     expected-status: 204
