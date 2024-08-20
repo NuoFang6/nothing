@@ -11,7 +11,7 @@ find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
 keep-alive-idle: 15
 keep-alive-interval: 15
-global-client-fingerprint: safari
+global-client-fingerprint: chrome
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
@@ -108,12 +108,6 @@ sniffer:
     # - "+.copilot.microsoft.com"
     - "+.apple.com"
     - "+.io.mi.com"
-    - "+.cdn-telegram.org"
-    - "+.telegram.org"
-    - "+.telegram-cdn.org"
-    - "+.fragment.com"
-    - "+.t.me"
-    - "+.telegra.ph"
   sniff:
     HTTP:
       ports:
@@ -133,27 +127,27 @@ rules:
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   - GEOIP,private,DIRECT,no-resolve
-  - GEOIP,telegram,PROXY,no-resolve
   # - RULE-SET,AdRules,REJECT
   - RULE-SET,ads,REJECT
   - PROCESS-NAME,com.tencent.mm,DIRECT
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - DOMAIN-REGEX,(gstatic|tailscale|visualstudio|bard|gemini),PROXY
   - DOMAIN-REGEX,^.*\.(google\.cn|googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY #Google
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,PROXY #Google
   - DOMAIN-SUFFIX,dl.google.com,DIRECT #可直连Google下载
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
+  - GEOIP,telegram,PROXY,no-resolve
+  - GEOSITE,cn,DIRECT
   - GEOSITE,steam@cn,DIRECT
   - GEOSITE,microsoft@cn,DIRECT
   - GEOSITE,win-update,DIRECT
-  - GEOSITE,cn,DIRECT
-  - GEOIP,cn,DIRECT,no-resolve
   - DST-PORT,7680,DIRECT # win优化传递
+  - GEOIP,cn,DIRECT,no-resolve
   # - NETWORK,UDP,REJECT
-  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - MATCH,PROXY
 
 rule-providers:
