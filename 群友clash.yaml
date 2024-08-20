@@ -281,7 +281,7 @@ proxy-groups:
       - 白嫖线路
     <<: *groupsSet
 
-  - name: 请不要分享订阅！
+  - name: 👆请不要分享订阅！
     type: select
     proxies:
       - REJECT
