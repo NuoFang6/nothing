@@ -46,34 +46,26 @@ hosts:
 
 dns:
   enable: true
-  ipv6: false
-  ipv6-timeout: 90
+  ipv6: true
+  ipv6-timeout: 70
   use-hosts: true
   use-system-hosts: false
-  prefer-h3: false
   respect-rules: false
+  prefer-h3: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - quic://223.5.5.5#DIRECT
-    - https://1.12.12.12/dns-query#DIRECT&h3=false
-  nameserver:
-    - quic://223.5.5.5#DIRECT
-    - https://1.12.12.12/dns-query#DIRECT&h3=false
-  proxy-server-nameserver:
     - quic://223.5.5.5
-    - https://1.12.12.12/dns-query
+    - tls://1.12.12.12
+  proxy-server-nameserver:
+    - quic://dns.alidns.com
+    - tls://dot.pub
+  nameserver:
+    - "quic://dns.alidns.com#DIRECT"
+    - "tls://dot.pub#DIRECT"
   fallback:
-    - https://8.8.8.8/dns-query#PROXY&h3=false
-    - https://8.8.4.4/dns-query#PROXY&h3=false
-  nameserver-policy:
-    "+.openwrt.ai,+.mwm.moe,+.lizi.moe,+.alcy.cc":
-      - quic://223.5.5.5#DIRECT
-      - https://1.12.12.12/dns-query#DIRECT&h3=false
-    "+.googleapis.cn":
-      - https://8.8.8.8/dns-query#PROXY&h3=false
-      - https://8.8.4.4/dns-query#PROXY&h3=false
+    - "tls://dns.google#PROXY"
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -94,6 +86,8 @@ dns:
       - 224.0.0.0/4
       - 240.0.0.0/4
       - 255.255.255.255/32
+  domain:
+    - +.googleapis.cn
   fake-ip-filter:
     - "*.lan"
     - "*.local"
