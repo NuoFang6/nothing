@@ -157,8 +157,8 @@ rules:
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
   - DST-PORT,7680,DIRECT # win优化传递
-  - NETWORK,UDP,REJECT
-  # - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+  # - NETWORK,UDP,REJECT
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - MATCH,PROXY
 
 rule-providers:
