@@ -144,8 +144,7 @@ rules:
   - RULE-SET,ads,REJECT
   - PROCESS-NAME,com.tencent.mm,DIRECT
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT
-  - PROCESS-NAME-REGEX,(?i)miHoYo,DIRECT
-  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror),DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
   - DOMAIN-REGEX,(gstatic|tailscale|visualstudio|bard|gemini),PROXY
   - DOMAIN-REGEX,^.*\.(google\.cn|googleapis\.cn|lmsys\.org|jsdelivr\.net)$,PROXY
@@ -153,9 +152,11 @@ rules:
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,PROXY #Google
   - DOMAIN-SUFFIX,dl.google.com,DIRECT #可直连Google下载
   - GEOSITE,steam@cn,DIRECT
+  - GEOSITE,microsoft@cn,DIRECT
   - GEOSITE,win-update,DIRECT
   - GEOSITE,cn,DIRECT
   - GEOIP,cn,DIRECT,no-resolve
+  - DST-PORT,7680,DIRECT # win优化传递
   - NETWORK,UDP,REJECT
   # - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   - MATCH,PROXY
@@ -179,7 +180,7 @@ rule-providers:
 groupsSet: &groupsSet
   lazy: true
   url: https://www.youtube.com/generate_204
-  interval: 400
+  interval: 600
   timeout: 1500
   tolerance: 30
   expected-status: 204
@@ -198,7 +199,7 @@ providerSet: &providerSet
   health-check:
     enable: true
     url: https://www.youtube.com/generate_204
-    interval: 400
+    interval: 600
     timeout: 1500
     lazy: true
     expected-status: 204
