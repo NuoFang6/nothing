@@ -217,10 +217,6 @@ proxy-providers:
     <<: *providerSet
     url: "https://cftj.nuofang.dns-dynamic.net/nuofang?clash"
 
-  LanCloud:
-    <<: *providerSet
-    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
-
   散线:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
@@ -229,54 +225,60 @@ proxy-providers:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
 
+  # LanCloud:
+  #   <<: *providerSet
+  #   url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - 自动选择
-      - CF-vless协议
-      - CF-trojan协议
-      - LanCloud
-      - 散线
-      - 白嫖线路
-      - 请不要分享订阅！
+      - 🚀自动-全部
+      - 🚀自动-白嫖线路
+      - 📌手动-CFvless协议
+      - 📌手动-CFtrojan协议
+      - 📌手动-白嫖线路
+      - 📌手动-散线
+      - 手动需在对应分组挑选线路
+      - 👆请不要分享订阅！
+      # - LanCloud
     <<: *groupsSet
 
-  - name: CF-vless协议
+  - name: 📌手动-CFvless协议
     type: select
     disable-udp: true
     use:
       - CF-vless
     <<: *groupsSet
 
-  - name: CF-trojan协议
+  - name: 📌手动-CFtrojan协议
     type: select
     disable-udp: true
     use:
       - CF-trojan
     <<: *groupsSet
 
-  - name: LanCloud
-    type: select
-    use:
-      - LanCloud
-    <<: *groupsSet
-
-  - name: 散线
-    type: select
-    use:
-      - 散线
-    <<: *groupsSet
-
-  - name: 白嫖线路
+  - name: 📌手动-白嫖线路
     type: select
     use:
       - 白嫖线路
     <<: *groupsSet
 
-  - name: 自动选择
+  - name: 📌手动-散线
+    type: select
+    use:
+      - 散线
+    <<: *groupsSet
+
+  - name: 🚀自动-全部
     type: url-test
     include-all: true
+    <<: *groupsSet
+
+  - name: 🚀自动-白嫖线路
+    type: url-test
+    use:
+      - 白嫖线路
     <<: *groupsSet
 
   - name: 请不要分享订阅！
@@ -285,3 +287,16 @@ proxy-groups:
       - REJECT
     lazy: true
     hidden: true
+
+  - name: 手动需在对应分组挑选线路
+    type: select
+    proxies:
+      - REJECT
+    lazy: true
+    hidden: true
+
+  # - name: LanCloud
+  #   type: select
+  #   use:
+  #     - LanCloud
+  #   <<: *groupsSet
