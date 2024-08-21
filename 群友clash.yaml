@@ -37,13 +37,15 @@ tun:
   strict-route: true
   dns-hijack:
     - any:53
-  exclude-package: # 排除严格的APP
-    - com.icbc # 工商银行
-    - com.jxnxs.mobile.bank # 江西农商
-    - com.unionpay.tsmservice.mi # 银联安全组件
-    - com.supwisdom.jvtc # 慧通江职
-    - com.whaty.qyZHZJ # 智慧职教
-    - info.muge.appshare # AppShare 防止广告出现率下降
+  #
+  # 安卓端无效
+  # exclude-package: # 排除严格的APP
+  #   - com.icbc # 工商银行
+  #   - com.jxnxs.mobile.bank # 江西农商
+  #   - com.unionpay.tsmservice.mi # 银联安全组件
+  #   - com.supwisdom.jvtc # 慧通江职
+  #   - com.whaty.qyZHZJ # 智慧职教
+  #   - info.muge.appshare # AppShare 防止广告出现率下降
 
 hosts:
   time.windows.com: ntp.tencent.com
@@ -134,6 +136,8 @@ rules:
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
+  # 不屏蔽广告
+  - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   # 特殊APP
@@ -141,6 +145,11 @@ rules:
   - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT # 支付宝
   - PROCESS-NAME,com.MobileTicket,DIRECT # 铁路12306
   - PROCESS-NAME,com.able.wisdomtree,DIRECT # 智慧树知到
+  - PROCESS-NAME,com.whaty.qyZHZJ,DIRECT # 智慧职教
+  - PROCESS-NAME,com.supwisdom.jvtc,DIRECT # 慧通江职
+  - PROCESS-NAME,com.icbc,DIRECT # 工商银行
+  - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
+  - PROCESS-NAME,com.unionpay.tsmservice.mi,DIRECT # 银联安全组件
   - PROCESS-NAME,com.openai.chatgpt,PROXY # ChatGPT
   # 白名单-直连
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest),DIRECT
