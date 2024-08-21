@@ -112,6 +112,7 @@ sniffer:
     - +.nflxvideo.net
     - +.amazonaws.com
     - +.media.dssott.com
+    - +.bilivideo.cloud # bug 缓解
   skip-domain:
     # - "+.bing.com"
     # - "+.copilot.microsoft.com"
@@ -132,6 +133,10 @@ sniffer:
         - 8443
 
 rules:
+  # bug 缓解
+  - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+  - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
