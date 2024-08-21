@@ -56,7 +56,7 @@ hosts:
 dns:
   enable: true
   ipv6: true
-  ipv6-timeout: 70
+  ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
   respect-rules: false
@@ -69,10 +69,10 @@ dns:
     - tls://1.12.12.12
   proxy-server-nameserver:
     - quic://dns.alidns.com
-    - tls://dot.pub
+    - tls://1.12.12.12
   nameserver:
     - "quic://dns.alidns.com#DIRECT"
-    - "tls://dot.pub#DIRECT"
+    - "tls://1.12.12.12#DIRECT"
   fallback:
     - "tls://dns.google#PROXY"
   fallback-filter:
@@ -151,10 +151,12 @@ rules:
   - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
   - PROCESS-NAME,com.unionpay.tsmservice.mi,DIRECT # 银联安全组件
   - PROCESS-NAME,com.openai.chatgpt,PROXY # ChatGPT
+  - PROCESS-NAME,com.android.vending,PROXY # Google Play
   # 白名单-直连
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
   # 黑名单-代理
+  - DOMAIN-KEYWORD,gstatic,PROXY
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
   - GEOSITE,cn,DIRECT
