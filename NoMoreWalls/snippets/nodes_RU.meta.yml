@@ -1,5 +1,5 @@
 proxies:
-- name: 1|RU_speednode_0053
+- name: 1|RU_speednode_0082
   network: ws
   port: 2096
   server: 188.42.145.159
@@ -13,22 +13,8 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 1|RU_speednode_0054
-  network: ws
-  port: 8443
-  server: 188.42.145.159
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|RU_speednode_0055
+  name: 1|RU_speednode_0083
   network: ws
   port: 443
   server: 188.42.145.178
@@ -43,7 +29,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|RU_speednode_0056
+  name: 1|RU_speednode_0084
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -58,7 +44,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
 - client-fingerprint: chrome
-  name: 1|RU_speednode_0057
+  name: 1|RU_speednode_0085
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -72,7 +58,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chromefp=chromefp=chrome
-- name: 1|RU_speednode_0058
+- name: 1|RU_speednode_0086
   network: ws
   port: 443
   server: 185.59.218.0
@@ -87,7 +73,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|RU_speednode_0059
+  name: 1|RU_speednode_0087
   network: ws
   port: 443
   server: 188.42.145.140
@@ -101,7 +87,7 @@ proxies:
     headers:
       Host: g1.youyuan.us.kg
     path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
-- name: 1|RU_speednode_0060
+- name: 1|RU_speednode_0088
   network: ws
   port: 443
   server: 212.41.15.119
@@ -116,7 +102,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /
 - client-fingerprint: chrome
-  name: 1|RU_speednode_0061
+  name: 1|RU_speednode_0089
   network: ws
   port: 443
   server: 188.42.145.84
