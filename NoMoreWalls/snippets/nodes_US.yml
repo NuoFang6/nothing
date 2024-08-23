@@ -1,5 +1,29 @@
 proxies:
-- name: 1|US_speednode_0084
+- cipher: aes-256-cfb
+  name: 1|US_speednode_0099
+  password: amazonskr05
+  port: 443
+  server: 34.219.130.214
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|US_speednode_0100
+  password: amazonskr05
+  port: 443
+  server: 35.87.35.207
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|US_speednode_0101
+  password: amazonskr05
+  port: 443
+  server: 18.236.64.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|US_speednode_0102
+  password: amazonskr05
+  port: 443
+  server: 34.219.154.160
+  type: ss
+- name: 1|US_speednode_0117
   network: ws
   password: CMLiu
   port: 443
