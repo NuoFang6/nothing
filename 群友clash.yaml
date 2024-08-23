@@ -133,9 +133,7 @@ sniffer:
 
 rules:
   # bug 缓解
-  - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
-  - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
+  - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
@@ -146,16 +144,7 @@ rules:
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   # 特殊APP
-  - PROCESS-NAME,com.tencent.mm,DIRECT # 微信
-  - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT # 支付宝
-  - PROCESS-NAME,com.MobileTicket,DIRECT # 铁路12306
-  - PROCESS-NAME,com.able.wisdomtree,DIRECT # 智慧树知到
-  - PROCESS-NAME,com.whaty.qyZHZJ,DIRECT # 智慧职教
-  - PROCESS-NAME,com.supwisdom.jvtc,DIRECT # 慧通江职
-  - PROCESS-NAME,com.icbc,DIRECT # 工商银行
-  - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
-  - PROCESS-NAME,com.unionpay.tsmservice.mi,DIRECT # 银联安全组件
-  - PROCESS-NAME,com.openai.chatgpt,PROXY # ChatGPT
+  - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
@@ -186,27 +175,43 @@ rules:
   # End
   #
   # 备用
+  # - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+  # - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  # - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
   # - RULE-SET,AdRules,REJECT
   # - DOMAIN-REGEX,(tailscale|visualstudio),PROXY
   # - DOMAIN-REGEX,^.*\.(lmsys\.org|jsdelivr\.net)$,PROXY
   # - NETWORK,UDP,REJECT
 
+sub-rules:
+  app规则:
+    - PROCESS-NAME,com.tencent.mm,DIRECT # 微信
+    - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT # 支付宝
+    - PROCESS-NAME,com.MobileTicket,DIRECT # 铁路12306
+    - PROCESS-NAME,com.able.wisdomtree,DIRECT # 智慧树知到
+    - PROCESS-NAME,com.whaty.qyZHZJ,DIRECT # 智慧职教
+    - PROCESS-NAME,com.supwisdom.jvtc,DIRECT # 慧通江职
+    - PROCESS-NAME,com.icbc,DIRECT # 工商银行
+    - PROCESS-NAME,com.unionpay.tsmservice.mi,DIRECT # 银联安全组件
+    - PROCESS-NAME,com.openai.chatgpt,PROXY # ChatGPT
+    # - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
+
 rule-providers:
+  Ad:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/ads.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+
   # Ad:
   #   type: http
-  #   url: https://cdn.jsdmirror.com/gh/NuoFang6/nothing@main/mrs/ads.mrs
-  #   format: mrs
+  #   url: https://mirror.ghproxy.com/https://github.com/TG-Twilight/AWAvenue-Ads-Rule/raw/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
+  #   format: yaml
   #   behavior: domain
   #   interval: 86400
   #   proxy: DIRECT
-
-  Ad:
-    type: http
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
-    format: yaml
-    behavior: domain
-    interval: 86400
-    proxy: DIRECT
 
 groupsSet: &groupsSet
   lazy: true
@@ -222,7 +227,7 @@ groupsSet: &groupsSet
 # 锚点
 providerSet: &providerSet
   type: http
-  interval: 86400
+  interval: 85000
   proxy: DIRECT
   header:
     User-Agent:
