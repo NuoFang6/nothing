@@ -19,8 +19,8 @@ geo-auto-update: true
 geo-update-interval: 12
 # external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器
 geox-url:
-  geoip: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@releases/download/latest/geoip-lite.dat
-  geosite: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@releases/download/latest/geosite.dat
+  geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
 
 clash-for-android:
   append-system-dns: false
@@ -141,6 +141,7 @@ rules:
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
+  - DOMAIN-KEYWORD,chatgpt,PROXY # ChatGPT 卡住
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 拒绝广告
   - RULE-SET,Ad,REJECT
@@ -191,21 +192,21 @@ rules:
   # - NETWORK,UDP,REJECT
 
 rule-providers:
-  Ad:
-    type: http
-    url: https://cdn.jsdmirror.com/gh/NuoFang6/nothing@main/mrs/ads.mrs
-    format: mrs
-    behavior: domain
-    interval: 86400
-    proxy: DIRECT
-
-  # AdRules:
+  # Ad:
   #   type: http
-  #   url: https://adrules.top/adrules_domainset.txt
-  #   format: text
+  #   url: https://cdn.jsdmirror.com/gh/NuoFang6/nothing@main/mrs/ads.mrs
+  #   format: mrs
   #   behavior: domain
   #   interval: 86400
   #   proxy: DIRECT
+
+  Ad:
+    type: http
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
+    format: yaml
+    behavior: domain
+    interval: 86400
+    proxy: DIRECT
 
 groupsSet: &groupsSet
   lazy: true
