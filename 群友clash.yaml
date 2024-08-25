@@ -152,8 +152,8 @@ rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google 国内应用下载，未推广
   # 黑名单-代理
-  - DOMAIN-KEYWORD,gstatic,PROXY
-  - DOMAIN-SUFFIX,googleapis.com,PROXY
+  - SUB-RULE,(DOMAIN-SUFFIX,gstatic.com),PROXY-noUDP
+  - SUB-RULE,(DOMAIN-SUFFIX,googleapis.com),PROXY-noUDP
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
   - GEOSITE,cn,DIRECT
@@ -195,6 +195,9 @@ sub-rules:
     - PROCESS-NAME,com.unionpay.tsmservice.mi,DIRECT # 银联安全组件
     - PROCESS-NAME,com.openai.chatgpt,PROXY # ChatGPT
     # - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
+  PROXY-noUDP:
+    - NETWORK,UDP,REJECT
+    - MATCH,PROXY
 
 rule-providers:
   Ad:
