@@ -272,6 +272,7 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
+      - 🚀自动-精选
       - 🚀自动-全部
       - 🚀自动-白嫖线路
       - 📌手动-CFvless协议
@@ -307,6 +308,13 @@ proxy-groups:
     type: select
     use:
       - 散线
+    <<: *groupsSet
+
+  - name: 🚀自动-精选
+    type: url-test
+    use:
+      - 白嫖线路
+    filter: "CN"
     <<: *groupsSet
 
   - name: 🚀自动-全部
