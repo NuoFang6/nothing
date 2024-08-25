@@ -21,6 +21,8 @@ geo-update-interval: 12
 external-controller: 127.0.0.1:9090 # RESTful API 监听地址
 secret: "@NuoFang" # 外部控制器RESTful API访问密钥
 # WEB UI 目录，使用 http://127.0.0.1:9090/ui 访问
+external-ui: ./ui/
+external-ui-name: xd
 external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 geox-url:
