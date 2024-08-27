@@ -57,7 +57,7 @@ dns:
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
-  respect-rules: true
+  respect-rules: false
   prefer-h3: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
@@ -131,7 +131,10 @@ sniffer:
 
 rules:
   # bug 缓解
-  # - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
+  - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
+  # - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+  # - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  # - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
