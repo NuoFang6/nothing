@@ -145,8 +145,8 @@ rules:
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
-  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|heytapmobi),DIRECT
-  - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|heytapmobi|weibo|lenovomm),DIRECT
+  - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc|qq\.com)$,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,DIRECT # Google 国内
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google 国内应用下载，未推广
