@@ -271,8 +271,9 @@ proxy-groups:
     type: select
     proxies:
       - 🚀自动-全部
+      - 🚀自动-CF
       - 🚀自动-白嫖线路
-      - 📌手动-CFvless协议
+      - 📌手动-CF
       - 📌手动-白嫖线路
       - 📌手动-散线
       - 手动需在对应分组挑选线路
@@ -280,7 +281,7 @@ proxy-groups:
       # - LanCloud
     <<: *groupsSet
 
-  - name: 📌手动-CFvless协议
+  - name: 📌手动-CF
     type: select
     disable-udp: true
     use:
@@ -302,6 +303,12 @@ proxy-groups:
   - name: 🚀自动-全部
     type: url-test
     include-all: true
+    <<: *groupsSet
+
+  - name: 🚀自动-CF
+    type: url-test
+    use:
+      - CF-vless
     <<: *groupsSet
 
   - name: 🚀自动-白嫖线路
