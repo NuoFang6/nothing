@@ -254,10 +254,6 @@ proxy-providers:
     <<: *providerSet
     url: "https://cfp.nuofang.dns-dynamic.net/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47?clash"
 
-  CF-trojan:
-    <<: *providerSet
-    url: "https://cftj.nuofang.dns-dynamic.net/nuofang?clash"
-
   散线:
     <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
@@ -277,7 +273,6 @@ proxy-groups:
       - 🚀自动-全部
       - 🚀自动-白嫖线路
       - 📌手动-CFvless协议
-      - 📌手动-CFtrojan协议
       - 📌手动-白嫖线路
       - 📌手动-散线
       - 手动需在对应分组挑选线路
@@ -290,13 +285,6 @@ proxy-groups:
     disable-udp: true
     use:
       - CF-vless
-    <<: *groupsSet
-
-  - name: 📌手动-CFtrojan协议
-    type: select
-    disable-udp: true
-    use:
-      - CF-trojan
     <<: *groupsSet
 
   - name: 📌手动-白嫖线路
