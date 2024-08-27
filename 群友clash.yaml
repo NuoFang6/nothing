@@ -130,8 +130,7 @@ sniffer:
         - 8443
 
 rules:
-  # bug 缓解
-  # - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
+  # DNS 分流
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
   - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
@@ -178,9 +177,7 @@ rules:
   # End
   #
   # 备用
-  # - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
-  # - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  # - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
+  # - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
   # - RULE-SET,AdRules,REJECT
   # - DOMAIN-REGEX,(tailscale|visualstudio),PROXY
   # - DOMAIN-REGEX,^.*\.(lmsys\.org|jsdelivr\.net)$,PROXY
