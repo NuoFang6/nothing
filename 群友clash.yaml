@@ -145,7 +145,7 @@ rules:
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
-  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|heytapmobi|weibo|lenovomm),DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|heytapmobi|weibo|lenovomm|beqege),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc|qq\.com)$,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,DIRECT # Google 国内
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
@@ -252,7 +252,7 @@ providerSet: &providerSet
 proxy-providers:
   CF-vless:
     <<: *providerSet
-    url: "https://cfp.nuofang.dns-dynamic.net/72cd3c7f-3cb9-40ec-b81e-1ef1e65baa47?clash"
+    url: "https://cfp.nuofang.dns-dynamic.net/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
 
   散线:
     <<: *providerSet
