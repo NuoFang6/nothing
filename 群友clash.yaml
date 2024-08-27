@@ -220,7 +220,7 @@ groupsSet: &groupsSet
   url: https://www.youtube.com/generate_204
   interval: 600
   timeout: 1500
-  tolerance: 30
+  tolerance: 40
   expected-status: 204
   max-failed-times: 2
   tfo: true
