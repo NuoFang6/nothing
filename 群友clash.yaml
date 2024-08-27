@@ -57,7 +57,7 @@ dns:
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
-  respect-rules: false
+  respect-rules: true
   prefer-h3: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
@@ -69,10 +69,10 @@ dns:
     - quic://dns.alidns.com
     - tls://1.12.12.12
   nameserver:
-    - "quic://dns.alidns.com#DIRECT"
-    - "tls://1.12.12.12#DIRECT"
+    - quic://dns.alidns.com
+    - tls://1.12.12.12
   fallback:
-    - "tls://dns.google#PROXY"
+    - tls://dns.google
   fallback-filter:
     geoip: false
     geoip-code: CN
