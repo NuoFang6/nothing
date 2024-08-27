@@ -139,6 +139,7 @@ rules:
   # 不屏蔽广告
   - DOMAIN-KEYWORD,chatgpt,PROXY # ChatGPT 卡住
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
+  - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   # 特殊APP
