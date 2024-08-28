@@ -256,7 +256,15 @@ proxies:
     server: serv00.nuofang.filegear-sg.me
     port: 443
     uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
-    <<: *groupsSet
+    lazy: true
+    url: https://www.youtube.com/generate_204
+    interval: 450
+    timeout: 5000
+    tolerance: 40
+    expected-status: 204
+    max-failed-times: 2
+    tfo: true
+    mptcp: true
     tls: true
     skip-cert-verify: false
     client-fingerprint: chrome
