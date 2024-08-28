@@ -250,6 +250,39 @@ providerSet: &providerSet
 
 ###  通用配置结束  ###
 
+proxies:
+  - name: "诺芳自建"
+    type: vless
+    server: serv00.nuofang.filegear-sg.me
+    port: 443
+    uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
+    <<: *groupsSet
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+    packet-encoding: xudp
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: "/vless"
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    smux:
+      enabled: true
+      protocol: smux
+      max-connections: 4
+      min-streams: 4
+      max-streams: 0
+      statistic: true
+      only-tcp: true
+      padding: false
+      brutal-opts:
+        enabled: false
+
 proxy-providers:
   CF-vless:
     <<: *providerSet
@@ -277,6 +310,7 @@ proxy-groups:
       - 📌手动-CF
       - 📌手动-白嫖线路
       - 📌手动-散线
+      - 诺芳自建
       - 手动需在对应分组挑选线路
       - 👆请不要分享订阅！
       # - LanCloud
