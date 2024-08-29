@@ -58,21 +58,18 @@ dns:
   use-hosts: true
   use-system-hosts: false
   respect-rules: true
-  prefer-h3: false
+  prefer-h3: true
   cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - quic://223.5.5.5
-    - tls://1.12.12.12
-  proxy-server-nameserver:
-    - quic://dns.alidns.com
-    - tls://1.12.12.12
+    - h3://223.6.6.6/dns-query
   nameserver:
     - quic://dns.alidns.com
-    - tls://1.12.12.12
+    - h3://dns.alidns.com/dns-query
   fallback:
-    - tls://dns.google
+    - https://dns.google/dns-query
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -80,9 +77,10 @@ dns:
       - 0.0.0.0/8
       - 10.0.0.0/8
       - 100.64.0.0/10
+      # - 100.100.0.0/8 #公共 IPv4 地址段，会出现在公网
       - 127.0.0.0/8
-      - 169.254.0.0/16
       - 172.16.0.0/12
+      - 169.254.0.0/16
       - 192.0.0.0/24
       - 192.0.2.0/24
       - 192.88.99.0/24
@@ -91,8 +89,19 @@ dns:
       - 198.51.100.0/24
       - 203.0.113.0/24
       - 224.0.0.0/4
-      - 240.0.0.0/4
-      - 255.255.255.255/32
+      - 240.0.0.0/4 # 包含 255.255.255.255
+      - ::/96 #已废弃，可能会出现在公网
+      - ::/128
+      - ::1/128
+      - ::ffff:0:0/96
+      - 64:ff9b::/96
+      - 100::/64
+      - 2002::/16
+      # - 2001::/32 #全球单播地址，会出现在公网
+      - 2001:db8::/32
+      - fc00::/7
+      - fec0::/10 #已废弃，可能会出现在公网
+      - ff00::/8
   # domain:
   #   - +.googleapis.cn
   fake-ip-filter:
@@ -111,30 +120,26 @@ sniffer:
     - +.amazonaws.com
     - +.media.dssott.com
   skip-domain:
-    # - "+.bing.com"
-    # - "+.copilot.microsoft.com"
     - "+.apple.com"
     - "+.io.mi.com"
+    # - "+.bing.com"
+    # - "+.copilot.microsoft.com"
   sniff:
     HTTP:
-      ports:
-        - 80
-        - 8080
+      ports: [80, 8080]
+      override-destination: true
     TLS:
-      ports:
-        - 443
-        - 8443
+      ports: [443, 8443, 853]
+      override-destination: true
     QUIC:
-      ports:
-        - 443
-        - 8443
+      ports: [443, 8443, 853]
+      override-destination: true
 
 rules:
   # DNS 分流
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
-  - DOMAIN,dns.alidns.com,DIRECT
+  - DOMAIN,dns.google,PROXY
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
@@ -148,7 +153,7 @@ rules:
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
-  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|lenovomm|beqege),DIRECT
+  - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|lenovomm|beqege|viayoo),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,DIRECT # Google 国内
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
@@ -326,6 +331,7 @@ proxy-groups:
 
   - name: 📌手动-CF
     type: select
+    udp: false
     disable-udp: true
     use:
       - CF-vless
@@ -350,6 +356,8 @@ proxy-groups:
 
   - name: 🚀自动-CF
     type: url-test
+    udp: false
+    disable-udp: true
     use:
       - CF-vless
     <<: *groupsSet
