@@ -142,6 +142,9 @@ rules:
   # DNS 分流
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  - DOMAIN,dns.alidns.com,DIRECT
+  - IP-CIDR,8.8.8.8/32,PROXY,no-resolve
+  - IP-CIDR,8.8.4.4/32,PROXY,no-resolve
   - DOMAIN,dns.google,PROXY
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
