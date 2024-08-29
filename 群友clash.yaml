@@ -53,26 +53,29 @@ hosts:
 
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
-  respect-rules: true
+  respect-rules: false # 没用
   prefer-h3: true
   cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - quic://223.5.5.5
-    - "https://223.6.6.6/dns-query#h3=true"
+    - "quic://223.5.5.5#DIRECT"
+    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   proxy-server-nameserver:
-    - quic://dns.alidns.com
-    - "https://dns.alidns.com/dns-query#h3=true"
+    - "quic://223.5.5.5#DIRECT"
+    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   nameserver:
-    - quic://dns.alidns.com
-    - "https://dns.alidns.com/dns-query#h3=true"
+    - "quic://223.5.5.5#DIRECT"
+    - "quic://223.6.6.6#DIRECT"
+    - "https://223.5.5.5/dns-query#DIRECT&h3=true"
+    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   fallback:
-    - https://dns.google/dns-query
+    - "https://dns.google/dns-query#PROXY"
+    - "https://cloudflare-dns.com/dns-query#PROXY"
   fallback-filter:
     geoip: false
     geoip-code: CN
@@ -93,18 +96,18 @@ dns:
       - 203.0.113.0/24
       - 224.0.0.0/4
       - 240.0.0.0/4 # 包含 255.255.255.255
-      - ::/96 #已废弃，可能会出现在公网
-      - ::/128
-      - ::1/128
-      - ::ffff:0:0/96
-      - 64:ff9b::/96
-      - 100::/64
-      - 2002::/16
-      # - 2001::/32 #全球单播地址，会出现在公网
-      - 2001:db8::/32
-      - fc00::/7
-      - fec0::/10 #已废弃，可能会出现在公网
-      - ff00::/8
+      # - ::/96 #已废弃，可能会出现在公网
+      # - ::/128
+      # - ::1/128
+      # - ::ffff:0:0/96
+      # - 64:ff9b::/96
+      # - 100::/64
+      # - 2002::/16
+      # # - 2001::/32 #全球单播地址，会出现在公网
+      # - 2001:db8::/32
+      # - fc00::/7
+      # - fec0::/10 #已废弃，可能会出现在公网
+      # - ff00::/8
   # domain:
   #   - +.googleapis.cn
   fake-ip-filter:
@@ -112,48 +115,20 @@ dns:
     - "*.local"
     - "localhost.ptlogin2.qq.com"
 
-sniffer:
-  enable: true
-  parse-pure-ip: true
-  override-destination: true
-  force-dns-mapping: false
-  force-domain:
-    - +.netflix.com
-    - +.nflxvideo.net
-    - +.amazonaws.com
-    - +.media.dssott.com
-  skip-domain:
-    - "+.apple.com"
-    - "+.io.mi.com"
-    # - "+.bing.com"
-    # - "+.copilot.microsoft.com"
-  sniff:
-    HTTP:
-      ports: [80, 8080]
-      override-destination: true
-    TLS:
-      ports: [443, 8443, 853]
-      override-destination: true
-    QUIC:
-      ports: [443, 8443, 853]
-      override-destination: true
-
 rules:
-  # DNS 分流
+  # bug缓解，分流部分情况泄露的DNS
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  - DOMAIN,dns.alidns.com,DIRECT
-  - IP-CIDR,8.8.8.8/32,PROXY,no-resolve
-  - IP-CIDR,8.8.4.4/32,PROXY,no-resolve
-  - DOMAIN,dns.google,PROXY
   # 丢弃
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
-  - DOMAIN-KEYWORD,chatgpt,PROXY # ChatGPT 卡住
+  - SUB-RULE,(DOMAIN-KEYWORD,chatgpt),PROXY-noUDP # ChatGPT 卡住
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
+  - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
+  # - DOMAIN-KEYWORD,pendo.io,DIRECT #! 病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   # 特殊APP
@@ -227,16 +202,31 @@ rule-providers:
   #   interval: 86400
   #   proxy: DIRECT
 
-groupsSet: &groupsSet
-  lazy: true
-  url: https://www.youtube.com/generate_204
-  interval: 450
-  timeout: 1500
-  tolerance: 40
-  expected-status: 204
-  max-failed-times: 2
-  tfo: true
-  mptcp: true
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  force-dns-mapping: false
+  force-domain:
+    - +.netflix.com
+    - +.nflxvideo.net
+    - +.amazonaws.com
+    - +.media.dssott.com
+  skip-domain:
+    - "+.apple.com"
+    - "+.io.mi.com"
+    # - "+.bing.com"
+    # - "+.copilot.microsoft.com"
+  sniff:
+    HTTP:
+      ports: [80, 8080]
+      override-destination: true
+    TLS:
+      ports: [443, 8443, 853]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443, 853]
+      override-destination: true
 
 # 锚点
 providerSet: &providerSet
@@ -257,7 +247,19 @@ providerSet: &providerSet
     skip-cert-verify: true
     tfo: true
     mptcp: true
+    ip-version: dual
     # up: 0
+
+groupsSet: &groupsSet
+  lazy: true
+  url: https://www.youtube.com/generate_204
+  tfo: true
+  mptcp: true
+  interval: 450
+  timeout: 1500
+  tolerance: 40
+  expected-status: 204
+  max-failed-times: 2
 
 ###  通用配置结束  ###
 
@@ -304,20 +306,26 @@ proxies:
 
 proxy-providers:
   CF-vless:
-    <<: *providerSet
     url: "https://cfp.nuofang.dns-dynamic.net/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
+    <<: *providerSet
+    override:
+      udp: false
 
   散线:
-    <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
+    <<: *providerSet
+    override:
+      udp: true
 
   白嫖线路:
-    <<: *providerSet
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
+    <<: *providerSet
+    override:
+      udp: true
 
   # LanCloud:
-  #   <<: *providerSet
   #   url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+  #   <<: *providerSet
 
 proxy-groups:
   - name: PROXY
@@ -334,14 +342,14 @@ proxy-groups:
       - 👆请不要分享订阅！
       # - LanCloud
     <<: *groupsSet
+    disable-udp: false
 
   - name: 📌手动-CF
     type: select
-    udp: false
-    disable-udp: true
     use:
       - CF-vless
     <<: *groupsSet
+    disable-udp: true
 
   - name: 📌手动-白嫖线路
     type: select
@@ -357,16 +365,15 @@ proxy-groups:
 
   - name: 🚀自动-全部
     type: url-test
-    include-all: true
     <<: *groupsSet
+    include-all: true
 
   - name: 🚀自动-CF
     type: url-test
-    udp: false
-    disable-udp: true
     use:
       - CF-vless
     <<: *groupsSet
+    disable-udp: true
 
   - name: 🚀自动-白嫖线路
     type: url-test
