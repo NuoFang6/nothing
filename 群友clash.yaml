@@ -243,12 +243,6 @@ providerSet: &providerSet
     timeout: 1500
     lazy: true
     expected-status: 204
-  override:
-    skip-cert-verify: true
-    tfo: true
-    mptcp: true
-    ip-version: dual
-    # up: 0
 
 groupsSet: &groupsSet
   lazy: true
@@ -309,18 +303,30 @@ proxy-providers:
     url: "https://cfp.nuofang.dns-dynamic.net/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
     <<: *providerSet
     override:
+      skip-cert-verify: true
+      tfo: true
+      mptcp: true
+      ip-version: dual
       udp: false
 
   散线:
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
     <<: *providerSet
     override:
+      skip-cert-verify: true
+      tfo: true
+      mptcp: true
+      ip-version: dual
       udp: true
 
   白嫖线路:
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
     <<: *providerSet
     override:
+      skip-cert-verify: true
+      tfo: true
+      mptcp: true
+      ip-version: dual
       udp: true
 
   # LanCloud:
