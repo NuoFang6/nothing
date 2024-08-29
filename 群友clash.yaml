@@ -64,13 +64,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - quic://223.5.5.5
-    - h3://223.6.6.6/dns-query
+    - "https://223.6.6.6/dns-query#h3=true"
   proxy-server-nameserver:
     - quic://dns.alidns.com
-    - h3://dns.alidns.com/dns-query
+    - "https://dns.alidns.com/dns-query#h3=true"
   nameserver:
     - quic://dns.alidns.com
-    - h3://dns.alidns.com/dns-query
+    - "https://dns.alidns.com/dns-query#h3=true"
   fallback:
     - https://dns.google/dns-query
   fallback-filter:
