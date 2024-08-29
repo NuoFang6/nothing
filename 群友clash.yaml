@@ -71,11 +71,9 @@ dns:
   nameserver:
     - "quic://223.5.5.5#DIRECT"
     - "quic://223.6.6.6#DIRECT"
-    - "https://223.5.5.5/dns-query#DIRECT&h3=true"
     - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   fallback:
     - "https://dns.google/dns-query#PROXY"
-    - "https://cloudflare-dns.com/dns-query#PROXY"
   fallback-filter:
     geoip: false
     geoip-code: CN
