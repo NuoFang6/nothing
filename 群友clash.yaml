@@ -130,9 +130,11 @@ rules:
   - DOMAIN-KEYWORD,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
-  # - RULE-SET,DoH,REJECT
-  # - RULE-SET,tif,REJECT
-  # - IP-CIDR6,2620:1ec::/32,REJECT,no-resolve # edge 发神经
+  - DST-PORT,853,REJECT # 阻止 DNS 绕过
+  # - OR,((DST-PORT,53),(DST-PORT,853)),REJECT # 阻止 DNS 绕过
+  # - RULE-SET,DoH,REJECT # 防止 DoH DNS 绕过
+  # - RULE-SET,tif,REJECT # 威胁网址拦截
+  # - IP-CIDR6,2620:1ec::/32,REJECT,no-resolve # 疑似 edge 绕过 DNS
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
