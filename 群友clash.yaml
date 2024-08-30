@@ -82,9 +82,10 @@ dns:
       - 0.0.0.0/8
       - 10.0.0.0/8
       - 100.64.0.0/10
+      # - 100.100.0.0/8 #公共 IPv4 地址段，会出现在公网
       - 127.0.0.0/8
-      - 169.254.0.0/16
       - 172.16.0.0/12
+      - 169.254.0.0/16
       - 192.0.0.0/24
       - 192.0.2.0/24
       - 192.88.99.0/24
@@ -92,10 +93,19 @@ dns:
       - 198.18.0.0/15
       - 198.51.100.0/24
       - 203.0.113.0/24
-      - 224.0.0.0/3
-      # - ::/127
+      - 224.0.0.0/4
+      - 240.0.0.0/4 # 包含 255.255.255.255
+      # - ::/96 #已废弃，可能会出现在公网
+      # - ::/128
+      # - ::1/128
+      # - ::ffff:0:0/96
+      # - 64:ff9b::/96
+      # - 100::/64
+      # - 2002::/16
+      # # - 2001::/32 #全球单播地址，会出现在公网
+      # - 2001:db8::/32
       # - fc00::/7
-      # - fe80::/10
+      # - fec0::/10 #已废弃，可能会出现在公网
       # - ff00::/8
   # domain:
   #   - +.googleapis.cn
@@ -114,10 +124,10 @@ rules:
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
   - SUB-RULE,(DOMAIN-KEYWORD,chatgpt),PROXY-noUDP # ChatGPT 卡住
+  - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
-  - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
-  - DOMAIN-KEYWORD,pendo.io,DIRECT #! 疑似病毒网站
+  - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   - DST-PORT,853,REJECT # 阻止 DNS 绕过
@@ -134,8 +144,7 @@ rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google 国内应用下载，未推广
   # 黑名单-代理
-  - SUB-RULE,(DOMAIN-SUFFIX,gstatic.com),PROXY-noUDP
-  - SUB-RULE,(DOMAIN-SUFFIX,googleapis.com),PROXY-noUDP
+  - SUB-RULE,(DOMAIN-REGEX,(gstatic|googleapis|ghproxy|jsdelivr)),PROXY-noUDP
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
   - RULE-SET,cn,DIRECT # 包含 cn、steam@cn、microsoft@cn、google@cn、win-update
