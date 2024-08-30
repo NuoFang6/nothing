@@ -23,7 +23,7 @@ secret: "@NuoFang" # 外部控制器RESTful API访问密钥
 # 已废弃
 geodata-mode: false
 geodata-loader: memconservative
-# geosite-matcher: mph
+geosite-matcher: mph
 # geo-auto-update: true
 # geo-update-interval: 12
 # geox-url:
