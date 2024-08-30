@@ -54,7 +54,7 @@ hosts:
 
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
@@ -132,7 +132,7 @@ rules:
   - RULE-SET,Ad,REJECT
   # - RULE-SET,DoH,REJECT
   # - RULE-SET,tif,REJECT
-  - IP-CIDR6,2620:1ec:c11::239/128,REJECT,no-resolve # edge 发神经
+  # - IP-CIDR6,2620:1ec::/32,REJECT,no-resolve # edge 发神经
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
