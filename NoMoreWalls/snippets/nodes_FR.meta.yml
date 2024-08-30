@@ -1,1 +1,11 @@
-proxies: []
+proxies:
+- name: 1|FR_speednode_0118
+  network: ws
+  port: 80
+  server: 162.19.228.119
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  ws-opts:
+    path: /http
