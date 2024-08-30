@@ -4,9 +4,6 @@ ipv6: true
 allow-lan: false
 inbound-tfo: true
 inbound-mptcp: true
-geodata-mode: true
-geosite-matcher: mph
-geodata-loader: memconservative
 find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
 keep-alive-idle: 15
@@ -15,19 +12,23 @@ global-client-fingerprint: chrome
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
 unified-delay: true
-geo-auto-update: true
-geo-update-interval: 12
 # external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器，该URL不会验证secret
 external-controller: 127.0.0.1:9090 # RESTful API 监听地址
 secret: "@NuoFang" # 外部控制器RESTful API访问密钥
 # WEB UI 目录，使用 http://127.0.0.1:9090/ui/xd 访问
-external-ui: ./ui/
-external-ui-name: xd
-external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+# external-ui: ./ui/
+# external-ui-name: xd
+# external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
-geox-url:
-  geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+# 已废弃
+geodata-mode: false
+geodata-loader: memconservative
+# geosite-matcher: mph
+# geo-auto-update: true
+# geo-update-interval: 12
+# geox-url:
+#   geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+#   geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
 
 clash-for-android:
   append-system-dns: false
@@ -76,7 +77,7 @@ dns:
     - "https://dns.google/dns-query#PROXY"
   fallback-filter:
     geoip: false
-    geoip-code: CN
+    # geoip-code: CN
     ipcidr:
       - 0.0.0.0/8
       - 10.0.0.0/8
@@ -126,9 +127,10 @@ rules:
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
-  # - DOMAIN-KEYWORD,pendo.io,DIRECT #! 病毒网站
+  - DOMAIN-KEYWORD,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
+  - IP-CIDR6,2620:1ec:c11::239/32,DIRECT,no-resolve # edge 发神经
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
@@ -142,19 +144,19 @@ rules:
   - SUB-RULE,(DOMAIN-SUFFIX,googleapis.com),PROXY-noUDP
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
-  - GEOSITE,cn,DIRECT
-  - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,microsoft@cn,DIRECT
-  - GEOSITE,google@cn,DIRECT
-  - GEOSITE,win-update,DIRECT
+  - RULE-SET,cn,DIRECT
+  - RULE-SET,steam@cn,DIRECT
+  - RULE-SET,microsoft@cn,DIRECT
+  - RULE-SET,google@cn,DIRECT
+  - RULE-SET,win-update,DIRECT
   # 直连-IP集
   - DST-PORT,7680,DIRECT # win优化传递
-  - GEOIP,private,DIRECT,no-resolve # 内网
-  - GEOIP,cn,DIRECT,no-resolve
+  - RULE-SET,private,DIRECT,no-resolve # 内网
+  - RULE-SET,cnip,DIRECT,no-resolve
   ## 拒绝使用 QUIC 访问网页
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   # 代理-IP集
-  - GEOIP,telegram,PROXY,no-resolve
+  - RULE-SET,telegram,PROXY,no-resolve
   # 未匹配到-代理
   - MATCH,PROXY
   #
@@ -191,6 +193,63 @@ rule-providers:
     behavior: domain
     interval: 85000
     proxy: DIRECT
+  cn:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+  steam@cn:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+  microsoft@cn:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+  google@cn:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+  win-update:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+
+  private:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.mrs
+    format: mrs
+    behavior: ipcidr
+    interval: 85000
+    proxy: DIRECT
+  cnip:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.mrs
+    format: mrs
+    behavior: ipcidr
+    interval: 85000
+    proxy: DIRECT
+  telegram:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/telegram.mrs
+    format: mrs
+    behavior: ipcidr
+    interval: 85000
+    proxy: DIRECT
 
   # Ad:
   #   type: http
@@ -210,6 +269,22 @@ sniffer:
     - +.nflxvideo.net
     - +.amazonaws.com
     - +.media.dssott.com
+  skip-dst-address: # 跳过目标地址
+    # Telegram
+    - 91.108.56.0/22
+    - 91.108.4.0/22
+    - 91.108.8.0/22
+    - 91.108.16.0/22
+    - 91.108.12.0/22
+    - 149.154.160.0/20
+    - 91.105.192.0/23
+    - 91.108.20.0/22
+    - 185.76.151.0/24
+    - 2001:b28:f23d::/48
+    - 2001:b28:f23f::/48
+    - 2001:67c:4e8::/48
+    - 2001:b28:f23c::/48
+    - 2a0a:f280::/32
   skip-domain:
     - "+.apple.com"
     - "+.io.mi.com"
