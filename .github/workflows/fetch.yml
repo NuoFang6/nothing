@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # 表达式生成 https://crontab.guru/
-    - cron: "0 22 * * *" #北京时间上午9点
+    - cron: "0 22 * * *" #北京时间上午6点
     - cron: "0 7 * * *" #北京时间下午3点
   push:
     paths:
