@@ -1,6 +1,6 @@
 mode: rule
 log-level: warning
-ipv6: true
+ipv6: false
 allow-lan: false
 inbound-tfo: true
 inbound-mptcp: true
@@ -42,7 +42,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
   endpoint-independent-nat: false
-  strict-route: false # 可能有bug
+  strict-route: true # 可能有bug
   dns-hijack:
     - any:53
 
@@ -130,7 +130,8 @@ rules:
   - DOMAIN-KEYWORD,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
-  - IP-CIDR6,2620:1ec:c11::239/32,DIRECT,no-resolve # edge 发神经
+  - RULE-SET,DoH,REJECT
+  - IP-CIDR6,2620:1ec:c11::239/128,REJECT,no-resolve # edge 发神经
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
@@ -144,15 +145,10 @@ rules:
   - SUB-RULE,(DOMAIN-SUFFIX,googleapis.com),PROXY-noUDP
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
-  - RULE-SET,cn,DIRECT
-  - RULE-SET,steam@cn,DIRECT
-  - RULE-SET,microsoft@cn,DIRECT
-  - RULE-SET,google@cn,DIRECT
-  - RULE-SET,win-update,DIRECT
+  - RULE-SET,cn,DIRECT # 包含 cn、steam@cn、microsoft@cn、google@cn、win-update
   # 直连-IP集
   - DST-PORT,7680,DIRECT # win优化传递
-  - RULE-SET,private,DIRECT,no-resolve # 内网
-  - RULE-SET,cnip,DIRECT,no-resolve
+  - RULE-SET,cnIP,DIRECT,no-resolve # 包含内网
   ## 拒绝使用 QUIC 访问网页
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
   # 代理-IP集
@@ -188,57 +184,28 @@ sub-rules:
 rule-providers:
   Ad:
     type: http
-    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/ads.mrs
+    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/ad.mrs
+    format: mrs
+    behavior: domain
+    interval: 85000
+    proxy: DIRECT
+  DoH:
+    type: http
+    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/DoHdomains.mrs
     format: mrs
     behavior: domain
     interval: 85000
     proxy: DIRECT
   cn:
     type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.mrs
+    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/cn.mrs
     format: mrs
     behavior: domain
     interval: 85000
     proxy: DIRECT
-  steam@cn:
+  cnIP:
     type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.mrs
-    format: mrs
-    behavior: domain
-    interval: 85000
-    proxy: DIRECT
-  microsoft@cn:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.mrs
-    format: mrs
-    behavior: domain
-    interval: 85000
-    proxy: DIRECT
-  google@cn:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.mrs
-    format: mrs
-    behavior: domain
-    interval: 85000
-    proxy: DIRECT
-  win-update:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.mrs
-    format: mrs
-    behavior: domain
-    interval: 85000
-    proxy: DIRECT
-
-  private:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.mrs
-    format: mrs
-    behavior: ipcidr
-    interval: 85000
-    proxy: DIRECT
-  cnip:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.mrs
+    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/cnIP.mrs
     format: mrs
     behavior: ipcidr
     interval: 85000

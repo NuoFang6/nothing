@@ -33,7 +33,7 @@ cat ad | awk '!seen[$0]++' | sed "/^$/d" >ad.yaml
 # 移动覆盖结果至仓库
 mv -f ad.yaml ad.mrs ../nothing/mrs/
 
-# ** doh.mrs **
+# ** DoHdomains.mrs **
 wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-onlydomains.txt |
     sed "/^#/d; /^$/d;" |
     sed "s/^/+./" >>DoHdomains.text
