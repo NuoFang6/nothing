@@ -1,6 +1,6 @@
 mode: rule
 log-level: warning
-ipv6: false
+ipv6: true
 allow-lan: false
 inbound-tfo: true
 inbound-mptcp: true
@@ -54,7 +54,7 @@ hosts:
 
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
@@ -130,7 +130,8 @@ rules:
   - DOMAIN-KEYWORD,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
-  - RULE-SET,DoH,REJECT
+  # - RULE-SET,DoH,REJECT
+  # - RULE-SET,tif,REJECT
   - IP-CIDR6,2620:1ec:c11::239/128,REJECT,no-resolve # edge 发神经
   # 特殊APP
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
@@ -189,13 +190,6 @@ rule-providers:
     behavior: domain
     interval: 85000
     proxy: DIRECT
-  DoH:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/DoHdomains.mrs
-    format: mrs
-    behavior: domain
-    interval: 85000
-    proxy: DIRECT
   cn:
     type: http
     url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/cn.mrs
@@ -218,14 +212,20 @@ rule-providers:
     interval: 85000
     proxy: DIRECT
 
-  # Ad:
+  # DoH:
   #   type: http
-  #   url: https://mirror.ghproxy.com/https://github.com/TG-Twilight/AWAvenue-Ads-Rule/raw/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
-  #   format: yaml
+  #   url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/DoHdomains.mrs
+  #   format: mrs
   #   behavior: domain
-  #   interval: 86400
+  #   interval: 85000
   #   proxy: DIRECT
-
+  # tif:
+  #   type: http
+  #   url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/tif.mrs
+  #   format: mrs
+  #   behavior: domain
+  #   interval: 85000
+  #   proxy: DIRECT
 sniffer:
   enable: true
   parse-pure-ip: true
