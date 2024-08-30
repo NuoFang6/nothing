@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # 表达式生成 https://crontab.guru/
-    - cron: "0 1 * * *" #北京时间上午9点
+    - cron: "0 0 * * *" #北京时间上午8点
   push:
     paths:
       - ".github/workflows/mrs.yml"
@@ -16,45 +16,9 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 下载并升级
+      - name: 运行脚本
         run: |
-          cd ..
-          mkdir tmp
-          cd tmp
-
-          wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
-          gunzip mihomo.gz
-          chmod +x mihomo
-
-          wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml | \
-          sed '/^#/d; /^$/d;' | \
-          sed -e '$a\' > antiad
-          #去除注释和空行
-          #保证结尾有换行符
-
-          wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt | \
-          sed "/^#/d; /^$/d;" | \
-          sed "s/^/  - '/; s/$/'/" | \
-          sed -e '$a\' > adrules
-          #转为yaml格式
-
-          wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt | \
-          sed "/^#/d; /^$/d;" | \
-          sed "s/^/  - '+./; s/$/'/" > hagezi
-          #转为yaml格式,添加 +.
-
-          cat antiad adrules hagezi | awk '!seen[$0]++' | sed "/^$/d" > ads.yaml
-          #合并并去重
-
-          ./mihomo convert-ruleset domain yaml ads.yaml ads.mrs
-
-          mv -f antiad adrules hagezi ads.yaml ads.mrs ../nothing/mrs/
-          cd ../nothing/
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git pull origin main
-          git add ./mrs/*
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则" || true
+          sh ./mrs/start.sh
 
       - name: 推送更改
         uses: ad-m/github-push-action@master
