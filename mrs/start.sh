@@ -1,6 +1,8 @@
 cd ..
 mkdir tmp && cd tmp
 
+# 修改时区
+sudo timedatectl set-timezone 'Asia/Shanghai'
 # 下载最新 mihomo
 wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
 gunzip mihomo.gz
