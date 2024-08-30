@@ -36,18 +36,16 @@ mv -f ad.yaml ad.mrs ../nothing/mrs/
 # ** doh.mrs **
 wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-onlydomains.txt |
     sed "/^#/d; /^$/d;" |
-    sed "s/^/  - '+./; s/$/'/" |
-    sed '1s/^/payload:\n/' >>DoHdomains.yaml
-./mihomo convert-ruleset domain yaml DoHdomains.yaml DoHdomains.mrs
-mv -f DoHdomains.yaml DoHdomains.mrs ../nothing/mrs/
+    sed "s/^/+./" >>DoHdomains.text
+./mihomo convert-ruleset domain text DoHdomains.text DoHdomains.mrs
+mv -f DoHdomains.text DoHdomains.mrs ../nothing/mrs/
 
 # ** tif.mrs **
 wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt |
     sed "/^#/d; /^$/d;" |
-    sed "s/^/  - '+./; s/$/'/" |
-    sed '1s/^/payload:\n/' >>tif.yaml
-./mihomo convert-ruleset domain yaml tif.yaml tif.mrs
-mv -f tif.yaml tif.mrs ../nothing/mrs/
+    sed "s/^/+./" >>tif.text
+./mihomo convert-ruleset domain text tif.text tif.mrs
+mv -f tif.text tif.mrs ../nothing/mrs/
 
 # ** cn.mrs **
 for url in \
