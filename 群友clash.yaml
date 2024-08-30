@@ -384,6 +384,7 @@ proxy-providers:
   LanCloud:
     url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
     <<: *providerSet
+    proxy: PROXY
     override:
       skip-cert-verify: true
       tfo: true
