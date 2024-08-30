@@ -381,15 +381,15 @@ proxy-providers:
       ip-version: dual
       udp: true
 
-  # LanCloud:
-  #   url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
-  #   <<: *providerSet
-  #   override:
-  #     skip-cert-verify: true
-  #     tfo: true
-  #     mptcp: true
-  #     ip-version: dual
-  #     udp: true
+  LanCloud:
+    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+    <<: *providerSet
+    override:
+      skip-cert-verify: true
+      tfo: true
+      mptcp: true
+      ip-version: dual
+      udp: true
 
 proxy-groups:
   - name: PROXY
@@ -426,6 +426,7 @@ proxy-groups:
     use:
       - 散线
       - nekocandy
+      - LanCloud
     <<: *groupsSet
 
   - name: 🚀自动-全部
