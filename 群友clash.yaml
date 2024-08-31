@@ -119,9 +119,9 @@ rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
   # 静默丢弃，防止一直循环拒绝
-  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
-  - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
-  - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
+  # - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
+  # - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
+  # - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
   - SUB-RULE,(DOMAIN-REGEX,(chatgpt|openai|sentry-cdn)),PROXY-noUDP # ChatGPT 可能卡住，sentry-cdn为误屏蔽
   - DOMAIN-KEYWORD,packetlosstest,PROXY # UDP 测试网站
