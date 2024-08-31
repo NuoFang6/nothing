@@ -132,7 +132,7 @@ rules:
   - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
   # 拒绝广告
   - RULE-SET,Ad,REJECT
-  - DST-PORT,853,REJECT # 阻止 DNS 绕过
+  - DST-PORT,853,REJECT # 阻止 DoT-DNS 绕过，53端口已被 dns-hijack 处理
   # - OR,((DST-PORT,53),(DST-PORT,853)),REJECT # 阻止 DNS 绕过
   # - RULE-SET,DoH,REJECT # 防止 DoH DNS 绕过
   # - RULE-SET,tif,REJECT # 威胁网址拦截
