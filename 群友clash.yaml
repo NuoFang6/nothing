@@ -118,18 +118,17 @@ rules:
   # bug缓解，分流部分情况泄露的DNS
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  # 丢弃
+  # 静默丢弃，防止一直循环拒绝
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,REJECT-DROP
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
-  - SUB-RULE,(DOMAIN-KEYWORD,chatgpt),PROXY-noUDP # ChatGPT 卡住
-  - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
+  - SUB-RULE,(DOMAIN-REGEX,(chatgpt|openai|sentry-cdn)),PROXY-noUDP # ChatGPT 可能卡住，sentry-cdn为误屏蔽
   - DOMAIN-KEYWORD,packetlosstest,PROXY # UDP 测试网站
   - DOMAIN-SUFFIX,speed.cloudflare.com,PROXY # cloudflare 测速
-  - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
+  - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   - DST-PORT,853,REJECT # 阻止 DoT-DNS 绕过，53端口已被 dns-hijack 处理
@@ -239,7 +238,7 @@ sniffer:
     - +.amazonaws.com
     - +.media.dssott.com
   skip-dst-address: # 跳过目标地址
-    # Telegram
+    # Telegram 纯IP
     - 91.108.56.0/22
     - 91.108.4.0/22
     - 91.108.8.0/22
