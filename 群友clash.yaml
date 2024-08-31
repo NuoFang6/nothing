@@ -125,6 +125,8 @@ rules:
   # 不屏蔽广告
   - SUB-RULE,(DOMAIN-KEYWORD,chatgpt),PROXY-noUDP # ChatGPT 卡住
   - SUB-RULE,(DOMAIN-KEYWORD,sentry-cdn),PROXY-noUDP # 误屏蔽
+  - DOMAIN-KEYWORD,packetlosstest,PROXY # UDP 测试网站
+  - DOMAIN-SUFFIX,speed.cloudflare.com,PROXY # cloudflare 测速
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
@@ -348,7 +350,7 @@ proxy-providers:
       tfo: true
       mptcp: true
       ip-version: dual
-      udp: false
+      udp: true
 
   散线:
     url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
@@ -414,7 +416,7 @@ proxy-groups:
     use:
       - CF-vless
     <<: *groupsSet
-    disable-udp: true
+    disable-udp: false
 
   - name: 📌手动-白嫖线路
     type: select
@@ -440,7 +442,7 @@ proxy-groups:
     use:
       - CF-vless
     <<: *groupsSet
-    disable-udp: true
+    disable-udp: false
 
   - name: 🚀自动-白嫖线路
     type: url-test
