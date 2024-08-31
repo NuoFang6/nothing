@@ -166,7 +166,6 @@ rules:
   # - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
   # - RULE-SET,AdRules,REJECT
   # - DOMAIN-REGEX,(tailscale|visualstudio),PROXY
-  # - DOMAIN-REGEX,^.*\.(lmsys\.org|jsdelivr\.net)$,PROXY
   # - NETWORK,UDP,REJECT
 
 sub-rules:
