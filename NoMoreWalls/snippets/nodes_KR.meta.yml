@@ -1,5 +1,5 @@
 proxies:
-- name: 1|KR_speednode_0140
+- name: 1|KR_speednode_0138
   network: ws
   password: CMLiu
   port: 16575
@@ -11,3 +11,27 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
+- name: 1|KR_speednode_0139
+  network: ws
+  port: 80
+  server: 52.79.235.86
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+- name: 1|KR_speednode_0140
+  network: ws
+  port: 80
+  server: 144.24.85.158
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048

@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 1|DE_speednode_0070
+  name: 1|DE_speednode_0058
   network: ws
   port: 443
   server: 188.244.122.58
@@ -12,7 +12,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /
-- name: 1|DE_speednode_0071
+- name: 1|DE_speednode_0059
   network: ws
   port: 2096
   server: 45.80.111.38
@@ -26,3 +26,39 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
+- name: 1|DE_speednode_0060
+  network: ws
+  port: 80
+  server: 130.162.61.18
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+- name: 1|DE_speednode_0061
+  network: ws
+  port: 80
+  server: 52.29.224.33
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+- name: 1|DE_speednode_0062
+  network: ws
+  port: 80
+  server: 8.209.119.190
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
