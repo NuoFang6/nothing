@@ -62,6 +62,7 @@ dns:
   prefer-h3: true
   cache-algorithm: arc
   enhanced-mode: fake-ip
+  fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - "quic://223.5.5.5#DIRECT"
