@@ -119,14 +119,14 @@ rules:
   # bug缓解，分流部分情况泄露的DNS
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
-  # 静默丢弃，防止一直循环拒绝
+  # 一直循环请求
+  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
   # - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
   # - DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT-DROP
   # 不屏蔽广告
   - SUB-RULE,(DOMAIN-REGEX,(chatgpt|openai|sentry-cdn)),PROXY-noUDP # ChatGPT 可能卡住，sentry-cdn为误屏蔽
   - DOMAIN-KEYWORD,packetlosstest,PROXY # UDP 测试网站
   - DOMAIN-SUFFIX,speed.cloudflare.com,PROXY # cloudflare 测速
-  - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
