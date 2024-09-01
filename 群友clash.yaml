@@ -6,8 +6,9 @@ inbound-tfo: true
 inbound-mptcp: true
 find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
-keep-alive-idle: 15
+keep-alive-idle: 45
 keep-alive-interval: 15
+# 链接闲置后 45+15*9=180= 3 分钟关闭无效长链接
 global-client-fingerprint: chrome
 global-ua: "clash.meta/mihomo"
 tcp-concurrent: true
