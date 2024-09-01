@@ -1,1 +1,15 @@
-proxies: []
+proxies:
+- name: 1|TW_speednode_0174
+  network: ws
+  port: 12832
+  server: 60.248.63.88
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
