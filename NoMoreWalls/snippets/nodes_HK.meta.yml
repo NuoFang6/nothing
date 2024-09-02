@@ -1,19 +1,6 @@
 proxies:
-- client-fingerprint: chrome
-  name: 1|HK_speednode_0122
-  network: ws
-  port: 35002
-  server: 58.176.229.127
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
 - client-fingerprint: randomized
-  name: 1|HK_speednode_0123
+  name: 1|HK_speednode_0081
   network: ws
   port: 443
   server: 58.176.95.46
@@ -26,7 +13,7 @@ proxies:
       Host: dns68.putata.eu.org
     path: /?ed=2048
 - client-fingerprint: randomized
-  name: 1|HK_speednode_0124
+  name: 1|HK_speednode_0082
   network: ws
   port: 35002
   server: 58.176.229.127
@@ -40,47 +27,7 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
-- client-fingerprint: chrome
-  name: 1|HK_speednode_0125
-  network: ws
-  port: 35002
-  server: 58.176.229.127
-  servername: dns68.putata.eu.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048fp=randomized
-- client-fingerprint: randomized
-  name: 1|HK_speednode_0126
-  network: ws
-  packet-encoding: ''
-  port: 28717
-  server: 119.247.186.144
-  servername: dns68.putata.eu.org
-  tls: true
-  type: vless
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 1|HK_speednode_0127
-  network: ws
-  port: 55509
-  server: 89.185.26.20
-  type: vmess
-  udp: true
-  uuid: e38d4f67-4ad5-418f-8bef-dfcbb889a45c
-  ws-opts:
-    path: /
-- name: 1|HK_speednode_0128
+- name: 1|HK_speednode_0083
   network: ws
   port: 81
   server: 203.198.16.117
@@ -94,19 +41,91 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-- name: 1|HK_speednode_0129
+- client-fingerprint: randomized
+  name: 1|HK_speednode_0084
   network: ws
-  port: 80
-  server: 47.57.233.126
+  packet-encoding: ''
+  port: 28717
+  server: 119.247.186.144
+  servername: dns68.putata.eu.org
+  tls: true
+  type: vless
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
+- name: 1|HK_speednode_0085
+  network: ws
+  port: 55407
+  server: 47.242.66.73
+  servername: a.ssll.gay
   skip-cert-verify: false
+  tls: true
   type: vless
   udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
-- name: 1|HK_speednode_0130
+    path: /?ed=2048
+- name: 1|HK_speednode_0086
+  network: ws
+  port: 28
+  server: 203.198.16.117
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0087
+  network: ws
+  port: 8003
+  server: 38.147.188.26
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0088
+  network: ws
+  port: 81
+  server: 203.198.16.117
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0089
+  network: ws
+  port: 13778
+  server: 35.220.217.64
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0090
   network: ws
   port: 36669
   server: 183.178.22.246
@@ -119,4 +138,46 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+    path: /?ed=2048
+- name: 1|HK_speednode_0091
+  network: ws
+  port: 32079
+  server: 119.28.189.227
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0092
+  network: ws
+  port: 11417
+  server: 183.178.22.246
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|HK_speednode_0093
+  network: ws
+  port: 17771
+  server: 185.155.235.146
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048

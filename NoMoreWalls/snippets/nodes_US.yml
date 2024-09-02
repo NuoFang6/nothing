@@ -1,43 +1,5 @@
 proxies:
-- name: 1|US_speednode_0181
-  network: ws
-  password: CMLiu
-  port: 34967
-  server: 154.17.20.7
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- name: 1|US_speednode_0184
-  network: ws
-  password: CMLiu
-  port: 50376
-  server: 154.17.25.7
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 1|US_speednode_0211
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: aliorg.filegear-sg.me
-    path: /?ed=2048
-- name: 1|US_speednode_0199
+- name: 1|US_speednode_0268
   network: ws
   password: CMLiu
   port: 443
@@ -50,7 +12,21 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /
-- name: 1|US_speednode_0213
+- client-fingerprint: chrome
+  name: 1|US_speednode_0290
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 43.153.80.208
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- name: 1|US_speednode_0282
   network: ws
   password: CMLiu
   port: 443
