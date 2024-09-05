@@ -1,36 +1,8 @@
 proxies:
-- name: 1|JP_speednode_0095
-  network: ws
-  port: 35515
-  server: 212.50.251.234
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 1|JP_speednode_0096
+- name: 1|JP_speednode_0071
   network: ws
   port: 8443
   server: 176.97.73.82
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 1|JP_speednode_0097
-  network: ws
-  port: 55092
-  server: 103.75.70.107
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
