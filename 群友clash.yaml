@@ -283,7 +283,7 @@ providerSet: &providerSet
     enable: true
     url: https://www.youtube.com/generate_204
     interval: 450
-    timeout: 1500
+    timeout: 5000
     lazy: true
     expected-status: 204
 
@@ -293,7 +293,7 @@ groupsSet: &groupsSet
   tfo: true
   mptcp: true
   interval: 450
-  timeout: 1500
+  timeout: 5000
   tolerance: 40
   expected-status: 204
   max-failed-times: 2
