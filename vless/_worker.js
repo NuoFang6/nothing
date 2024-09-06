@@ -1976,7 +1976,7 @@ function subAddresses(
 			let 伪装域名 = host;
 			let 最终路径 = "/?ed=2560";
 			let 节点备注 = "";
-			let ALPN = "h3,h2,http/1.1";
+			let ALPN = "h2,http/1.1";
 
 			if (
 				proxyhosts.length > 0 &&
