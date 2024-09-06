@@ -458,6 +458,7 @@ proxy-groups:
   - name: 🚀自动-白嫖线路
     type: url-test
     use:
+      - 散线
       - 白嫖线路
       - nekocandy
       - LanCloud
