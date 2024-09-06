@@ -1,5 +1,19 @@
 proxies:
-- name: 1|TW_speednode_0174
+- name: 1|TW_speednode_0128
+  network: ws
+  port: 13749
+  server: 1.34.89.47
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 1|TW_speednode_0129
   network: ws
   port: 12832
   server: 60.248.63.88
@@ -12,4 +26,18 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
+    path: /?ed=2048
+- name: 1|TW_speednode_0130
+  network: ws
+  port: 12071
+  server: 123.241.137.138
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048

@@ -1,35 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0067
-  network: ws
-  port: 80
-  server: 45.80.110.173
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodesfp=chrome
-- name: 1|EE_speednode_0064
-  network: ws
-  port: 80
-  server: 45.80.110.41
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodesfp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0070
+  name: 1|EE_speednode_0022
   network: ws
   port: 80
   server: 45.80.110.173
@@ -45,10 +16,10 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0075
+  name: 1|EE_speednode_0021
   network: ws
   port: 80
-  server: 45.80.110.175
+  server: 45.80.110.173
   servername: a.ssll.gay
   skip-cert-verify: false
   tfo: false
@@ -61,79 +32,7 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodesfp=chrome
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0083
-  network: ws
-  port: 80
-  server: 45.80.110.201
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodesfp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0069
-  network: ws
-  port: 80
-  server: 45.80.110.238
-  servername: a.ssll.gay
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- name: 1|EE_speednode_0071
-  network: ws
-  port: 80
-  server: 45.80.110.245
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0072
-  network: ws
-  port: 80
-  server: 45.80.110.161
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodesfp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0077
-  network: ws
-  port: 80
-  server: 45.80.110.130
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0086
+  name: 1|EE_speednode_0024
   network: ws
   port: 80
   server: 45.80.110.231
@@ -149,39 +48,7 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0082
-  network: ws
-  port: 80
-  server: 45.80.110.13
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0080
-  network: ws
-  port: 80
-  server: 45.80.110.209
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0091
+  name: 1|EE_speednode_0026
   network: ws
   port: 80
   server: 45.80.110.201
@@ -197,25 +64,87 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0084
+  name: 1|EE_speednode_0028
   network: ws
-  port: 8443
+  port: 80
+  server: 45.80.110.201
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodesfp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0031
+  network: ws
+  port: 80
+  server: 45.80.110.175
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodesfp=chrome
+- name: 1|EE_speednode_0030
+  network: ws
+  port: 80
+  server: 45.80.110.13
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodes
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0032
+  network: ws
+  port: 80
+  server: 45.80.110.161
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodesfp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0035
+  network: ws
+  port: 80
+  server: 45.80.110.209
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodes
+- name: 1|EE_speednode_0034
+  network: ws
+  port: 80
   server: 45.80.110.245
   servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitter苏小柠security
-- name: 1|EE_speednode_0085
-  network: ws
-  port: 8443
-  server: 45.80.110.203
-  servername: a.ssll.gay
   skip-cert-verify: false
-  tls: true
   type: vless
   udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -223,13 +152,28 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodes
-- name: 1|EE_speednode_0087
+- name: 1|EE_speednode_0036
   network: ws
-  port: 443
-  server: 45.80.110.8
+  port: 80
+  server: 45.80.110.41
   servername: a.ssll.gay
   skip-cert-verify: false
-  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodesfp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0038
+  network: ws
+  port: 80
+  server: 45.80.110.130
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vless
   udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -238,20 +182,38 @@ proxies:
       Host: a.ssll.gay
     path: Twitterfreecodes
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0088
+  name: 1|EE_speednode_0039
   network: ws
-  port: 2083
-  server: 45.80.110.5
+  port: 2087
+  server: 45.80.110.230
   servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: /
+    path: twitterfreecodesfp=chromefp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0089
+  name: 1|EE_speednode_0044
+  network: ws
+  port: 2087
+  server: 45.80.110.230
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: twitterfreecodesfp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0041
   network: ws
   port: 8443
   server: 45.80.110.2
@@ -266,7 +228,64 @@ proxies:
       Host: a.ssll.gay
     path: twitter懈袥袩械∞袩卸携†fp=chrome
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0090
+  name: 1|EE_speednode_0042
+  network: ws
+  port: 2083
+  server: 45.80.110.5
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /
+- name: 1|EE_speednode_0043
+  network: ws
+  port: 8443
+  server: 45.80.110.203
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodes
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0045
+  network: ws
+  port: 2087
+  server: 45.80.110.133
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: twitterfreecodesfp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0046
+  network: ws
+  port: 2087
+  server: 45.80.110.133
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: twitterfreecodesfp=chromefp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0047
   network: ws
   port: 2087
   server: 45.80.110.252
@@ -279,51 +298,59 @@ proxies:
       Host: a.ssll.gay
     path: /
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0100
+  name: 1|EE_speednode_0048
   network: ws
-  port: 2087
-  server: 45.80.110.230
+  port: 2083
+  server: 45.80.110.161
   servername: a.ssll.gay
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodesfp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0093
+  name: 1|EE_speednode_0049
   network: ws
   port: 2087
-  server: 45.80.110.215
+  server: 45.80.110.241
   servername: a.ssll.gay
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chromefp=chrome
-- name: 1|EE_speednode_0094
+    path: twitterfreecodessecurity
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0050
   network: ws
-  port: 2053
-  server: 45.80.110.223
+  port: 8443
+  server: 45.80.110.13
   servername: a.ssll.gay
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: twitterfreecodes
+- name: 1|EE_speednode_0051
+  network: ws
+  port: 2053
+  server: 45.80.110.200
+  servername: a.ssll.gay
+  tls: true
+  type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodes
-- name: 1|EE_speednode_0095
+- name: 1|EE_speednode_0052
   network: ws
   port: 8443
   server: 45.80.110.212
@@ -338,135 +365,7 @@ proxies:
       Host: a.ssll.gay
     path: twitterfreecodes
 - client-fingerprint: chrome
-  name: 1|EE_speednode_0096
-  network: ws
-  port: 2087
-  server: 45.80.110.241
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodessecurity
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0097
-  network: ws
-  port: 2087
-  server: 45.80.110.230
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0098
-  network: ws
-  port: 2083
-  server: 45.80.110.161
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chrome
-- name: 1|EE_speednode_0099
-  network: ws
-  port: 2053
-  server: 45.80.110.200
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0101
-  network: ws
-  port: 2087
-  server: 45.80.110.133
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0102
-  network: ws
-  port: 8443
-  server: 45.80.110.13
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0103
-  network: ws
-  port: 2053
-  server: 45.80.110.211
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0104
-  network: ws
-  port: 2087
-  server: 45.80.110.133
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0105
-  network: ws
-  port: 2053
-  server: 45.80.110.211
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 1|EE_speednode_0106
+  name: 1|EE_speednode_0053
   network: ws
   port: 2087
   server: 45.80.110.130
@@ -478,11 +377,11 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: twitterfreecodessecurity
-- client-fingerprint: randomized
-  name: 1|EE_speednode_0107
+- client-fingerprint: chrome
+  name: 1|EE_speednode_0054
   network: ws
-  port: 2053
-  server: 45.80.110.207
+  port: 2087
+  server: 45.80.110.215
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -492,4 +391,18 @@ proxies:
   ws-opts:
     headers:
       Host: a.ssll.gay
-    path: twitterfreecodesfp=chromefp=chrome
+    path: twitterfreecodesfp=chromefp=chromefp=chrome
+- name: 1|EE_speednode_0055
+  network: ws
+  port: 2053
+  server: 45.80.110.223
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Twitterfreecodes
