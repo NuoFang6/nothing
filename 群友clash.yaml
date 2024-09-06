@@ -372,6 +372,16 @@ proxy-providers:
       ip-version: dual
       udp: true
 
+  freecloud:
+    url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
+    <<: *providerSet
+    override:
+      skip-cert-verify: true
+      tfo: true
+      mptcp: true
+      ip-version: dual
+      udp: true
+
   nekocandy:
     url: "https://nekocandy.pages.dev/sub"
     <<: *providerSet
@@ -422,14 +432,15 @@ proxy-groups:
     type: select
     use:
       - 白嫖线路
+      - nekocandy
+      - LanCloud
+      - freecloud
     <<: *groupsSet
 
   - name: 📌手动-散线
     type: select
     use:
       - 散线
-      - nekocandy
-      - LanCloud
     <<: *groupsSet
 
   - name: 🚀自动-全部
@@ -448,6 +459,9 @@ proxy-groups:
     type: url-test
     use:
       - 白嫖线路
+      - nekocandy
+      - LanCloud
+      - freecloud
     <<: *groupsSet
 
   - name: 👆请不要分享订阅！
