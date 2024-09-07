@@ -1,57 +1,55 @@
 mode: rule
-log-level: warning
 ipv6: true
 allow-lan: false
-inbound-tfo: true
-inbound-mptcp: true
+log-level: warning
 find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
-keep-alive-idle: 45
+keep-alive-idle: 465 # 链接闲置后 465+15*9= 10 分钟关闭无效长链接
 keep-alive-interval: 15
-# 链接闲置后 45+15*9=180= 3 分钟关闭无效长链接
-global-client-fingerprint: chrome
-global-ua: "clash.meta/mihomo"
-tcp-concurrent: true
-unified-delay: true
-# external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器，该URL不会验证secret
 external-controller: 127.0.0.1:9090 # RESTful API 监听地址
 secret: "@NuoFang" # 外部控制器RESTful API访问密钥
-# WEB UI 目录，使用 http://127.0.0.1:9090/ui/xd 访问
-# external-ui: ./ui/
-# external-ui-name: xd
-# external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-
-# 已废弃
-geodata-mode: false
+global-client-fingerprint: chrome
+global-ua: "clash.meta/mihomo"
+#
+clash-for-android:
+  append-system-dns: false
+profile:
+  store-selected: true
+  store-fake-ip: true
+tcp-concurrent: true
+unified-delay: true
+inbound-tfo: true
+inbound-mptcp: true
+geodata-mode: false # 不再使用 geo 规则集
 geodata-loader: memconservative
 geosite-matcher: mph
 # geo-auto-update: true
 # geo-update-interval: 12
 # geox-url:
-#   geosite: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-#   geoip: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
-
-clash-for-android:
-  append-system-dns: false
-
-profile:
-  store-selected: true
-  store-fake-ip: true
+#   geosite: https://gh.nuofang.us.kg/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+#   geoip: https://gh.nuofang.us.kg/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+# external-doh-server: /dns-query # 在RESTful API端口上开启DOH服务器，该URL不会验证secret
+# external-ui: ./ui/ # WEB UI 目录，使用 http://127.0.0.1:9090/ui/xd 访问
+# external-ui-name: xd
+# external-ui-url: "https://gh.nuofang.us.kg/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 tun:
   stack: system
+  strict-route: true # 可能有bug
   auto-route: true
   auto-detect-interface: true
   endpoint-independent-nat: false
-  strict-route: true # 可能有bug
   dns-hijack:
     - any:53
 
 hosts:
-  time.windows.com: ntp.tencent.com
-  time.nist.gov: ntp.tencent.com
-  pool.ntp.org: ntp.tencent.com
-  time.android.com: ntp.tencent.com
+  # cf域名优选
+  "+.nuofang.us.kg": "cf.090227.xyz"
+  #
+  "time.windows.com": "ntp.tencent.com"
+  "time.nist.gov": "ntp.tencent.com"
+  "pool.ntp.org": "ntp.tencent.com"
+  "time.android.com": "ntp.tencent.com"
 
 dns:
   enable: true
@@ -72,10 +70,10 @@ dns:
     - "https://223.6.6.6/dns-query#h3=true"
   nameserver:
     - "quic://223.5.5.5#DIRECT"
-    - "quic://223.6.6.6#DIRECT"
-    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
+    - "https://223.5.5.5/dns-query#DIRECT&h3=true"
   fallback:
     - "https://dns.google/dns-query#PROXY"
+    # - "https://cf.090227.xyz/dns-query#DIRECT&h3=true" # 国内优化过的cf dns
   fallback-filter:
     geoip: false
     # geoip-code: CN
@@ -120,6 +118,8 @@ rules:
   # bug缓解，分流部分情况泄露的DNS
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  # 已三网优化的cf域名
+  - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
   # 一直循环请求
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
   # - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
@@ -147,7 +147,7 @@ rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google 应用下载，需和 googleapis 同时分流
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google 国内应用下载，未推广
   # 黑名单-代理
-  - SUB-RULE,(DOMAIN-REGEX,(gstatic|googleapis|ghproxy|jsdelivr)),PROXY-noUDP
+  - SUB-RULE,(DOMAIN-REGEX,(gstatic|googleapis|jsdelivr|cloudflare)),PROXY-noUDP
   - DOMAIN-SUFFIX,test-ipv6.com,PROXY
   # 直连-域名集
   - RULE-SET,cn,DIRECT # 包含 cn、steam@cn、microsoft@cn、google@cn、win-update
@@ -160,14 +160,9 @@ rules:
   - RULE-SET,telegram,PROXY,no-resolve
   # 未匹配到-代理
   - MATCH,PROXY
-  #
-  # End
-  #
+
   # 备用
   # - PROCESS-NAME-REGEX,(mihomo|(?=.*clash)(?=.*meta)),DIRECT
-  # - RULE-SET,AdRules,REJECT
-  # - DOMAIN-REGEX,(tailscale|visualstudio),PROXY
-  # - NETWORK,UDP,REJECT
 
 sub-rules:
   app规则:
@@ -185,50 +180,38 @@ sub-rules:
     - NETWORK,UDP,REJECT
     - MATCH,PROXY
 
+ruleSet: &ruleSet
+  type: http
+  format: mrs
+  interval: 86400
+  proxy: DIRECT
+
 rule-providers:
   Ad:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/ad.mrs
-    format: mrs
     behavior: domain
-    interval: 85000
-    proxy: DIRECT
+    url: https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/mrs/ad.mrs
+    <<: *ruleSet
   cn:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/cn.mrs
-    format: mrs
     behavior: domain
-    interval: 85000
-    proxy: DIRECT
+    url: https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/mrs/cn.mrs
+    <<: *ruleSet
   cnIP:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/cnIP.mrs
-    format: mrs
     behavior: ipcidr
-    interval: 85000
-    proxy: DIRECT
+    url: https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/mrs/cnIP.mrs
+    <<: *ruleSet
   telegram:
-    type: http
-    url: https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/telegram.mrs
-    format: mrs
     behavior: ipcidr
-    interval: 85000
-    proxy: DIRECT
-
+    url: https://gh.nuofang.us.kg/https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/telegram.mrs
+    <<: *ruleSet
   # DoH:
-  #   type: http
-  #   url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/DoHdomains.mrs
-  #   format: mrs
   #   behavior: domain
-  #   interval: 85000
-  #   proxy: DIRECT
+  #   url: https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/mrs/DoHdomains.mrs
+  #   <<: *ruleSet
   # tif:
-  #   type: http
-  #   url: https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/mrs/tif.mrs
-  #   format: mrs
   #   behavior: domain
-  #   interval: 85000
-  #   proxy: DIRECT
+  #   url: https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/mrs/tif.mrs
+  #   <<: *ruleSet
+
 sniffer:
   enable: true
   parse-pure-ip: true
@@ -272,38 +255,129 @@ sniffer:
       override-destination: true
 
 # 锚点
+204Set: &204Set
+  url: "https://www.youtube.com/generate_204"
+  expected-status: 204
+  interval: 450
+  timeout: 3000
+  lazy: true
+
 providerSet: &providerSet
   type: http
-  interval: 85000
-  proxy: DIRECT
+  interval: 86400
   header:
     User-Agent:
       - "clash.meta/mihomo"
   health-check:
     enable: true
-    url: https://www.youtube.com/generate_204
-    interval: 450
-    timeout: 5000
-    lazy: true
-    expected-status: 204
+    <<: *204Set
+  filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
 
 groupsSet: &groupsSet
-  lazy: true
-  url: https://www.youtube.com/generate_204
   tfo: true
   mptcp: true
-  interval: 450
-  timeout: 5000
   tolerance: 40
-  expected-status: 204
   max-failed-times: 2
+  <<: *204Set
+
+overrideSet: &overrideSet
+  skip-cert-verify: true
+  ip-version: dual
 
 ###  通用配置结束  ###
 
+proxy-providers:
+  CF-vless:
+    url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
+    <<: *providerSet
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: false
+  白嫖线路:
+    url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
+    <<: *providerSet
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: true
+  freecloud:
+    url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
+    <<: *providerSet
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: true
+  nekocandy:
+    url: "https://nekocandy.pages.dev/sub"
+    <<: *providerSet
+    proxy: PROXY
+    override:
+      <<: *overrideSet
+      udp: true
+  LanCloud:
+    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+    <<: *providerSet
+    proxy: PROXY
+    override:
+      <<: *overrideSet
+      udp: true
+
+  散线:
+    url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
+    type: http
+    interval: 86400
+    header:
+      User-Agent:
+        - "clash.meta/mihomo"
+    health-check:
+      enable: true
+      <<: *204Set
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: true
+      up: "25 Mbps"
+      down: "100 Mbps"
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - 🚀自动选择
+      - ⚠️请不要分享订阅!
+    <<: *groupsSet
+    include-all: true
+
+  - name: "🚀自动选择"
+    type: url-test
+    <<: *groupsSet
+    include-all: true
+    hidden: true
+
+  - name: ⚠️请不要分享订阅!
+    type: select
+    proxies:
+      - 🚀自动选择
+    lazy: true
+    hidden: true
+
 proxies:
+  - name: "pac-hy2-1"
+    type: hysteria2
+    server: 207.90.239.157
+    port: 3400
+    ports: 20000-30000
+    hop-interval: 15
+    password: "dongtaiwang.com"
+    up: "25 Mbps"
+    down: "100 Mbps"
+    sni: www.bing.com
+    skip-cert-verify: true
+
   - name: "诺芳自建"
     type: vless
-    server: serv00.nuofang.filegear-sg.me
+    server: serv00.nuofang.us.kg
     port: 443
     uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
     lazy: true
@@ -316,7 +390,7 @@ proxies:
     tfo: true
     mptcp: true
     tls: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     client-fingerprint: chrome
     udp: true
     packet-encoding: xudp
@@ -340,149 +414,3 @@ proxies:
       padding: false
       brutal-opts:
         enabled: false
-
-proxy-providers:
-  CF-vless:
-    url: "https://cfp.nuofang.dns-dynamic.net/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
-    <<: *providerSet
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-
-  散线:
-    url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
-    <<: *providerSet
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-      up: "25 Mbps"
-      down: "100 Mbps"
-
-  白嫖线路:
-    url: "https://mirror.ghproxy.com/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
-    <<: *providerSet
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-
-  freecloud:
-    url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
-    <<: *providerSet
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-
-  nekocandy:
-    url: "https://nekocandy.pages.dev/sub"
-    <<: *providerSet
-    proxy: PROXY
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-
-  LanCloud:
-    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
-    <<: *providerSet
-    proxy: PROXY
-    override:
-      skip-cert-verify: true
-      tfo: true
-      mptcp: true
-      ip-version: dual
-      udp: true
-
-proxy-groups:
-  - name: PROXY
-    type: select
-    proxies:
-      - 🚀自动-全部
-      - 🚀自动-CF
-      - 🚀自动-白嫖线路
-      - 📌手动-CF
-      - 📌手动-白嫖线路
-      - 📌手动-散线
-      - 诺芳自建
-      - 手动需在对应分组挑选线路
-      - 👆请不要分享订阅！
-      # - LanCloud
-    <<: *groupsSet
-    disable-udp: false
-
-  - name: 📌手动-CF
-    type: select
-    use:
-      - CF-vless
-    <<: *groupsSet
-    disable-udp: false
-
-  - name: 📌手动-白嫖线路
-    type: select
-    use:
-      - 白嫖线路
-      - nekocandy
-      - LanCloud
-      - freecloud
-    <<: *groupsSet
-
-  - name: 📌手动-散线
-    type: select
-    use:
-      - 散线
-    <<: *groupsSet
-
-  - name: 🚀自动-全部
-    type: url-test
-    <<: *groupsSet
-    include-all: true
-
-  - name: 🚀自动-CF
-    type: url-test
-    use:
-      - CF-vless
-    <<: *groupsSet
-    disable-udp: false
-
-  - name: 🚀自动-白嫖线路
-    type: url-test
-    use:
-      - 散线
-      - 白嫖线路
-      - nekocandy
-      - LanCloud
-      - freecloud
-    <<: *groupsSet
-
-  - name: 👆请不要分享订阅！
-    type: select
-    proxies:
-      - REJECT
-    lazy: true
-    hidden: true
-
-  - name: 手动需在对应分组挑选线路
-    type: select
-    proxies:
-      - REJECT
-    lazy: true
-    hidden: true
-
-  # - name: LanCloud
-  #   type: select
-  #   use:
-  #     - LanCloud
-  #   <<: *groupsSet
