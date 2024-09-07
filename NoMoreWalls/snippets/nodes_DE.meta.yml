@@ -1,5 +1,129 @@
 proxies:
-- name: 1|DE_speednode_0015
+- name: 1|西班牙_马德里
+  network: ws
+  port: 443
+  server: 185.18.250.109
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2'
+- name: 1|库拉索岛_威廉斯塔德
+  network: ws
+  port: 443
+  server: 88.216.66.193
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- name: '1|库拉索岛_威廉斯塔德 #1'
+  network: ws
+  port: 443
+  server: 88.216.66.193
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- name: 1|德国_杜塞尔多夫
+  network: ws
+  port: 443
+  server: 181.214.1.190
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|西班牙_马德里 #1'
+  network: ws
+  port: 2053
+  server: 185.18.250.185
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- name: '1|西班牙_马德里 #2'
+  network: ws
+  port: 443
+  server: 185.18.250.52
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|德国_杜塞尔多夫 #1'
+  network: ws
+  port: 443
+  server: 181.214.1.227
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|德国_柏林
+  network: ws
+  port: 2087
+  server: 140.99.233.156
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|德国_兰河畔林堡
+  network: ws
+  port: 80
+  server: 162.19.228.119
+  tls: false
+  type: vless
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  ws-opts:
+    path: '%2Fhttp'
+- name: '1|德国_兰河畔林堡 #1'
+  network: ws
+  port: 80
+  server: 51.75.149.8
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: false
+  type: vless
+  uuid: 4034162a-f4f2-4bd9-bb11-70047ebe20cf
+  ws-opts:
+    path: '%2Fmyiust%2F%3Fed%3D2048'
+- name: '1|德国_兰河畔林堡 #2'
+  network: ws
+  port: 80
+  server: 51.75.149.8
+  tls: false
+  type: vless
+  uuid: 4034162a-f4f2-4bd9-bb11-70047ebe20cf
+  ws-opts:
+    path: '%2Fmyiust%2F%3Fed'
+- name: 2|DE_speednode_0015
   network: ws
   port: 2087
   server: 140.99.233.156
@@ -13,7 +137,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|DE_speednode_0016
+- name: 2|DE_speednode_0016
   network: ws
   port: 2096
   server: 45.80.111.38
@@ -28,7 +152,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|DE_speednode_0017
+  name: 2|DE_speednode_0017
   network: ws
   port: 443
   server: 188.244.122.58

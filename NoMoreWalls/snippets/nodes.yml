@@ -1306,11 +1306,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_91
+  name: '0,1|加拿大_蒙特利尔 #3'
   network: ws
-  port: 2086
+  port: '2086'
   server: fbi.gov
-  servername: ip1.1789034.xyz
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -1351,11 +1351,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_94
+  name: '0,1|加拿大_多伦多 #6'
   network: ws
-  port: 2086
+  port: '2086'
   server: ip.sb
-  servername: ip1.1789034.xyz
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -1381,11 +1381,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_96
+  name: '0,1|加拿大_多伦多 #8'
   network: ws
-  port: 2086
+  port: '2086'
   server: malaysia.com
-  servername: ip1.1789034.xyz
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -1396,11 +1396,11 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0|d*********g.com_97
+  name: '0,1|加拿大_多伦多 #10'
   network: ws
-  port: 2086
+  port: '2086'
   server: russia.com
-  servername: ip1.1789034.xyz
+  servername: ''
   tls: false
   type: vmess
   udp: true
@@ -1454,9 +1454,110 @@ proxies:
     headers:
       Host: ip1.1789034.xyz
     path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #2'
+  network: ws
+  port: '80'
+  server: russia.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 06d65689-a12a-467c-9ff8-0363fe90c0b4
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #4'
+  network: ws
+  port: '2086'
+  server: 104.19.46.33
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #5'
+  network: ws
+  port: '8880'
+  server: russia.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 06d65689-a12a-467c-9ff8-0363fe90c0b4
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #7'
+  network: ws
+  port: '2086'
+  server: 104.19.38.62
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip006.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #9'
+  network: ws
+  port: '80'
+  server: www.zula.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9
+  ws-opts:
+    headers:
+      Host: nlch.blueberrynetwork.store
+    path: /
+- name: 1|新加坡_新加坡
+  network: grpc
+  password: fQ84Q7A4dw
+  port: 443
+  server: 152.42.252.70
+  sni: ultra.vpnxhub.xyz
+  type: trojan
 - alterId: 64
   cipher: auto
-  name: 1|CN_speednode_0011
+  name: '1|中国_广州市 #1'
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '1|加拿大_多伦多 #11'
+  network: ws
+  port: '2052'
+  server: 104.19.59.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-opts:
+    headers:
+      Host: cdn3.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 64
+  cipher: auto
+  name: 2|CN_speednode_0011
   network: tcp
   port: 54882
   server: 183.236.48.163
@@ -1465,7 +1566,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 1|CN_speednode_0013
+  name: 2|CN_speednode_0013
   port: 52442
   server: 120.232.153.40
   skip-cert-verify: true
@@ -1473,7 +1574,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 1|US_speednode_0478
+- name: 2|US_speednode_0478
   network: ws
   password: CMLiu
   port: 443
@@ -1487,7 +1588,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /
 - client-fingerprint: chrome
-  name: 1|US_speednode_0494
+  name: 2|US_speednode_0494
   network: ws
   password: CMLiu
   port: 443
@@ -1502,7 +1603,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '2|d*********g.com_2 #1'
+  name: '3|d*********g.com_2 #1'
   network: tcp
   port: '443'
   server: 42.236.73.72
@@ -1512,7 +1613,7 @@ proxies:
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
 - alpn:
   - http%2F1.1
-  name: '2|d*********g.com_3 #1'
+  name: '3|d*********g.com_3 #1'
   network: tcp
   password: fuck
   port: 443

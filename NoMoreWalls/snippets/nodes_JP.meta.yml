@@ -1,1 +1,13 @@
-proxies: []
+proxies:
+- name: 1|日本_东京
+  network: ws
+  port: 443
+  server: 20.210.64.9
+  servername: zdfdf6.azurewebsites.net
+  tls: true
+  type: vless
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: zdfdf6.azurewebsites.net
+    path: '%2F'

@@ -1,5 +1,440 @@
 proxies:
-- name: 1|US_speednode_0456
+- name: 1|美国_紐約
+  network: ws
+  port: 443
+  server: 185.148.106.60
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 1,2|US_speednode_0467
+  network: ws
+  port: 443
+  server: 198.62.62.4
+  servername: page-us-qg0.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+  ws-opts:
+    headers:
+      Host: page-us-qg0.pages.dev
+    path: twitterfreecodes
+- name: 1|美国_聖荷西
+  network: ws
+  port: 443
+  server: 170.114.46.140
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|美国_旧金山
+  network: ws
+  port: 443
+  server: 205.233.181.92
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|美国_斯坦福
+  network: ws
+  port: 443
+  server: 155.46.213.32
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2security%3Dtls'
+- name: '1|美国_旧金山 #1'
+  network: ws
+  port: 443
+  server: 216.116.134.145
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_旧金山 #2'
+  network: ws
+  port: 443
+  server: 216.116.134.168
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2'
+- name: '1|美国_旧金山 #3'
+  network: ws
+  port: 443
+  server: 205.233.181.211
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2'
+- name: '1|美国_紐約 #1'
+  network: ws
+  port: 8443
+  server: 185.148.105.225
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- name: 1|美国_Eagan
+  network: ws
+  port: 443
+  server: 167.68.11.95
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_紐約 #2'
+  network: ws
+  port: 443
+  server: 185.148.105.209
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_旧金山 #4'
+  network: ws
+  port: 443
+  server: 205.233.181.242
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|美国_帕羅奧圖
+  network: ws
+  port: 443
+  server: 104.254.140.155
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- name: '1|美国_Eagan #1'
+  network: ws
+  port: 443
+  server: 167.68.11.100
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|美国_华盛顿特区
+  network: ws
+  port: 8443
+  server: 89.116.161.250
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2security%3Dtls'
+- name: 1|美国_贝尔蒙特
+  network: ws
+  port: 2083
+  server: 66.81.247.19
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: twitter%E8%8B%8F%E5%B0%8F%E6%9F%A0security%3Dtls
+- name: '1|美国_旧金山 #5'
+  network: ws
+  port: 443
+  server: 172.64.110.145
+  servername: mmdv2.pages.dev
+  tls: true
+  type: vless
+  uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+  ws-opts:
+    headers:
+      Host: mmdv2.pages.dev
+    path: '%2F'
+- name: 1|美国_紅木城
+  network: ws
+  port: 443
+  server: 199.181.197.78
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 1|美国_匹兹堡
+  network: ws
+  port: 443
+  server: 159.112.235.90
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2Fsecurity%3Dtls'
+- name: '1|美国_紅木城 #1'
+  network: ws
+  port: 443
+  server: 199.181.197.39
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- name: '1|美国_华盛顿特区 #1'
+  network: ws
+  port: 8443
+  server: 45.205.0.137
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F%3Fed'
+- name: '1|美国_紐約 #3'
+  network: ws
+  port: 2083
+  server: 216.205.52.109
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- name: '1|美国_匹兹堡 #1'
+  network: ws
+  port: 443
+  server: 159.112.235.90
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- name: '1|美国_华盛顿特区 #2'
+  network: ws
+  port: 443
+  server: 156.225.72.152
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_旧金山 #6'
+  network: ws
+  port: 443
+  server: 216.116.134.16
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_旧金山 #7'
+  network: ws
+  port: 443
+  server: 216.116.134.244
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_Eagan #2'
+  network: ws
+  port: 443
+  server: 167.68.11.106
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2security%3Dtls
+- name: '1|美国_Eagan #3'
+  network: ws
+  port: 443
+  server: 167.68.11.146
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_帕羅奧圖 #1'
+  network: ws
+  port: 443
+  server: 104.254.140.111
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_旧金山 #8'
+  network: ws
+  port: 443
+  server: 205.233.181.254
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2'
+- name: 1|美国_Reston
+  network: ws
+  port: 443
+  server: 108.165.216.167
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: '1|美国_Eagan #4'
+  network: ws
+  port: 443
+  server: 167.68.11.191
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2security%3Dtls
+- name: '1|美国_Eagan #5'
+  network: ws
+  port: 443
+  server: 167.68.11.247
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2security%3Dtls
+- name: '1|美国_帕羅奧圖 #2'
+  network: ws
+  port: 443
+  server: 147.185.161.149
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: '%2Ftg%40zdyz2'
+- name: '1|美国_Eagan #6'
+  network: ws
+  port: 443
+  server: 167.68.11.146
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2F'
+- name: '1|美国_斯坦福 #1'
+  network: ws
+  port: 443
+  server: 155.46.213.37
+  servername: cfed.tgzdyz2.top
+  tls: true
+  type: vless
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg%40zdyz2
+- name: 2|US_speednode_0456
   network: ws
   port: 80
   server: 34.36.183.121
@@ -11,7 +446,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0457
+- name: 2|US_speednode_0457
   network: ws
   port: 80
   server: 34.160.118.77
@@ -23,7 +458,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0458
+- name: 2|US_speednode_0458
   network: ws
   port: 8443
   server: 47.251.54.234
@@ -38,7 +473,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0459
+  name: 2|US_speednode_0459
   network: ws
   port: 443
   server: 69.84.182.102
@@ -52,7 +487,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0460
+- name: 2|US_speednode_0460
   network: ws
   port: 48301
   server: 141.11.148.196
@@ -66,7 +501,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0461
+- name: 2|US_speednode_0461
   network: ws
   port: 2083
   server: 216.205.52.109
@@ -79,7 +514,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 1|US_speednode_0462
+- name: 2|US_speednode_0462
   network: ws
   port: 2053
   server: 216.116.134.43
@@ -94,7 +529,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0464
+  name: 2|US_speednode_0464
   network: ws
   packet-encoding: ''
   port: 80
@@ -109,7 +544,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Twitterfreecodesfp=chrome
-- name: 1|US_speednode_0465
+- name: 2|US_speednode_0465
   network: ws
   port: 2096
   server: 14.102.228.210
@@ -123,7 +558,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 1|US_speednode_0466
+- name: 2|US_speednode_0466
   network: ws
   port: 8443
   server: cdn.idouyin.tk
@@ -138,22 +573,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0467
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: page-us-qg0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
-  ws-opts:
-    headers:
-      Host: page-us-qg0.pages.dev
-    path: twitterfreecodes
-- client-fingerprint: chrome
-  name: 1|US_speednode_0468
+  name: 2|US_speednode_0468
   network: ws
   port: 443
   server: 155.46.213.37
@@ -166,7 +586,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|US_speednode_0469
+  name: 2|US_speednode_0469
   network: ws
   port: 443
   server: 155.46.213.32
@@ -178,7 +598,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
-- name: 1|US_speednode_0478
+- name: 2|US_speednode_0478
   network: ws
   password: CMLiu
   port: 443
@@ -192,7 +612,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /
 - client-fingerprint: chrome
-  name: 1|US_speednode_0471
+  name: 2|US_speednode_0471
   network: ws
   port: 443
   server: 45.159.218.76
@@ -205,7 +625,7 @@ proxies:
       Host: mmdv2.pages.dev
     path: /?ed
 - client-fingerprint: chrome
-  name: 1|US_speednode_0472
+  name: 2|US_speednode_0472
   network: ws
   port: 443
   server: 198.62.62.4
@@ -220,7 +640,7 @@ proxies:
       Host: page-us-qg0.pages.dev
     path: twitterfreecodesfp=chrome
 - client-fingerprint: chrome
-  name: 1|US_speednode_0494
+  name: 2|US_speednode_0494
   network: ws
   password: CMLiu
   port: 443
@@ -234,7 +654,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0474
+  name: 2|US_speednode_0474
   network: ws
   port: 443
   server: 155.46.213.9
@@ -247,7 +667,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|US_speednode_0475
+  name: 2|US_speednode_0475
   network: ws
   port: 2053
   server: 216.116.134.43
@@ -259,7 +679,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
-- name: 1|US_speednode_0476
+- name: 2|US_speednode_0476
   network: ws
   port: 443
   server: 147.185.161.35
@@ -273,7 +693,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0477
+- name: 2|US_speednode_0477
   network: ws
   port: 2083
   server: 89.116.161.139
@@ -288,7 +708,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0479
+  name: 2|US_speednode_0479
   network: ws
   port: 443
   server: 66.81.247.244
@@ -300,7 +720,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2security
-- name: 1|US_speednode_0480
+- name: 2|US_speednode_0480
   network: ws
   port: 443
   server: 63.141.128.97
@@ -314,7 +734,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0481
+- name: 2|US_speednode_0481
   network: ws
   port: 443
   server: 43.153.103.203
@@ -328,7 +748,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 1|US_speednode_0482
+- name: 2|US_speednode_0482
   network: ws
   port: 2096
   server: 130.250.137.70
@@ -343,7 +763,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 1|US_speednode_0483
+  name: 2|US_speednode_0483
   network: ws
   port: 443
   server: 167.68.11.106
@@ -356,7 +776,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2security
 - client-fingerprint: chrome
-  name: 1|US_speednode_0484
+  name: 2|US_speednode_0484
   network: ws
   port: 443
   server: 167.68.11.191
@@ -369,7 +789,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2security
 - client-fingerprint: chrome
-  name: 1|US_speednode_0485
+  name: 2|US_speednode_0485
   network: ws
   port: 2083
   server: 66.81.247.19
@@ -382,7 +802,7 @@ proxies:
       Host: a.ssll.gay
     path: twitter苏小柠security
 - client-fingerprint: chrome
-  name: 1|US_speednode_0486
+  name: 2|US_speednode_0486
   network: ws
   port: 443
   server: 170.114.46.140
@@ -395,7 +815,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|US_speednode_0488
+  name: 2|US_speednode_0488
   network: ws
   port: 443
   server: 69.84.182.102
@@ -410,7 +830,7 @@ proxies:
       Host: a.ssll.gay
     path: /?ed=2048fp=chrome
 - client-fingerprint: firefox
-  name: 1|US_speednode_0489
+  name: 2|US_speednode_0489
   network: ws
   port: 2053
   server: fbi.gov
@@ -423,7 +843,7 @@ proxies:
       Host: COde911comEtoIrAnNsOdSnefHHDKaLcOSHD.PAGES.dEV
     path: /?ed=0
 - client-fingerprint: chrome
-  name: 1|US_speednode_0490
+  name: 2|US_speednode_0490
   network: ws
   port: 443
   server: 167.68.11.95
@@ -436,7 +856,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|US_speednode_0491
+  name: 2|US_speednode_0491
   network: ws
   port: 443
   server: 216.116.134.16
@@ -449,7 +869,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 1|US_speednode_0493
+  name: 2|US_speednode_0493
   network: ws
   packet-encoding: ''
   port: 443
