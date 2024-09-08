@@ -405,12 +405,12 @@ cfSet: &cfSet
     # v2ray-http-upgrade: false # 不支持！
 
 proxies:
-  - name: cf-自动优选-CMLiussss
+  - name: 👍|cf-自动优选-CMLiussss
     server: cf.090227.xyz
     port: 2096
     <<: *cfSet
 
-  - name: cf-自动优选-小一
+  - name: 👍|cf-自动优选-小一
     server: cf.zhetengsha.eu.org
     port: 2087
     <<: *cfSet
