@@ -310,9 +310,9 @@ proxy-providers:
     filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
     proxy: DIRECT
     override:
-      skip-cert-verify: false
       ip-version: dual
       udp: false
+      skip-cert-verify: false
       additional-suffix: "| cfp"
   LanCloud:
     url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
@@ -415,7 +415,7 @@ proxies:
     port: 2087
     <<: *cfSet
 
-  - name: "pac-hy2-1"
+  - name: "👍|pac-hy2-1"
     type: hysteria2
     server: 207.90.239.157
     port: 3400
