@@ -302,6 +302,7 @@ proxy-providers:
       udp: true
       up: "25 Mbps"
       down: "100 Mbps"
+      additional-prefix: "👍|"
 
   CF-vless:
     url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
@@ -386,17 +387,19 @@ cfSet: &cfSet
   tfo: true
   skip-cert-verify: false
   servername: cfp.nuofang.us.kg
-  alpn:
+  alpn: # clash ws 只能使用http/1.1，设置了应该没用
     - h3
     - h2
     # - http/1.1
   network: ws
-  max-early-data: 2560
+  max-early-data: 2048
   early-data-header-name: sec-websocket-protocol
   ws-opts:
     path: "/"
     headers:
       Host: cfp.nuofang.us.kg
+    # v2ray-http-upgrade: false # 不支持！
+
 proxies:
   - name: cf-自动优选-CMLiussss
     server: cf.090227.xyz
