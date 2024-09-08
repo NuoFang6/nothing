@@ -1597,7 +1597,7 @@ https://github.com/cmliu/edgetunnel
 				(userAgent.includes("clash") && !userAgent.includes("nekobox")) ||
 				(_url.searchParams.has("clash") && !userAgent.includes("subconverter"))
 			) {
-				url = `${subProtocol}://${subconverter}/sub?target=clash&url=${encodeURIComponent(url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
+				url = `${subProtocol}://${subconverter}/sub?target=clash&url=${encodeURIComponent(url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&xudp=true&udp=false&tfo=true&scv=true&fdn=false&sort=false&new_name=true`;
 				isBase64 = false;
 			} else if (
 				userAgent.includes("sing-box") ||
@@ -1976,7 +1976,7 @@ function subAddresses(
 			let 伪装域名 = host;
 			let 最终路径 = "/?ed=2560";
 			let 节点备注 = "";
-			let ALPN = "h2,http/1.1";
+			let ALPN = "h3,h2";
 
 			if (
 				proxyhosts.length > 0 &&
