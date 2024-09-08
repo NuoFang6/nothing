@@ -310,7 +310,8 @@ proxy-providers:
     filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
     proxy: DIRECT
     override:
-      <<: *overrideSet
+      skip-cert-verify: false
+      ip-version: dual
       udp: false
       additional-suffix: "| cfp"
   LanCloud:
@@ -384,7 +385,7 @@ cfSet: &cfSet
   uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
   tls: true
   tfo: true
-  skip-cert-verify: true
+  skip-cert-verify: false
   servername: cfp.nuofang.us.kg
   alpn:
     - h3
