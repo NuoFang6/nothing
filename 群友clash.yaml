@@ -280,7 +280,6 @@ groupsSet: &groupsSet
   <<: *204Set
 
 overrideSet: &overrideSet
-  skip-cert-verify: true
   ip-version: dual
 
 ###  通用配置结束  ###
@@ -300,6 +299,7 @@ proxy-providers:
     override:
       <<: *overrideSet
       udp: true
+      skip-cert-verify: true
       up: "25 Mbps"
       down: "100 Mbps"
       additional-prefix: "👍|"
@@ -322,6 +322,7 @@ proxy-providers:
     override:
       <<: *overrideSet
       udp: true
+      skip-cert-verify: true
   白嫖线路:
     url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
     <<: *providerSet
@@ -331,6 +332,7 @@ proxy-providers:
     override:
       <<: *overrideSet
       udp: true
+      skip-cert-verify: true
   nekocandy:
     url: "https://nekocandy.pages.dev/sub"
     <<: *providerSet
@@ -339,6 +341,7 @@ proxy-providers:
     override:
       <<: *overrideSet
       udp: true
+      skip-cert-verify: true
   # freecloud:
   #   url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
   #   <<: *providerSet
@@ -347,6 +350,7 @@ proxy-providers:
   #   override:
   #     <<: *overrideSet
   #     udp: true
+  #     skip-cert-verify: true
 
 proxy-groups:
   - name: PROXY
