@@ -385,9 +385,15 @@ cfSet: &cfSet
   tfo: true
   skip-cert-verify: true
   servername: cfp.nuofang.us.kg
+  alpn:
+    - h3
+    - h2
+    - http/1.1
   network: ws
+  max-early-data: 2560
+  early-data-header-name: sec-websocket-protocol
   ws-opts:
-    path: "/?ed=2560"
+    path: "/"
     headers:
       Host: cfp.nuofang.us.kg
 proxies:
