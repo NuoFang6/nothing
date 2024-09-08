@@ -1,209 +1,5 @@
 proxies:
-- name: 1|俄罗斯_莫斯科
-  network: ws
-  port: 8443
-  server: 185.174.138.141
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F'
-- name: 1|俄罗斯联邦_莫斯科
-  network: ws
-  port: 443
-  server: 188.42.145.159
-  servername: VIrgiNiavPn-nL.pagEs.dEv
-  tls: true
-  type: vless
-  uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-  ws-opts:
-    headers:
-      Host: VIrgiNiavPn-nL.pagEs.dEv
-    path: '%2F'
-- name: '1|俄罗斯联邦_莫斯科 #1'
-  network: ws
-  port: 443
-  server: 188.42.145.159
-  servername: VIrgiNiavPn-nL.pagEs.dEv
-  tls: true
-  type: vless
-  uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-  ws-opts:
-    headers:
-      Host: VIrgiNiavPn-nL.pagEs.dEv
-    path: '%2Fsecurity%3Dtls'
-- name: '1|俄罗斯_莫斯科 #1'
-  network: ws
-  port: 443
-  server: 185.59.218.144
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|俄罗斯联邦_莫斯科 #2'
-  network: ws
-  port: 443
-  server: 188.42.145.226
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯联邦_莫斯科 #3'
-  network: ws
-  port: 8443
-  server: 188.42.145.90
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed'
-- name: '1|俄罗斯_莫斯科 #2'
-  network: ws
-  port: 443
-  server: 185.174.138.220
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯_莫斯科 #3'
-  network: ws
-  port: 443
-  server: 185.174.138.217
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯联邦_莫斯科 #4'
-  network: ws
-  port: 8443
-  server: 188.42.145.159
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|俄罗斯_莫斯科 #4'
-  network: ws
-  port: 443
-  server: 185.59.218.0
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯_莫斯科 #5'
-  network: ws
-  port: 443
-  server: 185.59.218.169
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: '%2Ftg%40zdyz2'
-- name: '1|俄罗斯_莫斯科 #6'
-  network: ws
-  port: 443
-  server: 185.59.218.0
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|俄罗斯联邦_莫斯科 #5'
-  network: ws
-  port: 8443
-  server: 188.42.145.159
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯联邦_莫斯科 #6'
-  network: ws
-  port: 443
-  server: 193.9.49.80
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|俄罗斯联邦_莫斯科 #7'
-  network: ws
-  port: 8443
-  server: 188.42.145.90
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fedfp%3Dchromefp%3Dchrome'
-- name: '1|俄罗斯联邦_莫斯科 #8'
-  network: ws
-  port: 8443
-  server: 188.42.145.159
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: '%2Ftg%40zdyz2'
-- name: '1|俄罗斯联邦_莫斯科 #9'
-  network: ws
-  port: 2096
-  server: 188.42.145.159
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: 2|RU_speednode_0092
+- name: 0|RU_speednode_0092
   network: ws
   port: 2087
   server: 185.176.24.140
@@ -217,7 +13,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 2|RU_speednode_0095
+- name: 0|RU_speednode_0095
   network: ws
   port: 2096
   server: 188.42.145.159
@@ -231,7 +27,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 2|RU_speednode_0094
+- name: 0|RU_speednode_0094
   network: ws
   port: 8443
   server: 188.42.145.159
@@ -246,7 +42,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0096
+  name: 0|RU_speednode_0096
   network: ws
   port: 443
   server: 188.42.145.178
@@ -261,7 +57,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0097
+  name: 0|RU_speednode_0097
   network: ws
   port: 443
   server: 188.42.145.178
@@ -276,7 +72,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2fp=chrome
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0098
+  name: 0|RU_speednode_0098
   network: ws
   port: 443
   server: 185.59.218.158
@@ -289,7 +85,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2security
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0099
+  name: 0|RU_speednode_0099
   network: ws
   port: 443
   server: 188.42.145.159
@@ -302,7 +98,7 @@ proxies:
       Host: VIrgiNiavPn-nL.pagEs.dEv
     path: /
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0100
+  name: 0|RU_speednode_0100
   network: ws
   port: 8443
   server: 188.42.145.159
@@ -315,7 +111,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2security
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0101
+  name: 0|RU_speednode_0101
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -330,7 +126,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0102
+  name: 0|RU_speednode_0102
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -343,7 +139,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0103
+  name: 0|RU_speednode_0103
   network: ws
   port: 443
   server: 185.59.218.139
@@ -356,7 +152,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0104
+  name: 0|RU_speednode_0104
   network: ws
   port: 8443
   server: 188.42.145.90
@@ -371,7 +167,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 2|RU_speednode_0106
+  name: 0|RU_speednode_0106
   network: ws
   packet-encoding: ''
   port: 443
