@@ -359,8 +359,8 @@ proxy-groups:
     include-all: true
 
   - name: "✨诺芳臻选"
-    type: load-balance
-    strategy: consistent-hashing
+    type: select
+    # strategy: consistent-hashing
     <<: *groupsSet
     include-all: true
     filter: "(自动优选)"
@@ -436,7 +436,7 @@ proxies:
     tfo: true
     mptcp: true
     tls: true
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     udp: true
     packet-encoding: xudp
