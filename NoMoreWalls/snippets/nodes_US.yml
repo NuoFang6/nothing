@@ -1,5 +1,5 @@
 proxies:
-- name: 2|US_speednode_0478
+- name: 0|US_speednode_0478
   network: ws
   password: CMLiu
   port: 443
@@ -13,7 +13,7 @@ proxies:
       Host: aliorg.filegear-sg.me
     path: /
 - client-fingerprint: chrome
-  name: 2|US_speednode_0494
+  name: 0|US_speednode_0494
   network: ws
   password: CMLiu
   port: 443

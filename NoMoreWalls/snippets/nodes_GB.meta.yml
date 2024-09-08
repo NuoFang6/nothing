@@ -1,255 +1,5 @@
 proxies:
-- name: 1|英国_貝辛斯托克
-  network: ws
-  port: 443
-  server: 194.36.55.36
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 1|英国_爱丁堡
-  network: ws
-  port: 2096
-  server: 31.22.116.134
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F'
-- name: 1|英国_伦敦
-  network: ws
-  port: 8443
-  server: 154.197.121.248
-  servername: mositr.freenods.sbs
-  tls: true
-  type: vless
-  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
-  ws-opts:
-    headers:
-      Host: mositr.freenods.sbs
-    path: twitterfreecodes
-- name: '1|英国_爱丁堡 #1'
-  network: ws
-  port: 443
-  server: 31.22.116.159
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|英国_爱丁堡 #2'
-  network: ws
-  port: 443
-  server: 31.22.116.198
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: 1|英国_哈文特
-  network: ws
-  port: 443
-  server: 217.163.76.75
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|英国_爱丁堡 #3'
-  network: ws
-  port: 443
-  server: 31.22.116.208
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: 1|英国_Stretford
-  network: ws
-  port: 2053
-  server: 91.193.58.119
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: '1|英国_爱丁堡 #4'
-  network: ws
-  port: 443
-  server: 31.22.116.155
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2security%3Dtls
-- name: '1|英国_爱丁堡 #5'
-  network: ws
-  port: 2096
-  server: 31.22.116.134
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: '1|英国_爱丁堡 #6'
-  network: ws
-  port: 443
-  server: 31.22.116.186
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|英国_爱丁堡 #7'
-  network: ws
-  port: 443
-  server: 31.22.116.155
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|英国_伦敦 #1'
-  network: ws
-  port: 443
-  server: 185.238.228.212
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: '1|英国_伦敦 #2'
-  network: ws
-  port: 443
-  server: 185.238.228.184
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg%40zdyz2
-- name: '1|英国_伦敦 #3'
-  network: ws
-  port: 443
-  server: 45.133.247.14
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: '%2Ftg%40zdyz2'
-- name: '1|英国_爱丁堡 #8'
-  network: ws
-  port: 443
-  server: 94.247.142.245
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F'
-- name: '1|英国_伦敦 #4'
-  network: ws
-  port: 443
-  server: 185.109.21.19
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: '%2Ftg%40zdyz2security%3Dtls'
-- name: '1|英国_伦敦 #5'
-  network: ws
-  port: 443
-  server: 185.109.21.19
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: '%2Ftg%40zdyz2'
-- name: 1|英国_利兹
-  network: ws
-  port: 443
-  server: 94.247.142.241
-  servername: fq521.6789.cloudns.be
-  tls: true
-  type: vless
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  ws-opts:
-    headers:
-      Host: fq521.6789.cloudns.be
-    path: twitterfreecodessecurity%3Dtls
-- name: '1|英国_伦敦 #6'
-  network: ws
-  port: 443
-  server: 45.133.247.151
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: '1|英国_伦敦 #8'
-  network: ws
-  port: 80
-  server: 51.38.70.15
-  servername: vkvd127.mycdn.me
-  tls: false
-  type: vless
-  uuid: 7415478e-0e1b-4f1a-a048-e54c546df7c6
-  ws-opts:
-    path: '%2Fvless%2F'
-- name: 2|GB_speednode_0055
+- name: 0|GB_speednode_0055
   network: ws
   port: 443
   server: 94.247.142.245
@@ -264,7 +14,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0056
+  name: 0|GB_speednode_0056
   network: ws
   port: 443
   server: 31.22.116.186
@@ -276,7 +26,7 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
-- name: 2|GB_speednode_0057
+- name: 0|GB_speednode_0057
   network: ws
   port: 443
   server: 31.22.116.198
@@ -291,7 +41,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0058
+  name: 0|GB_speednode_0058
   network: ws
   port: 443
   server: 94.247.142.241
@@ -304,7 +54,7 @@ proxies:
       Host: fq521.6789.cloudns.be
     path: twitterfreecodessecurity
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0059
+  name: 0|GB_speednode_0059
   network: ws
   port: 2096
   server: 94.247.142.245
@@ -319,7 +69,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chrome
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0060
+  name: 0|GB_speednode_0060
   network: ws
   port: 2096
   server: 94.247.142.245
@@ -334,7 +84,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?edfp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0061
+  name: 0|GB_speednode_0061
   network: ws
   port: 2096
   server: 94.247.142.245
@@ -349,7 +99,7 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0062
+  name: 0|GB_speednode_0062
   network: ws
   port: 2053
   server: 217.163.76.107
@@ -362,7 +112,7 @@ proxies:
       Host: mositr.freenods.sbs
     path: twitterfreecodes
 - client-fingerprint: chrome
-  name: 2|GB_speednode_0063
+  name: 0|GB_speednode_0063
   network: ws
   port: 443
   server: 31.22.116.155

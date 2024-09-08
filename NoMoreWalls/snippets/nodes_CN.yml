@@ -1,17 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '1|中国_广州市 #1'
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 2|CN_speednode_0011
+  name: 0|CN_speednode_0011
   network: tcp
   port: 54882
   server: 183.236.48.163
@@ -20,7 +10,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 2|CN_speednode_0013
+  name: 0|CN_speednode_0013
   port: 52442
   server: 120.232.153.40
   skip-cert-verify: true
