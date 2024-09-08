@@ -298,6 +298,7 @@ proxy-providers:
     url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
     <<: *providerSet
     filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    exclude-filter: "(?i)(sheung|柴灣)"
     proxy: DIRECT
     override:
       <<: *overrideSet
