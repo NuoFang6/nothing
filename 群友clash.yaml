@@ -70,10 +70,9 @@ dns:
     - "https://223.6.6.6/dns-query#h3=true"
   nameserver:
     - "quic://223.5.5.5#DIRECT"
-    - "https://223.5.5.5/dns-query#DIRECT&h3=true"
+    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   fallback:
     - "https://dns.google/dns-query#PROXY"
-    # - "https://cf.090227.xyz/dns-query#DIRECT&h3=true" # 国内优化过的cf dns
   fallback-filter:
     geoip: false
     # geoip-code: CN
@@ -120,7 +119,7 @@ rules:
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
   # 已三网优化的cf域名
   - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
-  - DOMAIN-SUFFIX,cf.090227.xyz,DIRECT
+  - DOMAIN-SUFFIX,090227.xyz,DIRECT
   # 一直循环请求
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
   # - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
@@ -359,8 +358,8 @@ proxy-groups:
     include-all: true
 
   - name: "✨诺芳臻选"
-    type: select
-    # strategy: consistent-hashing
+    type: load-balance
+    strategy: round-robin
     <<: *groupsSet
     include-all: true
     filter: "(自动优选)"
