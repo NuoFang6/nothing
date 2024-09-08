@@ -289,7 +289,7 @@ proxy-providers:
   CF-vless:
     url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
     <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
     proxy: DIRECT
     override:
       <<: *overrideSet
@@ -350,10 +350,18 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
+      - ✨诺芳臻选
       - 🚀自动选择
       - ⚠️请不要分享订阅!
     <<: *groupsSet
     include-all: true
+
+  - name: "✨诺芳臻选"
+    type: load-balance
+    strategy: consistent-hashing
+    <<: *groupsSet
+    include-all: true
+    filter: "(自动优选)"
 
   - name: "🚀自动选择"
     type: url-test
@@ -368,7 +376,31 @@ proxy-groups:
     lazy: true
     hidden: true
 
+cfSet: &cfSet
+  udp: false
+  client-fingerprint: chrome
+  type: vless
+  uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
+  tls: true
+  tfo: true
+  skip-cert-verify: true
+  servername: cfp.nuofang.us.kg
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: cfp.nuofang.us.kg
 proxies:
+  - name: cf-自动优选-CMLiussss
+    server: cf.090227.xyz
+    port: 2096
+    <<: *cfSet
+
+  - name: cf-自动优选-小一
+    server: cf.zhetengsha.eu.org
+    port: 2087
+    <<: *cfSet
+
   - name: "pac-hy2-1"
     type: hysteria2
     server: 207.90.239.157
@@ -383,7 +415,7 @@ proxies:
 
   - name: "诺芳自建"
     type: vless
-    server: serv00.nuofang.us.kg
+    server: cf.090227.xyz
     port: 443
     uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
     lazy: true
@@ -405,8 +437,11 @@ proxies:
       - h2
       - http/1.1
     network: ws
+    servername: serv00.nuofang.us.kg
     ws-opts:
       path: "/vless"
+      headers:
+        Host: serv00.nuofang.us.kg
       v2ray-http-upgrade: true
       v2ray-http-upgrade-fast-open: true
     smux:
