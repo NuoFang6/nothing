@@ -287,49 +287,6 @@ overrideSet: &overrideSet
 ###  通用配置结束  ###
 
 proxy-providers:
-  CF-vless:
-    url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
-    proxy: DIRECT
-    override:
-      <<: *overrideSet
-      udp: false
-      additional-suffix: "| cfp"
-  白嫖线路:
-    url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
-    exclude-filter: "(?i)(sheung|柴灣)"
-    proxy: DIRECT
-    override:
-      <<: *overrideSet
-      udp: true
-  freecloud:
-    url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
-    proxy: DIRECT
-    override:
-      <<: *overrideSet
-      udp: true
-  nekocandy:
-    url: "https://nekocandy.pages.dev/sub"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
-    proxy: PROXY
-    override:
-      <<: *overrideSet
-      udp: true
-  LanCloud:
-    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
-    proxy: PROXY
-    override:
-      <<: *overrideSet
-      udp: true
-
   散线:
     url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/散线.txt"
     type: http
@@ -346,6 +303,49 @@ proxy-providers:
       udp: true
       up: "25 Mbps"
       down: "100 Mbps"
+
+  CF-vless:
+    url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
+    <<: *providerSet
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: false
+      additional-suffix: "| cfp"
+  LanCloud:
+    url: "https://lancloud.zichuanlan.top/api/v1/client/subscribe?token=ec318b460adb9700b4e2d68171e29ea4"
+    <<: *providerSet
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    proxy: PROXY
+    override:
+      <<: *overrideSet
+      udp: true
+  白嫖线路:
+    url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
+    <<: *providerSet
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    exclude-filter: "(?i)(sheung|柴灣)"
+    proxy: DIRECT
+    override:
+      <<: *overrideSet
+      udp: true
+  nekocandy:
+    url: "https://nekocandy.pages.dev/sub"
+    <<: *providerSet
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    proxy: PROXY
+    override:
+      <<: *overrideSet
+      udp: true
+  # freecloud:
+  #   url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
+  #   <<: *providerSet
+  #   filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+  #   proxy: DIRECT
+  #   override:
+  #     <<: *overrideSet
+  #     udp: true
 
 proxy-groups:
   - name: PROXY
