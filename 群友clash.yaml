@@ -388,7 +388,7 @@ cfSet: &cfSet
   servername: cfp.nuofang.us.kg
   alpn:
     - h3
-    # - h2
+    - h2
     # - http/1.1
   network: ws
   max-early-data: 2560
@@ -441,7 +441,7 @@ proxies:
     packet-encoding: xudp
     alpn:
       - h3
-      # - h2
+      - h2
       # - http/1.1
     network: ws
     servername: serv00.nuofang.us.kg
