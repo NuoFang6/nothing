@@ -294,6 +294,7 @@ proxy-providers:
     override:
       <<: *overrideSet
       udp: false
+      additional-suffix: "| cfp"
   白嫖线路:
     url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
     <<: *providerSet
