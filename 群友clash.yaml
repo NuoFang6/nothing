@@ -72,7 +72,7 @@ dns:
     - "quic://223.5.5.5#DIRECT"
     - "https://223.6.6.6/dns-query#DIRECT&h3=true"
   fallback:
-    - "tcp://8.8.8.8#PROXY"
+    - "tls://8.8.8.8#PROXY"
     - "https://dns.google/dns-query#PROXY"
   fallback-filter:
     geoip: false
