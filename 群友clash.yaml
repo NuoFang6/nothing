@@ -367,6 +367,7 @@ proxy-groups:
     strategy: round-robin
     <<: *groupsSet
     include-all: true
+    disable-udp: true
     filter: "(自动优选)"
 
   - name: "🚀自动选择"
