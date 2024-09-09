@@ -1,4 +1,4 @@
-# Update: 2024-09-09 15:10
+# Update: 2024-09-10 06:07
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -529,48 +529,48 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 1|d*********g.com_2
-  - 0|CN_speednode_0016
-  - 0|US_speednode_0275
-  - 0|US_speednode_0278
-  - 0|US_speednode_0271
+  - 0|CN_speednode_0029
   - 0|US_speednode_0277
-  - 0|CN_speednode_0015
-  - 0|CN_speednode_0027
-  - 0|US_speednode_0281
-  - 0|US_speednode_0279
-  - 0|CN_speednode_0014
-  - 0|CN_speednode_0031
-  - 0|CN_speednode_0018
-  - 0|HK_speednode_0108
-  - 0|CN_speednode_0022
-  - 0|CN_speednode_0023
-  - 0|CN_speednode_0030
-  - 0|CN_speednode_0020
-  - 0|CN_speednode_0028
-  - 0|CN_speednode_0019
-  - 0|CN_speednode_0012
-  - 0|US_speednode_0296
-  - 0|US_speednode_0314
-  - 0|US_speednode_0266
-  - 0|US_speednode_0280
-  - 0|CN_speednode_0026
-  - 0|NL_speednode_0125
-  - 1|d*********g.com_3
-  - 0|SG_speednode_0259
-  - 0|US_speednode_0297
-  - 0|US_speednode_0274
-  - 0|RU_speednode_0242
-  - 0|CN_speednode_0017
-  - 0|US_speednode_0283
   - 0|US_speednode_0311
   - 0|CN_speednode_0013
-  - 0|CN_speednode_0025
-  - 0|CN_speednode_0029
+  - 0|US_speednode_0297
+  - 0|HK_speednode_0108
+  - 0|CN_speednode_0022
+  - 0|CN_speednode_0030
+  - 0|NL_speednode_0125
+  - 0|CN_speednode_0017
   - 0|NL_speednode_0124
-  - 0|US_speednode_0285
+  - 0|CN_speednode_0025
+  - 0|CN_speednode_0023
+  - 0|CN_speednode_0015
   - 0|CN_speednode_0011
+  - 0|US_speednode_0314
+  - 0|CN_speednode_0014
+  - 0|CN_speednode_0028
+  - 0|US_speednode_0285
+  - 0|US_speednode_0271
+  - 0|US_speednode_0266
+  - 0|CN_speednode_0026
+  - 0|CN_speednode_0027
+  - 0|CN_speednode_0031
+  - 0|US_speednode_0281
+  - 0|US_speednode_0296
+  - 0|CN_speednode_0020
+  - 0|RU_speednode_0242
+  - 0|US_speednode_0280
+  - 0|US_speednode_0283
+  - 0|CN_speednode_0019
+  - 1|d*********g.com_2
+  - 0|CN_speednode_0016
+  - 0|US_speednode_0278
   - 0|CN_speednode_0021
+  - 0|CN_speednode_0012
+  - 1|d*********g.com_3
+  - 0|US_speednode_0275
+  - 0|SG_speednode_0259
+  - 0|US_speednode_0279
+  - 0|CN_speednode_0018
+  - 0|US_speednode_0274
   tfo: true
   timeout: 1500
   tolerance: 35
