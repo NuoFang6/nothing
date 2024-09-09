@@ -1,5 +1,5 @@
 proxies:
-- name: 0|GB_speednode_0055
+- name: 0|GB_speednode_0062
   network: ws
   port: 443
   server: 94.247.142.245
@@ -14,10 +14,36 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: 0|GB_speednode_0056
+  name: 0|GB_speednode_0063
   network: ws
   port: 443
-  server: 31.22.116.186
+  server: 94.247.142.241
+  servername: fq521.6789.cloudns.be
+  tls: true
+  type: vless
+  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  ws-opts:
+    headers:
+      Host: fq521.6789.cloudns.be
+    path: twitterfreecodessecurity
+- client-fingerprint: chrome
+  name: 0|GB_speednode_0064
+  network: ws
+  port: 2053
+  server: 217.163.76.107
+  servername: mositr.freenods.sbs
+  tls: true
+  type: vless
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  ws-opts:
+    headers:
+      Host: mositr.freenods.sbs
+    path: twitterfreecodes
+- client-fingerprint: chrome
+  name: 0|GB_speednode_0065
+  network: ws
+  port: 443
+  server: 31.22.116.155
   servername: cfed.tgzdyz2.top
   tls: true
   type: vless
@@ -26,7 +52,22 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
-- name: 0|GB_speednode_0057
+- client-fingerprint: chrome
+  name: 0|GB_speednode_0066
+  network: ws
+  port: 2096
+  server: 94.247.142.245
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chrome
+- name: 0|GB_speednode_0067
   network: ws
   port: 443
   server: 31.22.116.198
@@ -41,50 +82,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|GB_speednode_0058
-  network: ws
-  port: 443
-  server: 94.247.142.241
-  servername: fq521.6789.cloudns.be
-  tls: true
-  type: vless
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
-  ws-opts:
-    headers:
-      Host: fq521.6789.cloudns.be
-    path: twitterfreecodessecurity
-- client-fingerprint: chrome
-  name: 0|GB_speednode_0059
-  network: ws
-  port: 2096
-  server: 94.247.142.245
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?edfp=chrome
-- client-fingerprint: chrome
-  name: 0|GB_speednode_0060
-  network: ws
-  port: 2096
-  server: 94.247.142.245
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?edfp=chromefp=chrome
-- client-fingerprint: chrome
-  name: 0|GB_speednode_0061
+  name: 0|GB_speednode_0068
   network: ws
   port: 2096
   server: 94.247.142.245
@@ -99,28 +97,17 @@ proxies:
       Host: juzibaipiao.5112233.xyz
     path: /?ed
 - client-fingerprint: chrome
-  name: 0|GB_speednode_0062
+  name: 0|GB_speednode_0069
   network: ws
-  port: 2053
-  server: 217.163.76.107
-  servername: mositr.freenods.sbs
+  port: 2096
+  server: 94.247.142.245
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
-  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: mositr.freenods.sbs
-    path: twitterfreecodes
-- client-fingerprint: chrome
-  name: 0|GB_speednode_0063
-  network: ws
-  port: 443
-  server: 31.22.116.155
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chromefp=chrome

@@ -1,5 +1,5 @@
 proxies:
-- name: 0|KR_speednode_0069
+- name: 0|KR_speednode_0109
   network: ws
   port: 26658
   server: 124.80.75.68
@@ -13,189 +13,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 0|KR_speednode_0070
-  network: ws
-  port: 39658
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0071
-  network: ws
-  port: 10419
-  server: 124.199.44.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0072
-  network: ws
-  port: 30005
-  server: 124.199.44.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0073
-  network: ws
-  port: 12654
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0074
-  network: ws
-  port: 30064
-  server: 124.199.44.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0075
-  network: ws
-  port: 30059
-  server: 124.80.20.114
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0076
-  network: ws
-  port: 21979
-  server: 117.123.72.132
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0077
-  network: ws
-  port: 15772
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0078
-  network: ws
-  port: 24016
-  server: 117.123.72.132
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0079
-  network: ws
-  port: 30013
-  server: 124.199.44.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0080
-  network: ws
-  port: 25177
-  server: 124.80.20.114
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0081
-  network: ws
-  port: 25346
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0082
-  network: ws
-  port: 35018
-  server: 124.199.44.146
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0083
+- name: 0|KR_speednode_0110
   network: ws
   port: 22672
   server: 124.199.33.104
@@ -209,9 +27,9 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 0|KR_speednode_0084
+- name: 0|KR_speednode_0111
   network: ws
-  port: 35810
+  port: 39658
   server: 124.80.75.68
   servername: a.ssll.gay
   skip-cert-verify: false
@@ -223,7 +41,21 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 0|KR_speednode_0085
+- name: 0|KR_speednode_0112
+  network: ws
+  port: 12654
+  server: 124.80.75.68
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 0|KR_speednode_0113
   network: ws
   port: 19374
   server: 117.123.72.132
@@ -237,10 +69,66 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /?ed=2048
-- name: 0|KR_speednode_0086
+- name: 0|KR_speednode_0114
   network: ws
-  port: 12209
-  server: 119.207.86.66
+  port: 25346
+  server: 124.80.75.68
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 0|KR_speednode_0115
+  network: ws
+  port: 15772
+  server: 124.80.75.68
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 0|KR_speednode_0116
+  network: ws
+  port: 21979
+  server: 117.123.72.132
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 0|KR_speednode_0117
+  network: ws
+  port: 24016
+  server: 117.123.72.132
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /?ed=2048
+- name: 0|KR_speednode_0118
+  network: ws
+  port: 35810
+  server: 124.80.75.68
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true

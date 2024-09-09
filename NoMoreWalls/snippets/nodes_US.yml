@@ -1,19 +1,173 @@
 proxies:
-- name: 0|US_speednode_0478
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0274
   network: ws
-  password: CMLiu
-  port: 443
-  server: 43.153.80.208
+  port: 80
+  server: q28.ludou.us.kg
   skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: 2c5ed4e8-9e2a-4956-b1fa-aa84371f8f2c
   ws-opts:
     headers:
-      Host: aliorg.filegear-sg.me
+      Host: jduarwtq.ludounow.tech
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0271
+  network: ws
+  port: 80
+  server: q24.ludou.us.kg
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6028f373-d92f-4086-9713-76c172e4c885
+  ws-opts:
+    headers:
+      Host: cmi-64475841.ludounow.tech
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0266
+  network: ws
+  port: 2086
+  server: 104.19.21.230
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0275
+  network: ws
+  port: 80
+  server: q23.ludou.us.kg
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b54965df-a734-4986-b7d9-8973a1d52df3
+  ws-opts:
+    headers:
+      Host: cmi-665441.ludounow.tech
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0281
+  network: ws
+  port: 2095
+  server: sdhdffjblkgfh_cdn.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: itcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0277
+  network: ws
+  port: 2096
+  server: vc-ca-1.nsde.date
+  servername: vc-ca-1.nsde.date
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 09d4e6ab-bf30-4c29-900f-5d824ff2ec77
+  ws-opts:
+    headers:
+      Host: vc-ca-1.nsde.date
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0278
+  network: ws
+  port: 2096
+  server: xwm-us-2.nsde.date
+  servername: xwm-us-2.nsde.date
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 09d4e6ab-bf30-4c29-900f-5d824ff2ec77
+  ws-opts:
+    headers:
+      Host: xwm-us-2.nsde.date
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0279
+  network: ws
+  port: 2086
+  server: 104.19.46.27
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0280
+  network: ws
+  port: 80
+  server: 9kbui.qumc8qr7.buzz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cb971d13-63e5-4209-a70e-fbce92ce41ef
+  ws-opts:
+    headers:
+      Host: us01.thomasina.buzz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0283
+  network: ws
+  port: 2086
+  server: 104.26.5.145
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0285
+  network: ws
+  port: 2086
+  server: 104.26.5.67
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
 - client-fingerprint: chrome
-  name: 0|US_speednode_0494
+  name: 0|US_speednode_0311
   network: ws
   password: CMLiu
   port: 443
@@ -26,3 +180,47 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0296
+  network: ws
+  port: 2096
+  server: vc-eu-2.nsde.date
+  servername: vc-eu-2.nsde.date
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 09d4e6ab-bf30-4c29-900f-5d824ff2ec77
+  ws-opts:
+    headers:
+      Host: vc-eu-2.nsde.date
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0297
+  network: ws
+  port: 8080
+  server: 104.19.247.182
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2200e2e4-a7c4-3e44-9b89-87d7f032bd00
+  ws-opts:
+    headers:
+      Host: 100-100-17-414.db-link01.top
+    path: /dabai.in104.19.247.182
+- name: 0|US_speednode_0314
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 43.153.80.208
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
