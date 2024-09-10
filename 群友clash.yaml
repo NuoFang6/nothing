@@ -58,7 +58,7 @@ dns:
   use-hosts: true
   use-system-hosts: false
   respect-rules: false # 没用
-  prefer-h3: true
+  prefer-h3: false
   cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -398,23 +398,11 @@ proxy-groups:
   - name: ⚠️请不要分享订阅!
     type: select
     proxies:
-      - 🔰保守
+      - REJECT
     lazy: true
     hidden: true
 
 proxies:
-  - name: "👍|pac-hy2-1"
-    type: hysteria2
-    server: 207.90.239.157
-    port: 3400
-    ports: 20000-30000
-    hop-interval: 15
-    password: "dongtaiwang.com"
-    up: "25 Mbps"
-    down: "100 Mbps"
-    sni: www.bing.com
-    skip-cert-verify: true
-
   - name: "诺芳自建"
     type: vless
     server: cf.090227.xyz
@@ -457,3 +445,15 @@ proxies:
       padding: false
       brutal-opts:
         enabled: false
+
+  - name: "👍|pac-hy2-1"
+    type: hysteria2
+    server: 207.90.239.157
+    port: 3400
+    ports: 20000-30000
+    hop-interval: 15
+    password: "dongtaiwang.com"
+    up: "25 Mbps"
+    down: "100 Mbps"
+    sni: www.bing.com
+    skip-cert-verify: true
