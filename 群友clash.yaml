@@ -376,6 +376,8 @@ proxy-groups:
     <<: *groupsSet
     proxies:
       - 👍|pac-hy2-1
+      - 👍|cf-自动优选-CMLiussss
+      - 👍|cf-自动优选-小一
     use:
       - 散线
       - LanCloud
@@ -385,8 +387,7 @@ proxy-groups:
     type: load-balance
     strategy: round-robin
     <<: *groupsSet
-    use:
-      - 散线
+    include-all: true
     disable-udp: true
     filter: "(自动优选)"
 
@@ -403,7 +404,51 @@ proxy-groups:
     lazy: true
     hidden: true
 
+cfSet: &cfSet
+  udp: false
+  client-fingerprint: safari
+  type: vless
+  uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
+  tls: true
+  tfo: true
+  skip-cert-verify: false
+  servername: cfp.nuofang.us.kg
+  # alpn: # ws 只能使用http/1.1，设置了没用
+  #   # - h3
+  #   # - h2
+  #   - http/1.1
+  network: ws
+  max-early-data: 2048
+  early-data-header-name: sec-websocket-protocol
+  ws-opts:
+    path: "/"
+    headers:
+      Host: cfp.nuofang.us.kg
+    # v2ray-http-upgrade: false # 不支持！
+
 proxies:
+  - name: 👍|cf-自动优选-CMLiussss
+    server: cf.090227.xyz
+    port: 2083
+    <<: *cfSet
+
+  - name: 👍|cf-自动优选-小一
+    server: cf.zhetengsha.eu.org
+    port: 2096
+    <<: *cfSet
+
+  - name: "👍|pac-hy2-1"
+    type: hysteria2
+    server: 207.90.239.157
+    port: 3400
+    ports: 20000-30000
+    hop-interval: 15
+    password: "dongtaiwang.com"
+    up: "25 Mbps"
+    down: "100 Mbps"
+    sni: www.bing.com
+    skip-cert-verify: true
+
   - name: "诺芳自建"
     type: vless
     server: cf.090227.xyz
@@ -446,15 +491,3 @@ proxies:
       padding: false
       brutal-opts:
         enabled: false
-
-  - name: "👍|pac-hy2-1"
-    type: hysteria2
-    server: 207.90.239.157
-    port: 3400
-    ports: 20000-30000
-    hop-interval: 15
-    password: "dongtaiwang.com"
-    up: "25 Mbps"
-    down: "100 Mbps"
-    sni: www.bing.com
-    skip-cert-verify: true
