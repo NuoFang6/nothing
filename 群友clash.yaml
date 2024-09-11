@@ -370,6 +370,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀极速
+      - ✨均衡
       - 🔰低延迟
       - ⚠️请不要分享订阅!
     <<: *groupsSet
@@ -379,13 +380,21 @@ proxy-groups:
     type: url-test
     <<: *groupsSet
     proxies:
+      - 👍|cf-自动优选-CMLiussss
+      - 👍|cf-自动优选-小一
       - 👍|pac-hy2-1
-      - 👍|cf-优选-电信(联通)
-      - 👍|cf-优选-移动
     use:
       - 散线
       - LanCloud
     # hidden: true
+
+  - name: "✨均衡"
+    type: load-balance
+    strategy: round-robin
+    <<: *groupsSet
+    include-all: true
+    disable-udp: true
+    filter: "(自动优选)"
 
   - name: "🔰低延迟"
     type: url-test
@@ -423,13 +432,13 @@ cfSet: &cfSet
     # v2ray-http-upgrade: false # 不支持！
 
 proxies:
-  - name: 👍|cf-优选-电信(联通)
-    server: ct.090227.xyz
+  - name: 👍|cf-自动优选-CMLiussss
+    server: cf.090227.xyz
     port: 2083
     <<: *cfSet
 
-  - name: 👍|cf-优选-移动
-    server: cmcc.090227.xyz
+  - name: 👍|cf-自动优选-小一
+    server: cf.zhetengsha.eu.org
     port: 2096
     <<: *cfSet
 
