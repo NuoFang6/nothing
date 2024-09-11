@@ -53,26 +53,32 @@ hosts:
 
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   ipv6-timeout: 90
   use-hosts: true
   use-system-hosts: false
   respect-rules: false # 没用
-  prefer-h3: false
+  prefer-h3: true # https 协议先尝试quic
   cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - "quic://223.5.5.5#DIRECT"
-    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
+    - "tls://1.12.12.12#DIRECT"
   proxy-server-nameserver:
-    - "quic://223.5.5.5"
-    - "https://223.6.6.6/dns-query#h3=true"
+    - "udp://114.114.114.114"
+    - "udp://1.2.4.8"
+    # - "quic://160195.alidns.com"
+    # - "tls://dot-cbe28e9d.dot.pub"
   nameserver:
-    - "quic://223.5.5.5#DIRECT"
-    - "https://223.6.6.6/dns-query#DIRECT&h3=true"
+    - "quic://160195.alidns.com#DIRECT"
+    - "tls://dot-cbe28e9d.dot.pub#DIRECT"
+  nameserver-policy:
+    "rule-set:cn":
+      - "udp://114.114.114.114#DIRECT"
+      - "udp://1.2.4.8#DIRECT"
   fallback:
-    - "tls://8.8.8.8#PROXY"
+    - "https://doh-cbe28e9d.doh.pub/dns-query#DIRECT&h3=false"
     - "https://dns.google/dns-query#PROXY"
   fallback-filter:
     geoip: false
