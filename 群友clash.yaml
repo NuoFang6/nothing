@@ -371,7 +371,7 @@ proxy-groups:
     proxies:
       - 🚀极速
       - 🔰低延迟
-      - 👍|cf-优选-电信
+      - 👍|cf-优选-电信(联通)
       - 👍|cf-优选-移动
       - ⚠️请不要分享订阅!
     <<: *groupsSet
@@ -382,7 +382,7 @@ proxy-groups:
     <<: *groupsSet
     proxies:
       - 👍|pac-hy2-1
-      - 👍|cf-优选-电信
+      - 👍|cf-优选-电信(联通)
       - 👍|cf-优选-移动
     use:
       - 散线
@@ -425,7 +425,7 @@ cfSet: &cfSet
     # v2ray-http-upgrade: false # 不支持！
 
 proxies:
-  - name: 👍|cf-优选-电信
+  - name: 👍|cf-优选-电信(联通)
     server: ct.090227.xyz
     port: 2083
     <<: *cfSet
