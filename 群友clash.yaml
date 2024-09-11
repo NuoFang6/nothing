@@ -125,6 +125,9 @@ rules:
   # bug缓解，分流部分情况泄露的DNS
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  # 特殊APP
+  - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
+  - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 已三网优化的cf域名
   - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
   - DOMAIN-SUFFIX,090227.xyz,DIRECT
@@ -138,7 +141,6 @@ rules:
   - DOMAIN-SUFFIX,speed.cloudflare.com,PROXY # cloudflare 测速
   - DOMAIN-SUFFIX,sentry.io,DIRECT #应用分析
   - DOMAIN-SUFFIX,pendo.io,DIRECT #! 疑似病毒网站
-  - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 拒绝广告
   - RULE-SET,Ad,REJECT
   - DST-PORT,853,REJECT # 阻止 DoT-DNS 绕过，53端口已被 dns-hijack 处理
@@ -146,8 +148,6 @@ rules:
   # - RULE-SET,DoH,REJECT # 防止 DoH DNS 绕过
   # - RULE-SET,tif,REJECT # 威胁网址拦截
   # - IP-CIDR6,2620:1ec::/32,REJECT,no-resolve # 疑似 edge 绕过 DNS
-  # 特殊APP
-  - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   # 白名单-直连
   - DOMAIN-REGEX,(ubisoft|icve|zhihuishu|shouqianba|lagrange|jsdmirror|msftncsi|msftconnecttest|lenovomm|beqege|viayoo),DIRECT
   - DOMAIN-REGEX,^.*\.(mwm\.moe|lizi\.moe|alcy\.cc|openwrt\.ai|codelife\.cc)$,DIRECT
