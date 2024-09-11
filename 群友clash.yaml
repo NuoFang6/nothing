@@ -176,6 +176,7 @@ sub-rules:
   app规则:
     - PROCESS-NAME,com.tencent.mm,DIRECT # 微信
     - PROCESS-NAME,com.eg.android.AlipayGphone,DIRECT # 支付宝
+    - PROCESS-NAME,com.tencent.wemeet.app,DIRECT # 腾讯会议
     - PROCESS-NAME,com.MobileTicket,DIRECT # 铁路12306
     - PROCESS-NAME,com.able.wisdomtree,DIRECT # 智慧树知到
     - PROCESS-NAME,com.whaty.qyZHZJ,DIRECT # 智慧职教
