@@ -66,10 +66,8 @@ dns:
     - "quic://223.5.5.5#DIRECT"
     - "tls://1.12.12.12#DIRECT"
   proxy-server-nameserver:
-    - "udp://114.114.114.114"
-    - "udp://1.2.4.8"
-    # - "quic://160195.alidns.com"
-    # - "tls://dot-cbe28e9d.dot.pub"
+    - "quic://160195.alidns.com"
+    - "tls://dot-cbe28e9d.dot.pub"
   nameserver:
     - "quic://160195.alidns.com#DIRECT"
     - "tls://dot-cbe28e9d.dot.pub#DIRECT"
@@ -372,8 +370,9 @@ proxy-groups:
     type: select
     proxies:
       - 🚀极速
-      - ✨均衡
-      - 🔰保守
+      - 🔰低延迟
+      - 👍|cf-优选-电信
+      - 👍|cf-优选-移动
       - ⚠️请不要分享订阅!
     <<: *groupsSet
     include-all: true
@@ -383,22 +382,14 @@ proxy-groups:
     <<: *groupsSet
     proxies:
       - 👍|pac-hy2-1
-      - 👍|cf-自动优选-CMLiussss
-      - 👍|cf-自动优选-小一
+      - 👍|cf-优选-电信
+      - 👍|cf-优选-移动
     use:
       - 散线
       - LanCloud
     # hidden: true
 
-  - name: "✨均衡"
-    type: load-balance
-    strategy: round-robin
-    <<: *groupsSet
-    include-all: true
-    disable-udp: true
-    filter: "(自动优选)"
-
-  - name: "🔰保守"
+  - name: "🔰低延迟"
     type: url-test
     <<: *groupsSet
     include-all: true
@@ -434,13 +425,13 @@ cfSet: &cfSet
     # v2ray-http-upgrade: false # 不支持！
 
 proxies:
-  - name: 👍|cf-自动优选-CMLiussss
-    server: cf.090227.xyz
+  - name: 👍|cf-优选-电信
+    server: ct.090227.xyz
     port: 2083
     <<: *cfSet
 
-  - name: 👍|cf-自动优选-小一
-    server: cf.zhetengsha.eu.org
+  - name: 👍|cf-优选-移动
+    server: cmcc.090227.xyz
     port: 2096
     <<: *cfSet
 
