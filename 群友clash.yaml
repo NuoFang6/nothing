@@ -45,6 +45,7 @@ tun:
 hosts:
   # cf域名优选
   "+.nuofang.us.kg": "cf.090227.xyz"
+  "+.123456.al": "cf.090227.xyz"
   #
   "time.windows.com": "ntp.tencent.com"
   "time.nist.gov": "ntp.tencent.com"
@@ -72,6 +73,8 @@ dns:
     - "quic://160195.alidns.com#DIRECT"
     - "tls://dot-cbe28e9d.dot.pub#DIRECT"
   nameserver-policy:
+    "+.090227.xyz":
+      - "udp://114.114.114.114#DIRECT"
     "rule-set:cn":
       - "udp://114.114.114.114#DIRECT"
       - "udp://1.2.4.8#DIRECT"
@@ -133,8 +136,9 @@ rules:
   - SUB-RULE,(PROCESS-NAME-REGEX,^com\.),app规则
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 已三网优化的cf域名
-  - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
   - DOMAIN-SUFFIX,090227.xyz,DIRECT
+  - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
+  - DOMAIN-SUFFIX,123456.al,DIRECT
   # 一直循环请求
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
   # - DOMAIN-SUFFIX,browser-intake-datadoghq.com,REJECT-DROP
