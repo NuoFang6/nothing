@@ -45,7 +45,7 @@ tun:
 hosts:
   # cf域名优选
   "+.nuofang.us.kg": "cf.090227.xyz"
-  "+.123456.al": "cf.090227.xyz"
+  "+.123456.al": "cf.090227.xyz" # emby
   #
   "time.windows.com": "ntp.tencent.com"
   "time.nist.gov": "ntp.tencent.com"
