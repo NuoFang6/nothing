@@ -78,8 +78,8 @@ dns:
       - "udp://114.114.114.114#DIRECT" # 114 最接近运营商服务器
       # - "system"
     "rule-set:cn":
-      - "udp://114.114.114.114#DIRECT"
       - "system"
+      - "udp://114.114.114.114#DIRECT"
   fallback:
     - "https://doh-cbe28e9d.doh.pub/dns-query#DIRECT&h3=false"
     - "https://dns.google/dns-query#PROXY"
