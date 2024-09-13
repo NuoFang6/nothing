@@ -4,7 +4,7 @@ allow-lan: false
 log-level: warning
 find-process-mode: strict
 disable-keep-alive: false #目前在android端强制为true
-keep-alive-idle: 465 # 链接闲置后 465+15*9= 10 分钟关闭无效长链接
+keep-alive-idle: 1665 # 链接闲置后 1665+15*9= 30 分钟关闭无效长链接
 keep-alive-interval: 15
 external-controller: 127.0.0.1:9090 # RESTful API 监听地址
 secret: "@NuoFang" # 外部控制器RESTful API访问密钥
@@ -74,11 +74,12 @@ dns:
     - "quic://160195.alidns.com#DIRECT"
     - "tls://dot-cbe28e9d.dot.pub#DIRECT"
   nameserver-policy:
-    "+.090227.xyz":
-      - "udp://114.114.114.114#DIRECT"
+    "+.090227.xyz,+.zhetengsha.eu.org,+.182682.xyz":
+      - "udp://114.114.114.114#DIRECT" # 114 最接近运营商服务器
+      # - "system"
     "rule-set:cn":
       - "udp://114.114.114.114#DIRECT"
-      - "udp://1.2.4.8#DIRECT"
+      - "system"
   fallback:
     - "https://doh-cbe28e9d.doh.pub/dns-query#DIRECT&h3=false"
     - "https://dns.google/dns-query#PROXY"
@@ -127,7 +128,50 @@ dns:
   fake-ip-filter:
     - "*.lan"
     - "*.local"
-    - "localhost.ptlogin2.qq.com"
+    - dns.msftncsi.com
+    - www.msftncsi.com
+    - www.msftconnecttest.com
+    - stun.*.*.*
+    - stun.*.*
+    - miwifi.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - netis.cc
+    - router.asus.com
+    - repeater.asus.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - tplinkrepeater.net
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
 
 rules:
   # bug缓解，分流部分情况泄露的DNS
@@ -386,6 +430,7 @@ proxy-groups:
     proxies:
       - 👍|cf-自动优选-CMLiussss
       - 👍|cf-自动优选-小一
+      - 👍|cf-ipv6自动优选
       - 👍|pac-hy2-1
     use:
       - 散线
@@ -422,10 +467,6 @@ cfSet: &cfSet
   tfo: true
   skip-cert-verify: false
   servername: cfp.nuofang.us.kg
-  # alpn: # ws 只能使用http/1.1，设置了没用
-  #   # - h3
-  #   # - h2
-  #   - http/1.1
   network: ws
   max-early-data: 2048
   early-data-header-name: sec-websocket-protocol
@@ -434,17 +475,40 @@ cfSet: &cfSet
     headers:
       Host: cfp.nuofang.us.kg
     # v2ray-http-upgrade: false # 不支持！
+  # alpn: # ws 只能使用http/1.1，设置了没用
+  #   # - h3
+  #   # - h2
+  #   - http/1.1
+  # smux: # 不支持
+  #   enabled: false
+  #   protocol: h2mux
+  #   max-connections: 4
+  #   min-streams: 4
+  #   max-streams: 0
+  #   statistic: true
+  #   only-tcp: true
+  #   padding: false
+  #   brutal-opts:
+  #     enabled: false
 
 proxies:
   - name: 👍|cf-自动优选-CMLiussss
     server: cf.090227.xyz
     port: 2083
     <<: *cfSet
+    ip-version: ipv4
 
   - name: 👍|cf-自动优选-小一
     server: cf.zhetengsha.eu.org
+    port: 2087
+    <<: *cfSet
+    ip-version: ipv4
+
+  - name: 👍|cf-ipv6自动优选
+    server: cloudflare.182682.xyz
     port: 2096
     <<: *cfSet
+    ip-version: ipv6
 
   - name: "👍|pac-hy2-1"
     type: hysteria2
