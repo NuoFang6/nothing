@@ -82,7 +82,7 @@ dns:
       - "udp://114.114.114.114"
       # - "dhcp://system"
   fallback:
-    - "https://dns.google/dns-query"
+    - "https://dns.google/dns-query#PROXY"
   fallback-filter:
     geoip: false
     # geoip-code: CN
