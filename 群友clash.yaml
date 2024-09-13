@@ -68,19 +68,18 @@ dns:
     - "quic://223.5.5.5"
     - "quic://223.6.6.6"
     # - "tls://1.12.12.12" # 垃圾腾讯
-  # proxy-server-nameserver: # 会导致就近 ip 解析模糊
-  #   - "quic://160195.alidns.com"
-  #   - "tls://dot-cbe28e9d.dot.pub"
+  proxy-server-nameserver: # 会导致就近 ip 解析模糊
+    - "quic://160195.alidns.com"
+    # - "tls://dot-cbe28e9d.dot.pub"
   nameserver:
     - "quic://160195.alidns.com"
   nameserver-policy:
     "+.090227.xyz,+.zhetengsha.eu.org,+.182682.xyz":
-      - "udp://223.5.5.5"
-      - "udp://223.6.6.6"
+      - "quic://160195.alidns.com"
       # - "dhcp://system"
     "rule-set:cn":
       - "udp://223.5.5.5"
-      - "udp://223.6.6.6"
+      - "udp://114.114.114.114"
       # - "dhcp://system"
   fallback:
     - "https://dns.google/dns-query"
