@@ -65,21 +65,21 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - "quic://223.5.5.5"
-    # - "tls://1.12.12.12" # 垃圾腾讯
+    - "quic://223.5.5.5#DIRECT"
   proxy-server-nameserver:
     - "quic://160195.alidns.com"
-    # - "tls://dot-cbe28e9d.dot.pub"
+    # - "tls://dot-cbe28e9d.dot.pub" # 垃圾腾讯
   nameserver:
-    - "quic://160195.alidns.com"
+    - "quic://160195.alidns.com#DIRECT"
   nameserver-policy:
     "+.090227.xyz,+.zhetengsha.eu.org,+.182682.xyz":
-      - "quic://160195.alidns.com"
-      # - "dhcp://system"
+      - "quic://160195.alidns.com#DIRECT"
+
     "rule-set:cn":
-      - "udp://223.5.5.5"
-      - "udp://114.114.114.114"
+      - "udp://223.5.5.5#DIRECT"
+      - "udp://114.114.114.114#DIRECT"
       # - "dhcp://system"
+
   fallback:
     - "https://dns.google/dns-query#PROXY"
   fallback-filter:
