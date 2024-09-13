@@ -65,24 +65,24 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - "quic://223.5.5.5#DIRECT"
-    - "tls://1.12.12.12#DIRECT"
-  proxy-server-nameserver:
+    - udp://114.114.114.114
+    # - "quic://223.5.5.5"
+    # - "tls://1.12.12.12"
+  # proxy-server-nameserver: # 会导致就近 ip 解析模糊
+  #   - "quic://160195.alidns.com"
+  #   - "tls://dot-cbe28e9d.dot.pub"
+  nameserver:
     - "quic://160195.alidns.com"
     - "tls://dot-cbe28e9d.dot.pub"
-  nameserver:
-    - "quic://160195.alidns.com#DIRECT"
-    - "tls://dot-cbe28e9d.dot.pub#DIRECT"
   nameserver-policy:
     "+.090227.xyz,+.zhetengsha.eu.org,+.182682.xyz":
-      - "udp://114.114.114.114#DIRECT" # 114 最接近运营商服务器
-      # - "system"
-    "rule-set:cn":
+      # - "udp://114.114.114.114" # 114 最接近运营商服务器
       - "system"
-      - "udp://114.114.114.114#DIRECT"
+    "rule-set:cn":
+      - "dhcp://system"
+      - "udp://114.114.114.114"
   fallback:
-    - "https://doh-cbe28e9d.doh.pub/dns-query#DIRECT&h3=false"
-    - "https://dns.google/dns-query#PROXY"
+    - "https://dns.google/dns-query"
   fallback-filter:
     geoip: false
     # geoip-code: CN
