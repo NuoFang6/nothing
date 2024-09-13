@@ -540,10 +540,10 @@ proxies:
     client-fingerprint: chrome
     udp: true
     packet-encoding: xudp
-    alpn:
-      - h3
-      - h2
-      # - http/1.1
+    # alpn:
+    #   # - h3
+    #   # - h2
+    #   - http/1.1
     network: ws
     servername: serv00.nuofang.us.kg
     ws-opts:
