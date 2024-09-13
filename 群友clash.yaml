@@ -66,9 +66,8 @@ dns:
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
     - "quic://223.5.5.5"
-    - "quic://223.6.6.6"
     # - "tls://1.12.12.12" # 垃圾腾讯
-  proxy-server-nameserver: # 会导致就近 ip 解析模糊
+  proxy-server-nameserver:
     - "quic://160195.alidns.com"
     # - "tls://dot-cbe28e9d.dot.pub"
   nameserver:
