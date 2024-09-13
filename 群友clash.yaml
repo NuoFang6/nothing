@@ -45,27 +45,27 @@ tun:
 hosts:
   # cf域名优选
   "+.nuofang.us.kg": "cf.090227.xyz"
-  "+.123456.al": "cf.090227.xyz" # emby
-  "+.nijigem.by": "cf.090227.xyz" # emby
+  # emby
+  "+.123456.al": "cf.090227.xyz"
+  "+.nijigem.by": "cf.090227.xyz"
   # 哔咔漫画
   "+.picacomic.com": "cf.zhetengsha.eu.org" # 仅分流一
-  # iwara
-  "+.iwara.tv": "cf.zhetengsha.eu.org"
   # pixiv镜像源
   "+.pixiv.re": "cf.zhetengsha.eu.org"
-  # Eh (e-hentai)
-  "+.e-hentai.org": "cf.zhetengsha.eu.org"
-  # hanime1.me
+  # hanime1.me #hembed.com是视频服务器，Fastly托管，无需优选
   "+.hanime1.me": "cf.zhetengsha.eu.org"
-  # anime1.me
-  "+.anime1.me": "cf.zhetengsha.eu.org"
-  # 91porn.com
-  "+.91porn.com": "cf.zhetengsha.eu.org"
+  # netflav.com
+  "+.netflav.com": "cf.zhetengsha.eu.org"
   # ntp优化
   "time.windows.com": "ntp.tencent.com"
   "time.nist.gov": "ntp.tencent.com"
   "pool.ntp.org": "ntp.tencent.com"
   "time.android.com": "ntp.tencent.com"
+  # 无法优化的
+  # # iwara 效果不佳，土豆视频服务器
+  # "+.iwara.tv": "cf.zhetengsha.eu.org"
+  # # Eh (e-hentai) 连接直接被关闭
+  # "+.e-hentai.org": "cf.zhetengsha.eu.org"
 
 dns:
   enable: true
@@ -254,8 +254,8 @@ sub-rules:
     # - PROCESS-NAME,com.jxnxs.mobile.bank,DIRECT # 江西农商
 
   直连app:
-    - PROCESS-NAME,com.picacomic.fregata,DIRECT # 哔咔漫画
-    - PROCESS-NAME,com.jiaohua_browser,DIRECT # 禁漫天堂，内置优化策略，托管在cf
+    - PROCESS-NAME,com.picacomic.fregata,DIRECT # 哔咔漫画，分流2、3为纯ip需要直连
+    # - PROCESS-NAME,com.jiaohua_browser,DIRECT # 禁漫天堂，内置优化策略，托管在cf,无法干涉
 
   PROXY-noUDP:
     - NETWORK,UDP,REJECT
