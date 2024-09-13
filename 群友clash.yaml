@@ -195,6 +195,7 @@ rules:
   - PROCESS-NAME,info.muge.appshare,DIRECT # AppShare 防止广告展示率下降
   # 已三网优化的cf域名
   - DOMAIN-SUFFIX,090227.xyz,DIRECT
+  - DOMAIN-SUFFIX,zhetengsha.eu.org,DIRECT
   - DOMAIN-SUFFIX,nuofang.us.kg,DIRECT
   # 一直循环请求
   - DOMAIN-SUFFIX,aeventlog.beacon.qq.com,DIRECT # 傻逼 QQ 连不上一直重试
