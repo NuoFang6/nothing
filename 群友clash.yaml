@@ -529,7 +529,7 @@ proxies:
     ip-version: ipv4
 
   - name: 👍|cf-自动优选-小一
-    server: cf.zhetengsha.eu.org
+    server: cf.zhetengsha.eu.org # 其实就是 cf.090227.xyz , DNS解析时还慢一点
     port: 2087
     <<: *cfSet
     ip-version: ipv4
