@@ -103,9 +103,9 @@ dns:
       - "quic://160195.alidns.com#DIRECT"
 
     "rule-set:cn":
-      # - "udp://223.5.5.5#DIRECT"
-      - "system://"
-      # - "udp://114.114.114.114#DIRECT"
+      - "udp://223.5.5.5#DIRECT"
+      - "udp://114.114.114.114#DIRECT"
+      # - "system://" # 不兼容
 
   fallback:
     - "https://dns.google/dns-query#PROXY"
