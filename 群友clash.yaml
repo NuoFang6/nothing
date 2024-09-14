@@ -527,11 +527,11 @@ proxies:
     <<: *cfSet
     ip-version: ipv4
 
-  # - name: 👍|cf-自动优选-小一
-  #   server: cf.zhetengsha.eu.org
-  #   port: 2087
-  #   <<: *cfSet
-  #   ip-version: ipv4
+  - name: 👍|cf-自动优选-小一
+    server: cf.zhetengsha.eu.org
+    port: 2087
+    <<: *cfSet
+    ip-version: ipv4
 
   - name: 💖|cf-ipv6自动优选-推荐
     server: cloudflare.182682.xyz
