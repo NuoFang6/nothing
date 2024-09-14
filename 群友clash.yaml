@@ -551,45 +551,45 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
 
-  # - name: "诺芳自建"
-  #   type: vless
-  #   server: cf.090227.xyz
-  #   port: 443
-  #   uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
-  #   lazy: true
-  #   url: https://www.youtube.com/generate_204
-  #   interval: 450
-  #   timeout: 5000
-  #   tolerance: 40
-  #   expected-status: 204
-  #   max-failed-times: 2
-  #   tfo: true
-  #   mptcp: true
-  #   tls: true
-  #   skip-cert-verify: false
-  #   client-fingerprint: chrome
-  #   udp: true
-  #   packet-encoding: xudp
-  #   # alpn:
-  #   #   # - h3
-  #   #   # - h2
-  #   #   - http/1.1
-  #   network: ws
-  #   servername: serv00.nuofang.us.kg
-  #   ws-opts:
-  #     path: "/vless"
-  #     headers:
-  #       Host: serv00.nuofang.us.kg
-  #     v2ray-http-upgrade: true
-  #     v2ray-http-upgrade-fast-open: true
-  #   smux:
-  #     enabled: true
-  #     protocol: smux
-  #     max-connections: 4
-  #     min-streams: 4
-  #     max-streams: 0
-  #     statistic: true
-  #     only-tcp: true
-  #     padding: false
-  #     brutal-opts:
-  #       enabled: false
+  - name: "诺芳自建"
+    type: vless
+    server: cf.zhetengsha.eu.org
+    port: 443
+    uuid: b6b73bf9-0422-4b22-8a1d-1e2804389c05
+    lazy: true
+    url: https://www.youtube.com/generate_204
+    interval: 450
+    timeout: 5000
+    tolerance: 40
+    expected-status: 204
+    max-failed-times: 2
+    tfo: true
+    mptcp: true
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+    packet-encoding: xudp
+    # alpn:
+    #   # - h3
+    #   # - h2
+    #   - http/1.1
+    network: ws
+    servername: serv00.nuofang.us.kg
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: serv00.nuofang.us.kg
+      v2ray-http-upgrade: true
+      v2ray-http-upgrade-fast-open: true
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 4
+      min-streams: 4
+      max-streams: 0
+      statistic: true
+      only-tcp: true
+      padding: false
+      brutal-opts:
+        enabled: false
