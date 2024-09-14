@@ -35,6 +35,7 @@ geosite-matcher: mph
 
 tun:
   stack: system
+  mtu: 9000 # 兼容性未知
   strict-route: true # 可能有bug
   auto-route: true
   auto-detect-interface: true
@@ -102,9 +103,9 @@ dns:
       - "quic://160195.alidns.com#DIRECT"
 
     "rule-set:cn":
-      - "udp://223.5.5.5#DIRECT"
-      - "udp://114.114.114.114#DIRECT"
-      # - "dhcp://system"
+      # - "udp://223.5.5.5#DIRECT"
+      - "system://"
+      # - "udp://114.114.114.114#DIRECT"
 
   fallback:
     - "https://dns.google/dns-query#PROXY"
