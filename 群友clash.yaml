@@ -401,7 +401,7 @@ proxy-providers:
   CF-vless:
     url: "https://cfp.nuofang.us.kg/9617f71c-737e-42c2-986d-8c6f2e00b1d5?clash"
     <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp|VIP|CMCC)"
+    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|VIP|CMCC)"
     proxy: DIRECT
     override:
       ip-version: dual
@@ -420,22 +420,22 @@ proxy-providers:
   白嫖线路:
     url: "https://gh.nuofang.us.kg/https://github.com/NuoFang6/nothing/raw/main/NoMoreWalls/list.meta.yml"
     <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+    filter: "CN.*00([0-5]\\d|6[0-5])"
     exclude-filter: "(?i)(sheung|柴灣)"
     proxy: DIRECT
     override:
       <<: *overrideSet
       udp: true
       skip-cert-verify: true
-  nekocandy:
-    url: "https://nekocandy.pages.dev/sub"
-    <<: *providerSet
-    filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
-    proxy: PROXY
-    override:
-      <<: *overrideSet
-      udp: true
-      skip-cert-verify: true
+  # nekocandy:
+  #   url: "https://nekocandy.pages.dev/sub"
+  #   <<: *providerSet
+  #   filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|cn|tw|台|kr|jp)"
+  #   proxy: PROXY
+  #   override:
+  #     <<: *overrideSet
+  #     udp: true
+  #     skip-cert-verify: true
   # freecloud:
   #   url: "https://prob.xn--l9qyaz082a.cn/api/v1/client/subscribe?token=18700c7f61640450ba2d190e39775d14"
   #   <<: *providerSet
