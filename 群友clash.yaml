@@ -51,13 +51,15 @@ hosts:
   # 哔咔漫画
   "+.picacomic.com": "cf.zhetengsha.eu.org" # 仅分流一
   # nhentai漫画
-  "+.nhentai.net": "cf.zhetengsha.eu.org"
+  "+.nhentai.net": "cf.090227.xyz"
   # pixiv镜像源
   "+.pixiv.re": "cf.zhetengsha.eu.org"
   # hanime1.me #hembed.com是视频服务器，Fastly托管，无需优选
-  "+.hanime1.me": "cf.zhetengsha.eu.org"
+  "+.hanime1.me": "cf.090227.xyz"
+  # iwara 晚高峰效果不佳，土豆视频服务器
+  "+.iwara.tv": "cf.zhetengsha.eu.org"
   # netflav.com
-  "+.netflav.com": "cf.zhetengsha.eu.org"
+  "+.netflav.com": "cf.090227.xyz"
   # tsumino.com
   "+.tsumino.com": "cf.zhetengsha.eu.org"
   # ntp优化
@@ -66,11 +68,11 @@ hosts:
   "pool.ntp.org": "ntp.tencent.com"
   "time.android.com": "ntp.tencent.com"
   # 无法优化的
-  # # iwara 效果不佳，土豆视频服务器
-  # "+.iwara.tv": "cf.zhetengsha.eu.org"
   # # Eh (e-hentai) 连接直接被关闭
   # "+.e-hentai.org": "cf.zhetengsha.eu.org"
-  # hitomi 不是cf
+  #
+  # 不是cf
+  # hitomi doujins
 
 dns:
   enable: true
