@@ -46,6 +46,7 @@ tun:
 hosts:
   # cf域名优选
   "+.nuofang.us.kg": "cf.090227.xyz"
+  "+.nuofang.nyc.mn": "cf.090227.xyz" # notls
   "+.cloudflare.com": "cf.090227.xyz"
   # emby
   "+.123456.al": "cf.090227.xyz"
@@ -539,6 +540,26 @@ proxies:
     port: 2096
     <<: *cfSet
     ip-version: ipv6
+
+  - name: 😎|cf-裸奔-notls
+    server: cf.090227.xyz
+    tls: false # 传输层未加密！
+    port: 2095
+    uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
+    client-fingerprint: safari
+    udp: false
+    tfo: true
+    type: vless
+    skip-cert-verify: true
+    network: ws
+    max-early-data: 2048
+    early-data-header-name: sec-websocket-protocol
+    servername: notls.nuofang.nyc.mn
+    ws-opts:
+      path: "/"
+      headers:
+        Host: notls.nuofang.nyc.mn
+    ip-version: ipv4
 
   - name: "👍|pac-hy2-1"
     type: hysteria2
