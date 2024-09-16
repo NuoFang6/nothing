@@ -45,30 +45,31 @@ tun:
 
 hosts:
   # cf域名优选
-  "+.nuofang.us.kg": "cf.zhetengsha.eu.org"
-  "+.nuofang.nyc.mn": "cf.zhetengsha.eu.org" # notls
-  "+.cloudflare.com": "cf.zhetengsha.eu.org"
+  "+.nuofang.us.kg": "cf.090227.xyz"
+  "+.nuofang.nyc.mn": "cf.090227.xyz" # notls
+  "+.cloudflare.com": "cf.090227.xyz"
+  "+.pages.dev": "cf.090227.xyz"
   # emby
-  "+.123456.al": "cf.zhetengsha.eu.org"
-  "+.nijigem.by": "cf.zhetengsha.eu.org"
+  "+.123456.al": "cf.090227.xyz"
+  "+.nijigem.by": "cf.090227.xyz"
   # 哔咔漫画
-  "+.picacomic.com": "cf.zhetengsha.eu.org" # 仅分流一
+  "+.picacomic.com": "cf.090227.xyz" # 仅分流一
   # nhentai漫画
-  "+.nhentai.net": "cf.zhetengsha.eu.org"
+  "+.nhentai.net": "cf.090227.xyz"
   # pixiv镜像源
-  "+.pixiv.re": "cf.zhetengsha.eu.org"
+  "+.pixiv.re": "cf.090227.xyz"
   # hanime1.me #hembed.com是视频服务器，Fastly托管，无需优选
-  "+.hanime1.me": "cf.zhetengsha.eu.org"
+  "+.hanime1.me": "cf.090227.xyz"
   # iwara 晚高峰效果不佳，土豆视频服务器
-  "+.iwara.tv": "cf.zhetengsha.eu.org"
+  "+.iwara.tv": "cf.090227.xyz"
   # netflav.com
-  "+.netflav.com": "cf.zhetengsha.eu.org"
+  "+.netflav.com": "cf.090227.xyz"
   # tsumino.com
-  "+.tsumino.com": "cf.zhetengsha.eu.org"
+  "+.tsumino.com": "cf.090227.xyz"
   # 群友
-  "+.beacon-scheduler.sawahara.host": "cf.zhetengsha.eu.org"
-  "+.latestfile.zip": "cf.zhetengsha.eu.org"
-  "+.lingcha-kernel.sawahara.host": "cf.zhetengsha.eu.org"
+  "+.beacon-scheduler.sawahara.host": "cf.090227.xyz"
+  "+.latestfile.zip": "cf.090227.xyz"
+  "+.lingcha-kernel.sawahara.host": "cf.090227.xyz"
   # ntp优化
   "time.windows.com": "ntp.tencent.com"
   "time.nist.gov": "ntp.tencent.com"
@@ -76,7 +77,7 @@ hosts:
   "time.android.com": "ntp.tencent.com"
   # 无法优化的
   # # Eh (e-hentai) 连接直接被关闭
-  # "+.e-hentai.org": "cf.zhetengsha.eu.org"
+  # "+.e-hentai.org": "cf.090227.xyz"
   #
   # 不是cf
   # hitomi doujins
