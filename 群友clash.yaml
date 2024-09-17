@@ -505,12 +505,14 @@ cfSet: &cfSet
   type: vless
   uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
   tls: true
-  tfo: true
   skip-cert-verify: false
   servername: cfp.nuofang.us.kg
   network: ws
   max-early-data: 2048
   early-data-header-name: sec-websocket-protocol
+  tfo: true
+  fast-open: true
+  mptcp: true
   ws-opts:
     path: "/"
     headers:
@@ -537,13 +539,15 @@ cfnotls: &cfnotls
   uuid: 9617f71c-737e-42c2-986d-8c6f2e00b1d5
   client-fingerprint: random
   udp: false
-  tfo: true
   type: vless
   skip-cert-verify: true
   network: ws
   max-early-data: 2048
   early-data-header-name: sec-websocket-protocol
   servername: notls.nuofang.nyc.mn
+  tfo: true
+  fast-open: true
+  mptcp: true
   ws-opts:
     path: "/"
     headers:
@@ -597,6 +601,9 @@ proxies:
     down: "100 Mbps"
     sni: www.bing.com
     skip-cert-verify: true
+    tfo: true
+    fast-open: true
+    mptcp: true
 
   - name: "诺芳自建"
     type: vless
@@ -611,6 +618,7 @@ proxies:
     expected-status: 204
     max-failed-times: 2
     tfo: true
+    fast-open: true
     mptcp: true
     tls: true
     skip-cert-verify: false
