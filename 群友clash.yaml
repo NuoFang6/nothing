@@ -640,7 +640,7 @@ proxies:
       v2ray-http-upgrade-fast-open: true
     smux:
       enabled: true
-      protocol: h2mux
+      protocol: smux
       max-connections: 4
       min-streams: 4
       max-streams: 0
