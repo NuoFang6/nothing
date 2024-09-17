@@ -514,7 +514,7 @@ cfSet: &cfSet
   fast-open: true
   mptcp: true
   ws-opts:
-    path: "/?ed=2048"
+    path: "/"
     headers:
       Host: cfp.nuofang.us.kg
     # v2ray-http-upgrade: false # 不支持！
@@ -549,7 +549,7 @@ cfnotls: &cfnotls
   fast-open: true
   mptcp: true
   ws-opts:
-    path: "/?ed=2048"
+    path: "/"
     headers:
       Host: notls.nuofang.nyc.mn
 
@@ -633,7 +633,7 @@ proxies:
     servername: serv00.nuofang.us.kg
     max-early-data: 2048
     ws-opts:
-      path: "/vless?ed=2048"
+      path: "/vless"
       headers:
         Host: serv00.nuofang.us.kg
       v2ray-http-upgrade: true
