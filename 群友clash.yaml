@@ -45,7 +45,7 @@ tun:
 
 hosts:
   # cf域名优选
-  "+.nuofang.us.kg": "cf.090227.xyz"
+  # "+.nuofang.us.kg": "cf.090227.xyz"
   "+.nuofang.nyc.mn": "cf.090227.xyz" # notls
   "+.cloudflare.com": "cf.090227.xyz"
   "+.pages.dev": "cf.090227.xyz"
