@@ -1,1 +1,14 @@
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 0|DE_speednode_0075
+  network: ws
+  port: 23490
+  server: 141.11.239.81
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34ff63d2-60c6-4ad6-adaf-ea73f24cd7ed
+  ws-opts:
+    path: /
