@@ -1,1 +1,248 @@
-proxies: []
+proxies:
+- client-fingerprint: randomized
+  name: 0|US_speednode_0452
+  network: ws
+  password: A98XMiF6NA
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: false
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0453
+  network: ws
+  password: A98XMiF6NA
+  port: 10511
+  server: 65.75.194.43
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0454
+  network: ws
+  password: A98XMiF6NA
+  port: 882
+  server: 154.17.9.35
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0455
+  network: ws
+  password: A98XMiF6NA
+  port: 14092
+  server: 45.59.186.16
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0456
+  network: ws
+  password: A98XMiF6NA
+  port: 33043
+  server: 65.75.192.38
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0457
+  network: ws
+  password: A98XMiF6NA
+  port: 2096
+  server: 162.159.142.252
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0458
+  network: ws
+  password: A98XMiF6NA
+  port: 8443
+  server: 172.64.154.218
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0459
+  network: ws
+  password: A98XMiF6NA
+  port: 24378
+  server: 174.136.205.115
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0460
+  network: ws
+  password: A98XMiF6NA
+  port: 14491
+  server: 65.75.193.154
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0461
+  network: ws
+  password: A98XMiF6NA
+  port: 2053
+  server: 162.159.58.157
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0462
+  network: ws
+  password: A98XMiF6NA
+  port: 8443
+  server: 162.159.138.178
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0463
+  network: ws
+  password: A98XMiF6NA
+  port: 12266
+  server: 65.75.194.7
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0464
+  network: ws
+  password: A98XMiF6NA
+  port: 50006
+  server: 45.87.103.122
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0465
+  network: ws
+  password: A98XMiF6NA
+  port: 38908
+  server: 45.59.184.16
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0466
+  network: ws
+  password: A98XMiF6NA
+  port: 13649
+  server: 45.59.185.71
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0467
+  network: ws
+  password: A98XMiF6NA
+  port: 10000
+  server: 38.59.241.39
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0468
+  network: ws
+  password: A98XMiF6NA
+  port: 19678
+  server: 23.95.61.191
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0469
+  network: ws
+  password: A98XMiF6NA
+  port: 18920
+  server: 154.17.18.44
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 0|US_speednode_0470
+  network: ws
+  password: A98XMiF6NA
+  port: 2053
+  server: 162.159.141.161
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
+    path: /?ed=2560

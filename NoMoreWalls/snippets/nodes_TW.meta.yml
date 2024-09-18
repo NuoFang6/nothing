@@ -1,33 +1,5 @@
 proxies:
-- name: 0|TW_speednode_0375
-  network: ws
-  port: 10004
-  server: 114.34.202.224
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|TW_speednode_0376
-  network: ws
-  port: 54510
-  server: 108.165.145.52
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|TW_speednode_0377
+- name: 0|TW_speednode_0353
   network: ws
   port: 81
   server: 210.61.97.241
@@ -41,59 +13,30 @@ proxies:
     headers:
       Host: pages.tcorg.filegear-sg.me
     path: /?ed=2048
-- name: 0|TW_speednode_0378
+- name: 0|TW_speednode_0354
   network: ws
-  port: 38858
-  server: 103.137.63.5
-  servername: global2.ccdd.site
+  port: 81
+  server: 210.61.97.241
+  servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: global2.ccdd.site
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai2 /?ed=2048
+- client-fingerprint: randomized
+  name: 0|TW_speednode_0355
+  network: ws
+  password: A98XMiF6NA
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: true
+  sni: dy.fxu.asia
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dy.fxu.asia
     path: /?ed=2560
-- name: 0|TW_speednode_0379
-  network: ws
-  port: 30236
-  server: 166.0.199.145
-  servername: pages.tcorg.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
-  ws-opts:
-    headers:
-      Host: pages.tcorg.filegear-sg.me
-    path: /?ed=2048
-- name: 0|TW_speednode_0380
-  network: ws
-  port: 18890
-  server: 141.11.87.85
-  servername: pages.tcorg.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
-  ws-opts:
-    headers:
-      Host: pages.tcorg.filegear-sg.me
-    path: /?ed=2048
-- name: 0|TW_speednode_0381
-  network: ws
-  port: 12071
-  server: 123.241.137.138
-  servername: pages.tcorg.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b36afe3-79d3-42c5-8ac2-407ca73ce300
-  ws-opts:
-    headers:
-      Host: pages.tcorg.filegear-sg.me
-    path: /?ed=2048
