@@ -1,47 +1,5 @@
 proxies:
-- name: 0|RU_speednode_0221
-  network: ws
-  port: 2087
-  server: 185.176.24.140
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 0|RU_speednode_0222
-  network: ws
-  port: 2096
-  server: 188.42.145.159
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 0|RU_speednode_0223
-  network: ws
-  port: 8443
-  server: 188.42.145.159
-  servername: juzibaipiao.5112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed=2048
-- name: 0|RU_speednode_0224
+- name: 0|RU_speednode_0248
   network: ws
   port: 443
   server: 185.109.21.19
@@ -56,64 +14,80 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0225
+  name: 0|RU_speednode_0249
   network: ws
-  port: 443
-  server: 188.42.145.178
-  servername: cfed.tgzdyz2.top
+  port: 8443
+  server: 188.42.145.90
+  servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 0|RU_speednode_0226
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chrome
+- name: 0|RU_speednode_0250
   network: ws
-  port: 443
-  server: 185.59.218.158
-  servername: cfed.tgzdyz2.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 0|RU_speednode_0227
-  network: ws
-  port: 443
+  port: 2096
   server: 188.42.145.159
-  servername: VIrgiNiavPn-nL.pagEs.dEv
+  servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: VIrgiNiavPn-nL.pagEs.dEv
-    path: /
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0228
+  name: 0|RU_speednode_0251
+  network: ws
+  port: 8443
+  server: 188.42.145.90
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 0|RU_speednode_0252
+  network: ws
+  port: 8443
+  server: 188.42.145.90
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?edfp=chromefp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 0|RU_speednode_0253
   network: ws
   port: 443
-  server: 188.42.145.140
-  servername: g1.youyuan.us.kg
+  server: 185.176.24.15
+  servername: cfed.tgzdyz2.top
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
   ws-opts:
     headers:
-      Host: g1.youyuan.us.kg
-    path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome
-- name: 0|RU_speednode_0229
+      Host: cfed.tgzdyz2.top
+    path: /tg@zdyz2
+- name: 0|RU_speednode_0254
   network: ws
   port: 443
   server: 185.176.24.71
@@ -128,24 +102,10 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0230
+  name: 0|RU_speednode_0255
   network: ws
   port: 443
-  server: 188.42.145.140
-  servername: g1.youyuan.us.kg
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-  ws-opts:
-    headers:
-      Host: g1.youyuan.us.kg
-    path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
-- name: 0|RU_speednode_0231
-  network: ws
-  port: 8443
-  server: 188.42.145.159
+  server: 193.9.49.80
   servername: cfed.tgzdyz2.top
   skip-cert-verify: false
   tls: true
@@ -157,7 +117,7 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0232
+  name: 0|RU_speednode_0256
   network: ws
   port: 443
   server: 185.176.24.113
@@ -171,39 +131,25 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: /tg@zdyz2
-- name: 0|RU_speednode_0233
-  network: ws
-  port: 443
-  server: 185.59.218.144
-  servername: cfed.tgzdyz2.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 0|RU_speednode_0234
-  network: ws
-  port: 443
-  server: 185.59.218.0
-  servername: cfed.tgzdyz2.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      Host: cfed.tgzdyz2.top
-    path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0235
+  name: 0|RU_speednode_0257
+  network: ws
+  port: 443
+  server: 188.42.145.84
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2fp=chrome
+- name: 0|RU_speednode_0258
   network: ws
   port: 8443
-  server: 188.42.145.90
+  server: 188.42.145.159
   servername: juzibaipiao.5112233.xyz
   skip-cert-verify: false
   tls: true
@@ -213,11 +159,26 @@ proxies:
   ws-opts:
     headers:
       Host: juzibaipiao.5112233.xyz
-    path: /?edfp=chromefp=chromefp=chrome
-- name: 0|RU_speednode_0236
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 0|RU_speednode_0259
   network: ws
   port: 443
-  server: 188.42.145.226
+  server: 188.42.145.140
+  servername: g1.youyuan.us.kg
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+  ws-opts:
+    headers:
+      Host: g1.youyuan.us.kg
+    path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
+- name: 0|RU_speednode_0260
+  network: ws
+  port: 443
+  server: 185.59.218.158
   servername: cfed.tgzdyz2.top
   skip-cert-verify: false
   tls: true
@@ -229,25 +190,25 @@ proxies:
       Host: cfed.tgzdyz2.top
     path: tg@zdyz2
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0237
+  name: 0|RU_speednode_0261
   network: ws
-  port: 8443
-  server: 188.42.145.90
-  servername: juzibaipiao.5112233.xyz
+  port: 443
+  server: 188.42.145.140
+  servername: g1.youyuan.us.kg
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
   ws-opts:
     headers:
-      Host: juzibaipiao.5112233.xyz
-    path: /?ed
+      Host: g1.youyuan.us.kg
+    path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 0|RU_speednode_0238
+  name: 0|RU_speednode_0262
   network: ws
   port: 443
-  server: 185.176.24.15
+  server: 188.42.145.178
   servername: cfed.tgzdyz2.top
   skip-cert-verify: false
   tls: true
@@ -257,4 +218,32 @@ proxies:
   ws-opts:
     headers:
       Host: cfed.tgzdyz2.top
-    path: /tg@zdyz2
+    path: tg@zdyz2
+- name: 0|RU_speednode_0263
+  network: ws
+  port: 443
+  server: 188.42.145.159
+  servername: VIrgiNiavPn-nL.pagEs.dEv
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+  ws-opts:
+    headers:
+      Host: VIrgiNiavPn-nL.pagEs.dEv
+    path: /
+- name: 0|RU_speednode_0264
+  network: ws
+  port: 8443
+  server: 188.42.145.159
+  servername: cfed.tgzdyz2.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+  ws-opts:
+    headers:
+      Host: cfed.tgzdyz2.top
+    path: tg@zdyz2
