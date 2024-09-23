@@ -55,7 +55,8 @@ for url in \
     https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.list \
     https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.list \
     https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list; do
+    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list \
+    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.list; do
     wget -q -O - "$url" | sed -e '$a\' >>cn
 done
 cat cn | awk '!seen[$0]++' | sed "/^$/d" >cn.text
