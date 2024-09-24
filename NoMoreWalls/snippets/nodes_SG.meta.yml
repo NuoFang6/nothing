@@ -1,5 +1,5 @@
 proxies:
-- name: 0|SG_speednode_0269
+- name: 0|SG_speednode_0288
   network: ws
   port: 443
   server: 8.222.101.17
@@ -13,10 +13,10 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|SG_speednode_0270
+- name: 0|SG_speednode_0289
   network: ws
   port: 443
-  server: 43.156.253.94
+  server: 8.223.39.101
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
