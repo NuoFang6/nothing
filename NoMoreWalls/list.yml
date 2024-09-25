@@ -1,4 +1,4 @@
-# Update: 2024-09-24 08:37
+# Update: 2024-09-25 08:37
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -926,102 +926,102 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 0|CN_speednode_0080
-  - 0|KR_speednode_0255
-  - 0|CN_speednode_0048
-  - 0|CN_speednode_0066
-  - 0|CN_speednode_0063
-  - 0|CN_speednode_0077
-  - 0|CN_speednode_0025
-  - 0|CN_speednode_0090
-  - 0|CN_speednode_0061
-  - 0|CN_speednode_0084
-  - 0|CN_speednode_0024
-  - 0|CN_speednode_0031
-  - 0|CN_speednode_0087
-  - 0|CN_speednode_0068
-  - 0|CN_speednode_0108
-  - 0|CN_speednode_0067
+  - 0|CN_speednode_0083
+  - 0|CN_speednode_0078
+  - 0|CN_speednode_0069
   - 0|CN_speednode_0043
-  - 0|CN_speednode_0064
-  - 0|CN_speednode_0058
-  - 0|CN_speednode_0102
-  - 0|CN_speednode_0055
-  - 0|CN_speednode_0036
-  - 0|CN_speednode_0089
-  - 0|CN_speednode_0107
-  - 0|CN_speednode_0111
-  - 0|CN_speednode_0081
-  - 0|HK_speednode_0184
-  - 0|CN_speednode_0054
-  - 0|CN_speednode_0110
-  - 0|CN_speednode_0070
-  - 0|CN_speednode_0099
-  - 0|CN_speednode_0094
-  - 0|CN_speednode_0033
-  - 0|CN_speednode_0074
-  - 0|CN_speednode_0075
-  - 0|CN_speednode_0032
-  - 0|CN_speednode_0035
-  - 0|US_speednode_0412
-  - 0|CN_speednode_0105
-  - 0|CN_speednode_0027
-  - 0|CN_speednode_0038
-  - 0|CN_speednode_0091
-  - 0|CN_speednode_0100
-  - 0|CN_speednode_0101
-  - 0|CN_speednode_0023
-  - 0|CN_speednode_0050
-  - 0|CN_speednode_0104
   - 0|CN_speednode_0106
-  - 0|CN_speednode_0065
-  - 1|d*********g.com_2
-  - 0|CN_speednode_0097
+  - 0|CN_speednode_0062
+  - 0|CN_speednode_0103
+  - 0|CN_speednode_0053
   - 0|CN_speednode_0085
   - 0|HK_speednode_0190
-  - 0|CN_speednode_0109
-  - 0|CN_speednode_0083
-  - 0|CN_speednode_0088
-  - 0|US_speednode_0401
-  - 0|CN_speednode_0093
-  - 0|CN_speednode_0078
-  - 0|CN_speednode_0039
-  - 0|CN_speednode_0049
-  - 0|CN_speednode_0095
-  - 0|CN_speednode_0026
-  - 0|CN_speednode_0053
-  - 0|CN_speednode_0079
-  - 0|CN_speednode_0069
-  - 0|HK_speednode_0192
-  - 0|CN_speednode_0062
-  - 0|CN_speednode_0072
-  - 0|CN_speednode_0060
-  - 1|d*********g.com_3
-  - 0|CA_speednode_0020
-  - 0|CN_speednode_0041
-  - 0|CN_speednode_0057
+  - 0|CN_speednode_0065
+  - 0|CN_speednode_0108
+  - 0|CN_speednode_0063
+  - 0|CN_speednode_0081
   - 0|CN_speednode_0082
-  - 0|CN_speednode_0047
-  - 0|CN_speednode_0076
-  - 0|CN_speednode_0056
-  - 0|CN_speednode_0092
-  - 0|TW_speednode_0292
-  - 0|CN_speednode_0046
+  - 0|CN_speednode_0075
+  - 0|CN_speednode_0074
+  - 0|US_speednode_0401
+  - 0|CN_speednode_0031
   - 0|CN_speednode_0098
-  - 0|CN_speednode_0045
-  - 0|KR_speednode_0254
-  - 0|CN_speednode_0096
-  - 0|CN_speednode_0073
-  - 0|CN_speednode_0071
-  - 0|CN_speednode_0040
+  - 0|CN_speednode_0105
+  - 0|CN_speednode_0109
+  - 0|CN_speednode_0076
+  - 0|CN_speednode_0100
+  - 0|CN_speednode_0099
+  - 0|CN_speednode_0026
+  - 0|CN_speednode_0049
+  - 0|CN_speednode_0055
+  - 0|CN_speednode_0104
+  - 0|CN_speednode_0036
+  - 0|CN_speednode_0077
+  - 0|CN_speednode_0097
+  - 0|CN_speednode_0064
   - 0|FR_speednode_0163
-  - 0|CN_speednode_0059
-  - 0|CN_speednode_0086
-  - 0|CN_speednode_0103
+  - 0|CA_speednode_0020
   - 0|CN_speednode_0030
+  - 0|CN_speednode_0110
+  - 0|CN_speednode_0066
+  - 0|CN_speednode_0024
+  - 0|CN_speednode_0111
+  - 0|CN_speednode_0107
+  - 0|CN_speednode_0059
   - 0|KR_speednode_0253
-  - 0|CN_speednode_0051
+  - 0|CN_speednode_0080
+  - 0|CN_speednode_0040
+  - 0|CN_speednode_0091
+  - 1|d*********g.com_3
+  - 0|CN_speednode_0101
+  - 0|CN_speednode_0032
+  - 1|d*********g.com_2
+  - 0|CN_speednode_0039
+  - 0|KR_speednode_0255
+  - 0|CN_speednode_0038
+  - 0|CN_speednode_0067
+  - 0|TW_speednode_0292
+  - 0|CN_speednode_0094
+  - 0|CN_speednode_0046
+  - 0|US_speednode_0412
+  - 0|CN_speednode_0027
+  - 0|CN_speednode_0092
+  - 0|CN_speednode_0060
+  - 0|CN_speednode_0090
   - 0|US_speednode_0402
+  - 0|CN_speednode_0045
+  - 0|CN_speednode_0071
+  - 0|HK_speednode_0192
+  - 0|CN_speednode_0035
+  - 0|CN_speednode_0057
+  - 0|CN_speednode_0025
+  - 0|CN_speednode_0058
+  - 0|CN_speednode_0047
+  - 0|CN_speednode_0084
+  - 0|CN_speednode_0102
+  - 0|CN_speednode_0070
+  - 0|CN_speednode_0061
+  - 0|CN_speednode_0056
+  - 0|CN_speednode_0054
+  - 0|CN_speednode_0068
+  - 0|CN_speednode_0072
+  - 0|CN_speednode_0048
+  - 0|CN_speednode_0051
+  - 0|CN_speednode_0073
+  - 0|CN_speednode_0093
+  - 0|KR_speednode_0254
+  - 0|HK_speednode_0184
+  - 0|CN_speednode_0033
+  - 0|CN_speednode_0050
+  - 0|CN_speednode_0088
+  - 0|CN_speednode_0089
+  - 0|CN_speednode_0096
+  - 0|CN_speednode_0086
+  - 0|CN_speednode_0041
+  - 0|CN_speednode_0079
+  - 0|CN_speednode_0087
+  - 0|CN_speednode_0095
+  - 0|CN_speednode_0023
   tfo: true
   timeout: 1500
   tolerance: 35
