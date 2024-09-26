@@ -1,14 +1,14 @@
 proxies:
-- name: 0|CA_speednode_0014
+- name: 0|CA_speednode_0021
   network: ws
   password: 95b
-  port: 8080
-  server: 140.238.158.238
+  port: 443
+  server: 15.235.48.70
   skip-cert-verify: true
-  sni: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  sni: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
   type: trojan
   udp: false
   ws-opts:
     headers:
-      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+      Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
