@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 0|US_speednode_0401
+  name: 0|US_speednode_0442
   network: ws
   password: 95b
   port: 443
@@ -14,21 +14,7 @@ proxies:
       Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - client-fingerprint: chrome
-  name: 0|US_speednode_0402
-  network: ws
-  password: 95b
-  port: 37070
-  server: 45.91.81.45
-  skip-cert-verify: true
-  sni: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-  type: trojan
-  udp: false
-  ws-opts:
-    headers:
-      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
-- client-fingerprint: chrome
-  name: 0|US_speednode_0412
+  name: 0|US_speednode_0443
   network: ws
   password: 95b
   port: 10511

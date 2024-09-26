@@ -1,357 +1,8 @@
 proxies:
-- name: 0|KR_speednode_0200
-  network: ws
-  port: 18080
-  server: 220.92.184.206
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0201
-  network: ws
-  port: 20202
-  server: 175.199.146.29
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0202
-  network: ws
-  port: 10000
-  server: 14.48.49.133
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0203
-  network: ws
-  port: 10000
-  server: 14.48.49.133
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0204
-  network: ws
-  port: 11481
-  server: 119.197.126.220
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0205
-  network: ws
-  port: 11965
-  server: 59.29.116.20
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0206
-  network: ws
-  port: 11481
-  server: 119.197.126.220
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0207
-  network: ws
-  port: 10049
-  server: 125.141.125.11
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0208
-  network: ws
-  port: 11965
-  server: 59.29.116.20
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0209
-  network: ws
-  port: 10049
-  server: 125.141.125.11
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0210
-  network: ws
-  port: 50000
-  server: 117.123.31.2
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0211
-  network: ws
-  port: 16053
-  server: 118.33.22.133
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0212
-  network: ws
-  port: 10007
-  server: 121.158.231.203
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0213
-  network: ws
-  port: 30046
-  server: 125.133.233.48
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0214
-  network: ws
-  port: 35389
-  server: 114.199.156.104
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0215
-  network: ws
-  port: 34237
-  server: 61.111.251.245
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0216
-  network: ws
-  port: 30001
-  server: 119.203.125.236
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0217
-  network: ws
-  port: 16053
-  server: 118.33.22.133
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0218
-  network: ws
-  port: 10333
-  server: 59.30.19.182
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0219
-  network: ws
-  port: 16082
-  server: 121.152.127.130
-  servername: hq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: hq.ylks.xyz
-    path: /blue
-- name: 0|KR_speednode_0220
-  network: ws
-  port: 10333
-  server: 59.30.19.182
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0221
-  network: ws
-  port: 19100
-  server: 121.181.128.153
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0222
-  network: ws
-  port: 20202
-  server: 175.199.146.29
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0223
-  network: ws
-  port: 35389
-  server: 114.199.156.104
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0224
-  network: ws
-  port: 18016
-  server: 118.130.23.168
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
 - name: 0|KR_speednode_0225
   network: ws
-  port: 10911
-  server: 183.98.53.177
+  port: 57569
+  server: 185.214.103.86
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -363,169 +14,6 @@ proxies:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - name: 0|KR_speednode_0226
-  network: ws
-  port: 35810
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /?ed=2048
-- name: 0|KR_speednode_0227
-  network: ws
-  port: 10911
-  server: 183.98.53.177
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0228
-  network: ws
-  port: 34599
-  server: 118.130.241.44
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0229
-  network: ws
-  port: 37498
-  server: 221.161.207.216
-  servername: yq.ylks.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: yq.ylks.us.kg
-    path: /?ed=2560
-- name: 0|KR_speednode_0230
-  network: ws
-  port: 30032
-  server: 115.88.75.154
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0231
-  network: ws
-  port: 10201
-  server: 121.145.59.207
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 0|KR_speednode_0232
-  network: ws
-  port: 29708
-  server: 117.123.234.199
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0233
-  network: ws
-  port: 10001
-  server: 124.153.214.6
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
-- name: 0|KR_speednode_0234
-  network: ws
-  port: 27017
-  server: 121.165.36.130
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0235
-  network: ws
-  port: 10255
-  server: 175.206.2.186
-  servername: jq.ylks01.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: jq.ylks01.eu.org
-    path: /blue
-- name: 0|KR_speednode_0236
-  network: ws
-  port: 10065
-  server: 175.206.233.78
-  servername: xq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: xq.ylks.xyz
-    path: /blue
-- name: 0|KR_speednode_0237
-  network: ws
-  port: 27017
-  server: 121.165.36.130
-  servername: global2.ccdd.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- name: 0|KR_speednode_0238
   network: ws
   port: 8443
   server: 185.214.103.3
@@ -539,10 +27,10 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0239
+- name: 0|KR_speednode_0227
   network: ws
-  port: 12198
-  server: 158.180.69.78
+  port: 11481
+  server: 119.197.126.220
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -553,23 +41,192 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0240
+- name: 0|KR_speednode_0228
   network: ws
-  port: 12000
-  server: 115.143.93.241
-  servername: xq.ylks.xyz
+  port: 11965
+  server: 59.29.116.20
+  servername: a.ssll.gay
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: xq.ylks.xyz
-    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0229
+  network: ws
+  port: 27017
+  server: 121.165.36.130
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0230
+  network: ws
+  port: 10049
+  server: 125.141.125.11
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0231
+  network: ws
+  port: 10116
+  server: 220.126.127.139
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0232
+  network: ws
+  port: 16053
+  server: 118.33.22.133
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0233
+  network: ws
+  port: 11481
+  server: 119.197.126.220
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0234
+  network: ws
+  port: 10007
+  server: 121.158.231.203
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0235
+  network: ws
+  port: 30063
+  server: 121.182.55.77
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0236
+  network: ws
+  port: 10116
+  server: 220.126.127.139
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0237
+  network: ws
+  port: 10911
+  server: 183.98.53.177
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0238
+  network: ws
+  port: 35389
+  server: 114.199.156.104
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0239
+  network: ws
+  port: 10911
+  server: 183.98.53.177
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0240
+  network: ws
+  port: 10018
+  server: 211.248.216.119
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - name: 0|KR_speednode_0241
   network: ws
-  port: 19100
-  server: 121.181.128.153
+  port: 35389
+  server: 114.199.156.104
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -582,8 +239,8 @@ proxies:
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - name: 0|KR_speednode_0242
   network: ws
-  port: 26001
-  server: 152.67.201.202
+  port: 50000
+  server: 117.123.31.2
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -596,8 +253,8 @@ proxies:
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - name: 0|KR_speednode_0243
   network: ws
-  port: 16072
-  server: 118.131.41.202
+  port: 10049
+  server: 125.141.125.11
   servername: global2.ccdd.site
   skip-cert-verify: false
   tls: true
@@ -610,63 +267,8 @@ proxies:
     path: /?ed=2560
 - name: 0|KR_speednode_0244
   network: ws
-  port: 16072
-  server: 118.131.41.202
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0245
-  network: ws
-  port: 50000
-  server: 14.39.254.65
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 0|KR_speednode_0246
-  network: ws
   port: 34599
   server: 118.130.241.44
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0247
-  network: ws
-  port: 18016
-  server: 118.130.23.168
-  servername: a.ssll.gay
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0248
-  network: ws
-  port: 32202
-  server: 211.196.226.172
   servername: global2.ccdd.site
   skip-cert-verify: false
   tls: true
@@ -677,7 +279,21 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- name: 0|KR_speednode_0249
+- name: 0|KR_speednode_0245
+  network: ws
+  port: 11965
+  server: 59.29.116.20
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0246
   network: ws
   port: 12233
   server: 106.240.98.130
@@ -691,23 +307,10 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- name: 0|KR_speednode_0250
+- name: 0|KR_speednode_0247
   network: ws
-  port: 50026
-  server: 115.88.75.154
-  servername: kq.ylks.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: kq.ylks.xyz
-    path: /blue
-- name: 0|KR_speednode_0251
-  network: ws
-  port: 36355
-  server: 129.154.48.176
+  port: 32202
+  server: 211.196.226.172
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
@@ -718,7 +321,7 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: 0|KR_speednode_0252
+- name: 0|KR_speednode_0248
   network: ws
   port: 30001
   server: 119.203.125.236
@@ -732,47 +335,301 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- name: 0|KR_speednode_0253
+- name: 0|KR_speednode_0249
   network: ws
-  password: 95b
-  port: 29708
-  server: 117.123.234.199
-  skip-cert-verify: true
-  sni: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
-  type: trojan
-  udp: false
+  port: 27017
+  server: 121.165.36.130
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
   ws-opts:
     headers:
-      Host: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0250
+  network: ws
+  port: 16072
+  server: 118.131.41.202
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0251
+  network: ws
+  port: 30063
+  server: 121.182.55.77
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0252
+  network: ws
+  port: 26001
+  server: 152.67.201.202
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0267
+  network: ws
+  port: 10065
+  server: 175.206.233.78
+  servername: xq.ylks.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /blue
 - name: 0|KR_speednode_0254
   network: ws
-  password: 95b
-  port: 2186
-  server: 146.56.110.217
-  skip-cert-verify: true
-  sni: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-  type: trojan
-  udp: false
+  port: 443
+  server: 59.3.3.161
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - name: 0|KR_speednode_0255
   network: ws
-  password: 95b
-  port: 6443
-  server: 150.230.255.146
-  skip-cert-verify: true
-  sni: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
-  type: trojan
-  udp: false
+  port: 30001
+  server: 119.203.125.236
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
-    path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0256
+  network: ws
+  port: 16072
+  server: 118.131.41.202
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0257
+  network: ws
+  port: 18080
+  server: 220.92.184.206
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0270
+  network: ws
+  port: 12000
+  server: 115.143.93.241
+  servername: xq.ylks.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
+- name: 0|KR_speednode_0259
+  network: ws
+  port: 20202
+  server: 175.199.146.29
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0260
+  network: ws
+  port: 12198
+  server: 158.180.69.78
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0261
+  network: ws
+  port: 36355
+  server: 129.154.48.176
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0262
+  network: ws
+  port: 20202
+  server: 175.199.146.29
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0263
+  network: ws
+  port: 10000
+  server: 14.48.49.133
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0264
+  network: ws
+  port: 10000
+  server: 14.48.49.133
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0265
+  network: ws
+  port: 16053
+  server: 118.33.22.133
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0266
+  network: ws
+  port: 10001
+  server: 124.153.214.6
+  servername: xq.ylks.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
+  ws-opts:
+    headers:
+      Host: xq.ylks.xyz
+    path: /?proxyip=proxyiq.kr.fxxk.dedyq.io
+- name: 0|KR_speednode_0268
+  network: ws
+  port: 34599
+  server: 118.130.241.44
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: 0|KR_speednode_0269
+  network: ws
+  port: 32202
+  server: 211.196.226.172
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0271
+  network: ws
+  port: 34237
+  server: 61.111.251.245
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: random
-  name: 0|KR_speednode_0256
+  name: 0|KR_speednode_0272
   network: ws
   port: 30032
   server: 115.88.75.154
@@ -786,10 +643,24 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: /TG@ZDYZ2?ed=2560
-- name: 0|KR_speednode_0257
+- name: 0|KR_speednode_0273
   network: ws
-  port: 30063
-  server: 121.182.55.77
+  port: 18016
+  server: 118.130.23.168
+  servername: global2.ccdd.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- name: 0|KR_speednode_0274
+  network: ws
+  port: 18016
+  server: 118.130.23.168
   servername: a.ssll.gay
   skip-cert-verify: false
   tls: true
