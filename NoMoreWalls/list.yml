@@ -1,4 +1,4 @@
-# Update: 2024-09-27 08:37
+# Update: 2024-09-28 08:36
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -398,41 +398,41 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 0|CN_speednode_0039
-  - 0|US_speednode_0397
-  - 0|US_speednode_0405
-  - 1|d*********g.com_2
-  - 0|US_speednode_0491
-  - 0|CN_speednode_0032
-  - 0|CN_speednode_0038
-  - 0|CN_speednode_0042
-  - 0|CN_speednode_0036
-  - 0|CN_speednode_0028
-  - 0|JP_speednode_0230
-  - 0|CN_speednode_0027
-  - 0|CN_speednode_0022
-  - 0|CN_speednode_0025
-  - 0|CN_speednode_0026
-  - 0|CN_speednode_0041
-  - 0|CN_speednode_0020
-  - 1|d*********g.com_3
-  - 0|CN_speednode_0031
-  - 0|CN_speednode_0029
-  - 0|US_speednode_0454
-  - 0|HK_speednode_0222
-  - 0|US_speednode_0488
-  - 0|CN_speednode_0021
-  - 0|CN_speednode_0033
   - 0|HK_speednode_0209
-  - 0|CN_speednode_0024
   - 0|CN_speednode_0035
-  - 0|CN_speednode_0037
-  - 0|CN_speednode_0030
+  - 0|CN_speednode_0029
+  - 0|CN_speednode_0032
+  - 0|CN_speednode_0039
   - 0|JP_speednode_0229
-  - 0|CN_speednode_0019
-  - 0|CN_speednode_0034
+  - 0|US_speednode_0405
+  - 0|CN_speednode_0020
+  - 0|CN_speednode_0025
+  - 0|CN_speednode_0038
+  - 0|CN_speednode_0031
+  - 0|US_speednode_0397
+  - 0|CN_speednode_0041
+  - 0|JP_speednode_0230
+  - 0|US_speednode_0488
+  - 0|CN_speednode_0036
+  - 0|CN_speednode_0033
+  - 0|CN_speednode_0037
+  - 0|US_speednode_0454
   - 0|CN_speednode_0044
+  - 1|d*********g.com_2
+  - 0|CN_speednode_0026
+  - 0|CN_speednode_0034
+  - 0|CN_speednode_0027
+  - 0|CN_speednode_0024
+  - 0|CN_speednode_0021
+  - 0|HK_speednode_0222
+  - 1|d*********g.com_3
   - 0|CN_speednode_0043
+  - 0|CN_speednode_0042
+  - 0|US_speednode_0491
+  - 0|CN_speednode_0019
+  - 0|CN_speednode_0022
+  - 0|CN_speednode_0030
+  - 0|CN_speednode_0028
   tfo: true
   timeout: 1500
   tolerance: 35
