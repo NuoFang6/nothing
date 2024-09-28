@@ -1,6 +1,36 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|US_speednode_0397
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)df1fab2:16569
+    mode: tls
+  port: 2377
+  server: 95.174.71.29
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|US_speednode_0405
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)df1fab2:16569
+    mode: tls
+  port: 2377
+  server: 23.247.137.165
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|US_speednode_0454
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)df1fab2:16569
+    mode: tls
+  port: 2377
+  server: 95.174.71.28
+  type: ss
 - client-fingerprint: chrome
-  name: 0|US_speednode_0442
+  name: 0|US_speednode_0488
   network: ws
   password: 95b
   port: 443
@@ -14,7 +44,7 @@ proxies:
       Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
     path: /trojan-6qo.pages.dev/?ed=2560?ed=2560
 - client-fingerprint: chrome
-  name: 0|US_speednode_0443
+  name: 0|US_speednode_0491
   network: ws
   password: 95b
   port: 10511
