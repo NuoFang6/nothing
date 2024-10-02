@@ -1,1 +1,46 @@
-proxies: []
+proxies:
+- client-fingerprint: chrome
+  name: 0|JP_speednode_0173
+  network: ws
+  port: 12212
+  server: 45.159.48.192
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
+- client-fingerprint: chrome
+  name: 0|JP_speednode_0174
+  network: ws
+  port: 34237
+  server: 140.238.62.219
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
+- client-fingerprint: chrome
+  name: 0|JP_speednode_0175
+  network: ws
+  port: 80
+  server: 152.70.103.218
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
