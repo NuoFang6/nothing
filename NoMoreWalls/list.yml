@@ -1,4 +1,4 @@
-# Update: 2024-10-03 08:37
+# Update: 2024-10-04 08:37
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -224,20 +224,20 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 0|CN_speednode_0023
-  - 0|CN_speednode_0024
-  - 0|US_speednode_0319
-  - 1|d*********g.com_3
-  - 0|CN_speednode_0018
-  - 0|CN_speednode_0019
   - 0|CN_speednode_0020
   - 0|HK_speednode_0164
+  - 0|CN_speednode_0023
+  - 0|CN_speednode_0019
+  - 0|CN_speednode_0025
+  - 0|CN_speednode_0022
   - 0|US_speednode_0315
   - 1|d*********g.com_2
+  - 0|CN_speednode_0018
+  - 0|CN_speednode_0024
+  - 1|d*********g.com_3
   - 0|CN_speednode_0021
+  - 0|US_speednode_0319
   - 0|HK_speednode_0163
-  - 0|CN_speednode_0022
-  - 0|CN_speednode_0025
   tfo: true
   timeout: 1500
   tolerance: 35
