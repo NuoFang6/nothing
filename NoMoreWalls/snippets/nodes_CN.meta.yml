@@ -1,76 +1,165 @@
 proxies:
 - client-fingerprint: chrome
-  name: 0|CN_speednode_0016
-  port: 7890
-  server: 182.92.216.171
-  skip-cert-verify: true
-  tls: false
-  type: http
+  name: 0|CN_speednode_0002
+  network: ws
+  port: 443
+  server: 183.240.196.236
+  servername: freenodes.repe.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
+  ws-opts:
+    headers:
+      Host: freenodes.repe.gay
+    path: /?ed=2048
 - client-fingerprint: chrome
-  name: 0|CN_speednode_0017
-  port: 1087
-  server: 119.146.223.57
+  name: 0|CN_speednode_0005
+  network: ws
+  port: 8969
+  server: 106.75.178.154
+  servername: freenodes.repe.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
+  ws-opts:
+    headers:
+      Host: freenodes.repe.gay
+    path: /?ed=2048
+- name: 0|CN_speednode_0004
+  network: ws
+  port: 4343
+  server: 114.94.49.3
+  servername: freenodes.repe.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
+  ws-opts:
+    headers:
+      Host: freenodes.repe.gay
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0006
+  network: tcp
+  port: 35612
+  server: c2ys.qiyunlink.xyz
   skip-cert-verify: true
   tls: false
-  type: http
+  type: vmess
   udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0018
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20027
-  server: sg5.mhw7e2.online
+  name: 0|CN_speednode_0007
+  password: c569d52a-7beb-4a4c-841c-53c098c35881
+  port: 39505
+  server: hzhz1.sssyun.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0008
+  password: c569d52a-7beb-4a4c-841c-53c098c35881
+  port: 39204
+  server: hzhz1.sssyun.xyz
   type: ss
 - alterId: -1
   cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0019
+  name: 0|CN_speednode_0009
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20028
-  server: 14.215.169.69
+  port: 20024
+  server: tw4.mhw7e2.online
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0020
+  name: 0|CN_speednode_0010
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20024
+  server: sg5.mhw7e2.online
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0011
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20024
+  server: sg1.mhw7e2.online
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0013
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20024
+  server: hk1.mhw7e2.online
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0014
+  password: c569d52a-7beb-4a4c-841c-53c098c35881
+  port: 40014
+  server: hzhz2.sssyun.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0015
+  network: tcp
+  port: 47217
+  server: c2ys.qiyunlink.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0016
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20027
   server: jp2.mhw7e2.online
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0021
+  name: 0|CN_speednode_0017
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20028
   server: sg5.mhw7e2.online
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0022
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20028
-  server: tw5.mhw7e2.online
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0023
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20021
-  server: tw1.mhw7e2.online
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0024
-  port: 22238
-  server: wduzpt.gxcvbmj.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
-- alterId: 0
-  cipher: auto
-  name: 0|CN_speednode_0025
+  name: 0|CN_speednode_0018
   network: tcp
-  port: 22238
-  server: wduzpt.gxcvbmj.xyz
+  port: 36158
+  server: o1sl.qiyunlink.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0019
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20028
+  server: tw5.mhw7e2.online
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0020
+  network: tcp
+  port: 47342
+  server: c2ys.qiyunlink.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0021
+  password: c569d52a-7beb-4a4c-841c-53c098c35881
+  port: 40013
+  server: hzhz2.sssyun.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|CN_speednode_0022
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20027
+  server: sg5.mhw7e2.online
+  type: ss
