@@ -1,1 +1,17 @@
-proxies: []
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 0|SG_speednode_0179
+  network: ws
+  port: 30003
+  server: xjpx6.12123.org
+  servername: xjpx6.12123.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3e84f2bf-5ab9-475e-9cb2-faf99ad878b1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /12123.org
