@@ -1,4 +1,4 @@
-# Update: 2024-10-09 08:36
+# Update: 2024-10-10 08:36
 allow-lan: false
 clash-for-android:
   append-system-dns: false
@@ -78,7 +78,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0006
+  name: 0|CN_speednode_0007
   network: tcp
   port: 35612
   server: c2ys.qiyunlink.xyz
@@ -87,78 +87,20 @@ proxies:
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0007
-  password: c569d52a-7beb-4a4c-841c-53c098c35881
-  port: 39505
-  server: hzhz1.sssyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0008
-  password: c569d52a-7beb-4a4c-841c-53c098c35881
-  port: 39204
-  server: hzhz1.sssyun.xyz
-  type: ss
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0009
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20024
-  server: tw4.mhw7e2.online
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0010
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20024
-  server: sg5.mhw7e2.online
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0011
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20024
-  server: sg1.mhw7e2.online
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0013
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20024
-  server: hk1.mhw7e2.online
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0014
-  password: c569d52a-7beb-4a4c-841c-53c098c35881
-  port: 40014
-  server: hzhz2.sssyun.xyz
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0015
+  name: 0|CN_speednode_0008
   network: tcp
-  port: 47217
-  server: c2ys.qiyunlink.xyz
+  port: 35678
+  server: o1sl.qiyunlink.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0016
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20027
-  server: jp2.mhw7e2.online
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0017
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20028
-  server: sg5.mhw7e2.online
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0018
+  name: 0|CN_speednode_0009
   network: tcp
   port: 36158
   server: o1sl.qiyunlink.top
@@ -167,17 +109,39 @@ proxies:
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0019
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20028
-  server: tw5.mhw7e2.online
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0010
+  network: tcp
+  port: 47217
+  server: c2ys.qiyunlink.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- cipher: aes-128-gcm
+  name: 0|CN_speednode_0011
+  password: 541200f4-3c26-4ee0-b5e0-d86253b1ef54
+  port: 32009
+  server: t2666.113001.xyz
   type: ss
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0020
+  name: 0|CN_speednode_0012
   network: tcp
-  port: 47342
+  port: 47526
+  server: c2ys.qiyunlink.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0013
+  network: tcp
+  port: 46391
   server: c2ys.qiyunlink.xyz
   skip-cert-verify: true
   tls: false
@@ -185,19 +149,7 @@ proxies:
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0021
-  password: c569d52a-7beb-4a4c-841c-53c098c35881
-  port: 40013
-  server: hzhz2.sssyun.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|CN_speednode_0022
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20027
-  server: sg5.mhw7e2.online
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|JP_speednode_0051
+  name: 0|JP_speednode_0026
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -208,68 +160,132 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 0|KR_speednode_0118
+  name: 0|US_speednode_0171
   network: ws
-  port: 30003
-  server: shouer2112.12123.org
-  servername: shouer2112.12123.org
+  port: 443
+  server: sgcft01.xqc.best
+  servername: d21rddomp7gdx6.cloudfront.net
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 85b733a3-7b70-481e-a7d2-23508408ea61
+  uuid: 0112665c-8eea-44f0-adba-53250d54aa2d
+  ws-opts:
+    headers:
+      Host: d21rddomp7gdx6.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0214
+  network: ws
+  port: 30000
+  server: shsz.12123.org
+  servername: shsz.12123.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: df5393c2-9895-43c4-81a7-0b55a59a7f5e
   ws-opts:
     headers:
       Host: www.baidu.com
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 0|SG_speednode_0179
+  name: 0|US_speednode_0217
   network: ws
-  port: 30003
-  server: xjpx6.12123.org
-  servername: xjpx6.12123.org
+  port: 30005
+  server: shs2.12123.org
+  servername: shs2.12123.org
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 3e84f2bf-5ab9-475e-9cb2-faf99ad878b1
+  uuid: e36e98bb-393a-4dc0-b2e8-80118e3b79dd
   ws-opts:
     headers:
       Host: www.baidu.com
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 0|US_speednode_0220
+  name: 0|US_speednode_0195
+  network: ws
+  port: 443
+  server: hkcft01.xqc.best
+  servername: daqchd3a0qfpy.cloudfront.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0372a6ae-eef4-4915-8271-1ddd6a61582d
+  ws-opts:
+    headers:
+      Host: daqchd3a0qfpy.cloudfront.net
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0200
   network: ws
   port: 443
   server: jpcft01.xqc.best
-  servername: dxpmrsgr3291i.cloudfront.net
+  servername: d263c0bqn07wlj.cloudfront.net
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: e7a8c09e-7884-4c91-9e4e-4e57cbb75255
+  uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510
   ws-opts:
     headers:
-      Host: dxpmrsgr3291i.cloudfront.net
+      Host: d263c0bqn07wlj.cloudfront.net
     path: /stream
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0213
+  network: ws
+  port: 2083
+  server: usav3.ftko8vzt9w.cyou
+  servername: usav3.ftko8vzt9w.cyou
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
+  ws-opts:
+    headers:
+      Host: usav3.ftko8vzt9w.cyou
+    path: /
 - alterId: 0
   cipher: auto
   name: 0|US_speednode_0218
   network: ws
-  port: 443
-  server: sgcft01.xqc.best
-  servername: d285gakij18iij.cloudfront.net
+  port: 2083
+  server: hlv3.ftko8vzt9w.cyou
+  servername: hlv3.ftko8vzt9w.cyou
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 63c0cb32-4d18-4a7c-ab5e-624b2c8d36f5
+  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
   ws-opts:
     headers:
-      Host: d285gakij18iij.cloudfront.net
-    path: /stream
+      Host: hlv3.ftko8vzt9w.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|US_speednode_0219
+  network: ws
+  port: 2087
+  server: xjpv3.ftko8vzt9w.cyou
+  servername: xjpv3.ftko8vzt9w.cyou
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
+  ws-opts:
+    headers:
+      Host: xjpv3.ftko8vzt9w.cyou
+    path: /
 - alterId: 0
   cipher: auto
   name: 1|d*********g.com_2
@@ -305,29 +321,24 @@ proxy-groups:
   mptcp: true
   name: 自动选择
   proxies: &id001
-  - 1|d*********g.com_3
   - 0|CN_speednode_0011
-  - 0|CN_speednode_0021
+  - 0|US_speednode_0171
+  - 0|US_speednode_0213
+  - 1|d*********g.com_3
+  - 0|US_speednode_0200
+  - 0|CN_speednode_0012
   - 0|US_speednode_0218
-  - 0|CN_speednode_0019
-  - 0|CN_speednode_0007
-  - 0|CN_speednode_0013
-  - 0|US_speednode_0220
-  - 0|CN_speednode_0018
+  - 0|US_speednode_0219
   - 1|d*********g.com_2
-  - 0|CN_speednode_0010
-  - 0|CN_speednode_0022
-  - 0|KR_speednode_0118
-  - 0|CN_speednode_0020
-  - 0|CN_speednode_0006
-  - 0|CN_speednode_0016
-  - 0|JP_speednode_0051
-  - 0|CN_speednode_0014
-  - 0|CN_speednode_0017
-  - 0|SG_speednode_0179
-  - 0|CN_speednode_0008
+  - 0|JP_speednode_0026
+  - 0|US_speednode_0195
+  - 0|US_speednode_0214
   - 0|CN_speednode_0009
-  - 0|CN_speednode_0015
+  - 0|CN_speednode_0010
+  - 0|US_speednode_0217
+  - 0|CN_speednode_0008
+  - 0|CN_speednode_0013
+  - 0|CN_speednode_0007
   tfo: true
   timeout: 1500
   tolerance: 35
