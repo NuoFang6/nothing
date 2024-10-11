@@ -1,1 +1,14 @@
-proxies: []
+proxies:
+- name: 0|RU_speednode_0118
+  network: ws
+  password: bpb-trojan
+  port: 2096
+  server: 45.142.120.4
+  skip-cert-verify: true
+  sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /troUbg9Q3QgD0TJRfy?ed=2560

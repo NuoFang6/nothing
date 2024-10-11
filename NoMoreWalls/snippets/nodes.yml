@@ -1,57 +1,35 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0007
+  name: 0|CN_speednode_0020
   network: tcp
-  port: 35612
+  port: 47342
   server: c2ys.qiyunlink.xyz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- alterId: 0
-  cipher: auto
-  name: 0|CN_speednode_0008
-  network: tcp
-  port: 35678
-  server: o1sl.qiyunlink.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- alterId: 0
-  cipher: auto
-  name: 0|CN_speednode_0009
-  network: tcp
-  port: 36158
-  server: o1sl.qiyunlink.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- alterId: 0
-  cipher: auto
-  name: 0|CN_speednode_0010
-  network: tcp
-  port: 47217
-  server: c2ys.qiyunlink.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- cipher: aes-128-gcm
-  name: 0|CN_speednode_0011
-  password: 541200f4-3c26-4ee0-b5e0-d86253b1ef54
-  port: 32009
-  server: t2666.113001.xyz
+  version: 2
+- alterId: -1
+  cipher: aes-256-gcm
+  name: 0|CN_speednode_0021
+  password: 370a08f3-5953-4b54-a598-31f0a832bdea
+  port: 55555
+  server: 433c.ens3.buzz
   type: ss
+- name: 0|CN_speednode_0022
+  password: af46f520-a6a1-4207-b3c4-062493fb71d1
+  port: 12011
+  server: cn1.cdn.xfltd-cdn.top
+  skip-cert-verify: true
+  sni: cdn.alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0012
+  name: 0|CN_speednode_0025
   network: tcp
   port: 47526
   server: c2ys.qiyunlink.xyz
@@ -62,7 +40,25 @@ proxies:
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - alterId: 0
   cipher: auto
-  name: 0|CN_speednode_0013
+  name: 0|CN_speednode_0026
+  network: tcp
+  port: 35678
+  server: o1sl.qiyunlink.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: -1
+  cipher: aes-128-gcm
+  name: 0|CN_speednode_0028
+  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
+  port: 11789
+  server: pj.shakalaka.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0029
   network: tcp
   port: 46391
   server: c2ys.qiyunlink.xyz
@@ -71,144 +67,202 @@ proxies:
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- cipher: chacha20-ietf-poly1305
-  name: 0|JP_speednode_0026
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)ca5bef9:175503
-    mode: tls
-  port: 2377
-  server: 18.176.215.63
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|US_speednode_0171
+  name: 0|CN_speednode_0035
+  network: tcp
+  port: 47217
+  server: c2ys.qiyunlink.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+  version: 2
+- alterId: 0
+  cipher: auto
+  name: 0|CN_speednode_0032
+  network: tcp
+  port: 36158
+  server: o1sl.qiyunlink.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: 64
+  cipher: auto
+  name: 0|CN_speednode_0034
+  port: 33288
+  server: 183.236.48.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 0|CN_speednode_0036
+  port: 43526
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0|DE_speednode_0040
   network: ws
   port: 443
-  server: sgcft01.xqc.best
-  servername: d21rddomp7gdx6.cloudfront.net
+  server: 91.107.164.204
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 0112665c-8eea-44f0-adba-53250d54aa2d
+  uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: d21rddomp7gdx6.cloudfront.net
-    path: /stream
-- alterId: 0
+      Host: mehrjavan.ir
+    max_early_data: 2560
+    path: /m28jcoZZUhkqg6pk11
+- alpn:
+  - http/1.1
+  alterId: 0
   cipher: auto
-  name: 0|US_speednode_0214
-  network: ws
-  port: 30000
-  server: shsz.12123.org
-  servername: shsz.12123.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: df5393c2-9895-43c4-81a7-0b55a59a7f5e
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /12123.org
-- alterId: 0
-  cipher: auto
-  name: 0|US_speednode_0217
-  network: ws
-  port: 30005
-  server: shs2.12123.org
-  servername: shs2.12123.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e36e98bb-393a-4dc0-b2e8-80118e3b79dd
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /12123.org
-- alterId: 0
-  cipher: auto
-  name: 0|US_speednode_0195
+  client-fingerprint: chrome
+  name: 0|DE_speednode_0043
   network: ws
   port: 443
-  server: hkcft01.xqc.best
-  servername: daqchd3a0qfpy.cloudfront.net
+  server: 57.129.24.125
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 0372a6ae-eef4-4915-8271-1ddd6a61582d
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: daqchd3a0qfpy.cloudfront.net
-    path: /stream
-- alterId: 0
+      Host: aveiror.com
+    path: /linkvws
+- name: 0|KR_speednode_0074
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 0|KR_speednode_0077
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- alterId: -1
+  client-fingerprint: chrome
+  name: 0|KR_speednode_0084
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /
+- name: 0|KR_speednode_0085
+  network: ws
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: 0|KR_speednode_0087
+  password: 1dfba761-c1e0-422e-98b6-062da56afb53
+  port: 443
+  server: jkrf1.969799.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0|KR_speednode_0088
+  password: 1dfba761-c1e0-422e-98b6-062da56afb53
+  port: 443
+  server: jkrf1.969799.xyz
+  skip-cert-verify: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: trojan
+  udp: true
+- name: 0|RU_speednode_0118
+  network: ws
+  password: bpb-trojan
+  port: 2096
+  server: 45.142.120.4
+  skip-cert-verify: true
+  sni: 403B3611-99bC-43b7-88D7-26ed5d0825A9-3.PageS.DEV
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /troUbg9Q3QgD0TJRfy?ed=2560
+- name: 0|US_speednode_0181
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 199.181.197.143
+  skip-cert-verify: true
+  sni: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV
+    path: /trAun92tJzhYilmLtq?ed=2560
+- alpn:
+  - http/1.1
+  alterId: 0
   cipher: auto
-  name: 0|US_speednode_0200
+  client-fingerprint: chrome
+  name: 0|US_speednode_0241
   network: ws
   port: 443
-  server: jpcft01.xqc.best
-  servername: d263c0bqn07wlj.cloudfront.net
+  server: 38.91.100.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 322c8011-1460-4e72-9b36-c06ab7f2a510
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: d263c0bqn07wlj.cloudfront.net
-    path: /stream
-- alterId: 0
-  cipher: auto
-  name: 0|US_speednode_0213
-  network: ws
-  port: 2083
-  server: usav3.ftko8vzt9w.cyou
-  servername: usav3.ftko8vzt9w.cyou
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
-  ws-opts:
-    headers:
-      Host: usav3.ftko8vzt9w.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0|US_speednode_0218
-  network: ws
-  port: 2083
-  server: hlv3.ftko8vzt9w.cyou
-  servername: hlv3.ftko8vzt9w.cyou
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
-  ws-opts:
-    headers:
-      Host: hlv3.ftko8vzt9w.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0|US_speednode_0219
-  network: ws
-  port: 2087
-  server: xjpv3.ftko8vzt9w.cyou
-  servername: xjpv3.ftko8vzt9w.cyou
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f8f3ab73-c6da-4c21-bd21-8a25a4540d6c
-  ws-opts:
-    headers:
-      Host: xjpv3.ftko8vzt9w.cyou
-    path: /
+      Host: sareikela.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 1|d*********g.com_2
