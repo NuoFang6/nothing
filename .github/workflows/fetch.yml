@@ -39,32 +39,19 @@ jobs:
         working-directory: ./NoMoreWalls
         run: python ./fetch.py
 
+      - name: 筛选节点
+        working-directory: ./NoMoreWalls
+        run: python ./filter.py
+
       - name: 提交更改
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git pull origin main
           git add ./NoMoreWalls/list*
-          git add ./NoMoreWalls/snippets/
+          # git add ./NoMoreWalls/snippets/
           git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
       - name: 推送更改
         uses: ad-m/github-push-action@master
         with:
           branch: main
-
-      - name: 计算要清除缓存的文件
-        id: purge_urls
-        working-directory: ./NoMoreWalls
-        run: |
-          sleep 5
-          baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@main"
-          urls=""
-          for f in `find . -maxdepth 1 -name "list*" -type f`; do
-            urls+="${baseUrl}/NoMoreWalls/${f},"
-          done
-          echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
-      - name: 清除 JsDelivr CDN 缓存
-        uses: egad13/purge-jsdelivr-cache@v1
-        with:
-          url: ${{ steps.purge_urls.outputs.urls }}
-        continue-on-error: true
