@@ -35,6 +35,12 @@ for proxy in data.get("proxies", []):
     port = proxy.get("port")
     proxy_type = proxy.get("type")
 
+    # 将 port 转换为整数进行比较（避免字符串 '2095' 和数字 2095 不匹配）
+    try:
+        port = int(port)
+    except (ValueError, TypeError):
+        continue  # 如果端口无法转换为数字，则跳过
+
     # 跳过要过滤的端口
     if port in ports_to_filter:
         continue
