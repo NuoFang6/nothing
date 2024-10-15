@@ -1,29 +1,153 @@
 proxies:
-- name: 0|GB_speednode_0001
+- name: 0|GB_speednode_0047
   network: ws
   port: 443
-  server: 94.247.142.241
-  servername: fq521.6789.cloudns.be
-  skip-cert-verify: false
+  server: 217.163.76.60
+  servername: ll.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: ll.ylks.us.kg
+    path: /?ed=2560
+- name: 0|GB_speednode_0048
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: dl.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dl.ylks.xyz
+    path: /?proxyip=proxyip.oracll.fxxl.dedyn.io
+- name: 0|GB_speednode_0049
+  network: ws
+  port: 443
+  server: 217.163.76.60
+  servername: cl.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: cl.ylks.xyz
+    path: /freecodes
+- name: 0|GB_speednode_0050
+  network: ws
+  port: 443
+  server: 217.163.76.60
+  servername: dl.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dl.ylks.xyz
+    path: /freecodes
+- name: 0|GB_speednode_0052
+  network: ws
+  port: 443
+  server: 217.163.76.203
+  servername: ck.ylks.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: fq521.6789.cloudns.be
-    path: /
-- name: 0|GB_speednode_0002
+      Host: ck.ylks.xyz
+    path: /blue
+- name: 0|GB_speednode_0058
   network: ws
   port: 443
-  server: 94.247.142.241
-  servername: fq521.6789.cloudns.be
-  skip-cert-verify: false
+  server: 217.163.76.65
+  servername: dk.ylks.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 775213ac-3976-439a-8977-3277c0e4735d
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: fq521.6789.cloudns.be
-    path: /Twitterfreecodes
+      Host: dk.ylks.xyz
+    path: /blue
+- name: 0|GB_speednode_0054
+  network: ws
+  port: 443
+  server: 217.163.76.60
+  servername: lk.kpcloud.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: lk.kpcloud.eu.org
+    path: /blue
+- name: 0|GB_speednode_0055
+  network: ws
+  port: 443
+  server: 217.163.76.65
+  servername: dl.ylks.xyz
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dl.ylks.xyz
+    path: /freecodes
+- name: 0|GB_speednode_0056
+  network: ws
+  port: 443
+  server: 217.163.76.60
+  servername: ll.kpcloud.eu.org
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: ll.kpcloud.eu.org
+    path: /freecodes
+- name: 0|GB_speednode_0057
+  network: ws
+  port: 443
+  server: 217.163.76.60
+  servername: lk.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: lk.ylks.us.kg
+    path: /?ed
+- alterId: 0
+  cipher: auto
+  name: 0|GB_speednode_0059
+  network: ws
+  port: 443
+  server: 149.7.16.174
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 0|GB_speednode_0060
+  network: ws
+  port: 443
+  server: 149.7.16.194
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws

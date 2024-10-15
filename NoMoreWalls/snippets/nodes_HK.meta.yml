@@ -1,1 +1,21 @@
-proxies: []
+proxies:
+- alterId: -1
+  name: 0|HK_speednode_0061
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  port: 443
+  server: hknode07.oportal.cc
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 0|HK_speednode_0062
+  network: ws
+  port: 443
+  server: 219.76.13.169
+  servername: ll.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: ll.ylks.us.kg
+    path: /?ed=2560

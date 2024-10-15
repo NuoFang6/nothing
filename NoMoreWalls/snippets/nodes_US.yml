@@ -1,1 +1,76 @@
-proxies: []
+proxies:
+- name: 0|US_speednode_0125
+  password: c52596bf-eecb-3ef9-ae6b-6b4f6ad83a11
+  port: 5524
+  server: 103.136.185.27
+  skip-cert-verify: true
+  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+  type: trojan
+  udp: true
+- name: 0|US_speednode_0126
+  password: c52596bf-eecb-3ef9-ae6b-6b4f6ad83a11
+  port: 3508
+  server: 103.136.185.28
+  skip-cert-verify: true
+  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+  type: trojan
+  udp: true
+- name: 0|US_speednode_0140
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: sure-mutt.sunbeam921.monster
+  skip-cert-verify: true
+  sni: sure-mutt.sunbeam921.monster
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 0|US_speednode_0156
+  network: ws
+  port: 37000
+  server: 142.4.110.234
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/313431063115
+- alterId: 64
+  cipher: auto
+  name: 0|US_speednode_0158
+  network: ws
+  port: 37000
+  server: 38.33.45.66
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23365885.xyz
+    path: /path/1707992158285
+- alterId: 64
+  cipher: auto
+  name: 0|US_speednode_0166
+  network: ws
+  port: 443
+  server: 162.209.128.83
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/283431252216
+- alterId: 64
+  cipher: auto
+  name: 0|US_speednode_0191
+  network: ws
+  port: 38007
+  server: 38.174.190.80
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/102206282005
