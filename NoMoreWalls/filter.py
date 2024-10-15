@@ -1,6 +1,6 @@
 import yaml
 
-source_file = "source.yaml"
+source_file = "list.meta.yml"
 filtered_file = "list.filtered.meta.yaml"
 
 # 定义需要过滤掉的端口号列表
