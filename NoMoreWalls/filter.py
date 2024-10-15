@@ -24,29 +24,35 @@ ports_to_filter = {
 with open(source_file, "r") as f:
     data = yaml.safe_load(f)
 
-# 用于存储已出现的 (server, port) 组合
+# 用于存储已出现的 (server, port) 和 (server, type) 组合
 seen_combinations = set()
+seen_server_type_combinations = set()
 
 # 遍历 proxies 数组，删除 port 属于 ports_to_filter 的项，同时去重
 filtered_proxies = []
 for proxy in data.get("proxies", []):
     server = proxy.get("server")
     port = proxy.get("port")
-
-    # 将 port 转换为整数进行比较（避免字符串 '2095' 和数字 2095 不匹配）
-    try:
-        port = int(port)
-    except (ValueError, TypeError):
-        continue  # 如果端口无法转换为数字，则跳过
+    proxy_type = proxy.get("type")
 
     # 跳过要过滤的端口
     if port in ports_to_filter:
         continue
 
-    # 如果 (server, port) 组合没见过，添加到 filtered_proxies 中
-    if (server, port) not in seen_combinations:
-        filtered_proxies.append(proxy)
-        seen_combinations.add((server, port))
+    # 去重 (server, port) 组合
+    if (server, port) in seen_combinations:
+        continue
+
+    # 去重 (server, type) 组合
+    if (server, proxy_type) in seen_server_type_combinations:
+        continue
+
+    # 添加当前组合到对应的去重集合
+    seen_combinations.add((server, port))
+    seen_server_type_combinations.add((server, proxy_type))
+
+    # 保留当前 proxy
+    filtered_proxies.append(proxy)
 
 # 将过滤和去重后的数据重新赋值给 data['proxies']
 data["proxies"] = filtered_proxies
