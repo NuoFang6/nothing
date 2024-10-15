@@ -1,0 +1,2568 @@
+proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+Cogent\u901A\u4FE1"
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+\u76DB\u987FCogent\u901A\u4FE1\u516C\u53F8\
+    \ 4"
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.121.43.65
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #8"
+  network: ws
+  port: '2095'
+  server: 162.159.140.19
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: github.com/Alvin9999
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1|\u5E7F\u5DDE"
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: "1|\u5170+v2rayfree.eu.org"
+  password: FX77Cp2CHKq8JKTHux2xUi
+  port: 32935
+  server: 13.74.65.144
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: "1|\U0001F1EA \u56FD \u5DDE\u5170\u798FAmazon"
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.156.130.123
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "1,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_29"
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 69.50.95.53
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1,11|\U0001F1FA\U0001F1F8 github.com/freefq - \u7F8E\u56FDFastl..."
+  network: ws
+  port: '443'
+  server: gov.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8\
+    \ 2"
+  port: 43526
+  server: 120.232.153.71
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #10"
+  network: ws
+  port: '8080'
+  server: www.darkroom.lol
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+v2rayfree.eu.org 4"
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 69.50.95.103
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #7"
+  network: ws
+  port: '2095'
+  server: 104.19.45.13
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "1,11|\U0001F1EE\U0001F1F3 github.com/freefq - \u5370\u5EA6  3"
+  network: ws
+  port: '443'
+  server: 202.78.162.5
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+  ws-opts:
+    headers:
+      Host: sahand.serveminecraft.net
+    path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "1,3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 69.50.92.72
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: "2,3,5|_CN_->_DE_\u56FD #1"
+  password: bbO8KazkNBUGb7HP
+  port: 20934
+  server: 221.181.185.71
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "2,5|_US_\u56FD_1 #2"
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 23.150.248.122
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: "2,5|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F8_US_\u7F8E\u56FD #1"
+  password: JN8psKoncqaqS4ul
+  port: 22064
+  server: 221.181.185.71
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "2,3,5|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_5 #3"
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 139.64.165.230
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "2,5|\U0001F1FA_RU_\u4FC4\u7F57\u65AF #1"
+  password: ECjp87TIkUiJ5AhRZglZ9E
+  port: 40076
+  server: 194.87.45.189
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "2,3,5|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_6 #2"
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.166.88.221
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3|_US_\u56FD_1 #1"
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 69.50.92.110
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: "3|\U0001F1FA_RU__1"
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4 #1"
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 169.197.141.84
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '3,4|_CA_ #1'
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.154.136.247
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_17"
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 142.202.49.84
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_7 #1"
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 69.50.92.72
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_8"
+  password: Y6R9pAtvxxzmGC
+  port: 9090
+  server: 69.50.95.218
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: "3|\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF_2"
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_18"
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 142.202.49.84
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3 #1"
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 142.202.49.122
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4 #2"
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 142.202.49.122
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_10 #1"
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 142.202.49.119
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_13 #1"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 69.50.92.99
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_14"
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 142.202.49.119
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_15"
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 69.50.95.53
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_16"
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 142.202.49.119
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "4|\U0001F1E8_CN_\u56FD->_IE_"
+  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
+  port: 10720
+  server: 122.195.189.15
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "4|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F8_US_\u7F8E\u56FD_1"
+  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
+  port: 10712
+  server: yidong1.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_20"
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 142.202.49.84
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_22"
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 169.197.142.216
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1FA_RU__1"
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.37.24.49
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_24"
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 69.50.92.55
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_25"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 69.50.95.179
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_26"
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 69.50.92.110
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_27"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 169.197.142.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "4|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
+    _2"
+  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
+  port: 10709
+  server: yidong1.liulangdiqiu.life
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_32"
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 167.88.61.235
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_33"
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 167.88.61.235
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_35"
+  password: lGqs95QkFHo2NV
+  port: 5498
+  server: 169.197.142.120
+  type: ss
+  udp: true
+- name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #5"
+  network: ws
+  port: 35002
+  server: 58.176.229.127
+  servername: dns68.putata.eu.org
+  tls: true
+  type: vless
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #11"
+  network: tcp
+  port: '12908'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #14"
+  network: tcp
+  port: '12928'
+  server: z6.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #17"
+  network: ws
+  port: '2086'
+  server: icook.tw
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- name: "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  network: ws
+  port: 12654
+  server: 124.80.75.68
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #59"
+  network: ws
+  port: '12959'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z3.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #68"
+  network: ws
+  port: '2086'
+  server: 23.227.38.6
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ip005.3196772.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #70"
+  network: ws
+  port: '12943'
+  server: z6.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6,8|\u5E7F\u4E1C\u7701 \u79FB\u52A8"
+  network: tcp
+  port: '12960'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #77"
+  network: ws
+  port: '12947'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #80"
+  network: ws
+  port: '12933'
+  server: z6.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z6.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #81"
+  network: tcp
+  port: '12912'
+  server: z2.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #85"
+  network: ws
+  port: '12925'
+  server: z2.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #86"
+  network: ws
+  port: 36669
+  server: 183.178.22.246
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: '%2F%3Fed%3D2048'
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #87"
+  network: tcp
+  port: '12934'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #92"
+  network: ws
+  port: '12909'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #93"
+  network: ws
+  port: '2086'
+  server: 104.16.149.244
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #94"
+  network: ws
+  port: '12902'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #98"
+  network: ws
+  port: '12956'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #1"
+  network: ws
+  port: 24016
+  server: 117.123.72.132
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: '%2F%3Fed%3D2048security%3Dtls'
+- name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #106"
+  network: tcp
+  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
+  port: 13033
+  server: naiu-sg.05vr9nyqg5.download
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- name: "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #2"
+  network: ws
+  port: 19374
+  server: 117.123.72.132
+  servername: a.ssll.gay
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #131"
+  network: tcp
+  port: '12970'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #142"
+  network: ws
+  port: '2086'
+  server: 172.67.74.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #147"
+  network: ws
+  port: '2086'
+  server: 104.26.5.145
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #154"
+  network: ws
+  port: '2086'
+  server: 104.26.5.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #164"
+  network: ws
+  port: '12955'
+  server: z2.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #167"
+  network: ws
+  port: '13007'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #169"
+  network: ws
+  port: '12910'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #172"
+  network: ws
+  port: '13001'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #179"
+  network: ws
+  port: '2086'
+  server: singapore.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #182"
+  network: tcp
+  port: '12962'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: "6|\u52A0\u62FF\u5927(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  network: ws
+  port: '2086'
+  server: 104.18.15.19
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts:
+    headers:
+      Host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #183"
+  network: ws
+  port: '12926'
+  server: z2.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z2.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #185"
+  network: ws
+  port: '12920'
+  server: z6.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #187"
+  network: ws
+  port: '12961'
+  server: z8.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks"
+  network: tcp
+  port: '40434'
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #1"
+  network: tcp
+  port: '50002'
+  server: 47.104.186.133
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #2"
+  network: ws
+  port: '30000'
+  server: 185.236.203.70
+  tls: true
+  type: vmess
+  uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd
+  ws-opts:
+    headers:
+      Host: www.43701204.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #3"
+  network: ws
+  port: '30000'
+  server: 185.108.128.59
+  tls: true
+  type: vmess
+  uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
+  ws-opts:
+    headers:
+      Host: www.41824045.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #4"
+  network: ws
+  port: '30001'
+  server: 185.133.42.144
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.33189064.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #5"
+  network: ws
+  port: '30000'
+  server: 119.59.98.41
+  tls: true
+  type: vmess
+  uuid: 4d24fbde-cb0e-4025-98ec-222933847d3d
+  ws-opts:
+    headers:
+      Host: www.71199889.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #6"
+  network: tcp
+  port: '50004'
+  server: 112.132.212.19
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #7"
+  network: ws
+  port: '48882'
+  server: 134.122.135.234
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.31946485.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #8"
+  network: ws
+  port: '49999'
+  server: 104.192.87.87
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.81640175.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #9"
+  network: ws
+  port: '31002'
+  server: 139.99.180.114
+  tls: true
+  type: vmess
+  uuid: 6c04a273-7302-4e09-9ced-aedaaa7461af
+  ws-opts:
+    headers:
+      Host: www.63373959.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #10"
+  network: ws
+  port: '30000'
+  server: 185.169.64.30
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.77435157.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #11"
+  network: ws
+  port: '30002'
+  server: 23.108.100.107
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.98799545.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #12"
+  network: ws
+  port: '30000'
+  server: 41.215.242.89
+  tls: true
+  type: vmess
+  uuid: ee442f43-b07a-419d-bd27-2d3456393abc
+  ws-opts:
+    headers:
+      Host: www.94841604.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #14"
+  network: tcp
+  port: '50002'
+  server: 47.92.152.169
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #15"
+  network: tcp
+  port: '39041'
+  server: 183.238.202.173
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #18"
+  network: ws
+  port: '38002'
+  server: 38.33.34.16
+  tls: true
+  type: vmess
+  uuid: b65da4af-a12a-4a59-9316-4549e12ba62c
+  ws-opts:
+    headers:
+      Host: www.78274451.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #19"
+  network: ws
+  port: '30000'
+  server: 85.206.165.33
+  tls: true
+  type: vmess
+  uuid: ba49ab05-78f8-4b0b-9400-1826cc2d3f75
+  ws-opts:
+    headers:
+      Host: www.83322971.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #21"
+  network: ws
+  port: '30000'
+  server: 103.199.103.51
+  tls: true
+  type: vmess
+  uuid: 0146245b-0704-489a-91e5-7ae527f82e1a
+  ws-opts:
+    headers:
+      Host: www.40232916.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #22"
+  network: tcp
+  port: '50002'
+  server: 114.55.132.202
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #23"
+  network: tcp
+  port: '50002'
+  server: 47.116.173.76
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #25"
+  network: ws
+  port: '31002'
+  server: 37.120.209.126
+  tls: true
+  type: vmess
+  uuid: dc0cf22d-e35c-4b77-8924-977f6844909b
+  ws-opts:
+    headers:
+      Host: www.60013746.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #28"
+  network: ws
+  port: '30000'
+  server: 152.89.160.10
+  tls: true
+  type: vmess
+  uuid: 57170ff0-7180-4664-8f61-8debdda345f7
+  ws-opts:
+    headers:
+      Host: www.35261357.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #29"
+  network: ws
+  port: '30008'
+  server: 103.72.5.167
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.86972765.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #30"
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #31"
+  network: ws
+  port: '30004'
+  server: 74.48.6.211
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.75487294.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #32"
+  network: ws
+  port: '30004'
+  server: 104.233.170.150
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42703225.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #33"
+  network: ws
+  port: '48883'
+  server: 134.122.135.56
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.44317374.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #34"
+  network: ws
+  port: '30005'
+  server: 103.123.132.28
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.97254291.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #35"
+  network: ws
+  port: '30000'
+  server: 23.224.135.45
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.51304617.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #37"
+  network: ws
+  port: '30001'
+  server: 89.163.247.25
+  tls: true
+  type: vmess
+  uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
+  ws-opts:
+    headers:
+      Host: www.78791485.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #38"
+  network: ws
+  port: '30002'
+  server: 83.142.225.34
+  tls: true
+  type: vmess
+  uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
+  ws-opts:
+    headers:
+      Host: www.93259997.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #39"
+  network: ws
+  port: '41000'
+  server: 156.249.18.93
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.25449627.xyz
+    path: /path/191019072927
+- alterId: 64
+  cipher: auto
+  name: "7|Github\u641C\u7D22TrojanLinks #43"
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: "8,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #3"
+  network: ws
+  port: '2095'
+  server: 104.19.45.50
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "8,9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #9"
+  network: ws
+  port: '8880'
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "8,11|\U0001F1E9\U0001F1F0 \u4E39\u9EA6 v2rayfree.eu.org"
+  network: ws
+  port: '80'
+  server: go.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
+  ws-opts:
+    headers:
+      Host: open.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: "9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  network: ws
+  port: '8880'
+  server: server31.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #2"
+  network: ws
+  port: '80'
+  server: 172.66.168.173
+  tls: false
+  type: vmess
+  uuid: 83452b53-dabc-4d13-b2e6-b904ffee8f5b
+  ws-opts:
+    headers:
+      Host: 50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+- delay: 1219
+  name: "10|\u6FB3\u5927\u5229\u4E9A 001"
+  network: ws
+  port: 38454
+  server: 43.153.103.203
+  servername: vn.ylkszy.eu.org
+  tls: true
+  type: vless
+  uuid: c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0
+  ws-opts:
+    headers:
+      Host: vn.ylkszy.eu.org
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- client-fingerprint: randomized
+  delay: 476
+  name: "10|\u9999\u6E2F 004"
+  network: ws
+  port: 11417
+  server: 183.178.22.246
+  servername: dns68.putata.eu.org
+  tls: true
+  type: vless
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: "10|\u97E9\u56FD 004"
+  network: tcp
+  port: 24021
+  reality-opts:
+    public-key: XfkuAyN_XfbUJ8qwmp5ILy4rfXcafsie9C-SYxdyKhQ
+    short-id: 0ab19147
+  server: kr.maple.icu
+  servername: www.apple.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 83512b4a-64a9-4058-80df-53d95e2fbaa0
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: aeyydsrongseven
+  name: "10|\u8D8A\u5357 001"
+  network: grpc
+  port: 34237
+  server: ls.wvw.mom
+  servername: ls.wvw.mom
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+- alterId: 2
+  cipher: auto
+  name: "10|\u4FC4\u7F57\u65AF 004"
+  network: ws
+  port: 24300
+  server: rumsk.ifastcdncache.com
+  servername: bilibili.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 20bfc872-7972-44c1-a729-f594fd80f7f3
+  ws-opts:
+    headers:
+      Host: rumsk.ifastcdncache.com
+    path: /bilibililive
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /@HosseinStore_Za/@NEKO_Za
+  name: "10|\u5FB7\u56FD 008"
+  network: http
+  port: 34497
+  server: 195.254.165.63
+  servername: ttl.unique69.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 860a1295-0d81-403c-a179-97f396437809
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    method: GET
+    path:
+    - /
+  name: "10|\u9999\u6E2F 002"
+  network: http
+  port: 2902
+  server: 143.92.42.65
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1E8\U0001F1F3 github.com/freefq - \u5E7F\u4E1C\u7701\u79FB\u52A8\
+    \ 7"
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1FA\U0001F1F8 github.com/freefq - \u7F8E\u56FDCloud... #3"
+  network: ws
+  port: '8880'
+  server: server32.beheshtbaneh.com
+  tls: false
+  type: vmess
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  ws-opts:
+    headers:
+      Host: server32.beheshtbaneh.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: "11|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8"
+  network: tcp
+  port: '43526'
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #4"
+  network: ws
+  port: '2095'
+  server: 104.26.5.90
+  tls: false
+  type: vmess
+  uuid: a63e9c8c-2c04-4b8e-af6a-4a02494a1f0b
+  ws-opts:
+    headers:
+      Host: ip2.8084726.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1F3\U0001F1F1 \u8377\u5170 \u5317\u8377\u5170\u7701\u963F\u59C6\
+    \u65AF\u7279\u4E39DigitalOcean\u6570\u636E\u4E2D..."
+  network: tcp
+  port: '1010'
+  server: 188.166.96.150
+  tls: false
+  type: vmess
+  uuid: 09e3fef1-3136-41a9-9531-6ea36482dea1
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #6"
+  network: ws
+  port: '2082'
+  server: 172.64.198.249
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- name: "11|\U0001F1EB\U0001F1F7 \u6CD5\u56FD \u5DF4\u9ECEAmazon\u6570\u636E\u4E2D\
+    \u5FC3"
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.18.202
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: "11|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8\
+    \ #1"
+  network: tcp
+  port: '43526'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 0
+  cipher: auto
+  name: "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #11"
+  network: ws
+  port: '2082'
+  server: 104.19.45.17
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: 12|CN_speednode_0001
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+  port: 34676
+  server: tg_mfbpn03.52cloud.us.kg
+  type: ss
+- cipher: aes-128-gcm
+  name: 12|CN_speednode_0002
+  password: a77f18ea-c88a-402c-85e9-27e1dafbc900
+  port: 34702
+  server: 34702.crelay.org
+  type: ss
+- name: 12|CN_speednode_0003
+  password: wwTIozXY
+  port: 27131
+  server: 36.151.192.201
+  skip-cert-verify: true
+  type: trojan
+  udp: false
+- cipher: chacha20-ietf-poly1305
+  name: 12|CN_speednode_0004
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+  port: 53935
+  server: tg_mfbpn03.52cloud.us.kg
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 12|CN_speednode_0005
+  network: tcp
+  port: 33288
+  server: 183.236.48.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 12|CN_speednode_0006
+  network: tcp
+  port: 33288
+  server: 183.236.48.161
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 12|KR_speednode_0025
+  network: ws
+  port: 12273
+  server: 211.228.180.147
+  servername: dl.ylks.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dl.ylks.xyz
+    path: /freecodes
+- cipher: aes-128-gcm
+  name: 12|US_speednode_0058
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 23.95.68.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|US_speednode_0059
+  password: "\u06A6\u02BAl\u066CTJ1q8DFg\u01EA\u01E5"
+  port: 20088
+  server: 67.220.72.41
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|US_speednode_0060
+  password: Oh220yTCQwMCN7Cc7DVlwW
+  port: 8985
+  server: 80.92.205.32
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 12|US_speednode_0095
+  network: ws
+  port: 30001
+  server: 107.167.20.180
+  servername: www.15314695.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.15314695.xyz
+    path: /path/091615350227
+- alterId: 0
+  cipher: auto
+  name: '13|d*********g.com_2 #1'
+  network: tcp
+  port: '443'
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  tls: true
+  type: vmess
+  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+proxy-groups:
+- include-all: true
+  name: PROXY
+  proxies:
+  - "\u81EA\u52A8\u9009\u62E9"
+  type: select
+- name: "\u81EA\u52A8\u9009\u62E9"
+  proxies: &id001
+  - "10|\u7F8E\u56FD 041"
+  - 12|US_speednode_0184
+  - 12|US_speednode_0166
+  - "10|\u52A0\u62FF\u5927 120"
+  - "11|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8 #1"
+  - "7|Github\u641C\u7D22TrojanLinks #31"
+  - 12|US_speednode_0278
+  - "10|\u7F8E\u56FD 075"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_13 #1"
+  - "6|\u82F1\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #2"
+  - "10|\u62C9\u8131\u7EF4\u4E9A 001"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 026"
+  - 12|RU_speednode_0046
+  - 12|US_speednode_0124
+  - "10|\u5FB7\u56FD 005"
+  - "7|Github\u641C\u7D22TrojanLinks #18"
+  - "10|\u7F8E\u56FD 023"
+  - 12|CN_speednode_0004
+  - "10|\u7F8E\u56FD 003"
+  - '13|d*********g.com_6 #1'
+  - "10|\u7231\u6C99\u5C3C\u4E9A 017"
+  - 12|US_speednode_0297
+  - "10|\u7F8E\u56FD 024"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #131"
+  - "7|Github\u641C\u7D22TrojanLinks #14"
+  - "1|\U0001F1EA \u56FD \u5DDE\u5170\u798FAmazon"
+  - "10|\u52A0\u62FF\u5927 014"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1FA_RU__1"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #98"
+  - "11|\U0001F1EE\U0001F1F3 \u5370\u5EA6 V2CROSS.COM"
+  - 12|US_speednode_0144
+  - "10|\u7F8E\u56FD 020"
+  - "7|Github\u641C\u7D22TrojanLinks"
+  - 12|US_speednode_0240
+  - 12|SG_speednode_0053
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #12"
+  - "10|\u4FC4\u7F57\u65AF 006"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_34"
+  - "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+Cogent\u901A\u4FE1"
+  - "8,9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #9"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_15"
+  - "10|\u52A0\u62FF\u5927 005"
+  - 12|US_speednode_0142
+  - 12|KZ_speednode_0030
+  - 12|RU_speednode_0043
+  - 12|US_speednode_0074
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #126"
+  - "10|\u9999\u6E2F 002"
+  - "7|Github\u641C\u7D22TrojanLinks #4"
+  - 12|US_speednode_0258
+  - "10|\u6FB3\u5927\u5229\u4E9A 001"
+  - "10|\u52A0\u62FF\u5927 047"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #142"
+  - "11|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8"
+  - "10|\u52A0\u62FF\u5927 151"
+  - 0|d*********g.com_94
+  - "10|\u7F8E\u56FD 019"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #7"
+  - 12|GB_speednode_0016
+  - 12|US_speednode_0070
+  - 12|US_speednode_0140
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #4"
+  - 12|US_speednode_0232
+  - 12|US_speednode_0176
+  - 12|US_speednode_0291
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #3"
+  - 0|d*********g.com_39
+  - 12|RU_speednode_0035
+  - 12|US_speednode_0133
+  - "1|\U0001F1E8\U0001F1F3 \u5E7F\u4E1C\u7701\u5E7F\u5DDE\u5E02 \u79FB\u52A8 2"
+  - 0|d*********g.com_91
+  - 0|d*********g.com_18
+  - "10|\u52A0\u62FF\u5927 082"
+  - 12|US_speednode_0158
+  - "7|Github\u641C\u7D22TrojanLinks #30"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 018"
+  - "10|\u52A0\u62FF\u5927 084"
+  - 12|US_speednode_0281
+  - "7|Github\u641C\u7D22TrojanLinks #12"
+  - 0|d*********g.com_17
+  - "10|\u52A0\u62FF\u5927 040"
+  - 12|US_speednode_0084
+  - 12|US_speednode_0248
+  - 12|US_speednode_0141
+  - "10|\u7231\u6C99\u5C3C\u4E9A 027"
+  - 12|US_speednode_0196
+  - 12|US_speednode_0157
+  - 0|d*********g.com_63
+  - 12|RU_speednode_0040
+  - "10|\u7231\u6C99\u5C3C\u4E9A 012"
+  - 12|US_speednode_0111
+  - 12|US_speednode_0169
+  - "10|\u4FDD\u52A0\u5229\u4E9A 002"
+  - 0|d*********g.com_74
+  - "10|\u7F8E\u56FD 040"
+  - 12|KR_speednode_0025
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #168"
+  - 12|US_speednode_0198
+  - 12|US_speednode_0147
+  - "10|\u52A0\u62FF\u5927 049"
+  - 12|US_speednode_0283
+  - "10|\u52A0\u62FF\u5927 140"
+  - 12|US_speednode_0226
+  - "10|\u4FC4\u7F57\u65AF 002"
+  - "1,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_29"
+  - 12|US_speednode_0136
+  - 12|US_speednode_0211
+  - "10|\u5FB7\u56FD 007"
+  - 12|JP_speednode_0021
+  - 0|d*********g.com_35
+  - "10|\u7231\u6C99\u5C3C\u4E9A 001"
+  - 12|US_speednode_0260
+  - 12|KZ_speednode_0029
+  - "10|\u82F1\u56FD 013"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #19"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #172"
+  - "10|\u52A0\u62FF\u5927 018"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 006"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #6"
+  - 12|US_speednode_0183
+  - "10|\u52A0\u62FF\u5927 063"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #81"
+  - "10|\u7F8E\u56FD 042"
+  - 12|US_speednode_0122
+  - 12|US_speednode_0216
+  - 12|RU_speednode_0042
+  - "6|\u82F1\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #6"
+  - 12|CN_speednode_0006
+  - 12|US_speednode_0173
+  - 12|KZ_speednode_0028
+  - "7|Github\u641C\u7D22TrojanLinks #32"
+  - 12|US_speednode_0221
+  - 12|US_speednode_0225
+  - 0|d*********g.com_6
+  - 12|US_speednode_0155
+  - "10|\u7F8E\u56FD 001"
+  - "10|\u7F8E\u56FD 043"
+  - 12|US_speednode_0182
+  - 12|US_speednode_0247
+  - 12|US_speednode_0167
+  - "6,8|\u5E7F\u4E1C\u7701 \u79FB\u52A8"
+  - "10|\u52A0\u62FF\u5927 038"
+  - "10|\u52A0\u62FF\u5927 078"
+  - "10|\u52A0\u62FF\u5927 073"
+  - "10|\u82F1\u56FD 009"
+  - "10|\u82F1\u56FD 007"
+  - "10|\u65B0\u52A0\u5761 002"
+  - 12|DE_speednode_0009
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #15"
+  - 12|US_speednode_0085
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_16"
+  - "10|\u7F8E\u56FD 018"
+  - 12|US_speednode_0119
+  - 0|d*********g.com_31
+  - "10|\u6FB3\u5927\u5229\u4E9A 003"
+  - 12|US_speednode_0272
+  - "10|\u7231\u6C99\u5C3C\u4E9A 019"
+  - 12|US_speednode_0153
+  - 12|US_speednode_0287
+  - 0|d*********g.com_77
+  - "10|\u52A0\u62FF\u5927 019"
+  - "6|\u4E4C\u514B\u5170(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #1"
+  - 12|DE_speednode_0010
+  - 12|US_speednode_0083
+  - "6,10|\u52A0\u62FF\u5927 041"
+  - 12|US_speednode_0185
+  - 12|US_speednode_0186
+  - 12|US_speednode_0234
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #13"
+  - 0|d*********g.com_45
+  - 12|US_speednode_0137
+  - 0|d*********g.com_44
+  - "7|Github\u641C\u7D22TrojanLinks #1"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 009"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #13"
+  - "10|\u7F8E\u56FD 027"
+  - "1,3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
+  - "10|\u52A0\u62FF\u5927 006"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_25"
+  - 12|SG_speednode_0055
+  - 0|d*********g.com_90
+  - "10|\u52A0\u62FF\u5927 029"
+  - 12|US_speednode_0145
+  - "9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  - "7|Github\u641C\u7D22TrojanLinks #8"
+  - 12|US_speednode_0286
+  - '13|d*********g.com_2 #1'
+  - "2,5|_US_\u56FD_1 #2"
+  - 12|US_speednode_0170
+  - 0|d*********g.com_97
+  - "11|\U0001F1EA\U0001F1F8 \u897F\u73ED\u7259 V2CROSS.COM"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #92"
+  - 12|US_speednode_0236
+  - 12|US_speednode_0222
+  - "7|Github\u641C\u7D22TrojanLinks #43"
+  - "10|\u82F1\u56FD 006"
+  - "10|\u52A0\u62FF\u5927 012"
+  - "7|Github\u641C\u7D22TrojanLinks #33"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #169"
+  - "10|\u7F8E\u56FD 013"
+  - "10|\u7F8E\u56FD 006"
+  - "6|\u6FB3\u6D32(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "10|\u7F8E\u56FD 026"
+  - 0|d*********g.com_22
+  - 12|US_speednode_0162
+  - 12|US_speednode_0204
+  - "6|\u5FB7\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #2"
+  - "8|\u7F8E\u56FD+CloudFlare\u8282\u70B9"
+  - 12|US_speednode_0284
+  - 0|d*********g.com_7
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #16"
+  - 12|US_speednode_0138
+  - "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_7 #1"
+  - 12|US_speednode_0161
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #173"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #4"
+  - 12|US_speednode_0253
+  - "10|\u52A0\u62FF\u5927 026"
+  - "8,11|\U0001F1E9\U0001F1F0 \u4E39\u9EA6 v2rayfree.eu.org"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #117"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #18"
+  - "1|\U0001F1E8 \u52A0 v2rayfree.eu.org"
+  - 12|RU_speednode_0041
+  - "2,3,5|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_5 #3"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 011"
+  - "10|\u52A0\u62FF\u5927 057"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 008"
+  - "10|\u4FC4\u7F57\u65AF 003"
+  - "10|\u65B0\u52A0\u5761 004"
+  - "10|\u7F8E\u56FD 008"
+  - 12|US_speednode_0290
+  - "10|\u52A0\u62FF\u5927 062"
+  - 12|US_speednode_0270
+  - 12|KR_speednode_0026
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #85"
+  - "4|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F8_US_\u7F8E\u56FD_1"
+  - 0|d*********g.com_1
+  - "10|\u82F1\u56FD 005"
+  - 12|US_speednode_0113
+  - 0|d*********g.com_32
+  - "10|\u7F8E\u56FD 031"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_27"
+  - "10|\u54C8\u8428\u514B\u65AF\u5766 005"
+  - 12|US_speednode_0121
+  - 0|d*********g.com_43
+  - "10|\u52A0\u62FF\u5927 037"
+  - 12|US_speednode_0277
+  - 12|CN_speednode_0001
+  - 12|US_speednode_0289
+  - "10|\u4F0A\u6717 002"
+  - "10|\u5FB7\u56FD 006"
+  - 12|US_speednode_0163
+  - 12|US_speednode_0267
+  - "1|\U0001F1F3  v2rayfree.eu.org #1"
+  - 0|d*********g.com_15
+  - "10|\u7231\u6C99\u5C3C\u4E9A 016"
+  - "3|_US_\u56FD_1 #1"
+  - "10|\u7F8E\u56FD 045"
+  - 0|d*********g.com_56
+  - 12|US_speednode_0245
+  - 0|d*********g.com_88
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #62"
+  - "10|\u52A0\u62FF\u5927 079"
+  - "10|\u7ACB\u9676\u5B9B 003"
+  - 12|US_speednode_0104
+  - 12|US_speednode_0254
+  - 12|US_speednode_0223
+  - 12|RU_speednode_0044
+  - 12|US_speednode_0298
+  - 12|US_speednode_0148
+  - "10|\u5FB7\u56FD 001"
+  - 0|d*********g.com_51
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #47"
+  - "10|\u52A0\u62FF\u5927 060"
+  - "7|Github\u641C\u7D22TrojanLinks #2"
+  - "10|\u4FC4\u7F57\u65AF 007"
+  - 0|d*********g.com_3
+  - 12|US_speednode_0096
+  - "3|_NL_->\U0001F1F3_CN_"
+  - "7|Github\u641C\u7D22TrojanLinks #17"
+  - "10|\u52A0\u62FF\u5927 035"
+  - 12|US_speednode_0206
+  - "11|VMESS-\u672A\u77E5>\u7F8E\u56FD-NF\u89E3\u9501\u52A0\u62FF\u5927\u81EA\u5236\
+    \u5267-ChatGPT... #2"
+  - 12|US_speednode_0143
+  - 0|d*********g.com_61
+  - 0|d*********g.com_27
+  - "10|\u7231\u6C99\u5C3C\u4E9A 010"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #154"
+  - "10|\u52A0\u62FF\u5927 052"
+  - "10|\u52A0\u62FF\u5927 143"
+  - "10|\u8D8A\u5357 001"
+  - "10|\u4FDD\u52A0\u5229\u4E9A 004"
+  - "3|\U0001F1F3\U0001F1F1_NL_\u8377\u5170_2"
+  - 12|US_speednode_0217
+  - 0|d*********g.com_65
+  - 12|RU_speednode_0049
+  - "10|\u7F8E\u56FD 037"
+  - "11|VMESS-\u672A\u77E5>\u7F8E\u56FD-NF\u89E3\u9501\u52A0\u62FF\u5927\u81EA\u5236\
+    \u5267-ChatGPT... #1"
+  - 12|US_speednode_0250
+  - "10|\u5FB7\u56FD 008"
+  - "10|\u52A0\u62FF\u5927 031"
+  - 12|GB_speednode_0015
+  - 12|JP_speednode_0022
+  - 12|US_speednode_0106
+  - "10|\u7F8E\u56FD 044"
+  - 12|US_speednode_0212
+  - "7|Github\u641C\u7D22TrojanLinks #13"
+  - "3|\U0001F1FA_RU__1"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_10 #1"
+  - "10|\u52A0\u62FF\u5927 066"
+  - "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #7"
+  - 0|d*********g.com_60
+  - "1,11|\U0001F1FA\U0001F1F8 github.com/freefq - \u7F8E\u56FDFastl..."
+  - "10|\u6CD5\u56FD 007"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #22"
+  - "6|\u82F1\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #3"
+  - 0|d*********g.com_54
+  - 12|US_speednode_0115
+  - "7|Github\u641C\u7D22TrojanLinks #6"
+  - "6|\u5FB7\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #93"
+  - 12|US_speednode_0259
+  - 0|d*********g.com_96
+  - "2,3,5|\U0001F1F8_US_\u7F8E\u56FD_3 #1"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #1"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #176"
+  - "7|Github\u641C\u7D22TrojanLinks #5"
+  - 12|US_speednode_0066
+  - 12|US_speednode_0097
+  - "10|\u65E5\u672C 002"
+  - 12|US_speednode_0159
+  - 12|US_speednode_0130
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_22"
+  - "10|\u52A0\u62FF\u5927 054"
+  - 12|US_speednode_0064
+  - "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #1"
+  - 12|DE_speednode_0012
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #174"
+  - 12|US_speednode_0179
+  - "2,5|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F8_US_\u7F8E\u56FD #1"
+  - "4|\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
+    _2"
+  - "10|\u7F8E\u56FD 050"
+  - 12|US_speednode_0210
+  - "10|\u52A0\u62FF\u5927 064"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #9"
+  - 12|RU_speednode_0039
+  - 0|d*********g.com_50
+  - "3|\U0001F1F3\U0001F1F1_NL_\u8377\u5170_1"
+  - 12|US_speednode_0139
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #159"
+  - "11|\U0001F1EB\U0001F1F7 \u6CD5\u56FD \u5DF4\u9ECEAmazon\u6570\u636E\u4E2D\u5FC3"
+  - 12|US_speednode_0239
+  - "10|\u7231\u6C99\u5C3C\u4E9A 025"
+  - 12|US_speednode_0151
+  - "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #2"
+  - 12|US_speednode_0168
+  - "10|\u8377\u5170 003"
+  - "10|\u7F8E\u56FD 011"
+  - "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #8"
+  - 12|US_speednode_0073
+  - 0|d*********g.com_30
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #72"
+  - "7|Github\u641C\u7D22TrojanLinks #37"
+  - "10|\u52A0\u62FF\u5927 020"
+  - 12|US_speednode_0220
+  - 12|US_speednode_0275
+  - "10|\u897F\u73ED\u7259 001"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 028"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4 #2"
+  - "11|VMESS-\u672A\u77E5>\u7F8E\u56FD-NF\u89E3\u9501\u81EA\u5236\u5267-ChatGPT-Ti..."
+  - "10|\u8377\u5170 001"
+  - "6|\u52A0\u62FF\u5927(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_36"
+  - 12|US_speednode_0125
+  - "10|\u7231\u6C99\u5C3C\u4E9A 013"
+  - 0|d*********g.com_69
+  - "7|Github\u641C\u7D22TrojanLinks #10"
+  - "10|\u97E9\u56FD 002"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #8"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_26"
+  - "10|\u7F8E\u56FD 012"
+  - "10|\u52A0\u62FF\u5927 010"
+  - "10|\u52A0\u62FF\u5927 025"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #187"
+  - "7|Github\u641C\u7D22TrojanLinks #27"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #59"
+  - "11|VMESS-\u672A\u77E5>\u7F8E\u56FD-NF\u89E3\u9501\u52A0\u62FF\u5927\u81EA\u5236\
+    \u5267-ChatGPT..."
+  - "10|\u52A0\u62FF\u5927 085"
+  - 12|SG_speednode_0051
+  - 12|US_speednode_0078
+  - 0|d*********g.com_70
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_24"
+  - 12|US_speednode_0081
+  - 12|US_speednode_0251
+  - 0|d*********g.com_47
+  - 12|SG_speednode_0052
+  - 12|US_speednode_0190
+  - "10|\u7F8E\u56FD 022"
+  - 12|US_speednode_0276
+  - 12|DE_speednode_0011
+  - "10|\u65E5\u672C 001"
+  - "7|Github\u641C\u7D22TrojanLinks #25"
+  - "10|\u7F8E\u56FD 036"
+  - 12|US_speednode_0263
+  - "10|\u82F1\u56FD 004"
+  - 12|GB_speednode_0019
+  - "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+v2rayfree.eu.org 5"
+  - 12|SG_speednode_0056
+  - "10|\u97E9\u56FD 004"
+  - 12|US_speednode_0180
+  - "10|\u52A0\u62FF\u5927 103"
+  - 12|US_speednode_0265
+  - 0|d*********g.com_16
+  - "10|\u52A0\u62FF\u5927 081"
+  - "10|\u52A0\u62FF\u5927 015"
+  - "11|\U0001F1EE\U0001F1F3 github.com/freefq - \u5370\u5EA6  2"
+  - "10|\u52A0\u62FF\u5927 056"
+  - 12|CN_speednode_0002
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #29"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #2"
+  - 0|d*********g.com_82
+  - 12|US_speednode_0285
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #80"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #180"
+  - "10|\u82F1\u56FD 002"
+  - "10|\u52A0\u62FF\u5927 044"
+  - 12|US_speednode_0230
+  - "7|Github\u641C\u7D22TrojanLinks #28"
+  - "8,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #3"
+  - "10|\u52A0\u62FF\u5927 017"
+  - 12|US_speednode_0296
+  - 12|US_speednode_0135
+  - "3|\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
+  - 12|US_speednode_0089
+  - 12|US_speednode_0175
+  - "10|\u9999\u6E2F 001"
+  - 0|d*********g.com_12
+  - "10|\u7231\u6C99\u5C3C\u4E9A 003"
+  - 0|d*********g.com_14
+  - 12|US_speednode_0219
+  - "7|Github\u641C\u7D22TrojanLinks #24"
+  - 12|KR_speednode_0023
+  - "7|Github\u641C\u7D22TrojanLinks #20"
+  - 0|d*********g.com_52
+  - 0|d*********g.com_0
+  - 0|d*********g.com_36
+  - 0|d*********g.com_73
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #38"
+  - "10|\u7F8E\u56FD 032"
+  - "10|\u7F8E\u56FD 038"
+  - 12|US_speednode_0164
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #17"
+  - "7|Github\u641C\u7D22TrojanLinks #29"
+  - 12|US_speednode_0241
+  - "2,5|\U0001F1FA_RU_\u4FC4\u7F57\u65AF #1"
+  - "10|\u4FC4\u7F57\u65AF 004"
+  - 12|US_speednode_0071
+  - "7|Github\u641C\u7D22TrojanLinks #35"
+  - "10|\u7F8E\u56FD 010"
+  - "10|\u745E\u5178 001"
+  - 12|US_speednode_0295
+  - "10|\u7F8E\u56FD 025"
+  - 0|d*********g.com_11
+  - "10|\u52A0\u62FF\u5927 072"
+  - 0|d*********g.com_85
+  - 0|d*********g.com_23
+  - 12|US_speednode_0107
+  - "10|\u7F8E\u56FD 015"
+  - "11|\U0001F1FA\U0001F1F8 github.com/freefq - \u7F8E\u56FDCloud... #3"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #5"
+  - 0|d*********g.com_59
+  - "3|\U0001F1F3\U0001F1F1_NL_\u8377\u5170_3"
+  - 12|RU_speednode_0036
+  - 0|d*********g.com_72
+  - "7|Github\u641C\u7D22TrojanLinks #15"
+  - "10|\u6377\u514B 001"
+  - "10|\u52A0\u62FF\u5927 059"
+  - 12|US_speednode_0120
+  - 12|US_speednode_0237
+  - "2,3,5|_CN_->_DE_\u56FD #1"
+  - 2,3,5,12|GB_speednode_0013
+  - "10|\u7F8E\u56FD 007"
+  - "10|\u745E\u5178 002"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #167"
+  - 12|US_speednode_0200
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #10"
+  - "9|\u5370\u5EA6 v2rayfree.eu.org"
+  - 12|US_speednode_0091
+  - 12|US_speednode_0171
+  - 0|d*********g.com_55
+  - "10|\u52A0\u62FF\u5927 061"
+  - 0|d*********g.com_81
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #183"
+  - 12|US_speednode_0279
+  - "10|\u7F8E\u56FD 049"
+  - "7|Github\u641C\u7D22TrojanLinks #23"
+  - "10|\u745E\u5178 004"
+  - "6|\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "10|\u52A0\u62FF\u5927 023"
+  - 12|US_speednode_0218
+  - "6|\u4FC4\u7F57\u65AF(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "9|\u7F8E\u56FD CloudFlare\u8282\u70B9 #5"
+  - "10|\u7F8E\u56FD 021"
+  - "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+v2rayfree.eu.org 4"
+  - 12|US_speednode_0060
+  - 0|d*********g.com_9
+  - "10|\u7F8E\u56FD 034"
+  - "7|Github\u641C\u7D22TrojanLinks #26"
+  - 12|US_speednode_0114
+  - "10|\u52A0\u62FF\u5927 009"
+  - 12|SG_speednode_0054
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #75"
+  - 0|d*********g.com_28
+  - "10|\u7F8E\u56FD 005"
+  - 12|US_speednode_0192
+  - "10|\u4FC4\u7F57\u65AF 001"
+  - "10|\u7F8E\u56FD 069"
+  - "10|\u52A0\u62FF\u5927 021"
+  - 12|US_speednode_0093
+  - 0|d*********g.com_46
+  - "10|\u7231\u6C99\u5C3C\u4E9A 029"
+  - "10|\u7F8E\u56FD 033"
+  - "10|\u52A0\u62FF\u5927 080"
+  - 12|US_speednode_0110
+  - "2,3,5|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_6 #2"
+  - 12|US_speednode_0205
+  - 0|d*********g.com_40
+  - "8|\u52A0\u62FF\u5927+V2CROSS.COM #2"
+  - "10|\u52A0\u62FF\u5927 097"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #182"
+  - "10|\u52A0\u62FF\u5927 076"
+  - "11|VMESS-\u672A\u77E5>\u7F8E\u56FD-NF\u89E3\u9501\u81EA\u5236\u5267-ChatGPT-Ti...\
+    \ #1"
+  - 12|US_speednode_0108
+  - "10|\u52A0\u62FF\u5927 013"
+  - 12|US_speednode_0231
+  - 0|d*********g.com_62
+  - "10|\u8377\u5170 004"
+  - 12|US_speednode_0229
+  - 12|US_speednode_0079
+  - "10|\u7F8E\u56FD 035"
+  - 0|d*********g.com_66
+  - 12|US_speednode_0213
+  - 0|d*********g.com_41
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #147"
+  - 0|d*********g.com_75
+  - 12|US_speednode_0271
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #28"
+  - "6|\u8377\u5170(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - 12|US_speednode_0244
+  - "1|\u5E7F\u5DDE"
+  - 12|US_speednode_0191
+  - "10|\u52A0\u62FF\u5927 048"
+  - 0|d*********g.com_49
+  - 12|US_speednode_0201
+  - "7|Github\u641C\u7D22TrojanLinks #44"
+  - 12|US_speednode_0293
+  - "4|\U0001F1F8_US_\u7F8E\u56FD_31"
+  - "7|Github\u641C\u7D22TrojanLinks #41"
+  - 12|US_speednode_0262
+  - 0|d*********g.com_57
+  - 12|US_speednode_0105
+  - 12|CN_speednode_0003
+  - "7|Github\u641C\u7D22TrojanLinks #40"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #96"
+  - "4|_IR_->\U0001F1F7_FR_\u56FD_2"
+  - 12|US_speednode_0228
+  - 12|US_speednode_0100
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #69"
+  - 12|JP_speednode_0020
+  - 12|US_speednode_0118
+  - 0|d*********g.com_42
+  - "10|\u52A0\u62FF\u5927 004"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #166"
+  - "10|\u7F8E\u56FD 030"
+  - 12|US_speednode_0257
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #70"
+  - 12|US_speednode_0203
+  - "10|\u7231\u6C99\u5C3C\u4E9A 022"
+  - "10|\u7F8E\u56FD 039"
+  - 12|US_speednode_0172
+  - "1|\U0001F1F8  v2rayfree.eu.org"
+  - '13|d*********g.com_3 #1'
+  - "10|\u52A0\u62FF\u5927 288"
+  - "10|\u6CD5\u56FD 001"
+  - 0|d*********g.com_76
+  - "10|\u4FC4\u7F57\u65AF 005"
+  - "10|\u52A0\u62FF\u5927 083"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #87"
+  - "1|\u5170+v2rayfree.eu.org"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #12"
+  - 12|US_speednode_0087
+  - 0|d*********g.com_80
+  - "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_18"
+  - "11|\U0001F1F3\U0001F1F1 \u8377\u5170 \u5317\u8377\u5170\u7701\u963F\u59C6\u65AF\
+    \u7279\u4E39DigitalOcean\u6570\u636E\u4E2D..."
+  - 12|US_speednode_0128
+  - "3|\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD->\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF\
+    _2"
+  - 0|d*********g.com_2
+  - 12|RU_speednode_0033
+  - 12|US_speednode_0150
+  - 0|d*********g.com_71
+  - "6|\u6FB3\u6D32(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #1"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 015"
+  - "10|\u52A0\u62FF\u5927 051"
+  - 12|US_speednode_0126
+  - 0|d*********g.com_95
+  - "1,11|\U0001F1EE\U0001F1F3 github.com/freefq - \u5370\u5EA6  3"
+  - "3|\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF_2"
+  - 12|US_speednode_0134
+  - "10|\u52A0\u62FF\u5927 036"
+  - 12|US_speednode_0269
+  - 12|US_speednode_0131
+  - "10|\u6FB3\u5927\u5229\u4E9A 002"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "10|\u52A0\u62FF\u5927 149"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #43"
+  - 12|US_speednode_0242
+  - 12|US_speednode_0069
+  - 12|US_speednode_0215
+  - 12|US_speednode_0082
+  - 12|US_speednode_0058
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #8"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #120"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 023"
+  - "10|\u52A0\u62FF\u5927 039"
+  - "10|\u52A0\u62FF\u5927 030"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #2"
+  - "7|Github\u641C\u7D22TrojanLinks #3"
+  - "10|\u6CD5\u56FD 003"
+  - "10|\u52A0\u62FF\u5927 045"
+  - 12|US_speednode_0088
+  - "10|\u52A0\u62FF\u5927 046"
+  - 12|US_speednode_0127
+  - 12|US_speednode_0224
+  - "10|\u7F8E\u56FD 014"
+  - "1|\U0001F1FA\U0001F1F8 \u7F8E\u56FD+\u76DB\u987FCogent\u901A\u4FE1\u516C\u53F8\
+    \ 4"
+  - 12|US_speednode_0063
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #37"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_20"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #41"
+  - "10|\u52A0\u62FF\u5927 034"
+  - 12|US_speednode_0123
+  - 12|US_speednode_0193
+  - 12|US_speednode_0243
+  - "10|\u52A0\u62FF\u5927 136"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_33"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #68"
+  - 12|US_speednode_0255
+  - "10|\u52A0\u62FF\u5927 050"
+  - 0|d*********g.com_19
+  - "6|\u4E4C\u514B\u5170(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 020"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #9"
+  - 0|d*********g.com_86
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #79"
+  - "10|\u7F8E\u56FD 017"
+  - "10|\u52A0\u62FF\u5927 053"
+  - "9,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #2"
+  - "10|\u52A0\u62FF\u5927 075"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #20"
+  - "10|\u52A0\u62FF\u5927 043"
+  - "7|Github\u641C\u7D22TrojanLinks #34"
+  - "10|\u9999\u6E2F 004"
+  - 12|US_speednode_0152
+  - 0|d*********g.com_83
+  - "3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_8"
+  - "2,5|\U0001F1FA_AU_ #1"
+  - 12|SG_speednode_0057
+  - 12|US_speednode_0194
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #14"
+  - 12|US_speednode_0208
+  - "10|\u52A0\u62FF\u5927 106"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 005"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_23"
+  - 12|US_speednode_0197
+  - "10|\u52A0\u62FF\u5927 067"
+  - "10|\u52A0\u62FF\u5927 028"
+  - "10|\u7231\u6C99\u5C3C\u4E9A 014"
+  - "6|\u5FB7\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #1"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #1"
+  - "10|\u585E\u6D66\u8DEF\u65AF 001"
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD #11"
+  - 12|US_speednode_0181
+  - 12|US_speednode_0075
+  - "10|\u745E\u5178 003"
+  - 0|d*********g.com_92
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #141"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #6"
+  - "10|\u52A0\u62FF\u5927 011"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #24"
+  - 12|US_speednode_0076
+  - "10|\u7F8E\u56FD 002"
+  - 0|d*********g.com_79
+  - "7|Github\u641C\u7D22TrojanLinks #38"
+  - 12|GB_speednode_0018
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_11 #1"
+  - "1,8,9|\u7F8E\u56FD CloudFlare\u8282\u70B9 #4"
+  - 12|US_speednode_0188
+  - 0|d*********g.com_99
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_35"
+  - 0|d*********g.com_58
+  - "10|\u6CD5\u56FD 002"
+  - "10|\u52A0\u62FF\u5927 016"
+  - 12|US_speednode_0214
+  - 12|US_speednode_0256
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_14"
+  - 12|US_speednode_0077
+  - "10|\u8377\u5170 002"
+  - 12|US_speednode_0149
+  - "10|\u52A0\u62FF\u5927 027"
+  - "7|Github\u641C\u7D22TrojanLinks #22"
+  - "2,5|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4 #3"
+  - 12|US_speednode_0227
+  - "10|\u52A0\u62FF\u5927 071"
+  - 12|US_speednode_0067
+  - "7|Github\u641C\u7D22TrojanLinks #16"
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3 #1"
+  - "10|\u65B0\u52A0\u5761 001"
+  - 0|d*********g.com_53
+  - 12|US_speednode_0068
+  - 12|RU_speednode_0045
+  - 12|US_speednode_0112
+  - '3,4|_CA_ #1'
+  - "7|Github\u641C\u7D22TrojanLinks #7"
+  - 0|d*********g.com_8
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #4"
+  - 12|US_speednode_0092
+  - 12|US_speednode_0282
+  - "10|\u7231\u6C99\u5C3C\u4E9A 030"
+  - "10|\u65E5\u672C 003"
+  - "10|\u6CD5\u56FD 005"
+  - 12|US_speednode_0252
+  - "10|\u52A0\u62FF\u5927 042"
+  - "10|\u52A0\u62FF\u5927 001"
+  - 0|d*********g.com_87
+  - 12|US_speednode_0146
+  - "10|\u7F8E\u56FD 065"
+  - 12|SG_speednode_0050
+  - 0|d*********g.com_33
+  - 12|CN_speednode_0005
+  - "9|\u7F8E\u56FD CloudFlare\u8282\u70B9 #8"
+  - "11|\U0001F1E8\U0001F1F3 github.com/freefq - \u5E7F\u4E1C\u7701\u79FB\u52A8 7"
+  - 12|US_speednode_0199
+  - 0|d*********g.com_100
+  - "10|\u52A0\u62FF\u5927 065"
+  - "10|\u52A0\u62FF\u5927 069"
+  - "10|\u5FB7\u56FD 004"
+  - "10|\u65B0\u52A0\u5761 003"
+  - 12|US_speednode_0207
+  - "7|Github\u641C\u7D22TrojanLinks #21"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #11"
+  - "3|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4 #1"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #77"
+  - 12|US_speednode_0165
+  - "10|\u82F1\u56FD 001"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #21"
+  - 0|d*********g.com_78
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #185"
+  - "10|\u7F8E\u56FD 009"
+  - 12|US_speednode_0132
+  - 12|US_speednode_0238
+  - 12|DE_speednode_0007
+  - "11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #11"
+  - "10|\u52A0\u62FF\u5927 077"
+  - 12|DE_speednode_0008
+  - 12|US_speednode_0086
+  - "8|\u7F8E\u56FD CloudFlare\u8282\u70B9 #3"
+  - "10|\u54E5\u65AF\u8FBE\u9ECE\u52A0 001"
+  - 12|US_speednode_0061
+  - 12|US_speednode_0156
+  - 1|+v2rayfree.eu.org
+  - 0|d*********g.com_64
+  - 0|d*********g.com_29
+  - 12|KZ_speednode_0031
+  - 12|US_speednode_0059
+  - 12|US_speednode_0072
+  - "10|\u5FB7\u56FD 009"
+  - "7|Github\u641C\u7D22TrojanLinks #39"
+  - 0|d*********g.com_21
+  - "10|\u7F8E\u56FD 004"
+  - "10|\u52A0\u62FF\u5927 055"
+  - 12|US_speednode_0090
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #164"
+  - 12|US_speednode_0101
+  - 12|US_speednode_0261
+  - "10|\u52A0\u62FF\u5927 058"
+  - 12|RU_speednode_0038
+  - "10|\u745E\u5178 005"
+  - 12|US_speednode_0099
+  - 12|US_speednode_0292
+  - 12|RU_speednode_0034
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #10"
+  - 12|US_speednode_0202
+  - 0|d*********g.com_67
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #103"
+  - "10|\u52A0\u62FF\u5927 003"
+  - "10|\u6CD5\u56FD 004"
+  - 12|US_speednode_0266
+  - 0|d*********g.com_5
+  - 12|KZ_speednode_0027
+  - 0|d*********g.com_34
+  - 12|US_speednode_0065
+  - "10|\u5FB7\u56FD 012"
+  - "10|\u52A0\u62FF\u5927 068"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #179"
+  - 12|US_speednode_0268
+  - "10|\u52A0\u62FF\u5927 007"
+  - 0|d*********g.com_98
+  - 0|d*********g.com_89
+  - 12|KR_speednode_0024
+  - 12|US_speednode_0177
+  - "10|\u52A0\u62FF\u5927 033"
+  - 12|US_speednode_0154
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #106"
+  - 0|d*********g.com_68
+  - "4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_32"
+  - "10|\u52A0\u62FF\u5927 088"
+  - 0|d*********g.com_48
+  - 0|d*********g.com_20
+  - "7|Github\u641C\u7D22TrojanLinks #11"
+  - 12|RU_speednode_0047
+  - 0|d*********g.com_38
+  - "6|\u82F1\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #4"
+  - 12|US_speednode_0178
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #171"
+  - 12|US_speednode_0209
+  - "10|\u52A0\u62FF\u5927 022"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #94"
+  - 12|US_speednode_0294
+  - 0|d*********g.com_10
+  - "11|\U0001F1F8\U0001F1EC \u7ACB\u9676\u5B9B NGS\u65B0\u95FB"
+  - 12|US_speednode_0080
+  - "10|\u5FB7\u56FD 003"
+  - 12|US_speednode_0094
+  - 12|RU_speednode_0037
+  - 12|US_speednode_0098
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #86"
+  - 12|US_speednode_0189
+  - 12|US_speednode_0129
+  - 12|US_speednode_0160
+  - 0|d*********g.com_37
+  - 12|US_speednode_0095
+  - "10|\u5FB7\u56FD 002"
+  - "6,10|\u82F1\u56FD 003"
+  - "10|\u52A0\u62FF\u5927 008"
+  - 12|GB_speednode_0017
+  - 12|US_speednode_0249
+  - 12|US_speednode_0274
+  - "7|Github\u641C\u7D22TrojanLinks #19"
+  - 12|US_speednode_0273
+  - "10|\u7231\u6C99\u5C3C\u4E9A 002"
+  - "10|\u7F8E\u56FD 028"
+  - "7|Github\u641C\u7D22TrojanLinks #9"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #152"
+  - 12|US_speednode_0233
+  - "10|\u52A0\u62FF\u5927 002"
+  - 12|US_speednode_0062
+  - 0|d*********g.com_4
+  - "10|\u7231\u6C99\u5C3C\u4E9A 021"
+  - 12|US_speednode_0264
+  - 12|RU_speednode_0048
+  - "7|Github\u641C\u7D22TrojanLinks #42"
+  - 12|US_speednode_0235
+  - 12|US_speednode_0195
+  - 12|US_speednode_0280
+  - 0|d*********g.com_93
+  - 12|US_speednode_0174
+  - "10|\u52A0\u62FF\u5927 032"
+  - "10|\u7F8E\u56FD 029"
+  - "4|\U0001F1E8_CN_\u56FD->_IE_"
+  - 12|US_speednode_0246
+  - 12|US_speednode_0288
+  - "10|\u52A0\u62FF\u5927 024"
+  - "7|Github\u641C\u7D22TrojanLinks #36"
+  - 12|US_speednode_0117
+  - 12|US_speednode_0109
+  - 12|RU_speednode_0032
+  - 12|US_speednode_0102
+  - "1,11|\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 #10"
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #7"
+  - "10|\u4FC4\u7F57\u65AF 008"
+  - "10|\u7F8E\u56FD 016"
+  - 12|US_speednode_0116
+  - 0|d*********g.com_84
+  - "6|\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) #5"
+  - 12|GB_speednode_0014
+  - 12|US_speednode_0103
+  - "3,4|\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_17"
+  - 12|US_speednode_0187
+  type: url-test
+- name: "1\u624B\u52A8\u9009\u62E9"
+  proxies: *id001
+  type: select
+- name: "\u624B\u52A8\u9009\u62E9"
+  proxies:
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  type: select
+- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  proxies:
+  - "10|\u9999\u6E2F 004"
+  - "10|\u9999\u6E2F 001"
+  - "10|\u9999\u6E2F 002"
+  type: select
+rules:
+- MATCH,PROXY
