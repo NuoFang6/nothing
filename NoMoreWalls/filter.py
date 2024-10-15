@@ -33,6 +33,12 @@ for proxy in data.get("proxies", []):
     server = proxy.get("server")
     port = proxy.get("port")
 
+    # 将 port 转换为整数进行比较（避免字符串 '2095' 和数字 2095 不匹配）
+    try:
+        port = int(port)
+    except (ValueError, TypeError):
+        continue  # 如果端口无法转换为数字，则跳过
+
     # 跳过要过滤的端口
     if port in ports_to_filter:
         continue
@@ -42,11 +48,15 @@ for proxy in data.get("proxies", []):
         filtered_proxies.append(proxy)
         seen_combinations.add((server, port))
 
-# 将去重和过滤后的数据重新赋值给 data['proxies']
+# 将过滤和去重后的数据重新赋值给 data['proxies']
 data["proxies"] = filtered_proxies
 
-# 将处理后的数据写入新的文件
+# 删除 proxy-groups 字段
+if "proxy-groups" in data:
+    del data["proxy-groups"]
+
+# 将处理后的数据写入新的文件，确保字符不被转义
 with open(filtered_file, "w") as f:
-    yaml.safe_dump(data, f, default_flow_style=False)
+    yaml.safe_dump(data, f, default_flow_style=False, allow_unicode=True)
 
 print("过滤、去重、保存到新文件 完成！")
