@@ -1,4 +1,4 @@
-# Update: 2024-10-15 21:51
+# Update: 2024-10-15 22:05
 proxies:
 - name: 0|英国
   password: 30aa00ce-ff9a-4a8a-b3d0-27ffe641e337
@@ -1491,7 +1491,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 2,3,7|GB_speednode_0013
+  name: 2,3,6|GB_speednode_0013
   password: shadowsocks
   port: 443
   server: 212.102.53.198
@@ -1539,448 +1539,7 @@ proxies:
   server: 23.166.88.221
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #11'
-  network: tcp
-  port: '12908'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #14'
-  network: tcp
-  port: '12928'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #17'
-  network: ws
-  port: '2086'
-  server: icook.tw
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #59'
-  network: ws
-  port: '12959'
-  server: z3.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z3.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #68'
-  network: ws
-  port: '2086'
-  server: 23.227.38.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip005.3196772.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #70'
-  network: ws
-  port: '12943'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 4,6|广东省 移动
-  network: tcp
-  port: '12960'
-  server: z3.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #77'
-  network: ws
-  port: '12947'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #80'
-  network: ws
-  port: '12933'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z6.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #81'
-  network: tcp
-  port: '12912'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #85'
-  network: ws
-  port: '12925'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #87'
-  network: tcp
-  port: '12934'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #92'
-  network: ws
-  port: '12909'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #93'
-  network: ws
-  port: '2086'
-  server: 104.16.149.244
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #94'
-  network: ws
-  port: '12902'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #98'
-  network: ws
-  port: '12956'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: '4|美国(yudou66.com 玉豆免费节点) #106'
-  network: tcp
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13033
-  server: naiu-sg.05vr9nyqg5.download
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #131'
-  network: tcp
-  port: '12970'
-  server: z3.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #142'
-  network: ws
-  port: '2086'
-  server: 172.67.74.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip11.freegradely.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #147'
-  network: ws
-  port: '2086'
-  server: 104.26.5.145
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #154'
-  network: ws
-  port: '2086'
-  server: 104.26.5.90
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #155'
-  network: ws
-  port: '2086'
-  server: ip.sb
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #164'
-  network: ws
-  port: '12955'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #167'
-  network: ws
-  port: '13007'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #169'
-  network: ws
-  port: '12910'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #172'
-  network: ws
-  port: '13001'
-  server: z3.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #176'
-  network: ws
-  port: '12933'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #179'
-  network: ws
-  port: '2086'
-  server: singapore.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #180'
-  network: ws
-  port: '2086'
-  server: 23.227.38.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-  ws-opts:
-    headers:
-      Host: ip006.3196772.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #182'
-  network: tcp
-  port: '12962'
-  server: z3.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 4|加拿大(yudou66.com 玉豆免费节点)
-  network: ws
-  port: '2086'
-  server: 104.18.15.19
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #183'
-  network: ws
-  port: '12926'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z2.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #185'
-  network: ws
-  port: '12920'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #187'
-  network: ws
-  port: '12961'
-  server: z8.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- name: 5|俄罗斯+V2CROSS.COM
+- name: 4|俄罗斯+V2CROSS.COM
   password: '3672449442956713984'
   port: 443
   server: present-blowfish.sunbeam921.monster
@@ -1988,21 +1547,33 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|印度 V2CROSS.COM
+  name: 4,5|丹麦 v2rayfree.eu.org
   network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
+  port: 80
+  server: go.alipay.ovh
+  tls: false
   type: vmess
-  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+  uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
   ws-opts:
     headers:
-      Host: pendar.onthewifi.com
-    path: /@forwardv2ray
+      Host: open.alipay.ovh
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 5|美国 CloudFlare节点
+  name: 4|美国 CloudFlare节点
+  network: ws
+  port: 2082
+  server: 104.19.45.17
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '4|美国 CloudFlare节点 #1'
   network: ws
   port: 2082
   server: 172.64.198.249
@@ -2013,113 +1584,23 @@ proxies:
     headers:
       Host: ip3.6929198.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #1'
-  network: ws
-  port: 2082
-  server: 162.159.140.93
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #2'
-  network: ws
-  port: '443'
-  server: 104.16.67.38
-  servername: us3e-mmnnfr9dop0.v2freevpn.com
-  tls: true
-  type: vmess
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-  ws-opts:
-    headers:
-      Host: us3e-mmnnfr9dop0.v2freevpn.com
-    path: /v118-fccxmxm35
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #3'
-  network: ws
-  port: 8880
-  server: server31.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-  ws-opts:
-    headers:
-      Host: server31.beheshtbaneh.com
-    path: /
 - alpn:
   - h2
   - http/1.1
-  name: 5|西班牙+V2CROSS.COM
+  name: 4|丹麦+V2CROSS.COM
   network: ws
   password: bpb-trojan
   port: 443
-  server: 185.238.228.6
-  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
+  server: 195.85.59.68
+  sni: 403b3611-99Bc-43B7-88D7-26ed5D0825a9-3.pAGES.DEv
   type: trojan
   ws-opts:
     headers:
       Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-    path: '%2FtrLb1imnrxPEhfzfwk%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  name: 5|立陶宛+NGS新闻
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 185.176.24.2
-  sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-    path: '%2Ftr9vfP2lflALkJrNsQ%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: 5|爱尔兰+V2CROSS.COM
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 54.247.163.77
-  sni: trojan.burgerip.co.uk
-  type: trojan
+    path: '%2Ftro3k6cD0gnuZukWAs%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: '6|美国 CloudFlare节点 #4'
-  network: ws
-  port: 2082
-  server: 162.159.140.91
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip3.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '6|美国 CloudFlare节点 #5'
-  network: ws
-  port: 2095
-  server: 104.19.45.50
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '6|美国 CloudFlare节点 #6'
+  name: '4,5|美国 CloudFlare节点 #6'
   network: ws
   port: 8880
   server: 104.21.82.183
@@ -2133,20 +1614,101 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6|丹麦 v2rayfree.eu.org
+  name: '4|美国 CloudFlare节点 #3'
   network: ws
-  port: 80
-  server: go.alipay.ovh
+  port: 2095
+  server: 104.19.45.13
+  servername: ''
   tls: false
   type: vmess
-  uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: open.alipay.ovh
-    path: /aries?ed=2048
+      Host: ip2.6016725.xyz
+    path: github.com/Alvin9999
+- name: 4|德国+黑森州法兰克福Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.156.130.123
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - h2
+  - http/1.1
+  name: 4|立陶宛+NGS新闻
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.176.24.2
+  sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: '%2Ftr9vfP2lflALkJrNsQ%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  name: 4|西班牙+V2CROSS.COM
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.238.228.6
+  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: '%2FtrLb1imnrxPEhfzfwk%3Fed%3D2560'
+- alterId: 64
+  cipher: auto
+  name: 4|广东省广州市 移动
+  network: tcp
+  port: '35601'
+  server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '6|美国 CloudFlare节点 #7'
+  name: '5|美国 CloudFlare节点 #4'
+  network: ws
+  port: 2082
+  server: 162.159.140.91
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #5'
+  network: ws
+  port: 2095
+  server: 104.19.45.50
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 5|广东省 移动
+  network: tcp
+  port: '12960'
+  server: z3.fragranceninja.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #7'
   network: ws
   port: 2095
   server: www.visa.com
@@ -2158,18 +1720,18 @@ proxies:
       Host: ip2.8084726.xyz
     path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: 7|CN_speednode_0001
+  name: 6|CN_speednode_0001
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 34676
   server: tg_mfbpn03.52cloud.us.kg
   type: ss
 - cipher: aes-128-gcm
-  name: 7|CN_speednode_0002
+  name: 6|CN_speednode_0002
   password: a77f18ea-c88a-402c-85e9-27e1dafbc900
   port: 34702
   server: 34702.crelay.org
   type: ss
-- name: 7|CN_speednode_0003
+- name: 6|CN_speednode_0003
   password: wwTIozXY
   port: 27131
   server: 36.151.192.201
@@ -2177,14 +1739,14 @@ proxies:
   type: trojan
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 7|CN_speednode_0004
+  name: 6|CN_speednode_0004
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 53935
   server: tg_mfbpn03.52cloud.us.kg
   type: ss
 - alterId: 64
   cipher: auto
-  name: 7|CN_speednode_0005
+  name: 6|CN_speednode_0005
   network: tcp
   port: 33288
   server: 183.236.48.166
@@ -2195,7 +1757,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 7|CN_speednode_0006
+  name: 6|CN_speednode_0006
   network: tcp
   port: 33288
   server: 183.236.48.161
@@ -2206,7 +1768,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 7|DE_speednode_0007
+  name: 6|DE_speednode_0007
   network: ws
   port: 443
   server: 57.129.24.124
@@ -2221,26 +1783,26 @@ proxies:
       Host: aveiror.com
     path: /linkvws
 - cipher: aes-128-gcm
-  name: 7|US_speednode_0058
+  name: 6|US_speednode_0058
   password: Yc2CtrIz8L
   port: 16899
   server: 23.95.68.112
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 7|US_speednode_0059
+  name: 6|US_speednode_0059
   password: ڦʺl٬TJ1q8DFgǪǥ
   port: 20088
   server: 67.220.72.41
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 7|US_speednode_0060
+  name: 6|US_speednode_0060
   password: Oh220yTCQwMCN7Cc7DVlwW
   port: 8985
   server: 80.92.205.32
   type: ss
 - alterId: 0
   cipher: auto
-  name: 7|US_speednode_0061
+  name: 6|US_speednode_0061
   network: ws
   port: 2095
   server: 104.21.238.100
@@ -2255,7 +1817,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 7|US_speednode_0062
+  name: 6|US_speednode_0062
   network: ws
   port: 2095
   server: 172.64.175.88
@@ -2270,7 +1832,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 7|US_speednode_0069
+  name: 6|US_speednode_0069
   network: ws
   port: 2095
   server: 172.64.175.213
@@ -2283,7 +1845,7 @@ proxies:
     headers:
       Host: ip9.6016725.xyz
     path: /github.com/Alvin9999
-- name: 7|US_speednode_0076
+- name: 6|US_speednode_0076
   network: ws
   password: auto
   port: 443
@@ -2298,7 +1860,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 7|US_speednode_0095
+  name: 6|US_speednode_0095
   network: ws
   port: 30001
   server: 107.167.20.180
@@ -2314,7 +1876,7 @@ proxies:
     path: /path/091615350227
 - alterId: 0
   cipher: auto
-  name: '8|d*********g.com_2 #1'
+  name: '7|d*********g.com_2 #1'
   network: tcp
   port: '443'
   server: 42.236.73.72
@@ -2324,7 +1886,7 @@ proxies:
   uuid: 044f0177-0675-4dcf-89d4-804b6788e518
 - alpn:
   - http%2F1.1
-  name: '8|d*********g.com_3 #1'
+  name: '7|d*********g.com_3 #1'
   network: tcp
   password: fuck
   port: 443
@@ -2342,180 +1904,147 @@ proxy-groups:
   type: select
 - name: 自动选择
   proxies: &id001
-  - '6|美国 CloudFlare节点 #4'
-  - 1|d*********g.com_43
-  - '4|美国(yudou66.com 玉豆免费节点) #94'
-  - '6|美国 CloudFlare节点 #6'
-  - '2,3|🇺🇸_US_美国_5 #1'
-  - '4|美国(yudou66.com 玉豆免费节点) #85'
-  - 1|d*********g.com_2
-  - 1|d*********g.com_61
-  - 7|US_speednode_0069
-  - '4|美国(yudou66.com 玉豆免费节点) #154'
-  - '4|美国(yudou66.com 玉豆免费节点) #180'
-  - '4|美国(yudou66.com 玉豆免费节点) #131'
-  - 1|d*********g.com_96
-  - 4|加拿大(yudou66.com 玉豆免费节点)
-  - 1|d*********g.com_33
-  - 1|d*********g.com_22
-  - '4|美国(yudou66.com 玉豆免费节点) #80'
-  - '4|美国(yudou66.com 玉豆免费节点) #185'
-  - '4|美国(yudou66.com 玉豆免费节点) #11'
-  - 7|US_speednode_0062
-  - 1|d*********g.com_40
-  - 1|d*********g.com_60
-  - 1|d*********g.com_30
-  - 0|英国-俄罗斯
-  - 1|d*********g.com_99
-  - 1|d*********g.com_4
-  - 1|d*********g.com_17
-  - 1|d*********g.com_57
-  - 1|d*********g.com_41
-  - 0|英国
-  - 5|美国 CloudFlare节点
-  - '2,3|🇸_US_美国_3 #1'
-  - '4|美国(yudou66.com 玉豆免费节点) #14'
-  - 5|印度 V2CROSS.COM
-  - 2,3,7|GB_speednode_0013
-  - 1|d*********g.com_55
-  - 1|d*********g.com_68
-  - 1|d*********g.com_74
-  - 1|d*********g.com_75
-  - '2,3|_US_国_1 #1'
-  - 7|US_speednode_0058
-  - 1|d*********g.com_70
-  - 1|d*********g.com_78
-  - 1|d*********g.com_8
-  - 1|d*********g.com_31
-  - 1|d*********g.com_37
-  - '4|美国(yudou66.com 玉豆免费节点) #164'
-  - 1|d*********g.com_71
-  - 1|d*********g.com_45
-  - 1|d*********g.com_82
-  - '2,3|🇺_RU_俄罗斯 #1'
-  - 1|d*********g.com_44
-  - 1|d*********g.com_9
-  - 1|d*********g.com_64
-  - 1|d*********g.com_18
-  - 1|d*********g.com_11
-  - '4|美国(yudou66.com 玉豆免费节点) #77'
-  - '4|美国(yudou66.com 玉豆免费节点) #87'
-  - 1|d*********g.com_21
-  - 1|d*********g.com_81
-  - 7|US_speednode_0059
-  - 1|d*********g.com_50
-  - 1|d*********g.com_69
-  - 1|d*********g.com_15
-  - 1|d*********g.com_88
-  - 1|d*********g.com_89
-  - '6|美国 CloudFlare节点 #7'
-  - '4|美国(yudou66.com 玉豆免费节点) #59'
-  - '4|美国(yudou66.com 玉豆免费节点) #142'
-  - 7|CN_speednode_0005
-  - 1|d*********g.com_23
-  - '4|美国(yudou66.com 玉豆免费节点) #155'
-  - '2,3|🇺🇸_US_美国_4 #1'
-  - 1|d*********g.com_20
-  - 1|d*********g.com_51
-  - 1|d*********g.com_36
-  - '4|美国(yudou66.com 玉豆免费节点) #167'
-  - '4|美国(yudou66.com 玉豆免费节点) #176'
-  - 1|d*********g.com_80
-  - 5|俄罗斯+V2CROSS.COM
-  - 7|CN_speednode_0002
-  - 1|d*********g.com_10
-  - 1|d*********g.com_59
-  - '4|美国(yudou66.com 玉豆免费节点) #93'
-  - '6|美国 CloudFlare节点 #5'
-  - '2,3|🇺🇸_US_美国_6 #1'
-  - 1|d*********g.com_48
-  - 1|d*********g.com_53
-  - 1|d*********g.com_90
-  - '4|美国(yudou66.com 玉豆免费节点) #147'
-  - 7|CN_speednode_0003
-  - 1|d*********g.com_14
-  - '2,3|_CN_->_DE_国 #1'
-  - 1|d*********g.com_28
-  - 1|d*********g.com_29
-  - 7|US_speednode_0076
-  - 1|d*********g.com_65
-  - 5|西班牙+V2CROSS.COM
-  - 7|US_speednode_0061
-  - 1|d*********g.com_46
-  - 1|d*********g.com_100
-  - 7|US_speednode_0060
-  - '2,3|🇨🇳_CN_中国->🇸_US_美国 #1'
-  - '4|美国(yudou66.com 玉豆免费节点) #187'
-  - 1|d*********g.com_83
-  - '4|美国(yudou66.com 玉豆免费节点) #92'
-  - 1|d*********g.com_1
-  - '4|美国(yudou66.com 玉豆免费节点) #106'
-  - 1|d*********g.com_39
-  - 5|爱尔兰+V2CROSS.COM
-  - 1|d*********g.com_12
-  - 5|立陶宛+NGS新闻
-  - 1|d*********g.com_49
-  - 1|d*********g.com_7
-  - 1|d*********g.com_0
-  - 1|d*********g.com_47
-  - '4|美国(yudou66.com 玉豆免费节点) #183'
-  - 1|d*********g.com_3
-  - 1|d*********g.com_16
-  - '4|美国(yudou66.com 玉豆免费节点) #179'
-  - 1|d*********g.com_38
-  - '5|美国 CloudFlare节点 #3'
-  - 7|CN_speednode_0006
-  - 7|US_speednode_0095
-  - 1|d*********g.com_94
-  - 1|d*********g.com_95
-  - '5|美国 CloudFlare节点 #2'
-  - '4|美国(yudou66.com 玉豆免费节点) #17'
-  - '4|美国(yudou66.com 玉豆免费节点) #68'
-  - 1|d*********g.com_62
-  - 1|d*********g.com_84
-  - 6|丹麦 v2rayfree.eu.org
-  - '8|d*********g.com_3 #1'
-  - '4|美国(yudou66.com 玉豆免费节点) #98'
-  - 1|d*********g.com_77
-  - 1|d*********g.com_35
-  - 1|d*********g.com_72
-  - 1|d*********g.com_87
-  - 1|d*********g.com_5
-  - '4|美国(yudou66.com 玉豆免费节点) #172'
-  - 1|d*********g.com_66
-  - 1|d*********g.com_6
-  - '4|美国(yudou66.com 玉豆免费节点) #182'
-  - 1|d*********g.com_76
-  - 1|d*********g.com_86
-  - '8|d*********g.com_2 #1'
-  - 1|d*********g.com_91
-  - 1|d*********g.com_34
-  - 1|d*********g.com_52
-  - 1|d*********g.com_79
-  - 1|d*********g.com_42
-  - 1|d*********g.com_56
-  - '4|美国(yudou66.com 玉豆免费节点) #81'
-  - 1|d*********g.com_63
-  - '2,3|🇺_AU_ #1'
-  - 4,6|广东省 移动
-  - 1|d*********g.com_54
-  - 1|d*********g.com_92
-  - 1|d*********g.com_58
-  - 1|d*********g.com_97
-  - 1|d*********g.com_67
-  - 7|DE_speednode_0007
-  - '5|美国 CloudFlare节点 #1'
-  - 1|d*********g.com_32
-  - 1|d*********g.com_98
-  - '4|美国(yudou66.com 玉豆免费节点) #169'
-  - 1|d*********g.com_19
-  - 1|d*********g.com_27
-  - 7|CN_speednode_0004
-  - 1|d*********g.com_93
-  - 1|d*********g.com_85
-  - '4|美国(yudou66.com 玉豆免费节点) #70'
+  - '5|美国 CloudFlare节点 #5'
   - 1|d*********g.com_73
-  - 7|CN_speednode_0001
+  - 1|d*********g.com_93
+  - 1|d*********g.com_7
+  - 1|d*********g.com_51
+  - 1|d*********g.com_98
+  - 1|d*********g.com_43
+  - 1|d*********g.com_34
+  - '5|美国 CloudFlare节点 #4'
+  - 1|d*********g.com_40
+  - 1|d*********g.com_47
+  - 4|俄罗斯+V2CROSS.COM
+  - 1|d*********g.com_67
+  - 1|d*********g.com_62
+  - '7|d*********g.com_2 #1'
+  - 1|d*********g.com_42
+  - 1|d*********g.com_23
+  - 1|d*********g.com_69
+  - 1|d*********g.com_80
+  - '2,3|🇨🇳_CN_中国->🇸_US_美国 #1'
+  - 1|d*********g.com_6
+  - '2,3|🇺🇸_US_美国_6 #1'
+  - 1|d*********g.com_97
+  - 6|CN_speednode_0002
+  - 1|d*********g.com_20
+  - 1|d*********g.com_99
+  - 1|d*********g.com_17
+  - 1|d*********g.com_90
+  - 6|US_speednode_0069
+  - 1|d*********g.com_76
+  - 4|广东省广州市 移动
+  - 4|丹麦+V2CROSS.COM
+  - 1|d*********g.com_16
+  - 1|d*********g.com_85
+  - 1|d*********g.com_54
+  - 1|d*********g.com_12
+  - 6|US_speednode_0059
+  - 1|d*********g.com_56
+  - 6|CN_speednode_0006
+  - 1|d*********g.com_55
+  - 1|d*********g.com_78
+  - 1|d*********g.com_86
+  - 1|d*********g.com_8
+  - 1|d*********g.com_84
+  - '2,3|🇺_RU_俄罗斯 #1'
+  - 1|d*********g.com_11
+  - 1|d*********g.com_32
+  - '4|美国 CloudFlare节点 #1'
+  - 1|d*********g.com_37
+  - 1|d*********g.com_89
+  - '2,3|🇸_US_美国_3 #1'
+  - 1|d*********g.com_21
+  - 6|CN_speednode_0004
+  - 1|d*********g.com_33
+  - 1|d*********g.com_70
+  - 6|US_speednode_0076
+  - 1|d*********g.com_14
+  - 1|d*********g.com_19
+  - 1|d*********g.com_58
+  - 1|d*********g.com_66
+  - 1|d*********g.com_57
+  - 4,5|丹麦 v2rayfree.eu.org
+  - 1|d*********g.com_0
+  - 4|西班牙+V2CROSS.COM
+  - 1|d*********g.com_5
+  - 1|d*********g.com_41
+  - 1|d*********g.com_75
+  - 1|d*********g.com_49
+  - 1|d*********g.com_95
+  - 1|d*********g.com_64
+  - 1|d*********g.com_30
+  - 1|d*********g.com_72
+  - 1|d*********g.com_45
+  - 1|d*********g.com_46
+  - 1|d*********g.com_96
+  - 1|d*********g.com_94
+  - 1|d*********g.com_35
+  - 1|d*********g.com_71
+  - 1|d*********g.com_3
+  - 1|d*********g.com_10
+  - 5|广东省 移动
+  - 1|d*********g.com_92
+  - '2,3|🇺_AU_ #1'
+  - '2,3|🇺🇸_US_美国_5 #1'
+  - 6|CN_speednode_0005
+  - 1|d*********g.com_81
+  - 1|d*********g.com_53
+  - 1|d*********g.com_31
+  - 1|d*********g.com_83
+  - 1|d*********g.com_74
+  - 1|d*********g.com_28
+  - 6|DE_speednode_0007
+  - '4|美国 CloudFlare节点 #3'
+  - 1|d*********g.com_38
+  - 6|CN_speednode_0003
+  - '7|d*********g.com_3 #1'
+  - 1|d*********g.com_29
+  - 1|d*********g.com_91
+  - 1|d*********g.com_59
+  - 1|d*********g.com_39
+  - 1|d*********g.com_82
+  - 6|US_speednode_0061
+  - 4|美国 CloudFlare节点
+  - 1|d*********g.com_60
+  - 4|立陶宛+NGS新闻
+  - 1|d*********g.com_61
+  - 6|US_speednode_0062
+  - 4|德国+黑森州法兰克福Amazon数据中心
+  - '2,3|🇺🇸_US_美国_4 #1'
+  - 1|d*********g.com_9
+  - 6|US_speednode_0058
+  - 6|CN_speednode_0001
+  - 1|d*********g.com_88
+  - 6|US_speednode_0060
+  - 1|d*********g.com_79
+  - 1|d*********g.com_87
+  - 1|d*********g.com_50
+  - 1|d*********g.com_100
+  - 1|d*********g.com_1
+  - 1|d*********g.com_36
+  - 1|d*********g.com_15
+  - 1|d*********g.com_48
+  - 1|d*********g.com_68
+  - '5|美国 CloudFlare节点 #7'
+  - 0|英国
+  - 1|d*********g.com_2
+  - 1|d*********g.com_27
+  - 1|d*********g.com_22
+  - 1|d*********g.com_18
+  - 0|英国-俄罗斯
+  - 1|d*********g.com_65
+  - 6|US_speednode_0095
+  - 1|d*********g.com_44
+  - 2,3,6|GB_speednode_0013
+  - 1|d*********g.com_4
+  - 1|d*********g.com_63
+  - '2,3|_CN_->_DE_国 #1'
+  - 1|d*********g.com_52
+  - 1|d*********g.com_77
+  - '2,3|_US_国_1 #1'
+  - '4,5|美国 CloudFlare节点 #6'
   type: url-test
 - name: 1手动选择
   proxies: *id001

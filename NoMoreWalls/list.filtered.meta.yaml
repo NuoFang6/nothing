@@ -72,127 +72,45 @@ proxies:
   server: 23.166.88.221
   type: ss
   udp: true
-- name: '4|美国(yudou66.com 玉豆免费节点) #5'
-  network: ws
-  port: 35002
-  server: 58.176.229.127
-  servername: dns68.putata.eu.org
-  tls: true
-  type: vless
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-  ws-opts:
-    headers:
-      Host: dns68.putata.eu.org
-    path: '%2F'
-- alterId: 0
+- name: 4|德国+黑森州法兰克福Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.156.130.123
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 64
   cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #11'
+  name: 4|广东省广州市 移动
   network: tcp
-  port: '12908'
-  server: z8.fragranceninja.com
+  port: '35601'
+  server: 120.232.153.40
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #14'
+  name: 5|广东省 移动
   network: tcp
-  port: '12928'
-  server: z6.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- name: 4|韩国(yudou66.com 玉豆免费节点)
-  network: ws
-  port: 12654
-  server: 124.80.75.68
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #59'
-  network: ws
-  port: '12959'
+  port: '12960'
   server: z3.fragranceninja.com
   servername: ''
   tls: true
   type: vmess
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z3.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4|美国(yudou66.com 玉豆免费节点) #81'
-  network: tcp
-  port: '12912'
-  server: z2.fragranceninja.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- name: '4|美国(yudou66.com 玉豆免费节点) #86'
-  network: ws
-  port: 36669
-  server: 183.178.22.246
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: '%2F%3Fed%3D2048'
-- name: '4|韩国(yudou66.com 玉豆免费节点) #1'
-  network: ws
-  port: 24016
-  server: 117.123.72.132
-  servername: a.ssll.gay
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: '%2F%3Fed%3D2048security%3Dtls'
-- name: '4|美国(yudou66.com 玉豆免费节点) #106'
-  network: tcp
-  password: cf8c51d3-e692-46a6-b351-4c5ef0b5efc3
-  port: 13033
-  server: naiu-sg.05vr9nyqg5.download
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 5|爱尔兰+V2CROSS.COM
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 54.247.163.77
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 7|CN_speednode_0001
+  name: 6|CN_speednode_0001
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 34676
   server: tg_mfbpn03.52cloud.us.kg
   type: ss
 - cipher: aes-128-gcm
-  name: 7|CN_speednode_0002
+  name: 6|CN_speednode_0002
   password: a77f18ea-c88a-402c-85e9-27e1dafbc900
   port: 34702
   server: 34702.crelay.org
   type: ss
-- name: 7|CN_speednode_0003
+- name: 6|CN_speednode_0003
   password: wwTIozXY
   port: 27131
   server: 36.151.192.201
@@ -201,7 +119,7 @@ proxies:
   udp: false
 - alterId: 64
   cipher: auto
-  name: 7|CN_speednode_0005
+  name: 6|CN_speednode_0005
   network: tcp
   port: 33288
   server: 183.236.48.166
@@ -212,7 +130,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 7|CN_speednode_0006
+  name: 6|CN_speednode_0006
   network: tcp
   port: 33288
   server: 183.236.48.161
@@ -221,7 +139,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 7|KR_speednode_0025
+- name: 6|KR_speednode_0025
   network: ws
   port: 12273
   server: 211.228.180.147
@@ -236,26 +154,26 @@ proxies:
       Host: dl.ylks.xyz
     path: /freecodes
 - cipher: aes-128-gcm
-  name: 7|US_speednode_0058
+  name: 6|US_speednode_0058
   password: Yc2CtrIz8L
   port: 16899
   server: 23.95.68.112
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 7|US_speednode_0059
+  name: 6|US_speednode_0059
   password: ڦʺl٬TJ1q8DFgǪǥ
   port: 20088
   server: 67.220.72.41
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 7|US_speednode_0060
+  name: 6|US_speednode_0060
   password: Oh220yTCQwMCN7Cc7DVlwW
   port: 8985
   server: 80.92.205.32
   type: ss
 - alterId: 64
   cipher: auto
-  name: 7|US_speednode_0095
+  name: 6|US_speednode_0095
   network: ws
   port: 30001
   server: 107.167.20.180
