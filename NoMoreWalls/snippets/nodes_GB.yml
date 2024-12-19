@@ -1,0 +1,25 @@
+proxies:
+- name: 15|GB_speednode_0041
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 194.36.55.28
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /%2F
+- name: 15|GB_speednode_0045
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 77.75.199.86
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /%2F

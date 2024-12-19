@@ -1,0 +1,34 @@
+proxies:
+- name: '7,12|CHANEL@v2rayngzendegimamad_Aq #1'
+  password: 3a10983a-d8b3-4b16-b3d5-fe3ed7ec724c
+  port: 80
+  server: ru.mochizuki.top
+  sni: ru.mochizuki.top
+  tls: false
+  type: hysteria2
+- name: 15|CH_speednode_0005
+  network: ws
+  port: 443
+  server: 140.238.214.247
+  servername: pvg.aghabeiki.homes
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: pvg.aghabeiki.homes
+    path: /?ed=2744
+- name: 15|CH_speednode_0006
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: pvg.aghabeiki.homes
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: pvg.aghabeiki.homes
+    path: /?ed=2744

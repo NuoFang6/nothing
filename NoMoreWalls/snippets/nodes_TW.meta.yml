@@ -1,0 +1,35 @@
+proxies:
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13|🇹🇼 台湾|@ripaojiedian
+  port: 20016
+  server: i.needss.top
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b23172e2-eb36-4222-85ac-3d2f61651013
+- alterId: 0
+  cipher: auto
+  name: 14|台湾|@ripaojiedian
+  network: tcp
+  port: '20016'
+  server: i.needss.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b23172e2-eb36-4222-85ac-3d2f61651013
+- name: 15|TW_speednode_0117
+  network: ws
+  port: 443
+  server: 103.137.63.2
+  servername: pvg.aghabeiki.homes
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: pvg.aghabeiki.homes
+    path: /?ed=2744

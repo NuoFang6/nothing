@@ -1,0 +1,18 @@
+proxies: []
+proxy-groups:
+  - name: PROXY
+    type: select
+    include-all: true
+    proxies:
+      - 自动选择
+  - name: 自动选择
+    type: url-test
+    proxies: []
+  - name: 1手动选择 #只是为了兼容硬编码的py
+    type: select
+    proxies: []
+  - name: 手动选择
+    type: select
+    proxies: []
+rules:
+  - MATCH,PROXY

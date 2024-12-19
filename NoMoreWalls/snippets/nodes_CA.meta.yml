@@ -1,0 +1,14 @@
+proxies:
+- name: 15|CA_speednode_0004
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: pvg.aghabeiki.homes
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: pvg.aghabeiki.homes
+    path: /?ed=2744
