@@ -2,22 +2,22 @@
 sudo timedatectl set-timezone 'Asia/Shanghai'
 
 # 清理提交历史
-pip install -q git-filter-repo
-git filter-repo --commit-callback '
-import subprocess
-# 设置用户的邮箱
-target_email = "actions@github.com"
-# 获取用户的最后一次提交哈希值
-last_commit_hash = subprocess.run(
-    ["git", "log", "--author=" + target_email, "--pretty=format:%H", "-n", "1"],
-    text=True, capture_output=True).stdout.strip()
+# pip install -q git-filter-repo
+# git filter-repo --commit-callback '
+# import subprocess
+# # 设置用户的邮箱
+# target_email = "actions@github.com"
+# # 获取用户的最后一次提交哈希值
+# last_commit_hash = subprocess.run(
+#     ["git", "log", "--author=" + target_email, "--pretty=format:%H", "-n", "1"],
+#     text=True, capture_output=True).stdout.strip()
 
-# 如果作者邮箱是目标用户，且不是最后一次提交
-if commit.author_email == target_email and commit.original_id != last_commit_hash:
-    commit.skip_commit = True
-'
-git reflog expire --expire=now --all
-git gc --prune=now --aggressive
+# # 如果作者邮箱是目标用户，且不是最后一次提交
+# if commit.author_email == target_email and commit.original_id != last_commit_hash:
+#     commit.skip_commit = True
+# '
+# git reflog expire --expire=now --all
+# git gc --prune=now --aggressive
 # git push origin --force --all
 
 cd ..
