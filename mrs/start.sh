@@ -61,9 +61,13 @@ cat ad | awk '!seen[$0]++' | sed "/^$/d" >ad.yaml
 mv -f ad.yaml ad.mrs ../nothing/mrs/
 
 # ** DoHdomains.mrs **
+wget -q -O - https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn.list |
+    sed "/^#/d; /^$/d;"|
+    sed -e '$a\' >>DoHdomains
 wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-onlydomains.txt |
     sed "/^#/d; /^$/d;" |
-    sed "s/^/+./" >>DoHdomains.text
+    sed "s/^/+./" >>DoHdomains
+cat DoHdomains | awk '!seen[$0]++' | sed "/^$/d" >DoHdomains.text
 ./mihomo convert-ruleset domain text DoHdomains.text DoHdomains.mrs
 mv -f DoHdomains.text DoHdomains.mrs ../nothing/mrs/
 
