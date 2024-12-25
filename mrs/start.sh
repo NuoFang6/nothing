@@ -131,7 +131,7 @@ cat <<EOF >>hijacking
   - DOMAIN-SUFFIX,api.jr.mi.com
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,tmfsdk.m.qq.com
-  - PROCESS-NAME-REGEX,(?i)(antifraud|hicore)
+  - PROCESS-NAME-REGEX,antifraud|hicore
   - DOMAIN-KEYWORD,96110
   - DOMAIN-KEYWORD,fqzpt
   - DOMAIN-KEYWORD,fzlmn
