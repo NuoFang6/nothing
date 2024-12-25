@@ -1,7 +1,12 @@
 proxies:
-- name: 3,4|HK_speednode_0024
+- name: 3,4|HK_speednode_0012
   port: 4000
   server: ftq.ink
+  tls: true
+  type: http
+- name: 4|HK_speednode_0013
+  port: 4000
+  server: hk9.ftq.ink
   tls: true
   type: http
 - name: 1|@vpnv2rayNGv
@@ -22,6 +27,13 @@ proxies:
   sni: www.eliv2ray.net
   tls: false
   type: hysteria2
+- name: 2|WiFi-@V2ray_Alpha-09
+  password: 4c0064e3-3ad6-4c96-bf21-4eb7ea4bbcb5
+  port: 8882
+  server: 38.181.76.213
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - name: 2|MCI--@V2ray_Raha--07
   password: 67e1eb33-4ad4-4301-b066-38c4175ca5e6
   port: 443
@@ -29,12 +41,11 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: 2|IR-@V2ray_Alpha-3
-  password: bc97f674-c578-4940-9234-0a1da46041b9
-  port: 24662
-  server: 188.68.234.53
+- name: 2|MCI-@V2ray_Alpha-06
+  password: ThisIsNotForSale-Free$ervice
+  port: 443
+  server: api.tg8lnk.tech
   skip-cert-verify: true
-  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 2|ir-@V2ray_Alpha-1
@@ -53,22 +64,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 3|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 154.197.98.64
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 3|🇭🇰 香港8|@ripaojiedian
-  password: de6a05b7-6770-46b8-81b5-70675391db6a
-  port: 32001
-  server: vmvmvm123.jmvks.cn
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 3|🇯🇵 日本|@ripaojiedian
@@ -77,20 +72,12 @@ proxies:
   server: 149.22.87.204
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 3|🇯🇵 日本2|@ripaojiedian
-  password: de6a05b7-6770-46b8-81b5-70675391db6a
-  port: 32002
-  server: vmvmvm123.jmvks.cn
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 3|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.68.44.53
+  server: 52.194.212.235
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -98,7 +85,7 @@ proxies:
   name: 3|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.181.162.137
+  server: 13.231.232.249
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -106,128 +93,23 @@ proxies:
   name: 3|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.238.219.226
+  server: 54.178.191.236
   tfo: false
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 3,4|GB_speednode_0022
+  name: 3|🇬🇧 英国|@ripaojiedian
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 4|IN_speednode_0025
-  password: GpUH3Cx4i3nSwSa2/E20D7ahRnDPEPD0Rf23yClvgDU=
-  port: 8080
-  server: 103.71.22.37
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 4|LT_speednode_0031
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
+  name: 4|NL_speednode_0014
+  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
+  port: 42501
+  server: 208.67.105.87
   type: ss
-- cipher: aes-128-gcm
-  name: 4|NL_speednode_0032
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
-  type: ss
-- cipher: aes-256-gcm
-  name: 4|SG_speednode_0043
-  password: 41809088A4xdFZ7sXBNhk
-  port: 8583
-  server: 194.124.34.105
-  type: ss
-- cipher: aes-256-gcm
-  name: 4|US_speednode_0063
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.110.1.46
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #2'
-  network: tcp
-  port: '50002'
-  server: 114.55.132.202
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #5'
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #11'
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #13'
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #23'
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #29'
-  network: tcp
-  port: '42055'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #34'
-  network: tcp
-  port: '50002'
-  server: 47.116.173.76
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #36'
-  network: tcp
-  port: '50004'
-  server: 112.132.212.19
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '0|Github搜索TrojanLinks #38'
-  network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -282,7 +164,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  uuid: ea695d03-e64c-4be0-a8ea-6346e286ef60
+  uuid: d679491f-583d-462e-a986-fad497702581
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -294,6 +176,28 @@ proxies:
   tls: false
   type: vmess
   uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 3|🇸🇬 新加坡|@ripaojiedian
+  port: 16919
+  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: d679491f-583d-462e-a986-fad497702581
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 3|🇸🇬 新加坡2|@ripaojiedian
+  port: 34842
+  server: sggp1.pfdsddla.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: caf3f833-6973-3460-a4c7-ede4f574814c
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -311,8 +215,8 @@ proxies:
   uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
 - alterId: 64
   cipher: auto
-  name: 4|CN_speednode_0006
-  port: 44614
+  name: 4|CN_speednode_0002
+  port: 42055
   server: 120.198.71.219
   skip-cert-verify: false
   tls: false
@@ -320,19 +224,28 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 4|CN_speednode_0007
-  port: 45402
-  server: 183.236.48.158
+  name: 4|CN_speednode_0003
+  port: 54104
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 4|CN_speednode_0004
+  port: 56601
+  server: 183.236.51.23
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 4|CN_speednode_0008
-  port: 48109
+  name: 4|CN_speednode_0005
+  port: 40434
   server: 183.236.51.23
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
