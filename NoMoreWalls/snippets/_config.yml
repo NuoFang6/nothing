@@ -1,0 +1,96 @@
+name-map:
+  REJECT: adblock
+  PROXY: proxy
+  自动选择: region
+  DIRECT: direct
+
+categories:
+  redir:
+    - "->"
+    - 中转
+    - OVERALL
+  JP:
+    - JP
+    - Japan
+    - 日
+    - 🇯🇵
+  US:
+    - US
+    - United States
+    - 美
+    - 🇺🇸
+  CN:
+    - CN
+    - China
+    - 中国
+    - 上海
+    - 浙江
+    - 广东
+    - 深圳
+    - 🇨🇳
+  HK:
+    - HK
+    - Hong Kong
+    - 港
+    - 🇭🇰
+  TW:
+    - TW
+    - Taiwan
+    - 台
+    - 🇹🇼
+  CA:
+    - CA
+    - Canada
+    - 加拿大
+    - 🇨🇦
+  FR:
+    - FR
+    - French
+    - 法
+    - 🇫🇷
+  SG:
+    - SG
+    - Singapore
+    - 新加坡
+    - 狮城
+    - 🇸🇬
+  GB:
+    - GB
+    - UK
+    - United Kindom
+    - Britain
+    - 英
+    - 🇬🇧
+  KR:
+    - KR
+    - Korea
+    - 韩
+    - 🇰🇷
+  RU:
+    - RU
+    - Russia
+    - 俄
+    - 🇷🇺
+  DE:
+    - DE
+    - Germany
+    - 德
+    - 🇩🇪
+  SE:
+    - SE
+    - Sweden
+    - 瑞典
+    - 🇸🇪
+  CH:
+    - CH
+    - Switzerland
+    - 瑞士
+    - 🇨🇭
+  EE:
+    - EE
+    - Estonia
+    - 爱沙尼亚
+    - 🇪🇪
+
+categories_disp:
+  HK: 🇭🇰 香港

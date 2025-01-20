@@ -1,0 +1,34 @@
+proxies:
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 13|🇫🇷 法国|@ripaojiedian
+  password: 8vFQIjLl0PMh3qc3cJVuma
+  port: 443
+  server: 62.210.88.22
+  tfo: false
+  type: ss
+- name: 15|FR_speednode_0032
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.203.203
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /%2F
+- name: 15|FR_speednode_0033
+  network: ws
+  port: 443
+  server: 144.24.200.164
+  servername: pvg.aghabeiki.homes
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: pvg.aghabeiki.homes
+    path: /?ed=2744

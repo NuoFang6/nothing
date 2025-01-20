@@ -1,0 +1,25 @@
+proxies:
+- client-fingerprint: chrome
+  name: 13,14|日本|@ripaojiedian
+  network: tcp
+  password: QwwHvrnN
+  port: 27381
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本2|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.207.163.206
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 13|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 47.129.45.42
+  tfo: false
+  type: ss
