@@ -1,25 +1,6 @@
 # 修改时区
 sudo timedatectl set-timezone 'Asia/Shanghai'
 
-# 清理提交历史
-pip install git-filter-repo
-git filter-repo --commit-callback '
-import subprocess
-# 设置用户的邮箱
-target_email = "actions@github.com"
-# 获取用户的最后一次提交哈希值
-last_commit_hash = subprocess.run(
-    ["git", "log", "--author=", target_email, "--pretty=format:%H", "-n", "1"],
-    text=True, capture_output=True).stdout.strip()
-
-# 如果作者邮箱是目标用户，且不是最后一次提交
-if commit.author_email == target_email and commit.original_id != last_commit_hash:
-    commit.skip_commit = True
-'
-git reflog expire --expire=now --all
-git gc --prune=now --aggressive
-git push origin --force --all
-
 cd ..
 mkdir tmp && cd tmp
 # 下载最新 mihomo
@@ -42,16 +23,31 @@ wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_do
     sed "s/^/  - '/; s/$/'/" |
     sed -e '$a\' >>ad
 
-# hagezi pro.mini
-#转为yaml格式,添加 +.
-wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt |
+# category-httpdns-cn@ads.list
+#转为yaml格式
+wget -q -O - https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list |
+    sed "/^#/d; /^$/d;" |
+    sed "s/^/  - '/; s/$/'/" |
+    sed -e '$a\' >>ad
+
+# Xiaomi 跟踪器
+wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.xiaomi.txt |
     sed "/^#/d; /^$/d;" |
     sed "s/^/  - '+./; s/$/'/" |
     sed -e '$a\' >>ad
-# # Xiaomi 跟踪器
-# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.xiaomi.txt |
+
+# adobe 跟踪器
+wget -q -O - https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt |
+    sed "/^#/d; /^$/d;" |
+    sed "s/^/  - '+./; s/$/'/" |
+    sed -e '$a\' >>ad
+
+# hagezi pro.mini
+#转为yaml格式,添加 +.
+# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt |
 #     sed "/^#/d; /^$/d;" |
-#     sed "s/^/  - '+./; s/$/'/" >>ad
+#     sed "s/^/  - '+./; s/$/'/" |
+#     sed -e '$a\' >>ad
 
 #合并并去重
 cat ad | awk '!seen[$0]++' | sed "/^$/d" >ad.yaml
