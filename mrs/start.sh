@@ -16,12 +16,12 @@ wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/
     sed '/^#/d; /^$/d;' |
     sed -e '$a\' >>ad
 
-# AdRules
-#转为yaml格式
-wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt |
-    sed "/^#/d; /^$/d;" |
-    sed "s/^/  - '/; s/$/'/" |
-    sed -e '$a\' >>ad
+# # AdRules
+# #转为yaml格式
+# wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt |
+#     sed "/^#/d; /^$/d;" |
+#     sed "s/^/  - '/; s/$/'/" |
+#     sed -e '$a\' >>ad
 
 # category-httpdns-cn@ads.list
 #转为yaml格式
