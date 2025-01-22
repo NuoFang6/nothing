@@ -1,135 +1,79 @@
-# Update: 2025-01-21 08:37
+# Update: 2025-01-22 08:37
 proxies:
-- cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-1
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-3
+  password: qwerREWQ@@
+  port: 28290
+  server: 125.141.31.74
   type: ss
-- cipher: aes-256-gcm
-  name: 0,19|NL_speednode_0032
-  password: dongtaiwang.com
-  port: 33333
-  server: 109.104.154.146
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0,4|🇺🇦_UA_乌克兰->🇷_RU_俄罗斯
-  password: ZmQwZjFk
-  port: 8388
-  server: at1.opensocks.site
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-5
+  password: qwerREWQ@@
+  port: 27973
+  server: p196.panda001.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-4
+  name: 0|-https://t.me/MrXbin-6
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-7
+  password: qwerREWQ@@
+  port: 37041
+  server: 121.170.203.147
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0,19|KR_speednode_0014
+  password: qwerREWQ@@
+  port: 28290
+  server: p220.panda001.net
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-9
+  password: amazonskr05
+  port: 443
+  server: 54.190.19.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0,4,19|US_speednode_0057
+  password: amazonskr05
+  port: 443
+  server: 54.187.174.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0,4|🇳🇱_NL_荷兰->🇺🇸_US_美国_2
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-12
   password: amazonskr05
   port: 443
   server: 3.36.116.141
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-5
-  password: amazonskr05
-  port: 443
-  server: 54.199.222.156
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-7
-  password: qwerREWQ@@
-  port: 28290
-  server: p220.panda001.net
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-8
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-10
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-12
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 0|-https://t.me/MrXbin-13
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-14
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-15
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 0,4,19|IS_speednode_0030
-  password: MDZhNTAz
-  port: 8388
-  server: 89.221.224.166
+  password: amazonskr05
+  port: 443
+  server: 13.230.174.203
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 0,19|US_speednode_0057
-  password: amazonskr05
-  port: 443
-  server: 54.187.174.202
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-18
-  password: amazonskr05
-  port: 443
-  server: 34.221.178.146
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|-https://t.me/MrXbin-19
-  password: YjJiYzBj
-  port: 8388
-  server: 45.140.146.223
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-20
-  password: amazonskr05
-  port: 443
-  server: 13.250.116.31
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-21
-  password: amazonskr05
-  port: 443
-  server: 54.179.54.70
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-22
-  password: asd123456
-  port: 8388
-  server: 202.162.109.169
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-30
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
+  name: 0|-https://t.me/MrXbin-16
+  password: qwerREWQ@@
+  port: 27973
+  server: 221.168.44.72
   type: ss
 - cipher: aes-256-cfb
   name: 0,3|🇺🇸_US_美国_2
@@ -138,79 +82,18 @@ proxies:
   server: 35.94.25.109
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-32
-  password: qwerREWQ@@
-  port: 34847
-  server: 218.50.149.114
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0|-https://t.me/MrXbin-33
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-34
-  password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-35
-  password: qwerREWQ@@
-  port: 27973
-  server: p196.panda001.net
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-37
-  password: qwerREWQ@@
-  port: 27973
-  server: 221.168.44.72
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0|-https://t.me/MrXbin-57
-  port: 80
-  server: 94.182.150.230
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-67
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0,19|RU_speednode_0036
+  name: 0|-https://t.me/MrXbin-31
   network: ws
   port: 17926
-  server: 195.58.49.50
+  server: 195.58.49.42
   skip-cert-verify: true
-  tls: false
   type: vmess
   udp: true
-  uuid: de3695e9-b174-4788-ba90-16bc9e46f53c
+  uuid: 88bab07f-144f-4931-ba7b-2e812b46e99e
   ws-opts: {}
 - alterId: 0
   cipher: auto
@@ -219,11 +102,11 @@ proxies:
     method: GET
     path:
     - /
-  name: 0,11,19|DE_speednode_0015
+  name: 0,11,19|DE_speednode_0010
   network: http
   port: 2082
   server: 64.225.109.206
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -232,37 +115,50 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 0,11|0|--85
+  name: 0|-https://t.me/MrXbin-36
   network: ws
-  port: 443
-  server: 00.likelike.us.kg
-  servername: 00.likelike.us.kg
-  tls: true
+  port: 8880
+  server: yx1.changyouVPN.top
+  skip-cert-verify: true
   type: vmess
-  udp: true
-  uuid: 680e91d7-01ff-4082-b71a-472d5236adee
+  uuid: 85c7eba1-dfba-4f3e-9f7a-833fa729dc19
   ws-opts:
     headers:
-      Host: 00.likelike.us.kg
-    path: /serv00?ed=2048
-- name: 0,19|IN_speednode_0028
-  password: '3648425794742788096'
-  port: 443
-  server: 5.8.35.208
-  skip-cert-verify: false
-  sni: loving-boa.treefrog761.one
-  type: trojan
+      Host: yg.changyouVPN.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-39
+  port: 80
+  server: 94.182.150.231
+  skip-cert-verify: true
+  type: vmess
   udp: true
-- name: 0|-https://t.me/MrXbin-76
-  password: 9Bb6wjlTOA
-  port: 1935
-  server: 93.189.94.159
-  sni: x14spain.devefun.net
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 0|-https://t.me/MrXbin-40
+  port: 80
+  server: 94.182.150.230
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
+- name: 0|-https://t.me/MrXbin-47
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: 74.226.136.204
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
   type: trojan
-- name: 0|-https://t.me/MrXbin-78
-  password: UO2beikcWh
-  port: 33261
-  server: 38.59.245.38
+- name: 0|-https://t.me/MrXbin-48
+  password: 243eab52-9ac1-405c-887c-eb112c0985b8
+  port: 443
+  server: us01.trojanyyds.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -281,7 +177,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|_US_国_1
+  name: '3,4|🇺🇸_US_美国_3 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
@@ -344,115 +240,160 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|_RO_罗
+  name: 3,4|🇷🇴_RO_罗马尼亚_2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 4|_RU__1
+  name: 4|_RO__1
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.231.233.173
+  server: 188.214.36.155
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 4|_AZ_->🇺_US_
-  password: Txj30LibF3Mn5FOvQBuJFV
-  port: 443
-  server: 94.20.141.173
+  name: 4|_NL_->_US__1
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 4,17|🇳🇱 荷兰|@ripaojiedian
+  password: dongtaiwang.com
+  port: 33333
+  server: 109.104.154.146
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|_IE_尔
+  password: drqi55BCvwi3nOXulYjGLQ
+  port: 25444
+  server: 13.79.171.214
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 4,19|CH_speednode_0004
+  name: 4|🇸_US_美国_1
+  password: amazonskr05
+  port: 443
+  server: 54.214.180.125
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|_AT_->🇺🇸_US_美国_1
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 192.36.61.59
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '4|🇺🇸_US_美国_2 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.47.253.171
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|_RU_罗->🇺🇸_US_美国
+  password: slxKKIZH0tjQBuRWU4Sw85
+  port: 65262
+  server: 62.133.63.21
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇱_NL_荷兰->🇺_RU_俄罗斯
+  password: YjJiYzBj
+  port: 8388
+  server: 45.140.146.223
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇷🇺_RU_俄罗斯_1
+  password: utPu0eizp4HYbLpn28OOEZ
+  port: 55198
+  server: 79.137.202.71
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇷🇺_RU_俄罗斯_2
+  password: AIsvzXnT1Z6NFoeadqyDCq
+  port: 11329
+  server: 109.120.186.231
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 4|🇱_PL_兰
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.255.123.92
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4|🇺🇸_US_美国_5
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.237.185.160
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4|🇹_AT_奥地利->🇺🇸_US_美国_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.61.59
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4|🇺🇸_US_美国->🇷_KR_国
+  password: amazonskr05
+  port: 443
+  server: 35.165.138.69
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4|🇹_IT_利
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.143.129.230
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 4|_CH_->_CN_国
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 4|🇸_US_美国->_RO_罗_1
-  password: amazonskr05
-  port: 443
-  server: 34.211.250.149
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_2
-  password: amazonskr05
-  port: 443
-  server: 34.219.111.92
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4|🇺🇸_US_美国_1
-  password: amazonskr05
-  port: 443
-  server: 52.27.15.25
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 4|_UA_
-  password: ZmQwZjFk
-  port: 8388
-  server: 95.164.36.59
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '4|🇺🇸_US_美国_2 #1'
-  password: amazonskr05
-  port: 443
-  server: 35.88.157.197
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_3
-  password: amazonskr05
-  port: 443
-  server: 18.236.91.62
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 4|🇺🇸_US_美国->_JP_
-  password: amazonskr05
-  port: 443
-  server: 54.212.56.181
-  type: ss
-  udp: true
-- name: 5|美国+Amazon+EC2服务器
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.72.188.43
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 5|美国 CloudFlare节点
   network: ws
-  port: 2082
+  port: 2086
+  server: 104.21.89.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+  ws-opts:
+    headers:
+      Host: shs.xiaoqi666.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #1'
+  network: ws
+  port: 2086
   server: s1.cn-db.top
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-150-51-99.s1.cn-db.top
-    path: /dabai.in172.64.27.73
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #1'
-  network: ws
-  port: 2096
-  server: www.okcupid.com
-  tls: true
-  type: vmess
-  uuid: 75de8443-8efe-429c-c5ef-a51f38592f03
-  ws-opts:
-    headers:
-      Host: ck.htg8866.us.kg
-    path: /3tq4ttrw
+      Host: 100-47-154-9.s1.cn-db.top
+    path: /dabai.in104.24.181.189
 - alterId: 64
   cipher: auto
   name: 5,11,18|香港4|@ripaojiedian
@@ -465,216 +406,224 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 5|俄罗斯 新西伯利亚justhost
+  network: ws
+  port: 33395
+  server: 45.8.159.241
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: '5|美国 CloudFlare节点 #2'
   network: ws
-  port: '2082'
-  server: 104.16.155.10
+  port: 8880
+  server: s2.db-link01.top
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-38-62-25.s5.db-link02.top
-    path: /dabai.in104.18.42.172
+      Host: 100-14-147-154.s2.db-link01.top
+    path: /dabai.in172.64.0.32
+- alpn:
+  - http/1.1
+  name: 5|爱尔兰都柏林+亚马逊云
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.248.124.85
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '5|美国 CloudFlare节点 #3'
   network: ws
-  port: 2086
-  server: 172.67.165.53
+  port: '8880'
+  server: s1.db-link01.top
   tls: false
   type: vmess
-  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: shs.xiaoqi666.xyz
-    path: /
-- name: 5|江苏省徐州市+移动
-  password: vzhXXZVw
-  port: 36442
-  server: 223.113.54.145
-  skip-cert-verify: true
-  type: trojan
+      Host: 100-250-32-53.s1.db-link01.top
+    path: /dabai.in172.67.95.35
+- alterId: 0
+  cipher: auto
+  name: 5,12|github.com/freefq - 美国Fastly全球...
+  network: ws
+  port: 443
+  server: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 0
   cipher: auto
   name: '5|美国 CloudFlare节点 #4'
   network: ws
-  port: 2052
-  server: 104.17.221.248
-  servername: 100-174-237-7.s3.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-174-237-7.s3.db-link01.top
-    path: /dabai.in172.64.15.161
-- name: 5|江苏省+移动
-  password: vzhXXZVw
-  port: 12524
-  server: 36.150.215.222
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #5'
-  network: ws
-  port: 2053
-  server: 104.19.251.200
-  tls: true
-  type: vmess
-  uuid: 75de8443-8efe-429c-c5ef-a51f38592f03
-  ws-opts:
-    headers:
-      Host: ck.htg8866.us.kg
-    path: /3tq4ttrw
-- name: 5|美国+亚特兰大
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: tw01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: tw01.trojanyyds.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #6'
-  network: ws
-  port: 2082
-  server: s1.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-6-81-226.s1.db-link02.top
-    path: /dabai.in104.20.8.162
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #7'
-  network: ws
   port: 80
-  server: 104.17.221.248
+  server: 104.19.48.236
   tls: false
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
   ws-opts:
     headers:
-      Host: 100-49-141-209.s1.db-link02.top
-    path: /dabai.in104.17.169.115
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #8'
-  network: ws
-  port: '2052'
-  server: s1.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-185-39-111.s1.cn-db.top
-    path: /dabai.in172.64.9.180
-- alterId: 0
-  cipher: auto
-  name: 5|英国 V2CROSS.COM
-  network: ws
-  port: 55899
-  server: 5.39.252.204
-  tls: false
-  type: vmess
-  uuid: 791a9aad-1a8b-435d-862e-627f41025d73
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 5|俄罗斯 V2CROSS.COM
-  network: ws
-  port: 55899
-  server: 195.58.49.86
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-opts:
-    headers:
-      Host: ''
+      Host: chunchuan.kejixiaoqi666.store
     path: /
 - alterId: 0
   cipher: auto
-  name: '5|美国 CloudFlare节点 #9'
-  network: ws
-  port: 2086
-  server: 104.21.89.219
-  tls: false
-  type: vmess
-  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-  ws-opts:
-    headers:
-      Host: shs.xiaoqi666.xyz
-    path: /
-- name: '5|美国+亚特兰大 #1'
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #10'
-  network: ws
-  port: 8443
-  server: ff.kncc2.top
-  tls: true
-  type: vmess
-  uuid: 89c344f2-096c-445c-b629-9b15152f38e7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /89c344f2
-- alterId: 0
-  cipher: auto
-  name: 11|0|--84
+  name: 5|伊朗 V2CROSS.COM
   network: tcp
-  port: 80
+  port: '80'
   server: 94.182.150.230
   tls: false
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 11,17,18|香港3|@ripaojiedian
+  name: '5|美国 CloudFlare节点 #5'
   network: ws
-  port: '8226'
-  server: 89.185.31.75
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: 443
+  server: se.899994.xyz
+  tls: true
   type: vmess
-  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   ws-opts:
     headers:
-      Host: v12.emovpn.buzz
-    path: /
+      Host: ''
+    path: /index
+- alpn:
+  - http/1.1
+  name: 5|爱尔兰+V2CROSS.COM
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 99.80.243.143
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 11,17,18|韩国2|@ripaojiedian
+  name: '5|美国 CloudFlare节点 #6'
   network: ws
-  port: '40396'
-  server: sd3.forlive.live
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: 443
+  server: us.cowvpn.org
+  tls: true
   type: vmess
-  uuid: 81e16736-5ede-4050-bc4c-3062a63c926d
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
+      Host: us2cf.cowvpn.org
+    path: /cctv13/vmess_us1
+- alterId: 0
+  cipher: auto
+  name: 5|湖北省武汉市 联通
+  network: tcp
+  port: 64016
+  server: in06.my1188.org
+  servername: us01.wechat-cdn-us01.one
+  tls: false
+  type: vmess
+  uuid: fe0346d9-a972-3d8a-bac7-310604fa108f
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #7'
+  network: ws
+  port: 80
+  server: s4.cn-db.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-210-164-205.s4.cn-db.top
+    path: /dabai.in172.64.27.157
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #8'
+  network: ws
+  port: 2082
+  server: s2.cn-db.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-22-66-14.s2.cn-db.top
+    path: /dabai.in104.21.22.199
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #9'
+  network: ws
+  port: 443
+  server: tokyo.899994.xyz
+  tls: true
+  type: vmess
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    headers:
+      Host: ''
+    path: /index
+- name: 5|法国+OVH
+  password: ead93bc0-d7fc-11ef-a52e-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #10'
+  network: ws
+  port: 2082
+  server: s4.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-116-85-183.s4.db-link02.top
+    path: /dabai.in172.67.8.3
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #11'
+  network: ws
+  port: 443
+  server: sg2.cowvpn.org
+  tls: true
+  type: vmess
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  ws-opts:
+    headers:
+      Host: sg2cf.cowvpn.org
+    path: /cctv13/vmess_sg2cf
+- alterId: 0
+  cipher: auto
+  name: 5,11|0|--59
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 11|0|--63
+  network: tcp
+  port: 80
+  server: 94.182.150.231
+  tls: false
+  type: vmess
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -688,6 +637,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,18|德国|@ripaojiedian
+  network: tcp
+  port: '2082'
+  server: 64.225.109.206
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,17,18|俄罗斯|@ripaojiedian
+  network: ws
+  port: '17926'
+  server: 194.87.69.52
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c3f7ff71-8e83-4983-94fd-c7bc4018b824
   ws-opts:
     headers:
       Host: ''
@@ -801,19 +777,6 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 12|github.com/freefq - 美国Fastly全球...
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #3'
   network: ws
   port: 8880
@@ -838,10 +801,21 @@ proxies:
   name: 17,18|香港2|@ripaojiedian
   network: tcp
   password: phXKwfrd
-  port: 42395
-  server: 36.150.215.219
+  port: 18681
+  server: 36.150.215.196
   skip-cert-verify: true
   type: trojan
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港3|@ripaojiedian
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40239
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -869,6 +843,15 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 17,18|香港7|@ripaojiedian
+  network: tcp
+  password: be28a019-a855-4cd9-bfa1-1471c56921a4
+  port: 13003
+  server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇯🇵 日本|@ripaojiedian
@@ -896,14 +879,6 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 2.hublink.pro
   type: ssr
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇰🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 43104
-  server: p221.panda001.net
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
@@ -918,22 +893,6 @@ proxies:
   password: TOU9PB2B767TFQVU
   port: 16007
   server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡3|@ripaojiedian
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40005
-  server: sgp.fastsoonlink.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡4|@ripaojiedian
-  password: 3164812a-caea-4cd7-acad-9cf0627aac08
-  port: 30001
-  server: gdgs.tarioblink.me
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -957,7 +916,7 @@ proxies:
   name: 17|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.136.200.60
+  server: 47.128.244.15
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -965,7 +924,7 @@ proxies:
   name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.231.234.231
+  server: 54.255.240.168
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -973,9 +932,30 @@ proxies:
   name: 17|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.112.254.144
+  server: 18.142.225.149
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 17|🇩🇪 德国|@ripaojiedian
+  port: 2082
+  server: 64.225.109.206
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- cipher: rc4-md5
+  name: 18|6aaZ5rivM3xAcmlwYW9qaWVkaWFu
+  obfs: plain
+  obfs-param: Y2QyYjY5MjkwMi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40239'
+  protocol: auth_aes128_md5
+  protocol-param: OTI5MDI6cEZXR09R
+  server: 3.link-hub.click
+  type: ssr
 - cipher: rc4-md5
   name: 18|5pel5pysM3xAcmlwYW9qaWVkaWFu
   obfs: plain
@@ -986,55 +966,9 @@ proxies:
   protocol-param: OTI5MDI6cEZXR09R
   server: 2.hublink.pro
   type: ssr
-- name: 19|AM_speednode_0001
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 188.164.159.3
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|AM_speednode_0002
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 188.164.159.248
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
 - alterId: 64
   cipher: auto
-  name: 19|CN_speednode_0005
-  port: 48109
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 19|CN_speednode_0006
-  port: 54882
-  server: 183.236.48.163
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 19|CN_speednode_0007
+  name: 19|CN_speednode_0001
   port: 51037
   server: 183.236.51.23
   skip-cert-verify: true
@@ -1042,28 +976,49 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  name: 19|CN_speednode_0008
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN_speednode_0002
+  password: 061d42d5-4e6a-4661-be04-80dcfb15b08f
+  port: 49319
+  server: yoyo.cmyiphone.top
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN_speednode_0003
+  port: 14100
+  server: dxv4.pai50288.uk
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: 64
   cipher: auto
-  name: 19|CN_speednode_0009
-  port: 54104
-  server: 183.236.51.23
-  skip-cert-verify: true
+  name: 19|CN_speednode_0004
+  port: 44614
+  server: 120.198.71.219
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
+  name: 19|CN_speednode_0005
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40210
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 19|CN_speednode_0010
-  port: 40565
-  server: 120.232.153.63
+  name: 19|CN_speednode_0006
+  port: 48109
+  server: 183.236.51.23
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1071,7 +1026,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 19|CN_speednode_0011
+  name: 19|CN_speednode_0007
   network: ws
   port: 22643
   server: tk.hzlt.tkddns.xyz
@@ -1087,22 +1042,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 19|CN_speednode_0012
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 19|CN_speednode_0013
+  name: 19|CN_speednode_0008
   network: ws
   port: 22642
   server: tk.hzlt.tkddns.xyz
@@ -1115,342 +1055,69 @@ proxies:
     headers:
       Host: zxjp-b.tkong.cc
     path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN_speednode_0009
+  port: 49318
+  server: yoyo.cmyiphone.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 061d42d5-4e6a-4661-be04-80dcfb15b08f
 - cipher: chacha20-ietf-poly1305
-  name: 19|DE_speednode_0016
-  password: utPu0eizp4HYbLpn28OOEZ
-  port: 55198
-  server: 79.137.202.71
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|DK_speednode_0018
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.186.79.53
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|EC_speednode_0019
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.47.253.171
-  type: ss
-  udp: true
-- name: 19|ES_speednode_0020
-  network: ws
-  password: Aimer
-  port: 443
-  server: 185.114.72.148
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 19|FR_speednode_0021
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|GB_speednode_0024
-  password: alvoItFsbmpCKl8pO6loEC
-  port: 11329
-  server: 109.120.186.231
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|GB_speednode_0025
-  password: AIsvzXnT1Z6NFoeadqyDCq
-  port: 11329
-  server: 109.120.186.231
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|IE_speednode_0026
-  password: ZDAxZDE2
+  name: 19|FR_speednode_0012
+  password: ZWRiM2Ix
   port: 8388
-  server: 95.164.44.221
+  server: 185.234.64.35
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|IR_speednode_0029
-  port: 80
-  server: 94.182.150.231
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- name: 19|LU_speednode_0031
-  network: ws
-  password: Aimer
-  port: 81
-  server: 45.80.209.25
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
 - cipher: aes-256-cfb
-  name: 19|PL_speednode_0033
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 217.30.10.18
+  name: 19|PT_speednode_0015
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|RU_speednode_0035
-  network: ws
-  port: 17926
-  server: 195.58.49.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: aes-128-cfb
+  name: 19|US_speednode_0023
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
   udp: true
-  uuid: b159ac71-2038-423f-b79a-8c6ab5a9b684
-- alterId: 0
-  cipher: auto
-  name: 19|RU_speednode_0037
-  network: ws
-  port: 17926
-  server: 195.58.49.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c882b684-ab94-4b46-b34e-609d1f3b5c0f
-- alterId: 0
-  cipher: auto
-  name: 19|RU_speednode_0038
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f6c0370-735f-4ed0-9a2d-b10ffa417b03
-- alterId: 0
-  cipher: auto
-  name: 19|RU_speednode_0039
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-- alterId: 0
-  cipher: auto
-  name: 19|RU_speednode_0040
-  network: ws
-  port: 17926
-  server: 194.87.69.50
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a0913106-9749-42c3-964f-71d21e6dd517
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0042
+  name: 19|US_speednode_0046
   password: amazonskr05
   port: 443
-  server: 18.142.185.146
+  server: 54.202.49.210
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0043
+  name: 19|US_speednode_0047
   password: amazonskr05
   port: 443
-  server: 13.229.206.58
+  server: 35.167.62.123
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 19|SG_speednode_0044
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
+- cipher: aes-128-cfb
+  name: 19|US_speednode_0053
+  obfs: plain
+  obfs-param: ''
+  password: shadowsocks
+  port: 443
+  protocol: origin
+  protocol-param: ''
+  server: 184.170.241.194
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0054
+  password: amazonskr05
+  port: 443
+  server: 34.219.177.229
   type: ss
   udp: true
-- name: 19|SG_speednode_0045
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 206.238.236.63
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|SG_speednode_0046
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 19|US_speednode_0052
-  port: 45017
-  server: 137.175.20.92
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 19|US_speednode_0062
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 108.165.152.65
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0064
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 108.165.152.241
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0066
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 108.165.152.25
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0069
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 108.165.152.78
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0070
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 154.219.5.137
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0074
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 156.225.72.246
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0075
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0077
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- name: 19|US_speednode_0079
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 199.34.228.164
-  skip-cert-verify: false
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: amepo.ambercc.filegear-sg.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|US_speednode_0081
-  network: ws
-  port: 80
-  server: biiia-vpn-whal.fast.hosting-ip.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: cat.IR.
-    path: /?ed=2056
 - alpn:
   - http/1.1
   name: 21|d*********g.com_3
@@ -1471,158 +1138,125 @@ proxy-groups:
   type: select
 - name: 自动选择
   proxies: &id001
+  - 17|🇸🇬 新加坡|@ripaojiedian
+  - 3|🇺🇸_US_美国_3
+  - 4|🇱_NL_荷兰->🇺_RU_俄罗斯
+  - 3|🇷_IR__1
+  - 12|github.com/freefq - 广东省移动 7
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - 19|CN_speednode_0004
+  - 19|CN_speednode_0008
+  - 17|🇸🇬 狮城特殊|@ripaojiedian
+  - 19|US_speednode_0046
+  - 11,17,18|俄罗斯|@ripaojiedian
+  - 5|湖北省武汉市 联通
+  - 4|🇹_IT_利
+  - 4,17|🇳🇱 荷兰|@ripaojiedian
+  - 0|-https://t.me/MrXbin-47
+  - 0|-https://t.me/MrXbin-13
+  - '5|美国 CloudFlare节点 #5'
   - '5|美国 CloudFlare节点 #4'
-  - 0|-https://t.me/MrXbin-76
-  - 19|RU_speednode_0035
-  - 17|🇸🇬 新加坡4|@ripaojiedian
-  - 19|CN_speednode_0005
-  - 0|-https://t.me/MrXbin-4
-  - 0|-https://t.me/MrXbin-5
-  - 19|US_speednode_0081
-  - 0|-https://t.me/MrXbin-34
-  - 0,11|0|--85
-  - 0|-https://t.me/MrXbin-12
-  - 12|github.com/freefq - 美国Fastly全球...
+  - 17|🇭🇰 香港3|@ripaojiedian
+  - '3,4|🇺🇸_US_美国_3 #1'
+  - 4|🇺🇸_US_美国->🇷_KR_国
+  - 0|-https://t.me/MrXbin-9
+  - 4|🇸_US_美国_1
+  - 3|_CN_->_ZA_
+  - 11,21|d*********g.com_2
+  - 17|🇯🇵 日本特殊|@ripaojiedian
+  - 0,19|KR_speednode_0014
   - 17,18|香港|@ripaojiedian
+  - 5|法国+OVH
+  - 19|FR_speednode_0012
+  - 4|🇱_PL_兰
+  - 4|🇺🇸_US_美国_5
+  - 4|_NL_->_US__1
+  - 17|🇺🇸 美国|@ripaojiedian
+  - 12|github.com/freefq - 印度  10
+  - 19|US_speednode_0054
+  - 21|d*********g.com_3
+  - '5|美国 CloudFlare节点 #3'
+  - 5,12|github.com/freefq - 美国Fastly全球...
+  - 11,18|德国|@ripaojiedian
+  - 0|-https://t.me/MrXbin-6
+  - 17,18|香港2|@ripaojiedian
+  - 3,4|🇷🇴_RO_罗马尼亚_2
+  - 0,4|🇳🇱_NL_荷兰->🇺🇸_US_美国_2
+  - 0,3|🇺🇸_US_美国_2
+  - 19|US_speednode_0047
+  - 5|爱尔兰+V2CROSS.COM
+  - '5|美国 CloudFlare节点 #8'
+  - 19|CN_speednode_0006
+  - 4|_IE_尔
+  - 12|github.com/freefq - 印度  3
+  - 3|_GB_国
+  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
+  - 5|爱尔兰都柏林+亚马逊云
+  - 3|_SK_斯->🇸_US_美国
   - 5|美国 CloudFlare节点
   - '5|美国 CloudFlare节点 #9'
-  - 0,19|NL_speednode_0032
-  - 0|-https://t.me/MrXbin-19
+  - 0|-https://t.me/MrXbin-12
+  - 19|PT_speednode_0015
+  - 19|US_speednode_0023
   - 3|🇺🇸_US_美国_4
-  - 17|🇸🇬 新加坡|@ripaojiedian
-  - '5|美国 CloudFlare节点 #8'
-  - '5|美国 CloudFlare节点 #7'
-  - 19|US_speednode_0075
-  - 0|-https://t.me/MrXbin-10
-  - 19|CN_speednode_0012
-  - 0|-https://t.me/MrXbin-33
-  - 17|🇯🇵 日本2|@ripaojiedian
-  - 19|SG_speednode_0043
-  - 17|🇯🇵 日本|@ripaojiedian
-  - 3|🇮🇷_IR_伊朗_2
-  - 4|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_2
-  - 4|🇺🇸_US_美国->_JP_
-  - 19|IE_speednode_0026
-  - 19|CN_speednode_0011
-  - 4,19|CH_speednode_0004
-  - 0,4,19|IS_speednode_0030
-  - 21|d*********g.com_3
-  - 12|github.com/freefq - 美国CloudFla...
-  - 0|-https://t.me/MrXbin-67
-  - 19|GB_speednode_0024
-  - 17|🇰🇷 韩国特殊|@ripaojiedian
-  - 17|🇭🇰 香港5|@ripaojiedian
-  - 0|-https://t.me/MrXbin-7
-  - 17|🇸🇬 狮城特殊|@ripaojiedian
-  - 4|🇺🇸_US_美国->🇷🇴_RO_罗马尼亚_3
-  - 0,4|🇺🇦_UA_乌克兰->🇷_RU_俄罗斯
-  - '5|美国 CloudFlare节点 #1'
-  - 0,19|RU_speednode_0036
-  - 3|🇺🇸_US_美国_3
-  - 4|_RU__1
-  - 4|🇺🇸_US_美国_1
-  - 19|GB_speednode_0025
-  - 19|LU_speednode_0031
-  - 19|US_speednode_0070
-  - 12|github.com/freefq - 印度  10
-  - 19|IR_speednode_0029
-  - 3|_RU_
-  - 19|DE_speednode_0016
-  - 17|🇰🇷 韩国|@ripaojiedian
-  - '4|🇺🇸_US_美国_2 #1'
-  - 17|🇯🇵 日本特殊|@ripaojiedian
-  - 0|-https://t.me/MrXbin-1
-  - 17|🇸🇬 新加坡3|@ripaojiedian
-  - 5,11,18|香港4|@ripaojiedian
-  - 19|AM_speednode_0001
-  - 19|RU_speednode_0039
-  - 19|FR_speednode_0021
-  - 17|🇺🇸 美国2|@ripaojiedian
-  - 19|DK_speednode_0018
-  - 5|美国+Amazon+EC2服务器
-  - 0,19|IN_speednode_0028
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - 0|-https://t.me/MrXbin-30
-  - 17|🇭🇰 香港6|@ripaojiedian
-  - 0|-https://t.me/MrXbin-20
-  - 17|🇺🇸 美国|@ripaojiedian
-  - 19|US_speednode_0077
-  - 18|5pel5pysM3xAcmlwYW9qaWVkaWFu
-  - '5|美国 CloudFlare节点 #2'
-  - 0|-https://t.me/MrXbin-35
-  - 0|-https://t.me/MrXbin-32
-  - 19|CN_speednode_0009
-  - 11,17,18|香港3|@ripaojiedian
-  - 17|🇯🇵 日本3|@ripaojiedian
-  - 12|github.com/freefq - 印度  2
-  - 11,21|d*********g.com_2
-  - 19|SG_speednode_0044
-  - 19|CN_speednode_0007
-  - 19|RU_speednode_0038
-  - 5|江苏省+移动
-  - 3|🇷_IR__1
-  - 0|-https://t.me/MrXbin-18
-  - 19|US_speednode_0069
-  - '5|美国 CloudFlare节点 #3'
-  - 19|SG_speednode_0045
-  - 19|PL_speednode_0033
-  - 5|俄罗斯 V2CROSS.COM
-  - 0,19|US_speednode_0057
-  - 5|英国 V2CROSS.COM
-  - 0|-https://t.me/MrXbin-57
-  - 11,17,18|英国|@ripaojiedian
-  - 3|_RO_罗
-  - 0|-https://t.me/MrXbin-21
-  - 17|🇸🇬 新加坡2|@ripaojiedian
-  - 17|🇭🇰 香港4|@ripaojiedian
-  - 4|_AZ_->🇺_US_
-  - 11|0|--84
-  - 3|_GB_国
-  - 19|ES_speednode_0020
-  - 17,18|香港2|@ripaojiedian
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 0|-https://t.me/MrXbin-14
-  - 0|-https://t.me/MrXbin-22
-  - 19|RU_speednode_0037
-  - 19|US_speednode_0079
-  - 19|SG_speednode_0042
-  - '5|美国 CloudFlare节点 #5'
-  - 0|-https://t.me/MrXbin-8
-  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
-  - 19|US_speednode_0066
-  - 3|_US_国_1
-  - 19|US_speednode_0052
-  - 3|_CN_->_ZA_
-  - 19|CN_speednode_0013
-  - 19|SG_speednode_0046
-  - 19|US_speednode_0064
-  - 0|-https://t.me/MrXbin-15
-  - 3|_SK_斯->🇸_US_美国
-  - 19|AM_speednode_0002
-  - 19|CN_speednode_0010
-  - 4|🇸_US_美国->_RO_罗_1
-  - 4|_UA_
-  - 0|-https://t.me/MrXbin-13
-  - 12|github.com/freefq - 广东省移动 7
-  - 19|CN_speednode_0008
-  - 5|江苏省徐州市+移动
-  - 0,11,19|DE_speednode_0015
-  - 19|CN_speednode_0006
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - 0|-https://t.me/MrXbin-37
-  - 0,3|🇺🇸_US_美国_2
+  - 0|-https://t.me/MrXbin-48
   - 3|_MD_
-  - 19|US_speednode_0074
-  - 19|EC_speednode_0019
-  - 19|US_speednode_0062
-  - 12|github.com/freefq - 印度  3
-  - 5|美国+亚特兰大
+  - 0|-https://t.me/MrXbin-36
+  - 4|_CH_->_CN_国
+  - 18|5pel5pysM3xAcmlwYW9qaWVkaWFu
   - '5|美国 CloudFlare节点 #6'
+  - 0|-https://t.me/MrXbin-31
+  - 4|🇷🇺_RU_俄罗斯_1
+  - 17|🇺🇸 美国2|@ripaojiedian
+  - 4|_RO__1
+  - 19|CN_speednode_0003
+  - 4|_RU_罗->🇺🇸_US_美国
+  - 19|CN_speednode_0002
   - '5|美国 CloudFlare节点 #10'
-  - 11,17,18|韩国2|@ripaojiedian
-  - 19|RU_speednode_0040
-  - 0|-https://t.me/MrXbin-78
-  - '5|美国+亚特兰大 #1'
+  - '12|github.com/freefq - 美国CloudFla... #3'
+  - 17|🇭🇰 香港4|@ripaojiedian
+  - 0|-https://t.me/MrXbin-5
+  - 0|-https://t.me/MrXbin-39
+  - 0|-https://t.me/MrXbin-3
+  - 0|-https://t.me/MrXbin-16
+  - 3|_RU_
+  - 5|伊朗 V2CROSS.COM
+  - '5|美国 CloudFlare节点 #1'
+  - 17|🇭🇰 香港6|@ripaojiedian
+  - '5|美国 CloudFlare节点 #7'
+  - 19|CN_speednode_0009
+  - 3|🇮🇷_IR_伊朗_2
+  - 0|-https://t.me/MrXbin-40
+  - 11|0|--63
+  - 5|俄罗斯 新西伯利亚justhost
+  - 17|🇯🇵 日本2|@ripaojiedian
+  - 17|🇩🇪 德国|@ripaojiedian
+  - 5,11,18|香港4|@ripaojiedian
+  - 0|-https://t.me/MrXbin-7
+  - '5|美国 CloudFlare节点 #2'
+  - 12|github.com/freefq - 印度  2
+  - 17,18|香港7|@ripaojiedian
+  - '4|🇺🇸_US_美国_2 #1'
+  - 0,11,19|DE_speednode_0010
+  - 17|🇰🇷 韩国特殊|@ripaojiedian
+  - 17|🇯🇵 日本|@ripaojiedian
+  - 11,17,18|英国|@ripaojiedian
+  - '5|美国 CloudFlare节点 #11'
+  - 17|🇸🇬 新加坡2|@ripaojiedian
+  - 4|🇷🇺_RU_俄罗斯_2
+  - 12|github.com/freefq - 美国CloudFla...
+  - 19|US_speednode_0053
+  - 4|_AT_->🇺🇸_US_美国_1
+  - 19|CN_speednode_0005
+  - 4|🇹_AT_奥地利->🇺🇸_US_美国_2
+  - '12|github.com/freefq - 美国CloudFla... #1'
+  - 5,11|0|--59
+  - 19|CN_speednode_0001
+  - 0,4,19|US_speednode_0057
+  - 19|CN_speednode_0007
+  - 17|🇯🇵 日本3|@ripaojiedian
+  - 18|6aaZ5rivM3xAcmlwYW9qaWVkaWFu
+  - 17|🇭🇰 香港5|@ripaojiedian
   type: url-test
 - name: 1手动选择
   proxies: *id001
@@ -1633,12 +1267,13 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 11,17,18|香港3|@ripaojiedian
   - 17,18|香港|@ripaojiedian
   - 17,18|香港2|@ripaojiedian
+  - 17|🇭🇰 香港3|@ripaojiedian
   - 17|🇭🇰 香港4|@ripaojiedian
   - 17|🇭🇰 香港5|@ripaojiedian
   - 17|🇭🇰 香港6|@ripaojiedian
+  - 17,18|香港7|@ripaojiedian
   type: select
 rules:
 - MATCH,PROXY
