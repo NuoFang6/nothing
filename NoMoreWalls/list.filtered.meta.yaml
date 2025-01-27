@@ -37,6 +37,14 @@ proxies:
   tls: false
   type: hysteria2
 - name: '9|@V2rayNG3 #1'
+  password: 15cca331-9e92-449d-93b0-25f82203595f
+  port: 20309
+  server: gb.gomeow.online
+  skip-cert-verify: false
+  sni: gb.gomeow.online
+  tls: false
+  type: hysteria2
+- name: '9|@V2rayNG3 #2'
   obfs: salamander
   obfs-password: de8287cd33b05fa3
   password: 22f2c759db51b3d0
@@ -54,15 +62,7 @@ proxies:
   sni: meiyou-lu.jiumaojiu.org
   tls: false
   type: hysteria2
-- name: 9|IR-@V2ray_Raha-7
-  password: 54185b6e-851a-4109-b6a9-7beb86f41c05
-  port: 18383
-  server: sg2.ktmurl.club
-  skip-cert-verify: true
-  sni: sg2.ktmurl.club
-  tls: false
-  type: hysteria2
-- name: '9|@V2rayNG3 #2'
+- name: '9|@V2rayNG3 #3'
   password: 75577117-ABCD-DCBA-AAAA-CC777775577B
   port: 7777
   server: s15.serv00.com
@@ -70,7 +70,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #3'
+- name: '9|@V2rayNG3 #4'
   obfs: salamander
   obfs-password: '@azadi_az_inja_migzare'
   password: '@azadi_az_inja_migzare'
@@ -80,7 +80,7 @@ proxies:
   sni: all-v4.dgi000.store
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #4'
+- name: '9|@V2rayNG3 #5'
   obfs: salamander
   obfs-password: bipbip
   password: AtTK3tiEA0
@@ -89,7 +89,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #5'
+- name: '9|@V2rayNG3 #6'
   obfs: salamander
   obfs-password: bleepbloop
   password: AtTK3tiEA0
@@ -98,7 +98,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #6'
+- name: '9|@V2rayNG3 #7'
   obfs: salamander
   obfs-password: bluhbluh
   password: AtTK3tiEA0
@@ -140,6 +140,24 @@ proxies:
   sni: xireiki.com
   tls: false
   type: hysteria2
+- name: '9|@meli_proxyy #1'
+  password: ad32894d-b3dd-4c3d-973c-eda2738f51af
+  port: 443
+  server: meiyou-us.jiumaojiu.org
+  skip-cert-verify: false
+  sni: meiyou-us.jiumaojiu.org
+  tls: false
+  type: hysteria2
+- name: 9|irancell
+  obfs: salamander
+  obfs-password: WzBlu13Gja
+  password: b289c84ddf2f1389e43dd88580d384b0
+  port: 2053
+  server: ravanparish.persianmusicdownload99azarmilad.ir
+  skip-cert-verify: true
+  sni: ravanparish.persianmusicdownload99azarmilad.ir
+  tls: false
+  type: hysteria2
 - name: 9|IR-@V2ray_Raha-5
   password: ddfa9dc7-9155-4c39-8f23-97371a707444
   port: 443
@@ -147,7 +165,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #7'
+- name: '9|@V2rayNG3 #8'
   password: dongtaiwang.com
   port: 50717
   server: 46.17.41.189
@@ -155,15 +173,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 9|IR-@V2ray_Raha-8
-  password: e3f4729d-2bdf-4326-a2a7-c8678da4121c
-  port: 47085
-  server: 107.149.212.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '9|@V2rayNG3 #8'
+- name: '9|@V2rayNG3 #9'
   obfs: salamander
   obfs-password: dbc688df29e582d3
   password: f8e40931bbb827df
@@ -173,11 +183,12 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: 9|IR-@V2ray_Raha-6
+- name: '9|@meli_proxyy #2'
   password: mSIusSz2Ku3YUWxB85cQa
-  port: 443
-  server: b.2513142.xyz
+  port: 18880
+  server: a.2513142.xyz
   skip-cert-verify: true
+  sni: a.2513142.xyz
   tls: false
   type: hysteria2
 - name: 9|IR-@V2ray_Raha-3
@@ -220,10 +231,10 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-9
+  name: 0|-https://t.me/MrXbin-5
   password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
+  port: 51199
+  server: 221.139.79.20
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -422,32 +433,22 @@ proxies:
   server: 51.15.15.82
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 17,19|CN_speednode_0009
-  password: 5KM1ZLFIVE4AVS2A
-  port: 15011
-  server: 183.232.239.172
+  name: 17|🇹🇼 台湾|@ripaojiedian
+  password: 9e2a92c6-bbe6-49fa-a280-e6f8f3eed7c5
+  port: 30228
+  server: pretw.capoonetwork.com
   tfo: false
   type: ss
-  udp: true
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 17|🇯🇵 日本|@ripaojiedian
-  password: 62TRHAZ070VS0QX3
-  port: 18009
-  server: qh62onjn.slashdevslashnetslashtun.net
+  name: 17|🇯🇵 日本3|@ripaojiedian
+  password: 9e2a92c6-bbe6-49fa-a280-e6f8f3eed7c5
+  port: 19550
+  server: prejp.capoonetwork.com
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17,19|CN_speednode_0011
-  password: HK94FBWD4KFIPD9F
-  port: 18015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
@@ -458,43 +459,10 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 17|🇰🇷 韩国2|@ripaojiedian
-  password: qwerREWQ@@
-  port: 22081
-  server: p110.panda001.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17,19|CN_speednode_0010
-  password: EKL22E7LU1P3EPZC
-  port: 16015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡3|@ripaojiedian
-  password: BS6J1MEQANXXVHQL
-  port: 16002
-  server: 219.135.227.210
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国|@ripaojiedian
-  password: 71GJL31AYF3CXZ2K
-  port: 17007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国2|@ripaojiedian
-  password: U177NTV9CLY0D3SP
-  port: 17002
-  server: w72tapyb.slashdevslashnetslashtun.net
+  name: 17|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.35.54.92
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -502,15 +470,7 @@ proxies:
   name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.207.152.137
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.36.115.19
+  server: 43.207.72.50
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -518,7 +478,7 @@ proxies:
   name: 17|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.65.53.22
+  server: 54.180.250.244
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -528,6 +488,27 @@ proxies:
   server: 120.232.81.50
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 19|CN_speednode_0009
+  password: 5KM1ZLFIVE4AVS2A
+  port: 15011
+  server: 183.232.239.172
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 19|CN_speednode_0010
+  password: EKL22E7LU1P3EPZC
+  port: 16015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 19|CN_speednode_0011
+  password: HK94FBWD4KFIPD9F
+  port: 18015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 19|CN_speednode_0012
   password: 3FB23A19-9424-40C7-9139-3540228283FA
@@ -535,57 +516,13 @@ proxies:
   server: sgp.fastsoonlink.com
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-12
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13629
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: bb29cs.cdn.node.a.tddns-ounk.com
-  type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-13
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13636
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: bb29cs.cdn.node.a.tddns-ounk.com
-  type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-15
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13318
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: lld9k6.cdn.node.a.tddns-ounk.com
-  type: ssr
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-20
+  name: 0|-https://t.me/MrXbin-27
   obfs: http_post
   password: +asd6a5s5df+
   port: 443
   protocol: auth_aes128_md5
   server: nsus3.irundns.net
-  type: ssr
-- cipher: rc4-md5
-  name: 0|-https://t.me/MrXbin-27
-  obfs: tls1.2_ticket_auth
-  password: Cskw6d
-  port: 13628
-  protocol: auth_aes128_md5
-  protocol-param: 524959:5u4MZ6
-  server: bb29cs.cdn.node.a.tddns-ounk.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-28
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 195.154.169.198
   type: ssr
 - cipher: rc4-md5
   name: 19|CN_speednode_0014
@@ -856,17 +793,6 @@ proxies:
 - alterId: 0
   cipher: auto
   h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-35
-  port: 80
-  server: 94.182.150.230
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
   http-opts:
     headers:
       Host:
@@ -874,7 +800,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 0,19|DE_speednode_0019
+  name: 0,11,19|DE_speednode_0019
   network: http
   port: 2082
   server: 64.225.109.206
@@ -883,16 +809,25 @@ proxies:
   type: vmess
   udp: true
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 5,11,18|香港6|@ripaojiedian
+  name: 5|伊朗 V2CROSS.COM
   network: tcp
-  port: '44614'
-  server: 120.198.71.219
+  port: '2060'
+  server: 78.109.200.212
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 58e1a79a-35e7-42ff-b5fe-b194b914d6e5
+- alterId: 0
+  cipher: auto
+  name: 5|香港 UCloud
+  network: tcp
+  port: 52825
+  server: 118.193.34.158
+  tls: false
+  type: vmess
+  uuid: 67ff500a-8484-4ed8-cf8f-b8d341534140
 - alterId: 64
   cipher: auto
   name: 11,18|香港2|@ripaojiedian
@@ -915,14 +850,44 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,18|香港4|@ripaojiedian
+  name: 11,18|香港6|@ripaojiedian
   network: tcp
-  port: '53002'
-  server: 183.236.51.23
+  port: '44614'
+  server: 120.198.71.219
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11,18|日本|@ripaojiedian
+  network: tcp
+  port: '19690'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
+- alterId: 0
+  cipher: auto
+  name: 11,18|新加坡2|@ripaojiedian
+  network: tcp
+  port: '53896'
+  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 38eda6f2-6e04-4484-8f82-e859e76612d6
+- alterId: 0
+  cipher: auto
+  name: 11,18|美国|@ripaojiedian
+  network: tcp
+  port: '46833'
+  server: 38.147.161.252
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 77175906-b651-4c44-9397-04b30a602c0c
 - alterId: 0
   cipher: auto
   name: 11,21|d*********g.com_2
