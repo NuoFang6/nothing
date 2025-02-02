@@ -31,14 +31,6 @@ proxies:
   tls: false
   type: hysteria2
 - name: '9|@V2rayNG3 #1'
-  password: 15cca331-9e92-449d-93b0-25f82203595f
-  port: 20309
-  server: gb.gomeow.online
-  skip-cert-verify: false
-  sni: gb.gomeow.online
-  tls: false
-  type: hysteria2
-- name: '9|@V2rayNG3 #2'
   obfs: salamander
   obfs-password: de8287cd33b05fa3
   password: 22f2c759db51b3d0
@@ -48,7 +40,7 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #3'
+- name: '9|@V2rayNG3 #2'
   password: 75577117-ABCD-DCBA-AAAA-CC777775577B
   port: 7777
   server: s15.serv00.com
@@ -64,7 +56,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #4'
+- name: '9|@V2rayNG3 #3'
   obfs: salamander
   obfs-password: '@azadi_az_inja_migzare'
   password: '@azadi_az_inja_migzare'
@@ -74,7 +66,7 @@ proxies:
   sni: all-v4.dgi000.store
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #5'
+- name: '9|@V2rayNG3 #4'
   obfs: salamander
   obfs-password: bipbip
   password: AtTK3tiEA0
@@ -83,7 +75,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #6'
+- name: '9|@V2rayNG3 #5'
   obfs: salamander
   obfs-password: bleepbloop
   password: AtTK3tiEA0
@@ -92,7 +84,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #7'
+- name: '9|@V2rayNG3 #6'
   obfs: salamander
   obfs-password: bluhbluh
   password: AtTK3tiEA0
@@ -119,7 +111,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #8'
+- name: '9|@V2rayNG3 #7'
   password: dongtaiwang.com
   port: 50717
   server: 46.17.41.189
@@ -127,7 +119,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #9'
+- name: '9|@V2rayNG3 #8'
   obfs: salamander
   obfs-password: dbc688df29e582d3
   password: f8e40931bbb827df
@@ -147,14 +139,6 @@ proxies:
   sni: ns.cloudflare.com
   tls: false
   type: hysteria2
-- name: 16|Hy2-s16-DBF
-  password: a3ed02b6-42f7-4ef0-a0a2-a25e9a05ac80
-  port: 26874
-  server: 207.180.248.7
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 16|@ToYoTA_PRoXY
   obfs: salamander
   obfs-password: 8c3ce17b
@@ -166,102 +150,96 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
-  name: 0,19|speednode_0036
-  password: amazonskr05
-  port: 443
-  server: 34.221.203.0
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0016
-  password: amazonskr05
-  port: 443
-  server: 3.112.203.145
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0020
-  password: amazonskr05
-  port: 443
-  server: 52.195.223.31
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0013
-  password: amazonskr05
-  port: 443
-  server: 46.137.229.233
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,17,19|speednode_0015
-  password: amazonskr05
-  port: 443
-  server: 57.180.41.158
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0047
-  password: amazonskr05
-  port: 443
-  server: 54.188.6.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0023
-  password: amazonskr05
-  port: 443
-  server: 34.215.210.60
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0024
-  password: amazonskr05
-  port: 443
-  server: 35.85.136.7
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0031
-  password: amazonskr05
-  port: 443
-  server: 54.200.108.181
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0028
-  password: amazonskr05
-  port: 443
-  server: 54.213.131.250
-  type: ss
-- cipher: aes-256-cfb
   name: 0,19|speednode_0022
   password: amazonskr05
   port: 443
   server: 34.222.65.155
   type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0033
+  password: amazonskr05
+  port: 443
+  server: 52.78.2.44
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 0,19|speednode_0050
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.47
+  name: 0|-https://t.me/MrXbin-3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.38
   type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0021
-  password: amazonskr05
-  port: 443
-  server: 52.195.0.55
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-4
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.28.60
   type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0004
-  password: amazonskr05
-  port: 443
-  server: 54.169.214.126
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-5
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.28.138
   type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0001
-  password: amazonskr05
-  port: 443
-  server: 47.129.228.204
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-6
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.2
   type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0046
-  password: amazonskr05
-  port: 443
-  server: 52.10.15.85
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-7
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.134
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-8
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.28.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-9
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.3
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-10
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 211.22.161.135
   type: ss
 - cipher: aes-256-cfb
   name: 0,19|speednode_0042
@@ -276,6 +254,145 @@ proxies:
   server: 35.89.84.182
   type: ss
 - cipher: aes-256-cfb
+  name: 0,19|speednode_0044
+  password: amazonskr05
+  port: 443
+  server: 35.90.6.76
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-14
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)ca5bef9:175503
+    mode: tls
+  port: 2377
+  server: 18.176.215.63
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-15
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.37
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-16
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.39
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-17
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.28.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-18
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.28.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-20
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)b5a99e1:21612
+    mode: tls
+  port: 2377
+  server: 60.249.35.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0,19|speednode_0050
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.47
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0027
+  password: amazonskr05
+  port: 443
+  server: 35.95.28.198
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0024
+  password: amazonskr05
+  port: 443
+  server: 35.85.136.7
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0018
+  password: amazonskr05
+  port: 443
+  server: 18.183.79.218
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0038
+  password: amazonskr05
+  port: 443
+  server: 13.209.84.81
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0016
+  password: amazonskr05
+  port: 443
+  server: 3.112.203.145
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|-https://t.me/MrXbin-28
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0036
+  password: amazonskr05
+  port: 443
+  server: 34.221.203.0
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0028
+  password: amazonskr05
+  port: 443
+  server: 54.213.131.250
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0025
+  password: amazonskr05
+  port: 443
+  server: 35.162.184.175
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-36
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-37
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
+  type: ss
+- cipher: aes-256-cfb
   name: 0,19|speednode_0007
   password: amazonskr05
   port: 443
@@ -288,10 +405,46 @@ proxies:
   server: 52.79.96.7
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-37
+  name: 0,19|speednode_0023
+  password: amazonskr05
+  port: 443
+  server: 34.215.210.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0032
+  password: amazonskr05
+  port: 443
+  server: 52.78.107.95
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-59
+  password: amazonskr05
+  port: 443
+  server: 35.88.145.179
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0006
+  password: amazonskr05
+  port: 443
+  server: 18.140.68.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-61
   password: qwerREWQ@@
   port: 51633
   server: 211.178.105.134
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0021
+  password: amazonskr05
+  port: 443
+  server: 52.195.0.55
+  type: ss
+- cipher: aes-256-cfb
+  name: 0,19|speednode_0017
+  password: amazonskr05
+  port: 443
+  server: 52.194.212.178
   type: ss
 - cipher: aes-256-cfb
   name: 0,19|speednode_0005
@@ -300,53 +453,22 @@ proxies:
   server: 18.140.69.216
   type: ss
 - cipher: aes-256-cfb
-  name: 0|-https://t.me/MrXbin-44
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0038
-  password: amazonskr05
-  port: 443
-  server: 13.209.84.81
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0044
-  password: amazonskr05
-  port: 443
-  server: 35.90.6.76
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0027
-  password: amazonskr05
-  port: 443
-  server: 35.95.28.198
-  type: ss
-- cipher: aes-256-cfb
   name: 0,19|speednode_0008
   password: amazonskr05
   port: 443
   server: 54.254.91.60
   type: ss
 - cipher: aes-256-cfb
-  name: 0,19|speednode_0037
+  name: 0,19|speednode_0003
   password: amazonskr05
   port: 443
-  server: 15.165.15.42
+  server: 13.229.70.25
   type: ss
 - cipher: aes-256-cfb
-  name: 0,19|speednode_0033
+  name: 0,19|speednode_0013
   password: amazonskr05
   port: 443
-  server: 52.78.2.44
-  type: ss
-- cipher: aes-256-cfb
-  name: 0,19|speednode_0032
-  password: amazonskr05
-  port: 443
-  server: 52.78.107.95
+  server: 46.137.229.233
   type: ss
 - cipher: aes-256-cfb
   name: 0,19|speednode_0019
@@ -425,13 +547,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|_GB_国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 3|🇺🇸_US_美国_4
   password: amazonskr05
   port: 443
@@ -446,6 +561,62 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|_US__1
+  password: amazonskr05
+  port: 443
+  server: 34.214.166.173
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '4|_GB_国 #1'
+  password: KuMFEVSJIgMhUW7K55V406
+  port: 443
+  server: 78.129.140.11
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_2 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.187.27.197
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_3 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.213.250.37
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_4 #1'
+  password: amazonskr05
+  port: 443
+  server: 35.87.38.141
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇺🇸_US_美国_6
+  password: amazonskr05
+  port: 443
+  server: 35.94.24.233
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港2|@ripaojiedian
+  password: O6IKQIP6LAJ0C0S0
+  port: 15014
+  server: 156.245.190.23
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 17|🇭🇰 香港3|@ripaojiedian
   password: hGkQ6915tD
@@ -453,76 +624,108 @@ proxies:
   server: 120.232.81.50
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港4|@ripaojiedian
+  password: f1aaae80-3206-4b02-9283-739f0bdf0e36
+  port: 12988
+  server: 49.7.215.3
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港6|@ripaojiedian
+  password: 7D2WAX2FP3JBR1B6
+  port: 15006
+  server: 156.245.190.15
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港7|@ripaojiedian
+  password: ZSP7QHZEW2QTIDON
+  port: 15009
+  server: 156.245.190.18
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港8|@ripaojiedian
+  password: f182fb51-9b18-4748-9cca-99b9b8e0e0fa
+  port: 41414
+  server: 121.14.3.8
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港9|@ripaojiedian
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 17|🇯🇵 日本|@ripaojiedian
-  password: Y7YAFIFIFLS9Z3PX
-  port: 18007
-  server: 156.231.104.17
+  password: f1aaae80-3206-4b02-9283-739f0bdf0e36
+  port: 24960
+  server: 49.7.215.3
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 17|🇯🇵 日本2|@ripaojiedian
-  password: EJ3GOLPLAAUX9WCY
-  port: 18013
-  server: 156.231.104.23
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇯🇵 日本3|@ripaojiedian
-  password: QFR3FSQMQRZL4HQ2
-  port: 18002
-  server: 156.231.104.12
+  password: f804de13-7228-441d-9fb9-5e46afea1deb
+  port: 12015
+  server: mdss-jp.04z3susick.download
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
-  password: DCCLUB5YPGIF01PJ
-  port: 16009
-  server: 154.196.244.19
+  password: 1C4J5UPOMXZ9Q6R3
+  port: 16015
+  server: 154.196.244.25
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡2|@ripaojiedian
-  password: 8VB49D7PPZFHBJES
-  port: 16011
-  server: 154.196.244.21
+  password: YQCL9XWR1282EOSS
+  port: 16004
+  server: 154.196.244.14
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡3|@ripaojiedian
-  password: BCSHUPDQ1CGQ1W0Q
-  port: 16013
-  server: 154.196.244.23
+  password: QKKO3C3UB1C57I58
+  port: 16008
+  server: 154.196.244.18
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇺🇸 美国|@ripaojiedian
-  password: U3FEPWPAFNUWVVNR
-  port: 17007
-  server: 23.185.248.17
+  password: RKIMIYL2VX8R2A09
+  port: 17002
+  server: 23.185.248.12
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇺🇸 美国2|@ripaojiedian
-  password: OPF3DARDPEQ0166L
-  port: 17006
-  server: 23.185.248.16
+  password: R1MYZXV2OOXHQUKZ
+  port: 17008
+  server: 23.185.248.18
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇺🇸 美国3|@ripaojiedian
-  password: GS8Y0BJITHBHZWPE
-  port: 17004
-  server: 23.185.248.14
+  password: 02QTZ3AY38RPVKY6
+  port: 17001
+  server: 23.185.248.11
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -530,7 +733,15 @@ proxies:
   name: 17|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.206.253.217
+  server: 3.34.182.113
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.79.147.203
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -538,8 +749,14 @@ proxies:
   name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.255.22.224
+  server: 54.151.148.166
   tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|speednode_0001
+  password: amazonskr05
+  port: 443
+  server: 47.129.228.204
   type: ss
 - cipher: aes-256-cfb
   name: 19|speednode_0002
@@ -548,16 +765,10 @@ proxies:
   server: 103.106.229.219
   type: ss
 - cipher: aes-256-cfb
-  name: 19|speednode_0003
+  name: 19|speednode_0004
   password: amazonskr05
   port: 443
-  server: 13.229.70.25
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|speednode_0006
-  password: amazonskr05
-  port: 443
-  server: 18.140.68.245
+  server: 54.169.214.126
   type: ss
 - cipher: aes-256-cfb
   name: 19|speednode_0011
@@ -566,28 +777,28 @@ proxies:
   server: 54.151.245.95
   type: ss
 - cipher: aes-256-cfb
-  name: 19|speednode_0017
+  name: 19|speednode_0015
   password: amazonskr05
   port: 443
-  server: 52.194.212.178
+  server: 57.180.41.158
   type: ss
 - cipher: aes-256-cfb
-  name: 19|speednode_0018
+  name: 19|speednode_0020
   password: amazonskr05
   port: 443
-  server: 18.183.79.218
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|speednode_0025
-  password: amazonskr05
-  port: 443
-  server: 35.162.184.175
+  server: 52.195.223.31
   type: ss
 - cipher: aes-256-cfb
   name: 19|speednode_0026
   password: amazonskr05
   port: 443
   server: 35.94.145.113
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|speednode_0031
+  password: amazonskr05
+  port: 443
+  server: 54.200.108.181
   type: ss
 - cipher: aes-256-cfb
   name: 19|speednode_0034
@@ -602,10 +813,28 @@ proxies:
   server: 35.89.211.210
   type: ss
 - cipher: aes-256-cfb
+  name: 19|speednode_0037
+  password: amazonskr05
+  port: 443
+  server: 15.165.15.42
+  type: ss
+- cipher: aes-256-cfb
   name: 19|speednode_0040
   password: amazonskr05
   port: 443
   server: 34.217.47.209
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|speednode_0046
+  password: amazonskr05
+  port: 443
+  server: 52.10.15.85
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|speednode_0047
+  password: amazonskr05
+  port: 443
+  server: 54.188.6.37
   type: ss
 - cipher: aes-256-cfb
   name: 19|speednode_0051
@@ -614,12 +843,20 @@ proxies:
   server: 154.90.62.168
   type: ss
 - cipher: aes-128-cfb
-  name: 0|-https://t.me/MrXbin-67
+  name: 0|-https://t.me/MrXbin-74
   obfs: http_post
   password: +asd6a5s5df+
   port: 443
   protocol: auth_aes128_md5
   server: nsus3.irundns.net
+  type: ssr
+- cipher: aes-256-cfb
+  name: 0|-https://t.me/MrXbin-81
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
   type: ssr
 - cipher: rc4-md5
   name: 19|speednode_0012
@@ -661,364 +898,26 @@ proxies:
   protocol-param: 92902:pFWGOQ
   server: 3.link-hub.click
   type: ssr
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-74
-  port: 449
-  server: is69n-g06.jp04-3771-vm0.entry.fr0307a.art
-  type: vmess
-  udp: true
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-75
-  port: 21584
-  server: o780u-g04.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-79
-  port: 21581
-  server: r17ld-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-80
-  port: 11773
-  server: h1lny-g01.jp02-9a99-vm0.entry.fr0307a.art
-  type: vmess
-  udp: true
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-82
-  port: 28783
-  server: zd36h-g01.jp07-1f28-vm0.entry.fr0307a.art
-  type: vmess
-  udp: true
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-85
-  port: 80
-  server: 94.182.150.230
-  skip-cert-verify: true
+  name: 5|伊朗 V2CROSS.COM
+  network: tcp
+  port: '80'
+  server: 5.75.205.179
+  servername: speedtest.net
+  tls: false
   type: vmess
-  udp: true
-  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
-- alterId: 1
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 0|-https://t.me/MrXbin-86
-  port: 21584
-  server: ywt6t-g04.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+  uuid: 76c65130-1bbb-4009-9751-527eac272614
 - alterId: 0
   cipher: auto
-  name: 4|🇺🇸_US_美国->_PN__1
+  name: 11|14|香港2|@ripaojiedian
   network: tcp
-  port: 443
-  server: 173.249.197.176
-  skip-cert-verify: true
+  port: '11227'
+  server: 103.224.80.37
+  servername: ''
   tls: false
   type: vmess
-  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
-- alterId: 0
-  cipher: auto
-  name: 4|🇳_CN_中国->🇳_IN_
-  network: tcp
-  port: 30128
-  server: 183.232.170.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-- alterId: 0
-  cipher: auto
-  name: 4|🇨_CA_加拿大
-  network: tcp
-  port: 33445
-  server: 108.181.2.154
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
-- alterId: 0
-  cipher: auto
-  name: 4|🇺🇸_US_美国->🇵🇳_PN_皮特凯恩_2
-  network: tcp
-  port: 443
-  server: pitcairn.ednovas.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
-- alterId: 0
-  cipher: auto
-  name: 4|🇺🇸_US_美国_6
-  network: http
-  port: 13489
-  server: 35.87.209.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98
-- alterId: 1
-  cipher: auto
-  name: 5|日本 东京Amazon数据中心
-  network: tcp
-  port: 21581
-  server: vq4em-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #1'
-  network: tcp
-  port: 21581
-  server: 5tzwc-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #2'
-  network: tcp
-  port: 11773
-  server: atkwy-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 5|日本 东京都亚马逊(Amazon)公司数据中心
-  network: tcp
-  port: 46482
-  server: u85yi-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京都亚马逊(Amazon)公司数据中心 #1'
-  network: tcp
-  port: 11773
-  server: ij4xs-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 5|法国 国际航空电讯集团公司(SITA)
-  network: tcp
-  port: '21581'
-  server: 7q8kz-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #3'
-  network: tcp
-  port: 444
-  server: kailn-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #4'
-  network: tcp
-  port: 444
-  server: 1nshl-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #5'
-  network: tcp
-  port: 21581
-  server: 3zu22-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #6'
-  network: tcp
-  port: 28783
-  server: fyk5u-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #1'
-  network: tcp
-  port: 21581
-  server: avm8w-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #7'
-  network: tcp
-  port: 21583
-  server: xma74-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #2'
-  network: tcp
-  port: 21581
-  server: vzqlt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #8'
-  network: tcp
-  port: 444
-  server: vxbv4-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #3'
-  network: tcp
-  port: 21581
-  server: wgvm1-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #9'
-  network: tcp
-  port: 28783
-  server: x0f08-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #4'
-  network: tcp
-  port: 21581
-  server: itg9x-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #5'
-  network: tcp
-  port: 21581
-  server: zdnxt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #10'
-  network: tcp
-  port: 28786
-  server: gm0n9-g04.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #6'
-  network: tcp
-  port: 21586
-  server: zzsn4-g06.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京都亚马逊(Amazon)公司数据中心 #2'
-  network: tcp
-  port: 46482
-  server: gwmx9-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京都亚马逊(Amazon)公司数据中心 #3'
-  network: tcp
-  port: 46482
-  server: 4mo1q-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #11'
-  network: tcp
-  port: 444
-  server: klebu-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京Amazon数据中心 #12'
-  network: tcp
-  port: 28783
-  server: 2k0n1-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|日本 东京都亚马逊(Amazon)公司数据中心 #4'
-  network: tcp
-  port: 46482
-  server: f0jof-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '5|法国 国际航空电讯集团公司(SITA) #7'
-  network: tcp
-  port: 21581
-  server: jcf51-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+  uuid: 0549b941-23f0-4802-ab15-264402d3b6be
 - alterId: 64
   cipher: auto
   name: 11,18|香港5|@ripaojiedian
@@ -1029,36 +928,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 11|14|日本|@ripaojiedian
-  network: tcp
-  port: '60717'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
-- alterId: 0
-  cipher: auto
-  name: 11|14|新加坡2|@ripaojiedian
-  network: tcp
-  port: '49549'
-  server: pudvkjvvgdol.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
-- alterId: 0
-  cipher: auto
-  name: 11|14|美国2|@ripaojiedian
-  network: tcp
-  port: '23763'
-  server: bzryjncvbwng.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbb4c3e2-12de-4678-aafe-7e520b609098
 - alterId: 0
   cipher: auto
   name: 11,21|d*********g.com_2
@@ -1072,14 +941,14 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 17|🇭🇰 香港2|@ripaojiedian
-  port: 11227
-  server: 103.224.80.37
+  name: 17|🇭🇰 香港|@ripaojiedian
+  port: 50028
+  server: 50028.baidu-cdn.top
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 0549b941-23f0-4802-ab15-264402d3b6be
+  uuid: 63e90ac2-b431-421d-9262-b6c4ce488908
 rules:
 - MATCH,PROXY
 
