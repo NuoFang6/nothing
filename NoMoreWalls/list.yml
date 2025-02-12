@@ -1,242 +1,188 @@
-# Update: 2025-02-11 08:37
+# Update: 2025-02-12 08:37
 proxies:
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0078
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8212
-  protocol: origin
-  protocol-param: ''
-  server: cn08.closeai.one
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸1 |  2.2MB/s
+  port: 45112
+  server: qd.needss.top
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0083
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8502
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
-  type: ssr
-  udp: true
+  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇯🇵1 |  6.1MB/s
+  name: 0|🇸🇬1 |  2.5MB/s
   password: amazonskr05
   port: 443
-  server: 18.183.142.200
+  server: 54.255.247.242
   type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0033
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8409
-  protocol: origin
-  protocol-param: ''
-  server: cn13.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0015
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8301
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 0|🌀2- |  5.7MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8119
-  protocol: origin
-  protocol-param: ''
-  server: cn04.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0040
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8123
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
-  udp: true
 - cipher: aes-256-cfb
-  name: 0,19|US_speednode_0152
+  client-fingerprint: chrome
+  name: 0|🇺🇸2 |  5.9MB/s
   password: amazonskr05
   port: 443
-  server: 54.218.59.235
+  server: 18.143.130.71
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸3 |  2.4MB/s
-  network: ws
-  port: 2095
-  server: s1.db-link01.top
-  skip-cert-verify: true
+  name: 0|🇮🇷1 |  6.4MB/s
+  port: 45077
+  server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-105-92-158.s1.db-link01.top
-    path: /dabai.in104.24.89.11
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0075
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8201
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
   udp: true
-- client-fingerprint: chrome
-  name: 0|🇮🇷3 |  2.6MB/s
+  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
+- alterId: 0
+  cipher: auto
+  name: 0|🇷🇺1 |  1.1MB/s
+  port: 31001
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
+- cipher: chacha20-ietf-poly1305
+  name: 0|🌀1- |  1.2MB/s
+  password: ccf99c8c-9793-4f8e-bb41-f98431647376
+  port: 19946
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇮🇹1 |  3.4MB/s
+  password: ccf99c8c-9793-4f8e-bb41-f98431647376
+  port: 36774
+  server: chiyu.myfczy169.top
+  type: ss
+  udp: true
+- name: 0,19|CN_speednode_0012
   password: 069a7054-7269-554b-bfab-a7f2651f92e5
-  port: 9301
+  port: 5303
   server: dozo01.flztjc.top
   skip-cert-verify: true
-  sni: sgp-1-546.flztjc.net
+  sni: tw-03-505.flztjc.net
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 0,19|SG_speednode_0139
-  password: amazonskr05
-  port: 443
-  server: 54.179.36.235
+- alterId: 2
+  cipher: auto
+  name: 0|🌀2- |  1.7MB/s
+  network: ws
+  port: 23611
+  server: 11.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d983af2f-0b3d-3e11-8651-47c7dfef6e88
+  ws-opts:
+    headers:
+      Host: 11.mamamajd.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇵🇱1 |  5.5MB/s
+  port: 54774
+  server: qd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0|🇺🇸5 |  1.7MB/s
+  password: f175d66f-7cf5-47aa-83be-a8e969cdbe2d
+  port: 40000
+  server: rk1.boost1.top
+  type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 0|🇺🇸6 |  3.5MB/s
+  network: tcp
+  port: 45402
+  server: 120.232.153.123
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰1 |  2.2MB/s
+  password: d626953d-cde0-4f52-9554-a12b116f853c
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🌏2 |  2.6MB/s
+  password: f0712421-e0f2-4284-b69a-17000f989421
+  port: 21061
+  server: chiyu.myfczy169.top
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0062
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8505
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 0|🇸🇬2 |  2.1MB/s
+  port: 20014
+  server: i.needss.top
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0005
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8102
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
+  uuid: 6e209c50-8f12-4777-b2cf-f4669f52955f
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸7 |  4.8MB/s
+  port: 45063
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
+  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
 - cipher: aes-256-cfb
-  name: 0|🇨🇦1 |  4.8MB/s
+  name: 0,19|JP_speednode_0028
   password: amazonskr05
   port: 443
-  server: 47.129.207.193
+  server: 52.195.185.150
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇷🇺2 |  1.1MB/s
+  password: d626953d-cde0-4f52-9554-a12b116f853c
+  port: 36571
+  server: free.2weradf.xyz
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇺🇸5 |  1.2MB/s
+  name: 0|🇺🇸9 |  5.6MB/s
   password: amazonskr05
   port: 443
-  server: 34.218.233.42
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸6 |  2.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
+  server: 54.245.222.80
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 0|🇹🇼2 |  3.5MB/s
-  password: 896fe3b1-aff4-4795-aa8b-48cabbff8e2d
-  port: 12029
-  server: mdss-tw.04z3susick.download
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵1 |  5.2MB/s
+  password: d626953d-cde0-4f52-9554-a12b116f853c
+  port: 36113
+  server: free.2weradf.xyz
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸10 |  6.1MB/s
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0004
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8104
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 0|🌀4- |  6.2MB/s
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8101
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0058
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8508
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0,4|🇸_US_美国_6
-  password: amazonskr05
-  port: 443
-  server: 52.38.165.76
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0029
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8410
-  protocol: origin
-  protocol-param: ''
-  server: cn14.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 0,19|CN_speednode_0054
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8501
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
-  type: ssr
+  uuid: a84109e4-fc28-46f6-b129-51eb335ebbe7
+- client-fingerprint: chrome
+  name: 0|🇺🇸11 |  5.9MB/s
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 7302
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: us-2-571.flztjc.net
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|_CN_->_ZA_
@@ -253,8 +199,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 3,4|🇺🇸_US_美国_5
+  name: 3|_US_国_1
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
@@ -324,54 +269,106 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 3,4|_RO__1
+  name: 3|_RO_罗
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4|_US__1
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.86.135.223
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4|_CN_->_GB_国
+  name: 4|_CN_国->_TR_
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40034
-  server: fr.fastsoonlink.com
+  port: 40019
+  server: tur.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|_NL_->🇸_US_美国
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
+  udp: true
+- ip-version: dual
+  name: 4|_FI_兰->🇳_CN_中国
+  password: '3774827088566296576'
+  port: 443
+  server: next-hippo.treefrog761.one
+  skip-cert-verify: false
+  sni: next-hippo.treefrog761.one
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_2 #1'
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.110.1.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4,19|US_speednode_0080
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.110.1.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: '4|_GB_国 #1'
+  password: nHDhqhjSzmrCNUeRalyPwQ
+  port: 34775
+  server: 77.239.99.180
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4,19|US_speednode_0082
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.110.1.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇺_RU__1
+  password: NjBlZDlk
+  port: 1443
+  server: 89.221.224.166
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4,19|NL_speednode_0036
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.47
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_2
+  password: QWDDvVE9npNurQfA
+  port: 9026
+  server: 217.30.10.18
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  ip-version: dual
-  name: 4|_US_国->_FR_国_1
-  network: ws
-  port: 80
-  server: 151.101.130.133
-  type: vmess
-  udp: true
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-opts:
-    headers:
-      host: telegram-isvvpn.ir
-    path: /racevpn?telegram-
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 4|🇺🇸_US_美国->_DE_国_1
-  network: ws
-  port: 80
-  server: join.ISVvpn.fastly80-3.hosting-ip.com
-  type: vmess
-  udp: true
-  uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
-  ws-opts:
-    headers:
-      host: telegram-isvvpn.ir
-    path: /racevpn
-- alterId: 0
-  cipher: auto
   fingerprint: ''
   ip-version: dual
-  name: 4|🇺🇸_US_美国->🇩🇪_DE_德国_2
+  name: 4|🇺🇸_US_美国->🇷_FR_国
   network: ws
   port: 80
   server: 151.101.0.155
@@ -383,87 +380,107 @@ proxies:
     headers:
       host: telegram-isvvpn.ir
     path: /racevpn
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: 4|🇺🇸_US_美国_1
-  network: ws
-  port: 2095
-  server: s1.db-link01.top
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      host: 100-105-92-158.s1.db-link01.top
-    path: /dabai.in104.24.89.11
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '4|🇺🇸_US_美国_2 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.212.56.86
+  name: 4|_DE_国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.255.210.49
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   ip-version: dual
-  name: 4|_NL_->🇸_US_美国
+  name: 4,17,19|IS_speednode_0021
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
+  tfo: false
+  type: ss
+  udp: true
+- ip-version: dual
+  name: '4,5|亚太地区+V2CROSS.COM #1'
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40007
+  server: uk.fastsoonlink.com
+  skip-cert-verify: true
+  sni: uknode.soon.guru
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇳🇱_NL_荷兰
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.189
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   ip-version: dual
-  name: 4|🇷_RU_罗_1
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  ip-version: dual
-  name: 4|🇧_GB_英国->🇺🇸_US_美国
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇴_RO_罗马尼亚_2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 188.214.36.155
+  name: 4|🇺🇸_US_美国_5
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.135.239
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4,19|NL_speednode_0133
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.47
+  name: 4|🇳_CN_中国->🇱_PL_兰
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40030
+  server: pr.fastsoonlink.com
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4|🇸_US_美国_3
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.47.253.171
+  name: 4,19|CN_speednode_0004
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40001
+  server: us.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4|🇺🇸_US_美国_6
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.68.135.239
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  ip-version: dual
+  name: 4,17,18|美国|@ripaojiedian
+  network: tcp
+  password: dc15d997-8b26-4294-870e-c90a5784dca4
+  port: 13019
+  server: naiu-us.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇳_CN_中国->🇺🇸_US_美国_2
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40031
+  server: ru.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇨🇳_CN_中国->🇧_GB_英国_2
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40034
+  server: fr.fastsoonlink.com
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  fingerprint: ''
   ip-version: dual
-  name: 4|🇺🇸_US_美国->🇷_FR_法国_2
+  name: 4|🇺🇸_US_美国->🇪_DE_德国
   network: ws
   port: 80
-  server: 151.101.194.133
-  sni: ''
+  server: plex.com
   type: vmess
   udp: true
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
@@ -471,91 +488,33 @@ proxies:
     headers:
       host: telegram-isvvpn.ir
     path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4,19|FR_speednode_0114
-  password: R0flZcpSJ1GjvH3mzap1qg
-  port: 443
-  server: 62.210.88.22
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '4|🇺🇸_US_美国_4 #1'
-  password: amazonskr05
-  port: 443
-  server: 34.221.171.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇪_BE_
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 192.71.249.146
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_2
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇧_GB_英国
-  password: nHDhqhjSzmrCNUeRalyPwQ
-  port: 34775
-  server: 77.239.99.180
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇺_RU_俄罗斯_3
-  password: NjBlZDlk
-  port: 1443
-  server: 89.221.224.166
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇬_SG_->🇺🇸_US_美国
-  password: amazonskr05
-  port: 443
-  server: 13.229.181.179
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_4
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇳_CN_中国->🇸_US_美国
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40001
-  server: us.fastsoonlink.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 5|新加坡 DigitalOcean数据中心
+  name: 5|美国 CloudFlare节点
   network: ws
-  port: 443
-  server: tls.81.node-for-bigairport.win
+  port: 8443
+  server: nl.899994.xyz
   tls: true
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: nl.899994.xyz
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #1'
+  network: ws
+  port: 8080
+  server: s1.cn-db.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-174-159-210.s1.cn-db.top
+    path: /dabai.in104.21.156.105
 - name: 5|广东省广州市白云区+电信
   password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5
   port: 21019
@@ -564,202 +523,145 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|德国 V2CROSS.COM
+  name: '5|美国 CloudFlare节点 #2'
+  network: ws
+  port: 443
+  server: tokyo.899994.xyz
+  tls: true
+  type: vmess
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    headers:
+      Host: tokyo.899994.xyz
+    path: /index
+- alpn:
+  - http/1.1
+  name: 5|爱尔兰+都柏林Amazon数据中心
   network: tcp
-  port: 27575
-  server: 194.233.72.228
-  tls: false
-  type: vmess
-  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+  password: telegram-id-directvpn
+  port: 22222
+  server: 54.217.100.78
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '5|亚太地区+V2CROSS.COM #3'
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: 36.50.135.142
+  sni: bs1.loadingip.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|美国 CloudFlare节点
+  name: 5|巴西圣保罗 CloudFlare节点
   network: ws
-  port: '80'
-  server: s1.db-link02.top
-  tls: false
+  port: 443
+  server: 188.114.96.3
+  tls: true
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
     headers:
-      Host: 100-49-141-209.s1.db-link02.top
-    path: /dabai.in104.17.169.115
-- alterId: 0
-  cipher: auto
-  name: 5|台湾省桃园市 中华电信
-  network: ws
-  port: 25775
-  server: kkkghdragxc.fask511.cfd
-  tls: false
-  type: vmess
-  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
 - alterId: 0
   cipher: auto
   name: 5|美国 Fastly全球Anycast节点
   network: ws
-  port: 443
-  server: plex.com
-  tls: true
+  port: 80
+  server: 151.101.194.133
+  tls: false
   type: vmess
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
   ws-opts:
     headers:
       Host: telegram-isvvpn.ir
     path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- name: 5|美国+V2CROSS.COM
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: iqdpduvc.whmvmkwuey.store
+  tls: true
+  type: vmess
+  uuid: 623645fa-95ea-478a-8f72-efaa3495b6a0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #4'
+  network: ws
+  port: 443
+  server: visa.com
+  tls: true
+  type: vmess
+  uuid: 3e125fac-2e5e-44f4-bd5b-5de5712fdbff
+  ws-opts:
+    headers:
+      Host: hanguo.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #5'
+  network: ws
+  port: 443
+  server: hkvm.gecs.top
+  tls: true
+  type: vmess
+  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
+  ws-opts:
+    headers:
+      Host: hkvm.gecs.top
+    path: /vm
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #6'
+  network: ws
+  port: 443
+  server: hkwapcdn.899994.xyz
+  tls: true
+  type: vmess
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    headers:
+      Host: ''
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 5,12|github.com/freefq - 美国CloudFla...
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
 - alpn:
   - http/1.1
   name: 5|美国+Amazon+EC2服务器
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 3.23.6.202
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 5|美国+Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.36.4.4
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: zmkkyc.whmvmkwuey.store
-  tls: true
-  type: vmess
-  uuid: 85b40488-b6f5-4431-9247-1bacd106e944
-  ws-opts:
-    headers:
-      Host: zmkkyc.whmvmkwuey.store
-    path: /
-- name: 5|日本+东京Amazon数据中心
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-  port: 20230
-  server: jp006.421421.xyz
-  sni: 421421.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #2'
-  network: ws
-  port: '8080'
-  server: s1.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-174-159-210.s1.cn-db.top
-    path: /dabai.in104.21.156.105
-- alterId: 0
-  cipher: auto
-  name: 5|美国 V2CROSS.COM
-  network: tcp
-  port: 20182
-  server: 23.162.200.91
-  tls: false
-  type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
-- alpn:
-  - http/1.1
-  name: 5|法国+巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.252.13
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #3'
-  network: ws
-  port: 80
-  server: s2.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-55-60-174.s2.db-link01.top
-    path: /dabai.in172.67.60.154
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #4'
-  network: ws
-  port: 443
-  server: jp.cowvpn.org
-  tls: true
-  type: vmess
-  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-  ws-opts:
-    headers:
-      Host: jpcf.cowvpn.org
-    path: /cctv13/vmess_jpcf
-- name: 5|美国+惠普公司
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.16.178.129
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #5'
-  network: ws
-  port: 8080
-  server: s1.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-79-28-26.s1.db-link01.top
-    path: /dabai.in172.64.55.203
-- name: '5|美国+Amazon数据中心 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.153.117.143
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|乌克兰 V2CROSS.COM
-  network: tcp
-  port: 15713
-  server: 193.108.118.136
-  tls: false
-  type: vmess
-  uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
-- alpn:
-  - http/1.1
-  name: '5|美国+Amazon+EC2服务器 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.20.56.250
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 5|英国+伦敦Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.97.244
+  server: 3.140.166.35
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
   name: '5|美国 Fastly全球Anycast节点 #1'
   network: ws
-  port: 443
-  server: 151.101.194.133
-  tls: true
+  port: '80'
+  server: 151.101.2.165
+  servername: ''
+  tls: false
   type: vmess
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
   ws-opts:
@@ -771,95 +673,14 @@ proxies:
   name: '5|美国 Fastly全球Anycast节点 #2'
   network: ws
   port: 80
-  server: plex.com
+  server: 151.101.130.133
   tls: false
   type: vmess
   uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70
   ws-opts:
     headers:
       Host: telegram-isvvpn.ir
-    path: /racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
-- alpn:
-  - http/1.1
-  name: 5|爱尔兰+都柏林Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.50.145.255
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 5|英国 V2CROSS.COM
-  network: tcp
-  port: 46617
-  server: 46.250.253.232
-  tls: false
-  type: vmess
-  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #6'
-  network: ws
-  port: 2052
-  server: s2.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-34-100-44.s2.db-link02.top
-    path: /dabai.in172.64.6.224
-- client-fingerprint: chrome
-  name: 5,17,18|韩国|@ripaojiedian
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13036
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|德国 V2CROSS.COM #1'
-  network: ws
-  port: 56656
-  server: 213.136.83.240
-  tls: false
-  type: vmess
-  uuid: bc97f674-c578-4940-9234-0a1da46041b0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess-argo?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '5|德国 V2CROSS.COM #2'
-  network: tcp
-  port: 38324
-  server: 62.146.233.115
-  tls: false
-  type: vmess
-  uuid: f863ef99-5ef0-4321-aaac-a476a5e8c3fb
-- name: 5|瑞典+斯德哥尔摩Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.48.235.232
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '5|美国 CloudFlare节点 #7'
-  network: ws
-  port: 80
-  server: lynn.ns.cloudflare.com
-  tls: false
-  type: vmess
-  uuid: b8eb2576-3aca-4e0a-bf46-2ac12a7ccbc3
-  ws-opts:
-    headers:
-      Host: vmessus02.trevely.us.kg
-    path: /vmessus02.trevely.us.kg
+    path: /racevpn?telegram-
 - alterId: 0
   cipher: auto
   name: 11|庆祝亚冬会胜利召开
@@ -918,19 +739,6 @@ proxies:
     headers:
       Host: sahand.serveminecraft.net
     path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 美国CloudFla...
-  network: ws
-  port: 8080
-  server: www.darkroom.lol
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.darkroom.lol
-    path: /
 - alterId: 0
   cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #1'
@@ -1014,41 +822,45 @@ proxies:
     headers:
       Host: server32.beheshtbaneh.com
     path: /
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 17|🇭🇰 香港|@ripaojiedian
-  port: 18423
-  server: 38.147.188.94
-  skip-cert-verify: false
+  name: 17|tg频道:@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.36.126.174
   tfo: false
-  tls: false
-  type: vmess
-  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港2|@ripaojiedian
-  port: 12875
-  server: 38.147.189.12
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1a3f584c-0960-48ef-a161-942c91e8ab64
-- alterId: 0
-  cipher: auto
+  type: ss
+- client-fingerprint: chrome
+  name: 17,18|香港|@ripaojiedian
+  network: tcp
+  password: a4eb528a0de18c7d7083aeec1a9abcb6
+  port: 58237
+  server: 8.138.35.67
+  skip-cert-verify: true
+  sni: apps.mzstatic.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 17,18|香港2|@ripaojiedian
+  network: tcp
+  password: 299beacf-37f0-41c6-a122-9260c75731bf
+  port: 49782
+  server: 41699d8ad5e758d2c6e42c1e7f40e820.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: hk12.bilibili.com
+  type: trojan
+- cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 17|🇭🇰 香港3|@ripaojiedian
-  port: 31488
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
+  obfs: http_simple
+  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
+  password: passwd
+  port: 8123
+  protocol: origin
+  protocol-param: ''
+  server: cn05.closeai.one
+  type: ssr
 - client-fingerprint: chrome
-  name: 17,18,19|HK_speednode_0119
+  name: 17,18,19|HK_speednode_0018
   network: tcp
   password: 43e5eeacbad3032bfe4c25a2f011b6b7
   port: 443
@@ -1057,811 +869,22 @@ proxies:
   sni: hezijiasuqi.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 17,18|台湾|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 18147
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mm2.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇹🇼 台湾2|@ripaojiedian
-  port: 19490
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
-- client-fingerprint: chrome
-  name: 17|🇯🇵 日本|@ripaojiedian
-  password: '3669023846591373312'
-  port: 443
-  server: equipped-parakeet.pigeon031.one
-  skip-cert-verify: false
-  sni: equipped-parakeet.pigeon031.one
-  type: trojan
-- client-fingerprint: chrome
-  name: 17,18|日本2|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 28721
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇯🇵 日本3|@ripaojiedian
-  port: 39131
-  server: 45.159.51.161
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
-- client-fingerprint: chrome
-  name: 17,18|日本4|@ripaojiedian
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13011
-  server: naiu-jp.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 17,18|韩国2|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 39593
-  server: lm.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz10.redapricotcloud.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 17,18,19|CN_speednode_0092
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡2|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.106.229.219
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 17,18|新加坡3|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 55357
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 17,18|美国|@ripaojiedian
-  network: tcp
-  password: dc15d997-8b26-4294-870e-c90a5784dca4
-  port: 13019
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国2|@ripaojiedian
-  port: 44447
-  server: 38.147.161.47
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.77.248.74
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17,19|SG_speednode_0143
-  password: amazonskr05
-  port: 443
-  server: 18.139.221.191
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.77.230.72
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 17|🇮🇸 冰岛|@ripaojiedian
-  password: NjBlZDlk
-  port: 8388
-  server: 89.221.224.166
+  name: 17,19|CN_speednode_0006
+  password: 7243745919d6de49a5db
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45578
+  server: console.02.aliyun.aq.kunlunaqs.com
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 17,18|印度|@ripaojiedian
-  network: tcp
-  password: 415b770f-20de-4be4-a3c1-8376da50a1b7
-  port: 33243
-  server: lm.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz13.redapricotcloud.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 18|香港|@ripaojiedian
-  network: tcp
-  port: '18423'
-  server: 38.147.188.94
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d74f7655-eb59-4b48-9f8f-98a9c64a9e10
-- alterId: 0
-  cipher: auto
-  name: 18|香港2|@ripaojiedian
-  network: tcp
-  port: '12875'
-  server: 38.147.189.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1a3f584c-0960-48ef-a161-942c91e8ab64
-- alterId: 0
-  cipher: auto
-  name: 18|香港3|@ripaojiedian
-  network: tcp
-  port: '31488'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
-- alterId: 0
-  cipher: auto
-  name: 18|台湾2|@ripaojiedian
-  network: tcp
-  port: '19490'
-  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 234dcf63-5809-44fd-9c53-86f51f2e76a7
-- name: 18,19|JP_speednode_0127
-  network: tcp
-  password: '3669023846591373312'
-  port: 443
-  server: equipped-parakeet.pigeon031.one
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 18|日本3|@ripaojiedian
-  network: tcp
-  port: '39131'
-  server: 45.159.51.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
-- alterId: 0
-  cipher: auto
-  name: 18|美国2|@ripaojiedian
-  network: tcp
-  port: '44447'
-  server: 38.147.161.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6f5637c1-2a46-4d3b-8257-7dc3a70ff1dd
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0001
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8126
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
   udp: true
 - cipher: chacha20-ietf
-  name: 19|CN_speednode_0002
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8106
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0003
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8109
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0006
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8122
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0007
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8110
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0008
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8302
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0009
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8105
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: aes-128-gcm
-  name: 19|CN_speednode_0010
-  password: 6419ff34-6c3e-4cbf-b58b-b6bb34e1ccff
-  port: 12008
-  server: mdss-hk.04z3susick.download
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0011
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8124
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0012
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8103
-  protocol: origin
-  protocol-param: ''
-  server: cn01.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0013
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8303
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0014
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8305
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0016
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8213
-  protocol: origin
-  protocol-param: ''
-  server: cn08.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0017
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8205
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0018
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8204
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0019
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8233
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0020
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8214
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0021
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8210
-  protocol: origin
-  protocol-param: ''
-  server: cn08.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0022
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8217
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0023
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8207
-  protocol: origin
-  protocol-param: ''
-  server: cn07.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0024
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8231
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0025
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8618
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0026
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8215
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0027
-  network: ws
-  port: 16618
-  server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0028
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8203
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0030
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8408
-  protocol: origin
-  protocol-param: ''
-  server: cn13.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0031
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8411
-  protocol: origin
-  protocol-param: ''
-  server: cn14.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0032
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8406
-  protocol: origin
-  protocol-param: ''
-  server: cn12.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0034
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8413
-  protocol: origin
-  protocol-param: ''
-  server: cn14.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0035
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8616
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0036
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8304
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0037
-  network: ws
-  port: 16617
-  server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0038
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8232
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0039
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8606
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0041
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8208
-  protocol: origin
-  protocol-param: ''
-  server: cn07.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0042
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8211
-  protocol: origin
-  protocol-param: ''
-  server: cn08.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0043
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8206
-  protocol: origin
-  protocol-param: ''
-  server: cn07.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN_speednode_0044
-  password: 8886d2da-6252-468c-8e6a-6d76d0a4d5dc
-  port: 30003
-  server: gdgs.tarioblink.me
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0045
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8209
-  protocol: origin
-  protocol-param: ''
-  server: cn08.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0046
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8520
-  protocol: origin
-  protocol-param: ''
-  server: cn18.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0047
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8507
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0048
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8622
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0049
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8108
-  protocol: origin
-  protocol-param: ''
-  server: cn02.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0050
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8517
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0051
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8516
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0052
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8513
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0053
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8512
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0055
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8511
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0056
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8518
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0057
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8625
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0059
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0060
-  network: ws
-  port: 16632
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0061
+  client-fingerprint: chrome
+  name: 17|🇹🇼 台湾|@ripaojiedian
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
@@ -1870,563 +893,381 @@ proxies:
   protocol-param: ''
   server: cn00.closeai.one
   type: ssr
-  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇹🇼 台湾2|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 19|CN_speednode_0063
-  network: ws
-  port: 16617
-  server: m.cnmjin.net
+  client-fingerprint: chrome
+  name: 17|🇯🇵 日本|@ripaojiedian
+  port: 33184
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 17,18|日本2|@ripaojiedian
+  network: ws
+  port: '25775'
+  server: tttxbmsm.fask511.cfd
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
   ws-opts:
     headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
+      Host: www.douyin.com
+    path: /?ed=1024
 - cipher: chacha20-ietf
-  name: 19|CN_speednode_0064
+  client-fingerprint: chrome
+  name: 17|🇯🇵 日本3|@ripaojiedian
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
-  port: 8603
+  port: 8411
   protocol: origin
   protocol-param: ''
-  server: cn17.closeai.one
+  server: cn14.closeai.one
   type: ssr
-  udp: true
+- client-fingerprint: chrome
+  name: 17,18|新加坡3|@ripaojiedian
+  network: tcp
+  password: dc15d997-8b26-4294-870e-c90a5784dca4
+  port: 13028
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇸🇬 新加坡2|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.106.229.219
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf
-  name: 19|CN_speednode_0065
+  client-fingerprint: chrome
+  name: 17|🇺🇸 美国2|@ripaojiedian
   obfs: http_simple
   obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
   password: passwd
-  port: 8519
-  protocol: origin
-  protocol-param: ''
-  server: cn18.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0066
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8504
+  port: 8505
   protocol: origin
   protocol-param: ''
   server: cn15.closeai.one
   type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0067
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8218
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇺🇸 美国3|@ripaojiedian
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 23.157.40.115
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.230.68.39
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17,19|JP_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 52.192.7.214
+  tfo: false
+  type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|CN_speednode_0068
+  client-fingerprint: chrome
+  name: 17|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.206.240.27
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 17,18|俄罗斯|@ripaojiedian
+  network: ws
+  port: '25780'
+  server: bvdhgfhfs.fask511.cfd
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0663228f-646a-4c7c-b14a-bde613c0c237
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
+- cipher: chacha20-ietf
+  name: 18|6aaZ5rivM3xAcmlwYW9qaWVkaWFu
+  obfs: http_simple
+  obfs-param: MTgxMDQtb0RUTEEpMjd4OG9uOS4uZG93bmxvYWQubWljcm9zb2Z0LmNvbQ
+  password: passwd
+  port: '8123'
+  protocol: origin
+  protocol-param: ''
+  server: cn05.closeai.one
+  type: ssr
+- cipher: chacha20-ietf
+  name: 18|5Y-w5rm-fEByaXBhb2ppZWRpYW4
+  obfs: http_simple
+  obfs-param: MTgxMDQtb0RUTEEpMjd4OG9uOS4uZG93bmxvYWQubWljcm9zb2Z0LmNvbQ
+  password: passwd
+  port: '8801'
+  protocol: origin
+  protocol-param: ''
+  server: cn00.closeai.one
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 18|日本|@ripaojiedian
+  network: tcp
+  port: '33184'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e1541125-9df4-4ee7-bb05-e68f85d7937f
+- cipher: chacha20-ietf
+  name: 18|5pel5pysM3xAcmlwYW9qaWVkaWFu
+  obfs: http_simple
+  obfs-param: MTgxMDQtb0RUTEEpMjd4OG9uOS4uZG93bmxvYWQubWljcm9zb2Z0LmNvbQ
+  password: passwd
+  port: '8411'
+  protocol: origin
+  protocol-param: ''
+  server: cn14.closeai.one
+  type: ssr
+- cipher: chacha20-ietf
+  name: 18|576O5Zu9MnxAcmlwYW9qaWVkaWFu
+  obfs: http_simple
+  obfs-param: MTgxMDQtb0RUTEEpMjd4OG9uOS4uZG93bmxvYWQubWljcm9zb2Z0LmNvbQ
+  password: passwd
+  port: '8505'
+  protocol: origin
+  protocol-param: ''
+  server: cn15.closeai.one
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN_speednode_0001
+  password: 8886d2da-6252-468c-8e6a-6d76d0a4d5dc
+  port: 30003
+  server: gdgs.tarioblink.me
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|CN_speednode_0002
   password: hGkQ6915tD
   port: 15084
   server: 120.232.81.50
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0069
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8216
-  protocol: origin
-  protocol-param: ''
-  server: cn09.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0070
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8306
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0071
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8412
-  protocol: origin
-  protocol-param: ''
-  server: cn14.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0072
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8605
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0073
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8604
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0074
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8624
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0076
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8602
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: aes-128-gcm
-  name: 19|CN_speednode_0077
-  password: 6419ff34-6c3e-4cbf-b58b-b6bb34e1ccff
-  port: 12009
-  server: mdss-hk.04z3susick.download
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN_speednode_0003
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40005
+  server: sgp.fastsoonlink.com
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0079
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8202
-  protocol: origin
-  protocol-param: ''
-  server: cn06.closeai.one
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN_speednode_0005
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40032
+  server: kr.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 19|CN_speednode_0007
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40219
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
   type: ssr
   udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0080
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8610
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
+- name: 19|CN_speednode_0008
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 6306
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: jp-6-559.flztjc.net
+  type: trojan
+  udp: true
+- name: 19|CN_speednode_0009
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 9301
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: sgp-1-546.flztjc.net
+  type: trojan
+  udp: true
+- name: 19|CN_speednode_0010
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 5306
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: tw-06-592.flztjc.net
+  type: trojan
+  udp: true
+- name: 19|CN_speednode_0011
+  password: 069a7054-7269-554b-bfab-a7f2651f92e5
+  port: 6304
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: jp-4-557.flztjc.net
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 19|CN_speednode_0013
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40211
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
   type: ssr
   udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0081
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8503
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0082
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8612
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0084
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8613
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0085
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8803
-  protocol: origin
-  protocol-param: ''
-  server: cn00.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0086
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8506
-  protocol: origin
-  protocol-param: ''
-  server: cn15.closeai.one
+- cipher: rc4-md5
+  name: 19|CN_speednode_0014
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40210
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
   type: ssr
   udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN_speednode_0087
+  name: 19|CN_speednode_0015
   network: ws
-  port: 16618
-  server: yes.mojcn.com
+  port: 12889
+  server: cs.ktmhy.cc
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
+  uuid: 89718007-5cb2-42db-bbb6-15b6dcdd8e41
   ws-opts:
     headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0088
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8619
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0089
-  network: ws
-  port: 16617
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0090
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8510
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0091
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8514
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0093
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8515
-  protocol: origin
-  protocol-param: ''
-  server: cn16.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0094
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8607
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0095
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8125
-  protocol: origin
-  protocol-param: ''
-  server: cn05.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0096
-  network: ws
-  port: 16616
-  server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0097
-  network: ws
-  port: 16616
-  server: m.cnmjin.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0098
-  network: ws
-  port: 16618
-  server: m.cnmjin.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0099
-  network: ws
-  port: 16645
-  server: m.cnmjin.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0100
-  network: ws
-  port: 16622
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0101
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8601
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0102
-  network: ws
-  port: 16622
-  server: m.cnmjin.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0103
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8626
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0104
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8609
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf
-  name: 19|CN_speednode_0105
-  obfs: http_simple
-  obfs-param: 18104-oDTLA)27x8on9..download.microsoft.com
-  password: passwd
-  port: 8615
-  protocol: origin
-  protocol-param: ''
-  server: cn17.closeai.one
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0106
-  network: ws
-  port: 16644
-  server: m.cnmjcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0107
-  network: ws
-  port: 16644
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0108
-  network: ws
-  port: 16645
-  server: yes.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6557bf4a-852b-4a69-ad35-d53293386a13
-  ws-opts:
-    headers:
-      Host: 2835dfeccdb7fd37119978ee6e32ae61.mobgslb.tbcache.com
+      Host: cs.ktmhy.cc
     path: /
 - cipher: aes-256-gcm
-  name: 19|DE_speednode_0110
-  password: OdMsqNpo4ook59xf
+  name: 19|DE_speednode_0017
+  password: RAGKt8GhvV4KnVSM
   port: 8388
   server: fra5.vpntype.dev
   type: ss
   udp: true
-- name: 19|GB_speednode_0115
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: 161.35.34.48
-  skip-cert-verify: true
-  sni: yourjobnavigator.online
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 19|IE_speednode_0019
+  password: cEZPI4PrVloPulwPHRYi5G
+  port: 42658
+  server: 52.138.234.185
+  type: ss
   udp: true
-- name: 19|GB_speednode_0116
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: yourjobnavigator.online
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - telewebion.com
+    method: GET
+    path:
+    - /
+  name: 19|IR_speednode_0020
+  network: http
+  port: 26763
+  server: srv1.mahestanshop.site
   skip-cert-verify: false
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 19|HK_speednode_0117
-  password: 3f76cb88-d4f7-432c-9639-13ef6a0e8abe
-  port: 48663
-  server: 9865cdfcd7fe92e4a76800429f9950c2.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: hk12.bilibili.com
-  type: trojan
-  udp: true
+  uuid: c7690150-b5ed-453f-b111-be3c753c294d
 - cipher: aes-256-cfb
-  name: 19|JP_speednode_0120
+  name: 19|JP_speednode_0022
   password: amazonskr05
   port: 443
   server: 52.68.141.225
   type: ss
   udp: true
-- name: 19|JP_speednode_0121
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0023
+  password: amazonskr05
   port: 443
-  server: jp.mjt000.com
-  skip-cert-verify: true
-  sni: jp.mjt000.com
-  type: trojan
+  server: 13.115.39.161
+  type: ss
   udp: true
-- name: 19|JP_speednode_0122
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0024
+  password: amazonskr05
   port: 443
-  server: au.mjt000.com
+  server: 54.199.161.79
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0025
+  password: amazonskr05
+  port: 443
+  server: 3.112.28.118
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0026
+  password: amazonskr05
+  port: 443
+  server: 54.249.114.132
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0027
+  password: amazonskr05
+  port: 443
+  server: 54.249.60.76
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|JP_speednode_0030
+  password: amazonskr05
+  port: 443
+  server: 52.68.247.21
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|JP_speednode_0031
+  port: 46617
+  server: 46.250.253.232
   skip-cert-verify: false
-  sni: au.mjt000.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 19|JP_speednode_0123
+  uuid: 55b88b14-0ff3-4f25-8983-e73d1f9f3a0a
+- name: 19|JP_speednode_0032
   password: 6557bf4a-852b-4a69-ad35-d53293386a13
   port: 443
   server: vn.mjt000.com
@@ -2434,128 +1275,140 @@ proxies:
   sni: vn.mjt000.com
   type: trojan
   udp: true
-- name: 19|JP_speednode_0124
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: ar.mjt000.com
-  skip-cert-verify: false
-  sni: ar.mjt000.com
-  type: trojan
-  udp: true
-- name: 19|JP_speednode_0125
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: it.mjt000.com
-  skip-cert-verify: false
-  sni: it.mjt000.com
-  type: trojan
-  udp: true
-- name: 19|JP_speednode_0126
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: uk.mjt000.com
-  skip-cert-verify: false
-  sni: uk.mjt000.com
-  type: trojan
-  udp: true
-- name: 19|JP_speednode_0128
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: tr.mjt000.com
-  skip-cert-verify: false
-  sni: tr.mjt000.com
-  type: trojan
-  udp: true
-- name: 19|JP_speednode_0129
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: ni.mjt000.com
-  skip-cert-verify: false
-  sni: ni.mjt000.com
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
-  name: 19|KR_speednode_0130
-  password: amazonskr05
-  port: 443
-  server: 3.34.123.239
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|KR_speednode_0131
+  name: 19|KR_speednode_0033
   password: amazonskr05
   port: 443
   server: 3.35.0.140
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0134
+  name: 19|KR_speednode_0034
   password: amazonskr05
   port: 443
-  server: 13.212.177.74
+  server: 3.34.123.239
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0135
+  name: 19|KR_speednode_0035
   password: amazonskr05
   port: 443
-  server: 13.212.48.245
+  server: 52.78.5.163
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0136
-  password: amazonskr05
-  port: 443
-  server: 52.221.234.117
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|SG_speednode_0137
+  name: 19|SG_speednode_0052
   password: amazonskr05
   port: 443
   server: 47.129.8.91
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0138
+  name: 19|SG_speednode_0053
+  password: amazonskr05
+  port: 443
+  server: 54.179.36.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0054
+  password: amazonskr05
+  port: 443
+  server: 13.212.177.74
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0055
   password: amazonskr05
   port: 443
   server: 13.213.40.92
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|SG_speednode_0140
-  password: amazonskr05
-  port: 443
-  server: 54.255.247.242
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|SG_speednode_0141
-  password: amazonskr05
-  port: 443
-  server: 18.143.140.182
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|SG_speednode_0142
+  name: 19|SG_speednode_0056
   password: amazonskr05
   port: 443
   server: 47.129.201.205
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|US_speednode_0144
+  name: 19|SG_speednode_0057
+  password: amazonskr05
+  port: 443
+  server: 18.138.252.136
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0058
+  password: amazonskr05
+  port: 443
+  server: 3.0.17.42
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0059
+  password: amazonskr05
+  port: 443
+  server: 47.129.223.160
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0060
+  password: amazonskr05
+  port: 443
+  server: 13.212.175.124
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0061
+  password: amazonskr05
+  port: 443
+  server: 47.128.14.130
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG_speednode_0062
+  password: amazonskr05
+  port: 443
+  server: 52.77.248.74
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|SG_speednode_0063
+  port: 32995
+  server: 20.188.117.201
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 27cf0b94-a09a-4c7d-9818-9696076d7b52
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0064
   password: amazonskr05
   port: 443
   server: 54.188.99.174
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 19|US_speednode_0145
+  name: 19|US_speednode_0065
   password: amazonskr05
   port: 443
-  server: 35.94.43.251
+  server: 18.236.186.16
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0066
+  password: amazonskr05
+  port: 443
+  server: 54.218.59.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0067
+  password: amazonskr05
+  port: 443
+  server: 35.91.180.231
   type: ss
   udp: true
 - alterId: 0
@@ -2567,7 +1420,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 19|US_speednode_0146
+  name: 19|US_speednode_0068
   network: http
   port: 8881
   server: 155.138.208.122
@@ -2577,52 +1430,17 @@ proxies:
   udp: true
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - cipher: aes-256-cfb
-  name: 19|US_speednode_0147
-  password: amazonskr05
-  port: 443
-  server: 54.218.124.184
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0148
-  password: amazonskr05
-  port: 443
-  server: 18.236.186.16
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0149
-  password: amazonskr05
-  port: 443
-  server: 35.87.45.132
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0150
-  password: amazonskr05
-  port: 443
-  server: 54.218.121.242
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0151
+  name: 19|US_speednode_0069
   password: amazonskr05
   port: 443
   server: 54.203.12.95
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0153
-  password: amazonskr05
-  port: 443
-  server: 35.91.180.231
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 19|US_speednode_0154
-  password: amazonskr05
-  port: 443
-  server: 54.200.229.22
+- cipher: aes-256-gcm
+  name: 19|US_speednode_0070
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.121.43.248
   type: ss
   udp: true
 - alterId: 0
@@ -2634,7 +1452,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 19|US_speednode_0156
+  name: 19|US_speednode_0071
   network: http
   port: 8881
   server: 66.42.90.216
@@ -2643,36 +1461,60 @@ proxies:
   type: vmess
   udp: true
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - moi.ir
-    method: GET
-    path:
-    - /
-  name: 19|US_speednode_0159
-  network: http
-  port: 8881
-  server: 155.138.204.188
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 19|US_speednode_0072
+  password: gj1dvw15nnjIyMSjSficeC
+  port: 26039
+  server: 150.241.97.216
+  type: ss
   udp: true
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - cipher: aes-256-cfb
-  name: 19|US_speednode_0162
+  name: 19|US_speednode_0073
   password: amazonskr05
   port: 443
-  server: 54.188.92.179
+  server: 34.221.182.25
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0074
+  password: amazonskr05
+  port: 443
+  server: 35.91.120.138
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0076
+  password: amazonskr05
+  port: 443
+  server: 34.217.211.139
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0077
+  password: amazonskr05
+  port: 443
+  server: 18.246.208.195
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0078
+  password: amazonskr05
+  port: 443
+  server: 54.212.222.229
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 19|US_speednode_0163
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.121.43.248
+  name: 19|US_speednode_0079
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 38.86.135.223
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0081
+  password: amazonskr05
+  port: 443
+  server: 34.216.74.146
   type: ss
   udp: true
 - alterId: 0
@@ -2705,270 +1547,174 @@ proxy-groups:
   type: select
 - name: 自动选择
   proxies: &id001
-  - 5|日本+东京Amazon数据中心
-  - 4|🇬_SG_->🇺🇸_US_美国
-  - 19|SG_speednode_0141
-  - 19|CN_speednode_0023
-  - 0,19|CN_speednode_0078
-  - 0,4|🇸_US_美国_6
-  - 19|CN_speednode_0025
-  - 19|CN_speednode_0079
-  - 19|CN_speednode_0019
-  - 19|CN_speednode_0089
-  - 4|_US_国->_FR_国_1
-  - 3|🇷_IR__1
-  - 0|🇨🇦1 |  4.8MB/s
-  - 17|🇭🇰 香港|@ripaojiedian
-  - 19|CN_speednode_0024
-  - 19|JP_speednode_0123
-  - 19|CN_speednode_0085
-  - 17,18|印度|@ripaojiedian
-  - '5|美国 Fastly全球Anycast节点 #1'
-  - 11|如有需要，自行搭建
-  - 5|美国 V2CROSS.COM
-  - 19|CN_speednode_0038
-  - 19|SG_speednode_0140
-  - 19|JP_speednode_0122
-  - '5|德国 V2CROSS.COM #2'
-  - 18|台湾2|@ripaojiedian
-  - 19|JP_speednode_0121
-  - 0,19|CN_speednode_0015
-  - 19|CN_speednode_0027
-  - 19|CN_speednode_0095
-  - 19|US_speednode_0149
-  - 4|🇷🇺_RU_俄罗斯_4
-  - 0,19|CN_speednode_0062
-  - 0|🇺🇸5 |  1.2MB/s
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - 17,18,19|CN_speednode_0092
-  - 17,18|新加坡3|@ripaojiedian
-  - 19|CN_speednode_0067
-  - 19|CN_speednode_0065
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 0,19|CN_speednode_0040
-  - 5|法国+巴黎Amazon数据中心
-  - 4|🇺🇸_US_美国_1
-  - 19|CN_speednode_0076
-  - 19|SG_speednode_0142
-  - 19|CN_speednode_0021
-  - 5|爱尔兰+都柏林Amazon数据中心
-  - 17,18|美国|@ripaojiedian
-  - 4|_NL_->🇸_US_美国
-  - 18|香港|@ripaojiedian
-  - 17|🇰🇷 韩国特殊|@ripaojiedian
-  - 0,19|CN_speednode_0033
-  - 19|CN_speednode_0057
-  - 19|GB_speednode_0116
-  - 0,19|CN_speednode_0058
-  - 19|SG_speednode_0138
-  - '5|美国 CloudFlare节点 #1'
-  - 5|新加坡 DigitalOcean数据中心
-  - 19|CN_speednode_0007
-  - 19|CN_speednode_0013
-  - 5|瑞典+斯德哥尔摩Amazon数据中心
-  - 19|CN_speednode_0003
-  - 19|US_speednode_0162
-  - 19|CN_speednode_0103
-  - 19|CN_speednode_0039
-  - 0|🌀2- |  5.7MB/s
-  - 19|CN_speednode_0072
-  - 5|美国 Fastly全球Anycast节点
-  - 19|CN_speednode_0050
-  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
-  - 19|US_speednode_0163
-  - 18|美国2|@ripaojiedian
-  - 19|CN_speednode_0107
-  - 19|CN_speednode_0093
-  - 19|CN_speednode_0049
-  - 19|CN_speednode_0068
-  - 19|CN_speednode_0087
-  - 19|CN_speednode_0031
-  - 0|🇮🇷3 |  2.6MB/s
-  - '5|德国 V2CROSS.COM #1'
-  - 19|US_speednode_0153
-  - 4|🇺🇸_US_美国->_DE_国_1
-  - 19|HK_speednode_0117
-  - 12|github.com/freefq - 印度  10
-  - 19|CN_speednode_0045
-  - 3|🇺🇸_US_美国_3
-  - 4|_CN_->_GB_国
-  - 17|🇹🇼 台湾2|@ripaojiedian
-  - 5|英国+伦敦Amazon数据中心
-  - 18|香港3|@ripaojiedian
-  - 4|🇪_BE_
-  - 17|🇺🇸 美国2|@ripaojiedian
-  - 19|CN_speednode_0074
-  - 5|广东省广州市白云区+电信
-  - 19|CN_speednode_0066
-  - 3|🇺🇸_US_美国_2
-  - 19|DE_speednode_0110
-  - '5|美国 Fastly全球Anycast节点 #2'
-  - 19|SG_speednode_0134
-  - 0|🇺🇸6 |  2.0MB/s
-  - 19|CN_speednode_0071
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - 4|🇧_GB_英国->🇺🇸_US_美国
-  - 17|🇸🇬 新加坡2|@ripaojiedian
-  - 19|CN_speednode_0035
-  - 5|美国+Amazon数据中心
-  - 19|US_speednode_0156
-  - 12|github.com/freefq - 广东省移动 7
-  - 19|CN_speednode_0096
-  - 17,18|日本2|@ripaojiedian
-  - 19|CN_speednode_0036
-  - '4|🇺🇸_US_美国_4 #1'
-  - 19|CN_speednode_0047
-  - 19|KR_speednode_0130
-  - 18,19|JP_speednode_0127
-  - 0,19|CN_speednode_0005
-  - 17,18,19|HK_speednode_0119
-  - 19|CN_speednode_0009
-  - 19|CN_speednode_0084
-  - 19|CN_speednode_0006
-  - 19|CN_speednode_0069
-  - 17|🇸🇬 狮城特殊|@ripaojiedian
-  - 19|CN_speednode_0048
-  - 3|🇮🇷_IR_伊朗_2
-  - 5|美国+Amazon+EC2服务器
-  - 19|CN_speednode_0056
-  - 19|CN_speednode_0060
-  - 4,19|NL_speednode_0133
-  - 19|CN_speednode_0064
-  - 19|CN_speednode_0101
-  - 19|JP_speednode_0128
-  - 17,19|SG_speednode_0143
-  - 19|CN_speednode_0108
-  - 19|CN_speednode_0097
-  - 19|US_speednode_0154
-  - 19|CN_speednode_0070
-  - 19|CN_speednode_0063
-  - 19|CN_speednode_0051
-  - 19|US_speednode_0147
-  - 19|CN_speednode_0028
-  - 4|🇺🇸_US_美国->🇷_FR_法国_2
-  - 19|US_speednode_0150
-  - 4|🇷🇴_RO_罗马尼亚_2
-  - 19|CN_speednode_0041
-  - 17|🇭🇰 香港2|@ripaojiedian
-  - 5|美国 CloudFlare节点
-  - 17|🇯🇵 日本|@ripaojiedian
-  - 0,19|US_speednode_0152
-  - 4|🇳_CN_中国->🇸_US_美国
-  - 12|github.com/freefq - 美国Fastly全球...
-  - 19|US_speednode_0159
-  - 17|🇯🇵 日本3|@ripaojiedian
-  - 0|🇹🇼2 |  3.5MB/s
-  - '5|美国+Amazon+EC2服务器 #1'
-  - 19|SG_speednode_0137
-  - 19|JP_speednode_0125
-  - 19|CN_speednode_0043
-  - 19|CN_speednode_0082
-  - 19|CN_speednode_0102
-  - 17|🇭🇰 香港3|@ripaojiedian
-  - 19|SG_speednode_0135
-  - 19|US_speednode_0144
-  - '5|美国 CloudFlare节点 #3'
-  - 0,19|CN_speednode_0029
-  - 5|乌克兰 V2CROSS.COM
-  - 19|KR_speednode_0131
-  - 3,4|🇺🇸_US_美国_5
-  - 19|CN_speednode_0022
-  - 3|_SK_斯->🇸_US_美国
-  - 3|_MD_
-  - '5|美国 CloudFlare节点 #2'
-  - 19|CN_speednode_0012
-  - 19|US_speednode_0145
-  - 19|CN_speednode_0088
-  - 19|CN_speednode_0099
-  - 19|SG_speednode_0136
-  - 0|🇯🇵1 |  6.1MB/s
-  - '5|美国 CloudFlare节点 #6'
-  - 3|🇺🇸_US_美国_4
-  - 11|庆祝亚冬会胜利召开
-  - 19|CN_speednode_0026
-  - 17,18|台湾|@ripaojiedian
-  - 19|US_speednode_0148
-  - 19|CN_speednode_0055
-  - '5|美国 CloudFlare节点 #4'
-  - 5|德国 V2CROSS.COM
-  - 4|🇺_RU_俄罗斯_3
-  - 19|JP_speednode_0124
-  - 19|CN_speednode_0091
-  - 4|🇸_US_美国_3
-  - 19|CN_speednode_0030
-  - 19|CN_speednode_0010
-  - 19|CN_speednode_0014
-  - 19|JP_speednode_0126
-  - 19|CN_speednode_0104
-  - 0,19|CN_speednode_0054
-  - 5|英国 V2CROSS.COM
   - 3|_CN_->_ZA_
-  - 19|CN_speednode_0018
-  - 17,18|日本4|@ripaojiedian
-  - 4,19|FR_speednode_0114
-  - '4|🇺🇸_US_美国_2 #1'
-  - 11|敏感时期，更新暂停
-  - 21|d*********g.com_3
-  - 19|CN_speednode_0034
-  - 12|github.com/freefq - 印度  3
-  - 19|CN_speednode_0053
-  - 19|US_speednode_0146
-  - 12|github.com/freefq - 印度  2
-  - 19|CN_speednode_0059
-  - 19|CN_speednode_0105
-  - 19|JP_speednode_0120
-  - 0,19|CN_speednode_0075
-  - 5|美国+惠普公司
-  - 19|CN_speednode_0037
-  - 4|🇺🇸_US_美国->🇩🇪_DE_德国_2
-  - '5|美国 CloudFlare节点 #5'
-  - 19|CN_speednode_0090
-  - 0|🇺🇸3 |  2.4MB/s
-  - 18|日本3|@ripaojiedian
-  - 5,17,18|韩国|@ripaojiedian
-  - 19|CN_speednode_0002
-  - 19|CN_speednode_0011
-  - 19|CN_speednode_0080
-  - 19|CN_speednode_0094
-  - 19|CN_speednode_0001
-  - 19|CN_speednode_0106
-  - 19|GB_speednode_0115
-  - 17,18|韩国2|@ripaojiedian
-  - 19|JP_speednode_0129
-  - 19|CN_speednode_0077
+  - 19|SG_speednode_0058
+  - 0|🇸🇬1 |  2.5MB/s
+  - 4|🇳🇱_NL_荷兰
+  - 5|巴西圣保罗 CloudFlare节点
+  - '4|_GB_国 #1'
+  - 17|🇰🇷 韩国特殊|@ripaojiedian
   - 3|_RU_
-  - 0|🌀4- |  6.2MB/s
-  - 19|CN_speednode_0016
-  - 0,19|SG_speednode_0139
-  - 4|🇷_RU_罗_1
-  - 19|CN_speednode_0046
-  - 4|🇧_GB_英国
-  - 17|🇮🇸 冰岛|@ripaojiedian
-  - 0,19|CN_speednode_0004
-  - 19|CN_speednode_0086
-  - 12|github.com/freefq - 美国CloudFla...
-  - 19|CN_speednode_0081
-  - '5|美国+Amazon数据中心 #1'
-  - 19|CN_speednode_0098
-  - 4|🇷🇺_RU_俄罗斯_2
-  - 19|CN_speednode_0042
-  - 3,4|_RO__1
-  - 3|_GB_国
-  - '5|美国 CloudFlare节点 #7'
+  - 19|SG_speednode_0057
+  - 5|美国+Amazon+EC2服务器
+  - '5|美国 CloudFlare节点 #6'
   - 19|CN_speednode_0008
-  - 19|CN_speednode_0017
-  - 19|CN_speednode_0032
-  - 19|CN_speednode_0061
-  - 18|香港2|@ripaojiedian
-  - 19|US_speednode_0151
+  - 19|CN_speednode_0013
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - 18|5pel5pysM3xAcmlwYW9qaWVkaWFu
+  - 4,17,19|IS_speednode_0021
+  - 5,12|github.com/freefq - 美国CloudFla...
+  - 4|🇷🇺_RU_俄罗斯_2
+  - 4|_NL_->🇸_US_美国
+  - 0|🇺🇸6 |  3.5MB/s
+  - 19|JP_speednode_0024
+  - 19|US_speednode_0067
+  - 0,19|CN_speednode_0012
+  - 19|JP_speednode_0031
+  - 0|🇷🇺2 |  1.1MB/s
+  - 17|🇯🇵 日本|@ripaojiedian
+  - 12|github.com/freefq - 美国Fastly全球...
+  - 18|6aaZ5rivM3xAcmlwYW9qaWVkaWFu
+  - 19|US_speednode_0068
+  - 4,19|CN_speednode_0004
+  - 19|JP_speednode_0023
+  - 4|🇺🇸_US_美国_5
+  - 12|github.com/freefq - 印度  2
+  - 19|CN_speednode_0009
+  - 3|_US_国_1
+  - 21|d*********g.com_3
+  - 5|美国 CloudFlare节点
+  - 19|US_speednode_0073
+  - 17|🇹🇼 台湾|@ripaojiedian
+  - 4|🇨🇳_CN_中国->🇧_GB_英国_2
+  - 19|US_speednode_0069
+  - 0|🇭🇰1 |  2.2MB/s
+  - 19|IR_speednode_0020
+  - 0|🇺🇸7 |  4.8MB/s
+  - 17,18|香港|@ripaojiedian
+  - 19|US_speednode_0074
+  - 0|🇮🇹1 |  3.4MB/s
+  - 19|CN_speednode_0001
+  - 17|🇺🇸 美国2|@ripaojiedian
+  - 19|SG_speednode_0055
+  - 5|爱尔兰+都柏林Amazon数据中心
+  - 19|US_speednode_0064
+  - '4|🇺🇸_US_美国_2 #1'
+  - 3|🇷_IR__1
+  - 4|_US__1
+  - 19|CN_speednode_0014
+  - 3|_GB_国
+  - '5|美国 Fastly全球Anycast节点 #1'
+  - 17|🇯🇵 日本3|@ripaojiedian
+  - 12|github.com/freefq - 印度  10
+  - 19|CN_speednode_0011
+  - 0,19|JP_speednode_0028
+  - 17|tg频道:@ripaojiedian
+  - 5|美国 Fastly全球Anycast节点
+  - 12|github.com/freefq - 广东省移动 7
+  - 0|🇺🇸5 |  1.7MB/s
+  - 19|US_speednode_0065
+  - 4|🇳_CN_中国->🇺🇸_US_美国_2
+  - 3|🇮🇷_IR_伊朗_2
+  - 3|_SK_斯->🇸_US_美国
+  - 4|🇳_CN_中国->🇱_PL_兰
+  - 19|JP_speednode_0027
+  - 19|SG_speednode_0056
+  - 19|US_speednode_0071
+  - 3|_RO_罗
+  - 0|🌏2 |  2.6MB/s
+  - 0|🇺🇸2 |  5.9MB/s
+  - 17,19|JP_speednode_0029
+  - 4|🇺🇸_US_美国_6
+  - 3|🇺🇸_US_美国_3
+  - 19|US_speednode_0077
+  - 19|SG_speednode_0052
+  - 19|SG_speednode_0054
+  - 19|US_speednode_0076
+  - 4|🇺_RU__1
+  - 19|US_speednode_0081
+  - 19|US_speednode_0066
+  - 4,19|NL_speednode_0036
+  - 19|CN_speednode_0002
+  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
+  - 5|广东省广州市白云区+电信
+  - 19|CN_speednode_0015
+  - '5|美国 CloudFlare节点 #5'
+  - 0|🇯🇵1 |  5.2MB/s
+  - 19|US_speednode_0072
+  - 4|🇺🇸_US_美国->🇪_DE_德国
+  - 5|美国+V2CROSS.COM
+  - 19|JP_speednode_0022
+  - 19|SG_speednode_0061
+  - 17,18,19|HK_speednode_0018
+  - 17|🇸🇬 新加坡2|@ripaojiedian
+  - 4,19|US_speednode_0082
   - 21|d*********g.com_2
-  - 19|CN_speednode_0100
-  - 19|CN_speednode_0020
-  - 5|台湾省桃园市 中华电信
-  - 19|CN_speednode_0052
-  - 19|CN_speednode_0073
-  - 0,19|CN_speednode_0083
-  - 19|CN_speednode_0044
+  - '5|亚太地区+V2CROSS.COM #3'
+  - 17,18|俄罗斯|@ripaojiedian
+  - 17|🇺🇸 美国3|@ripaojiedian
+  - 19|CN_speednode_0007
+  - '5|美国 CloudFlare节点 #3'
+  - 11|敏感时期，更新暂停
+  - 18|5Y-w5rm-fEByaXBhb2ppZWRpYW4
+  - '12|github.com/freefq - 美国CloudFla... #1'
+  - 19|IE_speednode_0019
+  - '4,5|亚太地区+V2CROSS.COM #1'
+  - 19|JP_speednode_0030
+  - 0|🇷🇺1 |  1.1MB/s
+  - '12|github.com/freefq - 美国CloudFla... #3'
+  - 18|576O5Zu9MnxAcmlwYW9qaWVkaWFu
+  - 4|🇺🇸_US_美国->🇷_FR_国
+  - 12|github.com/freefq - 印度  3
+  - 17,18|新加坡3|@ripaojiedian
+  - 3|🇺🇸_US_美国_2
+  - 11|如有需要，自行搭建
+  - 3|_MD_
+  - 0|🇺🇸9 |  5.6MB/s
+  - 19|JP_speednode_0025
+  - 19|SG_speednode_0062
+  - '5|美国 CloudFlare节点 #2'
+  - 17|🇸🇬 狮城特殊|@ripaojiedian
+  - 0|🇺🇸11 |  5.9MB/s
+  - '5|美国 Fastly全球Anycast节点 #2'
+  - 17,18|香港2|@ripaojiedian
+  - 17,19|CN_speednode_0006
+  - 19|KR_speednode_0033
+  - 19|US_speednode_0070
+  - 19|US_speednode_0079
+  - 19|DE_speednode_0017
+  - 0|🇵🇱1 |  5.5MB/s
+  - 0|🇺🇸10 |  6.1MB/s
+  - 0|🌀2- |  1.7MB/s
+  - 3|🇺🇸_US_美国_4
+  - 17,18|日本2|@ripaojiedian
+  - 19|CN_speednode_0005
+  - 19|SG_speednode_0060
+  - 19|KR_speednode_0034
+  - 4|_CN_国->_TR_
+  - '5|美国 CloudFlare节点 #1'
+  - '5|美国 CloudFlare节点 #4'
+  - 19|CN_speednode_0010
+  - 17|🇭🇰 香港3|@ripaojiedian
+  - 19|KR_speednode_0035
+  - 17|🇹🇼 台湾2|@ripaojiedian
+  - 4,17,18|美国|@ripaojiedian
+  - 19|JP_speednode_0032
+  - 4|_FI_兰->🇳_CN_中国
+  - 0|🇸🇬2 |  2.1MB/s
+  - 0|🇺🇸1 |  2.2MB/s
+  - 18|日本|@ripaojiedian
+  - 19|CN_speednode_0003
+  - 11|庆祝亚冬会胜利召开
+  - 4|_DE_国
+  - 19|JP_speednode_0026
+  - 19|SG_speednode_0063
+  - 19|SG_speednode_0059
+  - 4,19|US_speednode_0080
+  - 19|US_speednode_0078
+  - 0|🇮🇷1 |  6.4MB/s
+  - 19|SG_speednode_0053
+  - 0|🌀1- |  1.2MB/s
   type: url-test
 - name: 1手动选择
   proxies: *id001
@@ -2979,14 +1725,12 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 17|🇭🇰 香港|@ripaojiedian
-  - 17|🇭🇰 香港2|@ripaojiedian
+  - 0|🇭🇰1 |  2.2MB/s
+  - 17,18|香港|@ripaojiedian
+  - 17,18|香港2|@ripaojiedian
   - 17|🇭🇰 香港3|@ripaojiedian
-  - 17,18,19|HK_speednode_0119
-  - 18|香港|@ripaojiedian
-  - 18|香港2|@ripaojiedian
-  - 18|香港3|@ripaojiedian
-  - 19|HK_speednode_0117
+  - 17,18,19|HK_speednode_0018
+  - 17,19|CN_speednode_0006
   type: select
 rules:
 - MATCH,PROXY
