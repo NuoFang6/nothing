@@ -1,28 +1,19 @@
 proxies:
-- name: 0|🌏2 |  6.1MB/s
+- name: 0|🇺🇸8 |  1.4MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
+  server: usgp1-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
+  sni: usgp1-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇹🇼1 |  6.4MB/s
+- name: 0|🇯🇵3 |  2.3MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: tw1-cdn-route.couldflare-cdn.com
+  server: jpgmo101-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: tw1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇺🇸6 |  11.6MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
+  sni: jpgmo101-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
@@ -31,105 +22,86 @@ proxies:
   server: krecs.ftq.ink
   tls: true
   type: http
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇺🇸1 |  4.0MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25444
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
-  type: hysteria2
-- auth: 90fac653-0b27-4eec-a094-ac047c9e60f6
-  client-fingerprint: chrome
-  name: 0|🇺🇸2 |  2.4MB/s
-  password: 90fac653-0b27-4eec-a094-ac047c9e60f6
-  port: 29118
-  server: r322.zongyunti.site
-  skip-cert-verify: true
-  sni: min.zongyunti.site
-  type: hysteria2
-- name: 0|🇺🇸4 |  2.6MB/s
-  obfs: salamander
-  obfs-password: 4b817757
-  password: 1f17cdf0578a2860
-  port: 443
-  server: 45.76.0.86
-  skip-cert-verify: true
-  sni: 45.76.0.86
-  type: hysteria2
-  udp: true
 - auth: 334c4713-73ea-4e71-b827-21a22d31736b
   client-fingerprint: chrome
-  name: 0|🇦🇺1 |  4.9MB/s
+  name: 0|🇦🇺1 |  5.5MB/s
   password: 334c4713-73ea-4e71-b827-21a22d31736b
-  port: 23608
+  port: 24270
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
   sni: de1.xiaoliyu.cyou
   type: hysteria2
+- auth: 5407367c-cfa5-4e24-89ee-990e86d4cde8
+  client-fingerprint: chrome
+  name: 0|🇮🇷1 |  2.1MB/s
+  password: 5407367c-cfa5-4e24-89ee-990e86d4cde8
+  port: 8080
+  server: ush2.youxuan.wiki
+  skip-cert-verify: false
+  sni: ush2.youxuan.wiki
+  type: hysteria2
 - auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🌀1- |  3.6MB/s
+  name: 0|🇬🇧1 |  4.6MB/s
   password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25807
-  server: es1.xiaoliyu.cyou
+  port: 24172
+  server: fr3.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: es1.xiaoliyu.cyou
+  sni: fr3.xiaoliyu.cyou
   type: hysteria2
-- name: 0|🇺🇸9 |  1.6MB/s
-  obfs: salamander
-  obfs-password: 13f7ba5f
-  password: 4e9ee29b39a28277
-  port: 443
-  server: 66.135.11.68
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- auth: 90fac653-0b27-4eec-a094-ac047c9e60f6
+- auth: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
   client-fingerprint: chrome
-  name: 0|🇷🇺2 |  1.4MB/s
-  password: 90fac653-0b27-4eec-a094-ac047c9e60f6
-  port: 29015
-  server: 185.22.152.35
+  name: 0|🇬🇧2 |  5.0MB/s
+  password: 82c01da0-59b7-48f2-8a24-58e7e5e1d8e3
+  port: 22864
+  server: fr3.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: min.zongyunti.site
-  type: hysteria2
-- auth: 334c4713-73ea-4e71-b827-21a22d31736b
-  client-fingerprint: chrome
-  name: 0|🇺🇸10 |  2.3MB/s
-  password: 334c4713-73ea-4e71-b827-21a22d31736b
-  port: 23903
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
+  sni: fr3.xiaoliyu.cyou
   type: hysteria2
 - client-fingerprint: chrome
   down: 100
-  name: 0|🇺🇸11 |  2.9MB/s
+  name: 0|🇺🇸3 |  6.5MB/s
   password: 4a48871d49c3f20fd93d365c49e45f78
   port: 443
   server: v.mch.vaala.cat
   sni: v.mch.vaala.cat
   type: hysteria2
   up: 100
-- auth: fc10a4d6-f946-478f-a3db-57f73cdb0407
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🇵🇱1 |  1.4MB/s
-  password: fc10a4d6-f946-478f-a3db-57f73cdb0407
-  port: 59350
-  server: serv05.trevely.us.kg
+  name: 0|🌀1- |  3.1MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 24606
+  server: ln3.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: ln3.xiaoliyu.cyou
   type: hysteria2
-- auth: a4c1b618-024a-42d4-b78a-1c25c337a484
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🇺🇸12 |  1.7MB/s
-  password: a4c1b618-024a-42d4-b78a-1c25c337a484
-  port: 24352
-  server: gb1.xiaoliyu.cyou
+  name: 0|🌀2- |  3.2MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 25807
+  server: es1.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: gb1.xiaoliyu.cyou
+  sni: es1.xiaoliyu.cyou
+  type: hysteria2
+- auth: 334c4713-73ea-4e71-b827-21a22d31736b
+  client-fingerprint: chrome
+  name: 0|🇺🇸10 |  2.1MB/s
+  password: 334c4713-73ea-4e71-b827-21a22d31736b
+  port: 23014
+  server: us2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: us2.xiaoliyu.cyou
+  type: hysteria2
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
+  client-fingerprint: chrome
+  name: 0|🇺🇸12 |  1.5MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 26818
+  server: ln4.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: ln4.xiaoliyu.cyou
   type: hysteria2
 - name: '8,16|@vpnv2rayNGv #3'
   obfs: salamander
@@ -150,14 +122,6 @@ proxies:
   tls: false
   type: hysteria2
 - name: 9|@V2rayNG3
-  password: '123456'
-  port: 443
-  server: 192.3.85.237
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: '9|@V2rayNG3 #1'
   password: 15cca331-9e92-449d-93b0-25f82203595f
   port: 20309
   server: gb.gomeow.online
@@ -165,7 +129,7 @@ proxies:
   sni: gb.gomeow.online
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #2'
+- name: '9|@V2rayNG3 #1'
   obfs: salamander
   obfs-password: de8287cd33b05fa3
   password: 22f2c759db51b3d0
@@ -175,7 +139,7 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #3'
+- name: '9|@V2rayNG3 #2'
   password: 75577117-ABCD-DCBA-AAAA-CC777775577B
   port: 7777
   server: s15.serv00.com
@@ -201,7 +165,7 @@ proxies:
   sni: www.whatsapp.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #4'
+- name: '9|@V2rayNG3 #3'
   obfs: salamander
   obfs-password: '@azadi_az_inja_migzare'
   password: '@azadi_az_inja_migzare'
@@ -211,7 +175,7 @@ proxies:
   sni: all-v4.dgi000.store
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #5'
+- name: '9|@V2rayNG3 #4'
   obfs: salamander
   obfs-password: bipbip
   password: AtTK3tiEA0
@@ -220,7 +184,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #6'
+- name: '9|@V2rayNG3 #5'
   obfs: salamander
   obfs-password: bleepbloop
   password: AtTK3tiEA0
@@ -229,7 +193,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #7'
+- name: '9|@V2rayNG3 #6'
   obfs: salamander
   obfs-password: bluhbluh
   password: AtTK3tiEA0
@@ -262,7 +226,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #9'
+- name: '9|@V2rayNG3 #8'
   obfs: salamander
   obfs-password: dbc688df29e582d3
   password: f8e40931bbb827df
@@ -282,6 +246,13 @@ proxies:
   sni: ns.cloudflare.com
   tls: false
   type: hysteria2
+- name: 16|Telegram:@config_proxy
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 443
+  server: ln1.xiaoliyu.cyou
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - name: 16|@ToYoTA_PRoXY
   obfs: salamander
   obfs-password: 8c3ce17b
@@ -292,61 +263,70 @@ proxies:
   sni: ELiV2RAY.eliv2.top
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf
-  name: 0|🌏1 |  1.0MB/s
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇺🇸3 |  2.8MB/s
+  name: 0|🇸🇬1 |  10.4MB/s
   password: amazonskr05
   port: 443
-  server: 44.243.45.146
+  server: 13.229.111.3
   type: ss
-- cipher: rc4-md5
+  udp: true
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇮🇷1 |  1.3MB/s
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    host: 78fe8292462.microsoft.com
-    mode: http
-  port: 4602
-  server: pr3.jymzffbquawl.com
+  name: 0|🇺🇸1 |  6.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.245.222.80
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0|🇷🇺1 |  5.1MB/s
-  password: 4619d5a0-258a-48f4-98bf-88843d5d7a83
-  port: 30003
-  server: gdgs.tarioblink.me
+  country: 🏁ZZ
+  delay: 387
+  name: 0|🇦🇺2 |  2.8MB/s
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40006
+  server: ml.fastsoonlink.com
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇺🇸7 |  5.2MB/s
+  name: 0|🇰🇷1 |  3.2MB/s
   password: amazonskr05
   port: 443
-  server: 35.89.131.134
+  server: 13.125.186.115
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇺🇸8 |  1.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.215.236
+  name: 0|🇯🇵1 |  1.7MB/s
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 0|🇳🇱1 |  2.7MB/s
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.158.171.146
+  country: 🇧🇩BD
+  delay: 1204
+  name: 0|🇨🇦1 |  4.1MB/s
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40009
+  server: th.fastsoonlink.com
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸7 |  4.6MB/s
+  password: 4a0ea1d4-9703-4575-b50e-0be5b93ab0b1
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇺🇸11 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 34.220.99.193
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰1 |  1.6MB/s
+  password: 4a0ea1d4-9703-4575-b50e-0be5b93ab0b1
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 3|_CN_->_ZA_
   password: bfWZbxtXnPX6sSF_n9byxw
@@ -355,8 +335,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 3,4|🇷🇺_RU_俄罗斯_4
+  name: 3|_RU_
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
@@ -412,8 +391,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: '3,4|_MD_ #1'
+  name: 3|_MD_
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 91.132.94.200
@@ -435,98 +413,42 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '3,4|_RO_罗 #1'
+  name: 3,4|🇷_RO_罗
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   ip-version: dual
-  name: 4|_DE_国->🇷_AR_
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.199
+  name: 4|_RU__1
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇸_US_美国->🇺_RU_俄罗斯
-  password: amazonskr05
-  port: 443
-  server: 54.218.121.242
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 4|🇺🇸_US_美国_1
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 38.91.107.43
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '4|🇺🇸_US_美国_2 #1'
-  password: amazonskr05
-  port: 443
-  server: 35.163.107.154
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇺_RU_俄罗斯_1
-  password: OTVlMzcy
-  port: 8388
-  server: 185.231.205.179
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  ip-version: dual
-  name: 4|🇩🇪_DE_德国_1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 4|🇪_DE_德国_2
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 193.108.119.63
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '4|🇺🇸_US_美国_3 #1'
-  password: amazonskr05
-  port: 443
-  server: 34.221.182.25
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|_CH_
+  name: 4|🇷_KR_
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 84.17.53.160
+  server: 154.223.16.212
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷_RU_俄罗斯->🇷_AR_阿根廷
+  name: '4|_US_国_1 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.231.233.173
+  server: 185.237.185.160
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '4|🇺🇸_US_美国_4 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.212.222.229
+  name: 4|🇺_RU_俄罗斯_2
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -537,44 +459,116 @@ proxies:
   server: 176.103.53.105
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   ip-version: dual
   name: 4|🇷🇺_RU_俄罗斯_3
-  password: OTVlMzcy
-  port: 8388
-  server: fr1.opensocks.site
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇺🇸_US_美国_5
-  password: amazonskr05
-  port: 443
-  server: 34.221.167.203
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4|_NL_兰
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.158.171.151
+  name: 4|_PL_兰
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.255.123.92
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺🇸_US_美国->🇭_CH_瑞士
-  password: amazonskr05
-  port: 443
-  server: 34.220.100.94
+  name: 4|🇺_RU_俄罗斯_4
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺🇸_US_美国_6
+  name: 4|🇺_RU_俄罗斯_5
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_6
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_7
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_8
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_9
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_10
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇸_US_美国_2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.253.171
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.255.210.49
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_3 #1'
+  password: ef713649-c164-4a36-9fc2-ebf93d76e14f
+  port: 8443
+  server: 170.64.237.214
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇱_NL_兰
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_11
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -585,114 +579,82 @@ proxies:
   server: 185.186.79.53
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇪_DE_德国_3
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|_IT_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇷_AR_阿根廷
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 181.119.30.20
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港|@ripaojiedian
-  password: XQMAXUIZL4W1Q9W0
-  port: 15002
-  server: 92.113.116.11
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇭🇰 香港2|@ripaojiedian
-  password: 0HLKWXU2MV5KGEX4
-  port: 15013
-  server: 156.245.190.22
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港3|@ripaojiedian
-  password: B7ZQHCF0G7TWN0VF
+  password: MHZUEOX3KBXAV09K
   port: 15007
   server: 156.245.190.16
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 17|🇭🇰 香港5|@ripaojiedian
-  password: LN855BACMZWC1CR7
-  port: 15012
-  server: 156.245.190.21
+  name: 17|🇭🇰 香港3|@ripaojiedian
+  password: ZDGC0Q2E112UAJO6
+  port: 15014
+  server: 156.245.190.23
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港4|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 17|🇹🇼 台湾|@ripaojiedian
-  password: DV716KZ4YQTBZ5Y5
-  port: 21006
-  server: qh62onjn.slashdevslashnetslashtun.net
+  name: 17|🇭🇰 香港5|@ripaojiedian
+  password: 2MNBVYYYB23ZF03Z
+  port: 15002
+  server: 92.113.116.11
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇹🇼 台湾2|@ripaojiedian
-  password: Q7NOGCGW8M19PIX8
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  password: c1JpS2F6dHRDQWl3UTl0VVRoZU5YOFRraGlDellJV3M=
+  port: 37310
+  server: tengx.wwwq.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇯🇵 日本|@ripaojiedian
+  password: 4OAKJ8CASERAWXI1
+  port: 18013
+  server: 156.231.104.23
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇯🇵 日本2|@ripaojiedian
-  password: QCK38XJJU4WIUYRK
-  port: 18003
-  server: 156.231.104.13
+  password: PGF2TGUCHQBC5IP5
+  port: 18016
+  server: 156.231.104.26
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇯🇵 日本3|@ripaojiedian
-  password: V4R0XM7GMEZF9QA5
-  port: 18012
-  server: 156.231.104.22
+  password: 53RIUQDZR3B23TA3
+  port: 18008
+  server: 156.231.104.18
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 17|🇯🇵 日本4|@ripaojiedian
-  password: 7VZKUX118GJ16V1R
-  port: 18007
-  server: 156.231.104.17
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 17|🇰🇷 韩国3|@ripaojiedian
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
+  name: 17|🇰🇷 韩国|@ripaojiedian
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40032
+  server: kr.fastsoonlink.com
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
-  password: IQD7SI9GERQCOSPZ
+  password: 2UOL8ESS12X0J31P
   port: 16010
   server: 154.196.244.20
   tfo: false
@@ -700,7 +662,7 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡2|@ripaojiedian
-  password: LVTKTFKX69RV9GVO
+  password: 8WDLSCVIFB4I26GB
   port: 16011
   server: 154.196.244.21
   tfo: false
@@ -713,58 +675,26 @@ proxies:
   server: 103.106.229.219
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡4|@ripaojiedian
-  password: 9NCWDRVU7TA5Y3VQ
-  port: 16003
-  server: 154.196.244.13
+  password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
+  port: 40005
+  server: sgp.fastsoonlink.com
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡6|@ripaojiedian
-  password: EHL7V4WGZ7EV4K9V
-  port: 16009
-  server: 154.196.244.19
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡4|@ripaojiedian 2
-  password: VD2XBX35QK6G1WA1
-  port: 16004
-  server: 154.196.244.14
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国|@ripaojiedian
-  password: YKB42JGKK8H5DIWF
-  port: 17002
-  server: 23.185.248.12
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国2|@ripaojiedian
-  password: 0U17L4LTFDK38Y1J
-  port: 17007
-  server: 23.185.248.17
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国3|@ripaojiedian
-  password: DA30RDLW91YDLDN2
-  port: 17008
-  server: 23.185.248.18
+  name: 17|🇸🇬 新加坡5|@ripaojiedian
+  password: YHK82TR73114VN9O
+  port: 16016
+  server: 154.196.244.26
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇺🇸 美国4|@ripaojiedian
-  password: PO156F4FRXFM1UOT
+  password: LKG8G8VL60RSB59P
   port: 17003
   server: 23.185.248.13
   tfo: false
@@ -774,7 +704,7 @@ proxies:
   name: 17|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.36.73.26
+  server: 3.39.249.88
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -782,7 +712,7 @@ proxies:
   name: 17|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.112.1.164
+  server: 13.125.111.28
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -790,89 +720,133 @@ proxies:
   name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.143.130.71
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇷🇺 俄罗斯|@ripaojiedian
-  password: 4XMQB6GZ26O7YYUN
-  port: 20002
-  server: 185.126.239.231
+  server: 54.180.133.38
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 19|CN_speednode_0010
-  password: 1f2a2f7f-d95e-43b6-bab9-212f679b749e
-  port: 34103
-  server: southvip1.pkyun.xyz
+  name: 19|TR_speednode_0035
+  password: CvKVfJ4af6RNcHzI62P3q6
+  port: 65262
+  server: h110vpntr.outlinekeys.net
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN_speednode_0012
-  password: 7c28b43c-41c4-4af1-81c4-48690133d1cd
-  port: 52149
-  server: 0.o.0.cdn-node.ss.one.57.gmaes-cdn-usercontent.com
+- cipher: aes-256-cfb
+  name: 19|US_speednode_0051
+  password: amazonskr05
+  port: 443
+  server: 54.184.126.174
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 19|CN_speednode_0013
-  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
-  port: 28029
-  server: js.wnwwv.cn
-  type: ss
+- cipher: rc4-md5
+  name: 19|CN_speednode_0004
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40204
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 1.link-hub.blog
+  type: ssr
   udp: true
-- cipher: aes-128-gcm
-  name: 19|CN_speednode_0015
-  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
-  port: 41895
-  server: js.wnwwv.cn
-  type: ss
+- cipher: rc4-md5
+  name: 19|CN_speednode_0005
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40217
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 1.link-hub.blog
+  type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN_speednode_0016
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40011
-  server: frk.fastsoonlink.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN_speednode_0022
-  password: 32c41b01-84be-11ef-bb6b-bc241111d95d
-  port: 27436
-  server: js.wnwwv.cn
-  type: ss
-  udp: true
-- client-fingerprint: qq
-  name: 19|US_speednode_0140
-  port: 33155
+- client-fingerprint: chrome
+  name: 19|CH_speednode_0001
+  port: 5183
   reality-opts:
-    public-key: OstL8i2vDibAu1T4j1I9UnySmrG-wloKWBVC-MhPUDw
-    short-id: '42241206'
-  server: sg6.youxuan.wiki
-  servername: www.microsoft.com
+    public-key: hVFQpNhSU6uRXpnAIES-MIuye5PsS-jmiWMlgwTC4yA
+    short-id: 93ddf2d2c5d8c56b
+  server: Ip-tamiz.barcelonaav.ir
+  servername: wwww.refersion.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: bc083408-220d-477c-8f43-21289df60def
-- http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    method: GET
-    path:
-    - /
-  name: 19|US_speednode_0150
-  network: http
-  port: 2053
-  server: iri.ginuerzht.ir
-  servername: speedtest.net
+  uuid: c69d6834-e4a8-4ff0-97e5-ca13746c65d1
+- client-fingerprint: chrome
+  name: 19|CH_speednode_0002
+  port: 8883
+  reality-opts:
+    public-key: hVFQpNhSU6uRXpnAIES-MIuye5PsS-jmiWMlgwTC4yA
+    short-id: 93ddf2d2c5d8c56b
+  server: 188.213.129.63
+  servername: wwww.refersion.com
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: 0f111f15-46a3-4bd3-b88b-c52278d09269
+  uuid: c69d6834-e4a8-4ff0-97e5-ca13746c65d1
+- client-fingerprint: chrome
+  name: 19|NL_speednode_0022
+  port: 47221
+  reality-opts:
+    public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0
+    short-id: 47ff9b6c
+  server: 95.179.153.250
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 19|RU_speednode_0034
+  port: 443
+  server: tel5.vpntype.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c11c7372-a575-4420-923a-3003aa9d14b8
+- client-fingerprint: chrome
+  name: 19|US_speednode_0067
+  port: 2046
+  reality-opts:
+    public-key: P0t-7rDdRNOg0bHvo-S_VgNWzcmXb5cB7b6qA1vtfE4
+    short-id: d4fdce164f84219c
+  server: 40.83.200.62
+  servername: www.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ba00fea2-9c5b-46aa-895d-2e189715c374
+- client-fingerprint: chrome
+  name: 19|US_speednode_0069
+  port: 37528
+  reality-opts:
+    public-key: qBPL3e2Cip0uRxcfXzQ-BNRJep8womQRzupBMojAGH8
+    short-id: 937cf95f39945af1
+  server: 47.79.37.56
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee649780-6a77-4125-9edd-b7e72aa86efe
+- alterId: 0
+  cipher: auto
+  name: 5|美国 加州
+  network: tcp
+  port: '8881'
+  server: 64.23.128.223
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - alterId: 0
   cipher: auto
   name: 11|庆祝亚冬会胜利召开
@@ -886,132 +860,24 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 17|🇯🇵 日本|@ripaojiedian
-  port: 20855
-  server: 45.159.51.116
+  name: 17|🇺🇸 美国3|@ripaojiedian
+  port: 31909
+  server: 23.224.152.62
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: bb59ce12-afda-4a2e-bb62-6f5b60acbe77
-- alterId: 0
+  uuid: a5e99fc4-5b87-4312-aa8a-52cad1971b92
+- alterId: 64
   cipher: auto
-  name: 19|CN_speednode_0007
-  port: 20015
-  server: i.needss.top
+  name: 19|CN_speednode_0003
+  port: 59104
+  server: 183.236.51.38
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0008
-  port: 30028
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0009
-  port: 20014
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0011
-  port: 52103
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0014
-  port: 15442
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0017
-  port: 20017
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0018
-  port: 20011
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0019
-  port: 20021
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0020
-  port: 44410
-  server: i.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  name: 19|CN_speednode_0021
-  port: 31001
-  server: qd.needss.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93a2deb7-82d6-495a-b37b-1b9a9b5132ef
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - moi.ir
-    method: GET
-    path:
-    - /
-  name: 19|US_speednode_0135
-  network: http
-  port: 8881
-  server: 155.138.208.122
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 21|d*********g.com_2
