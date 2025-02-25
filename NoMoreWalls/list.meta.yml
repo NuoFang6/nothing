@@ -1,26 +1,80 @@
-# Update: 2025-02-24 08:40
+# Update: 2025-02-25 08:38
 proxies:
 - auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🇺🇸1 |  2.7MB/s
+  name: 0|🇺🇸1 |  3.3MB/s
   password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25444
-  server: us1.xiaoliyu.cyou
+  port: 23231
+  server: us2.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
+  sni: us2.xiaoliyu.cyou
+  type: hysteria2
+- cipher: aes-128-gcm
+  name: 0|🇮🇹1 |  5.1MB/s
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
+  client-fingerprint: chrome
+  name: 0|🇬🇧1 |  1.6MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 24172
+  server: fr3.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: fr3.xiaoliyu.cyou
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0,17|🇭🇰 香港8|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: hk02.x.quickcht3.club
+  tfo: false
+  type: ss
+- name: 0|🇯🇵1 |  2.4MB/s
+  password: c4e04a71-f597-37e5-b07a-0fcd048a2f84
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  type: trojan
+  udp: true
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
+  client-fingerprint: chrome
+  name: 0|🇺🇸2 |  2.2MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 24928
+  server: gb1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: gb1.xiaoliyu.cyou
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇳🇱1 |  2.4MB/s
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.158.171.151
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 0,17|🇭🇰 香港2|@ripaojiedian
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  tfo: false
+  type: ss
+- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
+  client-fingerprint: chrome
+  name: 0|🌀1- |  4.5MB/s
+  password: bcf89582-072f-4e16-97e2-5d1258e0100d
+  port: 25807
+  server: es1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: es1.xiaoliyu.cyou
   type: hysteria2
 - auth: bcf89582-072f-4e16-97e2-5d1258e0100d
   client-fingerprint: chrome
-  name: 0|🇺🇸2 |  4.6MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25852
-  server: us1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: us1.xiaoliyu.cyou
-  type: hysteria2
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇬🇧1 |  2.3MB/s
+  name: 0|🇬🇧4 |  4.7MB/s
   password: bcf89582-072f-4e16-97e2-5d1258e0100d
   port: 24936
   server: fr3.xiaoliyu.cyou
@@ -28,50 +82,43 @@ proxies:
   sni: fr3.xiaoliyu.cyou
   type: hysteria2
 - client-fingerprint: chrome
-  name: 0,9|@GrizzlyVPN
-  password: 78e4c7ea92fed6d40792424990b6e793
-  port: 4443
-  server: a.grizzzlyyyy.ir
-  skip-cert-verify: false
-  sni: a.grizzzlyyyy.ir
-  tls: false
-  type: hysteria2
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇺🇸4 |  3.5MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25644
-  server: gb1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: gb1.xiaoliyu.cyou
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 0,19|TW_speednode_0090
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇳🇱1 |  5.4MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- name: 0|🇺🇸6 |  4.3MB/s
-  obfs: salamander
-  obfs-password: cd29099d
-  password: 9bb452b106ffc217
-  port: 443
-  server: 207.148.22.93
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-  udp: true
-- name: 0,19|RU_speednode_0071
+  name: 0|🇺🇸3 |  4.5MB/s
   network: ws
   port: 80
-  server: 185.174.138.194
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: 0|🇨🇦1 |  5.8MB/s
+  password: c4e04a71-f597-37e5-b07a-0fcd048a2f84
+  port: 20295
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z295.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 0|🇺🇸4 |  4.4MB/s
+  network: ws
+  port: 2052
+  server: 104.17.147.22
+  servername: freev2rng---freev2rng---freev2rng---freev2rng---freev2rng.s88p4jh.workers.dev
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: freev2rng---freev2rng---freev2rng---freev2rng---freev2rng.s88p4jh.workers.dev
+    path: /WG9SqpThFFMyTenz?ed=2560
+- name: 0,19|US_speednode_0099
+  network: ws
+  port: 80
+  server: 66.235.200.5
   servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
@@ -81,161 +128,121 @@ proxies:
   ws-opts:
     headers:
       Host: pormang.webhost99.workers.dev
-    path: /
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇬🇧2 |  1.1MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 22099
-  server: fr3.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: fr3.xiaoliyu.cyou
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 0,19|US_speednode_0091
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- alterId: 2
+  cipher: auto
+  name: 0|🌀2- |  5.2MB/s
   network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
+  port: 23614
+  server: 14.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c8eecd08-d056-351f-9701-edec6e693f64
+  ws-opts:
+    headers:
+      Host: 14.mamamajd.site
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0,17|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 47.128.150.63
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🌀3- |  3.1MB/s
+  network: ws
+  port: 23612
+  server: 12.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c8eecd08-d056-351f-9701-edec6e693f64
+  ws-opts:
+    headers:
+      Host: 12.mamamajd.site
+    path: /
+- cipher: chacha20-ietf
+  name: 0|🌏1 |  1.3MB/s
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- name: 0|🇺🇸6 |  3.8MB/s
+  password: c4e04a71-f597-37e5-b07a-0fcd048a2f84
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 0|🇷🇺1 |  4.8MB/s
+  obfs: dongtaiwang.com
+  port: 63717
+  ports: 40000-50000
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- client-fingerprint: chrome
+  name: 0|🇺🇸7 |  1.7MB/s
+  network: ws
+  port: 2095
+  server: 156.238.18.163
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇸🇬SG
-  delay: 411
-  name: 0,17|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.229.82.37
-  tfo: false
-  type: ss
-- name: 0|🇺🇸9 |  3.8MB/s
-  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
-  port: 22741
-  server: gy.58n.net
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 0|🇵🇱1 |  3.4MB/s
+  password: be758973-186d-46fe-8aa4-e017134fa291
+  port: 4029
+  server: 31.186.87.211
   skip-cert-verify: true
-  sni: dufu.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 0|🇩🇪1 |  3.4MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0,17|🇭🇰 香港2|@ripaojiedian
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52611
-  server: hk01.x.quickcht3.club
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸10 |  2.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.237.113.248
-  type: ss
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇺🇸11 |  4.7MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 26415
-  server: fr2.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: fr2.xiaoliyu.cyou
+  sni: www.bing.com
   type: hysteria2
-- name: 0|🇸🇬2 |  2.9MB/s
-  password: fd85b7f4-3cba-392a-bb81-4b4d5789007a
-  port: 20129
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x129.flybar.work
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.55.109
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇸🇬4 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.111.3
-  type: ss
-  udp: true
-- name: 0|🇺🇸12 |  4.8MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇸🇬SG
-  delay: 492
-  name: 0|🇸🇬5 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.169.121
-  type: ss
-- cipher: aes-256-cfb
-  delay: 382
-  name: 0|🇺🇸13 |  1.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.143.165.183
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇯🇵1 |  3.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.206.216.94
-  type: ss
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇦🇺1 |  2.6MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 25684
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
-  type: hysteria2
-- auth: bcf89582-072f-4e16-97e2-5d1258e0100d
-  client-fingerprint: chrome
-  name: 0|🇦🇺2 |  5.4MB/s
-  password: bcf89582-072f-4e16-97e2-5d1258e0100d
-  port: 22650
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
-  type: hysteria2
-- name: 0|🇺🇸14 |  4.3MB/s
-  obfs: salamander
-  obfs-password: 13f7ba5f
-  password: 4e9ee29b39a28277
-  port: 443
-  server: 66.135.11.68
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
+- client-fingerprint: chrome
+  name: 0|🌀4- |  8.8MB/s
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- client-fingerprint: chrome
+  name: 0|🌀5- |  4.3MB/s
+  network: ws
+  port: 80
+  server: 104.20.129.2
+  servername: pormang.webhost99.workers.dev
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 3|_CN_->_ZA_
   password: bfWZbxtXnPX6sSF_n9byxw
@@ -252,7 +259,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 3,4|🇸_US_美国_1
+  name: 3,4|🇺🇸_US_美国_6
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
@@ -301,8 +308,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 3,4|🇩_MD_
+  name: 3|_MD_
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 91.132.94.200
@@ -323,73 +329,52 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 3,4|🇷_RO_罗
+  name: 3|_RO_罗
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4,19|GB_speednode_0014
+  password: vcUpZCJzOuaVoN8OL2cYvK
+  port: 443
+  server: 78.129.140.11
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   ip-version: dual
   name: 4|_RU__1
-  password: KnJGad3FqTvjqbaX
-  port: 9014
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
   server: 217.30.10.18
   type: ss
   udp: true
-- ip-version: dual
-  name: 4|_US_->_JP_
-  password: '3782591447421952000'
-  port: 443
-  server: composed-mustang.treefrog761.one
-  skip-cert-verify: true
-  sni: composed-mustang.treefrog761.one
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4|_DE_国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.199.197.7
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: 4|🇺🇸_US_美国->🇪_DE_德国
-  network: tcp
-  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
-  port: 443
-  server: 137.184.120.86
-  skip-cert-verify: true
-  sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_2
+  name: 4|_ZA_
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 213.156.137.67
+  port: 990
+  server: 129.232.134.112
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇸_IS_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.152
+  name: '4|_US_国_1 #1'
+  password: amazonskr05
+  port: 443
+  server: 52.34.200.48
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   ip-version: dual
-  name: 4|🇺_RU_俄罗斯_3
-  password: QWDDvVE9npNurQfA
-  port: 9026
-  server: 217.30.10.18
+  name: 4,17|🇺🇸 美国|@ripaojiedian
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 23.154.136.148
+  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -397,36 +382,79 @@ proxies:
   name: '4|🇺🇸_US_美国_2 #1'
   password: amazonskr05
   port: 443
-  server: 52.34.200.48
+  server: 34.220.211.62
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '4|🇺🇸_US_美国_3 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.47.253.171
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  ip-version: dual
+  name: 4,17|🇸🇬 新加坡2|@ripaojiedian
+  password: BFYCOKHTC8HIWWRB
+  port: 16006
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_2
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_3
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- ip-version: dual
+  name: 4|🇷_RO_罗
+  password: '3747000103274291200'
+  port: 443
+  server: 93.114.98.252
+  skip-cert-verify: false
+  sni: alive-polecat.treefrog761.one
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_4
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: 4|🇺_UA__1
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  ip-version: dual
-  name: 4|_CN_国
-  password: 14fFPrbezE3HDZzsMOr6
+  name: 4|_DE_国
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 107.155.57.11
+  server: 45.87.175.188
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺_RU_俄罗斯_4
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
+  name: 4|🇺🇸_US_美国->🇺_RU_俄罗斯
+  password: amazonskr05
+  port: 443
+  server: 34.220.99.193
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺_UA_乌克兰_2
+  name: 4|🇺_UA_
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 176.103.53.105
@@ -435,130 +463,235 @@ proxies:
 - cipher: aes-256-cfb
   ip-version: dual
   name: 4|🇷🇺_RU_俄罗斯_5
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4|🇸_US_美国_4
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.107.226.159
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷_RU_俄罗斯_6
-  password: FG5ddLsMPbV5CutE
-  port: 9050
-  server: 217.30.10.18
+  name: 4|🇷🇺_RU_俄罗斯->🇸_IS_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_7
-  password: gYCYXfkUQEs2TaJQ
-  port: 9038
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 4|🇳_IN_
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.49
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_8
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇸_US_美国_3
+  name: 4|🇺_US_美国_5
   password: amazonskr05
   port: 443
-  server: 18.236.132.239
+  server: 34.220.174.155
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_6
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '4|_GB_国 #1'
-  password: 6edTuN9WSufTkYhvfJD0js
-  port: 2239
-  server: 77.239.122.39
+  name: 4|_NL_兰
+  password: PPXb8J2ciDybokWl7kxKab
+  port: 51587
+  server: 45.144.54.156
   type: ss
   udp: true
-- name: 5|美国+Xerox
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 4|🇮_IR_->🇳_CN_中国
+  network: tcp
+  port: 39119
+  server: 31.58.137.67
+  type: vmess
+  udp: true
+  uuid: 00dedc77-59b9-42f1-a9ce-3f33af694f5e
+- alpn:
+  - http/1.1
+  name: 5|美国+惠普公司
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.50.126.248
+  server: 15.237.103.249
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 5|爱尔兰+都柏林Amazon数据中心
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.211.133.252
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: 5|英国+社会保险安全部
+  name: 5|美国+Xerox
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.24.47.220
+  server: 13.51.54.112
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 5|印度+V2CROSS.COM
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
-  port: 443
-  server: 103.238.235.140
-  sni: std1.loadingip.com
+- name: '5|爱尔兰+都柏林Amazon数据中心 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.194.18.173
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5,12|github.com/freefq - 美国Fastly全球...
+  name: 5|美国 CloudFlare节点
   network: ws
   port: 443
-  server: gov.uk
+  server: hkvm.gecs.top
   tls: true
   type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
   ws-opts:
     headers:
-      Host: zheshiscp.com
-    path: /77848824
+      Host: hkvm.gecs.top
+    path: /vm
 - alterId: 0
   cipher: auto
   name: 5|广东省广州市 移动
   network: tcp
-  port: '42120'
+  port: '59104'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 5|美国+Sprint网络
-  password: telegram-id-privatevpns
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #1'
+  network: ws
+  port: 2082
+  server: 104.21.36.190
+  tls: false
+  type: vmess
+  uuid: 9b23747a-cd6b-4bcf-9987-2c26f0a704cc
+  ws-opts:
+    headers:
+      Host: fmg.yunduanjc.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #2'
+  network: ws
+  port: 443
+  server: hdu.gecs.top
+  tls: true
+  type: vmess
+  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
+  ws-opts:
+    headers:
+      Host: hdu.gecs.top
+    path: /vm
+- name: '5|爱尔兰+都柏林Amazon数据中心 #2'
+  password: telegram-id-directvpn
   port: 22222
-  server: 63.176.55.61
+  server: 54.195.48.159
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 5|香港 Amazon数据中心
+  name: '5|美国 CloudFlare节点 #3'
   network: ws
-  port: 44443
-  server: tls.13.node-for-bigairport.win
-  tls: true
+  port: 2086
+  server: s1.db-link02.top
+  tls: false
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: 532e1541-4b65-3409-81f1-43f206846615
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alpn:
-  - http/1.1
-  name: 5|爱尔兰+都柏林Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.213.69.197
-  sni: trojan.burgerip.co.uk
+      Host: 100-236-195-61.s1.db-link02.top
+    path: /dabai.in172.64.2.59
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #4'
+  network: ws
+  port: 2082
+  server: cf2.yunduanjc.top
+  tls: false
+  type: vmess
+  uuid: 9b23747a-cd6b-4bcf-9987-2c26f0a704cc
+  ws-opts:
+    headers:
+      Host: fmg.yunduanjc.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #5'
+  network: ws
+  port: 2082
+  server: s2.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
+  ws-opts:
+    headers:
+      Host: 100-87-160-252.s2.db-link02.top
+    path: /dabai.in104.24.60.200
+- name: 5|湖北省+移动(全省通用)
+  password: 64044f5a-7249-30ba-8767-c31eb5dc54ad
+  port: 20300
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z300.hongkongnode.top
   type: trojan
+- grpc-opts:
+    grpc-service-name: freehr01
+  name: 5|澳大利亚+V2CROSS.COM
+  network: grpc
+  password: e8012565-5b9f-373f-b1eb-e2445711e65c
+  port: 15055
+  server: 129.154.49.249
+  sni: freehr01.jd0001.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '5|美国 CloudFlare节点 #6'
+  network: ws
+  port: 2082
+  server: cf1.yunduanjc.top
+  tls: false
+  type: vmess
+  uuid: 9b23747a-cd6b-4bcf-9987-2c26f0a704cc
+  ws-opts:
+    headers:
+      Host: fmg.yunduanjc.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '5,12|github.com/freefq - 美国CloudFla... #2'
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
 - name: '8,16|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -609,6 +742,14 @@ proxies:
   server: s15.serv00.com
   skip-cert-verify: true
   sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 9|@GrizzlyVPN
+  password: 78e4c7ea92fed6d40792424990b6e793
+  port: 4443
+  server: a.grizzzlyyyy.ir
+  skip-cert-verify: false
+  sni: a.grizzzlyyyy.ir
   tls: false
   type: hysteria2
 - name: '9|@V2rayNG3 #4'
@@ -694,59 +835,31 @@ proxies:
   type: hysteria2
 - alterId: 2
   cipher: auto
-  name: 11|2|🇹🇼1 |  4.2MB/s
-  network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: c3e16f0a-4a8c-31e0-8f1c-39115ad029f0
-  ws-opts:
-    headers:
-      Host: 19.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇺🇸10 |  4.3MB/s
+  name: 11|2|🇺🇸13 |  2.0MB/s
   network: ws
   port: 23617
   server: 17.mamamajd.site
   tls: false
   type: vmess
-  uuid: c3e16f0a-4a8c-31e0-8f1c-39115ad029f0
+  uuid: 41fcdfba-b5c4-3ad5-9f41-1aa49a3e959d
   ws-opts:
     headers:
       Host: 17.mamamajd.site
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 11|2|🇺🇸11 |  4.2MB/s
+  name: 11|2|🌀1- |  1.2MB/s
   network: ws
-  port: 23605
-  server: 5.mamamajd.site
+  port: 20330
+  server: 45.144.174.12
   tls: false
   type: vmess
-  uuid: c3e16f0a-4a8c-31e0-8f1c-39115ad029f0
+  uuid: beaad91b-40cb-4aa5-9bc8-b412a023f1ca
   ws-opts:
-    headers:
-      Host: 5.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 11|2|🇺🇸13 |  1.3MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: c3e16f0a-4a8c-31e0-8f1c-39115ad029f0
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,18|香港3|@ripaojiedian
+  name: 11|13|香港3|@ripaojiedian
   network: tcp
   port: '30704'
   server: 43.247.135.63
@@ -754,6 +867,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
+- alterId: 0
+  cipher: auto
+  name: 11|12,13|韩国|@ripaojiedian
+  network: ws
+  port: '22223'
+  server: free-kr.faforex.eu.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 34b92487-a7b5-400a-b42f-40f53377aaab
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 12|github.com/freefq - 印度  2
@@ -825,20 +952,6 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '12|github.com/freefq - 美国CloudFla... #2'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 12|github.com/freefq - 印度  10
   network: ws
   port: 443
@@ -851,6 +964,19 @@ proxies:
     headers:
       Host: pendar.onthewifi.com
     path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 12|github.com/freefq - 美国Fastly全球...
+  network: ws
+  port: 443
+  server: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 0
   cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #3'
@@ -889,31 +1015,28 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 17|🇭🇰 香港3|@ripaojiedian
-  port: 30704
-  server: 43.247.135.63
+  password: Vad3.123a)asd1234-asdasd.asdazzS.123
+  port: 443
+  server: 43.154.83.213
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港4|@ripaojiedian
-  password: LZQ0R9BL69GCC6FS
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+  sni: xx.tc.hk.go.107421.xyz
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇭🇰 香港5|@ripaojiedian
   password: 2H98UZT9LT1TE3X9
   port: 15008
   server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 17|🇭🇰 香港4|@ripaojiedian
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -930,14 +1053,6 @@ proxies:
   password: TCEL1H0XD7TWAKI0
   port: 15011
   server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港8|@ripaojiedian
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -988,37 +1103,23 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: 17,18|韩国|@ripaojiedian
-  network: ws
-  port: '22223'
-  server: free-kr.faforex.eu.org
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 34b92487-a7b5-400a-b42f-40f53377aaab
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  name: 17|🇯🇵 日本4|@ripaojiedian
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40254
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 3.link-hub.click
+  type: ssr
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
   password: B5CJMEHJMSMNQ120
   port: 16012
   server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡2|@ripaojiedian
-  password: BFYCOKHTC8HIWWRB
-  port: 16006
-  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1053,38 +1154,32 @@ proxies:
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国|@ripaojiedian
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.154.136.148
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇺🇸 美国2|@ripaojiedian
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 23.154.136.106
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 17|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.254.236.133
+  server: 54.199.112.166
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 17|🇯🇵 日本特殊|@ripaojiedian
+  name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.212.32.201
+  server: 47.129.201.221
   tfo: false
   type: ss
+- cipher: rc4-md5
+  name: 18|5pel5pysNHxAcmlwYW9qaWVkaWFu
+  obfs: plain
+  obfs-param: Y2QyYjY5MjkwMi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40254'
+  protocol: auth_aes128_md5
+  protocol-param: OTI5MDI6cEZXR09R
+  server: 3.link-hub.click
+  type: ssr
 - name: 19|CH_speednode_0002
   network: ws
   port: 443
@@ -1102,37 +1197,6 @@ proxies:
 - alterId: 2
   cipher: auto
   name: 19|CN_speednode_0003
-  network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 19|CN_speednode_0005
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 19|CN_speednode_0006
   network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
@@ -1159,29 +1223,40 @@ proxies:
   uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
     headers:
-      Host: tk.hzlt.tkddns.xyz
+      Host: zxjp-c.tkong.cc
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 19|DE_speednode_0008
-  port: 443
-  reality-opts:
-    public-key: 83nOCehIOZZFqH0TjezNRMlu_pu069x5ep9BhopvyWM
-  server: a6.softmeto.com
-  servername: refersion.com
+- alterId: 2
+  cipher: auto
+  name: 19|CN_speednode_0005
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 19|CN_speednode_0006
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
   skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 33c1bd18-ca92-f544-8c7e-105bc9d8cb93
-- cipher: chacha20-ietf-poly1305
-  name: 19|GB_speednode_0015
-  password: vcUpZCJzOuaVoN8OL2cYvK
-  port: 443
-  server: 78.129.140.11
-  type: ss
-  udp: true
-- name: 19|GB_speednode_0016
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: tk.hzlt.tkddns.xyz
+    path: /
+- name: 19|GB_speednode_0015
   network: ws
   port: 443
   server: 31.22.116.38
@@ -1195,21 +1270,22 @@ proxies:
     headers:
       Host: usd.kobtty.me
     path: /bing
-- name: 19|HK_speednode_0017
-  network: ws
-  port: 1935
-  server: 43.154.34.74
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 19|HK_speednode_0016
+  network: http
+  port: 30704
+  server: 43.247.135.63
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|HK_speednode_0018
+  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
+- name: 19|HK_speednode_0017
   network: ws
   port: 443
   server: 162.247.5.91
@@ -1223,22 +1299,7 @@ proxies:
     headers:
       Host: sga.costs.asia
     path: /bing
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 19|HK_speednode_0019
-  network: http
-  port: 30704
-  server: 43.247.135.63
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
-- name: 19|HK_speednode_0020
+- name: 19|HK_speednode_0018
   network: ws
   port: 443
   server: 8.218.105.88
@@ -1252,37 +1313,7 @@ proxies:
     headers:
       Host: vn.cazlelmhpn.group
     path: /bing
-- name: 19|HK_speednode_0021
-  network: ws
-  port: 443
-  server: 58.176.95.46
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alpn:
-  - http/1.1
-  name: 19|HK_speednode_0022
-  network: ws
-  port: 2083
-  server: 154.218.15.250
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|JP_speednode_0032
+- name: 19|JP_speednode_0028
   network: ws
   port: 443
   server: 47.74.33.96
@@ -1296,7 +1327,7 @@ proxies:
     headers:
       Host: jpc.kddhs.asia
     path: /bing
-- name: 19|JP_speednode_0033
+- name: 19|JP_speednode_0029
   network: ws
   port: 443
   server: 47.245.37.123
@@ -1310,147 +1341,7 @@ proxies:
     headers:
       Host: jpd.kddhs.asia
     path: /bing
-- name: 19|KR_speednode_0034
-  network: ws
-  port: 18048
-  server: 118.46.215.195
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0035
-  network: ws
-  port: 50000
-  server: 221.167.108.29
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0036
-  network: ws
-  port: 21082
-  server: 222.120.196.136
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0037
-  network: ws
-  port: 10071
-  server: 220.122.114.61
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0038
-  network: ws
-  port: 31443
-  server: 59.19.56.223
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0039
-  network: ws
-  port: 12462
-  server: 220.117.126.46
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0040
-  network: ws
-  port: 12395
-  server: 121.140.238.170
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0041
-  network: ws
-  port: 18004
-  server: 121.153.45.186
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0042
-  network: ws
-  port: 12523
-  server: 115.23.163.214
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|KR_speednode_0043
-  network: ws
-  port: 35559
-  server: 121.191.9.243
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|NL_speednode_0053
+- name: 19|NL_speednode_0039
   network: ws
   port: 80
   server: 45.149.12.128
@@ -1464,7 +1355,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /?ed=2560
-- name: 19|NL_speednode_0054
+- name: 19|NL_speednode_0040
   network: ws
   port: 2052
   server: 45.149.12.183
@@ -1478,7 +1369,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 19|NL_speednode_0058
+- name: 19|NL_speednode_0045
   network: ws
   port: 80
   server: 45.149.12.232
@@ -1492,7 +1383,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 19|NL_speednode_0059
+- name: 19|NL_speednode_0047
   network: ws
   port: 80
   server: 45.149.12.128
@@ -1507,7 +1398,7 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 - client-fingerprint: chrome
-  name: 19|NL_speednode_0060
+  name: 19|NL_speednode_0048
   network: ws
   port: 80
   server: 45.149.12.128
@@ -1521,7 +1412,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 19|NL_speednode_0061
+- name: 19|NL_speednode_0049
   network: ws
   port: 80
   server: 45.149.12.206
@@ -1536,7 +1427,7 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 - client-fingerprint: chrome
-  name: 19|NL_speednode_0062
+  name: 19|NL_speednode_0050
   network: ws
   port: 80
   server: 45.149.12.206
@@ -1550,7 +1441,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 19|NL_speednode_0063
+- name: 19|NL_speednode_0052
   network: ws
   port: 80
   server: 45.149.12.232
@@ -1565,7 +1456,7 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
 - client-fingerprint: chrome
-  name: 19|NL_speednode_0065
+  name: 19|NL_speednode_0053
   port: 47221
   reality-opts:
     public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0
@@ -1577,7 +1468,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3
-- name: 19|RU_speednode_0072
+- name: 19|RU_speednode_0058
   network: ws
   port: 80
   server: 185.174.138.194
@@ -1590,8 +1481,8 @@ proxies:
   ws-opts:
     headers:
       Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|RU_speednode_0073
+    path: /
+- name: 19|RU_speednode_0059
   network: ws
   port: 8080
   server: 185.174.138.197
@@ -1605,21 +1496,21 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: 19|SC_speednode_0075
+- name: 19|RU_speednode_0060
   network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
+  port: 80
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 19|SC_speednode_0076
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 19|SC_speednode_0061
   network: ws
   port: 8880
   server: 154.83.2.156
@@ -1633,7 +1524,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 19|SC_speednode_0077
+- name: 19|SC_speednode_0062
   network: ws
   port: 8880
   server: 154.83.2.230
@@ -1647,27 +1538,21 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 19|SC_speednode_0078
+- name: 19|SC_speednode_0063
   network: ws
-  password: Aimer
-  port: 2087
-  server: 154.197.64.189
+  port: 8880
+  server: 154.83.2.228
+  servername: redw.pooriam.ir
   skip-cert-verify: false
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 19|SG_speednode_0079
-  password: amazonskr05
-  port: 443
-  server: 13.229.180.183
-  type: ss
-  udp: true
-- name: 19|SG_speednode_0080
+      Host: redw.pooriam.ir
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 19|SG_speednode_0064
   network: ws
   port: 443
   server: 8.219.202.145
@@ -1681,83 +1566,28 @@ proxies:
     headers:
       Host: dob.fenmila.me
     path: /bing
-- name: 19|SG_speednode_0084
-  network: ws
-  port: 443
-  server: 47.236.251.178
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|SG_speednode_0085
-  network: ws
-  port: 8443
-  server: 206.238.236.137
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|SG_speednode_0086
-  network: ws
-  port: 443
-  server: 206.238.236.16
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|SG_speednode_0087
-  network: ws
-  port: 2083
-  server: 206.238.236.251
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|SG_speednode_0088
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 206.238.237.81
-  skip-cert-verify: false
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 19|TR_speednode_0089
-  password: LytryZ13mUEWLx2hKFJvM8
-  port: 65262
-  server: h110vpntr.outlinekeys.net
+- cipher: aes-256-cfb
+  name: 19|TW_speednode_0068
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
   type: ss
   udp: true
-- name: 19|US_speednode_0092
+- name: 19|US_speednode_0069
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- name: 19|US_speednode_0077
   network: ws
   port: 80
   server: 104.26.14.85
@@ -1771,63 +1601,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
-- name: 19|US_speednode_0096
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
-- name: 19|US_speednode_0098
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /MTMVPN-MTMVPN-MTMVPN-MTMVPN?ed=2560
-- name: 19|US_speednode_0101
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /MTMVPN?ed=2560
-- name: 19|US_speednode_0102
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  servername: a.xn--i-sx6a60i.us.kg.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 19|US_speednode_0105
+- name: 19|US_speednode_0078
   network: ws
   port: 80
   server: 104.26.14.85
@@ -1841,21 +1615,63 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /@V2ray_Alpha/?ed=2560
-- name: 19|US_speednode_0110
+- name: 19|US_speednode_0082
   network: ws
   port: 80
-  server: 66.235.200.5
-  servername: pormang.webhost99.workers.dev
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0112
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 19|US_speednode_0084
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /MTMVPN?ed=2560
+- name: 19|US_speednode_0085
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /MTMVPN-MTMVPN-MTMVPN-MTMVPN?ed=2560
+- name: 19|US_speednode_0090
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+- name: 19|US_speednode_0097
   network: ws
   port: 80
   server: 66.235.200.58
@@ -1869,119 +1685,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0114
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 19|US_speednode_0115
-  network: ws
-  port: 80
-  server: 66.235.200.149
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 19|US_speednode_0118
-  network: ws
-  port: 80
-  server: 66.235.200.5
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: 19|US_speednode_0120
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0125
-  network: ws
-  port: 80
-  server: 66.235.200.222
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0126
-  network: ws
-  port: 8443
-  server: 91.217.139.121
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 19|US_speednode_0129
-  network: ws
-  port: 80
-  server: 66.235.200.149
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0132
-  network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
-- name: 19|US_speednode_0133
+- name: 19|US_speednode_0098
   network: ws
   port: 80
   server: 172.67.73.163
@@ -1995,7 +1699,105 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray-Telegram-icV2ray?ed=2560
-- name: 19|US_speednode_0135
+- name: 19|US_speednode_0101
+  network: ws
+  port: 80
+  server: 66.235.200.149
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 19|US_speednode_0102
+  network: ws
+  port: 80
+  server: 66.235.200.30
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 19|US_speednode_0104
+  network: ws
+  port: 80
+  server: 66.235.200.5
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: 19|US_speednode_0105
+  network: ws
+  port: 80
+  server: 66.235.200.149
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 19|US_speednode_0106
+  network: ws
+  port: 80
+  server: 66.235.200.222
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 19|US_speednode_0107
+  network: ws
+  port: 80
+  server: 66.235.200.30
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 19|US_speednode_0109
+  network: ws
+  port: 80
+  server: 66.235.200.191
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- name: 19|US_speednode_0110
   network: ws
   port: 80
   server: 172.67.73.163
@@ -2009,7 +1811,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: 19|US_speednode_0136
+- name: 19|US_speednode_0112
   network: ws
   port: 2052
   server: www.speedtest.net
@@ -2023,7 +1825,7 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080
-- name: 19|US_speednode_0137
+- name: 19|US_speednode_0113
   network: ws
   port: 443
   server: 45.62.114.221
@@ -2081,199 +1883,183 @@ proxy-groups:
   type: select
 - name: 自动选择
   proxies: &id001
-  - 19|SG_speednode_0085
-  - 3|_SK_斯->🇸_US_美国
-  - '8,16|@vpnv2rayNGv #3'
-  - 19|NL_speednode_0053
-  - 17|🇺🇸 美国|@ripaojiedian
-  - 19|NL_speednode_0054
-  - 19|US_speednode_0135
-  - '9|@V2rayNG3 #5'
-  - 19|CN_speednode_0007
-  - 0|🇸🇬3 |  5.9MB/s
-  - 17|🇯🇵 日本3|@ripaojiedian
-  - 19|KR_speednode_0043
-  - 19|NL_speednode_0060
-  - 19|US_speednode_0112
-  - 3|_GB_国
-  - '4|🇺🇸_US_美国_2 #1'
-  - 4|🇺_UA_乌克兰_2
-  - 17|🇸🇬 新加坡5|@ripaojiedian
-  - 19|US_speednode_0096
-  - '9|@V2rayNG3 #4'
-  - '9|@V2rayNG3 #6'
-  - 19|CN_speednode_0003
-  - 19|SG_speednode_0084
-  - 17|🇸🇬 新加坡3|@ripaojiedian
-  - '9|@V2rayNG3 #2'
-  - 19|US_speednode_0098
-  - 12|github.com/freefq - 印度  10
-  - 19|KR_speednode_0040
-  - 5,12|github.com/freefq - 美国Fastly全球...
-  - 19|JP_speednode_0033
-  - 19|NL_speednode_0065
-  - 4|_US_->_JP_
-  - '4|_GB_国 #1'
-  - 5|美国+Xerox
-  - 21|d*********g.com_2
-  - 19|HK_speednode_0018
-  - 0|🇸🇬5 |  5.9MB/s
-  - 17|🇭🇰 香港3|@ripaojiedian
-  - 21|d*********g.com_3
-  - 9|Mci@V2ray_Raha-5
-  - 19|GB_speednode_0016
-  - 9|Mtn-@V2ray_Raha-11
-  - 17|🇭🇰 香港7|@ripaojiedian
-  - 17|🇺🇸 美国2|@ripaojiedian
-  - 19|US_speednode_0114
-  - 0,19|TW_speednode_0090
-  - 0|🇺🇸4 |  3.5MB/s
-  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
-  - 19|KR_speednode_0042
-  - 0|🇺🇸9 |  3.8MB/s
-  - 11|2|🇺🇸11 |  4.2MB/s
-  - 0,17|🇭🇰 香港2|@ripaojiedian
-  - 19|US_speednode_0136
-  - '9|@V2rayNG3 #7'
-  - 19|HK_speednode_0019
-  - 0|🇸🇬2 |  2.9MB/s
-  - 17|🇭🇰 香港4|@ripaojiedian
-  - 9|@V2rayNG3
-  - 4|🇺🇸_US_美国->🇪_DE_德国
-  - 19|DE_speednode_0008
-  - 17|🇸🇬 新加坡6|@ripaojiedian
-  - '9|@V2rayNG3 #9'
-  - '8,16|@vpnv2rayNGv #4'
-  - 19|RU_speednode_0073
-  - '9|@V2rayNG3 #1'
-  - 0|🇺🇸12 |  4.8MB/s
-  - 19|US_speednode_0120
-  - 19|SC_speednode_0077
-  - 19|HK_speednode_0020
-  - 0|🇺🇸11 |  4.7MB/s
-  - 3,4|🇷_RO_罗
-  - 3|🇮🇷_IR_伊朗_2
-  - 3,4|🇩_MD_
-  - 3|🇺🇸_US_美国_4
-  - 5|爱尔兰+都柏林Amazon数据中心
-  - 19|SG_speednode_0086
-  - 21|d*********g.com_6
-  - 19|KR_speednode_0041
-  - 11|2|🇺🇸13 |  1.3MB/s
-  - 19|KR_speednode_0036
-  - 4|🇺_RU_俄罗斯_4
-  - 19|RU_speednode_0072
-  - 19|US_speednode_0125
-  - 19|US_speednode_0133
-  - 19|HK_speednode_0021
-  - 19|NL_speednode_0062
-  - 19|US_speednode_0126
-  - 19|SC_speednode_0078
-  - 5|英国+社会保险安全部
-  - 17|🇸🇬 新加坡2|@ripaojiedian
-  - 17|🇹🇼 台湾2|@ripaojiedian
-  - '9|@V2rayNG3 #3'
-  - 19|SG_speednode_0088
-  - 0|🇺🇸1 |  2.7MB/s
-  - 4|_CN_国
-  - 19|SG_speednode_0080
-  - 19|SC_speednode_0075
-  - 0|🇳🇱1 |  5.4MB/s
-  - 11,18|香港3|@ripaojiedian
-  - 19|US_speednode_0118
-  - 17,18|香港|@ripaojiedian
-  - 4|_RU__1
-  - 19|KR_speednode_0034
-  - 4|_DE_国
-  - 19|CH_speednode_0002
-  - 19|US_speednode_0129
-  - '9|@vpnv2rayNGv #2'
-  - 0,19|RU_speednode_0071
-  - 19|JP_speednode_0032
-  - 3|_RU_
-  - 5|广东省广州市 移动
-  - 0|🇯🇵1 |  3.2MB/s
-  - 12|github.com/freefq - 美国CloudFla...
-  - 0,19|US_speednode_0091
-  - 0|🇬🇧1 |  2.3MB/s
-  - 19|US_speednode_0105
-  - 0|🇦🇺2 |  5.4MB/s
-  - 19|NL_speednode_0061
-  - 0|🇺🇸13 |  1.7MB/s
-  - 5|香港 Amazon数据中心
-  - 16|@ToYoTA_PRoXY
-  - 19|US_speednode_0092
-  - 3|🇷_IR__1
-  - 4|🇷🇺_RU_俄罗斯_8
-  - 19|SC_speednode_0076
-  - 17|🇭🇰 香港6|@ripaojiedian
-  - 19|NL_speednode_0059
-  - 4|🇸_US_美国_3
-  - 3|🇺🇸_US_美国_2
-  - 17|🇯🇵 日本特殊|@ripaojiedian
-  - 4|🇺_UA__1
-  - 19|HK_speednode_0022
-  - 19|US_speednode_0115
-  - 0|🇸🇬4 |  5.9MB/s
-  - 0,9|@GrizzlyVPN
-  - 4|🇷🇺_RU_俄罗斯_7
-  - 0|🇬🇧2 |  1.1MB/s
-  - 5|美国+Sprint网络
-  - 17|🇰🇷 韩国特殊|@ripaojiedian
-  - 17|tg频道:@ripaojiedian
   - 12|github.com/freefq - 广东省移动 7
-  - 19|CN_speednode_0006
-  - 17|🇯🇵 日本2|@ripaojiedian
-  - 19|HK_speednode_0017
-  - 19|NL_speednode_0063
-  - 4|🇳_IN_
-  - 0|🇺🇸14 |  4.3MB/s
-  - 19|KR_speednode_0035
-  - 11|2|🇺🇸10 |  4.3MB/s
-  - 0|🇺🇸2 |  4.6MB/s
-  - 12|github.com/freefq - 印度  3
-  - 17|🇹🇼 台湾4|@ripaojiedian
-  - 19|GB_speednode_0015
-  - 19|KR_speednode_0037
-  - 0,17|🇸🇬 狮城特殊|@ripaojiedian
-  - 19|NL_speednode_0058
-  - 19|SG_speednode_0079
-  - 0|🇺🇸6 |  4.3MB/s
-  - 4|🇷🇺_RU_俄罗斯_2
-  - 19|US_speednode_0101
-  - 19|KR_speednode_0038
-  - 4|🇷🇺_RU_俄罗斯_5
-  - 17|🇸🇬 新加坡|@ripaojiedian
-  - 19|CN_speednode_0005
-  - 3|🇺🇸_US_美国_3
-  - 19|KR_speednode_0039
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 4|🇺_RU_俄罗斯_3
-  - 4|🇷_RU_俄罗斯_6
-  - 11|2|🇹🇼1 |  4.2MB/s
-  - 19|US_speednode_0102
-  - 0|🇦🇺1 |  2.6MB/s
+  - 19|US_speednode_0090
+  - 21|d*********g.com_3
+  - 3|🇷_IR__1
+  - 19|HK_speednode_0016
+  - 9|@V2rayNG3
+  - 19|US_speednode_0113
+  - 5|澳大利亚+V2CROSS.COM
   - 12|github.com/freefq - 印度  2
-  - 17|🇭🇰 香港8|@ripaojiedian
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - 4|🇸_IS_
-  - 19|SG_speednode_0087
+  - 0|🌀3- |  3.1MB/s
+  - 0|🇺🇸2 |  2.2MB/s
+  - 5|湖北省+移动(全省通用)
   - '12|github.com/freefq - 美国CloudFla... #1'
-  - 17,18|韩国|@ripaojiedian
-  - 17|🇸🇬 新加坡4|@ripaojiedian
-  - 17|🇭🇰 香港5|@ripaojiedian
-  - 5|印度+V2CROSS.COM
-  - 19|TR_speednode_0089
-  - 19|US_speednode_0137
+  - 19|CN_speednode_0003
+  - 19|RU_speednode_0060
+  - '9|@V2rayNG3 #7'
+  - 19|SG_speednode_0064
+  - 19|HK_speednode_0017
+  - 19|GB_speednode_0015
+  - 4|🇺🇸_US_美国->🇺_RU_俄罗斯
+  - 0,17|🇭🇰 香港8|@ripaojiedian
+  - 17|🇭🇰 香港4|@ripaojiedian
+  - 17|🇸🇬 狮城特殊|@ripaojiedian
+  - 3|🇺🇸_US_美国_2
+  - '5|美国 CloudFlare节点 #2'
+  - 4|🇷🇺_RU_俄罗斯_3
+  - 17|🇹🇼 台湾2|@ripaojiedian
+  - '5|美国 CloudFlare节点 #6'
+  - 19|RU_speednode_0059
+  - 4|🇷🇺_RU_俄罗斯_2
+  - 17|🇭🇰 香港7|@ripaojiedian
+  - 19|HK_speednode_0018
+  - 3,4|🇺🇸_US_美国_6
+  - '5|美国 CloudFlare节点 #3'
   - 17|🇹🇼 台湾3|@ripaojiedian
-  - 3,4|🇸_US_美国_1
-  - 3|_CN_->_ZA_
-  - 19|US_speednode_0132
-  - 0|🇺🇸10 |  2.6MB/s
+  - '12|github.com/freefq - 美国CloudFla... #3'
+  - '9|@V2rayNG3 #5'
+  - 0|🇺🇸4 |  4.4MB/s
+  - 4,19|GB_speednode_0014
+  - 4|🇸_IS_冰岛
+  - 4|🇮_IR_->🇳_CN_中国
+  - 19|US_speednode_0078
+  - 19|US_speednode_0106
+  - 3|_SK_斯->🇸_US_美国
+  - 19|CN_speednode_0005
+  - '9|@V2rayNG3 #6'
+  - 3|🇷🇺_RU_俄罗斯->🇳_IN_
+  - 0|🌀5- |  4.3MB/s
+  - 17|🇸🇬 新加坡|@ripaojiedian
+  - 3|🇺🇸_US_美国_3
+  - 3|🇮🇷_IR_伊朗_2
+  - 0|🇯🇵1 |  2.4MB/s
+  - 16|@ToYoTA_PRoXY
+  - 17|🇭🇰 香港6|@ripaojiedian
+  - '9|@V2rayNG3 #3'
+  - 19|TW_speednode_0068
+  - 4|_NL_兰
+  - 5|爱尔兰+都柏林Amazon数据中心
+  - '5|美国 CloudFlare节点 #5'
+  - 19|US_speednode_0109
+  - 19|US_speednode_0084
+  - '9|@V2rayNG3 #4'
+  - 0|🇳🇱1 |  2.4MB/s
+  - 0|🌀2- |  5.2MB/s
+  - 9|@GrizzlyVPN
+  - 17|🇯🇵 日本3|@ripaojiedian
+  - 19|US_speednode_0082
+  - 4|🇷🇺_RU_俄罗斯_5
+  - 12|github.com/freefq - 美国Fastly全球...
+  - 0|🇬🇧4 |  4.7MB/s
+  - 4|_DE_国
+  - '5|美国 CloudFlare节点 #4'
+  - '8,16|@vpnv2rayNGv #4'
+  - 0|🌏1 |  1.3MB/s
+  - 17|🇯🇵 日本4|@ripaojiedian
+  - 21|d*********g.com_6
+  - 17|🇰🇷 韩国特殊|@ripaojiedian
+  - '9|@vpnv2rayNGv #2'
+  - 19|NL_speednode_0040
+  - 0|🇮🇹1 |  5.1MB/s
+  - 12|github.com/freefq - 印度  3
+  - '5|爱尔兰+都柏林Amazon数据中心 #2'
+  - 4|🇷🇺_RU_俄罗斯_6
+  - 19|US_speednode_0077
+  - 4|🇸_US_美国_4
+  - 5|美国 CloudFlare节点
+  - 11|2|🌀1- |  1.2MB/s
+  - 0|🇵🇱1 |  3.4MB/s
+  - 19|RU_speednode_0058
+  - 17|🇯🇵 日本2|@ripaojiedian
+  - 19|SC_speednode_0063
+  - 19|US_speednode_0107
   - 9|Mtn-@V2ray_Raha-9
+  - 4|🇺_UA_
+  - 19|US_speednode_0112
+  - '9|@V2rayNG3 #1'
+  - 11|13|香港3|@ripaojiedian
+  - '8,16|@vpnv2rayNGv #3'
+  - 17|tg频道:@ripaojiedian
+  - 0,17|🇭🇰 香港2|@ripaojiedian
+  - 0|🇬🇧1 |  1.6MB/s
+  - 4|🇷🇺_RU_俄罗斯->🇸_IS_
+  - '4|🇺🇸_US_美国_2 #1'
+  - '9|@V2rayNG3 #2'
+  - 9|Mtn-@V2ray_Raha-11
+  - 19|US_speednode_0105
+  - 3|_MD_
+  - 19|NL_speednode_0050
+  - 0|🇨🇦1 |  5.8MB/s
+  - 4|_ZA_
+  - 19|JP_speednode_0029
+  - 3|_RU_
+  - 19|NL_speednode_0049
+  - 11|12,13|韩国|@ripaojiedian
+  - 19|SC_speednode_0061
+  - 0|🇺🇸6 |  3.8MB/s
+  - '5,12|github.com/freefq - 美国CloudFla... #2'
+  - 19|NL_speednode_0053
+  - 4,17|🇸🇬 新加坡2|@ripaojiedian
+  - 19|CN_speednode_0006
+  - 3|🇺🇸_US_美国_4
+  - 3|_GB_国
+  - 19|NL_speednode_0045
+  - 19|NL_speednode_0052
+  - 0,19|US_speednode_0099
+  - 4|_RU__1
+  - 9|Mci@V2ray_Raha-5
+  - 17|🇸🇬 新加坡5|@ripaojiedian
+  - 19|NL_speednode_0047
+  - 0|🇺🇸7 |  1.7MB/s
+  - 4|🇷🇺_RU_俄罗斯_4
+  - 0|🇺🇸1 |  3.3MB/s
+  - 17,18|香港|@ripaojiedian
+  - 5|美国+惠普公司
+  - 19|SC_speednode_0062
+  - 17|🇭🇰 香港3|@ripaojiedian
+  - 17|🇹🇼 台湾4|@ripaojiedian
+  - 0|🌀1- |  4.5MB/s
+  - 17|🇸🇬 新加坡4|@ripaojiedian
+  - 0,17|🇯🇵 日本特殊|@ripaojiedian
+  - 17|🇭🇰 香港5|@ripaojiedian
+  - '5|爱尔兰+都柏林Amazon数据中心 #1'
+  - 17|🇸🇬 新加坡6|@ripaojiedian
+  - '5|美国 CloudFlare节点 #1'
   - 19|US_speednode_0110
+  - 12|github.com/freefq - 印度  10
+  - 19|CN_speednode_0007
+  - 21|d*********g.com_2
+  - 4,17|🇺🇸 美国|@ripaojiedian
+  - 12|github.com/freefq - 美国CloudFla...
+  - '9|@V2rayNG3 #9'
+  - 19|US_speednode_0104
+  - 19|US_speednode_0102
+  - 4|🇷_RO_罗
+  - 19|US_speednode_0098
+  - 0|🇺🇸3 |  4.5MB/s
+  - 19|CH_speednode_0002
+  - 3|_CN_->_ZA_
+  - 11|2|🇺🇸13 |  2.0MB/s
+  - 3|_RO_罗
+  - 19|NL_speednode_0039
+  - 19|US_speednode_0097
+  - 19|US_speednode_0101
+  - 19|US_speednode_0069
+  - 5|广东省广州市 移动
+  - 19|JP_speednode_0028
+  - 17|🇸🇬 新加坡3|@ripaojiedian
+  - 0|🇷🇺1 |  4.8MB/s
   - 17|🇯🇵 日本|@ripaojiedian
-  - 0|🇩🇪1 |  3.4MB/s
+  - '4|_US_国_1 #1'
+  - 18|5pel5pysNHxAcmlwYW9qaWVkaWFu
+  - '4|🇺🇸_US_美国_3 #1'
+  - 19|US_speednode_0085
+  - 4|🇺_US_美国_5
+  - 0|🌀4- |  8.8MB/s
+  - 5|美国+Xerox
+  - 19|NL_speednode_0048
   type: url-test
 - name: 1手动选择
   proxies: *id001
@@ -2284,21 +2070,16 @@ proxy-groups:
   type: select
 - name: 🇭🇰 香港
   proxies:
-  - 5|香港 Amazon数据中心
-  - 11,18|香港3|@ripaojiedian
+  - 11|13|香港3|@ripaojiedian
   - 17,18|香港|@ripaojiedian
   - 17|🇭🇰 香港3|@ripaojiedian
-  - 17|🇭🇰 香港4|@ripaojiedian
   - 17|🇭🇰 香港5|@ripaojiedian
+  - 17|🇭🇰 香港4|@ripaojiedian
   - 17|🇭🇰 香港6|@ripaojiedian
   - 17|🇭🇰 香港7|@ripaojiedian
-  - 17|🇭🇰 香港8|@ripaojiedian
+  - 19|HK_speednode_0016
   - 19|HK_speednode_0017
   - 19|HK_speednode_0018
-  - 19|HK_speednode_0019
-  - 19|HK_speednode_0020
-  - 19|HK_speednode_0021
-  - 19|HK_speednode_0022
   type: select
 rules:
 - MATCH,PROXY
