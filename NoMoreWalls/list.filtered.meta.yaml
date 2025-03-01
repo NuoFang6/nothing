@@ -1,10 +1,28 @@
 proxies:
-- name: 0|🇺🇸10 |  4.0MB/s
+- name: 0|🇺🇸3 |  5.5MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
+  server: usgp3-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
+  sni: usgp3-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇺🇸4 |  5.6MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp2-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: usgp2-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 0|🇭🇰1 |  6.3MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
@@ -13,23 +31,47 @@ proxies:
   server: ftq.ink
   tls: true
   type: http
+- name: 0|🇺🇸1 |  4.4MB/s
+  obfs: salamander
+  obfs-password: cd29099d
+  password: 9bb452b106ffc217
+  port: 443
+  server: 207.148.22.93
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+  udp: true
+- auth: d5e8409a-99f9-415f-ab7d-75953d3d0cae
+  client-fingerprint: chrome
+  down: 50
+  name: 0|🇬🇧1 |  1.7MB/s
+  obfs: salamander
+  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
+  password: d5e8409a-99f9-415f-ab7d-75953d3d0cae
+  port: 31651
+  server: 185.121.134.12
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 50
 - auth: dongtaiwang.com
   client-fingerprint: chrome
-  name: 0|🇷🇺1 |  1.8MB/s
+  name: 0|🇷🇺1 |  1.9MB/s
   password: dongtaiwang.com
   port: 51224
   server: 46.17.41.189
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- client-fingerprint: chrome
-  name: 0|🇵🇱1 |  3.6MB/s
-  password: be758973-186d-46fe-8aa4-e017134fa291
-  port: 4029
-  server: 31.186.87.211
+- name: 0|🇺🇸8 |  1.9MB/s
+  obfs: salamander
+  obfs-password: 13f7ba5f
+  password: 4e9ee29b39a28277
+  port: 443
+  server: 66.135.11.68
   skip-cert-verify: true
-  sni: www.bing.com
   type: hysteria2
+  udp: true
 - name: '8,16|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
@@ -127,6 +169,16 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
+- name: 9|@meli_proxyyسرورایبیشتر
+  obfs: salamander
+  obfs-password: SZJIE6gDorRMWuaxt4BRWLumwIXZR
+  password: MQeAtegzYd
+  port: 443
+  server: 95.163.152.170
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 9|Mci@V2ray_Raha-5
   password: a0605527-28e4-449c-80ee-5642cc16a8af
   port: 80
@@ -181,97 +233,68 @@ proxies:
   sni: ELiV2RAY.eliv2.top
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  name: 0|🇯🇵1 |  4.6MB/s
-  password: amazonskr05
+- cipher: aes-128-cfb
+  name: 0|🇺🇸2 |  1.6MB/s
+  password: shadowsocks
   port: 443
-  server: 3.112.216.127
+  server: 184.170.241.194
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇨🇦1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.243.171
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  delay: 2724
-  name: 0|🇺🇸4 |  1.0MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 38.91.107.66
-  type: ss
-- cipher: aes-256-cfb
-  name: 0|🇺🇸5 |  3.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.185.211.74
-  type: ss
-- cipher: aes-256-gcm
-  delay: 942
-  name: 0|🌀1- |  1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 167.88.61.213
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇯🇵2 |  5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.64.124.92
-  type: ss
-- cipher: aes-256-gcm
-  delay: 2271
-  name: 0|🌀3- |  1.0MB/s
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 167.88.61.213
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸7 |  2.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.32.166.45
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 0|🇺🇸8 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.220.174.155
-  tls: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇸🇬2 |  3.7MB/s
+  name: 0|🇸🇬1 |  2.2MB/s
   password: amazonskr05
   port: 443
   server: 54.254.62.242
   type: ss
+- cipher: chacha20-ietf
+  name: 0|🌏1 |  1.5MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
 - cipher: aes-256-cfb
-  name: 0|🇸🇬3 |  1.6MB/s
+  name: 0|🇨🇦1 |  1.8MB/s
   password: amazonskr05
   port: 443
-  server: 13.212.32.201
+  server: 47.129.8.153
   type: ss
 - cipher: aes-256-cfb
-  name: 0|🇷🇺2 |  9.1MB/s
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 217.30.10.18
+  name: 0|🇸🇬2 |  5.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.140.3.253
   type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 0|🇰🇷1 |  5.6MB/s
+  country: 🇭🇰HK
+  delay: 180
+  name: 0|🌏2 |  3.2MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸5 |  4.4MB/s
+  password: 5f7faba7-3b48-4fd4-83f8-0497236b37e3
+  port: 36741
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇭🇰2 |  5.2MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼1 |  2.1MB/s
+  password: 5f7faba7-3b48-4fd4-83f8-0497236b37e3
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵1 |  2.9MB/s
   password: amazonskr05
   port: 443
-  server: 52.78.98.113
+  server: 54.238.247.32
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 3|_CN_->_ZA_
@@ -288,7 +311,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|_US_国_1
+  ip-version: dual
+  name: 3,4|🇺🇸_US_美国_7
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.47.252.251
@@ -337,7 +361,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 3|_MD_
+  ip-version: dual
+  name: '3,4|_MD_ #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 91.132.94.200
@@ -359,7 +384,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 3,4|_RO_罗亚
+  name: 3,4|🇴_RO_罗马尼亚_2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.193.49.88
@@ -368,25 +393,57 @@ proxies:
 - cipher: aes-256-cfb
   ip-version: dual
   name: 4|_RU__1
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
+  password: FG5ddLsMPbV5CutE
+  port: 9050
   server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|_US_->🇷🇺_RU_俄罗斯_1
-  password: amazonskr05
-  port: 443
-  server: 54.244.204.173
+  name: 4|🇷🇺_RU_俄罗斯_2
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺🇸_US_美国_1
+  name: 4|🇷_RO_罗_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 188.214.36.155
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_3
+  password: QWDDvVE9npNurQfA
+  port: 9026
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇷🇺_RU_俄罗斯_4
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 4|_US__1
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 69.50.93.111
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇸_US_美国_2
   password: amazonskr05
   port: 443
-  server: 18.236.132.239
+  server: 54.185.211.74
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -399,39 +456,31 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '4|🇺🇸_US_美国_2 #1'
-  password: amazonskr05
-  port: 443
-  server: 34.217.75.205
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇺_RU_俄罗斯_2
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
+  name: 4|🇷🇺_RU_俄罗斯_5
+  password: TPqX8edgbAURcAMb
+  port: 9079
   server: 217.30.10.18
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
   name: 4|🇺🇦_UA_乌克兰_2
-  password: YTNjNDY5
+  password: OWY4ODBm
   port: 8388
-  server: 185.234.64.35
+  server: at1.opensocks.site
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_3
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
-  server: 217.30.10.18
+  name: '4|_GB_国 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_4
+  name: 4|🇷🇺_RU_俄罗斯_6
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 217.30.10.18
@@ -439,82 +488,18 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|_IT_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '4|🇺🇸_US_美国_3 #1'
+  name: 4|🇸_US_美国_3
   password: amazonskr05
   port: 443
-  server: 54.244.78.72
+  server: 52.32.166.45
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+  name: 4|🇸_US_美国_4
   password: amazonskr05
   port: 443
-  server: 35.91.187.73
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇺_RU_俄罗斯_5
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇮_IS_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.152
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '4|🇺🇸_US_美国_4 #1'
-  password: amazonskr05
-  port: 443
-  server: 52.12.191.72
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇺🇸_US_美国->🇷🇺_RU_俄罗斯_3
-  password: amazonskr05
-  port: 443
-  server: 52.34.200.48
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_6
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  ip-version: dual
-  name: 4|🇺_AU_大利
-  password: asd123456
-  port: 8388
-  server: 202.162.109.169
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇺_RU_俄罗斯_7
-  password: f8npKgNzdkss2ytn
-  port: 9088
-  server: 217.30.10.18
+  server: 34.211.97.239
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -522,31 +507,39 @@ proxies:
   name: 4|🇺🇸_US_美国_5
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.47.253.171
+  server: 185.237.185.160
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_8
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷🇺_RU_俄罗斯_9
-  password: rNBfNuuANFCAk7KB
-  port: 9056
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 4|🇷_KR_国
+  name: 4|_DE_国
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.223.16.212
+  server: 134.255.210.49
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 4|🇺🇦_UA_乌克兰_3
+  password: YTNjNDY5
+  port: 8388
+  server: 185.234.64.35
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇺🇸_US_美国->🇺_RU_俄罗斯
+  password: amazonskr05
+  port: 443
+  server: 54.190.1.125
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|🇺🇸_US_美国_8
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.47.253.171
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -648,9 +641,9 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 17|🇸🇬 新加坡|@ripaojiedian
-  password: B5CJMEHJMSMNQ120
-  port: 16012
-  server: w72tapyb.slashdevslashnetslashtun.net
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -661,28 +654,12 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡3|@ripaojiedian
-  password: b7e92acc-70e2-4945-9625-c909251ca5ee
-  port: 30001
-  server: gdgs.tarioblink.me
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡4|@ripaojiedian
+  name: 17|🇸🇬 新加坡3|@ripaojiedian
   password: IHWLYZSSSX4GSKLA
   port: 16013
   server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 17|🇸🇬 新加坡5|@ripaojiedian
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -690,7 +667,7 @@ proxies:
   name: 17|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.34.144.30
+  server: 47.129.151.205
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -698,7 +675,7 @@ proxies:
   name: 17|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.129.225.199
+  server: 13.250.31.115
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -706,7 +683,7 @@ proxies:
   name: 17|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.180.251.210
+  server: 18.143.187.178
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -716,102 +693,274 @@ proxies:
   server: 154.223.20.79
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 0|🇺🇸6 |  6.8MB/s
-  network: tcp
-  port: 443
-  server: 135.148.74.155
-  servername: 147135004002.sec20org.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-- alterId: '0'
-  cipher: auto
-  name: 0|🇺🇸1 |  1.2MB/s
-  network: tcp
-  port: 48919
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 0|🌀2- |  4.6MB/s
-  port: 100
-  server: 138.199.158.245
-  tls: false
-  type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 17|🇺🇸 美国|@ripaojiedian
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40211
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  delay: 1036
-  h2-opts: {}
-  http-opts: {}
-  name: 0|🇭🇰1 |  5.9MB/s
-  network: tcp
-  port: 48889
-  server: gy.youaremygod.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- alterId: 0
-  cipher: auto
-  name: 5|广东省湛江市 移动
-  network: tcp
-  port: '41259'
-  server: 120.198.71.216
+  name: 0,17|🇭🇰 香港9|@ripaojiedian
+  port: 42120
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '5|广东省湛江市 移动 #1'
+  ip-version: dual
+  name: 4|🇺_RU_俄罗斯_7
+  network: tcp
+  port: 22946
+  server: 188.130.154.56
+  skip-cert-verify: true
+  type: vmess
+  udp: true
+  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
+- alterId: 1
+  cipher: auto
+  name: 5|日本 V2CROSS.COM
+  network: tcp
+  port: 11773
+  server: izacl-g01.jp02-9a99-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 5|日本 东京Amazon数据中心
+  network: tcp
+  port: 444
+  server: kailn-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #1'
+  network: tcp
+  port: 21581
+  server: k63r6-g01.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #2'
+  network: tcp
+  port: 21581
+  server: 5tzwc-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 0
+  cipher: auto
+  name: 5|广东省湛江市 移动
   network: tcp
   port: '44014'
   server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #3'
+  network: tcp
+  port: 21583
+  server: vitsv-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 1
+  cipher: auto
+  name: 5|日本 东京都Amazon数据中心
+  network: tcp
+  port: '28785'
+  server: 0q4oh-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #4'
+  network: tcp
+  port: 46487
+  server: 0s7c3-g06.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京都Amazon数据中心 #1'
+  network: tcp
+  port: 28783
+  server: rgytk-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #5'
+  network: tcp
+  port: 21581
+  server: r17ld-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京都Amazon数据中心 #2'
+  network: tcp
+  port: 28783
+  server: 9x2i9-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #6'
+  network: tcp
+  port: 444
+  server: klebu-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #7'
+  network: tcp
+  port: 21581
+  server: l9cl5-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #8'
+  network: tcp
+  port: 21584
+  server: ywt6t-g04.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #9'
+  network: tcp
+  port: 21581
+  server: rk93c-g01.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #10'
+  network: tcp
+  port: 46482
+  server: q5aek-g01.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #11'
+  network: tcp
+  port: 21581
+  server: 6hswz-g01.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 0
   cipher: auto
-  name: 5|广东省江门市 移动
+  name: '5|广东省湛江市 移动 #1'
   network: tcp
-  port: '52908'
-  server: 120.234.102.229
+  port: '41259'
+  server: 120.198.71.216
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '5|广东省湛江市 移动 #2'
+  name: '5|日本 东京Amazon数据中心 #12'
   network: tcp
-  port: '30565'
-  server: 120.198.71.214
-  tls: false
+  port: 21581
+  server: 3zu22-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
   cipher: auto
-  name: '5|广东省湛江市 移动 #3'
+  name: '5|日本 东京Amazon数据中心 #13'
   network: tcp
-  port: '50095'
-  server: 120.198.71.219
-  tls: false
+  port: 21584
+  server: 2h182-g04.jp01-0986-vm0.entry.fr0307a.art
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
   cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港9|@ripaojiedian
-  port: 33311
-  server: bg.guangsu888.cc
-  skip-cert-verify: false
-  tfo: false
+  name: '5|日本 东京Amazon数据中心 #14'
+  network: tcp
+  port: 444
+  server: 3lgr4-g01.jp04-3771-vm0.entry.fr0307a.art
   tls: false
   type: vmess
-  uuid: fa59f800-269d-4e2d-b29c-b4b9a570bbe0
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #15'
+  network: tcp
+  port: '21581'
+  server: uvx7r-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #16'
+  network: tcp
+  port: 21581
+  server: vq4em-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 5|德国下萨克森州萨尔茨吉特 德国电信
+  network: tcp
+  port: 46484
+  server: jp05-vm0.entry.srthdw.art
+  tls: false
+  type: vmess
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #17'
+  network: tcp
+  port: 21581
+  server: 18gxm-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: '5|日本 东京Amazon数据中心 #18'
+  network: tcp
+  port: 444
+  server: 8esic-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
 - alterId: 0
   cipher: auto
   name: 21|d*********g.com_2
