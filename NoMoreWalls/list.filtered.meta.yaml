@@ -1,60 +1,27 @@
 proxies:
-- name: 0|🇭🇰2 |  4.6MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 0|🇯🇵4 |  5.7MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - name: 17|tg频道:@ripaojiedian
   port: 4000
   server: ftq.ink
   tls: true
   type: http
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 0|🇺🇸8 |  6.2MB/s
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- name: 0|🇺🇸3 |  4.0MB/s
-  obfs: salamander
-  obfs-password: 4b817757
-  password: 1f17cdf0578a2860
-  port: 443
-  server: 45.76.0.86
-  skip-cert-verify: true
-  sni: 45.76.0.86
-  type: hysteria2
-  udp: true
 - auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   client-fingerprint: chrome
-  name: 0|🌀1- |  1.7MB/s
+  name: 0|🌀2- |  18.3MB/s
   password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   port: 8899
   server: yingguo1.su8.lol
   skip-cert-verify: false
   sni: yingguo1.su8.lol
   type: hysteria2
-- name: '8,16|@vpnv2rayNGv #3'
+- name: 0,11|11|🇺🇸美国 加利福尼亚州 圣克拉拉 DIGITALOCE...
+  password: iMqY3uG_5pgEj3hCfyHB-0vB
+  port: 443
+  server: 143.198.235.49
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: hysteria2
+- name: '8,11,16|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
@@ -64,7 +31,7 @@ proxies:
   sni: www.eliv2ray.net
   tls: false
   type: hysteria2
-- name: '8,16|@vpnv2rayNGv #4'
+- name: '8,11,16|@vpnv2rayNGv #4'
   password: a278eadd-c35c-403f-a286-7767a74307c1
   port: 8080
   server: 45.140.169.231
@@ -72,7 +39,7 @@ proxies:
   sni: www.eliv2ray.net
   tls: false
   type: hysteria2
-- name: 9|@V2rayNG3
+- name: 9,11|10|@V2rayNG3
   password: '123456'
   port: 443
   server: 192.3.85.237
@@ -80,7 +47,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #1'
+- name: '9,11|10|@V2rayNG3 #1'
   password: 15cca331-9e92-449d-93b0-25f82203595f
   port: 20309
   server: gb.gomeow.online
@@ -98,7 +65,7 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #3'
+- name: '9,11|10|@V2rayNG3 #3'
   password: 75577117-ABCD-DCBA-AAAA-CC777775577B
   port: 7777
   server: s15.serv00.com
@@ -106,7 +73,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 9|@GrizzlyVPN
+- name: 9,11|10|@GrizzlyVPN
   password: 78e4c7ea92fed6d40792424990b6e793
   port: 4443
   server: a.grizzzlyyyy.ir
@@ -114,7 +81,7 @@ proxies:
   sni: a.grizzzlyyyy.ir
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #4'
+- name: '9,11|10|@V2rayNG3 #4'
   obfs: salamander
   obfs-password: '@azadi_az_inja_migzare'
   password: '@azadi_az_inja_migzare'
@@ -124,7 +91,7 @@ proxies:
   sni: all-v4.dgi000.store
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #5'
+- name: '9,11|10|@V2rayNG3 #5'
   obfs: salamander
   obfs-password: bipbip
   password: AtTK3tiEA0
@@ -133,7 +100,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #6'
+- name: '9,11|10|@V2rayNG3 #6'
   obfs: salamander
   obfs-password: bleepbloop
   password: AtTK3tiEA0
@@ -142,7 +109,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #7'
+- name: '9,11|10|@V2rayNG3 #7'
   obfs: salamander
   obfs-password: bluhbluh
   password: AtTK3tiEA0
@@ -151,7 +118,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 9|Mci@V2ray_Raha-5
+- name: 9,11|10|Mci@V2ray_Raha-5
   password: a0605527-28e4-449c-80ee-5642cc16a8af
   port: 80
   server: 164.152.33.5
@@ -159,7 +126,7 @@ proxies:
   sni: br.huafei888.site
   tls: false
   type: hysteria2
-- name: 9|Mtn-@V2ray_Raha-11
+- name: 9,11|10|Mtn-@V2ray_Raha-11
   password: dongtaiwang.com
   port: 13861
   server: 195.154.33.70
@@ -167,7 +134,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '9|@V2rayNG3 #8'
+- name: '9,11|10|@V2rayNG3 #8'
   password: dongtaiwang.com
   port: 50717
   server: 46.17.41.189
@@ -185,7 +152,7 @@ proxies:
   sni: www.google.com
   tls: false
   type: hysteria2
-- name: '9|@vpnv2rayNGv #2'
+- name: '9,11|10|@vpnv2rayNGv #3'
   obfs: salamander
   obfs-password: V2R@yM@teRS1Q2VEe
   password: rZzZr2Za3B
@@ -195,68 +162,262 @@ proxies:
   sni: ns.cloudflare.com
   tls: false
   type: hysteria2
-- name: 16|@ToYoTA_PRoXY
+- name: 11|2|🇺🇸2 |  3.3MB/s
+  password: b546e98f-967a-4e95-aa67-4cdd6c1b9677
+  port: 10002
+  server: 50.114.152.111
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: '11|9,11|⚡️ @vipv2rey(Hysteria) #1'
+  obfs: salamander
+  obfs-password: bd7f765e
+  password: 9f73c619627d6a5d
+  port: 443
+  server: 66.245.192.15
+  skip-cert-verify: true
+  sni: www.apple.com
+  tls: false
+  type: hysteria2
+- name: '11|9,11|⚡️ @vipv2rey(Hysteria1) #...'
+  password: dongtaiwang.com
+  port: 44550
+  server: 51.158.54.46
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '11|9,11|⚡️@vipv2rey (Hysteria) #1'
   obfs: salamander
   obfs-password: 8c3ce17b
   password: f6e4b19a3110d19d
   port: 443
   server: 66.135.28.59
   skip-cert-verify: true
-  sni: ELiV2RAY.eliv2.top
+  sni: www.apple.com
+  tls: false
+  type: hysteria2
+- name: 11|10|(@VmessProtocol)برای خرید و...
+  password: 0e57e0a8-939e-478d-8513-63b70e961e21
+  port: 443
+  server: weilai-nl.sanguayun.com
+  skip-cert-verify: false
+  sni: weilai-nl.sanguayun.com
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #1'
+  password: 15261735-2168-42f8-b3ad-91ec82a58b5a
+  port: 21050
+  server: yiyuankuailian-jp.jiumaojiu.org
+  skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #2'
+  password: 3f9b3419-29d5-4fbf-a96c-62c001705a04
+  port: 443
+  server: saibo-nl.sanguayun.com
+  skip-cert-verify: false
+  sni: saibo-nl.sanguayun.com
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #3'
+  password: 444dae72-ea43-4ff8-a77e-c2786a443bbd
+  port: 443
+  server: hk04hktix126h.whiteemperor.top
+  skip-cert-verify: true
+  sni: hk04hktix126h.whiteemperor.top
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #4'
+  password: 444dae72-ea43-4ff8-a77e-c2786a443bbd
+  port: 443
+  server: hk06hktix160.whiteemperor.top
+  skip-cert-verify: true
+  sni: hk06hktix160.whiteemperor.top
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #5'
+  password: 444dae72-ea43-4ff8-a77e-c2786a443bbd
+  port: 443
+  server: hk09hktix101.whiteemperor.top
+  skip-cert-verify: true
+  sni: hk09hktix101.whiteemperor.top
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #6'
+  password: 444dae72-ea43-4ff8-a77e-c2786a443bbd
+  port: 443
+  server: hk19hktix245.whiteemperor.top
+  skip-cert-verify: true
+  sni: hk19hktix245.whiteemperor.top
+  tls: false
+  type: hysteria2
+- name: 11|10|🇩🇪 @VPNHubMaRKeT ♾  @VpnHub...
+  obfs: salamander
+  obfs-password: '@VPNHubMaRKeT'
+  password: '@VPNHubMaRKeT'
+  port: 443
+  server: 202.78.166.190
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 11|10|@fast_2ray سرورهایبیشتر
+  password: ThisIsNotForSale-Free$ervice
+  port: 443
+  server: api.tg8lnk.tech
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 11|10|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHu...
+  obfs: salamander
+  obfs-password: tel:@VPNHubMaRKeT
+  password: VPNHubMaRKeT
+  port: 9999
+  server: 3.123.253.70
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #8'
+  password: c31b23ea-bf3c-476e-8b6b-6f2cc3fc958e
+  port: 8899
+  server: bx1.su8.lol
+  skip-cert-verify: false
+  sni: bx1.su8.lol
+  tls: false
+  type: hysteria2
+- name: 11|10|@Pashmam_Vpn سرور های بیشتر
+  obfs: salamander
+  obfs-password: 64da92df31fc63c1
+  password: c76f08e20fb6368b
+  port: 11122
+  server: 150.241.77.182
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 11|10|🇹🇷¹ @VpnHubMarKeT  @VpnHubM...
+  obfs: salamander
+  obfs-password: VpnHubMarKeT
+  password: dbe172973c29534833c6fae3d706d9e7
+  port: 443
+  server: 91.217.119.51
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 11|10|@Pashmam_Vpn سرور های بیشتر...
+  password: e1c77eb5-eacd-4afd-8da3-9fd2c1d3b499
+  port: 1001
+  server: br.1010520.xyz
+  skip-cert-verify: false
+  sni: br.1010520.xyz
+  tls: false
+  type: hysteria2
+- name: '11|10|@Pashmam_Vpn سرور های بیشتر... #1'
+  password: e442664a-ff50-4457-ab27-66a34055934a
+  port: 443
+  server: kaikaixinxin-us.legeth.xyz
+  skip-cert-verify: false
+  sni: kaikaixinxin-us.legeth.xyz
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #9'
+  password: ee837f32-4f5c-4920-9980-b55982f69414
+  port: 443
+  server: sanyuandian-nl.sanguayun.com
+  skip-cert-verify: false
+  sni: sanyuandian-nl.sanguayun.com
+  tls: false
+  type: hysteria2
+- name: '11|10|(@VmessProtocol)برای خرید و... #10'
+  password: f0ae7bec-c14c-4447-91e5-d636265092d4
+  port: 31651
+  server: 213.189.54.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 11|10|@filterking1(500G)
+  password: f2812c88-f678-4c64-98c9-ac42d8dab6ca
+  port: 29015
+  server: 185.22.152.35
+  skip-cert-verify: true
+  sni: anten.ir
+  tls: false
+  type: hysteria2
+- name: '11|10|@filterking1(500G) #1'
+  password: f2812c88-f678-4c64-98c9-ac42d8dab6ca
+  port: 29015
+  server: 45.147.200.61
+  skip-cert-verify: true
+  sni: anten.ir
+  tls: false
+  type: hysteria2
+- name: 11|11|香港🇭🇰 HY2
+  password: e20abb22a245edb0
+  port: 8443
+  server: fast.yxmm.xyz
+  skip-cert-verify: true
+  sni: TG频道@zqnb122100
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,17|🇯🇵 日本特殊|@ripaojiedian
+  name: 0|🇯🇵1 |  12.5MB/s
   password: amazonskr05
   port: 443
-  server: 13.229.213.8
-  tfo: false
+  server: 13.114.82.97
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇯🇵1 |  6.0MB/s
+  name: 0|🇺🇸1 |  5.6MB/s
   password: amazonskr05
   port: 443
-  server: 54.64.6.209
+  server: 52.195.185.114
   type: ss
 - cipher: aes-256-gcm
-  name: 0|🇺🇸1 |  1.0MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
+  client-fingerprint: chrome
+  name: 0|🇺🇸2 |  1.0MB/s
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 23.154.136.162
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇯🇵3 |  2.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.20.120
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  ip-version: dual
-  name: 0,4|_CH_
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
+  client-fingerprint: chrome
+  name: 0|🇯🇵4 |  3.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.221.195
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇸🇬2 |  10.0MB/s
+  name: 0|🇨🇦1 |  10.6MB/s
   password: amazonskr05
   port: 443
-  server: 13.229.63.223
+  server: 47.129.48.255
+  type: ss
+- cipher: aes-256-cfb
+  name: 0|🇯🇵5 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.64.124.92
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇯🇵3 |  3.0MB/s
+  name: 0|🇯🇵7 |  3.4MB/s
   password: amazonskr05
   port: 443
-  server: 54.178.157.8
+  server: 13.231.162.239
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0,17|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.151.184.124
-  tfo: false
-  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|_CN_->_ZA_
   password: bfWZbxtXnPX6sSF_n9byxw
@@ -394,6 +555,14 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 188.214.36.155
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 4|_CH_
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -645,6 +814,22 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.229.213.8
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 17|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.151.184.124
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   name: 19|TW_speednode_0055
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -675,43 +860,63 @@ proxies:
   uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
 - alterId: 0
   cipher: auto
-  name: 5|广东省江门市 移动
-  network: tcp
-  port: '52908'
-  server: 120.234.102.229
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 5|广东省广州市 移动
   network: tcp
-  port: '40165'
-  server: 120.232.153.63
+  port: '36602'
+  server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 5|广东省 移动
-  network: tcp
-  port: 3503
-  server: ocean.2022.2023.mlinuu.top
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - alterId: 0
   cipher: auto
   name: 5|广东省湛江市 移动
   network: tcp
-  port: '50095'
+  port: '42055'
   server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 5,18|美国2|@ripaojiedian
+  name: 5|四川省 移动数据上网公共出口
+  network: tcp
+  port: 63010
+  server: in06.xxxoooxxxooo.net
+  tls: false
+  type: vmess
+  uuid: 26a934b4-d088-3cd6-88c2-11180ed1e53b
+- alterId: 0
+  cipher: auto
+  name: 5|伊朗 V2CROSS.COM
+  network: tcp
+  port: '39447'
+  server: 31.58.137.67
+  tls: false
+  type: vmess
+  uuid: 724fb93e-ace8-4733-b04a-72fcc9b80b1f
+- alterId: 0
+  cipher: auto
+  name: 11,18|香港9|@ripaojiedian
+  network: tcp
+  port: '21639'
+  server: 38.147.189.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2d012bbb-0d12-45e5-ad35-92241360327f
+- alterId: 0
+  cipher: auto
+  name: 11,18|日本4|@ripaojiedian
+  network: tcp
+  port: '55128'
+  server: 45.159.51.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
+- alterId: 0
+  cipher: auto
+  name: 11,18|美国2|@ripaojiedian
   network: tcp
   port: '44014'
   server: 120.198.71.219
@@ -719,56 +924,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '5|广东省广州市 移动 #1'
-  network: tcp
-  port: '42120'
-  server: 183.236.51.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '5|广东省广州市 移动 #2'
-  network: tcp
-  port: '59104'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '5|广东省湛江市 移动 #2'
-  network: tcp
-  port: '55482'
-  server: 120.198.71.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇭🇰 香港9|@ripaojiedian
-  port: 21639
-  server: 38.147.189.213
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2d012bbb-0d12-45e5-ad35-92241360327f
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 17|🇯🇵 日本4|@ripaojiedian
-  port: 55128
-  server: 45.159.51.189
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 84f9bc0e-400f-4839-98b5-637d5e9c6606
 - alterId: 0
   cipher: auto
   name: 21|d*********g.com_2
