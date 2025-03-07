@@ -1,0 +1,53 @@
+dns:
+  enable: true
+  ipv6: false
+  ipv6-timeout: 90
+  use-hosts: false
+  use-system-hosts: false
+  prefer-h3: false
+  respect-rules: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - quic://223.5.5.5#DIRECT
+    - quic://223.6.6.6#DIRECT
+  fallback:
+    - https://8.8.8.8/dns-query#PROXY&h3=false
+  fallback-filter:
+    geoip: false
+
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  force-dns-mapping: false
+  force-domain:
+    - +.netflix.com
+    - +.nflxvideo.net
+    - +.amazonaws.com
+    - +.media.dssott.com
+  skip-domain:
+    # - "+.bing.com"
+    # - "+.copilot.microsoft.com"
+    - "+.apple.com"
+    - "+.io.mi.com"
+    - "+.cdn-telegram.org"
+    - "+.telegram.org"
+    - "+.telegram-cdn.org"
+    - "+.fragment.com"
+    - "+.t.me"
+    - "+.telegra.ph"
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 8080
+    TLS:
+      ports:
+        - 443
+        - 8443
+    QUIC:
+      ports:
+        - 443
+        - 8443

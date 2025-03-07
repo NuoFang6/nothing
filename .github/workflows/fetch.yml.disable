@@ -1,0 +1,62 @@
+# name: Fetch
+
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # 表达式生成 https://crontab.guru/
+#     - cron: "0 0 * * *" #北京时间上午8点
+#     # - cron: "0 7 * * *" #北京时间下午3点
+#   push:
+#     paths:
+#       - ".github/workflows/fetch.yml"
+#       - "NoMoreWalls/sources.list"
+#       - "NoMoreWalls/config.yml"
+#       - "NoMoreWalls/abpwhite.txt"
+#       - "NoMoreWalls/**.py"
+#       - "NoMoreWalls/snippets/_*"
+
+# jobs:
+#   fetch:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: 迁出代码
+#         uses: actions/checkout@v4
+
+#       - name: 设置时区
+#         run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+#       - name: 安装 Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.x"
+#           cache: "pip"
+
+#       - name: 安装依赖
+#         working-directory: ./NoMoreWalls
+#         run: pip install -r requirements.txt
+
+#       - name: 执行任务
+#         working-directory: ./NoMoreWalls
+#         run: python ./fetch.py
+
+#       - name: 筛选节点
+#         working-directory: ./NoMoreWalls
+#         run: python ./filter.py
+
+#       - name: 提交更改
+#         run: |
+#           git config --local user.email "actions@github.com"
+#           git config --local user.name "GitHub Actions"
+#           git pull origin main
+#           git add ./NoMoreWalls/list*
+#           # git add ./NoMoreWalls/snippets/
+#           git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
+#       - name: 推送更改
+#         uses: ad-m/github-push-action@master
+#         with:
+#           branch: main
+
+#       - uses: igorjs/gh-actions-clean-workflow@v6
+#         with:
+#           runs_older_than: 0
+#           runs_to_keep: 3
