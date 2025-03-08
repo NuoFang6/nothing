@@ -1,185 +1,212 @@
-# 修改时区
-sudo timedatectl set-timezone 'Asia/Shanghai'
+#!/bin/bash
 
-cd ..
-mkdir tmp && cd tmp
-# 下载最新 mihomo
-wget -q -O mihomo.gz "$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*\\.gz")) | .browser_download_url')"
-gunzip mihomo.gz
-chmod +x mihomo
+# ================ 配置部分 ================
+# 工作目录设置
+WORK_DIR="../tmp"
+REPO_DIR="../nothing"
+OUTPUT_DIR="$REPO_DIR/mrs"
 
+# ================ sed处理函数 ================
+# 移除注释和空行
+remove_comments_and_empty() {
+    sed '/^#/d; /^$/d;'
+}
 
-# ** ad.mrs **
-# antiAD
-#去除注释和空行
-#保证结尾有换行符
-wget -q -O - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml |
-    sed '/^#/d; /^$/d;' |
-    sed -e '$a\' >>ad
+# 确保文件以换行符结束
+ensure_trailing_newline() {
+    sed -e '$a\'
+}
 
-# # AdRules
-# #转为yaml格式
-# wget -q -O - https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt |
-#     sed "/^#/d; /^$/d;" |
-#     sed "s/^/  - '/; s/$/'/" |
-#     sed -e '$a\' >>ad
+# 添加前缀和后缀（可自定义）
+add_prefix_suffix() {
+    local prefix="${1:-  - \'}"
+    local suffix="${2:-\'}"
+    sed "s/^/$prefix/; s/$/$suffix/"
+}
 
-# category-httpdns-cn@ads.list
-#转为yaml格式
-wget -q -O - https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list |
-    sed "/^#/d; /^$/d;" |
-    sed "s/^/  - '/; s/$/'/" |
-    sed -e '$a\' >>ad
+# 为pihole格式添加特定前缀（+.）
+format_pihole() {
+    add_prefix_suffix "  - '+." "'"
+}
 
-# # Xiaomi 跟踪器
-# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.xiaomi.txt |
-#     sed "/^#/d; /^$/d;" |
-#     sed "s/^/  - '+./; s/$/'/" |
-#     sed -e '$a\' >>ad
+# 标准yaml列表格式化
+format_yaml_list() {
+    add_prefix_suffix "  - '" "'"
+}
 
-# adobe 跟踪器
-wget -q -O - https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt |
-    sed "/^#/d; /^$/d;" |
-    sed "s/^/  - '+./; s/$/'/" |
-    sed -e '$a\' >>ad
+# 移除重复行并排序，确保结果唯一
+remove_duplicates() {
+    sort -u
+}
 
-# hagezi pro.mini
-#转为yaml格式,添加 +.
-# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.mini-onlydomains.txt |
-#     sed "/^#/d; /^$/d;" |
-#     sed "s/^/  - '+./; s/$/'/" |
-#     sed -e '$a\' >>ad
+# 数据源配置
+# ad 规则源
+AD_SOURCES=(
+    "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml|yaml|remove_comments_and_empty"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list|text|remove_comments_and_empty|format_yaml_list"
+    "https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt|text|remove_comments_and_empty|format_pihole"
+)
 
-#合并并去重
-cat ad | awk '!seen[$0]++' | sed "/^$/d" >ad.yaml
-# 转换为 mrs
-./mihomo convert-ruleset domain yaml ad.yaml ad.mrs
-# 移动覆盖结果至仓库
-mv -f ad.yaml ad.mrs ../nothing/mrs/
+# cn 规则源
+CN_SOURCES=(
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.list"
+)
 
+# cnIP 规则源
+CNIP_SOURCES=(
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.list"
+    "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.list"
+)
 
+# ================ 工具函数 ================
+# 初始化环境
+init_env() {
+    echo "正在初始化环境..."
+    # 修改时区
+    sudo timedatectl set-timezone 'Asia/Shanghai'
 
-# # ** DoHdomains.mrs **
-# wget -q -O - https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn.list |
-#     sed "/^#/d; /^$/d;"|
-#     sed -e '$a\' >>DoHdomains
-# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-onlydomains.txt |
-#     sed "/^#/d; /^$/d;" |
-#     sed "s/^/+./" >>DoHdomains
-# cat DoHdomains | awk '!seen[$0]++' | sed "/^$/d" >DoHdomains.text
-# ./mihomo convert-ruleset domain text DoHdomains.text DoHdomains.mrs
-# mv -f DoHdomains.text DoHdomains.mrs ../nothing/mrs/
+    # 创建工作目录
+    mkdir -p "$WORK_DIR"
+    cd "$WORK_DIR" || exit 1
 
-# # ** tif.mrs **
-# wget -q -O - https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt |
-#     sed "/^#/d; /^$/d;" |
-#     sed "s/^/+./" >>tif.text
-# ./mihomo convert-ruleset domain text tif.text tif.mrs
-# mv -f tif.text tif.mrs ../nothing/mrs/
+    # 下载最新 mihomo
+    echo "下载Mihomo工具..."
+    local download_url
+    download_url=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases |
+        jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | 
+                 .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*.gz")) | 
+                 .browser_download_url' | head -1)
 
+    if [ -z "$download_url" ]; then
+        echo "错误：无法获取Mihomo下载链接"
+        exit 1
+    fi
 
-# ** cn.mrs **
-for url in \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.list; do
-    wget -q -O - "$url" | sed -e '$a\' >>cn
-done
-cat cn | awk '!seen[$0]++' | sed "/^$/d" >cn.text
-./mihomo convert-ruleset domain text cn.text cn.mrs
-mv -f cn.text cn.mrs ../nothing/mrs/
+    wget -q -O mihomo.gz "$download_url"
+    gunzip mihomo.gz
+    chmod +x mihomo
 
+    echo "环境初始化完成"
+}
 
-# ** cnIP.mrs **
-for url in \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.list \
-    https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.list; do
-    wget -q -O - "$url" | sed -e '$a\' >>cnIP
-done
-cat cnIP | awk '!seen[$0]++' | sed "/^$/d" >cnIP.text
-./mihomo convert-ruleset ipcidr text cnIP.text cnIP.mrs
-mv -f cnIP.text cnIP.mrs ../nothing/mrs/
+# 并行处理规则并转换为MRS格式
+process_ruleset_parallel() {
+    local name=$1
+    local type=$2
+    local format=$3
+    local sources=("${!4}")
 
+    echo "处理 $name 规则集..."
 
-# # ** hijacking.yaml **
-# for url in \
-#     https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Hijacking/Hijacking_No_Resolve.yaml; do
-#     wget -q -O - "$url" | sed '/^#/d; /^$/d;' | sed -e '$a\' >>hijacking
-# done
-# # 追加yaml列表内容至hijacking末尾
-# cat <<EOF >>hijacking
-#   - DOMAIN-SUFFIX,sdkconf.avlyun.com
-#   - DOMAIN-SUFFIX,ixav-cse.avlyun.com
-#   - DOMAIN-SUFFIX,miav-cse.avlyun.com
-#   - DOMAIN-SUFFIX,miui-fxcse.avlyun.com
-#   - DOMAIN-SUFFIX,api.sec.miui.com
-#   - DOMAIN-SUFFIX,adv.sec.miui.com
-#   - DOMAIN-SUFFIX,srv.sec.miui.com
-#   - DOMAIN-SUFFIX,xlmc.sec.miui.com
-#   - DOMAIN-SUFFIX,data.sec.miui.com
-#   - DOMAIN-SUFFIX,port.sec.miui.com
-#   - DOMAIN-SUFFIX,flash.sec.miui.com
-#   - DOMAIN-SUFFIX,avlyun.sec.miui.com
-#   - DOMAIN-SUFFIX,auth.be.sec.miui.com
-#   - DOMAIN-SUFFIX,avlyun.sec.intl.miui.com
-#   - DOMAIN-SUFFIX,a0.app.xiaomi.com
-#   - DOMAIN-SUFFIX,hybrid.xiaomi.com
-#   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
-#   - DOMAIN-SUFFIX,api.installer.xiaomi.com
-#   - DOMAIN-SUFFIX,a.hl.mi.com
-#   - DOMAIN-SUFFIX,api.jr.mi.com
-#   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
-#   - DOMAIN-SUFFIX,tmfsdk.m.qq.com
-#   - PROCESS-NAME-REGEX,antifraud|hicore
-#   - DOMAIN-KEYWORD,96110
-#   - DOMAIN-KEYWORD,fqzpt
-#   - DOMAIN-KEYWORD,fzlmn
-#   - DOMAIN-KEYWORD,chanct
-#   - DOMAIN-KEYWORD,fanzha
-#   - DOMAIN-KEYWORD,gjfzpt
-#   - DOMAIN-KEYWORD,ifcert
-#   - DOMAIN-KEYWORD,hicore
-#   - DOMAIN-KEYWORD,bestmind
-#   - DOMAIN-KEYWORD,hei-tong
-#   - DOMAIN-KEYWORD,appbushou
-#   - DOMAIN-KEYWORD,loongteam
-#   - DOMAIN-KEYWORD,himindtech
-#   - DOMAIN-KEYWORD,tendyron
-#   - DOMAIN-SUFFIX,f3322.net
-#   - DOMAIN-SUFFIX,cert.org.cn
-#   - DOMAIN-SUFFIX,cnvd.org.cn
-#   - DOMAIN-SUFFIX,certlab.org
-#   - DOMAIN-SUFFIX,anva.org.cn
-#   - DOMAIN-SUFFIX,fhss.com.cn
-#   - DOMAIN-SUFFIX,hailiangyun.cn
-#   - DOMAIN-SUFFIX,ics-cert.org.cn
-#   - IP-CIDR,36.135.82.110/32,no-resolve
-#   - IP-CIDR,39.102.194.95/32,no-resolve
-#   - IP-CIDR,61.135.15.244/32,no-resolve
-#   - IP-CIDR,61.160.148.90/32,no-resolve
-#   - IP-CIDR,101.35.177.86/32,no-resolve
-#   - IP-CIDR,106.74.25.198/32,no-resolve
-#   - IP-CIDR,112.15.232.43/32,no-resolve
-#   - IP-CIDR,124.236.16.201/32,no-resolve
-#   - IP-CIDR,157.148.47.204/32,no-resolve
-#   - IP-CIDR,182.43.124.6/32,no-resolve
-#   - IP-CIDR,211.137.117.149/32,no-resolve
-#   - IP-CIDR,211.139.145.129/32,no-resolve
-#   - IP-CIDR,219.143.187.136/32,no-resolve
-#   - IP-CIDR,221.180.160.221/32,no-resolve
-#   - IP-CIDR,221.228.32.13/32,no-resolve
-#   - IP-CIDR,223.75.236.241/32,no-resolve
-# EOF
-# cat hijacking | awk '!seen[$0]++' | sed "/^$/d" >hijacking.yaml
-# mv -f hijacking.yaml ../nothing/mrs/
+    # 创建临时目录
+    local temp_dir="${WORK_DIR}/${name}_temp"
+    mkdir -p "$temp_dir"
 
-# ** 完事提交修改 **
-cd ../nothing/
-git config --local user.email "actions@github.com"
-git config --local user.name "GitHub Actions"
-git pull origin main
-git add ./mrs/*
-git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则" || true
+    # 并行下载和处理每个源
+    local i=0
+    local pids=()
+    local temp_files=()
+
+    for source in "${sources[@]}"; do
+        IFS="|" read -r url format_override process_cmd <<<"$source"
+        local old_ifs="$IFS"
+
+        # 创建带序号的临时文件名，确保后续能按顺序合并
+        local temp_file="${temp_dir}/${i}_$(basename "$url")"
+        temp_files+=("$temp_file")
+
+        # 启动后台进程下载和处理
+        (
+            echo "从 $url 下载..."
+
+            # 如果提供了特定格式和处理命令，则使用它们
+            if [ -n "$format_override" ] && [ -n "$process_cmd" ]; then
+                echo "应用自定义处理..."
+                wget -q -O - "$url" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
+            else
+                wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
+            fi
+
+            if [ $? -ne 0 ]; then
+                echo "警告：下载或处理 $url 时出错"
+            fi
+        ) &
+
+        # 保存后台进程的PID
+        pids+=($!)
+
+        let i++
+        IFS="$old_ifs" # 恢复原始IFS值
+    done
+
+    # 等待所有下载完成
+    echo "等待 $name 的所有下载完成..."
+    for pid in "${pids[@]}"; do
+        wait "$pid"
+    done
+
+    # 按顺序合并文件
+    echo "合并 $name 的所有源..."
+    >"${WORK_DIR}/${name}"
+    for temp_file in "${temp_files[@]}"; do
+        cat "$temp_file" >>"${WORK_DIR}/${name}"
+    done
+
+    # 去重并准备转换
+    if [ "$format" = "yaml" ]; then
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
+        ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
+        mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
+    else
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
+        ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
+        mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
+    fi
+
+    # 清理临时目录
+    rm -rf "$temp_dir"
+
+    echo "$name 规则集处理完成"
+}
+
+# 提交更改到Git仓库
+commit_changes() {
+    echo "提交更改到Git仓库..."
+    cd "$REPO_DIR" || exit 1
+    git config --local user.email "actions@github.com"
+    git config --local user.name "GitHub Actions"
+    git pull origin main
+    git add ./mrs/*
+    git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则" || echo "没有需要提交的更改"
+    echo "提交完成"
+}
+
+# ================ 主执行流程 ================
+main() {
+    # 初始化环境
+    init_env
+
+    # 并行处理各种规则集
+    process_ruleset_parallel "ad" "domain" "yaml" AD_SOURCES[@] &
+    pid1=$!
+    process_ruleset_parallel "cn" "domain" "text" CN_SOURCES[@] &
+    pid2=$!
+    process_ruleset_parallel "cnIP" "ipcidr" "text" CNIP_SOURCES[@] &
+    pid3=$!
+
+    # 等待所有处理完成
+    wait $pid1 $pid2 $pid3
+
+    # 提交更改
+    commit_changes
+
+    echo "所有操作已完成"
+}
+
+# 执行主函数
+main
