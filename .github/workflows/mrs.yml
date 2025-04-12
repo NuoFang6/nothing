@@ -25,99 +25,162 @@ jobs:
 
       - name: 推送更改
         run: |
-          # 清理 GitHub Actions 的 git 提交历史，只保留最新的3次提交
+          #!/bin/bash
+
+          # 函数：清理 Git 历史记录中来自 GitHub Actions 的旧提交
+          # 使用 git filter-repo 保留最新的 N 个 GitHub Actions 提交，
+          # 同时保持其他作者的提交不变。
           clean_git_history() {
-          echo "正在检查 GitHub Actions 的提交历史..."
+            # --- 配置 ---
+            # 用于识别 GitHub Actions 提交的邮箱地址
+            local github_actions_email="actions@github.com"
+            # 要保留的来自 GitHub Actions 的最新提交数量
+            local keep_latest_count=3
+            # 触发清理操作的 GitHub Actions 提交数量阈值
+            local trigger_count=7
 
-          # 获取 GitHub Actions 的提交次数
-          COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
-          echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
+            echo "正在统计作者 '$github_actions_email' 的提交..."
+            local actions_commit_count
+            # 使用 git rev-list 来统计指定作者的提交数
+            actions_commit_count=$(git rev-list --count --author="$github_actions_email" HEAD)
+            if [[ $? -ne 0 ]]; then
+                echo "错误：统计提交失败。" >&2
+                return 1
+            fi
+            echo "发现 $actions_commit_count 个由 GitHub Actions 提交的 commit。"
+            # 检查提交数量是否超过阈值
+            if (( actions_commit_count <= trigger_count )); then
+              echo "提交数量 ($actions_commit_count) 不大于 $trigger_count。无需修改历史记录。"
+              return 0
+            fi
 
-          if [ "${COMMIT_COUNT}" -gt 7 ]; then
+            # --- 安全和环境检查 ---
+            if ! command -v git &> /dev/null; then
+              echo "错误：未找到 git 命令。" >&2
+              return 1
+            fi
+            if ! command -v git-filter-repo &> /dev/null; then
+              echo "错误：未找到 git-filter-repo 命令。请安装它。" >&2
+              sudo apt install -y git-filter-repo
+              return 1
+            fi
+            if ! git rev-parse --is-inside-work-tree &> /dev/null; then
+              echo "错误：当前目录不是一个 Git 仓库。" >&2
+              return 1
+            fi
 
-              echo "GitHub Actions 提交次数大于 7，准备清理历史..."
+            echo "---------------------------------------------------------------------"
+            echo "警告：此函数将执行破坏性的 Git 历史重写！"
+            echo "强烈建议在全新的仓库克隆上运行此脚本。"
+            echo "在继续之前，请确保你已经备份了你的仓库。"
+            echo "---------------------------------------------------------------------"
+            # 取消下面一行的注释以添加确认步骤
+            # read -p "是否继续？ (y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || return 1
 
-              # 检查 git-filter-repo 是否安装
-              if ! command -v git-filter-repo >/dev/null 2>&1; then
-                  echo "git-filter-repo 未找到，尝试安装..."
-                  # 尝试使用 apt-get (适用于Debian/Ubuntu)
-                  if command -v apt-get >/dev/null 2>&1; then
-                      sudo apt-get update && sudo apt-get install -y git-filter-repo
-                  # 尝试使用 pip3 (通用Python包管理器)
-                  elif command -v pip3 >/dev/null 2>&1; then
-                      echo "尝试使用 pip3 安装 git-filter-repo..."
-                      pip3 install git-filter-repo
-                  else
-                      echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
-                      echo "跳过历史清理步骤。"
-                      return
-                  fi
-                  # 再次检查安装是否成功
-                  if ! command -v git-filter-repo >/dev/null 2>&1; then
-                      echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
-                      return
-                  fi
-                  echo "git-filter-repo 安装成功。"
+            # --- 主要逻辑 ---
+
+            echo "提交数量 ($actions_commit_count) > $trigger_count。准备过滤历史记录..."
+
+            # 获取 *所有* GitHub Actions 提交的哈希值，按拓扑顺序，最新优先
+            local actions_commits_all
+            # mapfile (或 readarray) 用于将命令输出读入数组，每行一个元素
+            mapfile -t actions_commits_all < <(git log --author="$github_actions_email" --format="%H" --topo-order HEAD)
+            if [[ $? -ne 0 ]]; then
+                echo "错误：列出 GitHub Actions 提交失败。" >&2
+                return 1
+            fi
+
+            # 计算需要移除的旧提交数量
+            local remove_count=$(( actions_commit_count - keep_latest_count ))
+            if (( remove_count < 0 )); then remove_count=0; fi # 防止计数错误导致负数
+            echo "将保留最新的 $keep_latest_count 个提交，并移除较旧的 $remove_count 个 GitHub Actions 提交。"
+
+            # 获取需要移除的 *较旧* 提交的哈希值（列表的尾部）
+            local commits_to_remove=()
+            # 从第 keep_latest_count 个索引开始（0-based），获取到列表末尾
+            for (( i=keep_latest_count; i<actions_commit_count; i++ )); do
+              # 检查数组边界以防万一
+              if [[ -n "${actions_commits_all[$i]}" ]]; then
+                  commits_to_remove+=("${actions_commits_all[$i]}")
+              else
+                  echo "警告：在索引 $i 处预期的提交比数组中找到的多。" >&2
               fi
+            done
 
-              # 创建临时文件存储要保留的最新3次提交
-              local temp_file
-              temp_file=$(mktemp)
+            # 再次检查识别出的要移除的提交数量是否正确
+            if [[ ${#commits_to_remove[@]} -eq 0 && $remove_count -gt 0 ]]; then
+              echo "错误：计算出需要移除 $remove_count 个提交，但未能识别它们的哈希值。" >&2
+              return 1
+            fi
+            if [[ ${#commits_to_remove[@]} -ne $remove_count ]]; then
+                echo "警告：识别出 ${#commits_to_remove[@]} 个要移除的提交，预期为 $remove_count。谨慎操作。" >&2
+                # 如果要严格执行，可以在这里 return 1
+            fi
 
-              # 获取GitHub Actions最新的3次提交
-              git log --author="GitHub Actions" --format="%H" -n 3 >"$temp_file"
+            # 准备要传递给 Python 回调的哈希值列表（逗号分隔）
+            local remove_hashes_str
+            remove_hashes_str=$(printf ",%s" "${commits_to_remove[@]}") # 用逗号连接数组元素
+            remove_hashes_str=${remove_hashes_str:1} # 移除开头的逗号
 
-              echo "发现${gh_actions_count}次GitHub Actions提交，将保留最新3次"
+            # 将哈希列表导出为环境变量，以便 Python 回调可以访问
+            export COMMITS_TO_REMOVE_STR="$remove_hashes_str"
 
-              # 使用git-filter-repo过滤提交
-              git filter-repo --commit-callback '
-              import sys
-              with open("'"$temp_file"'", "r") as f:
-                  keep_commits = set(line.strip() for line in f)
-              
-              # 如果不是GitHub Actions的提交，保留
-              if commit.author_name.decode() != "GitHub Actions":
-                  return commit
-              
-              # 如果是GitHub Actions的提交，检查是否在保留列表中
-              commit_hash = commit.original_id.decode()
-              if commit_hash in keep_commits:
-                  return commit
-              return None
-          ' --force
+            # 定义 git filter-repo 的 --commit-callback Python 代码
+            # 这个回调会对每个 commit 对象进行操作
+            local python_callback
+            # 使用 read -r -d '' ... <<'EOF' 可以安全地将多行代码读入变量
+            read -r -d '' python_callback <<'EOF' || true
+          import os
+          import sys # 用于调试输出
 
-              # 清理临时文件
-              rm -f "$temp_file"
+          # 从环境变量获取要移除的提交哈希字符串
+          hashes_to_remove_str = os.environ.get('COMMITS_TO_REMOVE_STR', '')
 
-              echo "清理完成，已保留GitHub Actions最新3次提交"
+          # 将字符串分割成哈希值列表，并转换为字节(bytes)集合，以便与 commit.original_id 进行比较
+          # git-filter-repo 内部使用字节字符串
+          hashes_to_remove_bytes = set()
+          if hashes_to_remove_str:
+              try:
+                  hashes_to_remove_bytes = {h.strip().encode('ascii') for h in hashes_to_remove_str.split(',') if h.strip()}
+              except Exception as e:
+                  # 如果环境变量解析出错，打印错误并继续（不跳过任何提交）
+                  print(f"Python Callback Error: Could not parse COMMITS_TO_REMOVE_STR. Error: {e}", file=sys.stderr)
+                  hashes_to_remove_bytes = set()
 
-              echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
+          # commit.original_id 是原始提交的哈希值（字节类型）
+          # 检查当前正在处理的提交的原始哈希是否在要移除的集合中
+          if commit.original_id in hashes_to_remove_bytes:
+              # 如果是，调用 commit.skip() 来告诉 filter-repo 移除（跳过）这个提交
+              # print(f"Skipping commit: {commit.original_id.decode('ascii')}", file=sys.stderr) # 调试信息
+              commit.skip()
+          # else:
+              # 否则，什么也不做，默认保留该提交
+              # 这包括所有非 GitHub Actions 的提交，以及最新的 N 个 GitHub Actions 提交
+              # print(f"Keeping commit: {commit.original_id.decode('ascii')}", file=sys.stderr) # 调试信息
+              pass
+          EOF
 
-              # 诊断：获取 GitHub Actions 的提交次数
-              COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
-              echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
-
-              # 重新添加远程仓库
-              git remote add origin "https://github.com/.git"
-
-              # 添加到远程仓库的代码
-              if [ -n "$GITHUB_TOKEN" ]; then
-                  echo "使用 GITHUB_TOKEN 进行强制推送..."
-                  # 为远程仓库设置带有token的URL
-                  REMOTE_URL="https://x-access-token:@github.com/.git"
-                  git remote set-url origin "$REMOTE_URL"
-              fi
-
-              # 强制推送到远程仓库
-              echo "强制推送修改后的历史到远程仓库..."
-              git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
-              echo "成功推送清理后的历史到远程仓库"
-
-          else
-              echo "GitHub Actions 的提交次数不超过 7，无需清理"
-          fi
+            # --- 执行过滤操作 ---
+            echo "正在运行 git filter-repo..."
+            # 使用 --force 选项需要小心。filter-repo 有新鲜克隆检查 [110, 192]
+            # 如果不是新鲜克隆，或者之前运行过 filter-repo，可能需要 --force
+            # --commit-callback 使用上面定义的 Python 代码 [177]
+            if git-filter-repo --commit-callback "$python_callback" --force; then
+              echo "Git 历史过滤成功完成。"
+              # 清理环境变量
+              unset COMMITS_TO_REMOVE_STR
+              return 0
+            else
+              echo "错误：git filter-repo 执行失败。" >&2
+              # 清理环境变量
+              unset COMMITS_TO_REMOVE_STR
+              return 1
+            fi
           }
-          # 执行清理历史函数
+
+          # --- 使用示例 ---
+          # 将此函数放入你的 .bashrc, .zshrc 或一个脚本文件中
+          # 然后在你的 Git 仓库目录中运行:
           clean_git_history
 
       - uses: igorjs/gh-actions-clean-workflow@v6
