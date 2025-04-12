@@ -60,9 +60,8 @@ jobs:
               return 1
             fi
             if ! command -v git-filter-repo &> /dev/null; then
-              echo "错误：未找到 git-filter-repo 命令。请安装它。" >&2
+              echo "错误：未找到 git-filter-repo 命令。将安装它。" >&2
               sudo apt install -y git-filter-repo
-              return 1
             fi
             if ! git rev-parse --is-inside-work-tree &> /dev/null; then
               echo "错误：当前目录不是一个 Git 仓库。" >&2
@@ -176,12 +175,34 @@ jobs:
               unset COMMITS_TO_REMOVE_STR
               return 1
             fi
+                              
+            # 诊断：获取 GitHub Actions 的提交次数
+            echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
+            COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
+            echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
+
+            # 重新添加远程仓库
+            git remote add origin "https://github.com/${{ github.repository }}.git"
+            
+            # 添加到远程仓库的代码
+            if [ -n "$GITHUB_TOKEN" ]; then
+                echo "使用 GITHUB_TOKEN 进行强制推送..."
+                # 为远程仓库设置带有token的URL
+                REMOTE_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+                git remote set-url origin "$REMOTE_URL"
+            fi
+            
+            # 强制推送到远程仓库
+            echo "强制推送修改后的历史到远程仓库..."
+            git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
+            echo "成功推送清理后的历史到远程仓库"
           }
 
           # --- 使用示例 ---
           # 将此函数放入你的 .bashrc, .zshrc 或一个脚本文件中
           # 然后在你的 Git 仓库目录中运行:
           clean_git_history
+
 
       - uses: igorjs/gh-actions-clean-workflow@v6
         with:
