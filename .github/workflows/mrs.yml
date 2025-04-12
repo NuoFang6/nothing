@@ -27,99 +27,95 @@ jobs:
         run: |
           # 清理 GitHub Actions 的 git 提交历史，只保留最新的3次提交
           clean_git_history() {
-              echo "正在检查 GitHub Actions 的提交历史..."
-              cd "${REPO_DIR}" || return 1
+          echo "正在检查 GitHub Actions 的提交历史..."
+
+          # 获取 GitHub Actions 的提交次数
+          COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
+          echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
+
+          if [ "${COMMIT_COUNT}" -gt 7 ]; then
+
+              echo "GitHub Actions 提交次数大于 7，准备清理历史..."
+
+              # 检查 git-filter-repo 是否安装
+              if ! command -v git-filter-repo >/dev/null 2>&1; then
+                  echo "git-filter-repo 未找到，尝试安装..."
+                  # 尝试使用 apt-get (适用于Debian/Ubuntu)
+                  if command -v apt-get >/dev/null 2>&1; then
+                      sudo apt-get update && sudo apt-get install -y git-filter-repo
+                  # 尝试使用 pip3 (通用Python包管理器)
+                  elif command -v pip3 >/dev/null 2>&1; then
+                      echo "尝试使用 pip3 安装 git-filter-repo..."
+                      pip3 install git-filter-repo
+                  else
+                      echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
+                      echo "跳过历史清理步骤。"
+                      return
+                  fi
+                  # 再次检查安装是否成功
+                  if ! command -v git-filter-repo >/dev/null 2>&1; then
+                      echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
+                      return
+                  fi
+                  echo "git-filter-repo 安装成功。"
+              fi
+
+              # 创建临时文件存储要保留的最新3次提交
+              local temp_file
+              temp_file=$(mktemp)
+
+              # 获取GitHub Actions最新的3次提交
+              git log --author="GitHub Actions" --format="%H" -n 3 >"$temp_file"
+
+              echo "发现${gh_actions_count}次GitHub Actions提交，将保留最新3次"
+
+              # 使用git-filter-repo过滤提交
+              git filter-repo --commit-callback '
+              import sys
+              with open("'"$temp_file"'", "r") as f:
+                  keep_commits = set(line.strip() for line in f)
               
-              # 获取 GitHub Actions 的提交次数
+              # 如果不是GitHub Actions的提交，保留
+              if commit.author_name.decode() != "GitHub Actions":
+                  return commit
+              
+              # 如果是GitHub Actions的提交，检查是否在保留列表中
+              commit_hash = commit.original_id.decode()
+              if commit_hash in keep_commits:
+                  return commit
+              return None
+          ' --force
+
+              # 清理临时文件
+              rm -f "$temp_file"
+
+              echo "清理完成，已保留GitHub Actions最新3次提交"
+
+              echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
+
+              # 诊断：获取 GitHub Actions 的提交次数
               COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
               echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
-              
-              if [ "${COMMIT_COUNT}" -gt 7 ]; then
 
-                  echo "GitHub Actions 提交次数大于 7，准备清理历史..."
+              # 重新添加远程仓库
+              git remote add origin "https://github.com/.git"
 
-                  # 检查 git-filter-repo 是否安装
-                  if ! command -v git-filter-repo >/dev/null 2>&1; then
-                      echo "git-filter-repo 未找到，尝试安装..."
-                      # 尝试使用 apt-get (适用于Debian/Ubuntu)
-                      if command -v apt-get >/dev/null 2>&1; then
-                          sudo apt-get update && sudo apt-get install -y git-filter-repo
-                      # 尝试使用 pip3 (通用Python包管理器)
-                      elif command -v pip3 >/dev/null 2>&1; then
-                          echo "尝试使用 pip3 安装 git-filter-repo..."
-                          pip3 install git-filter-repo
-                      else
-                          echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
-                          echo "跳过历史清理步骤。"
-                          return
-                      fi
-                      # 再次检查安装是否成功
-                      if ! command -v git-filter-repo >/dev/null 2>&1; then
-                          echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
-                          return
-                      fi
-                      echo "git-filter-repo 安装成功。"
-                  fi
-              
-                  # 创建临时文件存储要保留的最新3次提交
-                  local temp_file
-                  temp_file=$(mktemp)
-
-                  # 获取GitHub Actions最新的3次提交
-                  git log --author="GitHub Actions" --format="%H" -n 3 > "$temp_file"
-
-                  echo "发现${gh_actions_count}次GitHub Actions提交，将保留最新3次"
-
-                  # 使用git-filter-repo过滤提交
-                  git filter-repo --commit-callback '
-                      import sys
-                      with open("'"$temp_file"'", "r") as f:
-                          keep_commits = set(line.strip() for line in f)
-                      
-                      # 如果不是GitHub Actions的提交，保留
-                      if commit.author_name.decode() != "GitHub Actions":
-                          return commit
-                      
-                      # 如果是GitHub Actions的提交，检查是否在保留列表中
-                      commit_hash = commit.original_id.decode()
-                      if commit_hash in keep_commits:
-                          return commit
-                      return None
-                  ' --force
-
-                  # 清理临时文件
-                  rm -f "$temp_file"
-
-                  echo "清理完成，已保留GitHub Actions最新3次提交"
-                  
-                  echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
-
-                  # 诊断：获取 GitHub Actions 的提交次数
-                  COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
-                  echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
-
-                  # 重新添加远程仓库
-                  git remote add origin "https://github.com/${{ github.repository }}.git"
-                  
-                  # 添加到远程仓库的代码
-                  if [ -n "$GITHUB_TOKEN" ]; then
-                      echo "使用 GITHUB_TOKEN 进行强制推送..."
-                      # 为远程仓库设置带有token的URL
-                      REMOTE_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-                      git remote set-url origin "$REMOTE_URL"
-                  fi
-                  
-                  # 强制推送到远程仓库
-                  echo "强制推送修改后的历史到远程仓库..."
-                  git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
-                  echo "成功推送清理后的历史到远程仓库"
-
-                else
-                  echo "无法获取足够的提交信息，取消清理操作"
-                fi
-              else
-                  echo "GitHub Actions 的提交次数不超过 7，无需清理"
+              # 添加到远程仓库的代码
+              if [ -n "$GITHUB_TOKEN" ]; then
+                  echo "使用 GITHUB_TOKEN 进行强制推送..."
+                  # 为远程仓库设置带有token的URL
+                  REMOTE_URL="https://x-access-token:@github.com/.git"
+                  git remote set-url origin "$REMOTE_URL"
               fi
+
+              # 强制推送到远程仓库
+              echo "强制推送修改后的历史到远程仓库..."
+              git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
+              echo "成功推送清理后的历史到远程仓库"
+
+          else
+              echo "GitHub Actions 的提交次数不超过 7，无需清理"
+          fi
           }
           # 执行清理历史函数
           clean_git_history

@@ -69,28 +69,28 @@ init_env() {
     echo "正在初始化环境..."
     # 修改时区
     sudo timedatectl set-timezone 'Asia/Shanghai'
-    
+
     # 创建工作目录
     mkdir -p "$WORK_DIR"
     cd "$WORK_DIR" || exit 1
-    
+
     # 下载最新 mihomo
     echo "下载Mihomo工具..."
     local download_url
-    download_url=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | 
-                 jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | 
+    download_url=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases |
+        jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | 
                  .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*.gz")) | 
                  .browser_download_url' | head -1)
-    
+
     if [ -z "$download_url" ]; then
         echo "错误：无法获取Mihomo下载链接"
         exit 1
     fi
-    
+
     wget -q -O mihomo.gz "$download_url"
     gunzip mihomo.gz
     chmod +x mihomo
-    
+
     echo "环境初始化完成"
 }
 
@@ -100,77 +100,77 @@ process_ruleset_parallel() {
     local type=$2
     local format=$3
     local sources=("${!4}")
-    
+
     echo "处理 $name 规则集..."
-    
+
     # 创建临时目录
     local temp_dir="${WORK_DIR}/${name}_temp"
     mkdir -p "$temp_dir"
-    
+
     # 并行下载和处理每个源
     local i=0
     local pids=()
     local temp_files=()
-    
+
     for source in "${sources[@]}"; do
-        IFS="|" read -r url format_override process_cmd <<< "$source"
+        IFS="|" read -r url format_override process_cmd <<<"$source"
         local old_ifs="$IFS"
-        
+
         # 创建带序号的临时文件名，确保后续能按顺序合并
         local temp_file="${temp_dir}/${i}_$(basename "$url")"
         temp_files+=("$temp_file")
-        
+
         # 启动后台进程下载和处理
         (
             echo "从 $url 下载..."
-            
+
             # 如果提供了特定格式和处理命令，则使用它们
             if [ -n "$format_override" ] && [ -n "$process_cmd" ]; then
                 echo "应用自定义处理..."
-                wget -q -O - "$url" | eval "$process_cmd" | ensure_trailing_newline > "$temp_file"
+                wget -q -O - "$url" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
             else
-                wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline > "$temp_file"
+                wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
             fi
-            
+
             if [ $? -ne 0 ]; then
                 echo "警告：下载或处理 $url 时出错"
             fi
         ) &
-        
+
         # 保存后台进程的PID
         pids+=($!)
-        
+
         let i++
-        IFS="$old_ifs"  # 恢复原始IFS值
+        IFS="$old_ifs" # 恢复原始IFS值
     done
-    
+
     # 等待所有下载完成
     echo "等待 $name 的所有下载完成..."
     for pid in "${pids[@]}"; do
         wait "$pid"
     done
-    
+
     # 按顺序合并文件
     echo "合并 $name 的所有源..."
-    > "${WORK_DIR}/${name}"
+    >"${WORK_DIR}/${name}"
     for temp_file in "${temp_files[@]}"; do
-        cat "$temp_file" >> "${WORK_DIR}/${name}"
+        cat "$temp_file" >>"${WORK_DIR}/${name}"
     done
-    
+
     # 去重并准备转换
     if [ "$format" = "yaml" ]; then
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" > "${WORK_DIR}/${name}.yaml"
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
         ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     else
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" > "${WORK_DIR}/${name}.text"
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
         ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     fi
-    
+
     # 清理临时目录
     rm -rf "$temp_dir"
-    
+
     echo "$name 规则集处理完成"
 }
 
@@ -190,7 +190,7 @@ commit_changes() {
 main() {
     # 初始化环境
     init_env
-    
+
     # 并行处理各种规则集
     process_ruleset_parallel "ad" "domain" "yaml" AD_SOURCES[@] &
     pid1=$!
@@ -198,10 +198,10 @@ main() {
     pid2=$!
     process_ruleset_parallel "cnIP" "ipcidr" "text" CNIP_SOURCES[@] &
     pid3=$!
-    
+
     # 等待所有处理完成
     wait $pid1 $pid2 $pid3
-    
+
     # 提交更改
     commit_changes
 
