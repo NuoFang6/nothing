@@ -186,80 +186,6 @@ commit_changes() {
     echo "提交完成"
 }
 
-# 清理 GitHub Actions 的 git 提交历史，只保留最新的3次提交
-clean_git_history() {
-    echo "正在检查 GitHub Actions 的提交历史..."
-    cd "${REPO_DIR}" || return 1
-    
-    # 获取 GitHub Actions 的提交次数
-    COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
-    echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
-    
-    if [ "${COMMIT_COUNT}" -gt 7 ]; then
-
-        echo "GitHub Actions 提交次数大于 7，准备清理历史..."
-
-        # 检查 git-filter-repo 是否安装
-        if ! command -v git-filter-repo >/dev/null 2>&1; then
-            echo "git-filter-repo 未找到，尝试安装..."
-            # 尝试使用 apt-get (适用于Debian/Ubuntu)
-            if command -v apt-get >/dev/null 2>&1; then
-                sudo apt-get update && sudo apt-get install -y git-filter-repo
-            # 尝试使用 pip3 (通用Python包管理器)
-            elif command -v pip3 >/dev/null 2>&1; then
-                echo "尝试使用 pip3 安装 git-filter-repo..."
-                pip3 install git-filter-repo
-            else
-                echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
-                echo "跳过历史清理步骤。"
-                return
-            fi
-            # 再次检查安装是否成功
-            if ! command -v git-filter-repo >/dev/null 2>&1; then
-                echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
-                return
-            fi
-            echo "git-filter-repo 安装成功。"
-        fi
-    
-        # 获取第 3 个最新的提交的时间戳
-        # 使用数组存储最新的提交哈希值
-        mapfile -t COMMITS < <(git log --author="GitHub Actions" --format="%H" | head -3)
-        
-        if [ ${#COMMITS[@]} -ge 3 ]; then
-            CUTOFF_COMMIT="${COMMITS[2]}"
-            CUTOFF_TIME=$(git show -s --format=%ct "${CUTOFF_COMMIT}")
-            
-            echo "将保留 GitHub Actions 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
-            
-            # 创建临时Python脚本文件
-            TEMP_SCRIPT=$(mktemp)
-            cat > "${TEMP_SCRIPT}" << EOF
-#!/usr/bin/env python3
-import sys
-
-def callback(commit, metadata):
-    # 如果作者不是 GitHub Actions 或者提交时间晚于截止时间，则保留
-    if commit.author_name != b'GitHub Actions' or commit.committer_date >= ${CUTOFF_TIME}:
-        return True
-    return False
-EOF
-            
-            # 使用 filter-repo 清理历史
-            git filter-repo --commit-callback "$(cat ${TEMP_SCRIPT})"
-            
-            # 清理临时文件
-            rm "${TEMP_SCRIPT}"
-            
-            echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
-        else
-            echo "无法获取足够的提交信息，取消清理操作"
-        fi
-    else
-        echo "GitHub Actions 的提交次数不超过 7 ，无需清理"
-    fi
-}
-
 # ================ 主执行流程 ================
 main() {
     # 初始化环境
@@ -278,9 +204,6 @@ main() {
     
     # 提交更改
     commit_changes
-
-    # 执行清理历史函数
-    clean_git_history
 
     echo "所有操作已完成"
 }
