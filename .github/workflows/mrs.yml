@@ -96,7 +96,7 @@ jobs:
                       if [ -n "$GITHUB_TOKEN" ]; then
                           echo "使用 GITHUB_TOKEN 进行强制推送..."
                           # 为远程仓库设置带有token的URL
-                          REMOTE_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+                          REMOTE_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
                           git remote set-url origin "$REMOTE_URL"
                       fi
                       
