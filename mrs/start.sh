@@ -186,108 +186,80 @@ commit_changes() {
     echo "提交完成"
 }
 
-# 清理Git提交历史 (使用 git filter-repo)
+# 清理 actions-user 的 git 提交历史，只保留最新的3次提交
 clean_git_history() {
-    echo "检查是否需要清理Git提交历史..."
-    cd "$REPO_DIR" || exit 1
+    echo "正在检查 actions-user 的提交历史..."
+    cd "${REPO_DIR}" || return 1
+    
+    # 获取 actions-user 的提交次数
+    COMMIT_COUNT=$(git log --author="actions-user" --oneline | wc -l)
+    echo "actions-user 的提交次数: ${COMMIT_COUNT}"
+    
+    if [ "${COMMIT_COUNT}" -gt 7 ]; then
 
-    # 检查 git-filter-repo 是否安装
-    if ! command -v git-filter-repo >/dev/null 2>&1; then
-        echo "git-filter-repo 未找到，尝试安装..."
-        # 尝试使用 apt-get (适用于Debian/Ubuntu)
-        if command -v apt-get >/dev/null 2>&1; then
-            sudo apt-get update && sudo apt-get install -y git-filter-repo
-        # 尝试使用 pip3 (通用Python包管理器)
-        elif command -v pip3 >/dev/null 2>&1; then
-             echo "尝试使用 pip3 安装 git-filter-repo..."
-             pip3 install git-filter-repo
-        else
-            echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
-            # 根据需要决定是否退出脚本
-            # exit 1
-            echo "跳过历史清理步骤。"
-            return
-        fi
-        # 再次检查安装是否成功
+        echo "actions-user 提交次数大于 7，准备清理历史..."
+
+        # 检查 git-filter-repo 是否安装
         if ! command -v git-filter-repo >/dev/null 2>&1; then
-            echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
-            return
-        fi
-        echo "git-filter-repo 安装成功。"
-    fi
-
-    # 统计actions用户的提交数量
-    local actions_commits_count
-    # 确保在 main 分支上操作
-    git checkout main
-    git pull origin main # 获取最新更改
-    actions_commits_count=$(git log --author="GitHub Actions" --pretty=format:"%H" | wc -l)
-
-    echo "GitHub Actions用户的提交数量: $actions_commits_count"
-
-    # 如果actions用户的提交数量大于7，则只保留最新的3次提交
-    if [ "$actions_commits_count" -gt 7 ]; then
-        echo "提交数量超过 7 次，开始使用 git-filter-repo 清理历史..."
-
-        # 获取所有 GitHub Actions 提交的 SHA
-        local all_ga_commits
-        all_ga_commits=$(git log --author="GitHub Actions" --pretty=format:"%H")
-
-        # 获取需要移除的提交 SHA (除了最新的3个之外的所有)
-        local remove_ga_commits
-        # 使用 tail -n +4 来获取第4个及之后的所有行
-        remove_ga_commits=$(echo "$all_ga_commits" | tail -n +4)
-
-        if [ -z "$remove_ga_commits" ]; then
-            echo "没有找到需要移除的旧提交。跳过清理。"
-            return
-        fi
-
-        # 创建临时文件存储要移除的 commit ID
-        local temp_commit_file
-        temp_commit_file=$(mktemp)
-        # 检查 mktemp 是否成功
-        if [ -z "$temp_commit_file" ] || [ ! -f "$temp_commit_file" ]; then
-            echo "错误：无法创建临时文件。跳过清理。"
-            return
-        fi
-
-        echo "$remove_ga_commits" > "$temp_commit_file"
-        echo "准备移除以下提交："
-        cat "$temp_commit_file"
-
-        # 使用 git filter-repo 移除指定的提交
-        # --force 用于覆盖 .git/filter-repo/ 目录（如果存在）
-        # --refs main 指定只重写 main 分支的历史
-        echo "正在执行 git filter-repo..."
-        if git filter-repo --strip-commit-ids-file "$temp_commit_file" --refs main --force; then
-            echo "Git历史清理成功，已移除旧的 GitHub Actions 提交。"
-
-            # 清理临时文件
-            rm "$temp_commit_file"
-
-            # 强制推送更新后的 main 分支
-            echo "强制推送更新后的 main 分支..."
-            if git push origin main --force; then
-                echo "强制推送成功。"
+            echo "git-filter-repo 未找到，尝试安装..."
+            # 尝试使用 apt-get (适用于Debian/Ubuntu)
+            if command -v apt-get >/dev/null 2>&1; then
+                sudo apt-get update && sudo apt-get install -y git-filter-repo
+            # 尝试使用 pip3 (通用Python包管理器)
+            elif command -v pip3 >/dev/null 2>&1; then
+                echo "尝试使用 pip3 安装 git-filter-repo..."
+                pip3 install git-filter-repo
             else
-                echo "错误：强制推送失败。可能需要手动干预。"
-                # 可以选择返回错误码
-                # return 1
+                echo "错误：无法找到 apt-get 或 pip3 来安装 git-filter-repo。请确保已安装 git-filter-repo。"
+                echo "跳过历史清理步骤。"
+                return
             fi
-        else
-            echo "错误：git filter-repo 执行失败。"
+            # 再次检查安装是否成功
+            if ! command -v git-filter-repo >/dev/null 2>&1; then
+                echo "错误：git-filter-repo 安装失败。跳过历史清理步骤。"
+                return
+            fi
+            echo "git-filter-repo 安装成功。"
+        fi
+    
+        # 获取第 3 个最新的提交的时间戳
+        # 使用数组存储最新的提交哈希值
+        mapfile -t COMMITS < <(git log --author="actions-user" --format="%H" | head -3)
+        
+        if [ ${#COMMITS[@]} -ge 3 ]; then
+            CUTOFF_COMMIT="${COMMITS[2]}"
+            CUTOFF_TIME=$(git show -s --format=%ct "${CUTOFF_COMMIT}")
+            
+            echo "将保留 actions-user 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
+            
+            # 创建临时文件用于 filter-repo 配置
+            TEMP_CONFIG=$(mktemp)
+            cat > "${TEMP_CONFIG}" << EOF
+[
+    {
+        "message": "保留 actions-user 最新的3次提交并保留其他用户的所有提交",
+        "callback": {
+            "filter": "lambda commit: commit.author_name != b'actions-user' or commit.committer_date >= ${CUTOFF_TIME}"
+        }
+    }
+]
+EOF
+                        
+            # 使用 filter-repo 清理历史
+            git filter-repo --callbacks-path="${TEMP_CONFIG}"
+            
             # 清理临时文件
-            rm "$temp_commit_file"
-            # 可以选择返回错误码
-            # return 1
+            rm "${TEMP_CONFIG}"
+            
+            echo "已成功清理 actions-user 的历史提交，只保留最新的3次提交"
+        else
+            echo "无法获取足够的提交信息，取消清理操作"
         fi
     else
-        echo "GitHub Actions用户的提交数量未超过 7 次，无需清理"
+        echo "actions-user 的提交次数不超过 7，无需清理"
     fi
-    # 切换回之前的状态或保持在main分支
-    # git checkout - # 如果需要切换回之前的分支
 }
+
 
 # ================ 主执行流程 ================
 main() {
@@ -308,7 +280,7 @@ main() {
     # 提交更改
     commit_changes
 
-    # 清理提交历史
+    # 执行清理历史函数
     clean_git_history
 
     echo "所有操作已完成"
