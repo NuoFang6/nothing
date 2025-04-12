@@ -232,34 +232,33 @@ clean_git_history() {
             
             echo "将保留 GitHub Actions 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
             
-            # 创建临时文件用于 filter-repo 配置
-            TEMP_CONFIG=$(mktemp)
-            cat > "${TEMP_CONFIG}" << EOF
-[
-    {
-        "message": "保留 GitHub Actions 最新的3次提交并保留其他用户的所有提交",
-        "callback": {
-            "filter": "lambda commit: commit.author_name != b'GitHub Actions' or commit.committer_date >= ${CUTOFF_TIME}"
-        }
-    }
-]
+            # 创建临时Python脚本文件
+            TEMP_SCRIPT=$(mktemp)
+            cat > "${TEMP_SCRIPT}" << EOF
+#!/usr/bin/env python3
+import sys
+
+def callback(commit, metadata):
+    # 如果作者不是 GitHub Actions 或者提交时间晚于截止时间，则保留
+    if commit.author_name != b'GitHub Actions' or commit.committer_date >= ${CUTOFF_TIME}:
+        return True
+    return False
 EOF
-                        
+            
             # 使用 filter-repo 清理历史
-            git filter-repo --callbacks-path="${TEMP_CONFIG}"
+            git filter-repo --commit-callback "$(cat ${TEMP_SCRIPT})"
             
             # 清理临时文件
-            rm "${TEMP_CONFIG}"
+            rm "${TEMP_SCRIPT}"
             
             echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
         else
             echo "无法获取足够的提交信息，取消清理操作"
         fi
     else
-        echo "GitHub Actions 的提交次数不超过 7，无需清理"
+        echo "GitHub Actions 的提交次数不超过 7 ，无需清理"
     fi
 }
-
 
 # ================ 主执行流程 ================
 main() {
