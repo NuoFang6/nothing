@@ -19,7 +19,7 @@ jobs:
 
       - name: 运行脚本
         run: |
-          sh ./mrs/start.sh
+          bash ./mrs/start.sh
 
       - name: 推送更改
         uses: ad-m/github-push-action@master
