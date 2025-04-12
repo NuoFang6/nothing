@@ -197,9 +197,9 @@ clean_git_history() {
     
     echo "GitHub Actions用户的提交数量: $actions_commits_count"
     
-    # 如果actions用户的提交数量大于10，则只保留最新的3次提交
-    if [ "$actions_commits_count" -gt 10 ]; then
-        echo "提交数量超过10次，开始清理历史..."
+    # 如果actions用户的提交数量大于7，则只保留最新的3次提交
+    if [ "$actions_commits_count" -gt 7 ]; then
+        echo "提交数量超过 7 次，开始清理历史..."
         
         # 获取actions用户最新的第4次提交的SHA值（即要保留的3次提交之前的那个提交）
         local cutoff_commit
@@ -231,7 +231,7 @@ clean_git_history() {
             echo "无法获取截止提交点，跳过清理"
         fi
     else
-        echo "GitHub Actions用户的提交数量未超过10次，无需清理"
+        echo "GitHub Actions用户的提交数量未超过 7 次，无需清理"
     fi
 }
 
@@ -253,7 +253,7 @@ main() {
     
     # 提交更改
     commit_changes
-    
+
     # 清理提交历史
     clean_git_history
 
