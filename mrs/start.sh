@@ -186,6 +186,55 @@ commit_changes() {
     echo "提交完成"
 }
 
+# 清理Git提交历史
+clean_git_history() {
+    echo "检查是否需要清理Git提交历史..."
+    cd "$REPO_DIR" || exit 1
+    
+    # 统计actions用户的提交数量
+    local actions_commits_count
+    actions_commits_count=$(git log --author="GitHub Actions" --pretty=format:"%H" | wc -l)
+    
+    echo "GitHub Actions用户的提交数量: $actions_commits_count"
+    
+    # 如果actions用户的提交数量大于10，则只保留最新的3次提交
+    if [ "$actions_commits_count" -gt 10 ]; then
+        echo "提交数量超过10次，开始清理历史..."
+        
+        # 获取actions用户最新的第4次提交的SHA值（即要保留的3次提交之前的那个提交）
+        local cutoff_commit
+        cutoff_commit=$(git log --author="GitHub Actions" --pretty=format:"%H" | sed -n '4p')
+        
+        if [ -n "$cutoff_commit" ]; then
+            echo "找到截止提交: $cutoff_commit"
+            
+            # 创建临时分支
+            git checkout -b temp_branch
+            
+            # 使用filter-branch仅删除actions用户在截止点之前的提交
+            git filter-branch --force --env-filter '
+                if [ "$GIT_AUTHOR_NAME" = "GitHub Actions" ] && [ "$GIT_COMMITTER_NAME" = "GitHub Actions" ]; then
+                    if [ $(git merge-base --is-ancestor $GIT_COMMIT '"$cutoff_commit"') ]; then
+                        skip_commit "$@"
+                    fi
+                fi
+            ' HEAD
+            
+            # 切换回main分支并强制更新
+            git checkout main
+            git merge temp_branch -X theirs
+            git branch -D temp_branch
+            git push --force
+            
+            echo "Git历史清理完成，已保留GitHub Actions用户最新的3次提交"
+        else
+            echo "无法获取截止提交点，跳过清理"
+        fi
+    else
+        echo "GitHub Actions用户的提交数量未超过10次，无需清理"
+    fi
+}
+
 # ================ 主执行流程 ================
 main() {
     # 初始化环境
@@ -205,6 +254,9 @@ main() {
     # 提交更改
     commit_changes
     
+    # 清理提交历史
+    clean_git_history
+
     echo "所有操作已完成"
 }
 
