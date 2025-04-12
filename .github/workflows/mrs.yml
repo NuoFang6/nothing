@@ -61,73 +61,62 @@ jobs:
                       echo "git-filter-repo 安装成功。"
                   fi
               
-                  # 获取第 3 个最新的提交的时间戳
-                  # 使用数组存储最新的提交哈希值
-                  mapfile -t COMMITS < <(git log --author="GitHub Actions" --format="%H" | head -3)
+                  # 创建临时文件存储要保留的最新3次提交
+                  local temp_file
+                  temp_file=$(mktemp)
+
+                  # 获取GitHub Actions最新的3次提交
+                  git log --author="GitHub Actions" --format="%H" -n 3 > "$temp_file"
+
+                  echo "发现${gh_actions_count}次GitHub Actions提交，将保留最新3次"
+
+                  # 使用git-filter-repo过滤提交
+                  git filter-repo --commit-callback '
+                      import sys
+                      with open("'"$temp_file"'", "r") as f:
+                          keep_commits = set(line.strip() for line in f)
+                      
+                      # 如果不是GitHub Actions的提交，保留
+                      if commit.author_name.decode() != "GitHub Actions":
+                          return commit
+                      
+                      # 如果是GitHub Actions的提交，检查是否在保留列表中
+                      commit_hash = commit.original_id.decode()
+                      if commit_hash in keep_commits:
+                          return commit
+                      return None
+                  ' --force
+
+                  # 清理临时文件
+                  rm -f "$temp_file"
+
+                  echo "清理完成，已保留GitHub Actions最新3次提交"
                   
-                  if [ ${#COMMITS[@]} -ge 3 ]; then
-                      CUTOFF_COMMIT="${COMMITS[2]}"
-                      CUTOFF_TIME=$(git show -s --format=%ct "${CUTOFF_COMMIT}")
-                      
-                      echo "将保留 GitHub Actions 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
-                      
-                      # 创建临时Python脚本文件
-                      TEMP_SCRIPT=$(mktemp)
-                      cat > "${TEMP_SCRIPT}" << EOF
-          #!/usr/bin/env python3
-          import sys
+                  echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
 
-          def callback(commit, metadata):
-              # 如果作者不是 GitHub Actions 或者提交时间晚于截止时间，则保留
-              if commit.author_name != b'GitHub Actions' or commit.committer_date >= ${CUTOFF_TIME}:
-                  return True
-              return False
-          EOF
-                      
-                      # 使用 filter-repo 清理历史
-                      git filter-repo --commit-callback "$(cat ${TEMP_SCRIPT})"
-                      
-                      # 清理临时文件
-                      rm "${TEMP_SCRIPT}"
-                      
-                      echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
-                      
-                      # 诊断：检查本地 main 分支的最新提交
-                      echo "检查本地 main 分支的最新提交:"
-                      git log main -n 5 --oneline
+                  # 诊断：获取 GitHub Actions 的提交次数
+                  COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
+                  echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
 
-                      # 重新添加远程仓库
-                      git remote add origin "https://github.com/${{ github.repository }}.git"
-                      
-                      # 添加到远程仓库的代码
-                      if [ -n "$GITHUB_TOKEN" ]; then
-                          echo "使用 GITHUB_TOKEN 进行强制推送..."
-                          # 为远程仓库设置带有token的URL
-                          REMOTE_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-                          git remote set-url origin "$REMOTE_URL"
-                      fi
-                      
-                      # 强制推送到远程仓库
-                      echo "强制推送修改后的历史到远程仓库..."
-                      git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
-                      
-                      PUSH_EXIT_CODE=$?
-                      echo "Push command exited with code: $PUSH_EXIT_CODE"
-
-                      if [ $PUSH_EXIT_CODE -eq 0 ]; then
-                          echo "成功推送清理后的历史到远程仓库"
-                      else
-                          echo "警告：推送到远程仓库失败。退出码: $PUSH_EXIT_CODE"
-                          # 诊断：检查远程状态
-                          git remote -v
-                          git fetch origin
-                          echo "远程 main 分支最新提交:"
-                          git log origin/main -n 5 --oneline
-                          exit 1 # 使 Job 失败以便于调试
-                      fi
-                  else
-                      echo "无法获取足够的提交信息，取消清理操作"
+                  # 重新添加远程仓库
+                  git remote add origin "https://github.com/${{ github.repository }}.git"
+                  
+                  # 添加到远程仓库的代码
+                  if [ -n "$GITHUB_TOKEN" ]; then
+                      echo "使用 GITHUB_TOKEN 进行强制推送..."
+                      # 为远程仓库设置带有token的URL
+                      REMOTE_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+                      git remote set-url origin "$REMOTE_URL"
                   fi
+                  
+                  # 强制推送到远程仓库
+                  echo "强制推送修改后的历史到远程仓库..."
+                  git push origin main --force --verbose # 添加 --verbose 获取更详细的推送信息
+                  echo "成功推送清理后的历史到远程仓库"
+
+                else
+                  echo "无法获取足够的提交信息，取消清理操作"
+                fi
               else
                   echo "GitHub Actions 的提交次数不超过 7，无需清理"
               fi
