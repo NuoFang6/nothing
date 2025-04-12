@@ -208,25 +208,41 @@ clean_git_history() {
         if [ -n "$cutoff_commit" ]; then
             echo "找到截止提交: $cutoff_commit"
             
+            # 保存最新的3次提交
+            local latest_commits=()
+            readarray -t latest_commits < <(git log --author="GitHub Actions" --pretty=format:"%H" | head -3)
+            
             # 创建临时分支
             git checkout -b temp_branch
             
-            # 使用filter-branch仅删除actions用户在截止点之前的提交
+            # 使用更可靠的方法重写历史
             git filter-branch --force --env-filter '
                 if [ "$GIT_AUTHOR_NAME" = "GitHub Actions" ] && [ "$GIT_COMMITTER_NAME" = "GitHub Actions" ]; then
-                    if [ $(git merge-base --is-ancestor $GIT_COMMIT '"$cutoff_commit"') ]; then
-                        skip_commit "$@"
+                    # 检查当前提交是否在我们想要保留的最新3次提交中
+                    if [[ ! " ${latest_commits[@]} " =~ " $GIT_COMMIT " ]]; then
+                        # 但只有在这个提交不是保留提交的祖先时才跳过它
+                        git merge-base --is-ancestor "$GIT_COMMIT" '"$cutoff_commit"'
+                        if [ $? -eq 0 ]; then
+                            echo "跳过提交 $GIT_COMMIT"
+                            skip_commit "$@"
+                        fi
                     fi
                 fi
             ' HEAD
             
-            # 切换回main分支并强制更新
-            git checkout main
-            git merge temp_branch -X theirs
-            git branch -D temp_branch
-            git push --force
+            # 检查临时分支是否有变化
+            if git diff --quiet main temp_branch; then
+                echo "没有检测到历史变化，跳过合并操作"
+            else
+                # 切换回main分支并强制更新
+                git checkout main
+                git merge temp_branch -X theirs
+                git push --force
+                echo "Git历史清理完成，已保留GitHub Actions用户最新的3次提交"
+            fi
             
-            echo "Git历史清理完成，已保留GitHub Actions用户最新的3次提交"
+            # 清理
+            git branch -D temp_branch
         else
             echo "无法获取截止提交点，跳过清理"
         fi
