@@ -6,9 +6,6 @@ WORK_DIR="../tmp"
 REPO_DIR="../nothing"
 OUTPUT_DIR="$REPO_DIR/mrs"
 
-# Mihomo下载设置
-MIHOMO_PATTERN="mihomo-linux-amd64-alpha-.*\\.gz"
-
 # ================ sed处理函数 ================
 # 移除注释和空行
 remove_comments_and_empty() {
@@ -81,9 +78,9 @@ init_env() {
     echo "下载Mihomo工具..."
     local download_url
     download_url=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases | 
-                 jq -r ".[] | select(.tag_name | test(\"Prerelease-Alpha\")) | 
-                 .assets[] | select(.name | test(\"$MIHOMO_PATTERN\")) | 
-                 .browser_download_url" | head -1)
+                 jq -r '.[] | select(.tag_name | test("Prerelease-Alpha")) | 
+                 .assets[] | select(.name | test("mihomo-linux-amd64-alpha-.*.gz")) | 
+                 .browser_download_url' | head -1)
     
     if [ -z "$download_url" ]; then
         echo "错误：无法获取Mihomo下载链接"
