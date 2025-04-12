@@ -168,7 +168,6 @@ jobs:
               echo "Git 历史过滤成功完成。"
               # 清理环境变量
               unset COMMITS_TO_REMOVE_STR
-              return 0
             else
               echo "错误：git filter-repo 执行失败。" >&2
               # 清理环境变量
