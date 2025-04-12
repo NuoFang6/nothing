@@ -92,6 +92,9 @@ jobs:
                       
                       echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
                       
+                      # 重新添加远程仓库
+                      git remote add origin "https://github.com/${{ github.repository }}.git"
+                      
                       # 添加到远程仓库的代码
                       if [ -n "$GITHUB_TOKEN" ]; then
                           echo "使用 GITHUB_TOKEN 进行强制推送..."
