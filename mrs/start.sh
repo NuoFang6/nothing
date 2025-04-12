@@ -186,18 +186,18 @@ commit_changes() {
     echo "提交完成"
 }
 
-# 清理 actions-user 的 git 提交历史，只保留最新的3次提交
+# 清理 GitHub Actions 的 git 提交历史，只保留最新的3次提交
 clean_git_history() {
-    echo "正在检查 actions-user 的提交历史..."
+    echo "正在检查 GitHub Actions 的提交历史..."
     cd "${REPO_DIR}" || return 1
     
-    # 获取 actions-user 的提交次数
-    COMMIT_COUNT=$(git log --author="actions-user" --oneline | wc -l)
-    echo "actions-user 的提交次数: ${COMMIT_COUNT}"
+    # 获取 GitHub Actions 的提交次数
+    COMMIT_COUNT=$(git log --author="GitHub Actions" --oneline | wc -l)
+    echo "GitHub Actions 的提交次数: ${COMMIT_COUNT}"
     
     if [ "${COMMIT_COUNT}" -gt 7 ]; then
 
-        echo "actions-user 提交次数大于 7，准备清理历史..."
+        echo "GitHub Actions 提交次数大于 7，准备清理历史..."
 
         # 检查 git-filter-repo 是否安装
         if ! command -v git-filter-repo >/dev/null 2>&1; then
@@ -224,22 +224,22 @@ clean_git_history() {
     
         # 获取第 3 个最新的提交的时间戳
         # 使用数组存储最新的提交哈希值
-        mapfile -t COMMITS < <(git log --author="actions-user" --format="%H" | head -3)
+        mapfile -t COMMITS < <(git log --author="GitHub Actions" --format="%H" | head -3)
         
         if [ ${#COMMITS[@]} -ge 3 ]; then
             CUTOFF_COMMIT="${COMMITS[2]}"
             CUTOFF_TIME=$(git show -s --format=%ct "${CUTOFF_COMMIT}")
             
-            echo "将保留 actions-user 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
+            echo "将保留 GitHub Actions 在 $(git show -s --format=%ci "${CUTOFF_COMMIT}") 之后的提交"
             
             # 创建临时文件用于 filter-repo 配置
             TEMP_CONFIG=$(mktemp)
             cat > "${TEMP_CONFIG}" << EOF
 [
     {
-        "message": "保留 actions-user 最新的3次提交并保留其他用户的所有提交",
+        "message": "保留 GitHub Actions 最新的3次提交并保留其他用户的所有提交",
         "callback": {
-            "filter": "lambda commit: commit.author_name != b'actions-user' or commit.committer_date >= ${CUTOFF_TIME}"
+            "filter": "lambda commit: commit.author_name != b'GitHub Actions' or commit.committer_date >= ${CUTOFF_TIME}"
         }
     }
 ]
@@ -251,12 +251,12 @@ EOF
             # 清理临时文件
             rm "${TEMP_CONFIG}"
             
-            echo "已成功清理 actions-user 的历史提交，只保留最新的3次提交"
+            echo "已成功清理 GitHub Actions 的历史提交，只保留最新的3次提交"
         else
             echo "无法获取足够的提交信息，取消清理操作"
         fi
     else
-        echo "actions-user 的提交次数不超过 7，无需清理"
+        echo "GitHub Actions 的提交次数不超过 7，无需清理"
     fi
 }
 
