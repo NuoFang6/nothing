@@ -43,68 +43,96 @@ remove_duplicates() {
 filter_covered_domains() {
     # 创建临时文件
     local input_file=$1
+    local output_file=$2
     local temp_file=$(mktemp)
+    local prefix_temp=$(mktemp)
+    local normal_temp=$(mktemp)
 
-    # 第一步：提取所有域名（去除YAML/格式前缀和后缀），并区分普通域名和带+.的域名
-    awk '{
-        # 提取域名部分 (去除前缀和引号)
+    # 处理YAML格式的头部，确保保留payload:行
+    if grep -q "payload:" "$input_file"; then
+        echo "payload:" >"$output_file"
+    fi
+
+    # 第一步：提取所有域名（去除格式前缀和后缀），分离+.域名和普通域名
+    awk '
+    !/^payload:/ {  # 跳过payload行
         if ($0 ~ /\+\./) {
-            # 对于 +. 开头的域名
+            # 带+.前缀的域名
             domain = $0
-            gsub(/^.*\047\+\./, "", domain)  # 移除前缀和+.
-            gsub(/\047.*$/, "", domain)      # 移除后缀
-            print "+." domain
-        } else {
-            # 对于普通域名
+            gsub(/^.*[\047"]\+\./, "", domain)  # 移除前缀和+.
+            gsub(/[\047"].*$/, "", domain)      # 移除后缀
+            print domain > "'$prefix_temp'"
+        } else if ($0 ~ /[\047"]/) {
+            # 普通域名
             domain = $0
-            gsub(/^.*\047/, "", domain)      # 移除前缀
-            gsub(/\047.*$/, "", domain)      # 移除后缀
-            print domain
+            gsub(/^.*[\047"]/, "", domain)      # 移除前缀
+            gsub(/[\047"].*$/, "", domain)      # 移除后缀
+            print domain > "'$normal_temp'"
         }
-    }' "$input_file" | sort >"$temp_file"
+    }' "$input_file"
 
-    # 第二步：对比查找被覆盖的域名，输出过滤后的结果
-    awk '{
-        # 当前的完整行
-        line = $0
-        
-        # 如果是带+.的域名
-        if (line ~ /^\+\./) {
-            # 存储该域，标记为有前缀版本
-            domain = substr(line, 3)  # 去掉 "+."
-            has_prefix[domain] = 1
-            print line  # 输出带前缀的域名行
-        } else {
-            # 普通域名，检查是否有+.版本
-            if (!has_prefix[line]) {
-                print line  # 如果没有+.版本，则输出
+    # 将+.域名加载到关联数组
+    declare -A prefix_domains
+    while read -r domain; do
+        prefix_domains["$domain"]=1
+    done <"$prefix_temp"
+
+    # 过滤普通域名，排除已有+.版本的
+    while read -r domain; do
+        if [[ -z "${prefix_domains[$domain]}" ]]; then
+            # 保存没有+.版本的普通域名
+            echo "$domain" >>"$temp_file"
+        fi
+    done <"$normal_temp"
+
+    # 添加所有+.域名
+    cat "$prefix_temp" >>"$temp_file"
+
+    # 排序并格式化输出
+    if grep -q "  - " "$input_file" | head -1; then
+        # YAML格式
+        sort "$temp_file" | awk '{
+            if ($0 ~ /^[^+]/) {
+                # 普通域名
+                print "  - '\''" $0 "'\''";
+            } else {
+                # +.域名 (已经处理过，不含+.前缀了)
+                print "  - '\''+." $0 "'\''";
             }
-        }
-    }' "$temp_file" >"${temp_file}.filtered"
-
-    # 第三步：恢复原始格式并输出
-    local prefix_pattern=$(head -1 "$input_file" | sed -E 's/([^[:space:]]+).*$/\1/')
-    local suffix_pattern=$(head -1 "$input_file" | sed -E 's/^.*([[:punct:]])$/\1/')
-
-    awk -v prefix="$prefix_pattern" -v suffix="$suffix_pattern" '{
-        if ($0 ~ /^\+\./) {
-            # 对于 +. 开头的域名
-            domain = substr($0, 3)  # 去掉 +.
-            print prefix "'\''+" domain "'\''" suffix
-        } else {
-            # 对于普通域名
-            print prefix "'\''" $0 "'\''" suffix
-        }
-    }' "${temp_file}.filtered"
+        }' >>"$output_file"
+    else
+        # 文本格式
+        sort "$temp_file" | awk '{
+            if ($0 ~ /^[^+]/) {
+                # 普通域名
+                print $0
+            } else {
+                # +.域名 (已经处理过，不含+.前缀了)
+                print "+." $0
+            }
+        }' >"$output_file"
+    fi
 
     # 清理临时文件
-    rm -f "$temp_file" "${temp_file}.filtered"
+    rm -f "$temp_file" "$prefix_temp" "$normal_temp"
 }
 
 # 按字典序排序规则（忽略YAML语法）
 sort_rules() {
     local input_file=$1
     local temp_file=$(mktemp)
+    local header_file=$(mktemp)
+    local content_file=$(mktemp)
+
+    # 如果是YAML格式，保留payload:行
+    if grep -q "^payload:" "$input_file"; then
+        grep "^payload:" "$input_file" >"$header_file"
+        grep -v "^payload:" "$input_file" >"$content_file"
+    else
+        # 如果是文本格式，不需要处理header
+        touch "$header_file" # 创建空文件
+        cat "$input_file" >"$content_file"
+    fi
 
     # 提取域名部分并排序
     awk '{
@@ -115,22 +143,25 @@ sort_rules() {
         if ($0 ~ /\+\./) {
             # 对于 +. 开头的域名
             domain = $0
-            gsub(/^.*\047\+\./, "", domain)  # 移除前缀和+.
-            gsub(/\047.*$/, "", domain)      # 移除后缀
+            gsub(/^.*[\047"]\+\./, "", domain)  # 移除前缀和+.
+            gsub(/[\047"].*$/, "", domain)      # 移除后缀
             # 输出: 域名 + 原始行 (用特殊分隔符分开)
             print domain "§§§" orig_line
         } else {
             # 对于普通域名
             domain = $0
-            gsub(/^.*\047/, "", domain)      # 移除前缀
-            gsub(/\047.*$/, "", domain)      # 移除后缀
+            gsub(/^.*[\047"]/, "", domain)      # 移除前缀
+            gsub(/[\047"].*$/, "", domain)      # 移除后缀
             # 输出: 域名 + 原始行 (用特殊分隔符分开)
             print domain "§§§" orig_line
         }
-    }' "$input_file" | sort | awk -F "§§§" '{print $2}' >"$temp_file"
+    }' "$content_file" | sort | awk -F "§§§" '{print $2}' >"$temp_file"
 
-    # 替换原文件
-    mv "$temp_file" "$input_file"
+    # 合并header和排序后的内容
+    cat "$header_file" "$temp_file" >"$input_file"
+
+    # 清理临时文件
+    rm -f "$temp_file" "$header_file" "$content_file"
 }
 
 # 数据源配置
@@ -257,7 +288,7 @@ process_ruleset_parallel() {
         # 过滤被 +. 前缀覆盖的域名（类型为 domain 时才处理）
         if [ "$type" = "domain" ]; then
             echo "过滤被 +. 前缀规则覆盖的域名..."
-            filter_covered_domains "${WORK_DIR}/${name}.yaml" >"${WORK_DIR}/${name}.filtered.yaml"
+            filter_covered_domains "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.filtered.yaml"
             mv "${WORK_DIR}/${name}.filtered.yaml" "${WORK_DIR}/${name}.yaml"
         fi
 
@@ -275,7 +306,7 @@ process_ruleset_parallel() {
         # 过滤被 +. 前缀覆盖的域名（类型为 domain 时才处理）
         if [ "$type" = "domain" ]; then
             echo "过滤被 +. 前缀规则覆盖的域名..."
-            filter_covered_domains "${WORK_DIR}/${name}.text" >"${WORK_DIR}/${name}.filtered.text"
+            filter_covered_domains "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.filtered.text"
             mv "${WORK_DIR}/${name}.filtered.text" "${WORK_DIR}/${name}.text"
         fi
 
