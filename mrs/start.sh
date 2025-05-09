@@ -48,28 +48,45 @@ filter_covered_domains() {
     local prefix_temp=$(mktemp)
     local normal_temp=$(mktemp)
 
-    # 处理YAML格式的头部，确保保留payload:行
+    # 判断是否为YAML格式
+    local is_yaml=false
     if grep -q "payload:" "$input_file"; then
+        is_yaml=true
         echo "payload:" >"$output_file"
     fi
 
     # 第一步：提取所有域名（去除格式前缀和后缀），分离+.域名和普通域名
-    awk '
-    !/^payload:/ {  # 跳过payload行
-        if ($0 ~ /\+\./) {
-            # 带+.前缀的域名
-            domain = $0
-            gsub(/^.*[\047"]\+\./, "", domain)  # 移除前缀和+.
-            gsub(/[\047"].*$/, "", domain)      # 移除后缀
-            print domain > "'$prefix_temp'"
-        } else if ($0 ~ /[\047"]/) {
-            # 普通域名
-            domain = $0
-            gsub(/^.*[\047"]/, "", domain)      # 移除前缀
-            gsub(/[\047"].*$/, "", domain)      # 移除后缀
-            print domain > "'$normal_temp'"
-        }
-    }' "$input_file"
+    if [ "$is_yaml" = true ]; then
+        # YAML格式处理
+        awk '
+        !/^payload:/ {
+            if ($0 ~ /\+\./) {
+                # 带+.前缀的域名
+                domain = $0
+                gsub(/^[[:space:]]*- ['\''"]?\+\./, "", domain)  # 移除前缀和+.
+                gsub(/['\''"][[:space:]]*$/, "", domain)         # 移除后缀
+                print domain > "'$prefix_temp'"
+            } else if ($0 ~ /['\''"]/) {
+                # 普通域名
+                domain = $0
+                gsub(/^[[:space:]]*- ['\''"]?/, "", domain)     # 移除前缀
+                gsub(/['\''"][[:space:]]*$/, "", domain)        # 移除后缀
+                print domain > "'$normal_temp'"
+            }
+        }' "$input_file"
+    else
+        # 文本格式处理
+        awk '{
+            if ($0 ~ /^\+\./) {
+                # 带+.前缀的域名
+                domain = substr($0, 3)  # 去掉 "+."
+                print domain > "'$prefix_temp'"
+            } else {
+                # 普通域名
+                print $0 > "'$normal_temp'"
+            }
+        }' "$input_file"
+    fi
 
     # 将+.域名加载到关联数组
     declare -A prefix_domains
@@ -89,26 +106,27 @@ filter_covered_domains() {
     cat "$prefix_temp" >>"$temp_file"
 
     # 排序并格式化输出
-    if grep -q "  - " "$input_file" | head -1; then
+    if [ "$is_yaml" = true ]; then
         # YAML格式
         sort "$temp_file" | awk '{
-            if ($0 ~ /^[^+]/) {
+            # 对于所有域名（包括原来带+.的和不带+.的）统一格式
+            if ($0 ~ /^[+]/) {
+                # 处理原始数据中就带+.的域名（这里其实已经去掉+.了）
+                print "  - '\''+." $0 "'\''";
+            } else {
                 # 普通域名
                 print "  - '\''" $0 "'\''";
-            } else {
-                # +.域名 (已经处理过，不含+.前缀了)
-                print "  - '\''+." $0 "'\''";
             }
         }' >>"$output_file"
     else
         # 文本格式
         sort "$temp_file" | awk '{
-            if ($0 ~ /^[^+]/) {
-                # 普通域名
-                print $0
+            if ($0 ~ /^[+]/) {
+                # 原始数据中带+.的域名（这里已经去掉+.了）
+                print "+." $0;
             } else {
-                # +.域名 (已经处理过，不含+.前缀了)
-                print "+." $0
+                # 普通域名
+                print $0;
             }
         }' >"$output_file"
     fi
@@ -123,9 +141,12 @@ sort_rules() {
     local temp_file=$(mktemp)
     local header_file=$(mktemp)
     local content_file=$(mktemp)
+    local sorted_file=$(mktemp)
 
-    # 如果是YAML格式，保留payload:行
+    # 判断是否为YAML格式
+    local is_yaml=false
     if grep -q "^payload:" "$input_file"; then
+        is_yaml=true
         grep "^payload:" "$input_file" >"$header_file"
         grep -v "^payload:" "$input_file" >"$content_file"
     else
@@ -135,33 +156,51 @@ sort_rules() {
     fi
 
     # 提取域名部分并排序
-    awk '{
-        # 保存原始行
-        orig_line = $0
-        
-        # 提取域名部分 (去除前缀和引号)
-        if ($0 ~ /\+\./) {
-            # 对于 +. 开头的域名
-            domain = $0
-            gsub(/^.*[\047"]\+\./, "", domain)  # 移除前缀和+.
-            gsub(/[\047"].*$/, "", domain)      # 移除后缀
-            # 输出: 域名 + 原始行 (用特殊分隔符分开)
-            print domain "§§§" orig_line
-        } else {
-            # 对于普通域名
-            domain = $0
-            gsub(/^.*[\047"]/, "", domain)      # 移除前缀
-            gsub(/[\047"].*$/, "", domain)      # 移除后缀
-            # 输出: 域名 + 原始行 (用特殊分隔符分开)
-            print domain "§§§" orig_line
-        }
-    }' "$content_file" | sort | awk -F "§§§" '{print $2}' >"$temp_file"
+    if [ "$is_yaml" = true ]; then
+        # YAML格式
+        awk '{
+            # 保存原始行
+            orig_line = $0
+            
+            # 提取域名部分 (去除前缀和引号)
+            if ($0 ~ /\+\./) {
+                # 对于 +. 开头的域名
+                domain = $0
+                gsub(/^[[:space:]]*- ['\''"]?\+\./, "", domain)  # 移除前缀和+.
+                gsub(/['\''"][[:space:]]*$/, "", domain)         # 移除后缀
+                # 输出: 域名 + 原始行 (用特殊分隔符分开)
+                print domain "§§§" orig_line
+            } else {
+                # 对于普通域名
+                domain = $0
+                gsub(/^[[:space:]]*- ['\''"]?/, "", domain)     # 移除前缀
+                gsub(/['\''"][[:space:]]*$/, "", domain)        # 移除后缀
+                # 输出: 域名 + 原始行 (用特殊分隔符分开)
+                print domain "§§§" orig_line
+            }
+        }' "$content_file" | sort | awk -F "§§§" '{print $2}' >"$sorted_file"
+    else
+        # 文本格式 - 直接排序，保持+.前缀
+        awk '{
+            # 保存原始行
+            orig_line = $0
+            
+            if ($0 ~ /^\+\./) {
+                # 带+.前缀的域名，保留前缀但按后面的部分排序
+                domain = substr($0, 3)  # 去掉 "+."
+                print domain "§§§" orig_line
+            } else {
+                # 普通域名
+                print $0 "§§§" orig_line
+            }
+        }' "$content_file" | sort | awk -F "§§§" '{print $2}' >"$sorted_file"
+    fi
 
     # 合并header和排序后的内容
-    cat "$header_file" "$temp_file" >"$input_file"
+    cat "$header_file" "$sorted_file" >"$input_file"
 
     # 清理临时文件
-    rm -f "$temp_file" "$header_file" "$content_file"
+    rm -f "$temp_file" "$header_file" "$content_file" "$sorted_file"
 }
 
 # 数据源配置
