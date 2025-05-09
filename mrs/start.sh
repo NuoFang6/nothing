@@ -39,6 +39,100 @@ remove_duplicates() {
     awk '!seen[$0]++'
 }
 
+# 过滤被 +. 前缀规则覆盖的域名
+filter_covered_domains() {
+    # 创建临时文件
+    local input_file=$1
+    local temp_file=$(mktemp)
+
+    # 第一步：提取所有域名（去除YAML/格式前缀和后缀），并区分普通域名和带+.的域名
+    awk '{
+        # 提取域名部分 (去除前缀和引号)
+        if ($0 ~ /\+\./) {
+            # 对于 +. 开头的域名
+            domain = $0
+            gsub(/^.*\047\+\./, "", domain)  # 移除前缀和+.
+            gsub(/\047.*$/, "", domain)      # 移除后缀
+            print "+." domain
+        } else {
+            # 对于普通域名
+            domain = $0
+            gsub(/^.*\047/, "", domain)      # 移除前缀
+            gsub(/\047.*$/, "", domain)      # 移除后缀
+            print domain
+        }
+    }' "$input_file" | sort >"$temp_file"
+
+    # 第二步：对比查找被覆盖的域名，输出过滤后的结果
+    awk '{
+        # 当前的完整行
+        line = $0
+        
+        # 如果是带+.的域名
+        if (line ~ /^\+\./) {
+            # 存储该域，标记为有前缀版本
+            domain = substr(line, 3)  # 去掉 "+."
+            has_prefix[domain] = 1
+            print line  # 输出带前缀的域名行
+        } else {
+            # 普通域名，检查是否有+.版本
+            if (!has_prefix[line]) {
+                print line  # 如果没有+.版本，则输出
+            }
+        }
+    }' "$temp_file" >"${temp_file}.filtered"
+
+    # 第三步：恢复原始格式并输出
+    local prefix_pattern=$(head -1 "$input_file" | sed -E 's/([^[:space:]]+).*$/\1/')
+    local suffix_pattern=$(head -1 "$input_file" | sed -E 's/^.*([[:punct:]])$/\1/')
+
+    awk -v prefix="$prefix_pattern" -v suffix="$suffix_pattern" '{
+        if ($0 ~ /^\+\./) {
+            # 对于 +. 开头的域名
+            domain = substr($0, 3)  # 去掉 +.
+            print prefix "'\''+" domain "'\''" suffix
+        } else {
+            # 对于普通域名
+            print prefix "'\''" $0 "'\''" suffix
+        }
+    }' "${temp_file}.filtered"
+
+    # 清理临时文件
+    rm -f "$temp_file" "${temp_file}.filtered"
+}
+
+# 按字典序排序规则（忽略YAML语法）
+sort_rules() {
+    local input_file=$1
+    local temp_file=$(mktemp)
+
+    # 提取域名部分并排序
+    awk '{
+        # 保存原始行
+        orig_line = $0
+        
+        # 提取域名部分 (去除前缀和引号)
+        if ($0 ~ /\+\./) {
+            # 对于 +. 开头的域名
+            domain = $0
+            gsub(/^.*\047\+\./, "", domain)  # 移除前缀和+.
+            gsub(/\047.*$/, "", domain)      # 移除后缀
+            # 输出: 域名 + 原始行 (用特殊分隔符分开)
+            print domain "§§§" orig_line
+        } else {
+            # 对于普通域名
+            domain = $0
+            gsub(/^.*\047/, "", domain)      # 移除前缀
+            gsub(/\047.*$/, "", domain)      # 移除后缀
+            # 输出: 域名 + 原始行 (用特殊分隔符分开)
+            print domain "§§§" orig_line
+        }
+    }' "$input_file" | sort | awk -F "§§§" '{print $2}' >"$temp_file"
+
+    # 替换原文件
+    mv "$temp_file" "$input_file"
+}
+
 # 数据源配置
 # ad 规则源
 AD_SOURCES=(
@@ -155,15 +249,41 @@ process_ruleset_parallel() {
     >"${WORK_DIR}/${name}"
     for temp_file in "${temp_files[@]}"; do
         cat "$temp_file" >>"${WORK_DIR}/${name}"
-    done
-
-    # 去重并准备转换
+    done # 去重并准备转换
     if [ "$format" = "yaml" ]; then
+        # 先去重
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
+
+        # 过滤被 +. 前缀覆盖的域名（类型为 domain 时才处理）
+        if [ "$type" = "domain" ]; then
+            echo "过滤被 +. 前缀规则覆盖的域名..."
+            filter_covered_domains "${WORK_DIR}/${name}.yaml" >"${WORK_DIR}/${name}.filtered.yaml"
+            mv "${WORK_DIR}/${name}.filtered.yaml" "${WORK_DIR}/${name}.yaml"
+        fi
+
+        # 按字典序排序规则
+        echo "按字典序排序规则..."
+        sort_rules "${WORK_DIR}/${name}.yaml"
+
+        # 转换为 MRS 格式
         ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     else
+        # 先去重
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
+
+        # 过滤被 +. 前缀覆盖的域名（类型为 domain 时才处理）
+        if [ "$type" = "domain" ]; then
+            echo "过滤被 +. 前缀规则覆盖的域名..."
+            filter_covered_domains "${WORK_DIR}/${name}.text" >"${WORK_DIR}/${name}.filtered.text"
+            mv "${WORK_DIR}/${name}.filtered.text" "${WORK_DIR}/${name}.text"
+        fi
+
+        # 按字典序排序规则
+        echo "按字典序排序规则..."
+        sort_rules "${WORK_DIR}/${name}.text"
+
+        # 转换为 MRS 格式
         ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     fi
