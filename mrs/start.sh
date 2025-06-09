@@ -94,6 +94,40 @@ init_env() {
     echo "环境初始化完成"
 }
 
+# 带重试功能的下载函数
+download_with_retry() {
+    local url="$1"
+    local output_file="$2"
+    local max_retries=2
+    local retry_count=0
+    local delays=(10 60) # 首次重试等10秒，第二次等60秒
+
+    while [ $retry_count -le $max_retries ]; do
+        # 使用 curl 进行下载，比 wget 更容易获取状态码
+        # -s: 静默模式, -f: 失败时快速退出(返回22), -L: 跟随重定向, -o: 输出到文件
+        curl -s -f -L -o "$output_file" "$url"
+        local exit_code=$?
+
+        if [ $exit_code -eq 0 ]; then
+            echo "从 $url 下载成功。"
+            return 0 # 成功，返回0
+        else
+            echo "警告：下载 $url 失败 (退出码: $exit_code)。"
+            rm -f "$output_file" # 删除可能不完整的文件
+
+            if [ $retry_count -lt $max_retries ]; then
+                local delay=${delays[$retry_count]}
+                echo "将在 ${delay}s 后进行重试 ($((retry_count + 1))/$max_retries)..."
+                sleep "$delay"
+            fi
+            retry_count=$((retry_count + 1))
+        fi
+    done
+
+    echo "错误：下载 $url 在多次重试后仍然失败。"
+    return 1 # 最终失败，返回1
+}
+
 # 并行处理规则并转换为MRS格式
 process_ruleset_parallel() {
     local name=$1
@@ -116,36 +150,46 @@ process_ruleset_parallel() {
         IFS="|" read -r url format_override process_cmd <<<"$source"
         local old_ifs="$IFS"
 
-        # 创建带序号的临时文件名，确保后续能按顺序合并
         local temp_file="${temp_dir}/${i}_$(basename "$url")"
         temp_files+=("$temp_file")
 
         # 启动后台进程下载和处理
         (
-            echo "从 $url 下载..."
-
-            # 如果提供了特定格式和处理命令，则使用它们
-            if [ -n "$format_override" ] && [ -n "$process_cmd" ]; then
-                echo "应用自定义处理..."
-                wget -q -O - "$url" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
-            else
-                wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
+            # 使用新的带重试的下载函数
+            # 先将源内容下载到一个临时原始文件中
+            local raw_temp_file="${temp_file}.raw"
+            if ! download_with_retry "$url" "$raw_temp_file"; then
+                # 如果下载最终失败，创建一个空的占位文件，避免后续合并出错
+                >"$temp_file"
+                exit 1 # 退出这个子进程
             fi
 
-            if [ $? -ne 0 ]; then
-                echo "警告：下载或处理 $url 时出错"
+            # 下载成功后，再进行处理
+            local stream
+            stream=$(cat "$raw_temp_file")
+            rm -f "$raw_temp_file" # 处理完就删除原始文件
+
+            if [ -n "$format_override" ] && [ -n "$process_cmd" ]; then
+                # 警告：eval 存在安全风险，但按主人“最小化修改”的要求保留
+                echo "应用自定义处理 for $url..."
+                echo "$stream" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
+            else
+                echo "$stream" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
+            fi
+
+            # 检查处理后的文件是否为空，如果是则警告
+            if [ ! -s "$temp_file" ]; then
+                echo "警告：处理 $url 后文件为空。"
             fi
         ) &
 
-        # 保存后台进程的PID
         pids+=($!)
-
         let i++
-        IFS="$old_ifs" # 恢复原始IFS值
+        IFS="$old_ifs"
     done
 
     # 等待所有下载完成
-    echo "等待 $name 的所有下载完成..."
+    echo "等待 $name 的所有下载和处理完成..."
     for pid in "${pids[@]}"; do
         wait "$pid"
     done
@@ -154,23 +198,31 @@ process_ruleset_parallel() {
     echo "合并 $name 的所有源..."
     >"${WORK_DIR}/${name}"
     for temp_file in "${temp_files[@]}"; do
-        cat "$temp_file" >>"${WORK_DIR}/${name}"
+        # 只合并非空文件
+        if [ -s "$temp_file" ]; then
+            cat "$temp_file" >>"${WORK_DIR}/${name}"
+        fi
     done
 
-    # 去重并准备转换
-    if [ "$format" = "yaml" ]; then
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
-        ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
-        mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
+    local ext="${format:-text}"
+    local source_file="${WORK_DIR}/${name}.${ext}"
+    local mrs_file_temp="${WORK_DIR}/${name}.mrs"
+
+    # 去重并生成最终的源文件
+    cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"$source_file"
+
+    if [ ! -s "$source_file" ]; then
+        echo "警告：最终合并的规则文件 '$source_file' 为空，跳过转换。"
     else
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
-        ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
-        mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
+        echo "正在将 '$source_file' 转换为 mrs 格式..."
+        if ./mihomo convert-ruleset "$type" "$ext" "$source_file" "$mrs_file_temp"; then
+            mv -f "$source_file" "$mrs_file_temp" "$OUTPUT_DIR/"
+        else
+            echo "错误：Mihomo 转换 '$source_file' 失败。源文件将不会被移动。"
+        fi
     fi
 
-    # 清理临时目录
     rm -rf "$temp_dir"
-
     echo "$name 规则集处理完成"
 }
 
