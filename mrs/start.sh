@@ -35,9 +35,10 @@ format_yaml_list() {
 }
 
 # 移除重复行
-remove_duplicates() {
-    sort -u
-}
+# remove_duplicates() {
+#     # 使用 awk 保留原始顺序去重，避免 sort 改变 YAML 语法顺序
+#     awk '!seen[$0]++'
+# }
 
 # 数据源配置
 # ad 规则源
@@ -165,18 +166,19 @@ process_ruleset_parallel() {
 
     # 去重并准备转换
     if [ "$format" = "yaml" ]; then
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
+        # 保留首行，其他行排序去重并过滤空行
+        head -n1 "${WORK_DIR}/${name}" >"${WORK_DIR}/${name}.yaml"
+        tail -n +2 "${WORK_DIR}/${name}" | sed "/^$/d" | sort -u >>"${WORK_DIR}/${name}.yaml"
         # 调试: 显示合并后 YAML 文件大小并标明正在转换的规则集
         yaml_size=$(wc -c <"${WORK_DIR}/${name}.yaml" || true)
-        sleep 3
         echo "调试: 合并后的 YAML 文件 '${WORK_DIR}/${name}.yaml' 大小: ${yaml_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     else
-        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
-        # 调试: 显示合并后 TEXT 文件大小并标明正在转换的规则集
+        # text 分支：删除空行后排序去重
+        sed "/^$/d" "${WORK_DIR}/${name}" | sort -u >"${WORK_DIR}/${name}.text"
+        # 调试: 显示合并后 TEXT 文件大小并标明正在转换规则集
         text_size=$(wc -c <"${WORK_DIR}/${name}.text" || true)
-        sleep 3
         echo "调试: 合并后的 TEXT 文件 '${WORK_DIR}/${name}.text' 大小: ${text_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
