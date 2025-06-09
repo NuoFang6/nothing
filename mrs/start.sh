@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # ================ 配置部分 ================
-# 工作目录设置
-WORK_DIR="../tmp"
-REPO_DIR="../nothing"
+# 定位脚本所在目录，避免../nothing 引起的路径错位
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WORK_DIR="$SCRIPT_DIR/../tmp"
+REPO_DIR="$SCRIPT_DIR/.."
 OUTPUT_DIR="$REPO_DIR/mrs"
 
 # ================ sed处理函数 ================
@@ -228,13 +229,16 @@ process_ruleset_parallel() {
 
 # 提交更改到Git仓库的孤儿分支
 commit_changes() {
-    # 定义我们的专属分支名
     local branch_name="rules-autoupdate"
 
     echo "正在向专用的 '$branch_name' 分支提交更改..."
-    cd "$REPO_DIR" || exit 1
+    # 切到仓库根目录
+    cd "$REPO_DIR" || {
+        echo "错误：进入仓库根目录失败：$REPO_DIR"
+        exit 1
+    }
 
-    # 配置Git用户信息
+    # 配置 Git 用户
     git config --local user.email "actions@github.com"
     git config --local user.name "GitHub Actions"
 
