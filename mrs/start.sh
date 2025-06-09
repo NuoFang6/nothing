@@ -168,6 +168,7 @@ process_ruleset_parallel() {
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
         # 调试: 显示合并后 YAML 文件大小并标明正在转换的规则集
         yaml_size=$(wc -c <"${WORK_DIR}/${name}.yaml" || true)
+        sleep 3
         echo "调试: 合并后的 YAML 文件 '${WORK_DIR}/${name}.yaml' 大小: ${yaml_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
@@ -175,6 +176,7 @@ process_ruleset_parallel() {
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
         # 调试: 显示合并后 TEXT 文件大小并标明正在转换的规则集
         text_size=$(wc -c <"${WORK_DIR}/${name}.text" || true)
+        sleep 3
         echo "调试: 合并后的 TEXT 文件 '${WORK_DIR}/${name}.text' 大小: ${text_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
