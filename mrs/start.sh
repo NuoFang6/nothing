@@ -132,6 +132,12 @@ process_ruleset_parallel() {
                 wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
             fi
 
+            # 显示下载并处理后文件大小
+            file_size=$(wc -c <"$temp_file" || true)
+            echo "调试: 下载并处理后文件 '$temp_file' 大小: ${file_size} 字节"
+            if [ "$file_size" -eq 0 ]; then
+                echo "错误: 文件 '$temp_file' 为空，可能下载或处理失败"
+            fi
             if [ $? -ne 0 ]; then
                 echo "警告：下载或处理 $url 时出错"
             fi
@@ -160,10 +166,16 @@ process_ruleset_parallel() {
     # 去重并准备转换
     if [ "$format" = "yaml" ]; then
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
+        # 调试: 显示合并后 YAML 文件大小并标明正在转换的规则集
+        yaml_size=$(wc -c <"${WORK_DIR}/${name}.yaml" || true)
+        echo "调试: 合并后的 YAML 文件 '${WORK_DIR}/${name}.yaml' 大小: ${yaml_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     else
         cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
+        # 调试: 显示合并后 TEXT 文件大小并标明正在转换的规则集
+        text_size=$(wc -c <"${WORK_DIR}/${name}.text" || true)
+        echo "调试: 合并后的 TEXT 文件 '${WORK_DIR}/${name}.text' 大小: ${text_size} 字节，开始转换规则集 '$name'"
         ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
         mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     fi
