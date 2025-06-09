@@ -64,20 +64,20 @@ remove_duplicates() {
 
 # ================ 数据源配置 ================
 # 使用更清晰的关联数组来配置源，方便扩展
-# 格式: [规则名]="类型 格式 '源1|处理命令' '源2|处理命令' ..."
+# 格式: [规则名]="类型 格式 源1|处理命令 源2|处理命令 ..."
 declare -A RULE_SETS
 RULE_SETS=(
-    ["ad"]="domain yaml 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml|remove_comments_and_empty' \
-                         'https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list|remove_comments_and_empty|format_yaml_list' \
-                         'https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt|remove_comments_and_empty|format_pihole'"
-    ["cn"]="domain text 'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.list' \
-                       'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.list' \
-                       'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.list' \
-                       'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.list' \
-                       'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list' \
-                       'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.list'"
-    ["cnIP"]="ipcidr text 'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.list' \
-                         'https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.list'"
+    ["ad"]="domain yaml https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml|remove_comments_and_empty \
+                         https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list|remove_comments_and_empty|format_yaml_list \
+                         https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt|remove_comments_and_empty|format_pihole"
+    ["cn"]="domain text https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/cn.list \
+                       https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/steam@cn.list \
+                       https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/microsoft@cn.list \
+                       https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/google@cn.list \
+                       https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/win-update.list \
+                       https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/private.list"
+    ["cnIP"]="ipcidr text https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/cn.list \
+                         https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/private.list"
 )
 
 # ================ 工具函数 ================
