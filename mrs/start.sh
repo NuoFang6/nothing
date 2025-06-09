@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # ================ 配置部分 ================
-# 定位脚本所在目录，避免../nothing 引起的路径错位
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-WORK_DIR="$SCRIPT_DIR/../tmp"
-REPO_DIR="$SCRIPT_DIR/.."
+# 工作目录设置
+WORK_DIR="../tmp"
+REPO_DIR="../nothing"
 OUTPUT_DIR="$REPO_DIR/mrs"
 
 # ================ sed处理函数 ================
@@ -35,7 +34,7 @@ format_yaml_list() {
     add_prefix_suffix "  - '" "'"
 }
 
-# 移除重复行并排序，确保结果唯一
+# 移除重复行
 remove_duplicates() {
     sort -u
 }
@@ -95,40 +94,6 @@ init_env() {
     echo "环境初始化完成"
 }
 
-# 带重试功能的下载函数
-download_with_retry() {
-    local url="$1"
-    local output_file="$2"
-    local max_retries=2
-    local retry_count=0
-    local delays=(10 60) # 首次重试等10秒，第二次等60秒
-
-    while [ $retry_count -le $max_retries ]; do
-        # 使用 curl 进行下载，比 wget 更容易获取状态码
-        # -s: 静默模式, -f: 失败时快速退出(返回22), -L: 跟随重定向, -o: 输出到文件
-        curl -s -f -L -o "$output_file" "$url"
-        local exit_code=$?
-
-        if [ $exit_code -eq 0 ]; then
-            echo "从 $url 下载成功。"
-            return 0 # 成功，返回0
-        else
-            echo "警告：下载 $url 失败 (退出码: $exit_code)。"
-            rm -f "$output_file" # 删除可能不完整的文件
-
-            if [ $retry_count -lt $max_retries ]; then
-                local delay=${delays[$retry_count]}
-                echo "将在 ${delay}s 后进行重试 ($((retry_count + 1))/$max_retries)..."
-                sleep "$delay"
-            fi
-            retry_count=$((retry_count + 1))
-        fi
-    done
-
-    echo "错误：下载 $url 在多次重试后仍然失败。"
-    return 1 # 最终失败，返回1
-}
-
 # 并行处理规则并转换为MRS格式
 process_ruleset_parallel() {
     local name=$1
@@ -151,46 +116,36 @@ process_ruleset_parallel() {
         IFS="|" read -r url format_override process_cmd <<<"$source"
         local old_ifs="$IFS"
 
+        # 创建带序号的临时文件名，确保后续能按顺序合并
         local temp_file="${temp_dir}/${i}_$(basename "$url")"
         temp_files+=("$temp_file")
 
         # 启动后台进程下载和处理
         (
-            # 使用新的带重试的下载函数
-            # 先将源内容下载到一个临时原始文件中
-            local raw_temp_file="${temp_file}.raw"
-            if ! download_with_retry "$url" "$raw_temp_file"; then
-                # 如果下载最终失败，创建一个空的占位文件，避免后续合并出错
-                >"$temp_file"
-                exit 1 # 退出这个子进程
-            fi
+            echo "从 $url 下载..."
 
-            # 下载成功后，再进行处理
-            local stream
-            stream=$(cat "$raw_temp_file")
-            rm -f "$raw_temp_file" # 处理完就删除原始文件
-
+            # 如果提供了特定格式和处理命令，则使用它们
             if [ -n "$format_override" ] && [ -n "$process_cmd" ]; then
-                # 警告：eval 存在安全风险，但按主人“最小化修改”的要求保留
-                echo "应用自定义处理 for $url..."
-                echo "$stream" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
+                echo "应用自定义处理..."
+                wget -q -O - "$url" | eval "$process_cmd" | ensure_trailing_newline >"$temp_file"
             else
-                echo "$stream" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
+                wget -q -O - "$url" | remove_comments_and_empty | ensure_trailing_newline >"$temp_file"
             fi
 
-            # 检查处理后的文件是否为空，如果是则警告
-            if [ ! -s "$temp_file" ]; then
-                echo "警告：处理 $url 后文件为空。"
+            if [ $? -ne 0 ]; then
+                echo "警告：下载或处理 $url 时出错"
             fi
         ) &
 
+        # 保存后台进程的PID
         pids+=($!)
+
         let i++
-        IFS="$old_ifs"
+        IFS="$old_ifs" # 恢复原始IFS值
     done
 
     # 等待所有下载完成
-    echo "等待 $name 的所有下载和处理完成..."
+    echo "等待 $name 的所有下载完成..."
     for pid in "${pids[@]}"; do
         wait "$pid"
     done
@@ -199,87 +154,35 @@ process_ruleset_parallel() {
     echo "合并 $name 的所有源..."
     >"${WORK_DIR}/${name}"
     for temp_file in "${temp_files[@]}"; do
-        # 只合并非空文件
-        if [ -s "$temp_file" ]; then
-            cat "$temp_file" >>"${WORK_DIR}/${name}"
-        fi
+        cat "$temp_file" >>"${WORK_DIR}/${name}"
     done
 
-    local ext="${format:-text}"
-    local source_file="${WORK_DIR}/${name}.${ext}"
-    local mrs_file_temp="${WORK_DIR}/${name}.mrs"
-
-    # 去重并生成最终的源文件
-    cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"$source_file"
-
-    if [ ! -s "$source_file" ]; then
-        echo "警告：最终合并的规则文件 '$source_file' 为空，跳过转换。"
+    # 去重并准备转换
+    if [ "$format" = "yaml" ]; then
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.yaml"
+        ./mihomo convert-ruleset "$type" yaml "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs"
+        mv -f "${WORK_DIR}/${name}.yaml" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     else
-        echo "正在将 '$source_file' 转换为 mrs 格式..."
-        if ./mihomo convert-ruleset "$type" "$ext" "$source_file" "$mrs_file_temp"; then
-            mv -f "$source_file" "$mrs_file_temp" "$OUTPUT_DIR/"
-        else
-            echo "错误：Mihomo 转换 '$source_file' 失败。源文件将不会被移动。"
-        fi
+        cat "${WORK_DIR}/${name}" | remove_duplicates | sed "/^$/d" >"${WORK_DIR}/${name}.text"
+        ./mihomo convert-ruleset "$type" text "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs"
+        mv -f "${WORK_DIR}/${name}.text" "${WORK_DIR}/${name}.mrs" "$OUTPUT_DIR/"
     fi
 
+    # 清理临时目录
     rm -rf "$temp_dir"
+
     echo "$name 规则集处理完成"
 }
 
-# 提交更改到Git仓库的孤儿分支
+# 提交更改到Git仓库
 commit_changes() {
-    local branch_name="rules-autoupdate"
-
-    echo "正在向专用的 '$branch_name' 分支提交更改..."
-    # 切到仓库根目录
-    cd "$REPO_DIR" || {
-        echo "错误：进入仓库根目录失败：$REPO_DIR"
-        exit 1
-    }
-
-    # 配置 Git 用户
+    echo "提交更改到Git仓库..."
+    cd "$REPO_DIR" || exit 1
     git config --local user.email "actions@github.com"
     git config --local user.name "GitHub Actions"
-
-    # 检查远程是否存在该分支
-    if git ls-remote --exit-code --heads origin "$branch_name"; then
-        echo "远程分支 '$branch_name' 已存在，正在拉取..."
-        # 拉取远程分支到本地同名分支，如果本地没有会自动创建
-        git fetch origin "${branch_name}:${branch_name}"
-        git checkout "$branch_name"
-    else
-        echo "远程分支 '$branch_name' 不存在，正在创建新的孤儿分支..."
-        # 创建一个干净的孤儿分支
-        git checkout --orphan "$branch_name"
-    fi
-
-    # 清理工作区，只保留 .git 目录，为存放新文件做准备
-    # 'git rm' 会保留暂存区的删除记录，下一步commit时生效
-    git rm -rf .
-
-    echo "正在添加最新的规则文件..."
-    # 将生成好的规则文件从输出目录添加进暂存区
-    # -A: 添加所有新文件和修改
-    # -f: 强制添加，因为 .gitignore 可能会忽略它们
-    git add -A -f "$OUTPUT_DIR/"
-
-    # 检查是否有文件需要提交
-    # 使用 --cached 是因为我们用 git rm 清理了工作区，变动都在暂存区
-    if git diff --cached --quiet; then
-        echo "规则文件没有变化，无需提交。"
-        return
-    fi
-
-    echo "正在提交更改..."
-    # 使用 amend 来替换上一次的提交，保持历史清爽
-    local commit_message="chore: Update mrs rules on $(date -u +'%Y-%m-%d %H:%M:%S %Z')"
-    git commit --amend -m "$commit_message"
-
-    echo "正在强制推送到远程分支 '$branch_name'..."
-    # 强制推送到远程分支，因为我们修改了历史
-    git push --force origin "$branch_name"
-
+    git pull origin main
+    git add ./mrs/*
+    git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则" || echo "没有需要提交的更改"
     echo "提交完成"
 }
 
