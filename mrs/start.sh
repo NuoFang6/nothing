@@ -44,6 +44,7 @@ format_yaml_list() {
 # ad 规则源
 AD_SOURCES=(
     "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml|yaml|remove_comments_and_empty"
+    "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt|text|remove_comments_and_empty|format_yaml_list"
     "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-httpdns-cn@ads.list|text|remove_comments_and_empty|format_yaml_list"
     "https://github.com/ignaciocastro/a-dove-is-dumb/raw/refs/heads/main/pihole.txt|text|remove_comments_and_empty|format_pihole"
 )
