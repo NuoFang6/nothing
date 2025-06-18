@@ -1,20 +1,20 @@
 #!/bin/bash
 #
 # =================================================================
-#  聪慧猫娘为你优化的规则集处理脚本 v1.7 (终极诊断与结构修正) (づ｡◕‿‿◕｡)づ
+#  聪慧猫娘为你优化的规则集处理脚本 v1.8 (回归本源 · 绝对稳固) (づ｡◕‿‿◕｡)づ
 # =================================================================
 #
 #  功能:
 #  1. 自动下载最新的 Mihomo (Clash.Meta) 核心。
-#  2. 并行下载、处理多个规则源，并提供超详细的、可追踪的诊断日志。
+#  2. 串行处理规则集，并行下载每个规则集内的源文件，提供可追踪的诊断日志。
 #  3. 将处理后的规则转换为 .mrs 格式。
 #  4. 自动提交更新到 Git 仓库。
 #
-#  更新日志 (v1.7):
-#  - [根源修复] 修正了函数定义与导出的顺序，确保所有需要在子进程中使用的函数都被正确导出。
-#    这解决了子进程因 `command not found` 而立即失败的核心问题。
-#  - [日志] 修正了 PID 追踪逻辑，确保日志中的 `$$` 能正确反映当前进程的真实 PID。
-#  - [日志] 在进程失败时，会打印出其返回的退出码，提供更精确的诊断信息。
+#  更新日志 (v1.8):
+#  - [根源修复] 彻底重构并行模型！主流程改为串行处理每个规则集，根除了多层并行带来的所有作用域和进程管理问题。
+#  - [根源修复] 修正了 `wait` 后的退出码捕获逻辑，确保能报告真实的失败原因。
+#  - [优化] 保留了规则集内部的源文件并行下载，兼顾了稳定性和效率。
+#  - [日志] 简化了日志标记，使其更清晰。
 #
 # =================================================================
 
@@ -70,19 +70,18 @@ sources=(
 
 # ======================= 🔧 工具与辅助函数定义 🔧 =======================
 
-# --- 日志函数 (带追踪标记) ---
-# 注意：现在所有调用都需要传入一个标记，如 "[INIT]" 或 "[$name][Main]"
+# --- 日志函数 ---
 COLOR_RESET='\033[0m'
 COLOR_INFO='\033[0;34m'
 COLOR_SUCCESS='\033[0;32m'
 COLOR_WARNING='\033[0;33m'
 COLOR_ERROR='\033[0;31m'
 
-log_info() { echo -e "${COLOR_INFO}INFO: $1[$$] $2${COLOR_RESET}"; }
-log_success() { echo -e "${COLOR_SUCCESS}SUCCESS: $1[$$] $2${COLOR_RESET}"; }
-log_warn() { echo -e "${COLOR_WARNING}WARNING: $1[$$] $2${COLOR_RESET}"; }
+log_info() { echo -e "${COLOR_INFO}INFO: $1 $2${COLOR_RESET}"; }
+log_success() { echo -e "${COLOR_SUCCESS}SUCCESS: $1 $2${COLOR_RESET}"; }
+log_warn() { echo -e "${COLOR_WARNING}WARNING: $1 $2${COLOR_RESET}"; }
 log_error() {
-    echo -e "${COLOR_ERROR}ERROR: $1[$$] $2${COLOR_RESET}"
+    echo -e "${COLOR_ERROR}ERROR: $1 $2${COLOR_RESET}"
     exit 1
 }
 
@@ -128,6 +127,8 @@ init_env() {
     log_success "$tag" "Mihomo 已准备就绪！"
 }
 
+# 下载并处理单个源的函数
+# 这个函数将被派到后台执行，所以需要导出
 download_and_process_source() {
     local name=$1
     local url=$2
@@ -138,41 +139,35 @@ download_and_process_source() {
     local http_code body_file
     body_file=$(mktemp)
 
-    log_info "$tag" "任务启动: 开始下载 $url"
+    log_info "$tag" "任务启动 (PID:$$): 开始下载 $url"
     http_code=$(curl -L -s -w "%{http_code}" -o "$body_file" "$url")
 
     if [ "$http_code" -ne 200 ]; then
-        log_warn "$tag" "下载失败! URL: $url, HTTP Status: $http_code"
+        log_warn "$tag" "(PID:$$) 下载失败! URL: $url, HTTP Status: $http_code"
         rm "$body_file"
         exit 11
     fi
-
-    local size
-    size=$(wc -c <"$body_file")
-    log_info "$tag" "下载成功 (HTTP $http_code), 大小: $size 字节。"
+    log_info "$tag" "(PID:$$) 下载成功 (HTTP $http_code), 大小: $(wc -c <"$body_file") 字节。"
 
     local processed_content
     processed_content=$(apply_processing_chain "$process_chain" <"$body_file" | ensure_trailing_newline)
     echo "$processed_content" >"$temp_file"
-
-    local processed_size processed_lines
-    processed_size=$(echo -n "$processed_content" | wc -c)
-    processed_lines=$(echo -n "$processed_content" | wc -l)
-    log_success "$tag" "任务完成: 源 $url 已处理并保存 (大小: $processed_size 字节, 行数: $processed_lines)。"
+    log_success "$tag" "(PID:$$) 任务完成: 源 $url 已处理并保存。"
 
     rm "$body_file"
 }
 
+# 主处理函数
 process_ruleset() {
     local name=$1
-    local tag="[$name][Main]"
+    local tag="[$name]"
     local config_string="${RULESETS[$name]}"
     local type format
     type=$(echo "$config_string" | sed -n 's/^\s*type=\(.*\)\s*$/\1/p')
     format=$(echo "$config_string" | sed -n 's/^\s*format=\(.*\)\s*$/\1/p')
     if [ -z "$type" ] || [ -z "$format" ]; then log_error "$tag" "规则集配置不完整!"; fi
 
-    log_info "$tag" "开始处理规则集 (类型: $type, 格式: $format)"
+    log_info "$tag" "===> 开始处理规则集 (类型: $type, 格式: $format) <==="
     local source_lines
     source_lines=$(echo "$config_string" | sed -n '/sources=(/,/)/p' | sed '1d;$d')
     local temp_dir="${WORK_DIR}/${name}_temp"
@@ -194,6 +189,7 @@ process_ruleset() {
         local temp_file="${temp_dir}/$(printf "%03d" $i)-$(basename "$url")"
         temp_files+=("$temp_file")
 
+        # 将“工人”任务派到后台
         download_and_process_source "$name" "$url" "$process_chain" "$temp_file" &
         pids+=($!)
         ((i++))
@@ -201,13 +197,16 @@ process_ruleset() {
 
     log_info "$tag" "所有下载任务已派出 (共 ${#pids[@]} 个)，等待它们完成..."
     local has_error=0
-    local exit_code=0
     for pid in "${pids[@]}"; do
-        if ! wait "$pid"; then
-            exit_code=$?
-            log_warn "$tag" "检测到一个后台任务 (PID: $pid) 失败，退出码: $exit_code"
+        # ==================== ✨ 真实退出码捕获！ ✨ ====================
+        # 这个结构能确保我们捕获到 wait 命令真实的失败码
+        local exit_code=0
+        wait "$pid" || exit_code=$?
+        if [ "$exit_code" -ne 0 ]; then
+            log_warn "$tag" "检测到一个后台任务 (PID: $pid) 失败，真实退出码: $exit_code"
             has_error=1
         fi
+        # =============================================================
     done
     if [ "$has_error" -ne 0 ]; then log_error "$tag" "部分下载任务失败，处理中止！"; fi
     log_success "$tag" "所有下载任务均已成功！"
@@ -233,7 +232,8 @@ process_ruleset() {
     ./mihomo convert-ruleset "$type" "$format" "$final_file" "$mrs_file"
 
     rm -rf "$temp_dir" "$combined_file" "$final_file"
-    log_success "$tag" "规则集已成功生成: $mrs_file"
+    log_success "$tag" "===> 规则集已成功处理完毕 <==="
+    echo # 输出一个空行以作分隔
 }
 
 commit_changes() {
@@ -255,44 +255,26 @@ commit_changes() {
 }
 
 # ======================= ✨ 函数导出区域 ✨ =======================
-# 先定义，后导出。将所有需要在子进程中使用的函数在这里明确导出。
+# 只导出需要在后台（子进程）中使用的函数
 export -f log_info log_success log_warn log_error
 export -f remove_comments_and_empty ensure_trailing_newline add_prefix_suffix
 export -f format_pihole format_yaml_list apply_processing_chain
 export -f download_and_process_source
-export -f process_ruleset
-# commit_changes 和 init_env 只在主进程调用，无需导出，但为了安全起见一并导出。
-export -f init_env commit_changes
 # =============================================================
 
 # ======================= 🚀 主执行流程 🚀 =======================
 main() {
-    local tag="[MainLoop]"
     init_env
 
-    log_info "$tag" "即将并行处理所有已配置的规则集..."
-    local main_pids=()
+    log_info "[MainLoop]" "即将开始处理所有规则集..."
+    # 不再并行，而是按顺序处理每一个规则集
     for ruleset_name in "${!RULESETS[@]}"; do
-        process_ruleset "$ruleset_name" &
-        main_pids+=($!)
+        process_ruleset "$ruleset_name"
     done
 
-    log_info "$tag" "所有规则集处理进程已启动，耐心等待它们全部完成... Nya~"
-    local main_has_error=0
-    local exit_code=0
-    for pid in "${main_pids[@]}"; do
-        if ! wait "$pid"; then
-            exit_code=$?
-            log_warn "$tag" "检测到一个规则集主进程 (PID: $pid) 失败，退出码: $exit_code"
-            main_has_error=1
-        fi
-    done
-
-    if [ "$main_has_error" -ne 0 ]; then log_error "$tag" "由于一个或多个规则集处理失败，脚本已中止。"; fi
-
-    log_success "$tag" "所有规则集均已成功处理完毕！"
+    log_success "[MainLoop]" "所有规则集均已成功处理完毕！"
     commit_changes
-    log_success "$tag" "所有操作顺利完成。这次我做对了吗，主人？❤️"
+    log_success "[MainLoop]" "所有操作顺利完成。这次我做对了吗，主人？"
 }
 
 main
