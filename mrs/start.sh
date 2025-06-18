@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # =================================================================
-#  聪慧猫娘为你优化的规则集处理脚本 v1.3 (日志增强与终极修复) (づ｡◕‿‿◕｡)づ
+#  聪慧猫娘为你优化的规则集处理脚本 v1.4 (根源性修复) (づ｡◕‿‿◕｡)づ
 # =================================================================
 #
 #  功能:
@@ -10,10 +10,10 @@
 #  3. 将处理后的规则转换为 .mrs 格式。
 #  4. 自动提交更新到 Git 仓库。
 #
-#  更新日志 (v1.3):
-#  - [修复] 将所有不具备移植性的 `grep -P` 命令替换为更通用的 `sed` 命令，解决兼容性问题。
-#  - [日志] 大幅增强日志系统！现在可以清晰追踪每个源的下载、处理流程和内容大小。
-#  - [日志] 优化了并行任务的错误报告，能明确指出哪个后台任务失败。
+#  更新日志 (v1.4):
+#  - [根源修复] 修复了因 `while...<<<` 导致循环在子 Shell 中运行，从而丢失 PID 数组的致命问题。
+#    现已改用 `while...< <(...)` 结构，确保变量在主进程中可见，这是本次修复的核心！
+#  - [日志] 微调了日志输出，使其在并行环境下更易阅读。
 #
 # =================================================================
 
@@ -101,7 +101,6 @@ apply_processing_chain() {
     fi
     IFS='|' read -ra funcs <<<"$chain"
     for func in "${funcs[@]}"; do
-        # 增加一个检查，确保要调用的函数是存在的
         if ! command -v "$func" &>/dev/null; then
             log_error "处理链中的命令 '$func' 不存在！"
         fi
@@ -142,17 +141,15 @@ process_ruleset() {
     local name=$1
     local config_string="${RULESETS[$name]}"
 
-    # ==================== ✨ 这里是修复的关键！ ✨ ====================
-    # 我把不稳定的 `grep -P` 换成了通用的 `sed`，保证在哪里都能跑起来！
     local type format
     type=$(echo "$config_string" | sed -n 's/^\s*type=\(.*\)\s*$/\1/p')
     format=$(echo "$config_string" | sed -n 's/^\s*format=\(.*\)\s*$/\1/p')
 
     if [ -z "$type" ] || [ -z "$format" ]; then
-        log_error "规则集 '$name' 的配置不完整，缺少 type 或 format！"
+        log_error "[$name] 规则集配置不完整，缺少 type 或 format！"
     fi
 
-    log_info "开始处理规则集: $name (类型: $type, 格式: $format)"
+    log_info "[$name] 开始处理规则集 (类型: $type, 格式: $format)"
 
     local source_lines
     source_lines=$(echo "$config_string" | sed -n '/sources=(/,/)/p' | sed '1d;$d')
@@ -164,6 +161,9 @@ process_ruleset() {
     local temp_files=()
     local i=0
 
+    # ==================== ✨ 这就是根源性修复！ ✨ ====================
+    # 我把 `<<<` 换成了 `< <(...)`，这样 while 循环就不在“隔离的小房间”里运行了。
+    # 它记录的 pids 和 temp_files 数组，在循环结束后也能被主进程访问到！
     while IFS= read -r source_config; do
         [[ -z "$source_config" ]] && continue
 
@@ -176,51 +176,41 @@ process_ruleset() {
         local temp_file="${temp_dir}/$(printf "%03d" $i)-$(basename "$url")"
         temp_files+=("$temp_file")
 
-        # ==================== ✨ 日志增强部分 ✨ ====================
-        # 这个后台任务现在会报告每一步的详细信息了！
         (
-            log_info "[$name] 任务启动 -> 开始处理源: $url"
+            log_info "[$name] -> 任务启动: 开始处理源 $url"
             local content
             content=$(wget -q -O - "$url")
-
             local content_size
             content_size=$(echo -n "$content" | wc -c)
 
             if [ "$content_size" -eq 0 ]; then
-                log_warn "[$name] 从 $url 下载的内容为空，跳过处理。"
-                touch "$temp_file" # 仍然创建空文件以保持合并顺序
-                exit 0             # 正常退出
+                log_warn "[$name] -> 源 $url 下载内容为空，跳过。"
+                touch "$temp_file"
+                exit 0
             fi
-            log_info "[$name] -> 下载完成，内容大小: ${content_size} 字节。"
 
-            log_info "[$name] -> 应用处理链: '$process_chain'..."
             local processed_content
             processed_content=$(echo "$content" | apply_processing_chain "$process_chain" | ensure_trailing_newline)
 
-            local processed_size
-            processed_size=$(echo -n "$processed_content" | wc -c)
-            log_info "[$name] -> 处理完成，内容大小变为: ${processed_size} 字节。"
-
             echo "$processed_content" >"$temp_file"
-            log_success "[$name] -> 任务成功: $url 已保存至临时文件。"
+            log_info "[$name] -> 任务完成: 源 $url 已处理并保存。"
         ) &
         pids+=($!)
         ((i++))
-    done <<<"$source_lines"
+    done < <(echo "$source_lines")
 
-    # 这个循环现在会等待所有任务结束，并报告失败的任务
-    log_info "[$name] 所有源文件的处理任务已启动，正在等待它们全部完成..."
+    log_info "[$name] 所有下载任务已派出，共 ${#pids[@]} 个。现在开始等待它们全部完成..."
     local has_error=0
     for pid in "${pids[@]}"; do
         if ! wait "$pid"; then
-            log_warn "[$name] 一个后台任务 (PID: $pid) 失败了喵... 请检查上面的日志！"
+            log_warn "[$name] 一个后台任务 (PID: $pid) 失败了喵... 请检查。"
             has_error=1
         fi
     done
     if [ "$has_error" -ne 0 ]; then
-        log_error "[$name] 部分后台任务失败，处理中止！"
+        log_error "[$name] 部分下载任务失败，处理中止！"
     fi
-    log_success "[$name] 所有源文件处理任务均已成功！"
+    log_success "[$name] 所有下载任务均已成功！"
 
     local combined_file="${WORK_DIR}/${name}.combined"
     local final_file_prefix="${WORK_DIR}/${name}"
@@ -228,7 +218,6 @@ process_ruleset() {
 
     log_info "[$name] 正在合并所有临时文件..."
     cat "${temp_files[@]}" >"$combined_file"
-    log_info "[$name] -> 合并后总大小: $(wc -c <"$combined_file") 字节。"
 
     if [ "$format" = "yaml" ]; then
         local yaml_source="${final_file_prefix}.yaml"
@@ -246,7 +235,7 @@ process_ruleset() {
     fi
 
     rm -rf "$temp_dir" "$combined_file" "${final_file_prefix}."*
-    log_success "规则集 '$name' 已成功处理并生成: $mrs_file"
+    log_success "[$name] 规则集已成功处理并生成: $mrs_file"
 }
 
 commit_changes() {
@@ -260,7 +249,7 @@ commit_changes() {
     git pull --rebase origin main
 
     if [[ -z $(git status -s) ]]; then
-        log_success "没有检测到任何更改，无需提交。一切都是最新的！"
+        log_success "Git 仓库没有检测到任何更改，无需提交。"
         return
     fi
 
@@ -275,22 +264,22 @@ main() {
     init_env
 
     log_info "即将并行处理所有已配置的规则集..."
-    local pids=()
+    local main_pids=()
     for ruleset_name in "${!RULESETS[@]}"; do
         process_ruleset "$ruleset_name" &
-        pids+=($!)
+        main_pids+=($!)
     done
 
-    log_info "所有处理任务已启动，现在耐心等待它们全部完成... Nya~"
-    local has_error=0
-    for pid in "${pids[@]}"; do
+    log_info "所有规则集处理进程已启动，现在耐心等待它们全部完成... Nya~"
+    local main_has_error=0
+    for pid in "${main_pids[@]}"; do
         if ! wait "$pid"; then
             log_warn "主循环检测到一个处理进程 (PID: $pid) 失败。"
-            has_error=1
+            main_has_error=1
         fi
     done
 
-    if [ "$has_error" -ne 0 ]; then
+    if [ "$main_has_error" -ne 0 ]; then
         log_error "由于一个或多个规则集处理失败，脚本已中止。请检查上面的错误日志！"
     fi
     log_success "所有规则集均已处理完毕！"
