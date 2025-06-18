@@ -12,11 +12,17 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
+from pydantic import BaseModel, Field, ValidationError
 
 import yaml
 import requests
 import click
 from loguru import logger # type: ignore
+
+# 新增 HTTP 重试依赖导入
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 @dataclass
 class SourceConfig:
@@ -31,6 +37,32 @@ class TaskConfig:
     type: str
     format: str
     sources: List[SourceConfig]
+
+# Pydantic 配置模型定义
+class BaseConfigModel(BaseModel):
+    work_dir: str
+    repo_dir: str
+    output_dir: str
+    max_concurrent_downloads: int = Field(10)
+    max_retries: int = Field(3)
+    request_timeout: int = Field(30)
+
+class MihomoConfigModel(BaseModel):
+    api_url: str
+    binary_pattern: str
+    file_extension: str
+
+class GitConfigModel(BaseModel):
+    user_email: str
+    user_name: str
+    branch: str
+    timezone: str
+
+class ConfigModel(BaseModel):
+    base: BaseConfigModel
+    mihomo: MihomoConfigModel
+    git: GitConfigModel
+    tasks: Dict[str, TaskConfig]
 
 class TextProcessor:
     """文本处理器类"""
@@ -62,11 +94,31 @@ class RulesetGenerator:
     """规则集生成器主类"""
     
     def __init__(self, config_path: Path):
-        self.config = self._load_config(config_path)
+        # 先加载原始配置
+        raw_config = self._load_config(config_path)
+        try:
+            # 使用 Pydantic 验证并转换配置
+            self.config = ConfigModel(**raw_config).dict()
+        except ValidationError as ve:
+            logger.error(f"配置验证失败: {ve}")
+            sys.exit(1)
+        
         self.script_dir = Path(__file__).resolve().parent
         self._setup_paths()
         self._setup_processors()
         
+        # 初始化带重试的 HTTP Session
+        self.session = requests.Session()
+        retry_strategy = Retry(
+            total=self.config['base'].get('max_retries', 3),
+            backoff_factor=0.5,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["GET"],
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+    
     def _load_config(self, config_path: Path) -> dict:
         """加载配置文件"""
         try:
@@ -155,12 +207,13 @@ class RulesetGenerator:
                         return asset.get("browser_download_url")
         return ""
     
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, max=10))
     def _download_and_process_source(self, source: SourceConfig, index: int) -> Tuple[int, str]:
-        """下载并处理单个源"""
+        """下载并处理单个源，失败时重试"""
         try:
             logger.info(f"下载: {source.url}")
-            response = requests.get(source.url, 
-                                  timeout=self.config['base']['request_timeout'])
+            response = self.session.get(source.url,
+                                        timeout=self.config['base']['request_timeout'])
             response.raise_for_status()
             content = response.text
             
@@ -170,6 +223,7 @@ class RulesetGenerator:
                 if processor_name in self.processors:
                     content = self.processors[processor_name](content)
             
+            # 确保以换行结束
             if not content.endswith('\n'):
                 content += '\n'
             
