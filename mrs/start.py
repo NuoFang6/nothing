@@ -43,6 +43,7 @@ class BaseConfigModel(BaseModel):
     repo_dir: str
     output_dir: str
     max_concurrent_downloads: int = Field(10)
+    max_concurrent_tasks: int = Field(3)
     max_retries: int = Field(3)
     request_timeout: int = Field(30)
 
@@ -96,8 +97,8 @@ class RulesetGenerator:
         # 先加载原始配置
         raw_config = self._load_config(config_path)
         try:
-            # 使用 Pydantic 验证并转换配置
-            self.config = ConfigModel(**raw_config).dict()
+            # 验证并转换配置为字典（使用 model_dump 避免弃用警告）
+            self.config = ConfigModel(**raw_config).model_dump()
         except ValidationError as ve:
             logger.error(f"配置验证失败: {ve}")
             sys.exit(1)
