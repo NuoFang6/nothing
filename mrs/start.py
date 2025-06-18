@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import gzip
-import json
 import shutil
 import subprocess
 import sys
@@ -22,7 +21,7 @@ from loguru import logger # type: ignore
 # 新增 HTTP 重试依赖导入
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, stop_after_attempt, wait_exponential # type: ignore
 
 @dataclass
 class SourceConfig:
