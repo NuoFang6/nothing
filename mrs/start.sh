@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # =================================================================
-#  聪慧猫娘为你优化的规则集处理脚本 v1.1 (修复版) (づ｡◕‿‿◕｡)づ
+#  聪慧猫娘为你优化的规则集处理脚本 v1.2 (终极修复版) (づ｡◕‿‿◕｡)づ
 # =================================================================
 #
 #  功能:
@@ -10,9 +10,10 @@
 #  3. 将处理后的规则转换为 .mrs 格式。
 #  4. 自动提交更新到 Git 仓库。
 #
-#  使用说明:
-#  - 主要配置集中在【核心配置区域】，修改或添加规则集非常方便。
-#  - 脚本会自动创建所需目录。
+#  更新日志 (v1.2):
+#  - [修复] 彻底移除了所有 `eval` 命令，根除了因特殊字符导致的语法错误。
+#  - [优化] 使用更健壮的文本解析方式读取规则集配置。
+#  - [优化] 增强了并行任务的错误处理和日志反馈。
 #
 # =================================================================
 
@@ -133,11 +134,29 @@ init_env() {
     log_success "Mihomo 已准备就绪！"
 }
 
+# ==================== ✨ 这里是修复的核心！ ✨ ====================
+#  我重写了这里，彻底抛弃了不稳定的 `eval`，手动解析配置，保证万无一失！
+# =================================================================
 process_ruleset() {
     local name=$1
-    eval "${RULESETS[$name]}"
+    local config_string="${RULESETS[$name]}"
+
+    # 使用 grep 和 cut 精确提取 type 和 format
+    local type
+    local format
+    type=$(echo "$config_string" | grep -oP '^\s*type=\K.*' || echo "")
+    format=$(echo "$config_string" | grep -oP '^\s*format=\K.*' || echo "")
+
+    # 检查是否成功获取了配置
+    if [ -z "$type" ] || [ -z "$format" ]; then
+        log_error "规则集 '$name' 的配置不完整，缺少 type 或 format！"
+    fi
 
     log_info "开始处理规则集: $name (类型: $type, 格式: $format)"
+
+    # 使用 sed 提取 sources(...) 中的所有行
+    local source_lines
+    source_lines=$(echo "$config_string" | sed -n '/sources=(/,/)/p' | sed '1d;$d')
 
     local temp_dir="${WORK_DIR}/${name}_temp"
     mkdir -p "$temp_dir"
@@ -146,10 +165,12 @@ process_ruleset() {
     local temp_files=()
     local i=0
 
-    for source_config in "${sources[@]}"; do
-        # ==================== ✨ 这里是修复的关键！ ✨ ====================
-        # 我把危险的 `eval` 换掉了，现在用正则表达式来精确提取 URL 和处理链
-        # 这样就算处理链里有 `|` 这样的特殊符号，也不会出错了喵~
+    # 使用 while read 循环处理每一行源配置
+    while IFS= read -r source_config; do
+        # 跳过空行
+        [[ -z "$source_config" ]] && continue
+
+        # 使用更健壮的方式提取 url 和 process
         local url
         local process_chain
         url=$(echo "$source_config" | grep -o "\[url\]='[^']*" | sed "s/\[url\]='//")
@@ -157,7 +178,6 @@ process_ruleset() {
 
         # 如果没有定义 process, 默认只移除注释和空行
         [ -z "$process_chain" ] && process_chain="remove_comments_and_empty"
-        # =============================================================
 
         local temp_file="${temp_dir}/$(printf "%03d" $i)-$(basename "$url")"
         temp_files+=("$temp_file")
@@ -168,17 +188,26 @@ process_ruleset() {
             content=$(wget -q -O - "$url")
             if [ -z "$content" ]; then
                 log_warn "[$name] 从 $url 下载的内容为空，跳过处理。"
-                touch "$temp_file" # 创建空文件以保持合并顺序
+                touch "$temp_file"
             else
                 echo "$content" | apply_processing_chain "$process_chain" | ensure_trailing_newline >"$temp_file"
             fi
         ) &
         pids+=($!)
         ((i++))
-    done
+    done <<<"$source_lines"
 
     log_info "[$name] 等待所有源下载处理完成..."
-    for pid in "${pids[@]}"; do wait "$pid"; done
+    local has_error=0
+    for pid in "${pids[@]}"; do
+        if ! wait "$pid"; then
+            log_warn "[$name] 一个后台下载/处理任务 (PID: $pid) 失败了喵..."
+            has_error=1
+        fi
+    done
+    if [ "$has_error" -ne 0 ]; then
+        log_error "[$name] 部分后台任务失败，处理中止！"
+    fi
     log_success "[$name] 所有源处理完毕！"
 
     local combined_file="${WORK_DIR}/${name}.combined"
@@ -214,7 +243,6 @@ commit_changes() {
     git config --local user.email "actions@github.com"
     git config --local user.name "GitHub Actions"
 
-    # 悄悄优化一下：使用 rebase 模式拉取，可以更好地处理远程和本地都有更新的情况，避免不必要的合并提交
     log_info "正在从远程仓库同步最新更改..."
     git pull --rebase origin main
 
@@ -226,10 +254,6 @@ commit_changes() {
     log_info "发现更改，正在提交..."
     git add ./mrs/*
     git commit -m "feat: $(date '+%Y-%m-%d %H:%M:%S') 更新mrs规则"
-    # 如果主人需要推送到远程仓库，可以取消下面这行的注释
-    # log_info "正在将更改推送到远程仓库..."
-    # git push origin main
-
     log_success "更改已成功提交！"
 }
 
