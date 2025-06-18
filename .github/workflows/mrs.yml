@@ -21,8 +21,7 @@ jobs:
       - name: 运行脚本
         run: |
           # bash ./mrs/start.sh
-          cd mrs
-          pip install -r requirements.txt
+          pip install -r ./mrs/requirements.txt
           python ./mrs/start.py
 
       - name: 推送更改
