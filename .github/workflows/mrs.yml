@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/mrs.yml"
       - "mrs/start.sh"
+      - "mrs/start.py"
 
 jobs:
   update:
@@ -19,7 +20,9 @@ jobs:
 
       - name: 运行脚本
         run: |
-          bash ./mrs/start.sh
+          # bash ./mrs/start.sh
+          pip install requests
+          python ./mrs/start.py
 
       - name: 推送更改
         uses: ad-m/github-push-action@master
