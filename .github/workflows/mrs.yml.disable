@@ -1,15 +1,15 @@
 name: mrs
 
-on:
-  workflow_dispatch:
-  schedule:
-    # 表达式生成 https://crontab.guru/
-    - cron: "0 0 * * *" #北京时间上午8点
-  push:
-    paths:
-      - ".github/workflows/mrs.yml"
-      - "mrs/start.sh"
-      - "mrs/start.py"
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # 表达式生成 https://crontab.guru/
+#     - cron: "0 0 * * *" #北京时间上午8点
+#   push:
+#     paths:
+#       - ".github/workflows/mrs.yml"
+#       - "mrs/start.sh"
+#       - "mrs/start.py"
 
 jobs:
   update:
