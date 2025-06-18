@@ -16,7 +16,7 @@ from dataclasses import dataclass
 import yaml
 import requests
 import click
-from loguru import logger
+from loguru import logger # type: ignore
 
 @dataclass
 class SourceConfig:

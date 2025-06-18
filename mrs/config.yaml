@@ -1,8 +1,8 @@
 # 基础配置
 base:
-  work_dir: "../tmp"
-  repo_dir: "../nothing"
-  output_dir: "../nothing/mrs"
+  work_dir: "../../tmp"
+  repo_dir: "../"
+  output_dir: "../mrs"
   max_concurrent_downloads: 10
   max_concurrent_tasks: 3
   request_timeout: 30
